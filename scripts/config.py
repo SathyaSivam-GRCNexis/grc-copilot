@@ -1,20 +1,68 @@
 # Configuration
 
-# Data sources
+# RSS Feeds organized by domain - from Blueprint Appendix A
 RSS_FEEDS = [
-    "https://iapp.org/rss/",
-    "https://www.privacyaffairs.com/feed/",
-    "https://www.csoonline.com/index.rss",
-    "https://www.darkreading.com/rss.xml",
-    "https://threatpost.com/feed/",
-    "https://krebsonsecurity.com/feed/",
-    "https://www.schneier.com/feed/atom/",
-    "https://www.regulationasia.com/feed/",
-    "https://www.jdsupra.com/legalnews/cybersecurity/?format=rss",
-    "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "https://www.wired.com/feed/tag/ai/latest/rss",
-    "https://economictimes.indiatimes.com/tech/technology/rssfeeds/13357270.cms",
-    "https://www.moneycontrol.com/rss/technology.xml",
+    # ===================
+    # SECURITY
+    # ===================
+    "https://feeds.feedburner.com/TheHackersNews",  # The Hacker News
+    "https://www.bleepingcomputer.com/feed/",  # BleepingComputer
+    "https://krebsonsecurity.com/feed/",  # Krebs on Security
+    "https://www.schneier.com/feed/atom/",  # Schneier on Security
+    "https://www.darkreading.com/rss.xml",  # Dark Reading
+    "https://www.csoonline.com/index.rss",  # CSO Online
+    "https://threatpost.com/feed/",  # Threatpost
+    "https://www.securityweek.com/feed",  # Security Week
+    "https://nakedsecurity.sophos.com/feed/",  # Sophos Naked Security
+    "https://blog.talosintelligence.com/feeds/posts/default",  # Cisco Talos
+    
+    # ===================
+    # GRC / COMPLIANCE
+    # ===================
+    "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/rss",  # ISACA
+    "https://www.nist.gov/news-events/news/rss.xml",  # NIST News
+    "https://www.helpnetsecurity.com/feed/",  # Help Net Security (GRC focus)
+    "https://www.complianceweek.com/rss/all.rss",  # Compliance Week
+    
+    # ===================
+    # PRIVACY
+    # ===================
+    "https://iapp.org/rss/",  # IAPP - International Association of Privacy Professionals
+    "https://www.privacyaffairs.com/feed/",  # Privacy Affairs
+    "https://gdpr.eu/feed/",  # GDPR EU
+    "https://fpf.org/feed/",  # Future of Privacy Forum
+    
+    # ===================
+    # AI & AI GOVERNANCE
+    # ===================
+    "https://openai.com/blog/rss/",  # OpenAI Blog
+    "https://www.anthropic.com/index.xml",  # Anthropic
+    "https://blog.google/technology/ai/rss/",  # Google AI Blog
+    "https://techcrunch.com/category/artificial-intelligence/feed/",  # TechCrunch AI
+    "https://venturebeat.com/category/ai/feed/",  # VentureBeat AI
+    "https://www.technologyreview.com/feed/",  # MIT Tech Review
+    
+    # ===================
+    # DEVSECOPS
+    # ===================
+    "https://snyk.io/blog/feed/",  # Snyk Blog
+    "https://github.blog/category/security/feed/",  # GitHub Security
+    "https://owasp.org/feed.xml",  # OWASP
+    "https://www.aquasec.com/feed/",  # Aqua Security
+    "https://sysdig.com/blog/feed/",  # Sysdig
+    
+    # ===================
+    # PRODUCT MANAGEMENT
+    # ===================
+    "https://www.lennysnewsletter.com/feed",  # Lenny's Newsletter
+    "https://www.mindtheproduct.com/feed/",  # Mind the Product
+    "https://www.svpg.com/articles/feed/",  # Silicon Valley Product Group
+    
+    # ===================
+    # REGULATORY (GLOBAL)
+    # ===================
+    "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",  # FTC Consumer Protection
+    "https://www.enisa.europa.eu/rss.xml",  # ENISA (EU Cybersecurity Agency)
 ]
 
 DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product"]
