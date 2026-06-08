@@ -1,5 +1,5 @@
 """
-News Fetcher - Fetches GRC news from RSS feeds
+News Fetcher
 """
 
 import feedparser

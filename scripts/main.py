@@ -1,5 +1,5 @@
 """
-Main Pipeline - Orchestrates the entire GRC Intelligence workflow
+Main Pipeline
 """
 
 import os
@@ -42,7 +42,7 @@ def run_pipeline():
         fallback_article = {
             "title": "Daily GRC Insights",
             "summary": "Stay updated with the latest in Governance, Risk, and Compliance.",
-            "url": "https://linkedin.com/in/sathya-sivam",
+            "url": "",
             "source": "GRC Copilot",
             "score": 8,
             "domains": ["GRC Career & Skills"],

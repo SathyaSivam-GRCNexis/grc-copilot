@@ -1,5 +1,5 @@
 """
-Article Scorer - Uses Groq to score articles for GRC relevance
+Article Scorer
 """
 
 import os

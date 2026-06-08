@@ -1,5 +1,5 @@
 """
-Content Generator - Uses Gemini with Groq fallback
+Content Generator
 """
 
 import os
