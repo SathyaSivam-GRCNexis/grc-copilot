@@ -1,19 +1,40 @@
 {
   "slides": [
-    {"slide_number": 1, "content": "GRC Content Copilot\nYour Daily Intelligence Partner"},
-    {"slide_number": 2, "content": "Heading: Automated News\nBody: Fresh GRC news fetched twice daily from 15+ trusted sources"},
-    {"slide_number": 3, "content": "Heading: AI-Scored\nBody: Every article scored 1-10 for GRC relevance using AI"},
-    {"slide_number": 4, "content": "Heading: Ready Content\nBody: LinkedIn posts and carousel text generated automatically"},
-    {"slide_number": 5, "content": "Heading: Weekly Newsletter\nBody: Full newsletter content for your Wednesday edition"},
-    {"slide_number": 6, "content": "Heading: Zero Daily Work\nBody: Just copy, paste, and post. That's it."},
-    {"slide_number": 7, "content": "Follow @SathyaSivam for GRC insights\nRepost if this helps!"}
+    {
+      "slide_number": 1,
+      "content": "GRC Alert: Tech Firms Held Accountable\n"
+    },
+    {
+      "slide_number": 2,
+      "content": "Heading: Age Verification Process\nBody: The UK government's proposal requires tech firms to implement an age verification process, allowing adults to access nude content while restricting minors. This raises questions about the effectiveness of such systems. In my experience, age verification can be a complex issue.\n"
+    },
+    {
+      "slide_number": 3,
+      "content": "Heading: Technical Solutions for Content Detection\nBody: Companies like Apple and Google may need to develop or activate technical solutions to detect and block nude images on smartphones and tablets. This could involve AI-powered content filtering, which I've seen be effective in similar contexts. However, false positives and negatives are a concern.\n"
+    },
+    {
+      "slide_number": 4,
+      "content": "Heading: Balancing Freedom and Protection\nBody: The proposal aims to protect children from explicit content while preserving adults' freedom of expression. This balance is crucial, as overly restrictive measures can infringe on individual rights. It's essential to consider the potential impact on both children and adults.\n"
+    },
+    {
+      "slide_number": 5,
+      "content": "Heading: Implementation Challenges\nBody: Implementing these technical solutions and age verification processes will be a significant challenge for tech firms. I've seen similar initiatives face difficulties in the past, including issues with data privacy and security. Companies must navigate these complexities to comply with the proposed regulations.\n"
+    },
+    {
+      "slide_number": 6,
+      "content": "Heading: Broader GRC Implications\nBody: This proposal has broader implications for GRC professionals, as it highlights the importance of considering social responsibility and regulatory requirements. It's a reminder that our work extends beyond compliance, to addressing the human impact of technology. We must stay informed about such developments to advise our organizations effectively.\n"
+    },
+    {
+      "slide_number": 7,
+      "content": "Heading: Join the Conversation\nBody: Follow me for more insights on GRC and technology. Share your thoughts on this proposal and its potential impact on the tech industry. Comment below with your questions or concerns, and let's discuss the implications for GRC professionals.\n"
+    }
   ],
-  "raw_content": "SLIDE 1:\nGRC Content Copilot\nYour Daily Intelligence Partner\n\nSLIDE 2:\nHeading: Automated News\nBody: Fresh GRC news fetched twice daily from 15+ trusted sources\n\nSLIDE 3:\nHeading: AI-Scored\nBody: Every article scored 1-10 for GRC relevance using AI\n\nSLIDE 4:\nHeading: Ready Content\nBody: LinkedIn posts and carousel text generated automatically\n\nSLIDE 5:\nHeading: Weekly Newsletter\nBody: Full newsletter content for your Wednesday edition\n\nSLIDE 6:\nHeading: Zero Daily Work\nBody: Just copy, paste, and post. That's it.\n\nSLIDE 7:\nFollow @SathyaSivam for GRC insights\nRepost if this helps!",
+  "raw_content": "SLIDE 1:\nGRC Alert: Tech Firms Held Accountable\n\nSLIDE 2:\nHeading: Age Verification Process\nBody: The UK government's proposal requires tech firms to implement an age verification process, allowing adults to access nude content while restricting minors. This raises questions about the effectiveness of such systems. In my experience, age verification can be a complex issue.\n\nSLIDE 3:\nHeading: Technical Solutions for Content Detection\nBody: Companies like Apple and Google may need to develop or activate technical solutions to detect and block nude images on smartphones and tablets. This could involve AI-powered content filtering, which I've seen be effective in similar contexts. However, false positives and negatives are a concern.\n\nSLIDE 4:\nHeading: Balancing Freedom and Protection\nBody: The proposal aims to protect children from explicit content while preserving adults' freedom of expression. This balance is crucial, as overly restrictive measures can infringe on individual rights. It's essential to consider the potential impact on both children and adults.\n\nSLIDE 5:\nHeading: Implementation Challenges\nBody: Implementing these technical solutions and age verification processes will be a significant challenge for tech firms. I've seen similar initiatives face difficulties in the past, including issues with data privacy and security. Companies must navigate these complexities to comply with the proposed regulations.\n\nSLIDE 6:\nHeading: Broader GRC Implications\nBody: This proposal has broader implications for GRC professionals, as it highlights the importance of considering social responsibility and regulatory requirements. It's a reminder that our work extends beyond compliance, to addressing the human impact of technology. We must stay informed about such developments to advise our organizations effectively.\n\nSLIDE 7:\nHeading: Join the Conversation\nBody: Follow me for more insights on GRC and technology. Share your thoughts on this proposal and its potential impact on the tech industry. Comment below with your questions or concerns, and let's discuss the implications for GRC professionals.",
   "based_on": {
-    "title": "GRC Content Copilot Initialized",
-    "url": "https://github.com/SathyaSivam-GRCNexis/grc-copilot",
-    "source": "System"
+    "title": "Big tech firms must stop young people circulating nude images, says UK PM Starmer",
+    "url": "https://economictimes.indiatimes.com/tech/technology/big-tech-firms-must-stop-young-people-circulating-nude-images-says-uk-pm-starmer/articleshow/131583301.cms",
+    "source": "Tech-Economic Times"
   },
-  "generated_at": "2026-06-08T12:00:00",
+  "generated_at": "2026-06-08T10:19:11.089340",
   "type": "carousel"
 }
