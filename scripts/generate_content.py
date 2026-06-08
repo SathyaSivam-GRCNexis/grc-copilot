@@ -1,18 +1,29 @@
 """
-Content Generator with Rate Limit Handling
+Content Generator with Engagement-Optimized Templates
 """
 
 import os
 import json
 import time
+import random
 from datetime import datetime
 from groq import Groq
 from config import (
     VOICE_PROFILE, 
-    LINKEDIN_POST_PROMPT, 
+    LINKEDIN_POST_PROMPT,
+    INSIGHT_POST_PROMPT,
+    CONTRARIAN_POST_PROMPT,
+    CAREER_POST_PROMPT,
+    MISTAKE_POST_PROMPT,
+    FRAMEWORK_POST_PROMPT,
+    NEWS_ANALYSIS_POST_PROMPT,
+    PERSONAL_STORY_POST_PROMPT,
     CAROUSEL_PROMPT, 
     NEWSLETTER_PROMPT,
-    NEWSLETTER_SERIES
+    NEWSLETTER_SERIES,
+    POST_TEMPLATES,
+    DAY_TEMPLATE_ROTATION,
+    DOMAIN_HOOKS
 )
 
 # Try to import Gemini
@@ -109,31 +120,151 @@ def generate_content(clients, prompt, max_tokens=4000):
     return generate_with_groq(clients["groq"], prompt, max_tokens)
 
 
+def get_template_for_today():
+    """Get the post template based on day of week"""
+    today = datetime.now().weekday()  # 0=Monday, 6=Sunday
+    template_key = DAY_TEMPLATE_ROTATION.get(today, "insight")
+    return template_key, POST_TEMPLATES.get(template_key, POST_TEMPLATES["insight"])
+
+
+def get_domain_hooks(domain):
+    """Get hook examples for a specific domain"""
+    hooks = DOMAIN_HOOKS.get(domain, DOMAIN_HOOKS.get("GRC", []))
+    return "\n".join(f"• {hook}" for hook in hooks[:5])
+
+
+def get_template_prompt(template_key):
+    """Get the specific prompt for a template type"""
+    prompts = {
+        "insight": INSIGHT_POST_PROMPT,
+        "contrarian": CONTRARIAN_POST_PROMPT,
+        "career": CAREER_POST_PROMPT,
+        "mistake": MISTAKE_POST_PROMPT,
+        "framework": FRAMEWORK_POST_PROMPT,
+        "news_analysis": NEWS_ANALYSIS_POST_PROMPT,
+        "personal_story": PERSONAL_STORY_POST_PROMPT
+    }
+    return prompts.get(template_key, INSIGHT_POST_PROMPT)
+
+
 def generate_linkedin_post(article, clients):
-    """Generate original LinkedIn post inspired by article topic (copyright-safe)"""
+    """Generate engagement-optimized LinkedIn post using day-appropriate template"""
     
-    prompt = LINKEDIN_POST_PROMPT.format(
+    # Get today's template
+    template_key, template_info = get_template_for_today()
+    
+    # Get primary domain
+    domains = article.get('domains', ['GRC'])
+    primary_domain = domains[0] if domains else 'GRC'
+    
+    # Get domain-specific hooks
+    hooks = get_domain_hooks(primary_domain)
+    
+    # Get the template-specific prompt
+    template_prompt = get_template_prompt(template_key)
+    
+    prompt = template_prompt.format(
         voice_profile=VOICE_PROFILE,
         title=article['title'],
-        why_it_matters=article.get('score_reason', 'Important for GRC professionals')
+        domain=primary_domain,
+        why_it_matters=article.get('why_it_matters', article.get('score_reason', 'Important for GRC professionals')),
+        domain_hooks=hooks
     )
     
-    print("    Generating original LinkedIn post...")
+    print(f"    Using {template_info['name']} template for {primary_domain}...")
+    print(f"    Generating engagement-optimized LinkedIn post...")
     content = generate_content(clients, prompt, max_tokens=1000)
     
     post_data = {
         "content": content,
+        "template_used": template_key,
+        "template_name": template_info['name'],
         "inspired_by": {
             "topic": article['title'],
-            "concept": article.get('score_reason', ''),
-            "domains": article.get('domains', ['GRC'])
+            "concept": article.get('why_it_matters', article.get('score_reason', '')),
+            "domains": domains
         },
+        "domain": primary_domain,
         "generated_at": datetime.now().isoformat(),
+        "day_of_week": datetime.now().strftime("%A"),
         "type": "text_post",
         "copyright_safe": True
     }
     
     return post_data
+
+
+def generate_all_domain_posts(articles, clients):
+    """Generate one post per domain using different templates"""
+    
+    # Group articles by domain
+    domain_articles = {}
+    for article in articles:
+        domains = article.get('domains', ['GRC'])
+        for domain in domains:
+            if domain not in domain_articles:
+                domain_articles[domain] = []
+            domain_articles[domain].append(article)
+    
+    # Templates to rotate through
+    template_keys = list(POST_TEMPLATES.keys())
+    
+    all_posts = []
+    
+    for i, (domain, domain_arts) in enumerate(domain_articles.items()):
+        if not domain_arts:
+            continue
+            
+        # Pick best article for this domain
+        best_article = max(domain_arts, key=lambda x: x.get('total_score', 0))
+        
+        # Rotate template for variety
+        template_key = template_keys[i % len(template_keys)]
+        template_info = POST_TEMPLATES[template_key]
+        
+        # Get domain-specific hooks
+        hooks = get_domain_hooks(domain)
+        
+        # Get the template-specific prompt
+        template_prompt = get_template_prompt(template_key)
+        
+        prompt = template_prompt.format(
+            voice_profile=VOICE_PROFILE,
+            title=best_article['title'],
+            domain=domain,
+            why_it_matters=best_article.get('why_it_matters', best_article.get('score_reason', '')),
+            domain_hooks=hooks
+        )
+        
+        print(f"    Generating {template_info['name']} for {domain}...")
+        
+        try:
+            content = generate_content(clients, prompt, max_tokens=1000)
+            
+            post_data = {
+                "content": content,
+                "template_used": template_key,
+                "template_name": template_info['name'],
+                "domain": domain,
+                "inspired_by": {
+                    "topic": best_article['title'],
+                    "concept": best_article.get('why_it_matters', ''),
+                },
+                "generated_at": datetime.now().isoformat(),
+                "type": "text_post",
+                "copyright_safe": True
+            }
+            
+            all_posts.append(post_data)
+            
+            # Rate limit protection
+            time.sleep(2)
+            
+        except Exception as e:
+            print(f"    Error generating post for {domain}: {e}")
+            continue
+    
+    return all_posts
 
 
 def generate_carousel(article, clients):
@@ -271,14 +402,21 @@ if __name__ == "__main__":
         articles = json.load(f)
     
     if articles:
+        # Generate today's main post (template based on day of week)
         top_article = articles[0]
-        
         post = generate_linkedin_post(top_article, clients)
         save_content(post, "data/linkedin_post.json")
         
+        # Generate posts for all domains (for content library)
+        print("\n  Generating domain-specific posts...")
+        all_domain_posts = generate_all_domain_posts(articles[:20], clients)
+        save_content(all_domain_posts, "data/domain_posts.json")
+        
+        # Generate carousel from top article
         carousel = generate_carousel(top_article, clients)
         save_content(carousel, "data/carousel.json")
         
+        # Generate newsletter (only on Tuesdays)
         newsletter = generate_newsletter(articles[:5], clients)
         if newsletter:
             save_content(newsletter, "data/newsletter.json")

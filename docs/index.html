@@ -1038,12 +1038,13 @@
         // Load Data
         async function loadData() {
             try {
-                const [newsRes, postRes, carouselRes, newsletterRes, historyRes] = await Promise.all([
+                const [newsRes, postRes, carouselRes, newsletterRes, historyRes, domainPostsRes] = await Promise.all([
                     fetch('data/articles.json').catch(() => ({ ok: false })),
                     fetch('data/linkedin_post.json').catch(() => ({ ok: false })),
                     fetch('data/carousel.json').catch(() => ({ ok: false })),
                     fetch('data/newsletter.json').catch(() => ({ ok: false })),
-                    fetch('data/content_history.json').catch(() => ({ ok: false }))
+                    fetch('data/content_history.json').catch(() => ({ ok: false })),
+                    fetch('data/domain_posts.json').catch(() => ({ ok: false }))
                 ]);
                 
                 if (newsRes.ok) newsData = await newsRes.json();
@@ -1057,7 +1058,22 @@
                         title: post.inspired_by?.topic || 'Latest Post',
                         linkedin_post: post.content,
                         domains: post.inspired_by?.domains || ['GRC'],
+                        template_used: post.template_name || 'Insight',
                         generated_at: post.generated_at
+                    });
+                }
+                
+                // Get domain-specific posts
+                if (domainPostsRes.ok) {
+                    const domainPosts = await domainPostsRes.json();
+                    domainPosts.forEach(post => {
+                        contentData.push({
+                            title: post.inspired_by?.topic || 'Domain Post',
+                            linkedin_post: post.content,
+                            domains: [post.domain || 'GRC'],
+                            template_used: post.template_name || 'Insight',
+                            generated_at: post.generated_at
+                        });
                     });
                 }
                 
@@ -1065,7 +1081,13 @@
                 if (historyRes.ok) {
                     const history = await historyRes.json();
                     if (Array.isArray(history)) {
-                        contentData = [...history, ...contentData];
+                        // Merge without duplicates
+                        const existingTitles = new Set(contentData.map(c => c.title));
+                        history.forEach(h => {
+                            if (!existingTitles.has(h.title)) {
+                                contentData.push(h);
+                            }
+                        });
                     }
                 }
                 
@@ -1171,14 +1193,25 @@
                 return;
             }
             
-            document.getElementById('contentList').innerHTML = posts.slice().reverse().map((post, i) => {
+            // Sort by date, newest first
+            const sorted = posts.slice().sort((a, b) => {
+                const dateA = new Date(a.generated_at || 0);
+                const dateB = new Date(b.generated_at || 0);
+                return dateB - dateA;
+            });
+            
+            document.getElementById('contentList').innerHTML = sorted.map((post, i) => {
                 const domain = (post.domains && post.domains[0]) || 'GRC';
                 const domainClass = domain.toLowerCase();
+                const template = post.template_used || 'Insight';
                 
                 return `
                     <div class="content-item">
                         <div class="content-item-header">
-                            <span class="domain-tag ${domainClass}">${domain}</span>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <span class="domain-tag ${domainClass}">${domain}</span>
+                                <span style="font-size: 0.7rem; color: var(--text-muted);">${template}</span>
+                            </div>
                             <span class="content-item-date">${post.generated_at ? new Date(post.generated_at).toLocaleDateString() : 'Recent'}</span>
                         </div>
                         <div class="content-item-topic">${post.title || 'Untitled'}</div>

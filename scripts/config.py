@@ -179,7 +179,7 @@ VOICE_PROFILE = """
 Writing style characteristics:
 - Professional but conversational - like explaining to a smart colleague
 - Use first person occasionally ("I've noticed...", "In my experience...")
-- Short paragraphs (2-3 sentences max)
+- Short paragraphs (1-2 sentences max for LinkedIn - white space matters!)
 - One clear takeaway per piece
 - End with a specific, genuine question (not "Thoughts?")
 - Use analogies to explain complex concepts
@@ -201,12 +201,229 @@ BANNED PHRASES (never use these):
 - "Thoughts? 👇"
 - "As an AI"
 - "As a language model"
+- "Here's the thing"
+- "Let me explain"
+- "Breaking down"
 
 TONE:
-- 70% educational (teach something useful)
-- 20% conversational (relatable examples)
-- 10% thought-leadership (strong opinions backed by reasoning)
+- 40% Educational (frameworks, lessons)
+- 30% Opinion (contrarian viewpoints, observations)
+- 20% Personal (stories, experiences)
+- 10% Industry commentary
 """
+
+# Post Templates by Type
+POST_TEMPLATES = {
+    "insight": {
+        "name": "Insight Post",
+        "description": "Best for GRC & Security - sharing lessons and observations",
+        "structure": """
+HOOK: Start with a surprising observation (1 line that stops scrolling)
+Examples: "Most ISO 27001 audits don't fail because of missing controls."
+          "The biggest risk register mistake isn't bad scoring."
+
+CONTEXT: What happened? (1-3 short lines)
+
+INSIGHT: What most people misunderstand (the real lesson)
+
+EXAMPLE: Real-world scenario or pattern you've observed
+
+TAKEAWAY: One clear, actionable lesson
+
+ENGAGEMENT: Ask for their perspective (genuine question)
+"""
+    },
+    "contrarian": {
+        "name": "Contrarian Post",
+        "description": "Excellent for visibility - challenge common assumptions",
+        "structure": """
+COMMON BELIEF: "Everyone says X..." (state what people typically believe)
+
+CONTRARIAN VIEW: "I disagree." or "I think that's incomplete."
+
+WHY: 3-5 bullet points explaining your reasoning
+
+NUANCE: When the common belief might still be true (shows intellectual honesty)
+
+QUESTION: Invite discussion
+"""
+    },
+    "career": {
+        "name": "Career Growth Post",
+        "description": "Highest engagement - career lessons and growth",
+        "structure": """
+SETUP: "I used to think..." (past belief)
+
+SHIFT: "But then I learned..." (what changed)
+
+LESSON: Share the career lesson with specific examples
+
+FRAMEWORK: Provide a mental model or framework others can use
+
+ADVICE: End with advice for others at different stages
+
+QUESTION: "What career lesson took you years to learn?"
+"""
+    },
+    "mistake": {
+        "name": "Mistake Post",
+        "description": "Highly relatable - drives comments",
+        "structure": """
+HOOK: "One mistake I see repeatedly..." or "A pattern I keep noticing..."
+
+EXPLAIN: What the mistake actually is (be specific)
+
+CONSEQUENCES: What happens when people make this mistake
+- Use bullet points
+- Keep each point short
+
+SOLUTION: How to avoid it or fix it
+
+QUESTION: Ask if others have seen this too
+"""
+    },
+    "framework": {
+        "name": "Framework Breakdown Post",
+        "description": "Great for authority building - save-worthy content",
+        "structure": """
+PROBLEM: State the problem this framework solves (1-2 lines)
+
+FRAMEWORK NAME: Give it a memorable name if possible
+
+STEPS: 3-7 clear steps
+- Each step: short heading + 1 sentence explanation
+- Use bullet points or numbered list
+- Make each step actionable
+
+APPLICATION: "Whenever I [situation], I start with these questions."
+
+CTA: "Save this framework for your next [situation]."
+"""
+    },
+    "news_analysis": {
+        "name": "News Analysis Post",
+        "description": "Best for staying relevant - industry commentary",
+        "structure": """
+HOOK: Reference the trend/topic (NOT specific article)
+"Everyone is discussing [topic]."
+
+REFRAME: "The more interesting question is..."
+
+ANALYSIS: What GRC professionals should actually pay attention to
+- Bullet points for clarity
+- Focus on implications, not facts
+
+TAKEAWAY: What organizations should do about it
+
+PREDICTION: What this means for the future
+"""
+    },
+    "personal_story": {
+        "name": "Personal Story Post",
+        "description": "Highest trust-building format",
+        "structure": """
+MOMENT: Specific moment in your career (be concrete)
+"Early in my career..." or "Three years ago..."
+
+CHALLENGE: What you struggled with
+
+REALIZATION: The moment something clicked
+
+LESSON: What you learned from it
+
+APPLICATION: How you apply it today
+
+QUESTION: Ask what lessons others learned
+"""
+    }
+}
+
+# Day-to-Template Mapping for Rotation
+DAY_TEMPLATE_ROTATION = {
+    0: "contrarian",      # Monday - Contrarian Opinion
+    1: "framework",       # Tuesday - Framework Breakdown
+    2: "career",          # Wednesday - Career Lesson
+    3: "news_analysis",   # Thursday - Industry Analysis
+    4: "mistake",         # Friday - Mistake / Myth
+    5: "personal_story",  # Saturday - Personal Story
+    6: "insight"          # Sunday - Insight / AI Trends
+}
+
+# Domain-Specific Hook Libraries
+DOMAIN_HOOKS = {
+    "GRC": [
+        "Most risk registers fail before anyone calculates risk.",
+        "The biggest compliance gap isn't in your controls.",
+        "After reviewing 100+ audit reports, one pattern stands out.",
+        "Most GRC programs measure the wrong things.",
+        "The difference between compliance and security isn't what you think.",
+        "I changed my mind about risk quantification.",
+        "Most governance frameworks miss the point entirely.",
+        "An unpopular opinion about SOC 2:",
+        "The hardest part of GRC isn't technical.",
+        "If I were starting in GRC today, I'd focus on one thing:",
+    ],
+    "Security": [
+        "Most security programs fail at the basics.",
+        "The biggest vulnerability isn't technical.",
+        "After 10 years in security, one truth keeps proving itself.",
+        "Nobody talks about the real reason breaches happen.",
+        "An unpopular opinion about zero trust:",
+        "Most security awareness training doesn't work.",
+        "The security tool you already have is probably enough.",
+        "Most incident response plans fail the first test.",
+        "Security teams measure the wrong metrics.",
+        "Here's what surprised me about mature security programs:",
+    ],
+    "Privacy": [
+        "Most privacy programs focus on the wrong risk.",
+        "GDPR compliance isn't about the GDPR.",
+        "The biggest privacy mistake isn't a data breach.",
+        "Privacy by design sounds great until you try to implement it.",
+        "An unpopular opinion about consent management:",
+        "Most privacy notices fail their primary purpose.",
+        "Data minimization is simple in theory, complex in practice.",
+        "The privacy risk nobody is talking about:",
+        "After reviewing 50+ privacy programs, one gap stands out.",
+        "Most DPIAs miss the point entirely.",
+    ],
+    "AI": [
+        "Everyone says 'learn AI before it's too late.'",
+        "The AI risk nobody is preparing for:",
+        "Most AI governance frameworks are premature.",
+        "An unpopular opinion about AI regulation:",
+        "AI tools aren't the problem. AI governance is.",
+        "The biggest AI risk isn't hallucinations.",
+        "Most organizations aren't ready for AI accountability.",
+        "AI compliance will look nothing like traditional compliance.",
+        "The real AI skill GRC professionals need:",
+        "I changed my mind about AI in GRC.",
+    ],
+    "DevSecOps": [
+        "Most DevSecOps programs fail at culture, not tools.",
+        "The shift-left movement has a blind spot.",
+        "Security in CI/CD pipelines isn't about the pipeline.",
+        "An unpopular opinion about SAST tools:",
+        "Most vulnerability management programs are reactive.",
+        "The best security engineers I know do this differently:",
+        "Container security isn't about containers.",
+        "Infrastructure as Code created new risks nobody prepared for.",
+        "The DevSecOps metric that actually matters:",
+        "Most security gates slow teams down unnecessarily.",
+    ],
+    "Product": [
+        "Most product security programs start too late.",
+        "The best product managers understand risk differently.",
+        "Security requirements shouldn't slow down sprints.",
+        "An unpopular opinion about security debt:",
+        "Product teams and security teams speak different languages.",
+        "The feature vs. security tradeoff is a false choice.",
+        "Most threat modeling fails because of timing.",
+        "User experience and security aren't opposites.",
+        "The product security hire most companies need:",
+        "I changed my mind about security champions.",
+    ]
+}
 
 NEWSLETTER_SERIES = {
     "name": "From Non-Tech to Tech-Aware GRC",
@@ -272,48 +489,192 @@ Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product
 """
 
 LINKEDIN_POST_PROMPT = """
+You are writing a LinkedIn post for a GRC professional building thought leadership.
+
+CRITICAL: The goal is NOT to teach everything. The goal is to make someone STOP SCROLLING, read, learn ONE thing, and ENGAGE.
+
 {voice_profile}
 
-Write an ORIGINAL LinkedIn post inspired by this news topic. DO NOT copy or summarize the article.
-Instead, share YOUR OWN perspective, experience, or educational insight about the UNDERLYING CONCEPT.
+TOPIC INSPIRATION (use as springboard, NOT to summarize):
+- Concept: {title}
+- Why it matters: {why_it_matters}
+- Domain: {domain}
 
-INSPIRATION TOPIC (do not copy - use as a springboard for original thought):
-Title: {title}
-Core concept: {why_it_matters}
+POST TEMPLATE TO USE: {template_name}
+{template_structure}
 
-COPYRIGHT-SAFE APPROACH:
-- DO NOT quote or paraphrase the source article
-- DO NOT mention specific details, statistics, or facts from the article
-- DO write about the general CONCEPT or PRINCIPLE the news represents
-- DO share your own perspective, framework, or teaching point
-- DO use hypothetical examples or general industry knowledge
-- The post should make sense even if reader never sees the source article
+DOMAIN-SPECIFIC HOOKS TO CONSIDER:
+{domain_hooks}
 
-STRUCTURE YOUR POST:
-1. **Hook** (first line): A thought-provoking statement about the concept (NOT about the news)
-   - Good: "Most compliance programs fail not because of bad policies, but because nobody reads them."
-   - Bad: "Did you hear about the latest breach at XYZ company?"
+FORMATTING RULES (LinkedIn-specific):
+1. First line is EVERYTHING - must stop the scroll
+2. Short paragraphs (1-2 sentences MAX)
+3. Use line breaks generously (white space = readability)
+4. Bullet points for lists (use • not -)
+5. No hashtags in the middle of content
+6. 3-4 hashtags at the very end only
+7. No emojis except maybe 1 at most
+8. 150-250 words total
 
-2. **Your insight** (2-3 paragraphs): Share YOUR take on this concept
-   - Why this matters in general (not specific to this news)
-   - What you've learned from experience
-   - A framework or mental model you use
+ENGAGEMENT FORMULA:
+- Hook that creates curiosity or challenges assumption
+- Tension or problem (what's wrong/misunderstood)
+- Insight (your unique perspective)
+- Practical takeaway (one actionable thing)
+- Engagement trigger (genuine question, not "Thoughts?")
 
-3. **Teaching moment**: Explain the underlying principle in simple terms
+BANNED:
+- Article summaries or quotes
+- Specific company names from news
+- Statistics from the source
+- "In today's world", "Let's dive in", "Game-changer", "Leverage", "Robust"
+- "Thoughts?" as a closer
+- Multiple CTAs
 
-4. **Practical takeaway**: One actionable insight for the reader
+Write the post now. Make every line earn its place.
+"""
 
-5. **Genuine question**: Ask something thought-provoking about the concept
+# Template-specific prompts for each post type
+INSIGHT_POST_PROMPT = """
+{voice_profile}
 
-REQUIREMENTS:
-- 150-250 words total
-- This must be 100% ORIGINAL content - your thoughts, not article summary
-- No quotes, statistics, or specific details from the source
-- Write as if sharing wisdom from your experience
-- Maximum 2 emojis (or none)
-- 3-4 hashtags at the end
+Write an INSIGHT POST about this concept:
+Topic: {title}
+Domain: {domain}
+Why it matters: {why_it_matters}
 
-Write an ORIGINAL post about the underlying concept now:
+STRUCTURE:
+HOOK: One surprising observation (stops the scroll)
+CONTEXT: 1-3 short lines setting up the insight  
+INSIGHT: What most people misunderstand
+EXAMPLE: A pattern you've observed (hypothetical is fine)
+TAKEAWAY: One clear lesson
+QUESTION: Ask for their perspective
+
+HOOK OPTIONS FOR {domain}:
+{domain_hooks}
+
+Keep it 150-200 words. Make every line matter.
+"""
+
+CONTRARIAN_POST_PROMPT = """
+{voice_profile}
+
+Write a CONTRARIAN POST challenging common belief about:
+Topic: {title}
+Domain: {domain}
+
+STRUCTURE:
+COMMON BELIEF: "Everyone says..." (state what people typically believe)
+CONTRARIAN VIEW: "I disagree." or "That's incomplete."
+WHY: 3-5 bullet points with your reasoning
+NUANCE: When the common belief might still apply
+QUESTION: Invite discussion
+
+Be bold but intellectually honest. Show you've thought deeply about this.
+150-200 words.
+"""
+
+CAREER_POST_PROMPT = """
+{voice_profile}
+
+Write a CAREER LESSON POST inspired by:
+Topic: {title}
+Domain: {domain}
+
+STRUCTURE:
+"I used to think..." (past belief about {domain})
+"But then I learned..." (what changed your mind)
+LESSON: The career insight with specific examples
+FRAMEWORK: A mental model others can apply
+ADVICE: For people at different career stages
+QUESTION: "What career lesson took you years to learn?"
+
+Make it personal and specific. 150-200 words.
+"""
+
+MISTAKE_POST_PROMPT = """
+{voice_profile}
+
+Write a MISTAKE POST about a common error in:
+Topic: {title}
+Domain: {domain}
+
+STRUCTURE:
+HOOK: "One mistake I see repeatedly..." or "A pattern I keep noticing..."
+EXPLAIN: What the mistake actually is (be specific)
+CONSEQUENCES: What happens (use bullet points)
+• Consequence 1
+• Consequence 2
+• Consequence 3
+SOLUTION: How to avoid or fix it
+QUESTION: Ask if others have seen this
+
+Be specific about the mistake. 150-200 words.
+"""
+
+FRAMEWORK_POST_PROMPT = """
+{voice_profile}
+
+Write a FRAMEWORK POST teaching a mental model for:
+Topic: {title}
+Domain: {domain}
+
+STRUCTURE:
+PROBLEM: State what problem this framework solves (1-2 lines)
+FRAMEWORK: Give it a name if possible, then list 3-5 steps:
+
+Step 1: [Name]
+Brief explanation
+
+Step 2: [Name]
+Brief explanation
+
+(continue for 3-5 steps)
+
+APPLICATION: "Whenever I [situation], I start with these questions."
+CTA: "Save this framework for your next [situation]."
+
+Make each step actionable. 150-250 words.
+"""
+
+NEWS_ANALYSIS_POST_PROMPT = """
+{voice_profile}
+
+Write a NEWS ANALYSIS POST about this trend/topic:
+Topic: {title}
+Domain: {domain}
+Context: {why_it_matters}
+
+STRUCTURE:
+HOOK: "Everyone is discussing [general topic]." (NOT the specific article)
+REFRAME: "The more interesting question is..."
+ANALYSIS: What {domain} professionals should actually focus on
+• Point 1
+• Point 2  
+• Point 3
+TAKEAWAY: What organizations should do
+PREDICTION: What this means for the future
+
+Focus on implications, not facts from news. 150-200 words.
+"""
+
+PERSONAL_STORY_POST_PROMPT = """
+{voice_profile}
+
+Write a PERSONAL STORY POST inspired by:
+Topic: {title}
+Domain: {domain}
+
+STRUCTURE:
+MOMENT: "Early in my career..." or "X years ago..." (specific moment)
+CHALLENGE: What you struggled with
+REALIZATION: The moment something clicked
+LESSON: What you learned
+APPLICATION: How you apply it today
+QUESTION: Ask what lessons others learned
+
+Make it vulnerable and specific. 150-200 words.
 """
 
 CAROUSEL_PROMPT = """

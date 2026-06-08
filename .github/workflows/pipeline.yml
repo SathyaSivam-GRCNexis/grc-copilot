@@ -43,6 +43,7 @@ jobs:
           cp data/carousel.json docs/data/
           cp data/newsletter.json docs/data/ 2>/dev/null || true
           cp data/articles.json docs/data/
+          cp data/domain_posts.json docs/data/ 2>/dev/null || true
           
           # Accumulate content history (append new posts)
           python3 << 'EOF'
@@ -56,37 +57,60 @@ jobs:
           except:
               history = []
           
-          # Load new post
+          existing_titles = set(h.get('title', '') for h in history)
+          new_count = 0
+          
+          # Add today's main post
           try:
               with open('data/linkedin_post.json', 'r') as f:
                   new_post = json.load(f)
               
-              # Create history entry
               entry = {
                   'title': new_post.get('inspired_by', {}).get('topic', 'Unknown'),
                   'linkedin_post': new_post.get('content', ''),
                   'domains': new_post.get('inspired_by', {}).get('domains', ['GRC']),
+                  'template_used': new_post.get('template_name', 'Insight'),
                   'generated_at': new_post.get('generated_at', datetime.now().isoformat())
               }
               
-              # Check if this is a duplicate (same title)
-              existing_titles = [h.get('title', '') for h in history]
               if entry['title'] not in existing_titles:
                   history.append(entry)
-                  print(f"Added new post to history: {entry['title']}")
-              else:
-                  print(f"Skipping duplicate: {entry['title']}")
-              
-              # Keep last 100 posts
-              history = history[-100:]
-              
-              # Save history
-              with open('docs/data/content_history.json', 'w') as f:
-                  json.dump(history, f, indent=2)
-              
-              print(f"Content history now has {len(history)} posts")
+                  existing_titles.add(entry['title'])
+                  new_count += 1
+                  print(f"Added main post: {entry['title']}")
           except Exception as e:
-              print(f"Error updating history: {e}")
+              print(f"Error with main post: {e}")
+          
+          # Add domain-specific posts
+          try:
+              with open('data/domain_posts.json', 'r') as f:
+                  domain_posts = json.load(f)
+              
+              for post in domain_posts:
+                  entry = {
+                      'title': post.get('inspired_by', {}).get('topic', 'Unknown'),
+                      'linkedin_post': post.get('content', ''),
+                      'domains': [post.get('domain', 'GRC')],
+                      'template_used': post.get('template_name', 'Insight'),
+                      'generated_at': post.get('generated_at', datetime.now().isoformat())
+                  }
+                  
+                  if entry['title'] not in existing_titles:
+                      history.append(entry)
+                      existing_titles.add(entry['title'])
+                      new_count += 1
+                      print(f"Added {post.get('domain')} post: {entry['title'][:50]}...")
+          except Exception as e:
+              print(f"Error with domain posts: {e}")
+          
+          # Keep last 200 posts
+          history = history[-200:]
+          
+          # Save history
+          with open('docs/data/content_history.json', 'w') as f:
+              json.dump(history, f, indent=2)
+          
+          print(f"Added {new_count} new posts. History now has {len(history)} total.")
           EOF
 
       - name: Commit and push changes
