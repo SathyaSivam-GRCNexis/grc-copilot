@@ -1,11 +1,43 @@
 {
-  "slides": [],
-  "raw_content": "**SLIDE 1:**\n**SolarWinds Serv-U Under Attack Again**\n\nThe CISA has confirmed a new vulnerability in SolarWinds Serv-U, and it's being actively exploited by attackers.\n\n**SLIDE 2:**\n**What is CVE-2026-28318?**\nCVE-2026-28318 is a type of vulnerability that allows remote attackers to crash a SolarWinds Serv-U server by consuming too many system resources. Think of it like a computer trying to run too many apps at the same time \u2013 it eventually crashes.\n\n**SLIDE 3:**\n**How Does it Work?**\nAttackers can trigger this vulnerability without needing a password, making it a serious security risk. Imagine someone sending a never-ending stream of emails to your inbox \u2013 eventually, your email client would crash.\n\n**SLIDE 4:**\n**Why is it a Big Deal?**\nThis vulnerability can allow attackers to disrupt critical business services, making it a priority for organizations to address. Consider a hospital's patient database \u2013 if it crashes, patient care is severely impacted.\n\n**SLIDE 5:**\n**What's the Deadline?**\nUS federal civilian agencies must address this vulnerability by June 19, 2026, either by implementing a patch or mitigations. Think of it like a deadline to complete a critical project \u2013 failure to do so can have severe consequences.\n\n**SLIDE 6:**\n**What This Means For You**\nDon't wait for the deadline \u2013 patch or mitigate this vulnerability now to prevent potential business disruptions. It's like performing routine car maintenance \u2013 regular checks can prevent costly repairs down the road.\n\n**SLIDE 7:**\nFollow for more GRC insights to stay ahead of emerging security threats and stay secure in a rapidly changing landscape.",
-  "based_on": {
-    "title": "CISA: Patch actively exploited SolarWinds Serv-U DoS vulnerability (CVE-2026-28318)",
-    "url": "https://www.helpnetsecurity.com/2026/06/08/cisa-patch-actively-exploited-solarwinds-serv-u-dos-vulnerability-cve-2026-28318/",
-    "source": "Help Net Security"
+  "slides": [
+    {
+      "slide_number": 1,
+      "content": "**The Fragility of Software Supply Chains**\nImagine a delicate web of interconnected components, where a single weak thread can unravel the entire system. This is the reality of software supply chains, where vulnerabilities can spread like a virus.\n"
+    },
+    {
+      "slide_number": 2,
+      "content": "**The Domino Effect of Unpatched Vulnerabilities**\nWhat happens when a developer uses a vulnerable library in their code? It's like a game of dominoes - one fall triggers the next. Unpatched vulnerabilities can cascade through the entire supply chain, putting organizations at risk.\n"
+    },
+    {
+      "slide_number": 3,
+      "content": "**The Blind Spot of Third-Party Dependencies**\nThink of third-party dependencies like subcontractors on a construction site. While they might seem harmless, a single subcontractor with a security issue can compromise the entire project. In software, these dependencies can be just as vulnerable.\n"
+    },
+    {
+      "slide_number": 4,
+      "content": "**The Challenge of Real-Time Threat Detection**\nImagine trying to keep up with a rapidly changing enemy's movements in a war zone. This is what threat detection in DevSecOps can feel like - a cat-and-mouse game where the enemy is always evolving.\n"
+    },
+    {
+      "slide_number": 5,
+      "content": "**The Importance of Continuous Integration and Delivery**\nPicture a pipeline where ingredients are constantly flowing in and out. This is what continuous integration and delivery look like in DevOps. By monitoring this pipeline, organizations can catch security issues before they become major problems.\n"
+    },
+    {
+      "slide_number": 6,
+      "content": "**What This Means For You**\nTo stay ahead of emerging security threats, prioritize continuous monitoring and testing of your software supply chain. This means implementing robust security measures, such as automated vulnerability scanning and penetration testing, to identify and address potential weaknesses before they become major issues.\n"
+    },
+    {
+      "slide_number": 7,
+      "content": "Stay secure in a rapidly changing landscape by following us for more GRC insights and expert advice on emerging security threats.\n"
+    }
+  ],
+  "raw_content": "**SLIDE 1:** \n**The Fragility of Software Supply Chains**\n\nImagine a delicate web of interconnected components, where a single weak thread can unravel the entire system. This is the reality of software supply chains, where vulnerabilities can spread like a virus.\n\n**SLIDE 2:** \n**The Domino Effect of Unpatched Vulnerabilities**\n\nWhat happens when a developer uses a vulnerable library in their code? It's like a game of dominoes - one fall triggers the next. Unpatched vulnerabilities can cascade through the entire supply chain, putting organizations at risk.\n\n**SLIDE 3:** \n**The Blind Spot of Third-Party Dependencies**\n\nThink of third-party dependencies like subcontractors on a construction site. While they might seem harmless, a single subcontractor with a security issue can compromise the entire project. In software, these dependencies can be just as vulnerable.\n\n**SLIDE 4:** \n**The Challenge of Real-Time Threat Detection**\n\nImagine trying to keep up with a rapidly changing enemy's movements in a war zone. This is what threat detection in DevSecOps can feel like - a cat-and-mouse game where the enemy is always evolving.\n\n**SLIDE 5:** \n**The Importance of Continuous Integration and Delivery**\n\n Picture a pipeline where ingredients are constantly flowing in and out. This is what continuous integration and delivery look like in DevOps. By monitoring this pipeline, organizations can catch security issues before they become major problems.\n\n**SLIDE 6:** \n**What This Means For You**\n\nTo stay ahead of emerging security threats, prioritize continuous monitoring and testing of your software supply chain. This means implementing robust security measures, such as automated vulnerability scanning and penetration testing, to identify and address potential weaknesses before they become major issues.\n\n**SLIDE 7:** \nStay secure in a rapidly changing landscape by following us for more GRC insights and expert advice on emerging security threats.",
+  "inspired_by": {
+    "topic": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
+    "domains": [
+      "Security",
+      "DevSecOps"
+    ]
   },
-  "generated_at": "2026-06-08T11:32:42.626695",
-  "type": "carousel"
+  "generated_at": "2026-06-08T11:52:38.406890",
+  "type": "carousel",
+  "copyright_safe": true
 }
