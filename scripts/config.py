@@ -1,68 +1,162 @@
-# Configuration
+# Configuration - Curated Sources for Top 1% GRC Educator
+# Based on 5-world consumption: GRC, Security, Privacy, DevSecOps, AI/Product
 
-# RSS Feeds organized by domain - from Blueprint Appendix A
-RSS_FEEDS = [
-    # ===================
-    # SECURITY
-    # ===================
-    "https://feeds.feedburner.com/TheHackersNews",  # The Hacker News
-    "https://www.bleepingcomputer.com/feed/",  # BleepingComputer
-    "https://krebsonsecurity.com/feed/",  # Krebs on Security
-    "https://www.schneier.com/feed/atom/",  # Schneier on Security
-    "https://www.darkreading.com/rss.xml",  # Dark Reading
-    "https://www.csoonline.com/index.rss",  # CSO Online
-    "https://threatpost.com/feed/",  # Threatpost
-    "https://www.securityweek.com/feed",  # Security Week
-    "https://nakedsecurity.sophos.com/feed/",  # Sophos Naked Security
-    "https://blog.talosintelligence.com/feeds/posts/default",  # Cisco Talos
+# =============================================================================
+# RSS FEEDS - Organized by Priority
+# =============================================================================
+
+# TOP 20 PRIORITY SOURCES (Read Weekly)
+RSS_FEEDS_PRIORITY = [
+    # GRC & Compliance (6)
+    "https://grcpros.com/feed/",  # GRC Pros
+    "https://allaboutgrc.com/feed/",  # All About GRC
+    "https://www.sprinto.com/blog/feed/",  # Sprinto - Modern compliance
+    "https://drata.com/blog/rss.xml",  # Drata
+    "https://scrut.io/blog/feed/",  # Scrut
     
-    # ===================
-    # GRC / COMPLIANCE
-    # ===================
-    "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/rss",  # ISACA
-    "https://www.nist.gov/news-events/news/rss.xml",  # NIST News
-    "https://www.helpnetsecurity.com/feed/",  # Help Net Security (GRC focus)
-    "https://www.complianceweek.com/rss/all.rss",  # Compliance Week
-    
-    # ===================
-    # PRIVACY
-    # ===================
-    "https://iapp.org/rss/",  # IAPP - International Association of Privacy Professionals
-    "https://www.privacyaffairs.com/feed/",  # Privacy Affairs
-    "https://gdpr.eu/feed/",  # GDPR EU
+    # Privacy (2)
+    "https://iapp.org/rss/",  # IAPP
     "https://fpf.org/feed/",  # Future of Privacy Forum
     
-    # ===================
-    # AI & AI GOVERNANCE
-    # ===================
-    "https://openai.com/blog/rss/",  # OpenAI Blog
-    "https://www.anthropic.com/index.xml",  # Anthropic
-    "https://blog.google/technology/ai/rss/",  # Google AI Blog
-    "https://techcrunch.com/category/artificial-intelligence/feed/",  # TechCrunch AI
-    "https://venturebeat.com/category/ai/feed/",  # VentureBeat AI
-    "https://www.technologyreview.com/feed/",  # MIT Tech Review
+    # Security (4)
+    "https://krebsonsecurity.com/feed/",  # Krebs on Security
+    "https://www.schneier.com/feed/atom/",  # Schneier on Security
+    "https://www.sans.org/newsletters/newsbites/rss/",  # SANS NewsBites
+    "https://feeds.feedburner.com/TheHackersNews",  # The Hacker News
     
-    # ===================
-    # DEVSECOPS
-    # ===================
-    "https://snyk.io/blog/feed/",  # Snyk Blog
-    "https://github.blog/category/security/feed/",  # GitHub Security
-    "https://owasp.org/feed.xml",  # OWASP
-    "https://www.aquasec.com/feed/",  # Aqua Security
-    "https://sysdig.com/blog/feed/",  # Sysdig
+    # Cloud/DevSecOps (2)
+    "https://cloudseclist.com/feed/",  # CloudSecList
+    "https://tldrsec.com/feed/",  # TLDRSec
     
-    # ===================
-    # PRODUCT MANAGEMENT
-    # ===================
+    # AI Governance (3)
+    "https://hai.stanford.edu/news/rss.xml",  # Stanford HAI
+    "https://www.nist.gov/topics/artificial-intelligence/rss.xml",  # NIST AI
+    "https://www.aisnakeoil.com/feed",  # AI Snake Oil
+    
+    # Product (2)
     "https://www.lennysnewsletter.com/feed",  # Lenny's Newsletter
-    "https://www.mindtheproduct.com/feed/",  # Mind the Product
-    "https://www.svpg.com/articles/feed/",  # Silicon Valley Product Group
+    "https://www.svpg.com/articles/feed/",  # SVPG
+]
+
+# SECONDARY SOURCES - All 100 Sources
+RSS_FEEDS = [
+    # ===================
+    # 1. GRC / COMPLIANCE (1-20)
+    # ===================
+    "https://grcpros.com/feed/",
+    "https://allaboutgrc.com/feed/",
+    "https://www.sprinto.com/blog/feed/",
+    "https://drata.com/blog/rss.xml",
+    "https://scrut.io/blog/feed/",
+    "https://www.diligent.com/resources/blog/feed/",
+    "https://www.metricstream.com/blog/feed/",
+    "https://www.auditboard.com/blog/rss/",
+    "https://www.onetrust.com/blog/feed/",
+    "https://hyperproof.io/blog/feed/",
+    "https://secureframe.com/blog/rss.xml",
+    "https://www.vanta.com/blog/rss.xml",
+    "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/rss",
+    "https://iapp.org/rss/",
+    "https://www.rmmagazine.com/feed/",
+    "https://www.navex.com/blog/feed/",
+    "https://www.rsaconference.com/rss.xml",
+    "https://www.complianceweek.com/rss/all.rss",
     
     # ===================
-    # REGULATORY (GLOBAL)
+    # 2. PRIVACY & DATA PROTECTION (21-40)
     # ===================
-    "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",  # FTC Consumer Protection
-    "https://www.enisa.europa.eu/rss.xml",  # ENISA (EU Cybersecurity Agency)
+    "https://fpf.org/feed/",
+    "https://noyb.eu/en/rss.xml",
+    "https://www.edpb.europa.eu/rss_en",
+    "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/",
+    "https://www.cnil.fr/en/rss.xml",
+    "https://www.dataguidance.com/rss.xml",
+    "https://www.privacyaffairs.com/feed/",
+    "https://privacyinternational.org/rss.xml",
+    "https://gdpr.eu/feed/",
+    "https://www.cdt.org/feed/",
+    
+    # ===================
+    # 3. CYBERSECURITY (41-60)
+    # ===================
+    "https://krebsonsecurity.com/feed/",
+    "https://www.schneier.com/feed/atom/",
+    "https://www.sans.org/newsletters/newsbites/rss/",
+    "https://www.sans.org/newsletters/ouch/rss/",
+    "https://www.darkreading.com/rss.xml",
+    "https://feeds.feedburner.com/TheHackersNews",
+    "https://www.bleepingcomputer.com/feed/",
+    "https://www.cisa.gov/news.xml",
+    "https://www.microsoft.com/security/blog/feed/",
+    "https://cloud.google.com/blog/products/identity-security/rss",
+    "https://www.mandiant.com/resources/blog/rss.xml",
+    "https://www.crowdstrike.com/blog/feed/",
+    "https://unit42.paloaltonetworks.com/feed/",
+    "https://blog.rapid7.com/rss/",
+    "https://www.wiz.io/blog/rss.xml",
+    "https://www.tenable.com/blog/feed",
+    "https://www.recordedfuture.com/feed/",
+    "https://cyberscoop.com/feed/",
+    "https://www.securityweek.com/feed",
+    "https://risky.biz/feeds/risky-business/",
+    
+    # ===================
+    # 4. CLOUD SECURITY & DEVSECOPS (61-75)
+    # ===================
+    "https://cloudseclist.com/feed/",
+    "https://tldrsec.com/feed/",
+    "https://apisecurity.io/feed/",
+    "https://owasp.org/feed.xml",
+    "https://snyk.io/blog/feed/",
+    "https://about.gitlab.com/blog/categories/security/feed.xml",
+    "https://www.hashicorp.com/blog/feed.xml",
+    "https://www.chainguard.dev/blog/rss.xml",
+    "https://www.docker.com/blog/feed/",
+    "https://aws.amazon.com/blogs/security/feed/",
+    "https://azure.microsoft.com/en-us/blog/topics/security/feed/",
+    "https://cloud.google.com/blog/products/identity-security/rss",
+    "https://sysdig.com/blog/feed/",
+    "https://www.aquasec.com/feed/",
+    
+    # ===================
+    # 5. AI GOVERNANCE & RESPONSIBLE AI (76-90)
+    # ===================
+    "https://openai.com/blog/rss/",
+    "https://www.anthropic.com/index.xml",
+    "https://www.deepmind.com/blog/rss.xml",
+    "https://hai.stanford.edu/news/rss.xml",
+    "https://news.mit.edu/topic/artificial-intelligence2/rss.xml",
+    "https://partnershiponai.org/feed/",
+    "https://www.nist.gov/topics/artificial-intelligence/rss.xml",
+    "https://oecd.ai/en/feed",
+    "https://blog.mozilla.org/en/category/ai/feed/",
+    "https://huggingface.co/blog/feed.xml",
+    "https://thegradient.pub/rss/",
+    "https://jack-clark.net/feed/",  # Import AI
+    "https://bensbites.beehiiv.com/feed",
+    "https://www.aisnakeoil.com/feed",
+    
+    # ===================
+    # 6. PRODUCT MANAGEMENT (91-100)
+    # ===================
+    "https://www.lennysnewsletter.com/feed",
+    "https://www.mindtheproduct.com/feed/",
+    "https://productcoalition.com/feed",
+    "https://www.svpg.com/articles/feed/",
+    "https://www.producttalk.org/feed/",
+    "https://www.departmentofproduct.com/feed/",
+    "https://review.firstround.com/feed.xml",
+    "https://stratechery.com/feed/",
+    "https://a16z.com/feed/",
+    
+    # ===================
+    # ADDITIONAL HIGH-VALUE SOURCES
+    # ===================
+    "https://www.helpnetsecurity.com/feed/",
+    "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "https://venturebeat.com/category/ai/feed/",
+    "https://www.technologyreview.com/feed/",
+    "https://github.blog/category/security/feed/",
 ]
 
 DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product"]
@@ -96,7 +190,8 @@ Writing style characteristics:
 - One clear takeaway per piece
 - End with a specific, genuine question (not "Thoughts?")
 - Use analogies to explain complex concepts
-- Avoid jargon - if you must use a technical term, explain it
+- Explain WHY controls exist, not just WHAT they say
+- Connect technical concepts to business impact
 
 BANNED PHRASES (never use these):
 - "In today's fast-paced world"
@@ -137,9 +232,9 @@ NEWSLETTER_SERIES = {
     ]
 }
 
-# 4-Dimension Scoring (matching the blueprint)
+# 4-Dimension Scoring
 SCORING_PROMPT = """
-You are scoring a news article for a GRC (Governance, Risk, Compliance) professional.
+You are scoring a news article for a GRC (Governance, Risk, Compliance) professional who wants to become a top 1% educator.
 
 Score this article on FOUR dimensions (each 1-10):
 
@@ -183,7 +278,6 @@ Respond in this exact JSON format:
 Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product
 """
 
-# Humanized LinkedIn Post Prompt (multi-pass approach from blueprint)
 LINKEDIN_POST_PROMPT = """
 {voice_profile}
 
@@ -202,7 +296,7 @@ STRUCTURE YOUR POST:
 
 2. **Context** (2-3 sentences): What happened and why it matters. Use simple words.
 
-3. **The insight** (your take): What most people miss. Be specific.
+3. **The insight** (your take): What most people miss. Be specific. Connect to WHY controls exist.
 
 4. **Practical takeaway**: One thing the reader can do or think about.
 
@@ -211,15 +305,14 @@ STRUCTURE YOUR POST:
 REQUIREMENTS:
 - 150-250 words total
 - Short paragraphs (1-3 sentences each)
-- Maximum 2 emojis (or none - real professionals don't overuse them)
+- Maximum 2 emojis (or none)
 - 3-4 hashtags at the end
-- NO clichés, NO hype words, NO "In today's world..."
-- Write like you're texting a smart friend, not writing a press release
+- NO clichés, NO hype words
+- Write like you're texting a smart friend
 
 Write the post now:
 """
 
-# Carousel content for Canva
 CAROUSEL_PROMPT = """
 {voice_profile}
 
@@ -232,7 +325,6 @@ FORMAT EACH SLIDE:
 
 SLIDE 1: (Title slide - hook them)
 - Bold statement or question (max 8 words)
-- Example: "SOC 2 Audits: What They Don't Tell You"
 
 SLIDE 2-5: (One key point per slide)
 Heading: [3-5 words]
@@ -244,18 +336,16 @@ Body: [Practical action or mindset shift]
 
 SLIDE 7: (Call to action)
 - Follow for more GRC insights
-- Or a specific next step
 
 RULES:
-- Each slide stands alone - someone should get value from any single slide
+- Each slide stands alone
 - No jargon without explanation
 - Use numbers, comparisons, or analogies
-- No walls of text - scannable in 3 seconds
+- Scannable in 3 seconds
 
 Create all 7 slides now:
 """
 
-# Newsletter prompt
 NEWSLETTER_PROMPT = """
 {voice_profile}
 
@@ -271,12 +361,10 @@ STRUCTURE (1500-2000 words total):
 1. **Opening hook** (2-3 paragraphs)
    - Start with a story, question, or surprising fact
    - Connect it to why this topic matters RIGHT NOW
-   - Make non-technical readers feel this is FOR them
 
 2. **The Basics** (3-4 paragraphs)
    - Define the concept in plain English
    - Use an analogy from everyday life
-   - "Think of it like..."
 
 3. **How It Works** (3-4 paragraphs)
    - The mechanics, simplified
@@ -285,24 +373,15 @@ STRUCTURE (1500-2000 words total):
 
 4. **Common Mistakes** (3-4 paragraphs)
    - What organizations get wrong
-   - Why these mistakes happen
    - How to avoid them
 
 5. **Getting Started** (3-4 paragraphs)
    - Practical first steps
    - Free resources (include 2-3 real links)
-   - What to prioritize
 
 6. **Closing** (2 paragraphs)
    - Key takeaway
    - Tease next episode
-
-STYLE:
-- Write like you're teaching a friend over coffee
-- Use "you" and "we" liberally
-- Short paragraphs (max 4 sentences)
-- Headers for each section
-- Bold key terms when first introduced
 
 Write the complete newsletter:
 """

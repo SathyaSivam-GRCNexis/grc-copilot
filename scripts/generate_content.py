@@ -1,9 +1,10 @@
 """
-Content Generator
+Content Generator with Rate Limit Handling
 """
 
 import os
 import json
+import time
 from datetime import datetime
 from groq import Groq
 from config import (
@@ -38,27 +39,58 @@ def init_clients():
     return clients
 
 
-def generate_with_gemini(client, prompt):
-    """Generate content using Gemini"""
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
-    )
-    return response.text
+def generate_with_gemini(client, prompt, retries=3):
+    """Generate content using Gemini with retries"""
+    for attempt in range(retries):
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt
+            )
+            return response.text
+        except Exception as e:
+            if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
+                if attempt < retries - 1:
+                    wait_time = (attempt + 1) * 30
+                    print(f"    Gemini rate limited, waiting {wait_time}s...")
+                    time.sleep(wait_time)
+                else:
+                    raise
+            else:
+                raise
 
 
-def generate_with_groq(client, prompt, max_tokens=4000):
-    """Generate content using Groq"""
-    response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[
-            {"role": "system", "content": "You are a professional content writer. Write naturally, like a human expert sharing insights. Never use AI clichés."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=max_tokens
-    )
-    return response.choices[0].message.content
+def generate_with_groq(client, prompt, max_tokens=4000, retries=3):
+    """Generate content using Groq with retries"""
+    # Use smaller model for better rate limits
+    models = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
+    
+    for model in models:
+        for attempt in range(retries):
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": "You are a professional content writer. Write naturally, like a human expert sharing insights. Never use AI clichés."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    temperature=0.7,
+                    max_tokens=max_tokens
+                )
+                return response.choices[0].message.content
+            except Exception as e:
+                if "429" in str(e) or "rate_limit" in str(e).lower():
+                    if attempt < retries - 1:
+                        wait_time = (attempt + 1) * 20
+                        print(f"    Groq rate limited on {model}, waiting {wait_time}s...")
+                        time.sleep(wait_time)
+                    else:
+                        print(f"    {model} exhausted, trying next model...")
+                        break
+                else:
+                    raise
+    
+    raise Exception("All models rate limited")
 
 
 def generate_content(clients, prompt, max_tokens=4000):
@@ -77,42 +109,9 @@ def generate_content(clients, prompt, max_tokens=4000):
     return generate_with_groq(clients["groq"], prompt, max_tokens)
 
 
-def humanize_content(clients, draft):
-    """Second pass: Remove AI tells and make more human"""
-    
-    humanize_prompt = f"""
-Review this draft and rewrite it to sound MORE HUMAN and LESS like AI:
-
-DRAFT:
-{draft}
-
-REMOVE these AI patterns if present:
-- "In today's world" or similar openers
-- Overuse of "leverage", "robust", "seamless", "delve"
-- Perfect parallelism (rule of threes everywhere)
-- Em-dash overuse
-- Generic engagement questions like "Thoughts?"
-- Overly formal or corporate language
-- Perfect grammar (add some natural variation)
-
-KEEP:
-- The core message and structure
-- Any good examples or analogies
-- Genuine insights
-
-Rewrite to sound like a real professional sharing their genuine thoughts.
-Keep it the same length or slightly shorter.
-
-REWRITTEN VERSION:
-"""
-    
-    return generate_content(clients, humanize_prompt, max_tokens=2000)
-
-
 def generate_linkedin_post(article, clients):
     """Generate humanized LinkedIn post from top article"""
     
-    # First pass: Generate draft
     prompt = LINKEDIN_POST_PROMPT.format(
         voice_profile=VOICE_PROFILE,
         title=article['title'],
@@ -121,15 +120,11 @@ def generate_linkedin_post(article, clients):
         url=article['url']
     )
     
-    print("    Pass 1: Generating draft...")
-    draft = generate_content(clients, prompt, max_tokens=1000)
-    
-    # Second pass: Humanize
-    print("    Pass 2: Humanizing...")
-    final_content = humanize_content(clients, draft)
+    print("    Generating LinkedIn post...")
+    content = generate_content(clients, prompt, max_tokens=1000)
     
     post_data = {
-        "content": final_content,
+        "content": content,
         "based_on": {
             "title": article['title'],
             "url": article['url'],
@@ -153,6 +148,7 @@ def generate_carousel(article, clients):
         summary=article['summary']
     )
     
+    print("    Generating carousel...")
     content = generate_content(clients, prompt, max_tokens=1500)
     
     # Parse slides from response
@@ -238,10 +234,6 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
     
     print("    Generating newsletter...")
     content = generate_content(clients, prompt, max_tokens=4000)
-    
-    # Humanize the newsletter too
-    print("    Humanizing newsletter...")
-    content = humanize_content(clients, content)
     
     newsletter_data = {
         "title": topic,
