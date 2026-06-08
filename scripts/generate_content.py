@@ -1,12 +1,11 @@
 """
-Content Generator - Uses Gemini for high-quality content generation
+Content Generator - Uses Gemini with Groq fallback
 """
 
 import os
 import json
 from datetime import datetime
-from google import genai
-from google.genai import types
+from groq import Groq
 from config import (
     VOICE_PROFILE, 
     LINKEDIN_POST_PROMPT, 
@@ -15,13 +14,31 @@ from config import (
     NEWSLETTER_SERIES
 )
 
-def init_gemini():
-    """Initialize Gemini client"""
-    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-    return client
+# Try to import Gemini
+GEMINI_AVAILABLE = False
+try:
+    from google import genai
+    GEMINI_AVAILABLE = True
+except ImportError:
+    pass
 
 
-def generate_content(client, prompt):
+def init_clients():
+    """Initialize AI clients"""
+    clients = {
+        "groq": Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    }
+    
+    if GEMINI_AVAILABLE and os.environ.get("GEMINI_API_KEY"):
+        try:
+            clients["gemini"] = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+        except:
+            pass
+    
+    return clients
+
+
+def generate_with_gemini(client, prompt):
     """Generate content using Gemini"""
     response = client.models.generate_content(
         model="gemini-2.0-flash",
@@ -30,7 +47,37 @@ def generate_content(client, prompt):
     return response.text
 
 
-def generate_linkedin_post(article, client):
+def generate_with_groq(client, prompt, max_tokens=4000):
+    """Generate content using Groq"""
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+            {"role": "system", "content": "You are a professional content writer specializing in GRC (Governance, Risk, Compliance) topics."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.7,
+        max_tokens=max_tokens
+    )
+    return response.choices[0].message.content
+
+
+def generate_content(clients, prompt, max_tokens=4000):
+    """Generate content - try Gemini first, fall back to Groq"""
+    
+    # Try Gemini first
+    if "gemini" in clients:
+        try:
+            print("    Using Gemini...")
+            return generate_with_gemini(clients["gemini"], prompt)
+        except Exception as e:
+            print(f"    Gemini failed ({str(e)[:50]}...), falling back to Groq...")
+    
+    # Fall back to Groq
+    print("    Using Groq...")
+    return generate_with_groq(clients["groq"], prompt, max_tokens)
+
+
+def generate_linkedin_post(article, clients):
     """Generate LinkedIn post from top article"""
     
     prompt = LINKEDIN_POST_PROMPT.format(
@@ -40,7 +87,7 @@ def generate_linkedin_post(article, client):
         url=article['url']
     )
     
-    content = generate_content(client, prompt)
+    content = generate_content(clients, prompt, max_tokens=1000)
     
     post_data = {
         "content": content,
@@ -57,7 +104,7 @@ def generate_linkedin_post(article, client):
     return post_data
 
 
-def generate_carousel(article, client):
+def generate_carousel(article, clients):
     """Generate carousel content from top article"""
     
     prompt = CAROUSEL_PROMPT.format(
@@ -66,7 +113,7 @@ def generate_carousel(article, client):
         summary=article['summary']
     )
     
-    content = generate_content(client, prompt)
+    content = generate_content(clients, prompt, max_tokens=1500)
     
     # Parse slides from response
     slides = []
@@ -100,7 +147,7 @@ def generate_carousel(article, client):
     return carousel_data
 
 
-def generate_newsletter(top_articles, client, config_path="data/newsletter_config.json"):
+def generate_newsletter(top_articles, clients, config_path="data/newsletter_config.json"):
     """Generate newsletter content (only on Tuesdays)"""
     
     # Check if today is Tuesday
@@ -150,7 +197,7 @@ def generate_newsletter(top_articles, client, config_path="data/newsletter_confi
         news_context=news_context
     )
     
-    content = generate_content(client, prompt)
+    content = generate_content(clients, prompt, max_tokens=4000)
     
     newsletter_data = {
         "title": topic,
@@ -186,7 +233,7 @@ def save_content(content, filepath):
 
 if __name__ == "__main__":
     # Test with sample data
-    client = init_gemini()
+    clients = init_clients()
     
     with open("data/articles.json", "r") as f:
         articles = json.load(f)
@@ -194,12 +241,12 @@ if __name__ == "__main__":
     if articles:
         top_article = articles[0]
         
-        post = generate_linkedin_post(top_article, client)
+        post = generate_linkedin_post(top_article, clients)
         save_content(post, "data/linkedin_post.json")
         
-        carousel = generate_carousel(top_article, client)
+        carousel = generate_carousel(top_article, clients)
         save_content(carousel, "data/carousel.json")
         
-        newsletter = generate_newsletter(articles[:5], client)
+        newsletter = generate_newsletter(articles[:5], clients)
         if newsletter:
             save_content(newsletter, "data/newsletter.json")

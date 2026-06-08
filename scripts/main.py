@@ -9,7 +9,7 @@ from datetime import datetime
 from fetch_news import fetch_news, save_raw_articles
 from score_articles import score_articles, save_scored_articles, get_top_articles
 from generate_content import (
-    init_gemini,
+    init_clients,
     generate_linkedin_post,
     generate_carousel,
     generate_newsletter,
@@ -63,23 +63,23 @@ def run_pipeline():
     for i, a in enumerate(top_articles, 1):
         print(f"  {i}. [{a['score']}] {a['title'][:60]}...")
     
-    # Step 4: Generate content with Gemini (high quality)
-    print("\n[3/4] Generating content with Gemini AI...")
-    client = init_gemini()
+    # Step 4: Generate content (Gemini with Groq fallback)
+    print("\n[3/4] Generating content with AI...")
+    clients = init_clients()
     
     # Generate LinkedIn post
     print("  - Generating LinkedIn post...")
-    linkedin_post = generate_linkedin_post(top_articles[0], client)
+    linkedin_post = generate_linkedin_post(top_articles[0], clients)
     save_content(linkedin_post, "data/linkedin_post.json")
     
     # Generate carousel
     print("  - Generating carousel content...")
-    carousel = generate_carousel(top_articles[0], client)
+    carousel = generate_carousel(top_articles[0], clients)
     save_content(carousel, "data/carousel.json")
     
     # Generate newsletter (only on Tuesdays)
     print("  - Checking for newsletter generation...")
-    newsletter = generate_newsletter(top_articles, client)
+    newsletter = generate_newsletter(top_articles, clients)
     if newsletter:
         save_content(newsletter, "data/newsletter.json")
         print("  - Newsletter generated for Wednesday!")
