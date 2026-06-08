@@ -22,7 +22,7 @@ def score_articles(articles):
             )
             
             response = client.chat.completions.create(
-                model="llama-3.1-70b-versatile",
+                model="llama-3.3-70b-versatile",
                 messages=[
                     {"role": "system", "content": "You are a GRC relevance scoring assistant. Always respond in valid JSON."},
                     {"role": "user", "content": prompt}

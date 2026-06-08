@@ -17,7 +17,7 @@ from config import (
 def init_gemini():
     """Initialize Gemini API"""
     genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-    return genai.GenerativeModel('gemini-1.5-flash')
+    return genai.GenerativeModel('gemini-2.0-flash')
 
 
 def generate_linkedin_post(article, model):
