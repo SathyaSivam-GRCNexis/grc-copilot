@@ -270,69 +270,89 @@ Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product
 LINKEDIN_POST_PROMPT = """
 {voice_profile}
 
-Write a LinkedIn post about this news that sounds genuinely human - NOT like AI wrote it.
+Write an ORIGINAL LinkedIn post inspired by this news topic. DO NOT copy or summarize the article.
+Instead, share YOUR OWN perspective, experience, or educational insight about the UNDERLYING CONCEPT.
 
-SOURCE:
+INSPIRATION TOPIC (do not copy - use as a springboard for original thought):
 Title: {title}
-Summary: {summary}
-Why it matters: {why_it_matters}
-Link: {url}
+Core concept: {why_it_matters}
+
+COPYRIGHT-SAFE APPROACH:
+- DO NOT quote or paraphrase the source article
+- DO NOT mention specific details, statistics, or facts from the article
+- DO write about the general CONCEPT or PRINCIPLE the news represents
+- DO share your own perspective, framework, or teaching point
+- DO use hypothetical examples or general industry knowledge
+- The post should make sense even if reader never sees the source article
 
 STRUCTURE YOUR POST:
-1. **Hook** (first line): Make them stop scrolling. Be specific, not generic.
-   - Good: "A hospital just paid $1.2M in ransomware. The attack started with a PDF."
-   - Bad: "Cybersecurity is more important than ever."
+1. **Hook** (first line): A thought-provoking statement about the concept (NOT about the news)
+   - Good: "Most compliance programs fail not because of bad policies, but because nobody reads them."
+   - Bad: "Did you hear about the latest breach at XYZ company?"
 
-2. **Context** (2-3 sentences): What happened and why it matters. Use simple words.
+2. **Your insight** (2-3 paragraphs): Share YOUR take on this concept
+   - Why this matters in general (not specific to this news)
+   - What you've learned from experience
+   - A framework or mental model you use
 
-3. **The insight** (your take): What most people miss. Be specific. Connect to WHY controls exist.
+3. **Teaching moment**: Explain the underlying principle in simple terms
 
-4. **Practical takeaway**: One thing the reader can do or think about.
+4. **Practical takeaway**: One actionable insight for the reader
 
-5. **Genuine question**: Ask something you're actually curious about (not "Thoughts?")
+5. **Genuine question**: Ask something thought-provoking about the concept
 
 REQUIREMENTS:
 - 150-250 words total
-- Short paragraphs (1-3 sentences each)
+- This must be 100% ORIGINAL content - your thoughts, not article summary
+- No quotes, statistics, or specific details from the source
+- Write as if sharing wisdom from your experience
 - Maximum 2 emojis (or none)
 - 3-4 hashtags at the end
-- NO clichés, NO hype words
-- Write like you're texting a smart friend
 
-Write the post now:
+Write an ORIGINAL post about the underlying concept now:
 """
 
 CAROUSEL_PROMPT = """
 {voice_profile}
 
-Create 7 carousel slides for this topic. Each slide must be SIMPLE and SCANNABLE.
+Create 7 ORIGINAL educational carousel slides teaching the CONCEPT behind this topic.
+DO NOT summarize or reference the source article. Create standalone educational content.
 
-Topic: {title}
-Context: {summary}
+TOPIC CONCEPT (use as inspiration only - do not copy): {title}
+Teaching angle: {summary}
+
+COPYRIGHT-SAFE APPROACH:
+- Create ORIGINAL educational content about this concept
+- Use general industry knowledge, not article-specific details
+- Teach the underlying principle that would be true regardless of this specific news
+- Use hypothetical examples, not real incidents from the article
 
 FORMAT EACH SLIDE:
 
-SLIDE 1: (Title slide - hook them)
-- Bold statement or question (max 8 words)
+**SLIDE 1:** (Title slide - state the concept you're teaching)
+- Bold educational statement (max 8 words)
+- Example: "Why Patch Management Keeps Failing" or "The Real Cost of Compliance Gaps"
 
-SLIDE 2-5: (One key point per slide)
+**SLIDE 2-5:** (One teaching point per slide)
 Heading: [3-5 words]
-Body: [1-2 short sentences - explain like they're 12]
+Body: [1-2 short sentences - explain the concept like they're new to GRC]
+Use analogies from everyday life to explain technical concepts.
 
-SLIDE 6: (The "So What")
+**SLIDE 6:** (Practical Application)
 Heading: What This Means For You
-Body: [Practical action or mindset shift]
+Body: [How to apply this knowledge - general advice, not article-specific]
 
-SLIDE 7: (Call to action)
-- Follow for more GRC insights
+**SLIDE 7:** (Call to action)
+- Follow for more GRC insights to stay ahead of emerging security threats and stay secure in a rapidly changing landscape.
 
 RULES:
-- Each slide stands alone
-- No jargon without explanation
-- Use numbers, comparisons, or analogies
-- Scannable in 3 seconds
+- 100% ORIGINAL educational content
+- Each slide teaches something timeless about GRC/security
+- No references to specific news articles, companies, or incidents
+- Use hypothetical scenarios if examples are needed
+- Scannable in 3 seconds per slide
 
-Create all 7 slides now:
+Create all 7 original educational slides now:
 """
 
 NEWSLETTER_PROMPT = """
@@ -342,37 +362,51 @@ Write newsletter episode {episode_number} of "{series_name}"
 
 TOPIC: {topic}
 
-THIS WEEK'S CONTEXT (top news to reference):
+THIS WEEK'S THEMES (general concepts from industry news - use as context only):
 {news_context}
+
+COPYRIGHT-SAFE REQUIREMENTS:
+- Write 100% ORIGINAL educational content about {topic}
+- DO NOT summarize, quote, or reference specific news articles
+- DO NOT mention specific company breaches, incidents, or statistics from news
+- USE the news themes as inspiration for what's relevant, but write original teaching content
+- Reference only: official documentation, frameworks (ISO, NIST, etc.), and general industry knowledge
+- If mentioning real examples, use only well-known historical cases (Equifax, SolarWinds) that are public knowledge
 
 STRUCTURE (1500-2000 words total):
 
 1. **Opening hook** (2-3 paragraphs)
-   - Start with a story, question, or surprising fact
-   - Connect it to why this topic matters RIGHT NOW
+   - Start with a hypothetical scenario, question, or general observation
+   - Connect it to why {topic} matters for GRC professionals
+   - Do NOT reference specific recent news
 
 2. **The Basics** (3-4 paragraphs)
-   - Define the concept in plain English
+   - Define {topic} in plain English
    - Use an analogy from everyday life
+   - Original explanation, not copied from any source
 
 3. **How It Works** (3-4 paragraphs)
-   - The mechanics, simplified
-   - Real-world example
-   - What happens when it goes wrong
+   - The mechanics, simplified with YOUR explanation
+   - Use a hypothetical example (e.g., "Imagine a company that...")
+   - What happens when it goes wrong (general patterns, not specific incidents)
 
 4. **Common Mistakes** (3-4 paragraphs)
-   - What organizations get wrong
-   - How to avoid them
+   - What organizations typically get wrong (general observations)
+   - How to avoid them (your recommendations)
 
 5. **Getting Started** (3-4 paragraphs)
-   - Practical first steps
-   - Free resources (include 2-3 real links)
+   - Practical first steps YOU recommend
+   - Reference official resources only:
+     * NIST frameworks (nist.gov)
+     * ISO standards (iso.org)
+     * OWASP guides (owasp.org)
+     * Official vendor documentation
 
 6. **Closing** (2 paragraphs)
-   - Key takeaway
-   - Tease next episode
+   - Key takeaway in your own words
+   - Tease next episode topic
 
-Write the complete newsletter:
+Write the complete ORIGINAL newsletter:
 """
 
 DASHBOARD_PASSWORD = "GRC2026!Shree"

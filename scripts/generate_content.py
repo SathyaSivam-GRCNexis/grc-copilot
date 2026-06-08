@@ -110,45 +110,42 @@ def generate_content(clients, prompt, max_tokens=4000):
 
 
 def generate_linkedin_post(article, clients):
-    """Generate humanized LinkedIn post from top article"""
+    """Generate original LinkedIn post inspired by article topic (copyright-safe)"""
     
     prompt = LINKEDIN_POST_PROMPT.format(
         voice_profile=VOICE_PROFILE,
         title=article['title'],
-        summary=article['summary'],
-        why_it_matters=article.get('score_reason', 'Important for GRC professionals'),
-        url=article['url']
+        why_it_matters=article.get('score_reason', 'Important for GRC professionals')
     )
     
-    print("    Generating LinkedIn post...")
+    print("    Generating original LinkedIn post...")
     content = generate_content(clients, prompt, max_tokens=1000)
     
     post_data = {
         "content": content,
-        "based_on": {
-            "title": article['title'],
-            "url": article['url'],
-            "source": article['source'],
-            "score": article['score'],
-            "why_it_matters": article.get('score_reason', '')
+        "inspired_by": {
+            "topic": article['title'],
+            "concept": article.get('score_reason', ''),
+            "domains": article.get('domains', ['GRC'])
         },
         "generated_at": datetime.now().isoformat(),
-        "type": "text_post"
+        "type": "text_post",
+        "copyright_safe": True
     }
     
     return post_data
 
 
 def generate_carousel(article, clients):
-    """Generate carousel content from top article"""
+    """Generate original educational carousel (copyright-safe)"""
     
     prompt = CAROUSEL_PROMPT.format(
         voice_profile=VOICE_PROFILE,
         title=article['title'],
-        summary=article['summary']
+        summary=article.get('score_reason', article['summary'])
     )
     
-    print("    Generating carousel...")
+    print("    Generating original carousel...")
     content = generate_content(clients, prompt, max_tokens=1500)
     
     # Parse slides from response
@@ -157,7 +154,7 @@ def generate_carousel(article, clients):
     
     for line in content.split('\n'):
         line = line.strip()
-        if line.upper().startswith('SLIDE'):
+        if line.upper().startswith('SLIDE') or line.startswith('**SLIDE'):
             if current_slide:
                 slides.append(current_slide)
             current_slide = {"slide_number": len(slides) + 1, "content": ""}
@@ -171,20 +168,20 @@ def generate_carousel(article, clients):
     carousel_data = {
         "slides": slides,
         "raw_content": content,
-        "based_on": {
-            "title": article['title'],
-            "url": article['url'],
-            "source": article['source']
+        "inspired_by": {
+            "topic": article['title'],
+            "domains": article.get('domains', ['GRC'])
         },
         "generated_at": datetime.now().isoformat(),
-        "type": "carousel"
+        "type": "carousel",
+        "copyright_safe": True
     }
     
     return carousel_data
 
 
 def generate_newsletter(top_articles, clients, config_path="data/newsletter_config.json"):
-    """Generate newsletter content (only on Tuesdays)"""
+    """Generate original newsletter content (only on Tuesdays) - copyright-safe"""
     
     # Check if today is Tuesday
     today = datetime.now()
@@ -218,9 +215,9 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
         topic = topics_queue[0]
         topics_used = []
     
-    # Create news context from top articles
+    # Create thematic context from top articles (concepts only, not content)
     news_context = "\n".join([
-        f"- {a['title']} ({a['source']})\n  Why it matters: {a.get('score_reason', 'N/A')}"
+        f"- Theme: {a.get('score_reason', a['title'][:50])}"
         for a in top_articles[:5]
     ])
     
@@ -232,7 +229,7 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
         news_context=news_context
     )
     
-    print("    Generating newsletter...")
+    print("    Generating original newsletter...")
     content = generate_content(clients, prompt, max_tokens=4000)
     
     newsletter_data = {
@@ -240,13 +237,13 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
         "series": NEWSLETTER_SERIES["name"],
         "episode": current_episode,
         "content": content,
-        "top_news_context": [
-            {"title": a['title'], "source": a['source'], "score": a['score']}
-            for a in top_articles[:5]
+        "themes_this_week": [
+            a.get('score_reason', '')[:100] for a in top_articles[:5]
         ],
         "generated_at": datetime.now().isoformat(),
         "publish_on": "Wednesday",
-        "type": "newsletter"
+        "type": "newsletter",
+        "copyright_safe": True
     }
     
     # Update config

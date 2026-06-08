@@ -1670,8 +1670,10 @@
                 const data = await res.json();
                 document.getElementById('linkedinPost').textContent = data.content || 'No content';
                 document.getElementById('contentLinkedinPost').textContent = data.content || 'No content';
-                if (data.based_on) {
-                    document.getElementById('linkedinMeta').innerHTML = `Based on: <strong>${escapeHtml(data.based_on.title)}</strong> (Score: ${data.based_on.score}/10)`;
+                if (data.inspired_by) {
+                    document.getElementById('linkedinMeta').innerHTML = `<span style="color: var(--accent-green);">✓ Original content</span> · Inspired by: <strong>${escapeHtml(data.inspired_by.topic)}</strong>`;
+                } else if (data.based_on) {
+                    document.getElementById('linkedinMeta').innerHTML = `Based on: <strong>${escapeHtml(data.based_on.title)}</strong>`;
                 }
             } catch (e) {
                 document.getElementById('linkedinPost').textContent = 'Content will be generated after pipeline runs.';
