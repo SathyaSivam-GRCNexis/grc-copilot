@@ -5,13 +5,19 @@
     "summary": "Under the new plans, companies like \u200bApple and Google should build or activate technical \u200bsolutions on \u2060smartphones and \u200ctablets to detect \u200band \u200bblock nude images \u2060for children, the government said. Adults \u200bwould still be able \u200bto take, share or view nude content through an age verification process.",
     "source": "Tech-Economic Times",
     "published": "2026-06-08T14:19:04",
-    "fetched_at": "2026-06-08T10:31:12.302981",
+    "fetched_at": "2026-06-08T10:44:37.430450",
+    "score_business": 8,
+    "score_learning": 7,
+    "score_content": 9,
+    "score_compliance": 9,
     "score": 8,
+    "total_score": 33,
     "domains": [
-      "Privacy",
-      "GRC"
+      "GRC",
+      "Privacy"
     ],
-    "score_reason": "The article discusses government plans to regulate tech firms and implement age verification processes to protect children from nude images, which is an important topic related to privacy and compliance."
+    "score_reason": "A GRC professional should care about this because it highlights the growing regulatory pressure on tech companies to protect children's privacy and safety online, which may lead to new compliance requirements and industry-wide changes.",
+    "content_angle": "Create a post discussing the potential implications of this regulation on tech companies and the broader industry, including the challenges of implementing effective age verification processes and the potential impact on user privacy."
   },
   {
     "title": "As India Inc\u2019s AI adoption accelerates, data and infrastructure readiness come under spotlight",
@@ -19,55 +25,19 @@
     "summary": "Priorities for next phase: Real-time decision-making, customer experience, sovereign control over data, and compliance.",
     "source": "Tech-Economic Times",
     "published": "2026-06-08T11:12:40",
-    "fetched_at": "2026-06-08T10:31:12.303335",
-    "score": 5,
-    "domains": [
-      "AI",
-      "GRC"
-    ],
-    "score_reason": "The article discusses AI adoption and its implications on data and infrastructure readiness, with a mention of compliance, making it moderately relevant to GRC professionals."
-  },
-  {
-    "title": "As Cos fast-track AI adoption, data &amp; infra readiness come under spotlight",
-    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/as-cos-fast-track-ai-adoption-data-infra-readiness-come-under-spotlight/articleshow/131582415.cms",
-    "summary": "Enterprises in India are increasingly adapting AI, with a sense of urgency. However, the bottlenecks are many which tend to stifle the transition from pilot to scale. The strategic hurdles are known though, which will make the way ahead a little smoother. Read what ET-Cisco Data Infrastructure and AI Readiness Survey has found!",
-    "source": "Tech-Economic Times",
-    "published": "2026-06-08T13:33:55",
-    "fetched_at": "2026-06-08T10:31:12.303158",
-    "score": 4,
-    "domains": [
-      "AI",
-      "GRC"
-    ],
-    "score_reason": "The article discusses AI adoption and its challenges, which has tangential implications for GRC professionals in terms of governance and risk management of emerging technologies."
-  },
-  {
-    "title": "UK competition watchdog launches probe into eBay's purchase of Depop",
-    "url": "https://economictimes.indiatimes.com/tech/technology/uk-competition-watchdog-launches-probe-into-ebays-purchase-of-depop/articleshow/131584676.cms",
-    "summary": "The deal was \u200bannounced earlier this year and is expected \u200bto help \u2060Etsy double \u200cdown \u200bon \u200bits core handmade \u2060and vintage goods marketplace in \u200bpursuit of a \u200bturnaround.",
-    "source": "Tech-Economic Times",
-    "published": "2026-06-08T15:22:26",
-    "fetched_at": "2026-06-08T10:31:12.302592",
-    "score": 3,
+    "fetched_at": "2026-06-08T10:44:37.430808",
+    "score_business": 8,
+    "score_learning": 7,
+    "score_content": 8,
+    "score_compliance": 6,
+    "score": 7,
+    "total_score": 29,
     "domains": [
       "GRC",
-      "Product"
+      "AI"
     ],
-    "score_reason": "The article is tangentially related to GRC as it involves a regulatory probe, but its primary focus is on a business acquisition and its impact on the product marketplace."
-  },
-  {
-    "title": "Infosys CFO Jayesh Sanghrajka joins Cars24 board as independent director",
-    "url": "https://economictimes.indiatimes.com/tech/startups/infosys-cfo-jayesh-sanghrajka-joins-cars24-board-as-independent-director/articleshow/131583563.cms",
-    "summary": "Cars24 cofounder and CFO Ruchit Agarwal announced the appointment in a blog post, describing the move as significant for the used-car platform as it scales operations and eyes a public market listing.",
-    "source": "Tech-Economic Times",
-    "published": "2026-06-08T14:31:11",
-    "fetched_at": "2026-06-08T10:31:12.302800",
-    "score": 3,
-    "domains": [
-      "GRC",
-      "Product"
-    ],
-    "score_reason": "The appointment of a new independent director to the Cars24 board has minor implications for governance and risk management, but is primarily a product and business development news."
+    "score_reason": "A GRC professional should care about this because India Inc's accelerating AI adoption raises important questions about data readiness, infrastructure, and compliance that impact business operations and regulatory adherence.",
+    "content_angle": "Create a post exploring the intersection of AI adoption and GRC, focusing on the challenges of ensuring data and infrastructure readiness while maintaining compliance with evolving regulations."
   },
   {
     "title": "UK PM Starmer backs sovereign computing with $533 million AI chip investment",
@@ -75,41 +45,39 @@
     "summary": "\"We will use the power \u200bof public procurement \u200bto support British ingenuity,\" Starmer told the \u200cLondon Tech Week conference in \u200ba speech \u200bon \u2060Monday.",
     "source": "Tech-Economic Times",
     "published": "2026-06-08T14:21:12",
-    "fetched_at": "2026-06-08T10:31:12.302891",
-    "score": 3,
+    "fetched_at": "2026-06-08T10:44:37.430337",
+    "score_business": 8,
+    "score_learning": 6,
+    "score_content": 7,
+    "score_compliance": 4,
+    "score": 6,
+    "total_score": 25,
     "domains": [
       "AI",
       "GRC"
     ],
-    "score_reason": "The article is tangentially related to GRC as it discusses government investment in AI, which may have future implications for governance and compliance."
+    "score_reason": "A GRC professional should care about this because significant investments in AI and sovereign computing can have implications for data privacy, security, and regulatory compliance in the tech industry.",
+    "content_angle": "Explore how government investments in AI and sovereign computing can drive innovation while raising important questions about data governance and compliance."
   },
   {
-    "title": "TCS signs multi-million euro AI deal with Canada Life",
-    "url": "https://economictimes.indiatimes.com/tech/information-tech/tcs-signs-multi-million-euro-ai-deal-with-canada-life/articleshow/131582732.cms",
-    "summary": "Under the partnership, TCS will use its artificial intelligence and digital capabilities to manage and modernise Canada Life's data centres, core infrastructure, end-user computing systems and software lifecycle management, TCS said in a statement on Monday.",
+    "title": "UK competition watchdog launches probe into eBay's purchase of Depop",
+    "url": "https://economictimes.indiatimes.com/tech/technology/uk-competition-watchdog-launches-probe-into-ebays-purchase-of-depop/articleshow/131584676.cms",
+    "summary": "The deal was \u200bannounced earlier this year and is expected \u200bto help \u2060Etsy double \u200cdown \u200bon \u200bits core handmade \u2060and vintage goods marketplace in \u200bpursuit of a \u200bturnaround.",
     "source": "Tech-Economic Times",
-    "published": "2026-06-08T13:53:29",
-    "fetched_at": "2026-06-08T10:31:12.303070",
-    "score": 3,
+    "published": "2026-06-08T15:22:26",
+    "fetched_at": "2026-06-08T10:44:37.430049",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 5,
+    "score_compliance": 8,
+    "score": 6,
+    "total_score": 24,
     "domains": [
-      "AI",
-      "DevSecOps"
+      "GRC",
+      "Product"
     ],
-    "score_reason": "The article is about a business partnership for AI and digital transformation, which has tangential implications for GRC professionals in terms of potential security and infrastructure modernization."
-  },
-  {
-    "title": "Crypto crash: Where do Bitcoin and Ether stand after the historic crash?",
-    "url": "https://economictimes.indiatimes.com/tech/technology/crypto-crash-where-do-bitcoin-and-ether-stand-after-the-historic-crash/articleshow/131579276.cms",
-    "summary": "The prices of two other tokens, Ethereum and Solana, also rose on Monday, gaining 3.25% and 4.18%, respectively. Ethereum, the second-largest cryptocurrency, was trading at $1,649.42 after falling 17.26% over the past week. Solana was trading at $65.31 following a 20% decline over the last seven days.",
-    "source": "Tech-Economic Times",
-    "published": "2026-06-08T10:59:20",
-    "fetched_at": "2026-06-08T10:31:12.303422",
-    "score": 3,
-    "domains": [
-      "Security",
-      "GRC"
-    ],
-    "score_reason": "The article discusses a crypto crash, which has tangential implications for security and governance, risk, and compliance professionals due to potential regulatory and risk management considerations."
+    "score_reason": "A GRC professional should care about this because regulatory scrutiny of mergers and acquisitions can have significant implications for compliance and business strategy.",
+    "content_angle": "Explore the potential compliance implications of the eBay-Depop deal and how GRC professionals can navigate similar regulatory probes in their own organizations."
   },
   {
     "title": "Is this the dawn of the Tokenpocalypse?",
@@ -117,26 +85,59 @@
     "summary": "We're likely to see more price increases as the big AI companies plan to go public.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-07T20:26:13",
-    "fetched_at": "2026-06-08T10:31:08.594642",
-    "score": 2,
+    "fetched_at": "2026-06-08T10:44:37.216312",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 6,
+    "score_compliance": 3,
+    "score": 5,
+    "total_score": 20,
     "domains": [
       "AI",
-      "Product"
+      "GRC"
     ],
-    "score_reason": "The article discusses AI companies going public and potential price increases, which has no direct relevance to GRC professionals."
+    "score_reason": "A GRC professional should care about this because the potential Tokenpocalypse and AI companies going public may have indirect implications on regulatory compliance and industry-wide changes.",
+    "content_angle": "Create a post discussing the potential risks and compliance considerations of AI companies going public and the impact on the token market."
   },
   {
-    "title": "Notion restores access to Anthropic after service disruption",
-    "url": "https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropic-after-service-disruption/",
-    "summary": "Notion's head of product said he was \"astonished\" at \u201cthe amount of people RT-ing this.\"",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-07T17:56:22",
-    "fetched_at": "2026-06-08T10:31:08.594752",
-    "score": 2,
+    "title": "As Cos fast-track AI adoption, data &amp; infra readiness come under spotlight",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/as-cos-fast-track-ai-adoption-data-infra-readiness-come-under-spotlight/articleshow/131582415.cms",
+    "summary": "Enterprises in India are increasingly adapting AI, with a sense of urgency. However, the bottlenecks are many which tend to stifle the transition from pilot to scale. The strategic hurdles are known though, which will make the way ahead a little smoother. Read what ET-Cisco Data Infrastructure and AI Readiness Survey has found!",
+    "source": "Tech-Economic Times",
+    "published": "2026-06-08T13:33:55",
+    "fetched_at": "2026-06-08T10:44:37.430631",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 6,
+    "score_compliance": 3,
+    "score": 5,
+    "total_score": 20,
     "domains": [
-      "Product"
+      "AI",
+      "GRC"
     ],
-    "score_reason": "The article is about a service disruption and restoration, which is primarily a product-related issue with no significant implications for GRC professionals."
+    "score_reason": "A GRC professional should care about this because AI adoption can introduce new risks and compliance challenges that need to be addressed in order to ensure responsible and secure implementation.",
+    "content_angle": "Create a post discussing the potential risks and compliance considerations associated with rapid AI adoption, and provide guidance on how organizations can prepare their data and infrastructure to support AI initiatives while maintaining GRC standards."
+  },
+  {
+    "title": "Crypto crash: Where do Bitcoin and Ether stand after the historic crash?",
+    "url": "https://economictimes.indiatimes.com/tech/technology/crypto-crash-where-do-bitcoin-and-ether-stand-after-the-historic-crash/articleshow/131579276.cms",
+    "summary": "The prices of two other tokens, Ethereum and Solana, also rose on Monday, gaining 3.25% and 4.18%, respectively. Ethereum, the second-largest cryptocurrency, was trading at $1,649.42 after falling 17.26% over the past week. Solana was trading at $65.31 following a 20% decline over the last seven days.",
+    "source": "Tech-Economic Times",
+    "published": "2026-06-08T10:59:20",
+    "fetched_at": "2026-06-08T10:44:37.430895",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 6,
+    "score_compliance": 3,
+    "score": 5,
+    "total_score": 20,
+    "domains": [
+      "GRC",
+      "Security"
+    ],
+    "score_reason": "A GRC professional should care about this because the volatility of cryptocurrencies like Bitcoin and Ether can have significant implications for organizations involved in crypto transactions or investments.",
+    "content_angle": "Create a post discussing the potential risks and compliance considerations for businesses dealing with cryptocurrencies, using the recent crypto crash as a case study."
   },
   {
     "title": "OpenAI is still working on that \u2018super app\u2019",
@@ -144,27 +145,39 @@
     "summary": "\"Chat is dead\" \u2014 at least, according to a senior OpenAI employee.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-07T16:23:22",
-    "fetched_at": "2026-06-08T10:31:08.594846",
-    "score": 2,
+    "fetched_at": "2026-06-08T10:44:37.216539",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 6,
+    "score_compliance": 2,
+    "score": 5,
+    "total_score": 19,
     "domains": [
       "AI",
       "Product"
     ],
-    "score_reason": "The article discusses OpenAI's product development and does not contain significant information relevant to GRC professionals."
+    "score_reason": "A GRC professional should care about this because the evolution of AI-powered 'super apps' may introduce new regulatory and compliance challenges in the tech industry.",
+    "content_angle": "Explore the potential implications of AI-driven 'super apps' on data privacy and security regulations, and how companies can prepare for these changes."
   },
   {
-    "title": "South Korea to seek priority supply of Nvidia Vera Rubin GPUs, science minister says",
-    "url": "https://economictimes.indiatimes.com/tech/technology/south-korea-to-seek-priority-supply-of-nvidia-vera-rubin-gpus-science-minister-says/articleshow/131584630.cms",
-    "summary": "Science \u200band ICT Minister Bae Kyung-hoon said a government notice for South \u200bKorea's GPU project \u2060had been \u200cissued earlier \u200bin \u200bthe day, adding that \u2060a supply of Nvidia's B300 \u200bchips was expected to \u200barrive on time.",
+    "title": "TCS signs multi-million euro AI deal with Canada Life",
+    "url": "https://economictimes.indiatimes.com/tech/information-tech/tcs-signs-multi-million-euro-ai-deal-with-canada-life/articleshow/131582732.cms",
+    "summary": "Under the partnership, TCS will use its artificial intelligence and digital capabilities to manage and modernise Canada Life's data centres, core infrastructure, end-user computing systems and software lifecycle management, TCS said in a statement on Monday.",
     "source": "Tech-Economic Times",
-    "published": "2026-06-08T15:20:36",
-    "fetched_at": "2026-06-08T10:31:12.302703",
-    "score": 2,
+    "published": "2026-06-08T13:53:29",
+    "fetched_at": "2026-06-08T10:44:37.430544",
+    "score_business": 6,
+    "score_learning": 5,
+    "score_content": 5,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 18,
     "domains": [
-      "Product",
+      "GRC",
       "AI"
     ],
-    "score_reason": "The article discusses a government's plan to acquire specific GPU chips, which is tangentially related to GRC as it involves technology, but does not directly address governance, risk, or compliance topics."
+    "score_reason": "A GRC professional should care about this because it highlights the growing importance of AI and digital transformation in managing business operations and infrastructure, which can have implications for risk management and compliance.",
+    "content_angle": "Explore how AI-powered partnerships like TCS and Canada Life can impact GRC practices and the potential benefits and challenges of adopting such technologies in managing data centres and infrastructure."
   },
   {
     "title": "97% Indians watch video on Meta: Arun Srinivas on Reels, AI creators &amp; Instagram\u2019s future",
@@ -172,12 +185,97 @@
     "summary": "",
     "source": "Tech-Economic Times",
     "published": "2026-06-08T12:27:50",
-    "fetched_at": "2026-06-08T10:31:12.303248",
-    "score": 2,
+    "fetched_at": "2026-06-08T10:44:37.430721",
+    "score_business": 6,
+    "score_learning": 4,
+    "score_content": 5,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 17,
     "domains": [
-      "Product",
+      "GRC",
       "AI"
     ],
-    "score_reason": "The article discusses Meta's video watching trends, Reels, AI creators, and Instagram's future, which is not directly relevant to GRC professionals."
+    "score_reason": "A GRC professional should care about this because it highlights the growing influence of social media platforms and AI-driven content creation, which can have implications for data privacy and regulatory compliance.",
+    "content_angle": "Explore the potential risks and compliance considerations of AI-driven content creation on social media platforms, and how GRC professionals can navigate these emerging challenges."
+  },
+  {
+    "title": "Momfluencers Are Pitching AI as a Better \u2018Coparent\u2019 Than Men",
+    "url": "https://www.wired.com/story/momfluencers-are-pitching-ai-as-a-better-coparent-than-men/",
+    "summary": "Moms are outsourcing tedious household tasks to ChatGPT and selling courses teaching others to do the same. Where are all the dads?",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published": "2026-06-08T10:30:00",
+    "fetched_at": "2026-06-08T10:44:37.351883",
+    "score_business": 2,
+    "score_learning": 4,
+    "score_content": 6,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 14,
+    "domains": [
+      "AI",
+      "Product"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the growing reliance on AI for household and potentially business tasks, which may introduce new risks and compliance considerations.",
+    "content_angle": "Explore the potential risks and benefits of relying on AI for task automation and how businesses can mitigate associated compliance and security risks."
+  },
+  {
+    "title": "South Korea to seek priority supply of Nvidia Vera Rubin GPUs, science minister says",
+    "url": "https://economictimes.indiatimes.com/tech/technology/south-korea-to-seek-priority-supply-of-nvidia-vera-rubin-gpus-science-minister-says/articleshow/131584630.cms",
+    "summary": "Science \u200band ICT Minister Bae Kyung-hoon said a government notice for South \u200bKorea's GPU project \u2060had been \u200cissued earlier \u200bin \u200bthe day, adding that \u2060a supply of Nvidia's B300 \u200bchips was expected to \u200barrive on time.",
+    "source": "Tech-Economic Times",
+    "published": "2026-06-08T15:20:36",
+    "fetched_at": "2026-06-08T10:44:37.430153",
+    "score_business": 6,
+    "score_learning": 2,
+    "score_content": 4,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 14,
+    "domains": [
+      "GRC",
+      "AI"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights government involvement in emerging technology supply chains, which can have implications for organizational risk management and compliance.",
+    "content_angle": "Create a brief post discussing the intersection of government initiatives and technology supply chain management, and how this might impact organizational risk and compliance strategies."
+  },
+  {
+    "title": "Infosys CFO Jayesh Sanghrajka joins Cars24 board as independent director",
+    "url": "https://economictimes.indiatimes.com/tech/startups/infosys-cfo-jayesh-sanghrajka-joins-cars24-board-as-independent-director/articleshow/131583563.cms",
+    "summary": "Cars24 cofounder and CFO Ruchit Agarwal announced the appointment in a blog post, describing the move as significant for the used-car platform as it scales operations and eyes a public market listing.",
+    "source": "Tech-Economic Times",
+    "published": "2026-06-08T14:31:11",
+    "fetched_at": "2026-06-08T10:44:37.430248",
+    "score_business": 6,
+    "score_learning": 2,
+    "score_content": 4,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 14,
+    "domains": [
+      "GRC"
+    ],
+    "score_reason": "A GRC professional should care about this as it highlights the importance of independent directors in corporate governance, particularly for companies scaling operations and considering public market listings.",
+    "content_angle": "Create a brief post discussing the role of independent directors in ensuring good governance practices, using this appointment as a recent example."
+  },
+  {
+    "title": "Notion restores access to Anthropic after service disruption",
+    "url": "https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropic-after-service-disruption/",
+    "summary": "Notion's head of product said he was \"astonished\" at \u201cthe amount of people RT-ing this.\"",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-06-07T17:56:22",
+    "fetched_at": "2026-06-08T10:44:37.216439",
+    "score_business": 5,
+    "score_learning": 2,
+    "score_content": 4,
+    "score_compliance": 1,
+    "score": 3,
+    "total_score": 12,
+    "domains": [
+      "Product",
+      "GRC"
+    ],
+    "score_reason": "A GRC professional should care about this because service disruptions can have broader implications for business continuity and reliability.",
+    "content_angle": "Discuss how companies can mitigate the impact of service disruptions and ensure continuity in their operations."
   }
 ]
