@@ -41,15 +41,39 @@ DOMAIN_MAPPING = {
 }
 
 VOICE_PROFILE = """
-Professional but accessible writing style.
-Simplify complex topics without losing meaning.
-Use simple analogies and real-world examples.
-Direct statements, no fluff or filler.
-Target audience: professionals and learners.
+Writing style characteristics:
+- Professional but conversational - like explaining to a smart colleague
+- Use first person occasionally ("I've noticed...", "In my experience...")
+- Short paragraphs (2-3 sentences max)
+- One clear takeaway per piece
+- End with a specific, genuine question (not "Thoughts?")
+- Use analogies to explain complex concepts
+- Avoid jargon - if you must use a technical term, explain it
+
+BANNED PHRASES (never use these):
+- "In today's fast-paced world"
+- "In the ever-evolving landscape"
+- "Let's dive in"
+- "Game-changer"
+- "Revolutionary"
+- "Unlock"
+- "Leverage"
+- "Seamless"
+- "Robust"
+- "Delve"
+- "It's not just X, it's Y"
+- "Thoughts? 👇"
+- "As an AI"
+- "As a language model"
+
+TONE:
+- 70% educational (teach something useful)
+- 20% conversational (relatable examples)
+- 10% thought-leadership (strong opinions backed by reasoning)
 """
 
 NEWSLETTER_SERIES = {
-    "name": "GRC Insights",
+    "name": "From Non-Tech to Tech-Aware GRC",
     "current_episode": 6,
     "topics_queue": [
         "API Security Basics",
@@ -65,94 +89,174 @@ NEWSLETTER_SERIES = {
     ]
 }
 
+# 4-Dimension Scoring (matching the blueprint)
 SCORING_PROMPT = """
-Score this article from 1-10 based on relevance:
-- 9-10: Critical news
-- 7-8: Important topics
-- 5-6: Moderately relevant
-- 3-4: Tangentially related
-- 1-2: Not relevant
+You are scoring a news article for a GRC (Governance, Risk, Compliance) professional.
+
+Score this article on FOUR dimensions (each 1-10):
+
+1. **Business Impact**: Does it affect organizations, governance, or whole industries?
+   - 9-10: Major breach, new regulation, industry-wide change
+   - 5-6: Affects specific sectors or companies
+   - 1-3: Limited business relevance
+
+2. **Learning Value**: Is the underlying concept foundational and recurring?
+   - 9-10: Core GRC/security concept everyone should understand
+   - 5-6: Useful knowledge for professionals
+   - 1-3: One-off news with limited learning
+
+3. **Content Potential**: Can this become a post, newsletter, or carousel?
+   - 9-10: Perfect for explaining a concept or taking a stance
+   - 5-6: Could be part of a roundup or brief mention
+   - 1-3: Hard to create engaging content from this
+
+4. **Compliance Relevance**: Is there regulatory or framework impact?
+   - 9-10: Direct regulatory action, framework update, compliance deadline
+   - 5-6: Indirect compliance implications
+   - 1-3: No compliance angle
 
 Article Title: {title}
 Article Summary: {summary}
 
-Respond in JSON format:
+Respond in this exact JSON format:
 {{
-    "score": <number>,
-    "domains": ["<primary domain>", "<secondary domain if applicable>"],
-    "reason": "<one sentence explanation>"
+    "scores": {{
+        "business_impact": <1-10>,
+        "learning_value": <1-10>,
+        "content_potential": <1-10>,
+        "compliance_relevance": <1-10>
+    }},
+    "total_score": <sum of 4 scores, max 40>,
+    "domains": ["<primary domain>", "<secondary if relevant>"],
+    "why_it_matters": "<One sentence: why a GRC professional should care about this>",
+    "content_angle": "<Brief suggestion for how to create content from this>"
 }}
 
 Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product
 """
 
+# Humanized LinkedIn Post Prompt (multi-pass approach from blueprint)
 LINKEDIN_POST_PROMPT = """
 {voice_profile}
 
-Write a professional post based on this topic:
+Write a LinkedIn post about this news that sounds genuinely human - NOT like AI wrote it.
 
+SOURCE:
 Title: {title}
 Summary: {summary}
-Reference: {url}
+Why it matters: {why_it_matters}
+Link: {url}
 
-Requirements:
-1. 200-300 words
-2. Start with a hook
-3. Explain in simple terms
-4. Give 2-3 key takeaways
-5. End with a question
-6. Include 4-5 hashtags
-7. Use 2-3 emojis maximum
+STRUCTURE YOUR POST:
+1. **Hook** (first line): Make them stop scrolling. Be specific, not generic.
+   - Good: "A hospital just paid $1.2M in ransomware. The attack started with a PDF."
+   - Bad: "Cybersecurity is more important than ever."
 
-Write the complete post:
+2. **Context** (2-3 sentences): What happened and why it matters. Use simple words.
+
+3. **The insight** (your take): What most people miss. Be specific.
+
+4. **Practical takeaway**: One thing the reader can do or think about.
+
+5. **Genuine question**: Ask something you're actually curious about (not "Thoughts?")
+
+REQUIREMENTS:
+- 150-250 words total
+- Short paragraphs (1-3 sentences each)
+- Maximum 2 emojis (or none - real professionals don't overuse them)
+- 3-4 hashtags at the end
+- NO clichés, NO hype words, NO "In today's world..."
+- Write like you're texting a smart friend, not writing a press release
+
+Write the post now:
 """
 
+# Carousel content for Canva
 CAROUSEL_PROMPT = """
 {voice_profile}
 
-Create carousel content for this topic:
+Create 7 carousel slides for this topic. Each slide must be SIMPLE and SCANNABLE.
 
-Title: {title}
-Summary: {summary}
+Topic: {title}
+Context: {summary}
 
-Create 7 slides:
-- SLIDE 1: Bold title (max 6-8 words)
-- SLIDES 2-5: One key point each with heading and body
-- SLIDE 6: Practical takeaway
-- SLIDE 7: Call-to-action
+FORMAT EACH SLIDE:
 
-Format:
-SLIDE 1:
-[Title text]
+SLIDE 1: (Title slide - hook them)
+- Bold statement or question (max 8 words)
+- Example: "SOC 2 Audits: What They Don't Tell You"
 
-SLIDE 2:
-Heading: [heading]
-Body: [explanation]
+SLIDE 2-5: (One key point per slide)
+Heading: [3-5 words]
+Body: [1-2 short sentences - explain like they're 12]
 
-... continue for all 7 slides
+SLIDE 6: (The "So What")
+Heading: What This Means For You
+Body: [Practical action or mindset shift]
+
+SLIDE 7: (Call to action)
+- Follow for more GRC insights
+- Or a specific next step
+
+RULES:
+- Each slide stands alone - someone should get value from any single slide
+- No jargon without explanation
+- Use numbers, comparisons, or analogies
+- No walls of text - scannable in 3 seconds
+
+Create all 7 slides now:
 """
 
+# Newsletter prompt
 NEWSLETTER_PROMPT = """
 {voice_profile}
 
-Write the next edition of the newsletter.
+Write newsletter episode {episode_number} of "{series_name}"
 
-Series: {series_name}
-Episode: {episode_number}
-Topic: {topic}
+TOPIC: {topic}
 
-Context:
+THIS WEEK'S CONTEXT (top news to reference):
 {news_context}
 
-Requirements:
-1. 1500-2000 words
-2. Write for beginners
-3. Use analogies and examples
-4. Structure with clear sections
-5. Include 2-3 resource links
-6. Use headers and short paragraphs
+STRUCTURE (1500-2000 words total):
 
-Write the complete article:
+1. **Opening hook** (2-3 paragraphs)
+   - Start with a story, question, or surprising fact
+   - Connect it to why this topic matters RIGHT NOW
+   - Make non-technical readers feel this is FOR them
+
+2. **The Basics** (3-4 paragraphs)
+   - Define the concept in plain English
+   - Use an analogy from everyday life
+   - "Think of it like..."
+
+3. **How It Works** (3-4 paragraphs)
+   - The mechanics, simplified
+   - Real-world example
+   - What happens when it goes wrong
+
+4. **Common Mistakes** (3-4 paragraphs)
+   - What organizations get wrong
+   - Why these mistakes happen
+   - How to avoid them
+
+5. **Getting Started** (3-4 paragraphs)
+   - Practical first steps
+   - Free resources (include 2-3 real links)
+   - What to prioritize
+
+6. **Closing** (2 paragraphs)
+   - Key takeaway
+   - Tease next episode
+
+STYLE:
+- Write like you're teaching a friend over coffee
+- Use "you" and "we" liberally
+- Short paragraphs (max 4 sentences)
+- Headers for each section
+- Bold key terms when first introduced
+
+Write the complete newsletter:
 """
 
 DASHBOARD_PASSWORD = "GRC2026!Shree"

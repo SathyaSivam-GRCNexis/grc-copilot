@@ -52,7 +52,7 @@ def generate_with_groq(client, prompt, max_tokens=4000):
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            {"role": "system", "content": "You are a professional content writer specializing in GRC (Governance, Risk, Compliance) topics."},
+            {"role": "system", "content": "You are a professional content writer. Write naturally, like a human expert sharing insights. Never use AI clichés."},
             {"role": "user", "content": prompt}
         ],
         temperature=0.7,
@@ -77,25 +77,65 @@ def generate_content(clients, prompt, max_tokens=4000):
     return generate_with_groq(clients["groq"], prompt, max_tokens)
 
 
-def generate_linkedin_post(article, clients):
-    """Generate LinkedIn post from top article"""
+def humanize_content(clients, draft):
+    """Second pass: Remove AI tells and make more human"""
     
+    humanize_prompt = f"""
+Review this draft and rewrite it to sound MORE HUMAN and LESS like AI:
+
+DRAFT:
+{draft}
+
+REMOVE these AI patterns if present:
+- "In today's world" or similar openers
+- Overuse of "leverage", "robust", "seamless", "delve"
+- Perfect parallelism (rule of threes everywhere)
+- Em-dash overuse
+- Generic engagement questions like "Thoughts?"
+- Overly formal or corporate language
+- Perfect grammar (add some natural variation)
+
+KEEP:
+- The core message and structure
+- Any good examples or analogies
+- Genuine insights
+
+Rewrite to sound like a real professional sharing their genuine thoughts.
+Keep it the same length or slightly shorter.
+
+REWRITTEN VERSION:
+"""
+    
+    return generate_content(clients, humanize_prompt, max_tokens=2000)
+
+
+def generate_linkedin_post(article, clients):
+    """Generate humanized LinkedIn post from top article"""
+    
+    # First pass: Generate draft
     prompt = LINKEDIN_POST_PROMPT.format(
         voice_profile=VOICE_PROFILE,
         title=article['title'],
         summary=article['summary'],
+        why_it_matters=article.get('score_reason', 'Important for GRC professionals'),
         url=article['url']
     )
     
-    content = generate_content(clients, prompt, max_tokens=1000)
+    print("    Pass 1: Generating draft...")
+    draft = generate_content(clients, prompt, max_tokens=1000)
+    
+    # Second pass: Humanize
+    print("    Pass 2: Humanizing...")
+    final_content = humanize_content(clients, draft)
     
     post_data = {
-        "content": content,
+        "content": final_content,
         "based_on": {
             "title": article['title'],
             "url": article['url'],
             "source": article['source'],
-            "score": article['score']
+            "score": article['score'],
+            "why_it_matters": article.get('score_reason', '')
         },
         "generated_at": datetime.now().isoformat(),
         "type": "text_post"
@@ -121,7 +161,7 @@ def generate_carousel(article, clients):
     
     for line in content.split('\n'):
         line = line.strip()
-        if line.startswith('SLIDE'):
+        if line.upper().startswith('SLIDE'):
             if current_slide:
                 slides.append(current_slide)
             current_slide = {"slide_number": len(slides) + 1, "content": ""}
@@ -179,13 +219,12 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
             break
     
     if not topic:
-        # Reset if all topics used
         topic = topics_queue[0]
         topics_used = []
     
     # Create news context from top articles
     news_context = "\n".join([
-        f"- {a['title']} ({a['source']}, Score: {a['score']})"
+        f"- {a['title']} ({a['source']})\n  Why it matters: {a.get('score_reason', 'N/A')}"
         for a in top_articles[:5]
     ])
     
@@ -197,7 +236,12 @@ def generate_newsletter(top_articles, clients, config_path="data/newsletter_conf
         news_context=news_context
     )
     
+    print("    Generating newsletter...")
     content = generate_content(clients, prompt, max_tokens=4000)
+    
+    # Humanize the newsletter too
+    print("    Humanizing newsletter...")
+    content = humanize_content(clients, content)
     
     newsletter_data = {
         "title": topic,
@@ -232,7 +276,6 @@ def save_content(content, filepath):
 
 
 if __name__ == "__main__":
-    # Test with sample data
     clients = init_clients()
     
     with open("data/articles.json", "r") as f:
