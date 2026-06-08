@@ -1,12 +1,12 @@
 {
-  "content": "**A single compromised repository can have far-reaching consequences.**\n\nRecently, Microsoft's GitHub repositories fell victim to a self-replicating supply chain attack campaign, known as Miasma. This incident highlights the vulnerability of software supply chains and the importance of robust security measures in preventing major breaches. The attack impacted 73 Microsoft repositories across four organizations, including Azure and Azure-Samples.\n\nIn my experience, most organizations overlook the potential risks associated with third-party dependencies. They assume that using a popular library or framework is enough to ensure security. However, this assumption can be a false sense of security. A single compromised repository can lead to a cascade of vulnerabilities, making it difficult to pinpoint the root cause of the issue.\n\nThis is why it's essential to have a clear understanding of your software supply chain. I've noticed that many organizations lack visibility into their third-party dependencies, making it challenging to identify potential security risks. To mitigate this, I recommend conducting regular third-party risk assessments and implementing robust security controls to prevent supply chain attacks.\n\nCan we agree that the software supply chain is a critical component of our digital infrastructure, and its security should be taken just as seriously as our internal security measures? #SupplyChainSecurity #Cybersecurity #GRC",
+  "content": "**A hospital just paid $1.2M in ransomware. The attack started with a vulnerable server.**\n\nA recent CISA alert highlights a critical vulnerability (CVE-2026-28318) in SolarWinds Serv-U file transfer servers. This flaw allows remote attackers to crash the server, and the agency has ordered US federal agencies to patch or mitigate by June 19, 2026.\n\nThe issue here isn't just the technical details of the vulnerability, but the alarming rate at which attackers are exploiting it. In my experience, the longer a vulnerability remains unpatched, the higher the likelihood of exploitation. This is why I firmly believe that timely patching and mitigation are crucial controls in preventing cyber attacks.\n\nThe takeaway here is that patch management is not just about fixing bugs, but about protecting your organization's digital assets from exploitation. As a GRC professional, it's essential to prioritize patching and mitigation to prevent costly ransomware attacks.\n\nI'm curious - what's your organization's process for patching and mitigation, and how do you ensure timely updates to prevent vulnerabilities like CVE-2026-28318?\n\n#Cybersecurity #PatchManagement #RansomwarePrevention",
   "based_on": {
-    "title": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
-    "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
-    "source": "The Hacker News",
+    "title": "CISA: Patch actively exploited SolarWinds Serv-U DoS vulnerability (CVE-2026-28318)",
+    "url": "https://www.helpnetsecurity.com/2026/06/08/cisa-patch-actively-exploited-solarwinds-serv-u-dos-vulnerability-cve-2026-28318/",
+    "source": "Help Net Security",
     "score": 8,
-    "why_it_matters": "A GRC professional should care about this because it highlights the vulnerability of software supply chains and the importance of robust security measures in preventing major breaches."
+    "why_it_matters": "A GRC professional should care about this because it highlights the importance of timely patching and mitigation of vulnerabilities to prevent exploitation by attackers."
   },
-  "generated_at": "2026-06-08T11:04:49.588308",
+  "generated_at": "2026-06-08T11:31:11.446754",
   "type": "text_post"
 }

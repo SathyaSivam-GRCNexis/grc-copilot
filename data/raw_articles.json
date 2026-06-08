@@ -1,11 +1,19 @@
 [
   {
+    "title": "Anthropic\u2019s Project Glasswing Update",
+    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html",
+    "summary": "In April, Anthropic initated Project Glasswing. The idea was to let companies use their new model to find and fix vulnerabilities in their own software. It was a fantastic PR move, and so many press outlets have uncritically parroted Anthropic&#8217;s claims that it&#8217;s now common wisdom that Mythos is better at finding software vulnerabilities than other models. Which is just not true. In any case, Anthropic has published a Project Glasswing status report. It&#8217;s finding a lot of vulnerabilities in software&#8212;yay! Some of them are even dangerous. But almost none of them has been p",
+    "source": "Schneier on Security",
+    "published": "2026-06-08T11:01:47",
+    "fetched_at": "2026-06-08T11:24:53.774924"
+  },
+  {
     "title": "VerdantBamboo Deploys BSD Variant of BRICKSTORM on Linux Appliances",
     "url": "https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html",
     "summary": "A China-nexus cyber espionage group has been observed deploying a BSD variant of a known backdoor called BRICKSTORM, as well as two other malware families codenamed PLENET (aka GRIMBOLT) and AGENTPSD to target Linux systems. The activity has been attributed by Volexity to a threat cluster it tracks as VerdantBamboo, which it said overlaps with hacking groups known as Clay Typhoon (Microsoft),",
     "source": "The Hacker News",
     "published": "2026-06-08T15:57:32",
-    "fetched_at": "2026-06-08T10:58:39.726439"
+    "fetched_at": "2026-06-08T11:24:55.818636"
   },
   {
     "title": "UNC3753 Used Vishing and Physical Intrusions in U.S. Data Theft Extortion Campaign",
@@ -13,7 +21,7 @@
     "summary": "Cybersecurity researchers have disclosed details of a financially motivated data theft extortion campaign that has targeted dozens of organizations across professional, legal, and financial services in the U.S. between January and May 2026. The activity has been attributed by Google Mandiant and Google Threat Intelligence Group (GTIG) to a threat actor dubbed UNC3753, which is also known as",
     "source": "The Hacker News",
     "published": "2026-06-08T13:09:28",
-    "fetched_at": "2026-06-08T10:58:39.726568"
+    "fetched_at": "2026-06-08T11:24:55.818764"
   },
   {
     "title": "VS Code Adds 2-Hour Extension Auto-Update Delay to Limit Supply Chain Attacks",
@@ -21,7 +29,7 @@
     "summary": "Microsoft has announced that Visual Studio Code (VS Code) will apply a two-hour delay before extensions for the integrated development environment (IDE) are updated automatically to a newer version in an attempt to tackle software supply chain threats. \"When automatic updates are enabled, new versions are auto-updated two hours after they are published, adding an extra layer of protection",
     "source": "The Hacker News",
     "published": "2026-06-08T11:38:44",
-    "fetched_at": "2026-06-08T10:58:39.726667"
+    "fetched_at": "2026-06-08T11:24:55.818899"
   },
   {
     "title": "New ChatGPT Lockdown Mode Limits Tools That Could Enable Data Exfiltration",
@@ -29,7 +37,7 @@
     "summary": "OpenAI has begun rolling out a new Lockdown Mode to ChatGPT for eligible personal accounts to reduce the risk of data exfiltration arising from prompt injection attacks. The feature is primarily designed for people and organizations that handle sensitive data and require stricter protection guarantees. Lockdown Mode is available to logged-in users across Free, Go, Plus, and Pro, and",
     "source": "The Hacker News",
     "published": "2026-06-06T19:06:57",
-    "fetched_at": "2026-06-08T10:58:39.726760"
+    "fetched_at": "2026-06-08T11:24:55.819066"
   },
   {
     "title": "Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI",
@@ -37,7 +45,7 @@
     "summary": "A researcher has reverse-engineered the iOS SDK that Bright Data embeds in consumer apps and documented how it turns devices, including always-on smart TVs, into exit nodes that relay web-scraping traffic for a data business Bright Data markets heavily to the AI industry. The company, the successor to Luminati, operates what it calls the largest residential proxy network in the world,",
     "source": "The Hacker News",
     "published": "2026-06-06T13:59:05",
-    "fetched_at": "2026-06-08T10:58:39.726848"
+    "fetched_at": "2026-06-08T11:24:55.819179"
   },
   {
     "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
@@ -45,7 +53,7 @@
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity security flaw impacting SolarWinds Serv-U multi-protocol file server software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerability, tracked as CVE-2026-28318 (CVSS score: 7.5), is a denial-of-service (DoS) bug that causes the service to crash",
     "source": "The Hacker News",
     "published": "2026-06-06T13:44:31",
-    "fetched_at": "2026-06-08T10:58:39.726936"
+    "fetched_at": "2026-06-08T11:24:55.819309"
   },
   {
     "title": "AI Agent Uncovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
@@ -53,7 +61,7 @@
     "summary": "Two things landed within days of each other this week. A security startup reported 21 previously unknown vulnerabilities in FFmpeg, the media library inside almost everything that touches video, all of them found by an autonomous AI agent. The same week, Google shipped Chrome 149 with patches for 429 security bugs, the most ever in a single release. Only the FFmpeg bugs were found by AI.",
     "source": "The Hacker News",
     "published": "2026-06-06T12:58:30",
-    "fetched_at": "2026-06-08T10:58:39.727021"
+    "fetched_at": "2026-06-08T11:24:55.819418"
   },
   {
     "title": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
@@ -61,7 +69,15 @@
     "summary": "Microsoft's GitHub repositories have become the latest to fall victim to the ongoing Miasma self-replicating supply chain attack campaign. The incident impacted 73 Microsoft repositories across four of its GitHub organizations, including Azure, Azure-Samples, Microsoft, and MicrosoftDocs, per OpenSourceMalware. The development has GitHub to disable access to those repositories. \"Access to this",
     "source": "The Hacker News",
     "published": "2026-06-06T12:28:04",
-    "fetched_at": "2026-06-08T10:58:39.727106"
+    "fetched_at": "2026-06-08T11:24:55.819523"
+  },
+  {
+    "title": "Oxford University discloses data breach after careers platform hack",
+    "url": "https://www.bleepingcomputer.com/news/security/oxford-university-discloses-data-breach-after-careerconnect-platform-hack/",
+    "summary": "The University of Oxford disclosed a new data breach last week after being informed by its third-party provider, Group GTI, that its CareerConnect career services platform had been compromised. [...]",
+    "source": "BleepingComputer",
+    "published": "2026-06-08T07:14:41",
+    "fetched_at": "2026-06-08T11:24:55.951493"
   },
   {
     "title": "Over 20,000 Instagram accounts stolen in Meta AI support hack",
@@ -69,7 +85,7 @@
     "summary": "Meta has revealed that 20,225 Instagram users had their accounts hijacked in a recent incident where attackers used Meta's AI-powered support system to reset passwords. [...]",
     "source": "BleepingComputer",
     "published": "2026-06-08T02:00:27",
-    "fetched_at": "2026-06-08T10:58:39.792156"
+    "fetched_at": "2026-06-08T11:24:55.951613"
   },
   {
     "title": "Hands on with Intelligent Terminal, an AI-powered Windows Terminal",
@@ -77,7 +93,7 @@
     "summary": "Microsoft has created an open-source fork of Windows Terminal called \"Intelligent Terminal,\" and it allows you to use AI directly inside Terminal without interfering with the regular session. [...]",
     "source": "BleepingComputer",
     "published": "2026-06-07T19:20:02",
-    "fetched_at": "2026-06-08T10:58:39.792278"
+    "fetched_at": "2026-06-08T11:24:55.951723"
   },
   {
     "title": "C0XMO botnet spreads via DD-WRT router flaw, kills rival malware",
@@ -85,7 +101,7 @@
     "summary": "A new variant of the Gafgyt botnet called C0XMO is targeting DD-WRT router firmware and can move to other device types with various CPU architectures. [...]",
     "source": "BleepingComputer",
     "published": "2026-06-07T10:17:46",
-    "fetched_at": "2026-06-08T10:58:39.792370"
+    "fetched_at": "2026-06-08T11:24:55.951827"
   },
   {
     "title": "Silent Ransom Group targets law firms with fake IT support calls",
@@ -93,7 +109,7 @@
     "summary": "The Silent Ransom Group extortion gang is actively targeting U.S. law firms and professional services organizations in social engineering attacks that often lead to data theft within hours of initial contact, according to a new report by cybersecurity firm Mandiant. [...]",
     "source": "BleepingComputer",
     "published": "2026-06-07T10:09:19",
-    "fetched_at": "2026-06-08T10:58:39.792459"
+    "fetched_at": "2026-06-08T11:24:55.951934"
   },
   {
     "title": "The AI security race needs accountability, not overregulation",
@@ -101,7 +117,7 @@
     "summary": "Partnership between policymakers and tech companies, not government oversight, offers the best path forward for responsible AI innovation. The post The AI security race needs accountability, not overregulation appeared first on CyberScoop.",
     "source": "CyberScoop",
     "published": "2026-06-08T10:00:00",
-    "fetched_at": "2026-06-08T10:58:45.547406"
+    "fetched_at": "2026-06-08T11:25:02.675498"
   },
   {
     "title": "Silent Ransom Group Uses DNS Fast Flux in Attacks",
@@ -109,7 +125,7 @@
     "summary": "Focusing on hacking law firms in the US, the ransomware group relies on fast flux to hide its C&#038;C infrastructure. The post Silent Ransom Group Uses DNS Fast Flux in Attacks appeared first on SecurityWeek.",
     "source": "SecurityWeek",
     "published": "2026-06-08T10:31:39",
-    "fetched_at": "2026-06-08T10:58:45.880283"
+    "fetched_at": "2026-06-08T11:25:03.016097"
   },
   {
     "title": "OpenAI Rolling Out ChatGPT Account Security Controls",
@@ -117,7 +133,15 @@
     "summary": "The Active Sessions and Lockdown Mode features are being made more broadly available by the AI giant. The post OpenAI Rolling Out ChatGPT Account Security Controls appeared first on SecurityWeek.",
     "source": "SecurityWeek",
     "published": "2026-06-08T08:32:49",
-    "fetched_at": "2026-06-08T10:58:45.880388"
+    "fetched_at": "2026-06-08T11:25:03.016238"
+  },
+  {
+    "title": "Anthropic Urges Industry Coordination to Allow for a \u2018Pause\u2019 in AI Development if Risks Grow",
+    "url": "https://www.securityweek.com/anthropic-urges-industry-coordination-to-allow-for-a-pause-in-ai-development-if-risks-grow/",
+    "summary": "The proposed coordination would let advanced AI labs verify that global rivals have actually stopped or slowed their work. The post Anthropic Urges Industry Coordination to Allow for a \u2018Pause\u2019 in AI Development if Risks Grow appeared first on SecurityWeek.",
+    "source": "SecurityWeek",
+    "published": "2026-06-08T08:00:00",
+    "fetched_at": "2026-06-08T11:25:03.016362"
   },
   {
     "title": "SolarWinds Serv-U Vulnerability Exploited in the Wild",
@@ -125,7 +149,7 @@
     "summary": "Unauthenticated attackers can exploit the flaw via specially crafted POST requests that crash the Serv-U service. The post SolarWinds Serv-U Vulnerability Exploited in the Wild appeared first on SecurityWeek.",
     "source": "SecurityWeek",
     "published": "2026-06-08T07:52:28",
-    "fetched_at": "2026-06-08T10:58:45.880477"
+    "fetched_at": "2026-06-08T11:25:03.016471"
   },
   {
     "title": "Meta Says 20,000 Instagram Accounts Hacked via AI Tool Abuse",
@@ -133,7 +157,7 @@
     "summary": "The social media giant has informed authorities about the impact of the recent attack involving an account recovery support tool. The post Meta Says 20,000 Instagram Accounts Hacked via AI Tool Abuse appeared first on SecurityWeek.",
     "source": "SecurityWeek",
     "published": "2026-06-08T06:41:47",
-    "fetched_at": "2026-06-08T10:58:45.880565"
+    "fetched_at": "2026-06-08T11:25:03.016576"
   },
   {
     "title": "Emphere Raises $2.1 Million for AI-Powered Vulnerability Remediation",
@@ -141,7 +165,7 @@
     "summary": "Emphere\u2019s solution delivers AI-driven remediation to software companies to speed up releases. The post Emphere Raises $2.1 Million for AI-Powered Vulnerability Remediation appeared first on SecurityWeek.",
     "source": "SecurityWeek",
     "published": "2026-06-07T11:30:00",
-    "fetched_at": "2026-06-08T10:58:45.880657"
+    "fetched_at": "2026-06-08T11:25:03.016684"
   },
   {
     "title": "Father of the iPod and iPhone on building taste, judgment, and creativity in the AI era | Tony Fadell",
@@ -149,7 +173,7 @@
     "summary": "Listen now | The creator of iPod, iPhone, and Nest on opinion vs. data decisions, why marketing matters, the \"three generations\" rule behind everything he's shipped, and why AI will still need screens",
     "source": "Lenny's Newsletter",
     "published": "2026-06-07T12:31:29",
-    "fetched_at": "2026-06-08T10:59:13.750330"
+    "fetched_at": "2026-06-08T11:25:13.790374"
   },
   {
     "title": "\ud83e\udde0 Community Wisdom: Bootstrapping vs. raising funding, building the roadmap of your vibe-coded app, AI agents and data integrity, your first project as an APM, and more",
@@ -157,7 +181,7 @@
     "summary": "Community Wisdom 188",
     "source": "Lenny's Newsletter",
     "published": "2026-06-06T17:14:54",
-    "fetched_at": "2026-06-08T10:59:13.750431"
+    "fetched_at": "2026-06-08T11:25:13.790483"
   },
   {
     "title": "The Success That Killed Success: Product Cannibalization",
@@ -165,7 +189,7 @@
     "summary": "Why the smartest product teams kill their own cash cows before someone else does",
     "source": "Product Coalition",
     "published": "2026-06-08T00:04:51",
-    "fetched_at": "2026-06-08T10:59:14.558606"
+    "fetched_at": "2026-06-08T11:25:14.417293"
   },
   {
     "title": "Google Buys Compute From SpaceX, Broadcom\u2019s Outlook, Apple\u2019s AI Politics",
@@ -173,7 +197,7 @@
     "summary": "Google's deal with SpaceX, and Broadcom's earnings, both seem bullish for Nvidia. Then, what I'm looking for at WWDC.",
     "source": "Stratechery by Ben Thompson",
     "published": "2026-06-08T10:00:00",
-    "fetched_at": "2026-06-08T10:59:16.672348"
+    "fetched_at": "2026-06-08T11:25:16.747393"
   },
   {
     "title": "CISA: Patch actively exploited SolarWinds Serv-U DoS vulnerability (CVE-2026-28318)",
@@ -181,7 +205,7 @@
     "summary": "A vulnerability (CVE-2026-28318) that can be exploited to crash SolarWinds Serv-U file transfer servers is being leveraged by attackers in the wild, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed on Friday. The agency has ordered US federal civilian agencies to address it by June 19, 2026, either by implementing a patch or implementing mitigations. About CVE-2026-28318 CVE-2026-28318 is an uncontrolled resource consumption vulnerability that can be triggered by remote, unauthenticated attackers. The flaw &#8230; More &#8594; The post CISA: Patch actively exploited Sol",
     "source": "Help Net Security",
     "published": "2026-06-08T10:26:34",
-    "fetched_at": "2026-06-08T10:59:17.185417"
+    "fetched_at": "2026-06-08T11:25:17.028447"
   },
   {
     "title": "Samsung just made Galaxy phones more secure in One UI 9 beta",
@@ -189,7 +213,7 @@
     "summary": "Samsung&#8217;s One UI 9 beta integrates Lockdown mode into the power menu. This is the screen that contains Power off, Restart, and emergency options. Opening it initiates Lockdown mode, disabling biometric authentication. \u201cWe tried it out on the Galaxy S26 Ultra running on One UI 9 beta 2, and it returns users to the lock screen instead of the previous app,\u201d Android Authority noted. A PIN or password is then required to unlock, power off, &#8230; More &#8594; The post Samsung just made Galaxy phones more secure in One UI 9 beta appeared first on Help Net Security.",
     "source": "Help Net Security",
     "published": "2026-06-08T09:13:02",
-    "fetched_at": "2026-06-08T10:59:17.185546"
+    "fetched_at": "2026-06-08T11:25:17.028589"
   },
   {
     "title": "OpenAI is locking down parts of ChatGPT to reduce data theft risks",
@@ -197,7 +221,7 @@
     "summary": "OpenAI has started rolling out Lockdown Mode for ChatGPT, an optional security setting that restricts access to external resources and several product capabilities. It is available for personal accounts, including Free, Go, Plus, and Pro plans, as well as self-serve ChatGPT Business accounts. &#8220;Lockdown Mode is not intended for everyone. It is designed for people and organizations that handle sensitive data and want stronger protection against data exfiltration risks associated with prompt injection,&#8221; the company &#8230; More &#8594; The post OpenAI is locking down parts of ChatGPT ",
     "source": "Help Net Security",
     "published": "2026-06-08T07:58:46",
-    "fetched_at": "2026-06-08T10:59:17.185656"
+    "fetched_at": "2026-06-08T11:25:17.028716"
   },
   {
     "title": "DockSec: Open-source AI-powered Docker security scanner",
@@ -205,7 +229,7 @@
     "summary": "DockSec is an OWASP Incubator Project that combines three container security scanners with a language-model layer for explanation and remediation. Created by Advait Patel, the Python tool runs Trivy, Hadolint, and Docker Scout against a developer&#8217;s Dockerfile and image, correlates the findings, returns a 0-100 security score, and proposes line-specific fixes. DockSec requires Python 3.12 and ships under the MIT license. It supports four language-model backends: OpenAI, Anthropic, Google Gemini, and local models served through &#8230; More &#8594; The post DockSec: Open-source AI-powered ",
     "source": "Help Net Security",
     "published": "2026-06-08T06:00:23",
-    "fetched_at": "2026-06-08T10:59:17.185758"
+    "fetched_at": "2026-06-08T11:25:17.028837"
   },
   {
     "title": "When attacks spread too far: Lessons from real cyber attack case studies",
@@ -213,7 +237,7 @@
     "summary": "In this Help Net Security video, Michael Adjei, Director, Systems Engineering at Illumio, explains three real world cyber attacks and what went wrong during detection. Adjei walks through a collaboration tool scam that copied Microsoft Teams, an identity phishing case used for payment fraud, and a long running advanced threat campaign. Each story follows the timeline from entry point to spread across systems. The first attack began with phishing and a fake update that placed &#8230; More &#8594; The post When attacks spread too far: Lessons from real cyber attack case studies appeared first on",
     "source": "Help Net Security",
     "published": "2026-06-08T05:30:36",
-    "fetched_at": "2026-06-08T10:59:17.185857"
+    "fetched_at": "2026-06-08T11:25:17.028957"
   },
   {
     "title": "Google Colab CLI opens runtimes to Claude Code and Codex",
@@ -221,7 +245,7 @@
     "summary": "Google released the Google Colab Command-Line Interface, a tool that connects local terminals to remote Colab runtimes. The CLI provides an execution platform for developers and AI agents, letting users provision compute, run local Python scripts on remote runtimes, and retrieve artifacts back to local machines. Google Colab CLI (Source: Google) Commands and accelerator options The CLI handles GPU and TPU provisioning through commands such as colab --gpu A100 and colab --gpu T4. The colab &#8230; More &#8594; The post Google Colab CLI opens runtimes to Claude Code and Codex appeared first on H",
     "source": "Help Net Security",
     "published": "2026-06-08T05:00:03",
-    "fetched_at": "2026-06-08T10:59:17.185958"
+    "fetched_at": "2026-06-08T11:25:17.029076"
   },
   {
     "title": "Cybercriminals create 19,000 FIFA-themed domains ahead of 2026 World Cup",
@@ -229,7 +253,7 @@
     "summary": "Fans looking for tickets, accommodation and match broadcasts are already encountering scams tied to the 2026 FIFA World Cup. The 2026 FIFA World Cup will bring millions of visitors and an estimated 6 billion spectators to a tournament spread across 16 host cities in the United States, Canada and Mexico. In a new report, Intel 471 describes the 2026 FIFA World Cup as &#8220;the largest and most complex cyberattack surface in sporting history.&#8221; FIFA-themed phishing &#8230; More &#8594; The post Cybercriminals create 19,000 FIFA-themed domains ahead of 2026 World Cup appeared first on Help ",
     "source": "Help Net Security",
     "published": "2026-06-08T04:30:35",
-    "fetched_at": "2026-06-08T10:59:17.186058"
+    "fetched_at": "2026-06-08T11:25:17.029218"
   },
   {
     "title": "GitHub Copilot app launches as desktop home for AI coding agents",
@@ -237,7 +261,7 @@
     "summary": "GitHub introduced the Copilot app, a desktop application built for working with AI coding agents, at Microsoft Build 2026. The release expands GitHub&#8217;s Copilot product line beyond editor integrations and command-line tools into a dedicated workspace for directing several agents at once. The Copilot app is available in technical preview to existing Copilot Pro, Pro+, Business, and Enterprise subscribers. A control center for parallel agent sessions The Copilot app provides a single &#8220;My Work&#8221; view &#8230; More &#8594; The post GitHub Copilot app launches as desktop home for AI ",
     "source": "Help Net Security",
     "published": "2026-06-08T04:15:02",
-    "fetched_at": "2026-06-08T10:59:17.186158"
+    "fetched_at": "2026-06-08T11:25:17.029348"
   },
   {
     "title": "52% of direct-to-IP threats are missing from intelligence feeds",
@@ -245,7 +269,7 @@
     "summary": "Security tools are good at inspecting websites, domains, URLs, and files, so attackers are moving lower in the stack and communicating directly with IP addresses, where visibility is limited. According to Palo Alto Networks&#8217; report, this creates a visibility gap that allows malicious traffic to blend into normal internet activity and evade detection. At the internet edge, this gap starves security systems of the telemetry needed to identify and block threats. Threat actors hide the &#8230; More &#8594; The post 52% of direct-to-IP threats are missing from intelligence feeds appeared firs",
     "source": "Help Net Security",
     "published": "2026-06-08T04:00:43",
-    "fetched_at": "2026-06-08T10:59:17.186296"
+    "fetched_at": "2026-06-08T11:25:17.029468"
   },
   {
     "title": "Week in review: Cisco SD-WAN 0-day exploited, Patch Tuesday forecast",
@@ -253,7 +277,7 @@
     "summary": "Here\u2019s an overview of some of last week\u2019s most interesting news, articles, interviews and videos: OWASP Agent Memory Guard: Stop AI agents from being weaponized through their own memory Agent Memory Guard is an open-source runtime defense layer that sits between an agent and its memory store, screening every read and write through a pipeline of detectors and a YAML policy. The project is the OWASP reference implementation for ASI06, Memory Poisoning, one entry in &#8230; More &#8594; The post Week in review: Cisco SD-WAN 0-day exploited, Patch Tuesday forecast appeared first on Help Net Securi",
     "source": "Help Net Security",
     "published": "2026-06-07T08:00:37",
-    "fetched_at": "2026-06-08T10:59:17.186406"
+    "fetched_at": "2026-06-08T11:25:17.029594"
   },
   {
     "title": "Is this the dawn of the Tokenpocalypse?",
@@ -261,7 +285,7 @@
     "summary": "We're likely to see more price increases as the big AI companies plan to go public.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-07T20:26:13",
-    "fetched_at": "2026-06-08T10:59:17.313373"
+    "fetched_at": "2026-06-08T11:25:17.081982"
   },
   {
     "title": "Notion restores access to Anthropic after service disruption",
@@ -269,7 +293,7 @@
     "summary": "Notion's head of product said he was \"astonished\" at \u201cthe amount of people RT-ing this.\"",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-07T17:56:22",
-    "fetched_at": "2026-06-08T10:59:17.313475"
+    "fetched_at": "2026-06-08T11:25:17.082093"
   },
   {
     "title": "OpenAI is still working on that \u2018super app\u2019",
@@ -277,7 +301,7 @@
     "summary": "\"Chat is dead\" \u2014 at least, according to a senior OpenAI employee.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-07T16:23:22",
-    "fetched_at": "2026-06-08T10:59:17.313564"
+    "fetched_at": "2026-06-08T11:25:17.082218"
   },
   {
     "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
@@ -285,7 +309,7 @@
     "summary": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-06T20:32:24",
-    "fetched_at": "2026-06-08T10:59:17.313653"
+    "fetched_at": "2026-06-08T11:25:17.082329"
   },
   {
     "title": "What to expect from WWDC 2026: Siri\u2019s highly anticipated revamp and Apple Intelligence updates",
@@ -293,7 +317,7 @@
     "summary": "Apple's WWDC nears: Here's what you can look forward to.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-06T18:13:36",
-    "fetched_at": "2026-06-08T10:59:17.313736"
+    "fetched_at": "2026-06-08T11:25:17.082431"
   },
   {
     "title": "Sriram Krishnan is leaving his role as White House AI advisor",
@@ -301,7 +325,7 @@
     "summary": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-06T17:42:15",
-    "fetched_at": "2026-06-08T10:59:17.313814"
+    "fetched_at": "2026-06-08T11:25:17.082529"
   },
   {
     "title": "The Trump administration might take an equity stake in OpenAI",
@@ -309,7 +333,7 @@
     "summary": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-06T16:17:21",
-    "fetched_at": "2026-06-08T10:59:17.313892"
+    "fetched_at": "2026-06-08T11:25:17.082626"
   },
   {
     "title": "Why this year\u2019s World Cup ball may not fly as far",
@@ -317,6 +341,6 @@
     "summary": "Much is new about this month\u2019s upcoming FIFA World Cup tournament, which will be held in the US, Canada, and Mexico. It hosts more teams than ever before. It\u2019s the first to occur in three different host countries. And, like predecessor cups for over half a century, it will employ a soccer ball with a&#8230;",
     "source": "MIT Technology Review",
     "published": "2026-06-08T09:00:00",
-    "fetched_at": "2026-06-08T10:59:17.668538"
+    "fetched_at": "2026-06-08T11:25:17.587625"
   }
 ]
