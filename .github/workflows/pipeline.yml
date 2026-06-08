@@ -49,4 +49,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "Update content - $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
           git push
