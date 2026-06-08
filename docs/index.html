@@ -15,27 +15,33 @@
         }
 
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-card: #1a1a24;
-            --bg-card-hover: #222230;
-            --border: #2a2a3a;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0b0;
-            --text-muted: #606070;
-            --accent-blue: #3b82f6;
+            --bg-main: #f8f9fc;
+            --bg-white: #ffffff;
+            --bg-sidebar: #1a1a2e;
+            --text-primary: #1a1a2e;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border: #e5e7eb;
             --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
             --accent-green: #10b981;
             --accent-orange: #f59e0b;
             --accent-red: #ef4444;
             --accent-pink: #ec4899;
-            --gradient-1: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            --gradient-2: linear-gradient(135deg, #10b981, #3b82f6);
+            --gradient-blue: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            --gradient-green: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            --gradient-orange: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            --gradient-purple: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            --gradient-pink: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+            --gradient-red: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-primary);
+            background: var(--bg-main);
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.6;
@@ -48,44 +54,44 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--bg-primary);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             z-index: 1000;
         }
 
-        .password-screen.hidden {
-            display: none;
-        }
+        .password-screen.hidden { display: none; }
 
         .password-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
+            background: white;
+            border-radius: 24px;
             padding: 3rem;
             text-align: center;
-            max-width: 400px;
+            max-width: 420px;
             width: 90%;
+            box-shadow: var(--shadow-lg);
         }
 
         .password-box .logo {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-1);
-            border-radius: 20px;
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
         }
 
         .password-box .logo svg {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             color: white;
         }
 
         .password-box h1 {
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
+            color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
 
@@ -96,37 +102,40 @@
 
         .password-input-wrapper {
             display: flex;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
 
         .password-input-wrapper input {
             flex: 1;
-            padding: 1rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            padding: 0.875rem 1rem;
+            background: var(--bg-main);
+            border: 2px solid var(--border);
             border-radius: 12px;
             color: var(--text-primary);
             font-size: 1rem;
             outline: none;
-            transition: border-color 0.2s;
+            transition: all 0.2s;
         }
 
         .password-input-wrapper input:focus {
-            border-color: var(--accent-blue);
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
         }
 
         .password-input-wrapper button {
-            padding: 1rem 1.5rem;
-            background: var(--gradient-1);
+            padding: 0.875rem 1.5rem;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
             border: none;
             border-radius: 12px;
             color: white;
             cursor: pointer;
-            transition: opacity 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 500;
         }
 
         .password-input-wrapper button:hover {
-            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
         }
 
         .error-msg {
@@ -135,90 +144,206 @@
             font-size: 0.875rem;
         }
 
-        /* Main Dashboard */
-        .dashboard {
-            display: none;
+        /* Layout */
+        .app { display: none; }
+        .app.active { display: flex; min-height: 100vh; }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-sidebar);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
         }
 
-        .dashboard.active {
-            display: block;
-        }
-
-        /* Header */
-        .header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 2rem;
+        .sidebar-logo {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .header-logo {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-1);
+        .sidebar-logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .header-logo svg {
-            width: 24px;
-            height: 24px;
+        .sidebar-logo-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .sidebar-logo-text {
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .sidebar-subtitle {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 2rem;
+        }
+
+        .nav-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-section-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 0.75rem;
+            padding-left: 0.75rem;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 10px;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin-bottom: 0.25rem;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.1);
             color: white;
         }
 
-        .header-title {
-            font-size: 1.25rem;
-            font-weight: 600;
+        .nav-item.active {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
+        }
+
+        .nav-item svg {
+            width: 18px;
+            height: 18px;
+            opacity: 0.7;
+        }
+
+        .nav-item.active svg { opacity: 1; }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .header-left .date-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1rem;
+        }
+
+        .header-left .date-badge span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .greeting {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .greeting-emoji {
+            display: inline-block;
+            animation: wave 1.5s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(20deg); }
+            75% { transform: rotate(-10deg); }
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .status-message {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
         }
 
         .header-right {
             display: flex;
-            align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
         }
 
-        .status-badge {
-            display: flex;
+        .btn {
+            display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-card);
-            border-radius: 20px;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
             font-size: 0.875rem;
-            color: var(--text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
         }
 
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--accent-green);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
+        .btn-primary {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
         }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
         }
 
-        /* Main Content */
-        .main {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
+        .btn-secondary {
+            background: white;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-main);
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
         }
 
         /* Stats Grid */
@@ -230,261 +355,281 @@
         }
 
         .stat-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: 1.25rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .stat-card.blue::before { background: var(--gradient-blue); }
+        .stat-card.green::before { background: var(--gradient-green); }
+        .stat-card.orange::before { background: var(--gradient-orange); }
+        .stat-card.purple::before { background: var(--gradient-purple); }
+        .stat-card.pink::before { background: var(--gradient-pink); }
+        .stat-card.red::before { background: var(--gradient-red); }
+
+        .stat-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-card-header {
             display: flex;
-            align-items: center;
-            gap: 1rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
         }
 
         .stat-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: rgba(255,255,255,0.8);
         }
-
-        .stat-icon.blue { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
-        .stat-icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
-        .stat-icon.green { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
-        .stat-icon.orange { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); }
 
         .stat-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 16px;
+            height: 16px;
         }
 
-        .stat-info h3 {
-            font-size: 1.75rem;
+        .stat-icon.blue svg { color: var(--accent-blue); }
+        .stat-icon.green svg { color: var(--accent-green); }
+        .stat-icon.orange svg { color: var(--accent-orange); }
+        .stat-icon.purple svg { color: var(--accent-purple); }
+        .stat-icon.pink svg { color: var(--accent-pink); }
+        .stat-icon.red svg { color: var(--accent-red); }
+
+        .stat-value {
+            font-size: 2rem;
             font-weight: 700;
-        }
-
-        .stat-info p {
-            color: var(--text-secondary);
-            font-size: 0.875rem;
-        }
-
-        /* Domain Filter */
-        .domain-filter {
-            display: flex;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .domain-btn {
-            padding: 0.625rem 1.25rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 25px;
-            color: var(--text-secondary);
-            font-size: 0.875rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .domain-btn:hover {
-            background: var(--bg-card-hover);
             color: var(--text-primary);
         }
-
-        .domain-btn.active {
-            background: var(--accent-blue);
-            border-color: var(--accent-blue);
-            color: white;
-        }
-
-        .domain-btn .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-        }
-
-        .domain-btn .dot.grc { background: var(--accent-blue); }
-        .domain-btn .dot.privacy { background: var(--accent-purple); }
-        .domain-btn .dot.security { background: var(--accent-red); }
-        .domain-btn .dot.devsecops { background: var(--accent-green); }
-        .domain-btn .dot.ai { background: var(--accent-orange); }
-        .domain-btn .dot.product { background: var(--accent-pink); }
 
         /* Two Column Layout */
         .two-col {
             display: grid;
             grid-template-columns: 1fr 400px;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
-        /* Section Headers */
-        .section-header {
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border);
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            margin-bottom: 1rem;
+            align-items: center;
         }
 
-        .section-title {
-            font-size: 1.125rem;
+        .card-title {
+            font-size: 0.9375rem;
             font-weight: 600;
+            color: var(--text-primary);
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .section-title svg {
-            width: 20px;
-            height: 20px;
-            color: var(--accent-blue);
+        .card-title svg {
+            width: 18px;
+            height: 18px;
+            color: var(--accent-purple);
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
+
+        .card-link {
+            font-size: 0.8125rem;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .card-link:hover { text-decoration: underline; }
+
+        /* Domain Filter Pills */
+        .domain-filters {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .domain-pill {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+            background: white;
+            color: var(--text-secondary);
+        }
+
+        .domain-pill:hover {
+            border-color: var(--accent-purple);
+            color: var(--accent-purple);
+        }
+
+        .domain-pill.active {
+            background: var(--accent-purple);
+            border-color: var(--accent-purple);
+            color: white;
         }
 
         /* News List */
         .news-list {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
         }
 
         .news-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
             text-decoration: none;
             color: inherit;
-            display: block;
-            transition: all 0.2s;
-            cursor: pointer;
+            transition: background 0.2s;
         }
 
-        .news-item:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--accent-blue);
-            transform: translateX(4px);
-        }
-
-        .news-item-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 0.75rem;
-        }
+        .news-item:last-child { border-bottom: none; }
+        .news-item:hover { background: var(--bg-main); }
 
         .news-score {
-            min-width: 44px;
+            width: 44px;
             height: 44px;
-            border-radius: 10px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
             font-size: 1rem;
+            flex-shrink: 0;
         }
 
-        .news-score.high { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
-        .news-score.medium { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); }
-        .news-score.low { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+        .news-score.high { background: var(--gradient-green); color: #047857; }
+        .news-score.medium { background: var(--gradient-orange); color: #b45309; }
+        .news-score.low { background: var(--gradient-red); color: #b91c1c; }
 
-        .news-content {
-            flex: 1;
-        }
+        .news-content { flex: 1; min-width: 0; }
 
         .news-title {
             font-weight: 500;
-            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
             line-height: 1.4;
         }
 
         .news-why {
+            font-size: 0.8125rem;
             color: var(--text-secondary);
-            font-size: 0.875rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .news-meta {
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            flex-wrap: wrap;
         }
 
         .news-source {
-            color: var(--text-muted);
             font-size: 0.75rem;
+            color: var(--text-muted);
         }
 
         .news-domain {
-            padding: 0.25rem 0.625rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
+            font-size: 0.6875rem;
             font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            text-transform: uppercase;
         }
 
-        .news-domain.grc { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
-        .news-domain.privacy { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
-        .news-domain.security { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
-        .news-domain.devsecops { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
-        .news-domain.ai { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); }
-        .news-domain.product { background: rgba(236, 72, 153, 0.15); color: var(--accent-pink); }
+        .news-domain.grc { background: #dbeafe; color: #1d4ed8; }
+        .news-domain.privacy { background: #ede9fe; color: #6d28d9; }
+        .news-domain.security { background: #fee2e2; color: #b91c1c; }
+        .news-domain.devsecops { background: #d1fae5; color: #047857; }
+        .news-domain.ai { background: #fef3c7; color: #b45309; }
+        .news-domain.product { background: #fce7f3; color: #be185d; }
 
-        .news-arrow {
+        /* Content Section */
+        .content-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            white-space: pre-wrap;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .content-meta {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
             color: var(--text-muted);
-            transition: transform 0.2s;
-        }
-
-        .news-item:hover .news-arrow {
-            transform: translateX(4px);
-            color: var(--accent-blue);
-        }
-
-        /* Right Sidebar */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        /* Content Cards */
-        .content-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            overflow: hidden;
-        }
-
-        .content-card-header {
-            padding: 1rem 1.25rem;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .content-card-title {
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .content-card-title svg {
-            width: 18px;
-            height: 18px;
-            color: var(--accent-blue);
         }
 
         .copy-btn {
             padding: 0.5rem 1rem;
-            background: var(--bg-secondary);
+            background: var(--bg-main);
             border: 1px solid var(--border);
             border-radius: 8px;
-            color: var(--text-secondary);
             font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
             cursor: pointer;
             transition: all 0.2s;
             display: flex;
@@ -493,8 +638,8 @@
         }
 
         .copy-btn:hover {
-            background: var(--accent-blue);
-            border-color: var(--accent-blue);
+            background: var(--accent-purple);
+            border-color: var(--accent-purple);
             color: white;
         }
 
@@ -504,183 +649,151 @@
             color: white;
         }
 
-        .copy-btn svg {
-            width: 14px;
-            height: 14px;
-        }
-
-        .content-card-body {
-            padding: 1.25rem;
-            max-height: 300px;
-            overflow-y: auto;
-        }
-
-        .content-card-body::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .content-card-body::-webkit-scrollbar-track {
-            background: var(--bg-secondary);
-        }
-
-        .content-card-body::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 3px;
-        }
-
-        .content-text {
-            color: var(--text-secondary);
-            font-size: 0.875rem;
-            line-height: 1.7;
-            white-space: pre-wrap;
-        }
-
-        .content-meta {
-            padding: 0.75rem 1.25rem;
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border);
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
+        .copy-btn svg { width: 14px; height: 14px; }
 
         /* Carousel Slides */
         .carousel-slides {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             gap: 0.75rem;
         }
 
-        .slide-item {
-            background: var(--bg-secondary);
-            border-radius: 10px;
+        .slide-card {
+            background: var(--bg-main);
+            border-radius: 12px;
             padding: 1rem;
+            text-align: center;
         }
 
         .slide-number {
-            width: 24px;
-            height: 24px;
-            background: var(--gradient-1);
-            border-radius: 6px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            border-radius: 8px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             font-size: 0.75rem;
             font-weight: 600;
+            color: white;
             margin-bottom: 0.5rem;
         }
 
-        .slide-content {
+        .slide-text {
+            font-size: 0.75rem;
             color: var(--text-secondary);
-            font-size: 0.875rem;
+            line-height: 1.4;
         }
 
-        /* Domain Stats */
-        .domain-stats {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.25rem;
-        }
-
-        .domain-stats h3 {
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+        /* Domain Distribution Chart */
+        .domain-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
         .domain-bar {
-            margin-bottom: 0.75rem;
-        }
-
-        .domain-bar-header {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.375rem;
-            font-size: 0.75rem;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         .domain-bar-label {
+            width: 80px;
+            font-size: 0.75rem;
+            font-weight: 500;
             color: var(--text-secondary);
         }
 
-        .domain-bar-count {
-            color: var(--text-muted);
-        }
-
         .domain-bar-track {
-            height: 6px;
-            background: var(--bg-secondary);
-            border-radius: 3px;
+            flex: 1;
+            height: 8px;
+            background: var(--bg-main);
+            border-radius: 4px;
             overflow: hidden;
         }
 
         .domain-bar-fill {
             height: 100%;
-            border-radius: 3px;
-            transition: width 0.3s;
+            border-radius: 4px;
+            transition: width 0.5s ease;
         }
 
-        .domain-bar-fill.grc { background: var(--accent-blue); }
-        .domain-bar-fill.privacy { background: var(--accent-purple); }
-        .domain-bar-fill.security { background: var(--accent-red); }
-        .domain-bar-fill.devsecops { background: var(--accent-green); }
-        .domain-bar-fill.ai { background: var(--accent-orange); }
-        .domain-bar-fill.product { background: var(--accent-pink); }
+        .domain-bar-fill.grc { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+        .domain-bar-fill.privacy { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+        .domain-bar-fill.security { background: linear-gradient(90deg, #ef4444, #f87171); }
+        .domain-bar-fill.devsecops { background: linear-gradient(90deg, #10b981, #34d399); }
+        .domain-bar-fill.ai { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+        .domain-bar-fill.product { background: linear-gradient(90deg, #ec4899, #f472b6); }
 
-        /* Loading State */
+        .domain-bar-count {
+            width: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: right;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 1rem;
+        }
+
+        .tab {
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            transition: all 0.2s;
+        }
+
+        .tab:hover { color: var(--text-primary); }
+
+        .tab.active {
+            color: var(--accent-purple);
+            border-bottom-color: var(--accent-purple);
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Loading */
         .loading {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 3rem;
             color: var(--text-muted);
+            gap: 0.75rem;
         }
 
         .spinner {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             border: 2px solid var(--border);
-            border-top-color: var(--accent-blue);
+            border-top-color: var(--accent-purple);
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin-right: 0.75rem;
         }
 
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-muted);
-        }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
         /* Responsive */
         @media (max-width: 1200px) {
-            .two-col {
-                grid-template-columns: 1fr;
-            }
-            .sidebar {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .two-col { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .sidebar {
-                grid-template-columns: 1fr;
-            }
-            .header {
-                padding: 1rem;
-            }
-            .main {
-                padding: 1rem;
-            }
+            .sidebar { display: none; }
+            .main-content { padding: 1rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .greeting { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -694,209 +807,213 @@
                 </svg>
             </div>
             <h1>GRC Intelligence Copilot</h1>
-            <p>Your AI-powered GRC content hub</p>
+            <p>Your AI-powered content command center</p>
             <div class="password-input-wrapper">
                 <input type="password" id="passwordInput" placeholder="Enter password" onkeypress="if(event.key==='Enter')checkPassword()">
-                <button onclick="checkPassword()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </button>
+                <button onclick="checkPassword()">Enter</button>
             </div>
             <p class="error-msg" id="errorMsg"></p>
         </div>
     </div>
 
-    <!-- Dashboard -->
-    <div class="dashboard" id="dashboard">
-        <header class="header">
-            <div class="header-left">
-                <div class="header-logo">
+    <!-- Main App -->
+    <div class="app" id="app">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+                <div class="sidebar-logo-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                     </svg>
                 </div>
-                <span class="header-title">GRC Intelligence</span>
+                <span class="sidebar-logo-text">GRC Copilot</span>
             </div>
-            <div class="header-right">
-                <div class="status-badge">
-                    <span class="status-dot"></span>
-                    <span id="lastUpdated">Loading...</span>
+            <div class="sidebar-subtitle">Intelligence · Content</div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Quick Access</div>
+                <div class="nav-item active" data-view="dashboard">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    Dashboard
+                </div>
+                <div class="nav-item" data-view="news">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
+                    News Feed
+                </div>
+                <div class="nav-item" data-view="content">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                    Content
                 </div>
             </div>
-        </header>
 
-        <main class="main">
-            <!-- Stats -->
+            <div class="nav-section">
+                <div class="nav-section-title">Domains</div>
+                <div class="nav-item" data-filter="GRC">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    GRC
+                </div>
+                <div class="nav-item" data-filter="Security">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Security
+                </div>
+                <div class="nav-item" data-filter="Privacy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Privacy
+                </div>
+                <div class="nav-item" data-filter="AI">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    AI
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <div class="date-badge">
+                        <span id="currentDate">Loading...</span>
+                        <span id="currentWeek">Week --</span>
+                    </div>
+                    <h1 class="greeting">Good morning, Sathya <span class="greeting-emoji">✨</span></h1>
+                    <p class="tagline">Progress over perfection. You've got this.</p>
+                    <p class="status-message" id="statusMessage">Loading your intelligence briefing...</p>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-primary" onclick="copyContent('linkedinPost')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        Copy Post
+                    </button>
+                    <button class="btn btn-secondary" onclick="location.reload()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                        Refresh
+                    </button>
+                </div>
+            </header>
+
+            <!-- Today at a glance -->
+            <h2 class="section-title">Today at a glance</h2>
             <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/>
-                        </svg>
-                    </div>
-                    <div class="stat-info">
-                        <h3 id="totalArticles">0</h3>
-                        <p>Articles Today</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon purple">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                        </svg>
-                    </div>
-                    <div class="stat-info">
-                        <h3>6</h3>
-                        <p>Domains Tracked</p>
+                <div class="stat-card blue">
+                    <div class="stat-card-content">
+                        <div class="stat-card-header">
+                            <span class="stat-label">Articles Today</span>
+                            <div class="stat-icon blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="totalArticles">0</div>
                     </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon green">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                        </svg>
-                    </div>
-                    <div class="stat-info">
-                        <h3 id="topScore">0</h3>
-                        <p>Top Score</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-                        </svg>
-                    </div>
-                    <div class="stat-info">
-                        <h3>3</h3>
-                        <p>Content Ready</p>
+                <div class="stat-card green">
+                    <div class="stat-card-content">
+                        <div class="stat-card-header">
+                            <span class="stat-label">High Priority</span>
+                            <div class="stat-icon green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="highPriority">0</div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Domain Filter -->
-            <div class="domain-filter">
-                <button class="domain-btn active" data-domain="all">All Domains</button>
-                <button class="domain-btn" data-domain="GRC">
-                    <span class="dot grc"></span>GRC
-                </button>
-                <button class="domain-btn" data-domain="Privacy">
-                    <span class="dot privacy"></span>Privacy
-                </button>
-                <button class="domain-btn" data-domain="Security">
-                    <span class="dot security"></span>Security
-                </button>
-                <button class="domain-btn" data-domain="DevSecOps">
-                    <span class="dot devsecops"></span>DevSecOps
-                </button>
-                <button class="domain-btn" data-domain="AI">
-                    <span class="dot ai"></span>AI
-                </button>
-                <button class="domain-btn" data-domain="Product">
-                    <span class="dot product"></span>Product
-                </button>
+                <div class="stat-card purple">
+                    <div class="stat-card-content">
+                        <div class="stat-card-header">
+                            <span class="stat-label">Top Score</span>
+                            <div class="stat-icon purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="topScore">0</div>
+                    </div>
+                </div>
+                <div class="stat-card orange">
+                    <div class="stat-card-content">
+                        <div class="stat-card-header">
+                            <span class="stat-label">Content Ready</span>
+                            <div class="stat-icon orange">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value">3</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Two Column Layout -->
             <div class="two-col">
-                <!-- News Column -->
-                <div class="news-column">
-                    <div class="section-header">
-                        <h2 class="section-title">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-                            </svg>
-                            Today's Top Stories
-                        </h2>
+                <!-- Left: News -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            Top Stories Today
+                        </h3>
+                        <a href="#" class="card-link">View all →</a>
+                    </div>
+                    <div class="domain-filters" style="padding: 0.75rem 1.25rem 0;">
+                        <span class="domain-pill active" data-domain="all">All</span>
+                        <span class="domain-pill" data-domain="GRC">GRC</span>
+                        <span class="domain-pill" data-domain="Security">Security</span>
+                        <span class="domain-pill" data-domain="Privacy">Privacy</span>
+                        <span class="domain-pill" data-domain="AI">AI</span>
+                        <span class="domain-pill" data-domain="DevSecOps">DevSecOps</span>
+                        <span class="domain-pill" data-domain="Product">Product</span>
                     </div>
                     <div class="news-list" id="newsList">
-                        <div class="loading">
-                            <div class="spinner"></div>
-                            <span>Loading news...</span>
-                        </div>
+                        <div class="loading"><div class="spinner"></div> Loading news...</div>
                     </div>
                 </div>
 
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <!-- LinkedIn Post -->
-                    <div class="content-card">
-                        <div class="content-card-header">
-                            <span class="content-card-title">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                                LinkedIn Post
-                            </span>
+                <!-- Right: Content & Stats -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Content Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                Today's LinkedIn Post
+                            </h3>
                             <button class="copy-btn" onclick="copyContent('linkedinPost')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                                 Copy
                             </button>
                         </div>
-                        <div class="content-card-body">
+                        <div class="card-body">
                             <div class="content-text" id="linkedinPost">Loading...</div>
+                            <div class="content-meta" id="linkedinMeta"></div>
                         </div>
-                        <div class="content-meta" id="linkedinMeta"></div>
-                    </div>
-
-                    <!-- Carousel -->
-                    <div class="content-card">
-                        <div class="content-card-header">
-                            <span class="content-card-title">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                                    <polyline points="21 15 16 10 5 21"/>
-                                </svg>
-                                Carousel Slides
-                            </span>
-                            <button class="copy-btn" onclick="copyContent('carouselContent')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="content-card-body">
-                            <div class="carousel-slides" id="carouselContent">Loading...</div>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="content-card">
-                        <div class="content-card-header">
-                            <span class="content-card-title">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                                Newsletter
-                            </span>
-                            <button class="copy-btn" onclick="copyContent('newsletterContent')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                                </svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="content-card-body" style="max-height: 400px;">
-                            <div class="content-text" id="newsletterContent">Loading...</div>
-                        </div>
-                        <div class="content-meta" id="newsletterMeta"></div>
                     </div>
 
                     <!-- Domain Distribution -->
-                    <div class="domain-stats">
-                        <h3>Domain Distribution</h3>
-                        <div id="domainBars"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                Domain Distribution
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="domain-chart" id="domainChart"></div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Preview -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                Carousel Slides
+                            </h3>
+                            <button class="copy-btn" onclick="copyContent('carouselContent')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="carousel-slides" id="carouselContent">Loading...</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -906,21 +1023,48 @@
     <script>
         const PASSWORD = "GRC2026!Shree";
         const DATA_PATH = "data/";
-        
         let allArticles = [];
-        let currentFilter = "all";
 
         // Password check
         function checkPassword() {
             const input = document.getElementById('passwordInput').value;
             if (input === PASSWORD) {
                 document.getElementById('passwordScreen').classList.add('hidden');
-                document.getElementById('dashboard').classList.add('active');
-                loadAllData();
+                document.getElementById('app').classList.add('active');
+                initDashboard();
             } else {
                 document.getElementById('errorMsg').textContent = "Incorrect password";
                 document.getElementById('passwordInput').value = '';
             }
+        }
+
+        // Initialize dashboard
+        function initDashboard() {
+            setDateTime();
+            setGreeting();
+            loadAllData();
+            setupFilters();
+        }
+
+        // Set date/time
+        function setDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', day: 'numeric', month: 'long' };
+            document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+            
+            const week = Math.ceil((now.getDate() + new Date(now.getFullYear(), now.getMonth(), 1).getDay()) / 7);
+            const quarter = Math.ceil((now.getMonth() + 1) / 3);
+            document.getElementById('currentWeek').textContent = `Week ${week} · ${now.getFullYear()}-Q${quarter}`;
+        }
+
+        // Set greeting based on time
+        function setGreeting() {
+            const hour = new Date().getHours();
+            let greeting = "Good morning";
+            if (hour >= 12 && hour < 17) greeting = "Good afternoon";
+            else if (hour >= 17) greeting = "Good evening";
+            
+            document.querySelector('.greeting').innerHTML = `${greeting}, Sathya <span class="greeting-emoji">✨</span>`;
         }
 
         // Load all data
@@ -928,10 +1072,8 @@
             await Promise.all([
                 loadArticles(),
                 loadLinkedInPost(),
-                loadCarousel(),
-                loadNewsletter()
+                loadCarousel()
             ]);
-            setupFilters();
         }
 
         // Load articles
@@ -940,50 +1082,46 @@
                 const res = await fetch(DATA_PATH + 'articles.json');
                 const articles = await res.json();
                 allArticles = articles;
-                
+
                 document.getElementById('totalArticles').textContent = articles.length;
-                if (articles.length > 0) {
-                    document.getElementById('topScore').textContent = articles[0].score || 0;
-                }
-                
+                const highPriority = articles.filter(a => a.total_score >= 28).length;
+                document.getElementById('highPriority').textContent = highPriority;
+                document.getElementById('topScore').textContent = articles[0]?.score || 0;
+                document.getElementById('statusMessage').textContent = `${articles.length} articles analyzed from ${getUniqueSources(articles)} sources — ready for action! 🚀`;
+
                 renderNews(articles);
-                renderDomainStats(articles);
+                renderDomainChart(articles);
             } catch (e) {
-                document.getElementById('newsList').innerHTML = '<div class="empty-state">No articles available yet. Run the pipeline first.</div>';
+                document.getElementById('newsList').innerHTML = '<div class="loading">No data yet. Run the pipeline first.</div>';
             }
         }
 
-        // Render news
+        function getUniqueSources(articles) {
+            return new Set(articles.map(a => a.source)).size;
+        }
+
         function renderNews(articles) {
             const container = document.getElementById('newsList');
-            
-            if (!articles || articles.length === 0) {
-                container.innerHTML = '<div class="empty-state">No articles found.</div>';
+            if (!articles.length) {
+                container.innerHTML = '<div class="loading">No articles found.</div>';
                 return;
             }
 
-            container.innerHTML = articles.slice(0, 15).map(article => {
+            container.innerHTML = articles.slice(0, 12).map(article => {
                 const score = article.score || 5;
-                const scoreClass = score >= 7 ? 'high' : (score >= 4 ? 'medium' : 'low');
+                const scoreClass = score >= 7 ? 'high' : (score >= 5 ? 'medium' : 'low');
                 const domain = getDomain(article.domains);
                 const domainClass = domain.toLowerCase().replace(/\s+/g, '');
-                
+
                 return `
                     <a href="${article.url || '#'}" target="_blank" rel="noopener" class="news-item" data-domains="${(article.domains || []).join(',')}">
-                        <div class="news-item-header">
-                            <div class="news-score ${scoreClass}">${score}</div>
-                            <div class="news-content">
-                                <div class="news-title">${escapeHtml(article.title)}</div>
-                                <div class="news-why">${escapeHtml(article.score_reason || 'Relevant to GRC professionals')}</div>
-                                <div class="news-meta">
-                                    <span class="news-source">${article.source || 'Unknown'}</span>
-                                    <span class="news-domain ${domainClass}">${domain}</span>
-                                </div>
-                            </div>
-                            <div class="news-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
+                        <div class="news-score ${scoreClass}">${score}</div>
+                        <div class="news-content">
+                            <div class="news-title">${escapeHtml(article.title)}</div>
+                            <div class="news-why">${escapeHtml(article.score_reason || '')}</div>
+                            <div class="news-meta">
+                                <span class="news-source">${article.source || 'Unknown'}</span>
+                                <span class="news-domain ${domainClass}">${domain}</span>
                             </div>
                         </div>
                     </a>
@@ -991,46 +1129,32 @@
             }).join('');
         }
 
-        // Get primary domain
         function getDomain(domains) {
-            if (!domains || domains.length === 0) return 'GRC';
-            const map = {
-                'Privacy & Data Protection': 'Privacy',
-                'Data Protection': 'Privacy',
-                'Information Security': 'Security',
-                'AI Governance': 'AI'
-            };
-            for (const d of domains) {
-                if (map[d]) return map[d];
-            }
+            if (!domains || !domains.length) return 'GRC';
             return domains[0] || 'GRC';
         }
 
-        // Domain stats
-        function renderDomainStats(articles) {
+        function renderDomainChart(articles) {
             const counts = { GRC: 0, Privacy: 0, Security: 0, DevSecOps: 0, AI: 0, Product: 0 };
-            
             articles.forEach(a => {
                 const d = getDomain(a.domains);
                 if (counts.hasOwnProperty(d)) counts[d]++;
                 else counts.GRC++;
             });
-            
+
             const max = Math.max(...Object.values(counts), 1);
-            const container = document.getElementById('domainBars');
-            
+            const container = document.getElementById('domainChart');
+
             container.innerHTML = Object.entries(counts).map(([domain, count]) => {
                 const pct = (count / max) * 100;
                 const cls = domain.toLowerCase();
                 return `
                     <div class="domain-bar">
-                        <div class="domain-bar-header">
-                            <span class="domain-bar-label">${domain}</span>
-                            <span class="domain-bar-count">${count}</span>
-                        </div>
+                        <span class="domain-bar-label">${domain}</span>
                         <div class="domain-bar-track">
                             <div class="domain-bar-fill ${cls}" style="width: ${pct}%"></div>
                         </div>
+                        <span class="domain-bar-count">${count}</span>
                     </div>
                 `;
             }).join('');
@@ -1041,18 +1165,12 @@
             try {
                 const res = await fetch(DATA_PATH + 'linkedin_post.json');
                 const data = await res.json();
-                
-                document.getElementById('linkedinPost').textContent = data.content || 'No content available';
-                
+                document.getElementById('linkedinPost').textContent = data.content || 'No content';
                 if (data.based_on) {
-                    document.getElementById('linkedinMeta').innerHTML = `Based on: ${data.based_on.title} (Score: ${data.based_on.score}/10)`;
-                }
-                
-                if (data.generated_at) {
-                    updateTimestamp(data.generated_at);
+                    document.getElementById('linkedinMeta').innerHTML = `Based on: <strong>${data.based_on.title}</strong> (Score: ${data.based_on.score}/10)`;
                 }
             } catch (e) {
-                document.getElementById('linkedinPost').textContent = 'Content will be generated after the pipeline runs.';
+                document.getElementById('linkedinPost').textContent = 'Content will be generated after pipeline runs.';
             }
         }
 
@@ -1061,73 +1179,30 @@
             try {
                 const res = await fetch(DATA_PATH + 'carousel.json');
                 const data = await res.json();
-                
                 const container = document.getElementById('carouselContent');
-                
-                if (data.slides && data.slides.length > 0) {
-                    container.innerHTML = data.slides.map((slide, i) => `
-                        <div class="slide-item">
+
+                if (data.slides && data.slides.length) {
+                    container.innerHTML = data.slides.slice(0, 7).map((slide, i) => `
+                        <div class="slide-card">
                             <div class="slide-number">${i + 1}</div>
-                            <div class="slide-content">${formatSlide(slide.content)}</div>
+                            <div class="slide-text">${escapeHtml(slide.content?.split('\n')[0] || '')}</div>
                         </div>
                     `).join('');
-                } else if (data.raw_content) {
-                    const slides = parseSlides(data.raw_content);
-                    container.innerHTML = slides.map((content, i) => `
-                        <div class="slide-item">
-                            <div class="slide-number">${i + 1}</div>
-                            <div class="slide-content">${content}</div>
-                        </div>
-                    `).join('');
+                } else {
+                    container.innerHTML = '<div class="slide-card"><div class="slide-text">Carousel pending...</div></div>';
                 }
             } catch (e) {
-                document.getElementById('carouselContent').innerHTML = '<div class="empty-state">Carousel will be generated.</div>';
-            }
-        }
-
-        function formatSlide(content) {
-            if (!content) return '';
-            return escapeHtml(content)
-                .replace(/Heading:\s*/gi, '<strong>')
-                .replace(/Body:\s*/gi, '</strong><br>')
-                .replace(/\n/g, '<br>');
-        }
-
-        function parseSlides(raw) {
-            const slides = [];
-            const parts = raw.split(/SLIDE\s*\d+[:\s]*/i);
-            parts.forEach(p => {
-                const cleaned = p.trim();
-                if (cleaned) slides.push(formatSlide(cleaned));
-            });
-            return slides;
-        }
-
-        // Load newsletter
-        async function loadNewsletter() {
-            try {
-                const res = await fetch(DATA_PATH + 'newsletter.json');
-                const data = await res.json();
-                
-                document.getElementById('newsletterContent').textContent = data.content || 'Newsletter pending';
-                document.getElementById('newsletterMeta').innerHTML = `${data.series || 'Newsletter'} - Episode ${data.episode || '?'}: ${data.title || 'Loading...'}`;
-            } catch (e) {
-                document.getElementById('newsletterContent').textContent = 'Newsletter generates every Tuesday.';
-                document.getElementById('newsletterMeta').textContent = 'Publish on Wednesday';
+                document.getElementById('carouselContent').innerHTML = '<div class="slide-card"><div class="slide-text">Carousel pending...</div></div>';
             }
         }
 
         // Filter setup
         function setupFilters() {
-            const buttons = document.querySelectorAll('.domain-btn');
-            buttons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    buttons.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    
-                    const domain = btn.dataset.domain;
-                    currentFilter = domain;
-                    filterNews(domain);
+            document.querySelectorAll('.domain-pill').forEach(pill => {
+                pill.addEventListener('click', () => {
+                    document.querySelectorAll('.domain-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    filterNews(pill.dataset.domain);
                 });
             });
         }
@@ -1136,52 +1211,38 @@
             const items = document.querySelectorAll('.news-item');
             items.forEach(item => {
                 if (domain === 'all') {
-                    item.style.display = 'block';
+                    item.style.display = 'flex';
                 } else {
                     const domains = item.dataset.domains || '';
-                    const primary = getDomain(domains.split(','));
-                    item.style.display = (primary === domain || domains.includes(domain)) ? 'block' : 'none';
+                    item.style.display = domains.includes(domain) ? 'flex' : 'none';
                 }
             });
-        }
-
-        // Update timestamp
-        function updateTimestamp(ts) {
-            const date = new Date(ts);
-            const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-            document.getElementById('lastUpdated').textContent = 'Updated ' + date.toLocaleDateString('en-IN', options);
         }
 
         // Copy content
         async function copyContent(elementId) {
             const el = document.getElementById(elementId);
             const text = el.innerText || el.textContent;
-            
+
             try {
                 await navigator.clipboard.writeText(text);
-                
-                const card = el.closest('.content-card');
-                const btn = card.querySelector('.copy-btn');
-                const originalHTML = btn.innerHTML;
-                
-                btn.innerHTML = `
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                        <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                    Copied!
-                `;
-                btn.classList.add('copied');
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalHTML;
-                    btn.classList.remove('copied');
-                }, 2000);
+                const btns = document.querySelectorAll('.copy-btn');
+                btns.forEach(btn => {
+                    if (btn.onclick?.toString().includes(elementId)) {
+                        const original = btn.innerHTML;
+                        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
+                        btn.classList.add('copied');
+                        setTimeout(() => {
+                            btn.innerHTML = original;
+                            btn.classList.remove('copied');
+                        }, 2000);
+                    }
+                });
             } catch (e) {
-                alert('Copy failed. Please select and copy manually.');
+                alert('Copy failed. Please select manually.');
             }
         }
 
-        // Escape HTML
         function escapeHtml(text) {
             if (!text) return '';
             const div = document.createElement('div');
@@ -1189,7 +1250,7 @@
             return div.innerHTML;
         }
 
-        // Focus on password input
+        // Focus password input
         document.getElementById('passwordInput').focus();
     </script>
 </body>
