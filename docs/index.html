@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRC Content Copilot</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Password Screen -->
     <div id="password-screen" class="password-screen">
         <div class="password-container">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+            </div>
             <h1>GRC Content Copilot</h1>
-            <p>Enter password to access your content</p>
+            <p>Your AI-Powered Content Intelligence Hub</p>
             <div class="password-input-group">
                 <input type="password" id="password-input" placeholder="Enter password" onkeypress="handleKeyPress(event)">
-                <button onclick="checkPassword()">Unlock</button>
+                <button onclick="checkPassword()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
             </div>
             <p id="password-error" class="error-message"></p>
         </div>
@@ -22,60 +34,211 @@
 
     <!-- Main Dashboard -->
     <div id="dashboard" class="dashboard hidden">
-        <header>
-            <h1>GRC Content Copilot</h1>
-            <p id="last-updated">Last updated: Loading...</p>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>GRC Copilot</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="last-updated" id="last-updated">
+                    <span class="pulse"></span>
+                    <span>Loading...</span>
+                </div>
+            </div>
         </header>
 
-        <main>
-            <!-- LinkedIn Post Section -->
-            <section class="content-section">
-                <div class="section-header">
-                    <h2>Today's LinkedIn Post</h2>
-                    <button class="copy-btn" onclick="copyContent('linkedin-post')">Copy All</button>
+        <main class="main-content">
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-icon articles">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="total-articles">0</span>
+                        <span class="stat-label">Articles Analyzed</span>
+                    </div>
                 </div>
-                <div class="content-box" id="linkedin-post">
-                    <p>Loading...</p>
+                <div class="stat-card">
+                    <div class="stat-icon domains">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value">6</span>
+                        <span class="stat-label">Domains Tracked</span>
+                    </div>
                 </div>
-                <div class="meta-info" id="linkedin-meta"></div>
-            </section>
+                <div class="stat-card">
+                    <div class="stat-icon score">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="top-score">0</span>
+                        <span class="stat-label">Top Score</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Content Ready</span>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Carousel Section -->
-            <section class="content-section">
-                <div class="section-header">
-                    <h2>Carousel Content (for Canva)</h2>
-                    <button class="copy-btn" onclick="copyContent('carousel-content')">Copy All</button>
+            <!-- Domain Filter -->
+            <div class="domain-filter">
+                <h3>Filter by Domain</h3>
+                <div class="domain-pills">
+                    <button class="domain-pill active" data-domain="all">
+                        <span class="pill-dot all"></span>All
+                    </button>
+                    <button class="domain-pill" data-domain="GRC">
+                        <span class="pill-dot grc"></span>GRC
+                    </button>
+                    <button class="domain-pill" data-domain="Privacy">
+                        <span class="pill-dot privacy"></span>Privacy
+                    </button>
+                    <button class="domain-pill" data-domain="Security">
+                        <span class="pill-dot security"></span>Security
+                    </button>
+                    <button class="domain-pill" data-domain="DevSecOps">
+                        <span class="pill-dot devsecops"></span>DevSecOps
+                    </button>
+                    <button class="domain-pill" data-domain="AI">
+                        <span class="pill-dot ai"></span>AI & ML
+                    </button>
+                    <button class="domain-pill" data-domain="Product">
+                        <span class="pill-dot product"></span>Product
+                    </button>
                 </div>
-                <div class="content-box carousel-box" id="carousel-content">
-                    <p>Loading...</p>
-                </div>
-            </section>
+            </div>
 
-            <!-- Newsletter Section -->
-            <section class="content-section">
-                <div class="section-header">
-                    <h2>This Week's Newsletter</h2>
-                    <button class="copy-btn" onclick="copyContent('newsletter-content')">Copy All</button>
-                </div>
-                <div class="newsletter-meta" id="newsletter-meta"></div>
-                <div class="content-box newsletter-box" id="newsletter-content">
-                    <p>Loading...</p>
-                </div>
-            </section>
+            <!-- Two Column Layout -->
+            <div class="two-column">
+                <!-- Left Column - Content -->
+                <div class="left-column">
+                    <!-- LinkedIn Post Card -->
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span>Today's LinkedIn Post</span>
+                            </div>
+                            <button class="copy-btn" onclick="copyContent('linkedin-post')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                        <div class="card-meta" id="linkedin-meta"></div>
+                        <div class="card-content" id="linkedin-post">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
 
-            <!-- Top News Section -->
-            <section class="content-section">
-                <div class="section-header">
-                    <h2>Top News Today</h2>
+                    <!-- Carousel Card -->
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Carousel for Canva</span>
+                            </div>
+                            <button class="copy-btn" onclick="copyContent('carousel-content')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                        <div class="carousel-slides" id="carousel-content">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Card -->
+                    <div class="content-card newsletter-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>Newsletter (Wednesday)</span>
+                            </div>
+                            <button class="copy-btn" onclick="copyContent('newsletter-content')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                        <div class="newsletter-meta" id="newsletter-meta"></div>
+                        <div class="card-content newsletter-content" id="newsletter-content">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="news-list" id="news-list">
-                    <p>Loading...</p>
+
+                <!-- Right Column - News -->
+                <div class="right-column">
+                    <div class="news-section">
+                        <div class="section-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                Top News Today
+                            </h2>
+                        </div>
+                        <div class="news-list" id="news-list">
+                            <div class="news-loading">
+                                <div class="spinner"></div>
+                                <span>Loading news...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Domain Distribution -->
+                    <div class="domain-distribution">
+                        <h3>Domain Distribution</h3>
+                        <div class="domain-bars" id="domain-bars">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer>
-            <p>GRC Content Copilot by Shree Sathya | Auto-updated at 5 AM & 6 PM IST</p>
+            <p>GRC Content Copilot by <a href="https://linkedin.com/in/sathya-sivam" target="_blank">Shree Sathya</a> | Auto-updated at 5 AM & 6 PM IST</p>
         </footer>
     </div>
 
