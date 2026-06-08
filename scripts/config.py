@@ -102,7 +102,7 @@ RSS_FEEDS = [
     "https://www.aisnakeoil.com/feed",  # 90. AI Snake Oil
     
     # ===================
-    # 6. PRODUCT MANAGEMENT & GRC PRODUCT THINKING (91-100)
+    # 6. PRODUCT MANAGEMENT & GRC PRODUCT THINKING (91-100+)
     # ===================
     "https://www.lennysnewsletter.com/feed",  # 91. Lenny's Newsletter
     "https://www.mindtheproduct.com/feed/",  # 92. Mind the Product
@@ -113,6 +113,15 @@ RSS_FEEDS = [
     "https://review.firstround.com/feed.xml",  # 97. First Round Review
     "https://stratechery.com/feed/",  # 98. Stratechery
     "https://a16z.com/feed/",  # 99. a16z Future
+    "https://cutlefish.substack.com/feed",  # The Beautiful Mess - John Cutler
+    "https://www.reforge.com/blog/rss.xml",  # Reforge Blog
+    "https://www.intercom.com/blog/feed/",  # Intercom Blog
+    "https://www.productplan.com/blog/feed/",  # ProductPlan Blog
+    "https://www.pragmaticinstitute.com/feed/",  # Pragmatic Institute
+    "https://www.romanpichler.com/feed/",  # Roman Pichler PM Blog
+    "https://amplitude.com/blog/feed",  # Amplitude Blog
+    "https://www.mixpanel.com/blog/feed/",  # Mixpanel Blog
+    "https://productschool.com/blog/feed/",  # Product School Blog
     
     # ===================
     # ADDITIONAL HIGH-VALUE SOURCES
