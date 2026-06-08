@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRC Content Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="password-screen" class="password-screen">
+        <div class="password-container">
+            <h1>GRC Content Copilot</h1>
+            <p>Enter password to access your content</p>
+            <div class="password-input-group">
+                <input type="password" id="password-input" placeholder="Enter password" onkeypress="handleKeyPress(event)">
+                <button onclick="checkPassword()">Unlock</button>
+            </div>
+            <p id="password-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="dashboard hidden">
+        <header>
+            <h1>GRC Content Copilot</h1>
+            <p id="last-updated">Last updated: Loading...</p>
+        </header>
+
+        <main>
+            <!-- LinkedIn Post Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Today's LinkedIn Post</h2>
+                    <button class="copy-btn" onclick="copyContent('linkedin-post')">Copy All</button>
+                </div>
+                <div class="content-box" id="linkedin-post">
+                    <p>Loading...</p>
+                </div>
+                <div class="meta-info" id="linkedin-meta"></div>
+            </section>
+
+            <!-- Carousel Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Carousel Content (for Canva)</h2>
+                    <button class="copy-btn" onclick="copyContent('carousel-content')">Copy All</button>
+                </div>
+                <div class="content-box carousel-box" id="carousel-content">
+                    <p>Loading...</p>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>This Week's Newsletter</h2>
+                    <button class="copy-btn" onclick="copyContent('newsletter-content')">Copy All</button>
+                </div>
+                <div class="newsletter-meta" id="newsletter-meta"></div>
+                <div class="content-box newsletter-box" id="newsletter-content">
+                    <p>Loading...</p>
+                </div>
+            </section>
+
+            <!-- Top News Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Top News Today</h2>
+                </div>
+                <div class="news-list" id="news-list">
+                    <p>Loading...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>GRC Content Copilot by Shree Sathya | Auto-updated at 5 AM & 6 PM IST</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

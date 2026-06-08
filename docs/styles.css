@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* Password Screen */
+.password-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.password-container {
+    text-align: center;
+    padding: 3rem;
+    background: #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+}
+
+.password-container h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.password-container p {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.password-input-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.password-input-group input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #e2e8f0;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.password-input-group input:focus {
+    border-color: #60a5fa;
+}
+
+.password-input-group button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.password-input-group button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+}
+
+.error-message {
+    color: #f87171;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Dashboard */
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #334155;
+}
+
+header h1 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+#last-updated {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Content Sections */
+.content-section {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    font-size: 1.25rem;
+    color: #f1f5f9;
+}
+
+.copy-btn {
+    padding: 0.5rem 1rem;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.copy-btn:hover {
+    background: #2563eb;
+}
+
+.copy-btn.copied {
+    background: #10b981;
+}
+
+/* Content Boxes */
+.content-box {
+    background: #0f172a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #1e293b;
+}
+
+.content-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-box::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+.carousel-box {
+    max-height: 500px;
+}
+
+.newsletter-box {
+    max-height: 600px;
+}
+
+/* Meta Info */
+.meta-info, .newsletter-meta {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: #334155;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.newsletter-meta {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+/* News List */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+}
+
+.news-score {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-title {
+    font-weight: 500;
+    color: #f1f5f9;
+    margin-bottom: 0.25rem;
+}
+
+.news-source {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #64748b;
+    font-size: 0.85rem;
+    border-top: 1px solid #334155;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .dashboard {
+        padding: 1rem;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+    
+    .password-input-group {
+        flex-direction: column;
+    }
+    
+    .password-input-group input {
+        width: 100%;
+    }
+}

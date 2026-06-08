@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Sample: New Privacy Regulations Expected in Q3",
+    "url": "https://example.com/privacy-news",
+    "summary": "This is a placeholder article. Real articles will be fetched when the pipeline runs.",
+    "source": "GRC Copilot Demo",
+    "published": "2026-06-08T12:00:00",
+    "score": 9,
+    "domains": ["Privacy & Data Protection", "Regulatory Compliance"],
+    "score_reason": "Placeholder for demonstration"
+  },
+  {
+    "title": "Sample: AI Governance Framework Updates",
+    "url": "https://example.com/ai-governance",
+    "summary": "This is a placeholder article demonstrating the AI governance category.",
+    "source": "GRC Copilot Demo",
+    "published": "2026-06-08T11:00:00",
+    "score": 8,
+    "domains": ["AI Governance & Ethics"],
+    "score_reason": "Placeholder for demonstration"
+  },
+  {
+    "title": "Sample: Risk Management Best Practices 2026",
+    "url": "https://example.com/risk-management",
+    "summary": "This is a placeholder article about risk management trends.",
+    "source": "GRC Copilot Demo",
+    "published": "2026-06-08T10:00:00",
+    "score": 7,
+    "domains": ["Risk Management", "GRC Career & Skills"],
+    "score_reason": "Placeholder for demonstration"
+  }
+]
