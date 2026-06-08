@@ -5,7 +5,8 @@ Content Generator - Uses Gemini for high-quality content generation
 import os
 import json
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from config import (
     VOICE_PROFILE, 
     LINKEDIN_POST_PROMPT, 
@@ -15,13 +16,21 @@ from config import (
 )
 
 def init_gemini():
-    """Initialize Gemini API"""
-    genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-    # Using gemini-1.5-flash which is stable and available
-    return genai.GenerativeModel('gemini-1.5-flash')
+    """Initialize Gemini client"""
+    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    return client
 
 
-def generate_linkedin_post(article, model):
+def generate_content(client, prompt):
+    """Generate content using Gemini"""
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=prompt
+    )
+    return response.text
+
+
+def generate_linkedin_post(article, client):
     """Generate LinkedIn post from top article"""
     
     prompt = LINKEDIN_POST_PROMPT.format(
@@ -31,10 +40,10 @@ def generate_linkedin_post(article, model):
         url=article['url']
     )
     
-    response = model.generate_content(prompt)
+    content = generate_content(client, prompt)
     
     post_data = {
-        "content": response.text,
+        "content": content,
         "based_on": {
             "title": article['title'],
             "url": article['url'],
@@ -48,7 +57,7 @@ def generate_linkedin_post(article, model):
     return post_data
 
 
-def generate_carousel(article, model):
+def generate_carousel(article, client):
     """Generate carousel content from top article"""
     
     prompt = CAROUSEL_PROMPT.format(
@@ -57,13 +66,13 @@ def generate_carousel(article, model):
         summary=article['summary']
     )
     
-    response = model.generate_content(prompt)
+    content = generate_content(client, prompt)
     
     # Parse slides from response
     slides = []
     current_slide = None
     
-    for line in response.text.split('\n'):
+    for line in content.split('\n'):
         line = line.strip()
         if line.startswith('SLIDE'):
             if current_slide:
@@ -78,7 +87,7 @@ def generate_carousel(article, model):
     
     carousel_data = {
         "slides": slides,
-        "raw_content": response.text,
+        "raw_content": content,
         "based_on": {
             "title": article['title'],
             "url": article['url'],
@@ -91,7 +100,7 @@ def generate_carousel(article, model):
     return carousel_data
 
 
-def generate_newsletter(top_articles, model, config_path="data/newsletter_config.json"):
+def generate_newsletter(top_articles, client, config_path="data/newsletter_config.json"):
     """Generate newsletter content (only on Tuesdays)"""
     
     # Check if today is Tuesday
@@ -141,13 +150,13 @@ def generate_newsletter(top_articles, model, config_path="data/newsletter_config
         news_context=news_context
     )
     
-    response = model.generate_content(prompt)
+    content = generate_content(client, prompt)
     
     newsletter_data = {
         "title": topic,
         "series": NEWSLETTER_SERIES["name"],
         "episode": current_episode,
-        "content": response.text,
+        "content": content,
         "top_news_context": [
             {"title": a['title'], "source": a['source'], "score": a['score']}
             for a in top_articles[:5]
@@ -177,7 +186,7 @@ def save_content(content, filepath):
 
 if __name__ == "__main__":
     # Test with sample data
-    model = init_gemini()
+    client = init_gemini()
     
     with open("data/articles.json", "r") as f:
         articles = json.load(f)
@@ -185,12 +194,12 @@ if __name__ == "__main__":
     if articles:
         top_article = articles[0]
         
-        post = generate_linkedin_post(top_article, model)
+        post = generate_linkedin_post(top_article, client)
         save_content(post, "data/linkedin_post.json")
         
-        carousel = generate_carousel(top_article, model)
+        carousel = generate_carousel(top_article, client)
         save_content(carousel, "data/carousel.json")
         
-        newsletter = generate_newsletter(articles[:5], model)
+        newsletter = generate_newsletter(articles[:5], client)
         if newsletter:
             save_content(newsletter, "data/newsletter.json")

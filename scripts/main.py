@@ -65,21 +65,21 @@ def run_pipeline():
     
     # Step 4: Generate content with Gemini (high quality)
     print("\n[3/4] Generating content with Gemini AI...")
-    model = init_gemini()
+    client = init_gemini()
     
     # Generate LinkedIn post
     print("  - Generating LinkedIn post...")
-    linkedin_post = generate_linkedin_post(top_articles[0], model)
+    linkedin_post = generate_linkedin_post(top_articles[0], client)
     save_content(linkedin_post, "data/linkedin_post.json")
     
     # Generate carousel
     print("  - Generating carousel content...")
-    carousel = generate_carousel(top_articles[0], model)
+    carousel = generate_carousel(top_articles[0], client)
     save_content(carousel, "data/carousel.json")
     
     # Generate newsletter (only on Tuesdays)
     print("  - Checking for newsletter generation...")
-    newsletter = generate_newsletter(top_articles, model)
+    newsletter = generate_newsletter(top_articles, client)
     if newsletter:
         save_content(newsletter, "data/newsletter.json")
         print("  - Newsletter generated for Wednesday!")
