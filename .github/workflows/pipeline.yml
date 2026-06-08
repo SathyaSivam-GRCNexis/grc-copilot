@@ -36,12 +36,58 @@ jobs:
         run: |
           python scripts/main.py
 
-      - name: Copy data to docs folder
+      - name: Copy data to docs folder and accumulate history
         run: |
+          mkdir -p docs/data
           cp data/linkedin_post.json docs/data/
           cp data/carousel.json docs/data/
-          cp data/newsletter.json docs/data/
+          cp data/newsletter.json docs/data/ 2>/dev/null || true
           cp data/articles.json docs/data/
+          
+          # Accumulate content history (append new posts)
+          python3 << 'EOF'
+          import json
+          from datetime import datetime
+          
+          # Load existing history
+          try:
+              with open('docs/data/content_history.json', 'r') as f:
+                  history = json.load(f)
+          except:
+              history = []
+          
+          # Load new post
+          try:
+              with open('data/linkedin_post.json', 'r') as f:
+                  new_post = json.load(f)
+              
+              # Create history entry
+              entry = {
+                  'title': new_post.get('inspired_by', {}).get('topic', 'Unknown'),
+                  'linkedin_post': new_post.get('content', ''),
+                  'domains': new_post.get('inspired_by', {}).get('domains', ['GRC']),
+                  'generated_at': new_post.get('generated_at', datetime.now().isoformat())
+              }
+              
+              # Check if this is a duplicate (same title)
+              existing_titles = [h.get('title', '') for h in history]
+              if entry['title'] not in existing_titles:
+                  history.append(entry)
+                  print(f"Added new post to history: {entry['title']}")
+              else:
+                  print(f"Skipping duplicate: {entry['title']}")
+              
+              # Keep last 100 posts
+              history = history[-100:]
+              
+              # Save history
+              with open('docs/data/content_history.json', 'w') as f:
+                  json.dump(history, f, indent=2)
+              
+              print(f"Content history now has {len(history)} posts")
+          except Exception as e:
+              print(f"Error updating history: {e}")
+          EOF
 
       - name: Commit and push changes
         run: |

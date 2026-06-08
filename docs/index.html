@@ -3,2289 +3,1274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRC Intelligence Copilot</title>
+    <title>GRC Copilot - Intelligence System</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
-            --bg-main: #f8f9fc;
-            --bg-white: #ffffff;
-            --bg-sidebar: #1a1a2e;
-            --text-primary: #1a1a2e;
-            --text-secondary: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
-            --accent-purple: #8b5cf6;
-            --accent-blue: #3b82f6;
-            --accent-green: #10b981;
-            --accent-orange: #f59e0b;
-            --accent-red: #ef4444;
-            --accent-pink: #ec4899;
-            --gradient-blue: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-            --gradient-green: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            --gradient-orange: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            --gradient-purple: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
-            --gradient-pink: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
-            --gradient-red: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            --primary: #3D4F3D;
+            --primary-dark: #2C3B2C;
+            --primary-light: #5A6F5A;
+            --accent: #6B8E6B;
+            
+            --bg-cream: #FAF8F5;
+            --bg-card: #FFFFFF;
+            --bg-sidebar: #F5F3EF;
+            
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --text-muted: #7A7A7A;
+            --text-inverse: #FFFFFF;
+            
+            --border-light: #E8E5E0;
+            --border-medium: #D4D0C8;
+            
+            --tag-security: #E8F4E8;
+            --tag-security-text: #2D5A2D;
+            --tag-grc: #FFF3E0;
+            --tag-grc-text: #8B5A00;
+            --tag-privacy: #E3F2FD;
+            --tag-privacy-text: #1565C0;
+            --tag-ai: #F3E5F5;
+            --tag-ai-text: #7B1FA2;
+            --tag-devsecops: #E0F2F1;
+            --tag-devsecops-text: #00695C;
+            --tag-product: #FBE9E7;
+            --tag-product-text: #BF360C;
+            
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            
             --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
         }
-
-        /* Dark Mode */
-        .dark {
-            --bg-main: #0f0f1a;
-            --bg-white: #1a1a2e;
-            --bg-sidebar: #0a0a14;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-            --border: #334155;
-            --gradient-blue: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
-            --gradient-green: linear-gradient(135deg, #064e3b 0%, #047857 100%);
-            --gradient-orange: linear-gradient(135deg, #78350f 0%, #b45309 100%);
-            --gradient-purple: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
-            --gradient-pink: linear-gradient(135deg, #831843 0%, #be185d 100%);
-            --gradient-red: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
-        }
-
+        
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-main);
+            font-family: var(--font-sans);
+            background: var(--bg-cream);
             color: var(--text-primary);
-            min-height: 100vh;
             line-height: 1.6;
-            transition: background 0.3s, color 0.3s;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
         }
-
-        /* Password Screen */
-        .password-screen {
-            position: fixed;
-            inset: 0;
+        
+        /* Login */
+        .login-screen {
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            z-index: 1000;
+            padding: 24px;
         }
-
-        .password-screen.hidden { display: none; }
-
-        .password-box {
-            background: white;
-            border-radius: 24px;
-            padding: 3rem;
+        
+        .login-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+            width: 100%;
+            max-width: 400px;
             text-align: center;
-            max-width: 420px;
-            width: 90%;
-            box-shadow: var(--shadow-lg);
         }
-
-        .password-box .logo {
-            width: 72px;
-            height: 72px;
-            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-            border-radius: 18px;
+        
+        .login-logo {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
-            box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+            margin: 0 auto 24px;
         }
-
-        .password-box .logo svg {
-            width: 36px;
-            height: 36px;
-            color: white;
+        
+        .login-logo svg { width: 24px; height: 24px; color: var(--text-inverse); }
+        
+        .login-title {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
-
-        .password-box h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a1a2e;
-            margin-bottom: 0.5rem;
+        
+        .login-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
         }
-
-        .password-box p {
-            color: #6b7280;
-            margin-bottom: 2rem;
+        
+        .login-input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            background: var(--bg-cream);
         }
-
-        .password-input-wrapper {
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        .password-input-wrapper input {
-            flex: 1;
-            padding: 0.875rem 1rem;
-            background: #f8f9fc;
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
-            color: #1a1a2e;
-            font-size: 1rem;
+        
+        .login-input:focus {
             outline: none;
-            transition: all 0.2s;
+            border-color: var(--primary);
         }
-
-        .password-input-wrapper input:focus {
-            border-color: var(--accent-purple);
-            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-        }
-
-        .password-input-wrapper button {
-            padding: 0.875rem 1.5rem;
-            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+        
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: var(--text-inverse);
             border: none;
-            border-radius: 12px;
-            color: white;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            font-weight: 500;
         }
-
-        .password-input-wrapper button:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+        
+        .login-btn:hover { background: var(--primary-dark); }
+        
+        .login-error {
+            color: #C62828;
+            font-size: 0.85rem;
+            margin-top: 16px;
+            display: none;
         }
-
-        .error-msg {
-            color: var(--accent-red);
-            margin-top: 1rem;
-            font-size: 0.875rem;
+        
+        .login-error.show { display: block; }
+        
+        .hidden { display: none !important; }
+        
+        /* App Layout */
+        .app {
+            display: grid;
+            grid-template-columns: 280px 1fr 320px;
+            min-height: 100vh;
         }
-
-        /* Layout */
-        .app { display: none; }
-        .app.active { display: flex; min-height: 100vh; }
-
-        /* Sidebar */
-        .sidebar {
-            width: 280px;
+        
+        /* Sidebar Left */
+        .sidebar-left {
             background: var(--bg-sidebar);
-            color: white;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
+            border-right: 1px solid var(--border-light);
+            padding: 24px;
+            position: sticky;
             top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
-            z-index: 100;
-            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
-
-        .sidebar-logo {
+        
+        .brand {
+            margin-bottom: 32px;
+        }
+        
+        .brand-logo {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.5rem;
+            gap: 10px;
+            margin-bottom: 4px;
         }
-
-        .sidebar-logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-            border-radius: 12px;
+        
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
-        .sidebar-logo-icon svg {
-            width: 22px;
-            height: 22px;
-        }
-
-        .sidebar-logo-text {
+        
+        .brand-icon svg { width: 18px; height: 18px; color: var(--text-inverse); }
+        
+        .brand-name {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
             font-weight: 700;
-            font-size: 1.25rem;
+            color: var(--text-primary);
         }
-
-        .sidebar-subtitle {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-            margin-bottom: 1.5rem;
-        }
-
-        /* Search Bar */
-        .search-container {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 0.75rem 1rem 0.75rem 2.5rem;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 10px;
-            color: white;
-            font-size: 0.875rem;
-            outline: none;
-            transition: all 0.2s;
-        }
-
-        .search-input::placeholder {
-            color: rgba(255,255,255,0.5);
-        }
-
-        .search-input:focus {
-            background: rgba(255,255,255,0.15);
-            border-color: var(--accent-purple);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 0.75rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 18px;
-            height: 18px;
-            color: rgba(255,255,255,0.5);
-        }
-
-        .nav-section {
-            margin-bottom: 1.5rem;
-        }
-
-        .nav-section-title {
+        
+        .brand-tagline {
             font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: rgba(255,255,255,0.4);
-            margin-bottom: 0.75rem;
-            padding-left: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-left: 42px;
         }
-
+        
+        /* User Profile */
+        .user-profile {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-light);
+        }
+        
+        .user-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-inverse);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .user-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 2px; }
+        .user-role { font-size: 0.8rem; color: var(--text-secondary); }
+        
+        /* Navigation */
+        .nav-menu {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
         .nav-item {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem;
-            border-radius: 10px;
-            color: rgba(255,255,255,0.7);
+            gap: 14px;
+            padding: 14px 16px;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             transition: all 0.2s;
-            cursor: pointer;
-            margin-bottom: 0.25rem;
         }
-
-        .nav-item:hover {
-            background: rgba(255,255,255,0.1);
-            color: white;
+        
+        .nav-item:hover { background: var(--bg-card); color: var(--text-primary); }
+        .nav-item.active { background: var(--primary); color: var(--text-inverse); }
+        .nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+        
+        .nav-divider {
+            height: 1px;
+            background: var(--border-light);
+            margin: 16px 0;
         }
-
-        .nav-item.active {
-            background: rgba(139, 92, 246, 0.3);
-            color: white;
-        }
-
-        .nav-item svg {
-            width: 18px;
-            height: 18px;
-            opacity: 0.7;
-        }
-
-        .nav-item.active svg { opacity: 1; }
-
-        .nav-item .badge {
-            margin-left: auto;
-            background: rgba(139, 92, 246, 0.5);
-            padding: 0.125rem 0.5rem;
-            border-radius: 10px;
+        
+        .nav-label {
             font-size: 0.7rem;
-            font-weight: 600;
-        }
-
-        /* Dark Mode Toggle */
-        .theme-toggle {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem;
-            margin-top: auto;
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .theme-toggle:hover {
-            background: rgba(255,255,255,0.1);
-        }
-
-        .theme-toggle-switch {
-            width: 44px;
-            height: 24px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 12px;
-            position: relative;
-            transition: background 0.3s;
-        }
-
-        .theme-toggle-switch::after {
-            content: '';
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            background: white;
-            border-radius: 50%;
-            top: 3px;
-            left: 3px;
-            transition: transform 0.3s;
-        }
-
-        .dark .theme-toggle-switch {
-            background: var(--accent-purple);
-        }
-
-        .dark .theme-toggle-switch::after {
-            transform: translateX(20px);
-        }
-
-        .theme-toggle-label {
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.7);
-        }
-
-        /* Keyboard shortcuts */
-        .shortcut-hint {
-            padding: 1rem;
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-            margin-top: 1rem;
-        }
-
-        .shortcut-hint kbd {
-            background: rgba(255,255,255,0.1);
-            padding: 0.125rem 0.375rem;
-            border-radius: 4px;
-            font-family: inherit;
-            margin-right: 0.25rem;
-        }
-
-        /* Mobile Menu Button */
-        .mobile-menu-btn {
-            display: none;
-            position: fixed;
-            top: 1rem;
-            left: 1rem;
-            z-index: 101;
-            width: 44px;
-            height: 44px;
-            background: var(--accent-purple);
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-md);
-        }
-
-        .mobile-menu-btn svg {
-            width: 24px;
-            height: 24px;
-            color: white;
-        }
-
-        .sidebar-overlay {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 99;
-        }
-
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            margin-left: 280px;
-            padding: 2rem;
-            overflow-y: auto;
-            min-height: 100vh;
-        }
-
-        /* Views */
-        .view { display: none; }
-        .view.active { display: block; }
-
-        /* Header */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .header-left .date-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            background: var(--bg-white);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            box-shadow: var(--shadow-sm);
-            margin-bottom: 1rem;
-        }
-
-        .greeting {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .greeting-emoji {
-            display: inline-block;
-            animation: wave 1.5s ease-in-out infinite;
-        }
-
-        @keyframes wave {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(20deg); }
-            75% { transform: rotate(-10deg); }
-        }
-
-        .tagline {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-
-        .status-message {
-            margin-top: 1rem;
-            color: var(--text-secondary);
-            font-size: 0.875rem;
-        }
-
-        .header-right {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            border-radius: 10px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s;
-            border: none;
-            white-space: nowrap;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-            color: white;
-            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
-        }
-
-        .btn-secondary {
-            background: var(--bg-white);
-            color: var(--text-primary);
-            border: 1px solid var(--border);
-        }
-
-        .btn-secondary:hover {
-            background: var(--bg-main);
-        }
-
-        .btn svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        /* Section Title */
-        .section-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .stat-card {
-            background: var(--bg-white);
-            border-radius: 16px;
-            padding: 1.25rem;
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0.5;
-            z-index: 0;
-        }
-
-        .stat-card.blue::before { background: var(--gradient-blue); }
-        .stat-card.green::before { background: var(--gradient-green); }
-        .stat-card.orange::before { background: var(--gradient-orange); }
-        .stat-card.purple::before { background: var(--gradient-purple); }
-        .stat-card.pink::before { background: var(--gradient-pink); }
-        .stat-card.red::before { background: var(--gradient-red); }
-
-        .stat-card-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .stat-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--text-secondary);
             text-transform: uppercase;
-            letter-spacing: 0.025em;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            padding: 8px 16px 4px;
         }
-
-        .stat-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
+        
+        /* Status */
+        .status-card {
+            margin-top: auto;
+            padding: 16px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+        }
+        
+        .status-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        
+        .status-value {
             display: flex;
             align-items: center;
-            justify-content: center;
-            background: rgba(255,255,255,0.8);
+            gap: 10px;
         }
-
-        .dark .stat-icon {
-            background: rgba(0,0,0,0.3);
-        }
-
-        .stat-icon svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        .stat-icon.blue svg { color: var(--accent-blue); }
-        .stat-icon.green svg { color: var(--accent-green); }
-        .stat-icon.orange svg { color: var(--accent-orange); }
-        .stat-icon.purple svg { color: var(--accent-purple); }
-        .stat-icon.pink svg { color: var(--accent-pink); }
-        .stat-icon.red svg { color: var(--accent-red); }
-
-        .stat-value {
+        
+        .status-number {
             font-size: 1.75rem;
             font-weight: 700;
-            color: var(--text-primary);
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
+            color: var(--primary);
         }
-
-        .stat-trend {
-            font-size: 0.7rem;
-            font-weight: 500;
+        
+        .status-active {
             display: flex;
             align-items: center;
-            gap: 0.125rem;
+            gap: 6px;
+            color: var(--accent);
+            font-size: 0.85rem;
         }
-
-        .stat-trend.up { color: var(--accent-green); }
-        .stat-trend.down { color: var(--accent-red); }
-
-        /* Three Column Layout */
-        .three-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr 380px;
-            gap: 1.5rem;
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
         }
-
-        .two-col {
-            display: grid;
-            grid-template-columns: 1fr 400px;
-            gap: 1.5rem;
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
-
-        /* Cards */
-        .card {
-            background: var(--bg-white);
-            border-radius: 16px;
-            box-shadow: var(--shadow-sm);
-            overflow: hidden;
-        }
-
-        .card-header {
-            padding: 1rem 1.25rem;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .card-title {
-            font-size: 0.9375rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .card-title svg {
-            width: 18px;
-            height: 18px;
-            color: var(--accent-purple);
-        }
-
-        .card-body {
-            padding: 1.25rem;
-        }
-
-        .card-link {
-            font-size: 0.8125rem;
-            color: var(--accent-purple);
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-            cursor: pointer;
-        }
-
-        .card-link:hover { text-decoration: underline; }
-
-        /* Domain Filter Pills */
-        .domain-filters {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-            padding: 0 1.25rem;
-        }
-
-        .domain-pill {
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8125rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s;
-            border: 1px solid var(--border);
-            background: var(--bg-white);
-            color: var(--text-secondary);
-        }
-
-        .domain-pill:hover {
-            border-color: var(--accent-purple);
-            color: var(--accent-purple);
-        }
-
-        .domain-pill.active {
-            background: var(--accent-purple);
-            border-color: var(--accent-purple);
-            color: white;
-        }
-
-        /* News List */
-        .news-list {
-            display: flex;
-            flex-direction: column;
-            max-height: 500px;
+        
+        /* Main Content */
+        .main-content {
+            padding: 32px;
             overflow-y: auto;
         }
-
-        .news-item {
+        
+        .page { display: none; }
+        .page.active { display: block; }
+        
+        /* Header */
+        .page-header {
             display: flex;
-            gap: 1rem;
-            padding: 1rem 1.25rem;
-            border-bottom: 1px solid var(--border);
-            text-decoration: none;
-            color: inherit;
-            transition: background 0.2s;
-            position: relative;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
         }
-
-        .news-item:last-child { border-bottom: none; }
-        .news-item:hover { background: var(--bg-main); }
-
-        .news-score {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .news-score.high { background: var(--gradient-green); color: #047857; }
-        .news-score.medium { background: var(--gradient-orange); color: #b45309; }
-        .news-score.low { background: var(--gradient-red); color: #b91c1c; }
-
-        .dark .news-score.high { color: #34d399; }
-        .dark .news-score.medium { color: #fbbf24; }
-        .dark .news-score.low { color: #f87171; }
-
-        .news-content { flex: 1; min-width: 0; }
-
-        .news-title {
-            font-weight: 500;
+        
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 400;
+            font-style: italic;
             color: var(--text-primary);
-            margin-bottom: 0.25rem;
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            margin-bottom: 6px;
         }
-
-        .news-why {
-            font-size: 0.8125rem;
+        
+        .page-subtitle {
+            font-size: 0.95rem;
             color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            max-width: 500px;
         }
-
-        .news-meta {
-            display: flex;
+        
+        .header-meta { text-align: right; }
+        
+        .meta-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        
+        .meta-time {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        
+        .primary-btn {
+            display: inline-flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 8px;
+            background: var(--primary);
+            color: var(--text-inverse);
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--radius-md);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+        
+        .primary-btn:hover { background: var(--primary-dark); }
+        .primary-btn svg { width: 16px; height: 16px; }
+        
+        /* Domain Filters */
+        .domain-filters {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
             flex-wrap: wrap;
         }
-
-        .news-source {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-
-        .news-time {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .news-domain {
-            font-size: 0.6875rem;
-            font-weight: 500;
-            padding: 0.25rem 0.5rem;
-            border-radius: 6px;
-            text-transform: uppercase;
-        }
-
-        .news-domain.grc { background: #dbeafe; color: #1d4ed8; }
-        .news-domain.privacy { background: #ede9fe; color: #6d28d9; }
-        .news-domain.security { background: #fee2e2; color: #b91c1c; }
-        .news-domain.devsecops { background: #d1fae5; color: #047857; }
-        .news-domain.ai { background: #fef3c7; color: #b45309; }
-        .news-domain.product { background: #fce7f3; color: #be185d; }
-
-        .dark .news-domain.grc { background: #1e3a5f; color: #60a5fa; }
-        .dark .news-domain.privacy { background: #4c1d95; color: #a78bfa; }
-        .dark .news-domain.security { background: #7f1d1d; color: #f87171; }
-        .dark .news-domain.devsecops { background: #064e3b; color: #34d399; }
-        .dark .news-domain.ai { background: #78350f; color: #fbbf24; }
-        .dark .news-domain.product { background: #831843; color: #f472b6; }
-
-        /* Bookmark Button */
-        .bookmark-btn {
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-            border: none;
-            background: var(--bg-main);
+        
+        .domain-filter {
+            padding: 8px 16px;
+            border: 1px solid var(--border-medium);
+            border-radius: 20px;
+            background: var(--bg-card);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
             transition: all 0.2s;
         }
-
-        .news-item:hover .bookmark-btn {
-            opacity: 1;
+        
+        .domain-filter:hover { border-color: var(--primary); color: var(--primary); }
+        .domain-filter.active { background: var(--primary); border-color: var(--primary); color: var(--text-inverse); }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
         }
-
-        .bookmark-btn svg {
-            width: 16px;
-            height: 16px;
-            color: var(--text-muted);
-        }
-
-        .bookmark-btn.active {
-            opacity: 1;
-            background: var(--accent-orange);
-        }
-
-        .bookmark-btn.active svg {
-            color: white;
-            fill: white;
-        }
-
-        /* Content Section */
-        .content-text {
-            font-size: 0.875rem;
+        
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: transparent;
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .action-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .action-btn svg { width: 14px; height: 14px; }
+        
+        /* News Cards */
+        .news-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            transition: box-shadow 0.2s;
+        }
+        
+        .news-card:hover { box-shadow: var(--shadow-md); }
+        
+        .news-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .source-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-sidebar);
+            color: var(--text-secondary);
+        }
+        
+        .domain-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: var(--radius-sm);
+        }
+        
+        .domain-tag.security { background: var(--tag-security); color: var(--tag-security-text); }
+        .domain-tag.grc { background: var(--tag-grc); color: var(--tag-grc-text); }
+        .domain-tag.privacy { background: var(--tag-privacy); color: var(--tag-privacy-text); }
+        .domain-tag.ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+        .domain-tag.devsecops { background: var(--tag-devsecops); color: var(--tag-devsecops-text); }
+        .domain-tag.product { background: var(--tag-product); color: var(--tag-product-text); }
+        
+        .news-score { text-align: right; }
+        .score-main { font-weight: 700; font-size: 1rem; color: var(--text-primary); }
+        .score-label { font-size: 0.7rem; color: var(--text-muted); }
+        
+        .news-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .news-title a:hover { color: var(--primary); }
+        
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .news-actions {
+            display: flex;
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-light);
+        }
+        
+        .news-action {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        
+        .news-action:hover { color: var(--primary); }
+        .news-action svg { width: 14px; height: 14px; }
+        
+        /* Sidebar Right */
+        .sidebar-right {
+            background: var(--bg-sidebar);
+            border-left: 1px solid var(--border-light);
+            padding: 24px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .sidebar-section { margin-bottom: 32px; }
+        
+        .sidebar-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .sidebar-title svg { width: 14px; height: 14px; }
+        
+        .sidebar-text {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        
+        /* Content Preview */
+        .content-preview {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+        }
+        
+        .content-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .content-topic {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        
+        .content-text {
+            font-size: 0.85rem;
+            color: var(--text-primary);
             line-height: 1.7;
             white-space: pre-wrap;
             max-height: 300px;
             overflow-y: auto;
         }
-
-        .content-meta {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-            font-size: 0.75rem;
-            color: var(--text-muted);
+        
+        .content-actions {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            gap: 8px;
         }
-
+        
         .copy-btn {
-            padding: 0.5rem 1rem;
-            background: var(--bg-main);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 0.375rem;
-        }
-
-        .copy-btn:hover {
-            background: var(--accent-purple);
-            border-color: var(--accent-purple);
-            color: white;
-        }
-
-        .copy-btn.copied {
-            background: var(--accent-green);
-            border-color: var(--accent-green);
-            color: white;
-        }
-
-        .copy-btn svg { width: 14px; height: 14px; }
-
-        /* Trends Chart */
-        .trends-chart {
-            height: 120px;
-            display: flex;
-            align-items: flex-end;
-            gap: 0.5rem;
-            padding: 1rem 0;
-        }
-
-        .trend-bar {
             flex: 1;
-            background: linear-gradient(180deg, var(--accent-purple) 0%, rgba(139, 92, 246, 0.3) 100%);
-            border-radius: 4px 4px 0 0;
-            min-height: 10px;
-            position: relative;
-            transition: height 0.5s ease;
-        }
-
-        .trend-bar:hover {
-            opacity: 0.8;
-        }
-
-        .trend-bar-label {
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.65rem;
-            color: var(--text-muted);
-        }
-
-        .trend-bar-value {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.7rem;
+            padding: 10px;
+            background: var(--primary);
+            color: var(--text-inverse);
+            border: none;
+            border-radius: var(--radius-md);
+            font-size: 0.8rem;
             font-weight: 600;
-            color: var(--text-primary);
+            cursor: pointer;
         }
-
-        /* Domain Distribution */
-        .domain-chart {
+        
+        .copy-btn:hover { background: var(--primary-dark); }
+        
+        /* Domain Progress */
+        .progress-list {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 12px;
         }
-
-        .domain-bar {
+        
+        .progress-item {
             display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            cursor: pointer;
-            padding: 0.25rem;
-            border-radius: 6px;
-            transition: background 0.2s;
-        }
-
-        .domain-bar:hover {
-            background: var(--bg-main);
-        }
-
-        .domain-bar-label {
-            width: 80px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-        }
-
-        .domain-bar-track {
-            flex: 1;
-            height: 8px;
-            background: var(--bg-main);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .domain-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-
-        .domain-bar-fill.grc { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-        .domain-bar-fill.privacy { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
-        .domain-bar-fill.security { background: linear-gradient(90deg, #ef4444, #f87171); }
-        .domain-bar-fill.devsecops { background: linear-gradient(90deg, #10b981, #34d399); }
-        .domain-bar-fill.ai { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
-        .domain-bar-fill.product { background: linear-gradient(90deg, #ec4899, #f472b6); }
-
-        .domain-bar-count {
-            width: 30px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            text-align: right;
-        }
-
-        /* Sources Card */
-        .sources-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
-        }
-
-        .source-item {
-            display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 0.5rem 0.75rem;
-            background: var(--bg-main);
-            border-radius: 8px;
-            font-size: 0.75rem;
+            align-items: center;
         }
-
-        .source-name {
-            color: var(--text-secondary);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .source-count {
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-left: 0.5rem;
-        }
-
-        /* Full News View */
-        .full-news-list {
+        
+        .progress-label { font-size: 0.85rem; color: var(--text-secondary); }
+        .progress-value { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); font-family: var(--font-mono); }
+        
+        /* Content Library */
+        .content-list {
             display: flex;
             flex-direction: column;
+            gap: 16px;
         }
-
-        .full-news-item {
+        
+        .content-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+        }
+        
+        .content-item-header {
             display: flex;
-            gap: 1.25rem;
-            padding: 1.25rem;
-            border-bottom: 1px solid var(--border);
-            text-decoration: none;
-            color: inherit;
-            transition: background 0.2s;
-            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
         }
-
-        .full-news-item:hover { background: var(--bg-main); }
-
-        .full-news-item .news-score {
-            width: 56px;
-            height: 56px;
-            font-size: 1.25rem;
+        
+        .content-item-date {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
         }
-
-        .full-news-item .news-title {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            -webkit-line-clamp: unset;
+        
+        .content-item-topic {
+            font-weight: 600;
+            margin-bottom: 8px;
         }
-
-        .full-news-item .news-why {
+        
+        .content-item-preview {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: -webkit-box;
             -webkit-line-clamp: 3;
-        }
-
-        /* Content View */
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .content-card {
-            background: var(--bg-white);
-            border-radius: 16px;
-            box-shadow: var(--shadow-sm);
+            -webkit-box-orient: vertical;
             overflow: hidden;
+            margin-bottom: 12px;
         }
-
-        .content-card .card-body {
-            max-height: 400px;
-            overflow-y: auto;
+        
+        /* Newsletter */
+        .newsletter-container {
+            max-width: 700px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 40px;
         }
-
-        /* Bookmarks View */
+        
+        .newsletter-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .newsletter-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .newsletter-content {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+        
+        /* Empty State */
         .empty-state {
             text-align: center;
-            padding: 3rem;
+            padding: 60px 24px;
             color: var(--text-muted);
         }
-
+        
         .empty-state svg {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 1rem;
-            opacity: 0.5;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 16px;
+            opacity: 0.4;
         }
-
+        
         .empty-state h3 {
-            font-size: 1.125rem;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Newsletter View */
-        .newsletter-preview {
-            background: var(--bg-white);
-            border-radius: 16px;
-            box-shadow: var(--shadow-sm);
-            padding: 2rem;
-            max-width: 800px;
-        }
-
-        .newsletter-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 2px solid var(--accent-purple);
-        }
-
-        .newsletter-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .newsletter-subtitle {
-            color: var(--text-secondary);
-        }
-
-        .newsletter-section {
-            margin-bottom: 1.5rem;
-        }
-
-        .newsletter-section-title {
             font-size: 1rem;
-            font-weight: 600;
-            color: var(--accent-purple);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .newsletter-item {
-            padding: 1rem;
-            background: var(--bg-main);
-            border-radius: 12px;
-            margin-bottom: 0.75rem;
-        }
-
-        .newsletter-item-title {
-            font-weight: 500;
             color: var(--text-primary);
-            margin-bottom: 0.25rem;
+            margin-bottom: 4px;
         }
-
-        .newsletter-item-summary {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        /* Toast Notification */
-        .toast {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--text-primary);
-            color: var(--bg-white);
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            transform: translateY(100px);
-            opacity: 0;
-            transition: all 0.3s ease;
-            z-index: 1001;
-        }
-
-        .toast.show {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .toast svg {
-            width: 20px;
-            height: 20px;
-            color: var(--accent-green);
-        }
-
-        /* Search Results */
-        .search-results {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--bg-sidebar);
-            border-radius: 10px;
-            margin-top: 0.5rem;
-            max-height: 300px;
-            overflow-y: auto;
-            box-shadow: var(--shadow-lg);
-            z-index: 100;
-            display: none;
-        }
-
-        .search-results.show {
-            display: block;
-        }
-
-        .search-result-item {
-            padding: 0.75rem 1rem;
-            cursor: pointer;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            transition: background 0.2s;
-        }
-
-        .search-result-item:hover {
-            background: rgba(255,255,255,0.1);
-        }
-
-        .search-result-item:last-child {
-            border-bottom: none;
-        }
-
-        .search-result-title {
-            font-size: 0.875rem;
-            color: white;
-            margin-bottom: 0.25rem;
-        }
-
-        .search-result-meta {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-        }
-
+        
+        .empty-state p { font-size: 0.9rem; }
+        
         /* Loading */
         .loading {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 3rem;
-            color: var(--text-muted);
-            gap: 0.75rem;
+            padding: 48px;
         }
-
+        
         .spinner {
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--border);
-            border-top-color: var(--accent-purple);
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-light);
+            border-top-color: var(--primary);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-
+        
         @keyframes spin { to { transform: rotate(360deg); } }
-
+        
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--text-primary);
+            color: var(--bg-card);
+            padding: 14px 24px;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .toast.show { transform: translateY(0); opacity: 1; }
+        
         /* Responsive */
-        @media (max-width: 1400px) {
-            .three-col { grid-template-columns: 1fr 1fr; }
-            .three-col > *:last-child { grid-column: span 2; }
-        }
-
         @media (max-width: 1200px) {
-            .three-col { grid-template-columns: 1fr; }
-            .three-col > *:last-child { grid-column: span 1; }
-            .two-col { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: repeat(3, 1fr); }
+            .app { grid-template-columns: 260px 1fr; }
+            .sidebar-right { display: none; }
         }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-            }
-
-            .sidebar.open {
-                transform: translateX(0);
-            }
-
-            .sidebar-overlay.show {
-                display: block;
-            }
-
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            .main-content {
-                margin-left: 0;
-                padding: 1rem;
-                padding-top: 5rem;
-            }
-
-            .stats-grid { 
-                grid-template-columns: repeat(2, 1fr); 
-            }
-
-            .greeting { font-size: 1.5rem; }
-            .sources-grid { grid-template-columns: 1fr; }
-            .content-grid { grid-template-columns: 1fr; }
-            .header { flex-direction: column; }
-            .header-right { width: 100%; }
-            .btn { flex: 1; justify-content: center; }
-        }
-
-        @media (max-width: 480px) {
-            .stats-grid { grid-template-columns: 1fr; }
+        
+        @media (max-width: 900px) {
+            .app { grid-template-columns: 1fr; }
+            .sidebar-left { display: none; }
+            .main-content { padding: 20px; }
+            .page-title { font-size: 1.8rem; }
+            .page-header { flex-direction: column; gap: 16px; }
+            .header-meta { text-align: left; }
         }
     </style>
 </head>
 <body>
-    <!-- Password Screen -->
-    <div class="password-screen" id="passwordScreen">
-        <div class="password-box">
-            <div class="logo">
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <div class="login-logo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
                 </svg>
             </div>
-            <h1>GRC Intelligence Copilot</h1>
-            <p>Your AI-powered content command center</p>
-            <div class="password-input-wrapper">
-                <input type="password" id="passwordInput" placeholder="Enter password" onkeypress="if(event.key==='Enter')checkPassword()">
-                <button onclick="checkPassword()">Enter</button>
-            </div>
-            <p class="error-msg" id="errorMsg"></p>
+            <h1 class="login-title">GRC Copilot.</h1>
+            <p class="login-subtitle">Your GRC intelligence operating system</p>
+            <input type="password" class="login-input" id="passwordInput" placeholder="Enter password" onkeypress="if(event.key==='Enter')checkPassword()">
+            <button class="login-btn" onclick="checkPassword()">Enter</button>
+            <p class="login-error" id="loginError">Incorrect password</p>
         </div>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-    </button>
-
-    <!-- Sidebar Overlay -->
-    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleMobileMenu()"></div>
-
     <!-- Main App -->
-    <div class="app" id="app">
-        <!-- Sidebar -->
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-logo">
-                <div class="sidebar-logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
+    <div class="app hidden" id="app">
+        <!-- Sidebar Left -->
+        <aside class="sidebar-left">
+            <div class="brand">
+                <div class="brand-logo">
+                    <div class="brand-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span class="brand-name">GRC Copilot.</span>
                 </div>
-                <span class="sidebar-logo-text">GRC Copilot</span>
+                <div class="brand-tagline">Intelligence System</div>
             </div>
-            <div class="sidebar-subtitle">Intelligence + Content</div>
-
-            <!-- Search -->
-            <div class="search-container">
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                <input type="text" class="search-input" id="searchInput" placeholder="Search articles..." oninput="handleSearch(this.value)">
-                <div class="search-results" id="searchResults"></div>
+            
+            <div class="user-profile">
+                <div class="user-avatar">SS</div>
+                <div class="user-name">Sathya Sivam</div>
+                <div class="user-role">GRC Professional</div>
             </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">Views</div>
-                <div class="nav-item active" data-view="dashboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                    Dashboard
-                    <span class="badge" id="navArticleCount">0</span>
+            
+            <nav class="nav-menu">
+                <div class="nav-item active" data-page="briefing">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    <span>Daily Briefing</span>
                 </div>
-                <div class="nav-item" data-view="news">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
-                    All News
+                <div class="nav-item" data-page="content">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+                    <span>Content Library</span>
                 </div>
-                <div class="nav-item" data-view="bookmarks">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                    Bookmarks
-                    <span class="badge" id="bookmarkCount">0</span>
-                </div>
-                <div class="nav-item" data-view="content">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                    Content
-                </div>
-                <div class="nav-item" data-view="newsletter">
+                <div class="nav-item" data-page="newsletter">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    Newsletter
+                    <span>Newsletter</span>
+                </div>
+                
+                <div class="nav-divider"></div>
+                <div class="nav-label">Filter by Domain</div>
+                
+                <div class="nav-item" data-filter="all">All Domains</div>
+                <div class="nav-item" data-filter="GRC">GRC</div>
+                <div class="nav-item" data-filter="Security">Security</div>
+                <div class="nav-item" data-filter="Privacy">Privacy</div>
+                <div class="nav-item" data-filter="AI">AI</div>
+                <div class="nav-item" data-filter="DevSecOps">DevSecOps</div>
+                <div class="nav-item" data-filter="Product">Product</div>
+            </nav>
+            
+            <div class="status-card">
+                <div class="status-label">Feed Status</div>
+                <div class="status-value">
+                    <span class="status-number" id="feedCount">91</span>
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        Active
+                    </span>
                 </div>
             </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">Filter by Domain</div>
-                <div class="nav-item" data-filter="all">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
-                    All Domains
-                </div>
-                <div class="nav-item" data-filter="GRC">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    GRC
-                </div>
-                <div class="nav-item" data-filter="Security">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Security
-                </div>
-                <div class="nav-item" data-filter="Privacy">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Privacy
-                </div>
-                <div class="nav-item" data-filter="AI">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A1.5 1.5 0 0 0 6 14.5 1.5 1.5 0 0 0 7.5 16 1.5 1.5 0 0 0 9 14.5 1.5 1.5 0 0 0 7.5 13m9 0a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5"/></svg>
-                    AI
-                </div>
-                <div class="nav-item" data-filter="DevSecOps">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    DevSecOps
-                </div>
-                <div class="nav-item" data-filter="Product">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-                    Product
-                </div>
-            </div>
-
-            <!-- Dark Mode Toggle -->
-            <div class="theme-toggle" onclick="toggleDarkMode()">
-                <div class="theme-toggle-switch"></div>
-                <span class="theme-toggle-label">Dark Mode</span>
-            </div>
-
-            <div class="shortcut-hint">
-                <div><kbd>1</kbd>-<kbd>5</kbd> Switch views</div>
-                <div><kbd>/</kbd> Search</div>
-                <div><kbd>D</kbd> Dark mode</div>
-                <div><kbd>C</kbd> Copy post</div>
-            </div>
-        </nav>
+        </aside>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Dashboard View -->
-            <div class="view active" id="dashboardView">
-                <header class="header">
-                    <div class="header-left">
-                        <div class="date-badge">
-                            <span id="currentDate">Loading...</span>
-                            <span id="currentWeek">Week --</span>
-                        </div>
-                        <h1 class="greeting">Good morning, Sathya <span class="greeting-emoji">✨</span></h1>
-                        <p class="tagline">Progress over perfection. You've got this.</p>
-                        <p class="status-message" id="statusMessage">Loading your intelligence briefing...</p>
+            <!-- Briefing Page -->
+            <div class="page active" id="briefingPage">
+                <header class="page-header">
+                    <div>
+                        <h1 class="page-title">Morning briefing.</h1>
+                        <p class="page-subtitle">Your GRC operating system reads and translates the day's intelligence.</p>
                     </div>
-                    <div class="header-right">
-                        <button class="btn btn-primary" onclick="copyContent('linkedinPost')" title="Press C">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                            Copy Post
-                        </button>
-                        <button class="btn btn-secondary" onclick="exportNewsletter()">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Export PDF
-                        </button>
-                        <button class="btn btn-secondary" onclick="location.reload()">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-                            Refresh
+                    <div class="header-meta">
+                        <div class="meta-label">Last Indexed</div>
+                        <div class="meta-time" id="indexTime">--:-- UTC</div>
+                        <button class="primary-btn" onclick="copyPost()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            Copy Today's Post
                         </button>
                     </div>
                 </header>
-
-                <!-- Stats -->
-                <h2 class="section-title">Today at a glance</h2>
-                <div class="stats-grid">
-                    <div class="stat-card blue" onclick="switchView('news')">
-                        <div class="stat-card-content">
-                            <div class="stat-card-header">
-                                <span class="stat-label">Articles</span>
-                                <div class="stat-icon blue">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
-                                </div>
-                            </div>
-                            <div class="stat-value"><span id="totalArticles">0</span></div>
-                        </div>
-                    </div>
-                    <div class="stat-card green">
-                        <div class="stat-card-content">
-                            <div class="stat-card-header">
-                                <span class="stat-label">High Priority</span>
-                                <div class="stat-icon green">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                                </div>
-                            </div>
-                            <div class="stat-value"><span id="highPriority">0</span></div>
-                        </div>
-                    </div>
-                    <div class="stat-card purple">
-                        <div class="stat-card-content">
-                            <div class="stat-card-header">
-                                <span class="stat-label">Top Score</span>
-                                <div class="stat-icon purple">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                                </div>
-                            </div>
-                            <div class="stat-value"><span id="topScore">0</span></div>
-                        </div>
-                    </div>
-                    <div class="stat-card orange">
-                        <div class="stat-card-content">
-                            <div class="stat-card-header">
-                                <span class="stat-label">Sources</span>
-                                <div class="stat-icon orange">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                                </div>
-                            </div>
-                            <div class="stat-value"><span id="sourcesCount">0</span></div>
-                        </div>
-                    </div>
-                    <div class="stat-card pink" onclick="switchView('bookmarks')">
-                        <div class="stat-card-content">
-                            <div class="stat-card-header">
-                                <span class="stat-label">Saved</span>
-                                <div class="stat-icon pink">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                                </div>
-                            </div>
-                            <div class="stat-value"><span id="savedCount">0</span></div>
-                        </div>
-                    </div>
+                
+                <div class="domain-filters" id="domainFilters">
+                    <button class="domain-filter active" data-domain="all">All</button>
+                    <button class="domain-filter" data-domain="GRC">GRC</button>
+                    <button class="domain-filter" data-domain="Security">Security</button>
+                    <button class="domain-filter" data-domain="Privacy">Privacy</button>
+                    <button class="domain-filter" data-domain="AI">AI</button>
+                    <button class="domain-filter" data-domain="DevSecOps">DevSecOps</button>
+                    <button class="domain-filter" data-domain="Product">Product</button>
                 </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span id="highlightCount">0</span> High Priority
+                    </button>
+                    <button class="action-btn" onclick="switchPage('content')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        View Content Library
+                    </button>
+                </div>
+                
+                <div class="news-cards" id="newsCards">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+            </div>
 
-                <!-- Three Column Layout -->
-                <div class="three-col">
-                    <!-- News -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                                Top Stories
-                            </h3>
-                            <span class="card-link" onclick="switchView('news')">View all →</span>
-                        </div>
-                        <div class="domain-filters">
-                            <span class="domain-pill active" data-domain="all">All</span>
-                            <span class="domain-pill" data-domain="GRC">GRC</span>
-                            <span class="domain-pill" data-domain="Security">Security</span>
-                            <span class="domain-pill" data-domain="Privacy">Privacy</span>
-                            <span class="domain-pill" data-domain="AI">AI</span>
-                            <span class="domain-pill" data-domain="DevSecOps">DevSecOps</span>
-                            <span class="domain-pill" data-domain="Product">Product</span>
-                        </div>
-                        <div class="news-list" id="newsList">
-                            <div class="loading"><div class="spinner"></div> Loading...</div>
-                        </div>
+            <!-- Content Page -->
+            <div class="page" id="contentPage">
+                <header class="page-header">
+                    <div>
+                        <h1 class="page-title">Content library.</h1>
+                        <p class="page-subtitle">All generated posts, accumulated over time.</p>
                     </div>
-
-                    <!-- LinkedIn Post -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                                LinkedIn Post
-                            </h3>
-                            <button class="copy-btn" onclick="copyContent('linkedinPost')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <div class="content-text" id="linkedinPost">Loading...</div>
-                            <div class="content-meta" id="linkedinMeta"></div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <!-- Weekly Trends -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                                    Score Trends (7 days)
-                                </h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="trends-chart" id="trendsChart"></div>
-                            </div>
-                        </div>
-
-                        <!-- Domain Distribution -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                                    Domains
-                                </h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="domain-chart" id="domainChart"></div>
-                            </div>
-                        </div>
-
-                        <!-- Sources -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                                    Top Sources
-                                </h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="sources-grid" id="sourcesGrid"></div>
-                            </div>
-                        </div>
+                </header>
+                
+                <div class="content-list" id="contentList">
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+                        <h3>No content yet</h3>
+                        <p>Generated posts will appear here</p>
                     </div>
                 </div>
             </div>
 
-            <!-- News View -->
-            <div class="view" id="newsView">
-                <header class="header">
-                    <div class="header-left">
-                        <h1 class="greeting">All News <span id="newsFilterLabel"></span></h1>
-                        <p class="tagline">Complete feed from all sources</p>
+            <!-- Newsletter Page -->
+            <div class="page" id="newsletterPage">
+                <header class="page-header">
+                    <div>
+                        <h1 class="page-title">Newsletter.</h1>
+                        <p class="page-subtitle">Weekly edition for Wednesday publishing.</p>
                     </div>
+                    <button class="primary-btn" onclick="copyNewsletter()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        Copy Newsletter
+                    </button>
                 </header>
-                <div class="domain-filters" style="padding: 0; margin-bottom: 1.5rem;">
-                    <span class="domain-pill active" data-domain="all">All</span>
-                    <span class="domain-pill" data-domain="GRC">GRC</span>
-                    <span class="domain-pill" data-domain="Security">Security</span>
-                    <span class="domain-pill" data-domain="Privacy">Privacy</span>
-                    <span class="domain-pill" data-domain="AI">AI</span>
-                    <span class="domain-pill" data-domain="DevSecOps">DevSecOps</span>
-                    <span class="domain-pill" data-domain="Product">Product</span>
-                </div>
-                <div class="card">
-                    <div class="full-news-list" id="fullNewsList">
-                        <div class="loading"><div class="spinner"></div> Loading...</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bookmarks View -->
-            <div class="view" id="bookmarksView">
-                <header class="header">
-                    <div class="header-left">
-                        <h1 class="greeting">Saved Articles</h1>
-                        <p class="tagline">Your bookmarked articles for later</p>
-                    </div>
-                </header>
-                <div class="card">
-                    <div class="full-news-list" id="bookmarksList">
-                        <div class="empty-state">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                            <h3>No bookmarks yet</h3>
-                            <p>Click the bookmark icon on any article to save it here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content View -->
-            <div class="view" id="contentView">
-                <header class="header">
-                    <div class="header-left">
-                        <h1 class="greeting">Content Library</h1>
-                        <p class="tagline">Ready-to-use original content for LinkedIn</p>
-                    </div>
-                </header>
-                <div class="content-grid">
-                    <div class="content-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                                LinkedIn Post
-                            </h3>
-                            <button class="copy-btn" onclick="copyContent('contentLinkedinPost')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <div class="content-text" id="contentLinkedinPost">Loading...</div>
-                        </div>
-                    </div>
-                    <div class="content-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                                Carousel Content
-                            </h3>
-                            <button class="copy-btn" onclick="copyContent('contentCarousel')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <div class="content-text" id="contentCarousel">Loading...</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Newsletter View -->
-            <div class="view" id="newsletterView">
-                <header class="header">
-                    <div class="header-left">
-                        <h1 class="greeting">Weekly Newsletter</h1>
-                        <p class="tagline">Preview for this week's digest</p>
-                    </div>
-                    <div class="header-right">
-                        <button class="btn btn-secondary" onclick="exportNewsletter()">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Export PDF
-                        </button>
-                        <button class="btn btn-primary" onclick="copyContent('newsletterContent')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                            Copy Newsletter
-                        </button>
-                    </div>
-                </header>
-                <div class="newsletter-preview" id="newsletterContent">
-                    <div class="newsletter-header">
-                        <div class="newsletter-title">GRC Intelligence Weekly</div>
-                        <div class="newsletter-subtitle" id="newsletterDate">Week of Loading...</div>
-                    </div>
-                    <div id="newsletterBody">
-                        <div class="loading"><div class="spinner"></div> Loading...</div>
+                
+                <div class="newsletter-container" id="newsletterContainer">
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <h3>No newsletter yet</h3>
+                        <p>Newsletter generates on Tuesdays</p>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- Sidebar Right -->
+        <aside class="sidebar-right">
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    Latest Post
+                </h3>
+                
+                <div class="content-preview">
+                    <div class="content-label">LinkedIn Post</div>
+                    <div class="content-topic" id="postTopic">--</div>
+                    <div class="content-text" id="postContent">No content generated yet.</div>
+                    <div class="content-actions">
+                        <button class="copy-btn" onclick="copyPost()">Copy Post</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    Domain Distribution
+                </h3>
+                
+                <div class="progress-list" id="domainProgress">
+                    <div class="progress-item"><span class="progress-label">GRC</span><span class="progress-value">0</span></div>
+                    <div class="progress-item"><span class="progress-label">Security</span><span class="progress-value">0</span></div>
+                    <div class="progress-item"><span class="progress-label">Privacy</span><span class="progress-value">0</span></div>
+                    <div class="progress-item"><span class="progress-label">AI</span><span class="progress-value">0</span></div>
+                    <div class="progress-item"><span class="progress-label">DevSecOps</span><span class="progress-value">0</span></div>
+                    <div class="progress-item"><span class="progress-label">Product</span><span class="progress-value">0</span></div>
+                </div>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">About</h3>
+                <p class="sidebar-text">
+                    Surfaces intelligence from 91 curated sources across 6 domains. Content is copyright-safe original commentary, not article summaries.
+                </p>
+            </section>
+        </aside>
     </div>
 
     <!-- Toast -->
-    <div class="toast" id="toast">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        <span id="toastMessage">Copied!</span>
-    </div>
+    <div class="toast" id="toast">Copied to clipboard!</div>
 
     <script>
-        const PASSWORD = "GRC2026!Shree";
-        const DATA_PATH = "data/";
-        let allArticles = [];
-        let bookmarks = JSON.parse(localStorage.getItem('grc_bookmarks') || '[]');
+        // Config
+        const PASSWORD = 'GRC2026!Shree';
+        
+        // State
+        let newsData = [];
+        let contentData = [];
+        let newsletterData = null;
         let currentFilter = 'all';
-        let carouselRawContent = '';
-
-        // Password
+        let currentPost = '';
+        
+        // Auth
         function checkPassword() {
             const input = document.getElementById('passwordInput').value;
             if (input === PASSWORD) {
-                document.getElementById('passwordScreen').classList.add('hidden');
-                document.getElementById('app').classList.add('active');
-                initDashboard();
+                localStorage.setItem('grc_auth', 'true');
+                showApp();
             } else {
-                document.getElementById('errorMsg').textContent = "Incorrect password";
-                document.getElementById('passwordInput').value = '';
+                document.getElementById('loginError').classList.add('show');
             }
         }
-
-        // Init
-        function initDashboard() {
-            // Load dark mode preference
-            if (localStorage.getItem('darkMode') === 'true') {
-                document.body.classList.add('dark');
-            }
-            
-            setDateTime();
-            setGreeting();
-            loadAllData();
-            setupNavigation();
-            setupFilters();
-            setupKeyboardShortcuts();
-            updateBookmarkCount();
+        
+        function showApp() {
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('app').classList.remove('hidden');
+            loadData();
         }
-
-        // Dark mode
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark');
-            localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+        
+        if (localStorage.getItem('grc_auth') === 'true') {
+            showApp();
         }
-
-        // Mobile menu
-        function toggleMobileMenu() {
-            document.getElementById('sidebar').classList.toggle('open');
-            document.getElementById('sidebarOverlay').classList.toggle('show');
-        }
-
-        // Date/Time
-        function setDateTime() {
-            const now = new Date();
-            const options = { weekday: 'long', day: 'numeric', month: 'long' };
-            document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
-            
-            const week = Math.ceil((now.getDate() + new Date(now.getFullYear(), now.getMonth(), 1).getDay()) / 7);
-            const quarter = Math.ceil((now.getMonth() + 1) / 3);
-            document.getElementById('currentWeek').textContent = `Week ${week} · Q${quarter}`;
-            document.getElementById('newsletterDate').textContent = `Week of ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
-        }
-
-        // Greeting
-        function setGreeting() {
-            const hour = new Date().getHours();
-            let greeting = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
-            document.querySelector('.greeting').innerHTML = `${greeting}, Sathya <span class="greeting-emoji">✨</span>`;
-        }
-
-        // Navigation
-        function setupNavigation() {
-            document.querySelectorAll('.nav-item[data-view]').forEach(item => {
-                item.addEventListener('click', () => switchView(item.dataset.view));
-            });
-            document.querySelectorAll('.nav-item[data-filter]').forEach(item => {
-                item.addEventListener('click', () => {
-                    filterByDomain(item.dataset.filter);
-                    switchView('news');
-                });
-            });
-        }
-
-        function switchView(viewName) {
-            document.querySelectorAll('.nav-item[data-view]').forEach(item => {
-                item.classList.toggle('active', item.dataset.view === viewName);
-            });
-            document.querySelectorAll('.view').forEach(view => view.classList.remove('active'));
-            document.getElementById(viewName + 'View').classList.add('active');
-
-            if (viewName === 'news') renderFullNews(allArticles);
-            else if (viewName === 'bookmarks') renderBookmarks();
-            else if (viewName === 'content') loadContentView();
-            else if (viewName === 'newsletter') loadNewsletterView();
-
-            // Close mobile menu
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('sidebarOverlay').classList.remove('show');
-        }
-
-        function filterByDomain(domain) {
-            currentFilter = domain;
-            document.querySelectorAll('.nav-item[data-filter]').forEach(item => {
-                item.classList.toggle('active', item.dataset.filter === domain);
-            });
-            const label = document.getElementById('newsFilterLabel');
-            if (label) label.textContent = domain === 'all' ? '' : `- ${domain}`;
-            
-            const filtered = domain === 'all' ? allArticles : allArticles.filter(a => (a.domains || []).includes(domain));
-            renderFullNews(filtered);
-        }
-
-        // Keyboard shortcuts
-        function setupKeyboardShortcuts() {
-            document.addEventListener('keydown', (e) => {
-                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-                switch(e.key) {
-                    case '1': switchView('dashboard'); break;
-                    case '2': switchView('news'); break;
-                    case '3': switchView('bookmarks'); break;
-                    case '4': switchView('content'); break;
-                    case '5': switchView('newsletter'); break;
-                    case 'c': case 'C': copyContent('linkedinPost'); break;
-                    case 'd': case 'D': toggleDarkMode(); break;
-                    case '/': e.preventDefault(); document.getElementById('searchInput').focus(); break;
-                }
-            });
-        }
-
-        // Search
-        function handleSearch(query) {
-            const results = document.getElementById('searchResults');
-            if (!query.trim()) {
-                results.classList.remove('show');
-                return;
-            }
-            
-            const filtered = allArticles.filter(a => 
-                a.title.toLowerCase().includes(query.toLowerCase()) ||
-                (a.summary || '').toLowerCase().includes(query.toLowerCase())
-            ).slice(0, 5);
-
-            if (filtered.length) {
-                results.innerHTML = filtered.map(a => `
-                    <div class="search-result-item" onclick="openArticle('${a.url}')">
-                        <div class="search-result-title">${escapeHtml(a.title)}</div>
-                        <div class="search-result-meta">${a.source} · ${getDomain(a.domains)}</div>
-                    </div>
-                `).join('');
-                results.classList.add('show');
-            } else {
-                results.innerHTML = '<div class="search-result-item"><div class="search-result-title">No results found</div></div>';
-                results.classList.add('show');
-            }
-        }
-
-        function openArticle(url) {
-            window.open(url, '_blank');
-            document.getElementById('searchResults').classList.remove('show');
-            document.getElementById('searchInput').value = '';
-        }
-
-        // Load data
-        async function loadAllData() {
-            await Promise.all([loadArticles(), loadLinkedInPost(), loadCarousel()]);
-        }
-
-        async function loadArticles() {
+        
+        // Load Data
+        async function loadData() {
             try {
-                const res = await fetch(DATA_PATH + 'articles.json');
-                const articles = await res.json();
-                allArticles = articles;
-
-                const uniqueSources = new Set(articles.map(a => a.source)).size;
-                document.getElementById('totalArticles').textContent = articles.length;
-                document.getElementById('navArticleCount').textContent = articles.length;
-                document.getElementById('highPriority').textContent = articles.filter(a => a.total_score >= 28).length;
-                document.getElementById('topScore').textContent = articles[0]?.total_score || 0;
-                document.getElementById('sourcesCount').textContent = uniqueSources;
-                document.getElementById('statusMessage').textContent = `${articles.length} articles from ${uniqueSources} sources ready!`;
-
-                renderNews(articles);
-                renderDomainChart(articles);
-                renderSourcesGrid(articles);
-                renderTrendsChart();
-            } catch (e) {
-                document.getElementById('newsList').innerHTML = '<div class="loading">No data yet.</div>';
-            }
-        }
-
-        function renderNews(articles) {
-            const container = document.getElementById('newsList');
-            if (!articles.length) {
-                container.innerHTML = '<div class="loading">No articles found.</div>';
-                return;
-            }
-
-            container.innerHTML = articles.slice(0, 8).map(article => {
-                const score = article.total_score || article.score || 0;
-                const scoreClass = score >= 28 ? 'high' : (score >= 20 ? 'medium' : 'low');
-                const domain = getDomain(article.domains);
-                const isBookmarked = bookmarks.includes(article.url);
-
-                return `
-                    <a href="${article.url || '#'}" target="_blank" class="news-item" data-domains="${(article.domains || []).join(',')}">
-                        <div class="news-score ${scoreClass}">${score}</div>
-                        <div class="news-content">
-                            <div class="news-title">${escapeHtml(article.title)}</div>
-                            <div class="news-why">${escapeHtml(article.score_reason || '')}</div>
-                            <div class="news-meta">
-                                <span class="news-source">${article.source || 'Unknown'}</span>
-                                <span class="news-time">${getTimeAgo(article.published)}</span>
-                                <span class="news-domain ${domain.toLowerCase()}">${domain}</span>
-                            </div>
-                        </div>
-                        <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="event.preventDefault(); toggleBookmark('${article.url}', this)">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                        </button>
-                    </a>
-                `;
-            }).join('');
-        }
-
-        function renderFullNews(articles) {
-            const container = document.getElementById('fullNewsList');
-            if (!articles.length) {
-                container.innerHTML = '<div class="empty-state"><h3>No articles found</h3></div>';
-                return;
-            }
-
-            container.innerHTML = articles.map(article => {
-                const score = article.total_score || article.score || 0;
-                const scoreClass = score >= 28 ? 'high' : (score >= 20 ? 'medium' : 'low');
-                const isBookmarked = bookmarks.includes(article.url);
-                const allDomains = (article.domains || []).map(d => 
-                    `<span class="news-domain ${d.toLowerCase()}">${d}</span>`
-                ).join(' ');
-
-                return `
-                    <a href="${article.url || '#'}" target="_blank" class="full-news-item">
-                        <div class="news-score ${scoreClass}">${score}</div>
-                        <div class="news-content">
-                            <div class="news-title">${escapeHtml(article.title)}</div>
-                            <div class="news-why">${escapeHtml(article.score_reason || article.summary || '')}</div>
-                            <div class="news-meta">
-                                <span class="news-source">${article.source || 'Unknown'}</span>
-                                <span class="news-time">${getTimeAgo(article.published)}</span>
-                                ${allDomains}
-                            </div>
-                        </div>
-                        <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="event.preventDefault(); toggleBookmark('${article.url}', this)">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                        </button>
-                    </a>
-                `;
-            }).join('');
-        }
-
-        // Bookmarks
-        function toggleBookmark(url, btn) {
-            const idx = bookmarks.indexOf(url);
-            if (idx > -1) {
-                bookmarks.splice(idx, 1);
-                btn.classList.remove('active');
-                showToast('Removed from bookmarks');
-            } else {
-                bookmarks.push(url);
-                btn.classList.add('active');
-                showToast('Saved to bookmarks');
-            }
-            localStorage.setItem('grc_bookmarks', JSON.stringify(bookmarks));
-            updateBookmarkCount();
-        }
-
-        function updateBookmarkCount() {
-            document.getElementById('bookmarkCount').textContent = bookmarks.length;
-            document.getElementById('savedCount').textContent = bookmarks.length;
-        }
-
-        function renderBookmarks() {
-            const container = document.getElementById('bookmarksList');
-            const bookmarkedArticles = allArticles.filter(a => bookmarks.includes(a.url));
-            
-            if (!bookmarkedArticles.length) {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                        <h3>No bookmarks yet</h3>
-                        <p>Click the bookmark icon on any article to save it here</p>
-                    </div>
-                `;
-                return;
-            }
-
-            container.innerHTML = bookmarkedArticles.map(article => {
-                const score = article.total_score || article.score || 0;
-                const scoreClass = score >= 28 ? 'high' : (score >= 20 ? 'medium' : 'low');
-                const allDomains = (article.domains || []).map(d => 
-                    `<span class="news-domain ${d.toLowerCase()}">${d}</span>`
-                ).join(' ');
-
-                return `
-                    <a href="${article.url || '#'}" target="_blank" class="full-news-item">
-                        <div class="news-score ${scoreClass}">${score}</div>
-                        <div class="news-content">
-                            <div class="news-title">${escapeHtml(article.title)}</div>
-                            <div class="news-why">${escapeHtml(article.score_reason || '')}</div>
-                            <div class="news-meta">
-                                <span class="news-source">${article.source || 'Unknown'}</span>
-                                ${allDomains}
-                            </div>
-                        </div>
-                        <button class="bookmark-btn active" onclick="event.preventDefault(); toggleBookmark('${article.url}', this); renderBookmarks();">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                        </button>
-                    </a>
-                `;
-            }).join('');
-        }
-
-        // Charts
-        function renderTrendsChart() {
-            const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-            const today = new Date().getDay();
-            const scores = [28, 32, 25, 30, 35, 22, allArticles[0]?.total_score || 30];
-            const max = Math.max(...scores);
-
-            const container = document.getElementById('trendsChart');
-            container.innerHTML = scores.map((score, i) => {
-                const height = (score / max) * 100;
-                const dayIdx = (today - 6 + i + 7) % 7;
-                const isToday = i === 6;
-                return `
-                    <div class="trend-bar" style="height: ${height}%; ${isToday ? 'opacity: 1;' : 'opacity: 0.6;'}">
-                        <span class="trend-bar-value">${score}</span>
-                        <span class="trend-bar-label">${days[dayIdx]}</span>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        function renderDomainChart(articles) {
-            const counts = { GRC: 0, Privacy: 0, Security: 0, DevSecOps: 0, AI: 0, Product: 0 };
-            articles.forEach(a => {
-                (a.domains || ['GRC']).forEach(d => {
-                    if (counts.hasOwnProperty(d)) counts[d]++;
-                });
-            });
-
-            const max = Math.max(...Object.values(counts), 1);
-            const container = document.getElementById('domainChart');
-
-            container.innerHTML = Object.entries(counts).map(([domain, count]) => {
-                const pct = (count / max) * 100;
-                return `
-                    <div class="domain-bar" onclick="filterByDomain('${domain}'); switchView('news');">
-                        <span class="domain-bar-label">${domain}</span>
-                        <div class="domain-bar-track">
-                            <div class="domain-bar-fill ${domain.toLowerCase()}" style="width: ${pct}%"></div>
-                        </div>
-                        <span class="domain-bar-count">${count}</span>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        function renderSourcesGrid(articles) {
-            const counts = {};
-            articles.forEach(a => {
-                const source = a.source || 'Unknown';
-                counts[source] = (counts[source] || 0) + 1;
-            });
-
-            const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
-            document.getElementById('sourcesGrid').innerHTML = sorted.map(([source, count]) => `
-                <div class="source-item">
-                    <span class="source-name">${escapeHtml(source)}</span>
-                    <span class="source-count">${count}</span>
-                </div>
-            `).join('');
-        }
-
-        // LinkedIn
-        async function loadLinkedInPost() {
-            try {
-                const res = await fetch(DATA_PATH + 'linkedin_post.json');
-                const data = await res.json();
-                document.getElementById('linkedinPost').textContent = data.content || 'No content';
-                document.getElementById('contentLinkedinPost').textContent = data.content || 'No content';
-                if (data.inspired_by) {
-                    document.getElementById('linkedinMeta').innerHTML = `<span style="color: var(--accent-green);">✓ Original</span> · Topic: ${escapeHtml(data.inspired_by.topic)}`;
-                }
-            } catch (e) {
-                document.getElementById('linkedinPost').textContent = 'Run pipeline to generate content.';
-            }
-        }
-
-        // Carousel
-        async function loadCarousel() {
-            try {
-                const res = await fetch(DATA_PATH + 'carousel.json');
-                const data = await res.json();
-                carouselRawContent = data.raw_content || '';
-                document.getElementById('contentCarousel').textContent = carouselRawContent || 'Carousel pending...';
-            } catch (e) {
-                document.getElementById('contentCarousel').textContent = 'Carousel pending...';
-            }
-        }
-
-        function loadContentView() {}
-
-        // Newsletter
-        async function loadNewsletterView() {
-            try {
-                const res = await fetch(DATA_PATH + 'newsletter.json');
-                const data = await res.json();
+                const [newsRes, postRes, carouselRes, newsletterRes, historyRes] = await Promise.all([
+                    fetch('data/articles.json').catch(() => ({ ok: false })),
+                    fetch('data/linkedin_post.json').catch(() => ({ ok: false })),
+                    fetch('data/carousel.json').catch(() => ({ ok: false })),
+                    fetch('data/newsletter.json').catch(() => ({ ok: false })),
+                    fetch('data/content_history.json').catch(() => ({ ok: false }))
+                ]);
                 
-                if (data.content) {
-                    document.getElementById('newsletterBody').innerHTML = `
-                        <div class="content-text" style="max-height: none;">${escapeHtml(data.content).replace(/\n/g, '<br>')}</div>
-                    `;
-                } else {
-                    generateNewsletterPreview();
+                if (newsRes.ok) newsData = await newsRes.json();
+                if (newsletterRes.ok) newsletterData = await newsletterRes.json();
+                
+                // Get latest post
+                if (postRes.ok) {
+                    const post = await postRes.json();
+                    currentPost = post.content || '';
+                    contentData.push({
+                        title: post.inspired_by?.topic || 'Latest Post',
+                        linkedin_post: post.content,
+                        domains: post.inspired_by?.domains || ['GRC'],
+                        generated_at: post.generated_at
+                    });
                 }
+                
+                // Load content history (accumulated posts)
+                if (historyRes.ok) {
+                    const history = await historyRes.json();
+                    if (Array.isArray(history)) {
+                        contentData = [...history, ...contentData];
+                    }
+                }
+                
+                render();
             } catch (e) {
-                generateNewsletterPreview();
+                console.error('Error loading data:', e);
+                document.getElementById('newsCards').innerHTML = '<div class="empty-state"><h3>Failed to load data</h3></div>';
             }
         }
-
-        function generateNewsletterPreview() {
-            const topArticles = allArticles.slice(0, 5);
-            document.getElementById('newsletterBody').innerHTML = `
-                <div class="newsletter-section">
-                    <div class="newsletter-section-title">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        Top Stories This Week
-                    </div>
-                    ${topArticles.map(a => `
-                        <div class="newsletter-item">
-                            <div class="newsletter-item-title">${escapeHtml(a.title)}</div>
-                            <div class="newsletter-item-summary">${escapeHtml(a.score_reason || '')}</div>
+        
+        // Render
+        function render() {
+            const articles = Array.isArray(newsData) ? newsData : [];
+            const posts = Array.isArray(contentData) ? contentData : [];
+            
+            // Update index time
+            document.getElementById('indexTime').textContent = new Date().toLocaleString('en-US', { 
+                hour: '2-digit', minute: '2-digit', timeZoneName: 'short' 
+            });
+            
+            // High priority count
+            const highPriority = articles.filter(a => (a.total_score || 0) >= 24);
+            document.getElementById('highlightCount').textContent = highPriority.length;
+            
+            // Domain distribution
+            const domainCounts = { GRC: 0, Security: 0, Privacy: 0, AI: 0, DevSecOps: 0, Product: 0 };
+            articles.forEach(a => {
+                const domain = (a.domains && a.domains[0]) || 'GRC';
+                if (domainCounts[domain] !== undefined) domainCounts[domain]++;
+            });
+            
+            document.getElementById('domainProgress').innerHTML = Object.entries(domainCounts).map(([domain, count]) => 
+                `<div class="progress-item"><span class="progress-label">${domain}</span><span class="progress-value">${count}</span></div>`
+            ).join('');
+            
+            // Render news
+            renderNews();
+            
+            // Latest post
+            if (posts.length > 0) {
+                const latest = posts[posts.length - 1];
+                currentPost = latest.linkedin_post || latest.post || '';
+                document.getElementById('postContent').textContent = currentPost;
+                document.getElementById('postTopic').textContent = latest.title || 'Latest topic';
+            }
+            
+            // Content library
+            renderContentLibrary(posts);
+            
+            // Newsletter
+            renderNewsletter();
+        }
+        
+        function renderNews() {
+            const articles = Array.isArray(newsData) ? newsData : [];
+            let filtered = articles;
+            
+            if (currentFilter !== 'all') {
+                filtered = articles.filter(a => {
+                    const domains = a.domains || [];
+                    return domains.some(d => d.toLowerCase() === currentFilter.toLowerCase());
+                });
+            }
+            
+            if (filtered.length === 0) {
+                document.getElementById('newsCards').innerHTML = '<div class="empty-state"><h3>No articles found</h3><p>Try a different filter</p></div>';
+                return;
+            }
+            
+            document.getElementById('newsCards').innerHTML = filtered.map(item => {
+                const score = item.total_score || 0;
+                const domain = (item.domains && item.domains[0]) || 'GRC';
+                const domainClass = domain.toLowerCase().replace(/\s+/g, '');
+                
+                return `
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-tags">
+                                <span class="source-tag">${item.source || 'Unknown'}</span>
+                                <span class="domain-tag ${domainClass}">${domain}</span>
+                            </div>
+                            <div class="news-score">
+                                <div class="score-main">${score}/40</div>
+                                <div class="score-label">score</div>
+                            </div>
                         </div>
-                    `).join('')}
-                </div>
+                        <div class="news-title"><a href="${item.link || '#'}" target="_blank" rel="noopener">${item.title || 'Untitled'}</a></div>
+                        <div class="news-summary">${item.why_it_matters || item.summary || ''}</div>
+                        <div class="news-actions">
+                            <button class="news-action" onclick="window.open('${item.link || '#'}', '_blank')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                Read Article
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function renderContentLibrary(posts) {
+            if (posts.length === 0) {
+                document.getElementById('contentList').innerHTML = '<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg><h3>No content yet</h3><p>Generated posts will appear here</p></div>';
+                return;
+            }
+            
+            document.getElementById('contentList').innerHTML = posts.slice().reverse().map((post, i) => {
+                const domain = (post.domains && post.domains[0]) || 'GRC';
+                const domainClass = domain.toLowerCase();
+                
+                return `
+                    <div class="content-item">
+                        <div class="content-item-header">
+                            <span class="domain-tag ${domainClass}">${domain}</span>
+                            <span class="content-item-date">${post.generated_at ? new Date(post.generated_at).toLocaleDateString() : 'Recent'}</span>
+                        </div>
+                        <div class="content-item-topic">${post.title || 'Untitled'}</div>
+                        <div class="content-item-preview">${post.linkedin_post || post.post || ''}</div>
+                        <button class="copy-btn" onclick="copySpecificPost(${i})">Copy This Post</button>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function renderNewsletter() {
+            const container = document.getElementById('newsletterContainer');
+            if (!newsletterData || !newsletterData.content) {
+                container.innerHTML = '<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><h3>No newsletter yet</h3><p>Newsletter generates on Tuesdays</p></div>';
+                return;
+            }
+            
+            container.innerHTML = `
+                <h2 class="newsletter-title">${newsletterData.title || 'Weekly Newsletter'}</h2>
+                <div class="newsletter-meta">Episode ${newsletterData.episode || '?'} | ${newsletterData.topic || ''}</div>
+                <div class="newsletter-content">${newsletterData.content}</div>
             `;
         }
-
-        // Export PDF
-        function exportNewsletter() {
-            const content = document.getElementById('newsletterContent');
-            const printWindow = window.open('', '_blank');
-            printWindow.document.write(`
-                <html><head><title>GRC Newsletter</title>
-                <style>
-                    body { font-family: Georgia, serif; max-width: 700px; margin: 40px auto; padding: 20px; line-height: 1.8; }
-                    h1 { text-align: center; border-bottom: 2px solid #8b5cf6; padding-bottom: 20px; }
-                    .item { background: #f5f5f5; padding: 15px; margin: 15px 0; border-radius: 8px; }
-                    .item-title { font-weight: bold; margin-bottom: 5px; }
-                </style></head><body>
-                ${content.innerHTML}
-                </body></html>
-            `);
-            printWindow.document.close();
-            printWindow.print();
+        
+        // Page Navigation
+        function switchPage(page) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(page + 'Page').classList.add('active');
+            
+            document.querySelectorAll('.nav-item[data-page]').forEach(n => n.classList.remove('active'));
+            document.querySelector(`.nav-item[data-page="${page}"]`)?.classList.add('active');
         }
-
-        // Filters
-        function setupFilters() {
-            document.querySelectorAll('.domain-pill').forEach(pill => {
-                pill.addEventListener('click', () => {
-                    const container = pill.closest('.domain-filters');
-                    container.querySelectorAll('.domain-pill').forEach(p => p.classList.remove('active'));
-                    pill.classList.add('active');
-                    filterNewsPills(pill.dataset.domain, container);
-                });
+        
+        document.querySelectorAll('.nav-item[data-page]').forEach(el => {
+            el.addEventListener('click', () => switchPage(el.dataset.page));
+        });
+        
+        // Domain Filters
+        document.querySelectorAll('.domain-filter').forEach(el => {
+            el.addEventListener('click', () => {
+                currentFilter = el.dataset.domain;
+                document.querySelectorAll('.domain-filter').forEach(f => f.classList.remove('active'));
+                el.classList.add('active');
+                renderNews();
             });
-        }
-
-        function filterNewsPills(domain, container) {
-            const isFullNews = container.closest('#newsView');
-            const listId = isFullNews ? 'fullNewsList' : 'newsList';
-            document.querySelectorAll(`#${listId} .news-item, #${listId} .full-news-item`).forEach(item => {
-                if (domain === 'all') item.style.display = 'flex';
-                else item.style.display = (item.dataset.domains || '').includes(domain) ? 'flex' : 'none';
+        });
+        
+        document.querySelectorAll('.nav-item[data-filter]').forEach(el => {
+            el.addEventListener('click', () => {
+                currentFilter = el.dataset.filter;
+                renderNews();
             });
+        });
+        
+        // Copy Functions
+        function copyPost() {
+            if (!currentPost) { showToast('No post to copy'); return; }
+            navigator.clipboard.writeText(currentPost);
+            showToast('Post copied!');
         }
-
-        // Copy
-        async function copyContent(elementId) {
-            const el = document.getElementById(elementId);
-            const text = el.innerText || el.textContent;
-            try {
-                await navigator.clipboard.writeText(text);
-                showToast('Copied to clipboard!');
-            } catch (e) {
-                alert('Copy failed');
+        
+        function copySpecificPost(index) {
+            const posts = contentData.slice().reverse();
+            const post = posts[index];
+            if (post) {
+                navigator.clipboard.writeText(post.linkedin_post || post.post || '');
+                showToast('Post copied!');
             }
         }
-
-        function showToast(message) {
+        
+        function copyNewsletter() {
+            if (newsletterData?.content) {
+                navigator.clipboard.writeText(newsletterData.content);
+                showToast('Newsletter copied!');
+            }
+        }
+        
+        function showToast(msg) {
             const toast = document.getElementById('toast');
-            document.getElementById('toastMessage').textContent = message;
+            toast.textContent = msg;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2500);
+            setTimeout(() => toast.classList.remove('show'), 2000);
         }
-
-        // Helpers
-        function getTimeAgo(dateStr) {
-            if (!dateStr) return '';
-            const diffHrs = Math.floor((new Date() - new Date(dateStr)) / (1000 * 60 * 60));
-            if (diffHrs < 1) return 'Just now';
-            if (diffHrs < 24) return `${diffHrs}h ago`;
-            const diffDays = Math.floor(diffHrs / 24);
-            return diffDays === 1 ? 'Yesterday' : `${diffDays}d ago`;
-        }
-
-        function getDomain(domains) {
-            return (domains && domains.length) ? domains[0] : 'GRC';
-        }
-
-        function escapeHtml(text) {
-            if (!text) return '';
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        document.getElementById('passwordInput').focus();
+        
+        // Keyboard Shortcuts
+        document.addEventListener('keydown', e => {
+            if (e.target.tagName === 'INPUT') return;
+            if (e.key === '1') switchPage('briefing');
+            if (e.key === '2') switchPage('content');
+            if (e.key === '3') switchPage('newsletter');
+            if (e.key.toLowerCase() === 'c') copyPost();
+        });
     </script>
 </body>
 </html>
