@@ -541,6 +541,13 @@
             gap: 24px;
         }
         
+        /* Domain Posts Grid */
+        .domain-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        
         .post-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -568,6 +575,72 @@
             border-color: var(--accent);
             transform: translateY(-4px);
             box-shadow: 0 10px 25px rgba(239, 68, 68, 0.1);
+        }
+        
+        /* Domain Post Card */
+        .domain-post-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .domain-post-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
+        .domain-post-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.1);
+        }
+        
+        .domain-post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        
+        .domain-post-domain {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .domain-post-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+            margin-bottom: 16px;
+        }
+        
+        .domain-post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
         }
         
         .post-header {
@@ -790,6 +863,12 @@
 
                 <!-- Top Articles -->
                 <div class="content-grid">
+                    <h2 class="section-title">Today's Posts by Domain</h2>
+                    <div class="domain-posts-grid" id="domainPostsGrid"></div>
+                </div>
+
+                <!-- Top Articles -->
+                <div class="content-grid">
                     <h2 class="section-title">Top Stories This Week</h2>
                     <div class="articles-grid" id="topArticles"></div>
                 </div>
@@ -815,6 +894,7 @@
     <script>
         let newsData = [];
         let contentData = [];
+        let domainPosts = [];
         let currentPost = '';
         let charts = {};
         const PASSWORD = 'GRC2026!Shree';
@@ -869,8 +949,8 @@
 
                 // Domain posts
                 if (domainPostsRes.ok) {
-                    const posts = await domainPostsRes.json();
-                    posts.forEach(p => {
+                    domainPosts = await domainPostsRes.json();
+                    domainPosts.forEach(p => {
                         contentData.push({
                             title: p.inspired_by?.topic || 'Post',
                             linkedin_post: p.content,
@@ -922,6 +1002,9 @@
                 ? '<div class="empty-state"><h3>No posts yet</h3></div>'
                 : contentData.slice().sort((a, b) => new Date(b.generated_at || 0) - new Date(a.generated_at || 0)).map(renderPost).join('');
 
+            // Domain Posts
+            renderDomainPosts();
+
             // Charts
             setTimeout(renderCharts, 100);
         }
@@ -962,6 +1045,31 @@
                     </div>
                 </div>
             `;
+        }
+
+        function renderDomainPosts() {
+            const container = document.getElementById('domainPostsGrid');
+            if (!domainPosts || domainPosts.length === 0) {
+                container.innerHTML = '<div class="empty-state"><h3>No domain posts generated yet</h3></div>';
+                return;
+            }
+
+            container.innerHTML = domainPosts.map(post => {
+                const domain = post.domain || 'GRC';
+                return `
+                    <div class="domain-post-card">
+                        <div class="domain-post-header">
+                            <span class="domain-post-domain">${domain}</span>
+                            <span class="post-template">${post.template_name || 'Insight'}</span>
+                        </div>
+                        <div class="domain-post-text">${post.content || ''}</div>
+                        <div class="domain-post-footer">
+                            <span class="domain-tag ${domain.toLowerCase()}">${domain}</span>
+                            <button class="copy-btn" onclick="copySpecificPost('${post.content}')">Copy</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
         }
 
         function renderCharts() {
