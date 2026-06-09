@@ -1,17 +1,17 @@
 {
-  "content": "**Mitigating Kernel Flaws: A Framework for Prioritizing Vulnerability Remediation**\n\nWhen a high-severity kernel flaw like the recent one-character Linux bug is disclosed, IT teams are faced with a daunting task: determining the best course of action to prevent local root access exploits. This framework helps streamline the process.\n\n**Framework: 3-Step Kernel Flaw Mitigation Checklist**\n\n**Step 1: Assess and Triage (ATTAC)**\nQuickly evaluate the severity and impact of the flaw, considering factors like exploitability, attack surface, and potential damage. This step ensures that your team focuses on the most critical vulnerabilities first.\n\n**Step 2: Develop an Exploit-Resistant Configuration (ERC)**\nImplement secure kernel configurations and settings to minimize the exploit's effectiveness. This involves applying kernel hardening techniques, disabling unnecessary kernel modules, and configuring secure boot mechanisms.\n\n**Step 3: Rapid Patch and Validate (RPV)**\nDevelop a rapid patching process to apply the latest kernel updates and validate their effectiveness. This involves integrating vulnerability scanning tools, automating patch deployment, and conducting thorough testing to ensure the patch doesn't introduce new issues.\n\n**Step 4: Continuous Monitoring and Review (CMR)**\nEstablish a continuous monitoring and review process to detect and respond to similar vulnerabilities in the future. This involves integrating vulnerability management tools, conducting regular security audits, and refining your team's knowledge and processes.\n\n**Application:**\nWhenever I'm faced with a newly disclosed kernel flaw, I start with these questions: What's the severity and impact of the flaw? What kernel configurations and settings can I adjust to minimize exploit effectiveness? How can I rapidly apply patches and validate their effectiveness?\n\n**Save this framework for your next kernel flaw scenario.**",
+  "content": "**The Governance Gap: A Framework for Closing the AI Governance Divide**\n\nThe recent Inside the Mind of the CCO survey reveals a striking disparity between compliance teams' willingness to adopt AI and the corresponding governance frameworks to manage its risks. This disconnect threatens to undermine the very purpose of AI in the organization.\n\n**The AI Governance Continuum Framework**\n\nThis framework helps you navigate the complexities of AI governance and bridge the gap between adoption and oversight.\n\n1. **Define AI Scope**: Identify the types of AI technologies in use across your organization, from chatbots to predictive analytics. This will help you pinpoint areas that require governance attention.\n2. **Assess Risk Appetite**: Evaluate the organization's risk tolerance for AI-related decisions, from data quality to algorithmic bias. This will inform the level of governance required to manage these risks.\n3. **Establish Governance Structure**: Designate a clear ownership and reporting line for AI governance, ensuring accountability and transparency throughout the organization.\n4. **Develop Policy and Procedure**: Create comprehensive policies and procedures for AI development, deployment, and monitoring, including data protection and algorithmic auditing.\n5. **Monitor and Evaluate**: Continuously assess AI performance, identify areas for improvement, and adjust governance frameworks as needed to ensure regulatory compliance.\n\n**Whenever I'm faced with a new AI initiative, I start with these questions:** What types of AI technologies are involved, and what are the associated risks? What is the organization's risk appetite, and how will we manage these risks? Have we established clear governance structures and policies to support AI development and deployment?\n\n**Save this framework for your next AI initiative, and use it to bridge the governance gap and ensure a more secure and compliant AI ecosystem.**",
   "template_used": "framework",
   "template_name": "Framework Breakdown Post",
   "inspired_by": {
-    "topic": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
-    "concept": "A GRC professional should care about this because it highlights the importance of timely vulnerability patching and the potential for local root access exploits.",
+    "topic": "Inside the Mind of the CCO survey finds most compliance teams allow AI use, but governance lags behind",
+    "concept": "A GRC professional should care about this because it highlights the growing use of AI in compliance and the need for governance to catch up.",
     "domains": [
-      "Security",
-      "DevSecOps"
+      "GRC",
+      "AI"
     ]
   },
-  "domain": "Security",
-  "generated_at": "2026-06-09T06:06:00.329428",
+  "domain": "GRC",
+  "generated_at": "2026-06-09T09:38:04.128357",
   "day_of_week": "Tuesday",
   "type": "text_post",
   "copyright_safe": true
