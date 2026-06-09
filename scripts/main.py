@@ -11,6 +11,7 @@ from score_articles import score_articles, save_scored_articles, get_top_article
 from generate_content import (
     init_clients,
     generate_linkedin_post,
+    generate_all_domain_posts,
     generate_carousel,
     generate_newsletter,
     save_content
@@ -72,6 +73,13 @@ def run_pipeline():
     linkedin_post = generate_linkedin_post(top_articles[0], clients)
     save_content(linkedin_post, "data/linkedin_post.json")
     
+    # Generate domain posts (one per domain)
+    print("  - Generating domain-specific posts...")
+    domain_posts = generate_all_domain_posts(scored_articles, clients)
+    if domain_posts:
+        save_content(domain_posts, "data/domain_posts.json")
+        print(f"  - Generated {len(domain_posts)} domain posts")
+    
     # Generate carousel
     print("  - Generating carousel content...")
     carousel = generate_carousel(top_articles[0], clients)
@@ -100,6 +108,7 @@ def run_pipeline():
         },
         "content_generated": {
             "linkedin_post": True,
+            "domain_posts": len(domain_posts) if domain_posts else 0,
             "carousel": True,
             "newsletter": newsletter is not None
         }
