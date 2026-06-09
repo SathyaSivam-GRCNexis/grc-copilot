@@ -111,5 +111,42 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-06-09T10:26:14.627037"
+  },
+  {
+    "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
+    "linkedin_post": "**Incident Response Sanity: A Framework for Managing Cybersecurity Crises**\n\nWhen a security incident strikes, chaos ensues. IT teams scramble to contain the damage, while executives worry about reputational fallout. This is where the NIST SP 800-61 Revision 1 guide shines a light on a clear path forward.\n\n**The Incident Response Sanity Framework**\n\n1. **Detect and Acknowledge**: Identify the incident early and acknowledge its existence. This step is about recognizing the elephant in the room \u2013 don't sweep it under the rug. In my experience, early detection is key to limiting damage.\n2. **Contain and Isolate**: Quickly contain the incident to prevent further damage. Think of it like a fire \u2013 you need to starve it of oxygen (access, power, etc.) to prevent it from spreading. I've seen teams struggle with this step, leading to costly mistakes.\n3. **Assess and Prioritize**: Assess the incident's impact and prioritize response efforts. This is like triaging a patient \u2013 you focus on the most critical issues first. In my opinion, this step is often rushed, leading to a piecemeal response.\n4. **Communicate and Coordinate**: Inform stakeholders and coordinate response efforts. This is like calling in reinforcements \u2013 you need a unified front to tackle the incident. I've noticed that clear communication is often the biggest challenge.\n5. **Recover and Review**: Once the incident is contained, focus on recovery and review the response process. This is like post-game analysis \u2013 you learn from your mistakes to improve next time.\n\n**Whenever I face a cybersecurity crisis, I start with these questions:** \"What's the incident's impact?\" \"What are our top priorities?\" \"Who needs to be informed?\" Save this framework for your next security incident \u2013 it'll help you stay sane and focused.",
+    "domains": [
+      "Security",
+      "GRC"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-06-09T15:54:42.610521"
+  },
+  {
+    "title": "Frontier AI Goes Federal: How the Great American AI Act Compares to State Laws",
+    "linkedin_post": "**From State to Federal: A Career Lesson in AI Governance**\n\nI used to think that state-level AI regulations were a patchwork of inconsistent laws, making it difficult for companies to navigate the complex landscape of AI ethics. But then I learned about the Great American AI Act, which aims to create a unified federal framework for AI development and deployment.\n\nBut then I learned that this federal law has significant implications for my career as an AI professional. **Lesson:** In AI governance, clarity and consistency are crucial for companies to innovate while minimizing risk. The Great American AI Act's focus on transparency, accountability, and human oversight is a framework that companies can apply to their AI initiatives.\n\nAs a career advice, I'd say that professionals at different stages can benefit from this lesson in various ways: **Early-career AI professionals** can focus on understanding the nuances of state laws before jumping into federal regulations, while **mid-career professionals** can leverage their experience to advise companies on how to adapt to the changing regulatory landscape, and **senior leaders** can use this framework to shape their organizations' AI strategies.\n\nWhat career lesson took you years to learn?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-09T15:59:20.822149"
+  },
+  {
+    "title": "OWASP Dependency-Track 5.0 Is Now Generally Available",
+    "linkedin_post": "**A Pattern I Keep Noticing: Underestimating Dependency-Track's Impact on Vulnerability Scanning**\n\nOne mistake I see repeatedly in DevSecOps teams is underestimating the impact of OWASP Dependency-Track 5.0 on vulnerability scanning. Specifically, teams often overlook the fact that Dependency-Track 5.0 now requires a more comprehensive understanding of the Software Bill of Materials (SBOM) to accurately identify and prioritize vulnerabilities.\n\n**What happens when you underestimate Dependency-Track's impact?**\n\n\u2022 **Incomplete Vulnerability Scans**: Without a thorough understanding of the SBOM, teams may miss critical vulnerabilities, leading to incomplete scans that don't accurately reflect the security posture of their applications.\n\u2022 **Ineffective Prioritization**: Incomplete SBOM data can lead to poor prioritization of vulnerabilities, resulting in wasted resources on non-critical issues and neglect of more severe threats.\n\u2022 **Delayed Software Releases**: Incomplete or inaccurate vulnerability scans can delay software releases, causing project timelines to slip and impacting business objectives.\n\n**How to avoid this mistake?**\n\nTo avoid underestimating Dependency-Track's impact, I recommend investing time in understanding the SBOM and its role in vulnerability scanning. This includes creating a comprehensive SBOM, updating your team's training on the new Dependency-Track features, and regularly reviewing and refining your vulnerability scanning processes. Have you noticed this pattern in your own DevSecOps teams? How are you addressing the challenges of Dependency-Track 5.0?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-09T16:00:55.167320"
+  },
+  {
+    "title": "New FROST Attack Lets Websites Track What Sites and Apps You Open via SSD Timing",
+    "linkedin_post": "**The SSD Timing Threat: A Framework for Understanding the FROST Attack**\n\nAs a digital privacy advocate, I've noticed that the recent FROST attack has left many website owners and developers scrambling to understand the implications of this vulnerability. The problem is that this attack allows websites to track what sites and apps you open, even if you use a private browsing mode, by exploiting the timing of SSD (solid-state drive) accesses.\n\n**The Timing Threat Framework**\n\nTo better grasp this issue, let's break down the FROST attack into its core components. I call this framework the \"Timing Threat Matrix.\"\n\n**Step 1: Timing Analysis**\nPerform a thorough analysis of your website's SSD access patterns to identify potential vulnerabilities. This involves studying how your website interacts with the user's SSD, including the timing and frequency of these interactions.\n\n**Step 2: Fingerprinting Detection**\nImplement measures to detect and prevent fingerprinting attacks, which involve collecting information about the user's device or browsing behavior. This may involve using tools like FingerprintJS or Cookiebot to identify potential threats.\n\n**Step 3: SSD Access Control**\nEstablish strict access controls for your website's SSD, including limiting the types of data that can be accessed and the frequency of accesses. This may involve using techniques like rate limiting or IP blocking to prevent attackers from exploiting the FROST attack.\n\n**Step 4: Private Browsing Mitigation**\nDevelop strategies to mitigate the impact of private browsing mode, such as using alternative storage solutions or implementing additional security measures to prevent tracking.\n\n**Step 5: Regular Audits and Testing**\nRegularly conduct audits and testing to ensure that your website is not vulnerable to the FROST attack. This may involve using tools like Burp Suite or ZAP to simulate attacks and identify potential vulnerabilities.\n\nWhenever I'm building a website or updating my website security, I start with these questions: What are the potential timing threats to my users' SSD accesses? Am I doing enough to prevent fingerprinting attacks? How can I improve my SSD access control and private browsing mitigation strategies? Save this framework for your next website security audit.",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-06-09T16:02:28.918932"
   }
 ]

@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**The Unseen Costs of Unaddressed Flaws**\nVulnerability management is a puzzle with missing pieces, where every unchecked flaw is a ticking time bomb waiting to unleash catastrophic consequences.\n"
+      "content": "Incident handling is not just about responding to crises, but also about minimizing their impact and preventing future disruptions.\n"
     },
     {
       "slide_number": 2,
-      "content": "**The Domino Effect of Unpatched Systems**\nImagine a row of dominoes standing upright, each one representing a vulnerable system in your infrastructure. When one falls, the entire row collapses, causing a chain reaction of chaos and destruction.\n"
+      "content": "**The Domino Effect**\nWhen a security incident occurs, it's like a row of dominoes - each event triggers the next, causing a cascade of problems. Effective incident handling requires understanding this chain of events and taking proactive measures to prevent them.\n"
     },
     {
       "slide_number": 3,
-      "content": "**The Anatomy of a Security Breach**\nA security breach is like a cancer, spreading rapidly and silently through the network. It starts with a small, seemingly insignificant flaw, but before you know it, it has infected the entire system, leaving a trail of destruction in its wake.\n"
+      "content": "**Firebreaking**\nImagine a wildfire spreading rapidly through a forest. Containment is like building a firebreak - it prevents the incident from spreading further, buying time to assess the situation and develop a response strategy.\n"
     },
     {
       "slide_number": 4,
-      "content": "**The High-Stakes Game of Risk Management**\nRisk management is a high-stakes game, where every decision you make has far-reaching consequences. One miscalculation can lead to financial ruin, reputational damage, and even physical harm.\n"
+      "content": "**Diagnosing a Medical Condition**\nAssessing an incident is like diagnosing a medical condition - you need to gather evidence, analyze symptoms, and identify the root cause to develop an effective treatment plan.\n"
     },
     {
       "slide_number": 5,
-      "content": "**The Butterfly Effect of Unseen Threats**\nThe butterfly effect is a phenomenon where a small change in one part of the system can have a massive impact elsewhere. In security, this means that even the smallest, seemingly insignificant threat can mushroom into a full-blown disaster.\n"
+      "content": "**Transparency in a Crisis**\nEffective communication during an incident is like maintaining transparency in a crisis - it builds trust with stakeholders, helps to manage expectations, and enables informed decision-making.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nAs a GRC professional, it's your duty to be the guardian of your organization's security. This means being proactive in identifying and addressing vulnerabilities, conducting regular risk assessments, and staying up-to-date with the latest security threats and best practices.\n"
+      "content": "Incorporate incident handling into your organization's risk management strategy to minimize the impact of security incidents and ensure business continuity. Regularly review and update your incident handling plan to stay ahead of emerging threats.\n"
     },
     {
       "slide_number": 7,
-      "content": "**Stay Ahead of Emerging Threats**\nFollow us for more GRC insights to stay ahead of emerging security threats and stay secure in a rapidly changing landscape. Remember, vigilance is the price of security.\n"
+      "content": "Stay ahead of emerging security threats by following our GRC insights for practical advice on incident handling, risk management, and compliance.\n"
     }
   ],
-  "raw_content": "**SLIDE 1**\n**The Unseen Costs of Unaddressed Flaws**\n\nVulnerability management is a puzzle with missing pieces, where every unchecked flaw is a ticking time bomb waiting to unleash catastrophic consequences.\n\n**SLIDE 2**\n**The Domino Effect of Unpatched Systems**\n\nImagine a row of dominoes standing upright, each one representing a vulnerable system in your infrastructure. When one falls, the entire row collapses, causing a chain reaction of chaos and destruction.\n\n**SLIDE 3**\n**The Anatomy of a Security Breach**\n\nA security breach is like a cancer, spreading rapidly and silently through the network. It starts with a small, seemingly insignificant flaw, but before you know it, it has infected the entire system, leaving a trail of destruction in its wake.\n\n**SLIDE 4**\n**The High-Stakes Game of Risk Management**\n\nRisk management is a high-stakes game, where every decision you make has far-reaching consequences. One miscalculation can lead to financial ruin, reputational damage, and even physical harm.\n\n**SLIDE 5**\n**The Butterfly Effect of Unseen Threats**\n\nThe butterfly effect is a phenomenon where a small change in one part of the system can have a massive impact elsewhere. In security, this means that even the smallest, seemingly insignificant threat can mushroom into a full-blown disaster.\n\n**SLIDE 6**\n**What This Means For You**\n\nAs a GRC professional, it's your duty to be the guardian of your organization's security. This means being proactive in identifying and addressing vulnerabilities, conducting regular risk assessments, and staying up-to-date with the latest security threats and best practices.\n\n**SLIDE 7**\n**Stay Ahead of Emerging Threats**\n\nFollow us for more GRC insights to stay ahead of emerging security threats and stay secure in a rapidly changing landscape. Remember, vigilance is the price of security.",
+  "raw_content": "**SLIDE 1:** **Incident Handling: The Missing Piece of Resilience**\n\nIncident handling is not just about responding to crises, but also about minimizing their impact and preventing future disruptions.\n\n**SLIDE 2:** **The Chain of Events**\n\n**The Domino Effect**\nWhen a security incident occurs, it's like a row of dominoes - each event triggers the next, causing a cascade of problems. Effective incident handling requires understanding this chain of events and taking proactive measures to prevent them.\n\n**SLIDE 3:** **Containment: The First Line of Defense**\n\n**Firebreaking**\nImagine a wildfire spreading rapidly through a forest. Containment is like building a firebreak - it prevents the incident from spreading further, buying time to assess the situation and develop a response strategy.\n\n**SLIDE 4:** **Assessment: The Critical Thinking Phase**\n\n**Diagnosing a Medical Condition**\nAssessing an incident is like diagnosing a medical condition - you need to gather evidence, analyze symptoms, and identify the root cause to develop an effective treatment plan.\n\n**SLIDE 5:** **Communication: The Key to Stakeholder Trust**\n\n**Transparency in a Crisis**\nEffective communication during an incident is like maintaining transparency in a crisis - it builds trust with stakeholders, helps to manage expectations, and enables informed decision-making.\n\n**SLIDE 6:** **What This Means For You**\n\nIncorporate incident handling into your organization's risk management strategy to minimize the impact of security incidents and ensure business continuity. Regularly review and update your incident handling plan to stay ahead of emerging threats.\n\n**SLIDE 7:** \nStay ahead of emerging security threats by following our GRC insights for practical advice on incident handling, risk management, and compliance.",
   "inspired_by": {
-    "topic": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
+    "topic": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
     "domains": [
       "Security",
       "GRC"
     ]
   },
-  "generated_at": "2026-06-09T10:27:48.990737",
+  "generated_at": "2026-06-09T16:05:35.334541",
   "type": "carousel",
   "copyright_safe": true
 }
