@@ -3,1305 +3,891 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRC Copilot - Intelligence System</title>
-    
-    <!-- Fonts -->
+    <title>GRC Copilot</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #3D4F3D;
-            --primary-dark: #2C3B2C;
-            --primary-light: #5A6F5A;
-            --accent: #6B8E6B;
-            
-            --bg-cream: #FAF8F5;
-            --bg-card: #FFFFFF;
-            --bg-sidebar: #F5F3EF;
-            
-            --text-primary: #1A1A1A;
-            --text-secondary: #4A4A4A;
-            --text-muted: #7A7A7A;
-            --text-inverse: #FFFFFF;
-            
-            --border-light: #E8E5E0;
-            --border-medium: #D4D0C8;
-            
-            --tag-security: #E8F4E8;
-            --tag-security-text: #2D5A2D;
-            --tag-grc: #FFF3E0;
-            --tag-grc-text: #8B5A00;
-            --tag-privacy: #E3F2FD;
-            --tag-privacy-text: #1565C0;
-            --tag-ai: #F3E5F5;
-            --tag-ai-text: #7B1FA2;
-            --tag-devsecops: #E0F2F1;
-            --tag-devsecops-text: #00695C;
-            --tag-product: #FBE9E7;
-            --tag-product-text: #BF360C;
-            
-            --font-serif: 'Playfair Display', Georgia, serif;
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
-            
-            --radius-sm: 4px;
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            
-            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+            --primary: #0F172E;
+            --secondary: #1E88E5;
+            --accent: #00D4FF;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --bg-dark: #0A0E27;
+            --bg-card: #111B33;
+            --bg-hover: #1A2847;
+            --text: #F5F7FA;
+            --text-secondary: #A8B5C7;
+            --text-muted: #697B91;
+            --border: #1E2D47;
+            --grc: #FFF3E0; --grc-text: #8B5A00;
+            --security: #FFEBEE; --security-text: #C62828;
+            --privacy: #E3F2FD; --privacy-text: #1565C0;
+            --ai: #F3E5F5; --ai-text: #7B1FA2;
+            --devsecops: #E0F2F1; --devsecops-text: #00695C;
+            --product: #FBE9E7; --product-text: #BF360C;
         }
         
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: var(--font-sans);
-            background: var(--bg-cream);
-            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
             line-height: 1.6;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
         
-        /* Login */
-        .login-screen {
+        /* Login Screen */
+        #loginScreen {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 24px;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2a5e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #loginScreen::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            pointer-events: none;
         }
         
         .login-box {
             background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
             padding: 48px;
-            width: 100%;
-            max-width: 400px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
             text-align: center;
+            width: 420px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(0, 212, 255, 0.1);
+            position: relative;
+            z-index: 10;
+            backdrop-filter: blur(10px);
         }
         
-        .login-logo {
-            width: 48px;
-            height: 48px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-        }
-        
-        .login-logo svg { width: 24px; height: 24px; color: var(--text-inverse); }
-        
-        .login-title {
-            font-family: var(--font-serif);
-            font-size: 1.75rem;
-            font-weight: 600;
+        .login-box h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
             margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
-        .login-subtitle {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 32px;
-        }
+        .login-box p { color: var(--text-muted); margin-bottom: 32px; font-size: 14px; }
         
-        .login-input {
+        .login-box input {
             width: 100%;
             padding: 14px 16px;
-            border: 1px solid var(--border-medium);
-            border-radius: var(--radius-md);
-            font-size: 0.95rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
             margin-bottom: 16px;
-            background: var(--bg-cream);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            transition: all 0.3s;
         }
         
-        .login-input:focus {
-            outline: none;
-            border-color: var(--primary);
+        .login-box input::placeholder { color: var(--text-muted); }
+        .login-box input:focus { 
+            outline: none; 
+            border-color: var(--accent);
+            background: rgba(0, 212, 255, 0.05);
+            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
         }
         
-        .login-btn {
+        .login-box button {
             width: 100%;
             padding: 14px;
-            background: var(--primary);
-            color: var(--text-inverse);
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: white;
             border: none;
-            border-radius: var(--radius-md);
-            font-size: 0.95rem;
+            border-radius: 8px;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
+            transition: all 0.3s;
         }
         
-        .login-btn:hover { background: var(--primary-dark); }
-        
-        .login-error {
-            color: #C62828;
-            font-size: 0.85rem;
-            margin-top: 16px;
-            display: none;
+        .login-box button:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 136, 229, 0.4);
         }
         
-        .login-error.show { display: block; }
+        .login-error { color: var(--danger); margin-top: 16px; display: none; font-size: 13px; }
         
         .hidden { display: none !important; }
         
         /* App Layout */
-        .app {
-            display: grid;
-            grid-template-columns: 280px 1fr 320px;
+        #app {
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
-        /* Sidebar Left */
-        .sidebar-left {
-            background: var(--bg-sidebar);
-            border-right: 1px solid var(--border-light);
-            padding: 24px;
+        /* Top Nav */
+        .top-nav {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
-            height: 100vh;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
+            z-index: 100;
         }
         
-        .brand {
-            margin-bottom: 32px;
-        }
-        
-        .brand-logo {
+        .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 4px;
+            gap: 12px;
         }
         
-        .brand-icon {
-            width: 32px;
-            height: 32px;
-            background: var(--primary);
-            border-radius: 50%;
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
-        .brand-icon svg { width: 18px; height: 18px; color: var(--text-inverse); }
+        .logo-icon svg { width: 24px; height: 24px; color: white; }
         
-        .brand-name {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
             font-weight: 700;
-            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
-        .brand-tagline {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--text-muted);
-            margin-left: 42px;
-        }
-        
-        /* User Profile */
-        .user-profile {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            padding: 16px;
-            margin-bottom: 24px;
-            border: 1px solid var(--border-light);
-        }
-        
-        .user-avatar {
-            width: 48px;
-            height: 48px;
-            background: var(--primary);
-            border-radius: var(--radius-md);
+        .nav-actions {
             display: flex;
+            gap: 12px;
             align-items: center;
-            justify-content: center;
-            color: var(--text-inverse);
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
         }
         
-        .user-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 2px; }
-        .user-role { font-size: 0.8rem; color: var(--text-secondary); }
-        
-        /* Navigation */
-        .nav-menu {
-            flex: 1;
+        .nav-tabs {
             display: flex;
-            flex-direction: column;
-            gap: 4px;
+            gap: 8px;
         }
         
-        .nav-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 14px 16px;
-            border-radius: var(--radius-md);
-            cursor: pointer;
+        .nav-tab {
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid transparent;
             color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
             transition: all 0.2s;
         }
         
-        .nav-item:hover { background: var(--bg-card); color: var(--text-primary); }
-        .nav-item.active { background: var(--primary); color: var(--text-inverse); }
-        .nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
-        
-        .nav-divider {
-            height: 1px;
-            background: var(--border-light);
-            margin: 16px 0;
+        .nav-tab:hover { 
+            background: var(--bg-hover);
+            color: var(--text);
         }
         
-        .nav-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-muted);
-            padding: 8px 16px 4px;
-        }
-        
-        /* Status */
-        .status-card {
-            margin-top: auto;
-            padding: 16px;
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border-light);
-        }
-        
-        .status-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-        }
-        
-        .status-value {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .status-number {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        .status-active {
-            display: flex;
-            align-items: center;
-            gap: 6px;
+        .nav-tab.active {
+            background: var(--bg-hover);
             color: var(--accent);
-            font-size: 0.85rem;
+            border-color: var(--accent);
         }
         
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
+        .btn-primary {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
         }
         
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 136, 229, 0.3);
+        }
+        
+        .btn-secondary {
+            padding: 10px 20px;
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+            color: var(--text);
+            border-color: var(--accent);
         }
         
         /* Main Content */
         .main-content {
-            padding: 32px;
-            overflow-y: auto;
-        }
-        
-        .page { display: none; }
-        .page.active { display: block; }
-        
-        /* Header */
-        .page-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 32px;
-        }
-        
-        .page-title {
-            font-family: var(--font-serif);
-            font-size: 2.5rem;
-            font-weight: 400;
-            font-style: italic;
-            color: var(--text-primary);
-            margin-bottom: 6px;
-        }
-        
-        .page-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            max-width: 500px;
-        }
-        
-        .header-meta { text-align: right; }
-        
-        .meta-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            margin-bottom: 4px;
-        }
-        
-        .meta-time {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
-        }
-        
-        .primary-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--primary);
-            color: var(--text-inverse);
-            border: none;
-            padding: 10px 18px;
-            border-radius: var(--radius-md);
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            cursor: pointer;
-        }
-        
-        .primary-btn:hover { background: var(--primary-dark); }
-        .primary-btn svg { width: 16px; height: 16px; }
-        
-        /* Domain Filters */
-        .domain-filters {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-        
-        .domain-filter {
-            padding: 8px 16px;
-            border: 1px solid var(--border-medium);
-            border-radius: 20px;
-            background: var(--bg-card);
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .domain-filter:hover { border-color: var(--primary); color: var(--primary); }
-        .domain-filter.active { background: var(--primary); border-color: var(--primary); color: var(--text-inverse); }
-        
-        /* Action Buttons */
-        .action-buttons {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 32px;
-        }
-        
-        .action-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 16px;
-            background: transparent;
-            border: 1px solid var(--border-medium);
-            border-radius: var(--radius-md);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .action-btn:hover { border-color: var(--primary); color: var(--primary); }
-        .action-btn svg { width: 14px; height: 14px; }
-        
-        /* News Cards */
-        .news-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .news-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 24px;
-            transition: box-shadow 0.2s;
-        }
-        
-        .news-card:hover { box-shadow: var(--shadow-md); }
-        
-        .news-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-        
-        .news-tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .source-tag {
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            padding: 3px 8px;
-            border-radius: var(--radius-sm);
-            background: var(--bg-sidebar);
-            color: var(--text-secondary);
-        }
-        
-        .domain-tag {
-            font-size: 0.7rem;
-            font-weight: 500;
-            padding: 3px 8px;
-            border-radius: var(--radius-sm);
-        }
-        
-        .domain-tag.security { background: var(--tag-security); color: var(--tag-security-text); }
-        .domain-tag.grc { background: var(--tag-grc); color: var(--tag-grc-text); }
-        .domain-tag.privacy { background: var(--tag-privacy); color: var(--tag-privacy-text); }
-        .domain-tag.ai { background: var(--tag-ai); color: var(--tag-ai-text); }
-        .domain-tag.devsecops { background: var(--tag-devsecops); color: var(--tag-devsecops-text); }
-        .domain-tag.product { background: var(--tag-product); color: var(--tag-product-text); }
-        
-        .news-score { text-align: right; }
-        .score-main { font-weight: 700; font-size: 1rem; color: var(--text-primary); }
-        .score-label { font-size: 0.7rem; color: var(--text-muted); }
-        
-        .news-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        
-        .news-title a {
-            color: inherit;
-            text-decoration: none;
-        }
-        
-        .news-title a:hover { color: var(--primary); }
-        
-        .news-summary {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-            line-height: 1.6;
-        }
-        
-        .news-actions {
-            display: flex;
-            gap: 16px;
-            padding-top: 16px;
-            border-top: 1px solid var(--border-light);
-        }
-        
-        .news-action {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0;
-        }
-        
-        .news-action:hover { color: var(--primary); }
-        .news-action svg { width: 14px; height: 14px; }
-        
-        /* Sidebar Right */
-        .sidebar-right {
-            background: var(--bg-sidebar);
-            border-left: 1px solid var(--border-light);
-            padding: 24px;
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            overflow-y: auto;
-        }
-        
-        .sidebar-section { margin-bottom: 32px; }
-        
-        .sidebar-title {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-muted);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .sidebar-title svg { width: 14px; height: 14px; }
-        
-        .sidebar-text {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            margin-bottom: 16px;
-        }
-        
-        /* Content Preview */
-        .content-preview {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 20px;
-        }
-        
-        .content-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .content-topic {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
-        }
-        
-        .content-text {
-            font-size: 0.85rem;
-            color: var(--text-primary);
-            line-height: 1.7;
-            white-space: pre-wrap;
-            max-height: 300px;
-            overflow-y: auto;
-        }
-        
-        .content-actions {
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid var(--border-light);
-            display: flex;
-            gap: 8px;
-        }
-        
-        .copy-btn {
             flex: 1;
-            padding: 10px;
-            background: var(--primary);
-            color: var(--text-inverse);
-            border: none;
-            border-radius: var(--radius-md);
-            font-size: 0.8rem;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        .copy-btn:hover { background: var(--primary-dark); }
-        
-        /* Domain Progress */
-        .progress-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .progress-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .progress-label { font-size: 0.85rem; color: var(--text-secondary); }
-        .progress-value { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); font-family: var(--font-mono); }
-        
-        /* Content Library */
-        .content-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        
-        .content-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 20px;
-        }
-        
-        .content-item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        
-        .content-item-date {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-family: var(--font-mono);
-        }
-        
-        .content-item-topic {
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .content-item-preview {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            margin-bottom: 12px;
-        }
-        
-        /* Newsletter */
-        .newsletter-container {
-            max-width: 700px;
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
+            overflow-y: auto;
             padding: 40px;
         }
         
-        .newsletter-title {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
+        /* Page */
+        .page { display: none; }
+        .page.active { display: block; }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(30, 136, 229, 0.1) 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-tag {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .hero-text {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .stat-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.1);
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             margin-bottom: 8px;
         }
         
-        .newsletter-meta {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid var(--border-light);
-        }
-        
-        .newsletter-content {
-            font-size: 0.95rem;
-            line-height: 1.8;
-            white-space: pre-wrap;
-        }
-        
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 60px 24px;
-            color: var(--text-muted);
-        }
-        
-        .empty-state svg {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 16px;
-            opacity: 0.4;
-        }
-        
-        .empty-state h3 {
-            font-size: 1rem;
-            color: var(--text-primary);
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 4px;
         }
         
-        .empty-state p { font-size: 0.9rem; }
+        .stat-trend {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
         
-        /* Loading */
-        .loading {
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
             display: flex;
+            flex-direction: column;
+        }
+        
+        .article-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.1);
+        }
+        
+        .article-score {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 48px;
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 12px;
         }
         
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--border-light);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
+        .article-score.high {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.2);
         }
         
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .article-score.medium {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        
+        .article-score.low {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+        
+        .article-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .article-source {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        
+        .domain-tag {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        
+        .domain-tag.grc { background: var(--grc); color: var(--grc-text); }
+        .domain-tag.security { background: var(--security); color: var(--security-text); }
+        .domain-tag.privacy { background: var(--privacy); color: var(--privacy-text); }
+        .domain-tag.ai { background: var(--ai); color: var(--ai-text); }
+        .domain-tag.devsecops { background: var(--devsecops); color: var(--devsecops-text); }
+        .domain-tag.product { background: var(--product); color: var(--product-text); }
+        
+        /* Posts Section */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .post-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .post-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.1);
+        }
+        
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .post-template {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .post-date {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        
+        .post-content {
+            flex-grow: 1;
+            margin-bottom: 16px;
+        }
+        
+        .post-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .post-domain {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .copy-btn {
+            padding: 6px 12px;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .copy-btn:hover {
+            background: rgba(0, 212, 255, 0.1);
+        }
         
         /* Toast */
         .toast {
             position: fixed;
             bottom: 24px;
             right: 24px;
-            background: var(--text-primary);
-            color: var(--bg-card);
-            padding: 14px 24px;
-            border-radius: var(--radius-md);
-            font-size: 0.9rem;
-            transform: translateY(100px);
+            background: var(--success);
+            color: white;
+            padding: 14px 20px;
+            border-radius: 6px;
+            font-weight: 500;
+            transform: translateY(150px);
             opacity: 0;
             transition: all 0.3s;
             z-index: 1000;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
         .toast.show { transform: translateY(0); opacity: 1; }
         
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .app { grid-template-columns: 260px 1fr; }
-            .sidebar-right { display: none; }
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
         }
         
-        @media (max-width: 900px) {
-            .app { grid-template-columns: 1fr; }
-            .sidebar-left { display: none; }
+        .empty-state h3 { color: var(--text); margin-bottom: 8px; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
             .main-content { padding: 20px; }
-            .page-title { font-size: 1.8rem; }
-            .page-header { flex-direction: column; gap: 16px; }
-            .header-meta { text-align: left; }
+            .hero { padding: 24px; }
+            .hero-title { font-size: 24px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .articles-grid { grid-template-columns: 1fr; }
+            .posts-grid { grid-template-columns: 1fr; }
+            .top-nav { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
         }
     </style>
 </head>
 <body>
     <!-- Login Screen -->
-    <div class="login-screen" id="loginScreen">
+    <div id="loginScreen">
         <div class="login-box">
-            <div class="login-logo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                    <path d="M2 17l10 5 10-5"/>
-                    <path d="M2 12l10 5 10-5"/>
-                </svg>
-            </div>
-            <h1 class="login-title">GRC Copilot.</h1>
-            <p class="login-subtitle">Your GRC intelligence operating system</p>
-            <input type="password" class="login-input" id="passwordInput" placeholder="Enter password" onkeypress="if(event.key==='Enter')checkPassword()">
-            <button class="login-btn" onclick="checkPassword()">Enter</button>
+            <h1>GRC Copilot</h1>
+            <p>Your intelligence operating system</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" onkeypress="if(event.key==='Enter')login()">
+            <button onclick="login()">Enter</button>
             <p class="login-error" id="loginError">Incorrect password</p>
         </div>
     </div>
 
     <!-- Main App -->
-    <div class="app hidden" id="app">
-        <!-- Sidebar Left -->
-        <aside class="sidebar-left">
-            <div class="brand">
-                <div class="brand-logo">
-                    <div class="brand-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <span class="brand-name">GRC Copilot.</span>
+    <div id="app" class="hidden">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
                 </div>
-                <div class="brand-tagline">Intelligence System</div>
+                <span class="logo-text">GRC Copilot</span>
             </div>
             
-            <div class="user-profile">
-                <div class="user-avatar">SS</div>
-                <div class="user-name">Sathya Sivam</div>
-                <div class="user-role">GRC Professional</div>
+            <div class="nav-actions">
+                <div class="nav-tabs">
+                    <button class="nav-tab active" onclick="switchPage('dashboard')">Dashboard</button>
+                    <button class="nav-tab" onclick="switchPage('articles')">Articles</button>
+                    <button class="nav-tab" onclick="switchPage('posts')">Posts</button>
+                </div>
+                <button class="btn-secondary" onclick="location.reload()">Refresh</button>
+                <button class="btn-primary" onclick="copyPost()">Copy Post</button>
             </div>
-            
-            <nav class="nav-menu">
-                <div class="nav-item active" data-page="briefing">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-                    <span>Daily Briefing</span>
-                </div>
-                <div class="nav-item" data-page="content">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
-                    <span>Content Library</span>
-                </div>
-                <div class="nav-item" data-page="newsletter">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    <span>Newsletter</span>
-                </div>
-                
-                <div class="nav-divider"></div>
-                <div class="nav-label">Filter by Domain</div>
-                
-                <div class="nav-item" data-filter="all">All Domains</div>
-                <div class="nav-item" data-filter="GRC">GRC</div>
-                <div class="nav-item" data-filter="Security">Security</div>
-                <div class="nav-item" data-filter="Privacy">Privacy</div>
-                <div class="nav-item" data-filter="AI">AI</div>
-                <div class="nav-item" data-filter="DevSecOps">DevSecOps</div>
-                <div class="nav-item" data-filter="Product">Product</div>
-            </nav>
-            
-            <div class="status-card">
-                <div class="status-label">Feed Status</div>
-                <div class="status-value">
-                    <span class="status-number" id="feedCount">91</span>
-                    <span class="status-active">
-                        <span class="status-dot"></span>
-                        Active
-                    </span>
-                </div>
-            </div>
-        </aside>
+        </div>
 
         <!-- Main Content -->
-        <main class="main-content">
-            <!-- Briefing Page -->
-            <div class="page active" id="briefingPage">
-                <header class="page-header">
-                    <div>
-                        <h1 class="page-title">Morning briefing.</h1>
-                        <p class="page-subtitle">Your GRC operating system reads and translates the day's intelligence.</p>
+        <div class="main-content">
+            <!-- Dashboard Page -->
+            <div class="page active" id="dashboardPage">
+                <!-- Hero Post -->
+                <div class="hero" id="heroSection">
+                    <div class="hero-content">
+                        <span class="hero-tag">Today's Post</span>
+                        <h1 class="hero-title" id="heroTitle">Loading...</h1>
+                        <p class="hero-text" id="heroText"></p>
+                        <div class="hero-actions">
+                            <button class="btn-primary" onclick="copyPost()">Copy Post</button>
+                            <button class="btn-secondary" onclick="switchPage('posts')">View All Posts</button>
+                        </div>
                     </div>
-                    <div class="header-meta">
-                        <div class="meta-label">Last Indexed</div>
-                        <div class="meta-time" id="indexTime">--:-- UTC</div>
-                        <button class="primary-btn" onclick="copyPost()">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                            Copy Today's Post
-                        </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Articles</div>
+                        <div class="stat-value" id="statTotal">0</div>
+                        <div class="stat-trend">From 91 sources</div>
                     </div>
-                </header>
-                
-                <div class="domain-filters" id="domainFilters">
-                    <button class="domain-filter active" data-domain="all">All</button>
-                    <button class="domain-filter" data-domain="GRC">GRC</button>
-                    <button class="domain-filter" data-domain="Security">Security</button>
-                    <button class="domain-filter" data-domain="Privacy">Privacy</button>
-                    <button class="domain-filter" data-domain="AI">AI</button>
-                    <button class="domain-filter" data-domain="DevSecOps">DevSecOps</button>
-                    <button class="domain-filter" data-domain="Product">Product</button>
+                    <div class="stat-card">
+                        <div class="stat-label">High Priority</div>
+                        <div class="stat-value" id="statHigh">0</div>
+                        <div class="stat-trend">Score 24+</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Posts Generated</div>
+                        <div class="stat-value" id="statPosts">0</div>
+                        <div class="stat-trend">Ready to share</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Top Score</div>
+                        <div class="stat-value" id="statTopScore">0</div>
+                        <div class="stat-trend">Out of 40</div>
+                    </div>
                 </div>
-                
-                <div class="action-buttons">
-                    <button class="action-btn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <span id="highlightCount">0</span> High Priority
-                    </button>
-                    <button class="action-btn" onclick="switchPage('content')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                        View Content Library
-                    </button>
-                </div>
-                
-                <div class="news-cards" id="newsCards">
-                    <div class="loading"><div class="spinner"></div></div>
+
+                <!-- Top Articles -->
+                <div class="content-grid">
+                    <h2 class="section-title">Top Stories This Week</h2>
+                    <div class="articles-grid" id="topArticles"></div>
                 </div>
             </div>
 
-            <!-- Content Page -->
-            <div class="page" id="contentPage">
-                <header class="page-header">
-                    <div>
-                        <h1 class="page-title">Content library.</h1>
-                        <p class="page-subtitle">All generated posts, accumulated over time.</p>
-                    </div>
-                </header>
-                
-                <div class="content-list" id="contentList">
-                    <div class="empty-state">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
-                        <h3>No content yet</h3>
-                        <p>Generated posts will appear here</p>
-                    </div>
-                </div>
+            <!-- Articles Page -->
+            <div class="page" id="articlesPage">
+                <h2 class="section-title">All Articles</h2>
+                <div class="articles-grid" id="allArticles"></div>
             </div>
 
-            <!-- Newsletter Page -->
-            <div class="page" id="newsletterPage">
-                <header class="page-header">
-                    <div>
-                        <h1 class="page-title">Newsletter.</h1>
-                        <p class="page-subtitle">Weekly edition for Wednesday publishing.</p>
-                    </div>
-                    <button class="primary-btn" onclick="copyNewsletter()">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                        Copy Newsletter
-                    </button>
-                </header>
-                
-                <div class="newsletter-container" id="newsletterContainer">
-                    <div class="empty-state">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <h3>No newsletter yet</h3>
-                        <p>Newsletter generates on Tuesdays</p>
-                    </div>
-                </div>
+            <!-- Posts Page -->
+            <div class="page" id="postsPage">
+                <h2 class="section-title">Generated Posts</h2>
+                <div class="posts-grid" id="allPosts"></div>
             </div>
-        </main>
-
-        <!-- Sidebar Right -->
-        <aside class="sidebar-right">
-            <section class="sidebar-section">
-                <h3 class="sidebar-title">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                    Latest Post
-                </h3>
-                
-                <div class="content-preview">
-                    <div class="content-label">LinkedIn Post</div>
-                    <div class="content-topic" id="postTopic">--</div>
-                    <div class="content-text" id="postContent">No content generated yet.</div>
-                    <div class="content-actions">
-                        <button class="copy-btn" onclick="copyPost()">Copy Post</button>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="sidebar-section">
-                <h3 class="sidebar-title">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-                    Domain Distribution
-                </h3>
-                
-                <div class="progress-list" id="domainProgress">
-                    <div class="progress-item"><span class="progress-label">GRC</span><span class="progress-value">0</span></div>
-                    <div class="progress-item"><span class="progress-label">Security</span><span class="progress-value">0</span></div>
-                    <div class="progress-item"><span class="progress-label">Privacy</span><span class="progress-value">0</span></div>
-                    <div class="progress-item"><span class="progress-label">AI</span><span class="progress-value">0</span></div>
-                    <div class="progress-item"><span class="progress-label">DevSecOps</span><span class="progress-value">0</span></div>
-                    <div class="progress-item"><span class="progress-label">Product</span><span class="progress-value">0</span></div>
-                </div>
-            </section>
-            
-            <section class="sidebar-section">
-                <h3 class="sidebar-title">About</h3>
-                <p class="sidebar-text">
-                    Surfaces intelligence from 91 curated sources across 6 domains. Content is copyright-safe original commentary, not article summaries.
-                </p>
-            </section>
-        </aside>
+        </div>
     </div>
 
     <!-- Toast -->
-    <div class="toast" id="toast">Copied to clipboard!</div>
+    <div class="toast" id="toast"></div>
 
     <script>
-        // Config
-        const PASSWORD = 'GRC2026!Shree';
-        
-        // State
         let newsData = [];
         let contentData = [];
-        let newsletterData = null;
-        let currentFilter = 'all';
         let currentPost = '';
-        
+        const PASSWORD = 'GRC2026!Shree';
+
         // Auth
-        function checkPassword() {
-            const input = document.getElementById('passwordInput').value;
-            if (input === PASSWORD) {
+        function login() {
+            if (document.getElementById('passwordInput').value === PASSWORD) {
                 localStorage.setItem('grc_auth', 'true');
                 showApp();
             } else {
-                document.getElementById('loginError').classList.add('show');
+                document.getElementById('loginError').style.display = 'block';
             }
         }
-        
+
         function showApp() {
             document.getElementById('loginScreen').classList.add('hidden');
             document.getElementById('app').classList.remove('hidden');
             loadData();
         }
-        
+
         if (localStorage.getItem('grc_auth') === 'true') {
             showApp();
         }
-        
+
         // Load Data
         async function loadData() {
             try {
-                const [newsRes, postRes, carouselRes, newsletterRes, historyRes, domainPostsRes] = await Promise.all([
+                const [newsRes, postRes, historyRes, domainPostsRes] = await Promise.all([
                     fetch('data/articles.json').catch(() => ({ ok: false })),
                     fetch('data/linkedin_post.json').catch(() => ({ ok: false })),
-                    fetch('data/carousel.json').catch(() => ({ ok: false })),
-                    fetch('data/newsletter.json').catch(() => ({ ok: false })),
                     fetch('data/content_history.json').catch(() => ({ ok: false })),
                     fetch('data/domain_posts.json').catch(() => ({ ok: false }))
                 ]);
-                
+
                 if (newsRes.ok) newsData = await newsRes.json();
-                if (newsletterRes.ok) newsletterData = await newsletterRes.json();
-                
-                // Get latest post
+
+                // Latest post
                 if (postRes.ok) {
                     const post = await postRes.json();
                     currentPost = post.content || '';
+                    document.getElementById('heroTitle').textContent = post.inspired_by?.topic || 'Latest Post';
+                    document.getElementById('heroText').textContent = currentPost;
+                    
                     contentData.push({
-                        title: post.inspired_by?.topic || 'Latest Post',
+                        title: post.inspired_by?.topic || 'Latest',
                         linkedin_post: post.content,
                         domains: post.inspired_by?.domains || ['GRC'],
                         template_used: post.template_name || 'Insight',
                         generated_at: post.generated_at
                     });
                 }
-                
-                // Get domain-specific posts
+
+                // Domain posts
                 if (domainPostsRes.ok) {
-                    const domainPosts = await domainPostsRes.json();
-                    domainPosts.forEach(post => {
+                    const posts = await domainPostsRes.json();
+                    posts.forEach(p => {
                         contentData.push({
-                            title: post.inspired_by?.topic || 'Domain Post',
-                            linkedin_post: post.content,
-                            domains: [post.domain || 'GRC'],
-                            template_used: post.template_name || 'Insight',
-                            generated_at: post.generated_at
+                            title: p.inspired_by?.topic || 'Post',
+                            linkedin_post: p.content,
+                            domains: [p.domain || 'GRC'],
+                            template_used: p.template_name || 'Insight',
+                            generated_at: p.generated_at
                         });
                     });
                 }
-                
-                // Load content history (accumulated posts)
+
+                // History
                 if (historyRes.ok) {
                     const history = await historyRes.json();
-                    if (Array.isArray(history)) {
-                        // Merge without duplicates
-                        const existingTitles = new Set(contentData.map(c => c.title));
-                        history.forEach(h => {
-                            if (!existingTitles.has(h.title)) {
-                                contentData.push(h);
-                            }
-                        });
-                    }
+                    const titles = new Set(contentData.map(c => c.title));
+                    history.forEach(h => {
+                        if (!titles.has(h.title)) contentData.push(h);
+                    });
                 }
-                
+
                 render();
             } catch (e) {
-                console.error('Error loading data:', e);
-                document.getElementById('newsCards').innerHTML = '<div class="empty-state"><h3>Failed to load data</h3></div>';
+                console.error('Error:', e);
             }
         }
-        
+
         // Render
         function render() {
+            // Stats
             const articles = Array.isArray(newsData) ? newsData : [];
-            const posts = Array.isArray(contentData) ? contentData : [];
-            
-            // Update index time
-            document.getElementById('indexTime').textContent = new Date().toLocaleString('en-US', { 
-                hour: '2-digit', minute: '2-digit', timeZoneName: 'short' 
-            });
-            
-            // High priority count
             const highPriority = articles.filter(a => (a.total_score || 0) >= 24);
-            document.getElementById('highlightCount').textContent = highPriority.length;
-            
-            // Domain distribution
-            const domainCounts = { GRC: 0, Security: 0, Privacy: 0, AI: 0, DevSecOps: 0, Product: 0 };
-            articles.forEach(a => {
-                const domain = (a.domains && a.domains[0]) || 'GRC';
-                if (domainCounts[domain] !== undefined) domainCounts[domain]++;
-            });
-            
-            document.getElementById('domainProgress').innerHTML = Object.entries(domainCounts).map(([domain, count]) => 
-                `<div class="progress-item"><span class="progress-label">${domain}</span><span class="progress-value">${count}</span></div>`
-            ).join('');
-            
-            // Render news
-            renderNews();
-            
-            // Latest post
-            if (posts.length > 0) {
-                const latest = posts[posts.length - 1];
-                currentPost = latest.linkedin_post || latest.post || '';
-                document.getElementById('postContent').textContent = currentPost;
-                document.getElementById('postTopic').textContent = latest.title || 'Latest topic';
-            }
-            
-            // Content library
-            renderContentLibrary(posts);
-            
-            // Newsletter
-            renderNewsletter();
+            const topScore = articles.length ? Math.max(...articles.map(a => a.total_score || 0)) : 0;
+
+            document.getElementById('statTotal').textContent = articles.length;
+            document.getElementById('statHigh').textContent = highPriority.length;
+            document.getElementById('statPosts').textContent = contentData.length;
+            document.getElementById('statTopScore').textContent = topScore;
+
+            // Articles
+            const topArticles = articles.slice(0, 6);
+            document.getElementById('topArticles').innerHTML = topArticles.length === 0 
+                ? '<div class="empty-state"><h3>No articles yet</h3></div>'
+                : topArticles.map(renderArticle).join('');
+
+            document.getElementById('allArticles').innerHTML = articles.length === 0 
+                ? '<div class="empty-state"><h3>No articles yet</h3></div>'
+                : articles.map(renderArticle).join('');
+
+            // Posts
+            document.getElementById('allPosts').innerHTML = contentData.length === 0 
+                ? '<div class="empty-state"><h3>No posts yet</h3></div>'
+                : contentData.slice().sort((a, b) => new Date(b.generated_at || 0) - new Date(a.generated_at || 0)).map(renderPost).join('');
         }
-        
-        function renderNews() {
-            const articles = Array.isArray(newsData) ? newsData : [];
-            let filtered = articles;
-            
-            if (currentFilter !== 'all') {
-                filtered = articles.filter(a => {
-                    const domains = a.domains || [];
-                    return domains.some(d => d.toLowerCase() === currentFilter.toLowerCase());
-                });
-            }
-            
-            if (filtered.length === 0) {
-                document.getElementById('newsCards').innerHTML = '<div class="empty-state"><h3>No articles found</h3><p>Try a different filter</p></div>';
-                return;
-            }
-            
-            document.getElementById('newsCards').innerHTML = filtered.map(item => {
-                const score = item.total_score || 0;
-                const domain = (item.domains && item.domains[0]) || 'GRC';
-                const domainClass = domain.toLowerCase().replace(/\s+/g, '');
-                
-                return `
-                    <div class="news-card">
-                        <div class="news-card-header">
-                            <div class="news-tags">
-                                <span class="source-tag">${item.source || 'Unknown'}</span>
-                                <span class="domain-tag ${domainClass}">${domain}</span>
-                            </div>
-                            <div class="news-score">
-                                <div class="score-main">${score}/40</div>
-                                <div class="score-label">score</div>
-                            </div>
-                        </div>
-                        <div class="news-title"><a href="${item.link || '#'}" target="_blank" rel="noopener">${item.title || 'Untitled'}</a></div>
-                        <div class="news-summary">${item.why_it_matters || item.summary || ''}</div>
-                        <div class="news-actions">
-                            <button class="news-action" onclick="window.open('${item.link || '#'}', '_blank')">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                Read Article
-                            </button>
-                        </div>
+
+        function renderArticle(item) {
+            const score = item.total_score || 0;
+            const scoreClass = score >= 30 ? 'high' : score >= 24 ? 'medium' : 'low';
+            const domain = (item.domains && item.domains[0]) || 'GRC';
+
+            return `
+                <div class="article-card" onclick="window.open('${item.url || '#'}', '_blank')">
+                    <div class="article-score ${scoreClass}">${score}</div>
+                    <div class="article-title">${item.title || 'Untitled'}</div>
+                    <div class="article-meta">
+                        <span class="domain-tag ${domain.toLowerCase()}">${domain}</span>
+                        <span class="article-source">${item.source || 'Unknown'}</span>
                     </div>
-                `;
-            }).join('');
-        }
-        
-        function renderContentLibrary(posts) {
-            if (posts.length === 0) {
-                document.getElementById('contentList').innerHTML = '<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg><h3>No content yet</h3><p>Generated posts will appear here</p></div>';
-                return;
-            }
-            
-            // Sort by date, newest first
-            const sorted = posts.slice().sort((a, b) => {
-                const dateA = new Date(a.generated_at || 0);
-                const dateB = new Date(b.generated_at || 0);
-                return dateB - dateA;
-            });
-            
-            document.getElementById('contentList').innerHTML = sorted.map((post, i) => {
-                const domain = (post.domains && post.domains[0]) || 'GRC';
-                const domainClass = domain.toLowerCase();
-                const template = post.template_used || 'Insight';
-                
-                return `
-                    <div class="content-item">
-                        <div class="content-item-header">
-                            <div style="display: flex; gap: 8px; align-items: center;">
-                                <span class="domain-tag ${domainClass}">${domain}</span>
-                                <span style="font-size: 0.7rem; color: var(--text-muted);">${template}</span>
-                            </div>
-                            <span class="content-item-date">${post.generated_at ? new Date(post.generated_at).toLocaleDateString() : 'Recent'}</span>
-                        </div>
-                        <div class="content-item-topic">${post.title || 'Untitled'}</div>
-                        <div class="content-item-preview">${post.linkedin_post || post.post || ''}</div>
-                        <button class="copy-btn" onclick="copySpecificPost(${i})">Copy This Post</button>
-                    </div>
-                `;
-            }).join('');
-        }
-        
-        function renderNewsletter() {
-            const container = document.getElementById('newsletterContainer');
-            if (!newsletterData || !newsletterData.content) {
-                container.innerHTML = '<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><h3>No newsletter yet</h3><p>Newsletter generates on Tuesdays</p></div>';
-                return;
-            }
-            
-            container.innerHTML = `
-                <h2 class="newsletter-title">${newsletterData.title || 'Weekly Newsletter'}</h2>
-                <div class="newsletter-meta">Episode ${newsletterData.episode || '?'} | ${newsletterData.topic || ''}</div>
-                <div class="newsletter-content">${newsletterData.content}</div>
+                </div>
             `;
         }
-        
-        // Page Navigation
+
+        function renderPost(post) {
+            const domain = (post.domains && post.domains[0]) || 'GRC';
+            const date = post.generated_at ? new Date(post.generated_at).toLocaleDateString() : 'Recent';
+
+            return `
+                <div class="post-card">
+                    <div class="post-header">
+                        <span class="post-template">${post.template_used || 'Insight'}</span>
+                        <span class="post-date">${date}</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-text">${post.linkedin_post || ''}</div>
+                    </div>
+                    <div class="post-footer">
+                        <span class="domain-tag ${domain.toLowerCase()}">${domain}</span>
+                        <button class="copy-btn" onclick="event.stopPropagation(); copySpecificPost('${post.linkedin_post}')">Copy</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Navigation
         function switchPage(page) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             document.getElementById(page + 'Page').classList.add('active');
-            
-            document.querySelectorAll('.nav-item[data-page]').forEach(n => n.classList.remove('active'));
-            document.querySelector(`.nav-item[data-page="${page}"]`)?.classList.add('active');
+
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            event.target?.classList.add('active');
         }
-        
-        document.querySelectorAll('.nav-item[data-page]').forEach(el => {
-            el.addEventListener('click', () => switchPage(el.dataset.page));
-        });
-        
-        // Domain Filters
-        document.querySelectorAll('.domain-filter').forEach(el => {
-            el.addEventListener('click', () => {
-                currentFilter = el.dataset.domain;
-                document.querySelectorAll('.domain-filter').forEach(f => f.classList.remove('active'));
-                el.classList.add('active');
-                renderNews();
-            });
-        });
-        
-        document.querySelectorAll('.nav-item[data-filter]').forEach(el => {
-            el.addEventListener('click', () => {
-                currentFilter = el.dataset.filter;
-                renderNews();
-            });
-        });
-        
-        // Copy Functions
+
+        // Copy
         function copyPost() {
             if (!currentPost) { showToast('No post to copy'); return; }
             navigator.clipboard.writeText(currentPost);
             showToast('Post copied!');
         }
-        
-        function copySpecificPost(index) {
-            const posts = contentData.slice().reverse();
-            const post = posts[index];
-            if (post) {
-                navigator.clipboard.writeText(post.linkedin_post || post.post || '');
-                showToast('Post copied!');
-            }
+
+        function copySpecificPost(text) {
+            navigator.clipboard.writeText(text);
+            showToast('Post copied!');
         }
-        
-        function copyNewsletter() {
-            if (newsletterData?.content) {
-                navigator.clipboard.writeText(newsletterData.content);
-                showToast('Newsletter copied!');
-            }
-        }
-        
+
         function showToast(msg) {
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.classList.add('show');
             setTimeout(() => toast.classList.remove('show'), 2000);
         }
-        
-        // Keyboard Shortcuts
+
+        // Keyboard shortcuts
         document.addEventListener('keydown', e => {
             if (e.target.tagName === 'INPUT') return;
-            if (e.key === '1') switchPage('briefing');
-            if (e.key === '2') switchPage('content');
-            if (e.key === '3') switchPage('newsletter');
+            if (e.key === '1') switchPage('dashboard');
+            if (e.key === '2') switchPage('articles');
+            if (e.key === '3') switchPage('posts');
             if (e.key.toLowerCase() === 'c') copyPost();
         });
     </script>
