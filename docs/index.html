@@ -562,6 +562,48 @@
             background: rgba(0, 212, 255, 0.1);
         }
         
+        /* Newsletter */
+        .newsletter-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 32px;
+            max-width: 800px;
+        }
+        
+        .newsletter-header {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .newsletter-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .newsletter-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        
+        .newsletter-content {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            white-space: pre-wrap;
+            margin-bottom: 24px;
+        }
+        
+        .newsletter-actions {
+            display: flex;
+            gap: 12px;
+        }
+        
         /* Toast */
         .toast {
             position: fixed;
@@ -634,6 +676,7 @@
                     <button class="nav-tab active" onclick="switchPage('dashboard')">Dashboard</button>
                     <button class="nav-tab" onclick="switchPage('articles')">Articles</button>
                     <button class="nav-tab" onclick="switchPage('posts')">Posts</button>
+                    <button class="nav-tab" onclick="switchPage('newsletter')">Newsletter</button>
                 </div>
                 <button class="btn-secondary" onclick="location.reload()">Refresh</button>
                 <button class="btn-primary" onclick="copyPost()">Copy Post</button>
@@ -699,6 +742,12 @@
                 <h2 class="section-title">Generated Posts</h2>
                 <div class="posts-grid" id="allPosts"></div>
             </div>
+
+            <!-- Newsletter Page -->
+            <div class="page" id="newsletterPage">
+                <h2 class="section-title">Weekly Newsletter</h2>
+                <div class="newsletter-card" id="newsletterContainer"></div>
+            </div>
         </div>
     </div>
 
@@ -708,6 +757,7 @@
     <script>
         let newsData = [];
         let contentData = [];
+        let newsletterData = null;
         let currentPost = '';
         const PASSWORD = 'GRC2026!Shree';
 
@@ -734,14 +784,16 @@
         // Load Data
         async function loadData() {
             try {
-                const [newsRes, postRes, historyRes, domainPostsRes] = await Promise.all([
+                const [newsRes, postRes, historyRes, domainPostsRes, newsletterRes] = await Promise.all([
                     fetch('data/articles.json').catch(() => ({ ok: false })),
                     fetch('data/linkedin_post.json').catch(() => ({ ok: false })),
                     fetch('data/content_history.json').catch(() => ({ ok: false })),
-                    fetch('data/domain_posts.json').catch(() => ({ ok: false }))
+                    fetch('data/domain_posts.json').catch(() => ({ ok: false })),
+                    fetch('data/newsletter.json').catch(() => ({ ok: false }))
                 ]);
 
                 if (newsRes.ok) newsData = await newsRes.json();
+                if (newsletterRes.ok) newsletterData = await newsletterRes.json();
 
                 // Latest post
                 if (postRes.ok) {
@@ -814,6 +866,9 @@
             document.getElementById('allPosts').innerHTML = contentData.length === 0 
                 ? '<div class="empty-state"><h3>No posts yet</h3></div>'
                 : contentData.slice().sort((a, b) => new Date(b.generated_at || 0) - new Date(a.generated_at || 0)).map(renderPost).join('');
+
+            // Newsletter
+            renderNewsletter();
         }
 
         function renderArticle(item) {
@@ -854,6 +909,30 @@
             `;
         }
 
+        function renderNewsletter() {
+            const container = document.getElementById('newsletterContainer');
+            if (!newsletterData || !newsletterData.content) {
+                container.innerHTML = '<div class="empty-state"><h3>No newsletter yet</h3><p>Newsletter generates on Tuesdays</p></div>';
+                return;
+            }
+
+            const episodeInfo = newsletterData.episode ? `Episode ${newsletterData.episode}` : 'Latest';
+            container.innerHTML = `
+                <div class="newsletter-header">
+                    <div class="newsletter-title">${newsletterData.title || 'Weekly Newsletter'}</div>
+                    <div class="newsletter-meta">
+                        <span>${episodeInfo}</span>
+                        <span>${newsletterData.series || 'GRC Newsletter'}</span>
+                        <span>${new Date(newsletterData.generated_at).toLocaleDateString()}</span>
+                    </div>
+                </div>
+                <div class="newsletter-content">${newsletterData.content}</div>
+                <div class="newsletter-actions">
+                    <button class="btn-primary" onclick="copyNewsletter()">Copy Newsletter</button>
+                </div>
+            `;
+        }
+
         // Navigation
         function switchPage(page) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -875,6 +954,12 @@
             showToast('Post copied!');
         }
 
+        function copyNewsletter() {
+            if (!newsletterData?.content) { showToast('No newsletter to copy'); return; }
+            navigator.clipboard.writeText(newsletterData.content);
+            showToast('Newsletter copied!');
+        }
+
         function showToast(msg) {
             const toast = document.getElementById('toast');
             toast.textContent = msg;
@@ -888,6 +973,7 @@
             if (e.key === '1') switchPage('dashboard');
             if (e.key === '2') switchPage('articles');
             if (e.key === '3') switchPage('posts');
+            if (e.key === '4') switchPage('newsletter');
             if (e.key.toLowerCase() === 'c') copyPost();
         });
     </script>
