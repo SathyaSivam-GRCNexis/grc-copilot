@@ -775,7 +775,7 @@
     <div id="app" class="hidden">
         <!-- Top Navigation -->
         <div class="top-nav">
-            <div class="logo">
+            <div class="logo" onclick="location.reload();" style="cursor: pointer;">
                 <div class="logo-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -1056,16 +1056,19 @@
 
             container.innerHTML = domainPosts.map(post => {
                 const domain = post.domain || 'GRC';
+                const postText = post.content || '';
+                // Escape single quotes for onclick
+                const escapedText = postText.replace(/'/g, "\\'");
                 return `
-                    <div class="domain-post-card">
+                    <div class="domain-post-card" onclick="copySpecificPost('${escapedText}')" style="cursor: pointer;">
                         <div class="domain-post-header">
                             <span class="domain-post-domain">${domain}</span>
                             <span class="post-template">${post.template_name || 'Insight'}</span>
                         </div>
-                        <div class="domain-post-text">${post.content || ''}</div>
+                        <div class="domain-post-text">${postText}</div>
                         <div class="domain-post-footer">
                             <span class="domain-tag ${domain.toLowerCase()}">${domain}</span>
-                            <button class="copy-btn" onclick="copySpecificPost('${post.content}')">Copy</button>
+                            <button class="copy-btn" onclick="event.stopPropagation(); copySpecificPost('${escapedText}')">Copy</button>
                         </div>
                     </div>
                 `;

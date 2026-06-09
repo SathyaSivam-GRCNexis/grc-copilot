@@ -197,14 +197,19 @@ def generate_linkedin_post(article, clients):
 def generate_all_domain_posts(articles, clients):
     """Generate one post per domain using different templates"""
     
+    # Only generate for the 6 defined domains
+    VALID_DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product"]
+    
     # Group articles by domain
     domain_articles = {}
     for article in articles:
         domains = article.get('domains', ['GRC'])
         for domain in domains:
-            if domain not in domain_articles:
-                domain_articles[domain] = []
-            domain_articles[domain].append(article)
+            # Only add if it's a valid domain
+            if domain in VALID_DOMAINS:
+                if domain not in domain_articles:
+                    domain_articles[domain] = []
+                domain_articles[domain].append(article)
     
     # Templates to rotate through
     template_keys = list(POST_TEMPLATES.keys())
