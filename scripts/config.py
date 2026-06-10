@@ -152,7 +152,7 @@ TOP_20_PRIORITY = [
     "Help Net Security"
 ]
 
-DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product"]
+DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product", "Cloud"]
 
 DOMAIN_MAPPING = {
     "Privacy & Data Protection": "Privacy",
@@ -170,9 +170,16 @@ DOMAIN_MAPPING = {
     "Compliance": "GRC",
     "Governance": "GRC",
     "DevOps": "DevSecOps",
-    "Cloud Security": "DevSecOps",
     "Product Management": "Product",
-    "Product Security": "Product"
+    "Product Security": "Product",
+    "Cloud Security": "Cloud",
+    "Cloud Architecture": "Cloud",
+    "Cloud Compliance": "Cloud",
+    "Cloud": "Cloud",
+    "Cloud Computing": "Cloud",
+    "AWS": "Cloud",
+    "Azure": "Cloud",
+    "GCP": "Cloud"
 }
 
 VOICE_PROFILE = """

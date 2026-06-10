@@ -197,8 +197,8 @@ def generate_linkedin_post(article, clients):
 def generate_all_domain_posts(articles, clients):
     """Generate one post per domain using different templates"""
     
-    # Only generate for the 6 defined domains
-    VALID_DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product"]
+    # Only generate for the 7 defined domains
+    VALID_DOMAINS = ["GRC", "Privacy", "Security", "DevSecOps", "AI", "Product", "Cloud"]
     
     # Group articles by domain
     domain_articles = {}
