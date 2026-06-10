@@ -509,7 +509,7 @@ Respond in this exact JSON format:
     "content_angle": "<Brief suggestion for how to create content from this>"
 }}
 
-Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product
+Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product, Cloud
 """
 
 LINKEDIN_POST_PROMPT = """

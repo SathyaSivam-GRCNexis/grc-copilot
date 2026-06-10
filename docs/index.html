@@ -546,8 +546,16 @@
         /* Domain Posts Grid */
         .domain-posts-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+            margin-top: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .domain-posts-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
         }
         
         .post-card {
@@ -581,15 +589,17 @@
         
         /* Domain Post Card */
         .domain-post-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(17, 27, 51, 0.8) 100%);
+            border: 2px solid var(--border);
+            border-radius: 12px;
             padding: 24px;
-            transition: all 0.3s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
             position: relative;
             overflow: hidden;
+            min-height: 300px;
+            cursor: pointer;
         }
         
         .domain-post-card::before {
@@ -598,43 +608,47 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 6px;
             background: linear-gradient(90deg, var(--secondary), var(--accent));
         }
         
         .domain-post-card:hover {
             border-color: var(--accent);
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.1);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(239, 68, 68, 0.2);
+            background: linear-gradient(135deg, rgba(17, 27, 51, 0.95) 0%, rgba(26, 40, 71, 0.9) 100%);
         }
         
         .domain-post-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 16px;
+            gap: 12px;
         }
         
         .domain-post-domain {
             font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             background: linear-gradient(135deg, var(--accent), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .domain-post-text {
-            font-size: 14px;
-            line-height: 1.6;
-            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text);
             display: -webkit-box;
-            -webkit-line-clamp: 8;
+            -webkit-line-clamp: 9;
             -webkit-box-orient: vertical;
             overflow: hidden;
             flex-grow: 1;
             margin-bottom: 16px;
+            font-weight: 400;
         }
         
         .domain-post-footer {
@@ -642,7 +656,7 @@
             justify-content: space-between;
             align-items: center;
             padding-top: 16px;
-            border-top: 1px solid var(--border);
+            border-top: 1px solid rgba(30, 45, 71, 0.6);
         }
         
         .post-header {
@@ -698,18 +712,29 @@
         }
         
         .copy-btn {
-            padding: 6px 12px;
-            background: transparent;
+            padding: 8px 16px;
+            background: rgba(239, 68, 68, 0.15);
             color: var(--accent);
-            border: 1px solid var(--accent);
-            border-radius: 4px;
-            font-size: 12px;
+            border: 2px solid rgba(239, 68, 68, 0.4);
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .copy-btn:hover {
-            background: rgba(239, 68, 68, 0.1);
+            background: rgba(239, 68, 68, 0.25);
+            border-color: var(--accent);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+        }
+        
+        .copy-btn:active {
+            transform: scale(0.95);
         }
         
         /* Toast */
@@ -1056,13 +1081,11 @@
                 return;
             }
 
-            container.innerHTML = domainPosts.map(post => {
+            container.innerHTML = domainPosts.map((post, index) => {
                 const domain = post.domain || 'GRC';
                 const postText = post.content || '';
-                // Escape single quotes for onclick
-                const escapedText = postText.replace(/'/g, "\\'");
                 return `
-                    <div class="domain-post-card" onclick="copySpecificPost('${escapedText}')" style="cursor: pointer;">
+                    <div class="domain-post-card" onclick="copyDomainPost(${index})" style="cursor: pointer;">
                         <div class="domain-post-header">
                             <span class="domain-post-domain">${domain}</span>
                             <span class="post-template">${post.template_name || 'Insight'}</span>
@@ -1070,11 +1093,19 @@
                         <div class="domain-post-text">${postText}</div>
                         <div class="domain-post-footer">
                             <span class="domain-tag ${domain.toLowerCase()}">${domain}</span>
-                            <button class="copy-btn" onclick="event.stopPropagation(); copySpecificPost('${escapedText}')">Copy</button>
+                            <button class="copy-btn" onclick="event.stopPropagation(); copyDomainPost(${index})">📋 Copy</button>
                         </div>
                     </div>
                 `;
             }).join('');
+        }
+        
+        function copyDomainPost(index) {
+            if (domainPosts && domainPosts[index]) {
+                const text = domainPosts[index].content;
+                navigator.clipboard.writeText(text);
+                showToast('Post copied to clipboard! ✓');
+            }
         }
 
         function renderCharts() {
