@@ -502,14 +502,24 @@ Respond in this exact JSON format:
         "learning_value": <1-10>,
         "content_potential": <1-10>,
         "compliance_relevance": <1-10>
-    }},
-    "total_score": <sum of 4 scores, max 40>,
-    "domains": ["<primary domain>", "<secondary if relevant>"],
-    "why_it_matters": "<One sentence: why a GRC professional should care about this>",
-    "content_angle": "<Brief suggestion for how to create content from this>"
-}}
+     }},
+     "total_score": <sum of 4 scores, max 40>,
+     "domains": ["<primary domain>", "<secondary if relevant>"],
+     "why_it_matters": "<One sentence: why a GRC professional should care about this>",
+     "content_angle": "<Brief suggestion for how to create content from this>"
+ }}
+
+Domain Guidelines:
+- GRC: Governance, risk management, compliance frameworks, regulations, audit
+- Privacy: Data protection, GDPR, CCPA, privacy laws, data handling
+- Security: Cybersecurity, vulnerabilities, breaches, security tools, defense
+- DevSecOps: CI/CD security, infrastructure as code, container security, SAST/DAST
+- Cloud: AWS, Azure, GCP, cloud infrastructure, cloud security, cloud compliance, serverless
+- AI: AI governance, LLMs, machine learning, AI ethics, AI security
+- Product: Product management, product strategy, UX, feature prioritization
 
 Choose domains from: GRC, Privacy, Security, DevSecOps, AI, Product, Cloud
+Important: Assign Cloud domain for ANY article mentioning AWS, Azure, GCP, serverless, cloud infrastructure, or cloud-specific security topics.
 """
 
 LINKEDIN_POST_PROMPT = """
