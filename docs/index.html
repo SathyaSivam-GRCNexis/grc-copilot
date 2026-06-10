@@ -606,11 +606,17 @@
         // Data Loading
         async function loadData() {
             try {
-                const response = await fetch('data/domain_posts.json');
-                domainPosts = await response.json();
+                // Load domain posts (today's posts)
+                const domainResponse = await fetch('data/domain_posts.json');
+                domainPosts = await domainResponse.json();
+                
+                // Load content history (all accumulated posts)
+                const historyResponse = await fetch('data/content_history.json');
+                allPosts = await historyResponse.json();
+                
                 renderDashboard();
             } catch (e) {
-                console.error('Error loading domain posts:', e);
+                console.error('Error loading data:', e);
             }
         }
         
@@ -684,23 +690,30 @@
         
         function renderAllPosts() {
             const container = document.getElementById('allPostsGrid');
-            if (!domainPosts || domainPosts.length === 0) {
+            if (!allPosts || allPosts.length === 0) {
                 container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 60px 20px;">No posts available</div>';
                 return;
             }
             
-            container.innerHTML = domainPosts.map(post => {
-                const domain = post.domain || 'GRC';
+            container.innerHTML = allPosts.map(post => {
+                const domain = (post.domains && post.domains[0]) || post.domain || 'GRC';
+                const content = post.linkedin_post || post.content || '';
+                const template = post.template_used || post.template_name || 'Insight';
+                const date = post.generated_at ? new Date(post.generated_at).toLocaleDateString() : '';
+                
                 return `
-                    <div class="card" onclick="copyPost('${escapeText(post.content)}')">
+                    <div class="card" onclick="copyPost('${escapeText(content)}')">
                         <div class="card-header">
                             <div class="card-domain">${domain}</div>
-                            <div class="card-template">${post.template_name || 'Insight'}</div>
+                            <div class="card-template">${template}</div>
                         </div>
-                        <div class="card-content">${post.content}</div>
+                        <div class="card-content">${content}</div>
                         <div class="card-footer">
-                            <div class="domain-tag ${domain.toLowerCase()}">${domain}</div>
-                            <button class="copy-btn" onclick="event.stopPropagation(); copyPost('${escapeText(post.content)}')">Copy</button>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <div class="domain-tag ${domain.toLowerCase()}">${domain}</div>
+                                ${date ? `<span style="font-size: 11px; color: var(--text-muted);">${date}</span>` : ''}
+                            </div>
+                            <button class="copy-btn" onclick="event.stopPropagation(); copyPost('${escapeText(content)}')">Copy</button>
                         </div>
                     </div>
                 `;
