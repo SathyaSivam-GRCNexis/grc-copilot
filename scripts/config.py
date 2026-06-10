@@ -65,15 +65,14 @@ RSS_FEEDS = [
     "https://blog.qualys.com/feed",  # Qualys
     "https://blog.avast.com/feed",  # Avast Blog
     "https://www.elastic.co/security-labs/rss/feed.xml",  # Elastic Security
-    
+     
     # ===================
-    # 4. CLOUD SECURITY & DEVSECOPS
+    # 4. DEVSECOPS
     # ===================
     "https://owasp.org/feed.xml",  # OWASP Blog
     "https://snyk.io/blog/feed/",  # Snyk Blog
     "https://www.hashicorp.com/blog/feed.xml",  # HashiCorp Blog
     "https://www.docker.com/blog/feed/",  # Docker Blog
-    "https://aws.amazon.com/blogs/security/feed/",  # AWS Security Blog
     "https://www.sonatype.com/blog/rss.xml",  # Sonatype
     "https://circleci.com/blog/feed.xml",  # CircleCI
     "https://grafana.com/blog/index.xml",  # Grafana
@@ -82,7 +81,25 @@ RSS_FEEDS = [
     "https://github.blog/category/security/feed/",  # GitHub Security Blog
     
     # ===================
-    # 5. AI GOVERNANCE, AI SECURITY & RESPONSIBLE AI
+    # 5. CLOUD SECURITY, ARCHITECTURE & COMPLIANCE
+    # ===================
+    "https://aws.amazon.com/blogs/security/feed/",  # AWS Security Blog
+    "https://aws.amazon.com/blogs/architecture/feed/",  # AWS Architecture Blog
+    "https://azure.microsoft.com/en-us/blog/feed/",  # Microsoft Azure Blog
+    "https://cloud.google.com/blog/feed",  # Google Cloud Blog
+    "https://www.wiz.io/blog/feed",  # Wiz Cloud Security
+    "https://www.zscaler.com/blogs/feed",  # Zscaler Blog
+    "https://www.cloudflare.com/rss/blog/",  # Cloudflare Blog
+    "https://www.aquasec.com/blog/feed/",  # Aqua Security
+    "https://sysdig.com/blog/feed/",  # Sysdig
+    "https://www.splunk.com/en_us/blog/feed.xml",  # Splunk Blog
+    "https://www.codenotary.com/feed/",  # CodeNotary
+    "https://blog.chainalysis.com/feed/",  # Chainalysis
+    "https://www.lacework.com/blog/feed/",  # Lacework
+    "https://www.fugue.co/blog/feed",  # Fugue.co
+    
+    # ===================
+    # 6. AI GOVERNANCE, AI SECURITY & RESPONSIBLE AI
     # ===================
     "https://www.deepmind.com/blog/rss.xml",  # Google DeepMind Blog
     "https://partnershiponai.org/feed/",  # Partnership on AI
@@ -101,9 +118,9 @@ RSS_FEEDS = [
     "https://pub.towardsai.net/feed",  # Towards AI
     "https://techcrunch.com/category/artificial-intelligence/feed/",  # TechCrunch AI
     "https://www.technologyreview.com/feed/",  # MIT Tech Review
-    
+     
     # ===================
-    # 6. PRODUCT MANAGEMENT & GRC PRODUCT THINKING
+    # 7. PRODUCT MANAGEMENT & GRC PRODUCT THINKING
     # ===================
     "https://www.lennysnewsletter.com/feed",  # Lenny's Newsletter
     "https://productcoalition.com/feed",  # Product Coalition
@@ -142,13 +159,13 @@ TOP_20_PRIORITY = [
     "AWS Security Blog",
     "OWASP",
     "Snyk",
+    "Wiz Cloud Security",
     "DeepMind",
     "AI Snake Oil",
     "Hugging Face",
     "Lenny's Newsletter",
     "SVPG",
     "Pragmatic Engineer",
-    "Stratechery",
     "Help Net Security"
 ]
 
