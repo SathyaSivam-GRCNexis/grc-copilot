@@ -534,6 +534,7 @@
                 </div>
                 <div class="nav-tabs">
                     <button class="nav-tab active" onclick="showPage('dashboard')">Dashboard</button>
+                    <button class="nav-tab" onclick="showPage('articles')">Articles</button>
                     <button class="nav-tab" onclick="showPage('posts')">Posts</button>
                 </div>
             </div>
@@ -556,6 +557,12 @@
                 </div>
             </div>
             
+            <!-- ARTICLES PAGE -->
+            <div id="articles" class="page">
+                <h2 class="section-title">Intelligence Feed</h2>
+                <div class="grid" id="articlesGrid"></div>
+            </div>
+            
             <!-- POSTS PAGE -->
             <div id="posts" class="page">
                 <h2 class="section-title">All Posts</h2>
@@ -571,6 +578,7 @@
         const PASSWORD = "GRC2026!Shree";
         let domainPosts = [];
         let allPosts = [];
+        let articles = [];
         
         // Auth
         function authenticate() {
@@ -600,6 +608,8 @@
             
             if (page === 'posts') {
                 renderAllPosts();
+            } else if (page === 'articles') {
+                renderArticles();
             }
         }
         
@@ -613,6 +623,10 @@
                 // Load content history (all accumulated posts)
                 const historyResponse = await fetch('data/content_history.json');
                 allPosts = await historyResponse.json();
+                
+                // Load articles (scored news)
+                const articlesResponse = await fetch('data/articles.json');
+                articles = await articlesResponse.json();
                 
                 renderDashboard();
             } catch (e) {
@@ -714,6 +728,44 @@
                                 ${date ? `<span style="font-size: 11px; color: var(--text-muted);">${date}</span>` : ''}
                             </div>
                             <button class="copy-btn" onclick="event.stopPropagation(); copyPost('${escapeText(content)}')">Copy</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function renderArticles() {
+            const container = document.getElementById('articlesGrid');
+            if (!articles || articles.length === 0) {
+                container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 60px 20px;">No articles available</div>';
+                return;
+            }
+            
+            container.innerHTML = articles.slice(0, 50).map(article => {
+                const domain = (article.domains && article.domains[0]) || 'GRC';
+                const score = article.score || 5;
+                const totalScore = article.total_score || 20;
+                const date = article.published ? new Date(article.published).toLocaleDateString() : '';
+                
+                return `
+                    <div class="card" onclick="window.open('${article.url}', '_blank')">
+                        <div class="card-header">
+                            <div class="card-domain">${domain}</div>
+                            <div style="display: flex; gap: 6px; align-items: center;">
+                                <div class="card-template">Score: ${score}/10</div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <div style="font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.4;">${article.title}</div>
+                            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">${article.source}</div>
+                        </div>
+                        <div class="card-content" style="font-size: 14px;">${article.score_reason || article.summary || ''}</div>
+                        <div class="card-footer">
+                            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                <div class="domain-tag ${domain.toLowerCase()}">${domain}</div>
+                                ${date ? `<span style="font-size: 11px; color: var(--text-muted);">${date}</span>` : ''}
+                            </div>
+                            <button class="copy-btn" onclick="event.stopPropagation(); window.open('${article.url}', '_blank')">Read →</button>
                         </div>
                     </div>
                 `;
