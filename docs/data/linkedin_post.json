@@ -1,18 +1,18 @@
 {
-  "content": "**The Blind Spot in GRC: Governance Lags Behind AI Adoption**\n\nI used to think that compliance teams were inherently risk-averse, and that's why they were slow to adopt new technologies like AI. But then I learned that's only half the story.\n\n**The Inside the Mind of the CCO survey** revealed a surprising truth: most compliance teams are embracing AI, but governance lags behind. This blind spot can lead to unintended consequences, like biased decision-making or data misuse.\n\n**The lesson:** In GRC, technology adoption and governance need to happen hand-in-hand. You can't just throw AI at a problem without a clear plan for how to monitor and control its outputs.\n\n**Framework:** Think of it as a seesaw: on one side, you have the benefits of AI (speed, efficiency, accuracy). On the other side, you have the risks (bias, data quality, lack of transparency). Governance is the fulcrum that balances these two sides.\n\n**Advice:**\n\n* For early-career professionals: don't assume technology will solve all your GRC problems. Make sure you have a governance plan in place before adopting AI.\n* For experienced professionals: review your current governance frameworks to ensure they're aligned with your AI adoption strategy.\n* For leaders: recognize that governance isn't a check-the-box exercise, but an ongoing process that requires continuous attention and improvement.\n\n**What career lesson took you years to learn?**",
-  "template_used": "career",
-  "template_name": "Career Growth Post",
+  "content": "**The Shift in Online Banking Security: What FFIEC's Final Authentication Guidance Means for Risk Management**\n\nEveryone's talking about FFIEC's new authentication guidance, but what does it really mean for online banking security? The more interesting question is: how will this update change the way organizations approach risk management in the digital sphere?\n\nIn my experience, the key takeaway from this guidance is that it's not just about implementing new controls, but about fundamentally changing our approach to security. The FFIEC's emphasis on layered security and continuous authentication is a recognition that traditional approaches to security are no longer sufficient in today's online banking landscape.\n\nHere are three key implications of this guidance:\n\n1. **Security can't be a one-time fix**: Organizations need to adopt a continuous monitoring approach to ensure that their security controls are keeping pace with evolving threats.\n2. **Customer experience and security are not mutually exclusive**: Implementing robust authentication mechanisms doesn't have to come at the expense of user experience \u2013 it's possible to strike a balance between security and convenience.\n3. **Risk management should be a proactive, not reactive, process**: Organizations should be proactively identifying and mitigating potential risks, rather than simply responding to incidents after they occur.\n\nAs we move forward, I predict that organizations will need to invest more in advanced technologies, such as machine learning and biometrics, to stay ahead of emerging threats. But that's a topic for another day... what do you think will be the biggest challenge in implementing these new security measures?",
+  "template_used": "news_analysis",
+  "template_name": "News Analysis Post",
   "inspired_by": {
-    "topic": "Inside the Mind of the CCO survey finds most compliance teams allow AI use, but governance lags behind",
-    "concept": "A GRC professional should care about this because it highlights the growing use of AI in compliance and the need for governance to keep pace.",
+    "topic": "FFIEC Final Authentication Guidance",
+    "concept": "A GRC professional should care about this because it updates the Agencies' expectations regarding customer authentication and layered security, impacting online banking security and risk management.",
     "domains": [
       "GRC",
-      "AI"
+      "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-06-10T17:01:44.737596",
-  "day_of_week": "Wednesday",
+  "generated_at": "2026-06-11T02:27:16.412438",
+  "day_of_week": "Thursday",
   "type": "text_post",
   "copyright_safe": true
 }

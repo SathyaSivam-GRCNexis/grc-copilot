@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**AI Governance Matters**\nI've noticed that as AI becomes more prevalent in compliance, the need for effective governance becomes increasingly important.\n"
+      "content": "**Layered Security is Key to Prevention**\nProtecting online banking requires multiple layers of security to prevent unauthorized access.\n"
     },
     {
       "slide_number": 2,
-      "content": "**Risk of Automation**\nUsing AI in compliance is like hiring a new employee - you need to train and supervise them to ensure they're doing their job correctly, or you might end up with unintended consequences.\n"
+      "content": "**Authentication 101: What's at Stake**\nThink of customer authentication like a door with multiple locks. Each lock represents a different layer of verification, and if one lock is compromised, the others should be in place to prevent unauthorized entry.\n"
     },
     {
       "slide_number": 3,
-      "content": "**Governance Gaps**\nIn my experience, governance often lags behind technology adoption because it's like trying to build a fence around a moving target - you need to be proactive and adapt quickly to keep up with changing circumstances.\n"
+      "content": "**Risk Management: The Why Behind Authentication**\nImagine you're a bank manager tasked with managing risk. You'd want to understand the likelihood and impact of cyber threats. That's why layered security is essential \u2013 it helps you mitigate risks by making it harder for hackers to breach your system.\n"
     },
     {
       "slide_number": 4,
-      "content": "**Compliance Consequences**\nFailing to govern AI use in compliance is like driving a car without checking the brakes - you might get where you're going, but you're putting yourself and others at risk of a serious crash.\n"
+      "content": "**Password Policies: A Layered Approach**\nPicture a password policy like a layered cake. Each layer represents a different password requirement, such as length, complexity, and expiration dates. By setting multiple layers, you make it harder for hackers to guess or crack passwords.\n"
     },
     {
       "slide_number": 5,
-      "content": "**Human Oversight**\nI believe that AI should be seen as a tool, not a replacement, for human judgment in compliance - it's like having a calculator to do math, but still needing to understand the underlying principles to make sense of the results.\n"
+      "content": "**Security Controls: The How Behind Compliance**\nThink of security controls like a recipe for baking a cake. Just as a recipe outlines the ingredients and steps needed to create a cake, security controls outline the procedures and protocols needed to protect your online banking system. Compliance is just one aspect of this process.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nTo effectively govern AI use in compliance, you should establish clear policies and procedures for AI adoption, monitor AI performance regularly, and provide ongoing training to compliance teams on AI use and limitations.\n"
+      "content": "**What This Means For You: Prioritize Layered Security**\nAs a GRC professional, prioritize layered security by implementing multiple authentication methods, such as passwords, biometrics, and one-time passwords. Regularly review and update your security controls to ensure they're effective in preventing cyber threats.\n"
     },
     {
       "slide_number": 7,
-      "content": "What steps are you taking to ensure that your organization's use of AI in compliance is aligned with your overall governance strategy, and are you prepared to address the potential risks and consequences of AI adoption?\n"
+      "content": "Are You Prepared for Emerging Cyber Threats?\nStay ahead of the curve by following us for more GRC insights and security best practices.\n"
     }
   ],
-  "raw_content": "**SLIDE 1:** \n**AI Governance Matters**\nI've noticed that as AI becomes more prevalent in compliance, the need for effective governance becomes increasingly important.\n\n**SLIDE 2:** \n**Risk of Automation**\nUsing AI in compliance is like hiring a new employee - you need to train and supervise them to ensure they're doing their job correctly, or you might end up with unintended consequences.\n\n**SLIDE 3:** \n**Governance Gaps**\nIn my experience, governance often lags behind technology adoption because it's like trying to build a fence around a moving target - you need to be proactive and adapt quickly to keep up with changing circumstances.\n\n**SLIDE 4:** \n**Compliance Consequences**\nFailing to govern AI use in compliance is like driving a car without checking the brakes - you might get where you're going, but you're putting yourself and others at risk of a serious crash.\n\n**SLIDE 5:** \n**Human Oversight**\nI believe that AI should be seen as a tool, not a replacement, for human judgment in compliance - it's like having a calculator to do math, but still needing to understand the underlying principles to make sense of the results.\n\n**SLIDE 6:** \n**What This Means For You**\nTo effectively govern AI use in compliance, you should establish clear policies and procedures for AI adoption, monitor AI performance regularly, and provide ongoing training to compliance teams on AI use and limitations.\n\n**SLIDE 7:** \nWhat steps are you taking to ensure that your organization's use of AI in compliance is aligned with your overall governance strategy, and are you prepared to address the potential risks and consequences of AI adoption?",
+  "raw_content": "Here are the 7 original educational slides teaching the concept behind FFIEC Final Authentication Guidance.\n\n**SLIDE 1:**\n**Layered Security is Key to Prevention**\nProtecting online banking requires multiple layers of security to prevent unauthorized access.\n\n**SLIDE 2:**\n**Authentication 101: What's at Stake**\nThink of customer authentication like a door with multiple locks. Each lock represents a different layer of verification, and if one lock is compromised, the others should be in place to prevent unauthorized entry.\n\n**SLIDE 3:**\n**Risk Management: The Why Behind Authentication**\nImagine you're a bank manager tasked with managing risk. You'd want to understand the likelihood and impact of cyber threats. That's why layered security is essential \u2013 it helps you mitigate risks by making it harder for hackers to breach your system.\n\n**SLIDE 4:**\n**Password Policies: A Layered Approach**\nPicture a password policy like a layered cake. Each layer represents a different password requirement, such as length, complexity, and expiration dates. By setting multiple layers, you make it harder for hackers to guess or crack passwords.\n\n**SLIDE 5:**\n**Security Controls: The How Behind Compliance**\nThink of security controls like a recipe for baking a cake. Just as a recipe outlines the ingredients and steps needed to create a cake, security controls outline the procedures and protocols needed to protect your online banking system. Compliance is just one aspect of this process.\n\n**SLIDE 6:**\n**What This Means For You: Prioritize Layered Security**\nAs a GRC professional, prioritize layered security by implementing multiple authentication methods, such as passwords, biometrics, and one-time passwords. Regularly review and update your security controls to ensure they're effective in preventing cyber threats.\n\n**SLIDE 7:**\nAre You Prepared for Emerging Cyber Threats?\nStay ahead of the curve by following us for more GRC insights and security best practices.",
   "inspired_by": {
-    "topic": "Inside the Mind of the CCO survey finds most compliance teams allow AI use, but governance lags behind",
+    "topic": "FFIEC Final Authentication Guidance",
     "domains": [
       "GRC",
-      "AI"
+      "Security"
     ]
   },
-  "generated_at": "2026-06-10T17:20:36.951004",
+  "generated_at": "2026-06-11T02:39:42.131389",
   "type": "carousel",
   "copyright_safe": true
 }
