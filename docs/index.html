@@ -481,6 +481,96 @@
             pointer-events: auto;
         }
         
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10001;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal.show { display: flex; }
+        
+        .modal-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .modal-close:hover {
+            background: rgba(239, 68, 68, 0.2);
+            transform: scale(1.1);
+        }
+        
+        .modal-header {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .modal-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        
+        .modal-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        
+        .modal-body {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .modal-footer {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: flex-end;
+        }
+        
         /* SCROLLBAR */
         ::-webkit-scrollbar {
             width: 8px;
@@ -573,6 +663,24 @@
     
     <!-- TOAST -->
     <div id="toast" class="toast"></div>
+    
+    <!-- MODAL -->
+    <div id="postModal" class="modal" onclick="if(event.target === this) closeModal()">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-header">
+                <div class="modal-title" id="modalDomain"></div>
+                <div class="modal-meta">
+                    <span id="modalTemplate"></span>
+                    <span id="modalDate"></span>
+                </div>
+            </div>
+            <div class="modal-body" id="modalContent"></div>
+            <div class="modal-footer">
+                <button class="copy-hero-btn" onclick="copyModalPost()">📋 Copy Post</button>
+            </div>
+        </div>
+    </div>
     
     <script>
         const PASSWORD = "GRC2026!Shree";
@@ -709,14 +817,14 @@
                 return;
             }
             
-            container.innerHTML = allPosts.map(post => {
+            container.innerHTML = allPosts.map((post, index) => {
                 const domain = (post.domains && post.domains[0]) || post.domain || 'GRC';
                 const content = post.linkedin_post || post.content || '';
                 const template = post.template_used || post.template_name || 'Insight';
                 const date = post.generated_at ? new Date(post.generated_at).toLocaleDateString() : '';
                 
                 return `
-                    <div class="card" onclick="copyPost('${escapeText(content)}')">
+                    <div class="card">
                         <div class="card-header">
                             <div class="card-domain">${domain}</div>
                             <div class="card-template">${template}</div>
@@ -727,7 +835,10 @@
                                 <div class="domain-tag ${domain.toLowerCase()}">${domain}</div>
                                 ${date ? `<span style="font-size: 11px; color: var(--text-muted);">${date}</span>` : ''}
                             </div>
-                            <button class="copy-btn" onclick="event.stopPropagation(); copyPost('${escapeText(content)}')">Copy</button>
+                            <div style="display: flex; gap: 8px;">
+                                <button class="copy-btn" onclick="openPostModal(${index})">Read</button>
+                                <button class="copy-btn" onclick="copyPost('${escapeText(content)}')">Copy</button>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -789,9 +900,50 @@
             setTimeout(() => toast.classList.remove('show'), 2000);
         }
         
+        // Modal functions
+        let currentModalPost = null;
+        
+        function openPostModal(index) {
+            if (!allPosts || !allPosts[index]) return;
+            
+            const post = allPosts[index];
+            currentModalPost = post;
+            
+            const domain = (post.domains && post.domains[0]) || post.domain || 'GRC';
+            const content = post.linkedin_post || post.content || '';
+            const template = post.template_used || post.template_name || 'Insight';
+            const date = post.generated_at ? new Date(post.generated_at).toLocaleDateString() : '';
+            
+            document.getElementById('modalDomain').textContent = domain;
+            document.getElementById('modalTemplate').textContent = template;
+            document.getElementById('modalDate').textContent = date;
+            document.getElementById('modalContent').textContent = content;
+            
+            document.getElementById('postModal').classList.add('show');
+        }
+        
+        function closeModal() {
+            document.getElementById('postModal').classList.remove('show');
+            currentModalPost = null;
+        }
+        
+        function copyModalPost() {
+            if (currentModalPost) {
+                const content = currentModalPost.linkedin_post || currentModalPost.content || '';
+                navigator.clipboard.writeText(content);
+                showToast('✓ Post copied to clipboard');
+            }
+        }
+        
         // Keyboard shortcuts
         document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') logout();
+            if (e.key === 'Escape') {
+                if (document.getElementById('postModal').classList.contains('show')) {
+                    closeModal();
+                } else {
+                    logout();
+                }
+            }
             if (e.ctrlKey && e.key === 'c' && document.activeElement.tagName !== 'INPUT') {
                 e.preventDefault();
                 copyPost(domainPosts[0]?.content || '');
