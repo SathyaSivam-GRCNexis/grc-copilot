@@ -340,5 +340,23 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-12T02:38:54.799828"
+  },
+  {
+    "title": "How to use NIST and ISO frameworks to govern AI agents",
+    "linkedin_post": "**A Pattern I Keep Noticing: Misapplying NIST and ISO Frameworks to Govern AI Agents**\n\nOne mistake I see repeatedly when organizations attempt to govern AI agents using the NIST and ISO frameworks is treating them as separate, one-time assessments rather than ongoing processes. Specifically, they tend to focus solely on the AI/ML development lifecycle (ADL) phase, neglecting the subsequent operational deployment and maintenance phases.\n\n**Consequences of Misapplication:**\n\n\u2022 AI agents are deployed without adequate risk assessments, leading to potential biases and inaccuracies.\n\u2022 Compliance and regulatory requirements are not properly addressed, resulting in costly fines and reputational damage.\n\u2022 The organization fails to capture valuable insights from AI-generated data, missing opportunities for innovation and growth.\n\n**Solution:**\n\nI recommend that organizations integrate NIST and ISO frameworks into their AI governance strategies by incorporating regular risk assessments, compliance checks, and data analytics throughout the AI lifecycle. This ensures that AI agents are continuously monitored and improved, reducing the risk of errors and maintaining regulatory compliance.\n\n**Have you seen this pattern in your organization? How do you ensure ongoing governance of your AI agents?**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-12T16:23:49.157320"
+  },
+  {
+    "title": "The seven operating truths of AI-native companies",
+    "linkedin_post": "Early in my career, I was tasked with launching a new product at a traditional company trying to make the transition to AI-native. The challenge was clear: our existing processes were slowing us down, and our competitors were nipping at our heels with more agile offerings.\n\nI struggled to balance the need for innovation with the constraints of our existing infrastructure. It felt like trying to get a cat to walk through a doorway without getting scratched \u2013 we just couldn't seem to find the right fit.\n\nThen, something clicked. I realized that the seven operating truths of AI-native companies \u2013 data-driven decision-making, continuous experimentation, and a focus on customer experience, to name a few \u2013 were not just buzzwords, but fundamental principles that would make or break our product's success.\n\nI learned that the key to thriving in this environment was to be willing to experiment and adapt quickly, just like an AI-native company. Today, I apply this lesson to every product launch, recognizing that the only way to stay ahead is to be willing to disrupt our own processes and take calculated risks.\n\nWhat lessons have you learned from navigating the AI-native landscape?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-12T16:28:30.315395"
   }
 ]
