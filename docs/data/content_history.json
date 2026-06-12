@@ -294,5 +294,51 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-11T17:08:39.738550"
+  },
+  {
+    "title": "CISA BOD 26-04: Frequently asked questions about the new risk-based patching directive",
+    "linkedin_post": "**A Misstep in Risk-Based Patching: Misclassifying Vulnerability Severity**\n\nOne mistake I see repeatedly in our risk-based patching implementations is misclassifying vulnerability severity. Specifically, IT teams tend to focus on CVSS (Common Vulnerability Scoring System) scores, overlooking the actual risk exposure of each vulnerability in their environment.\n\n**The Consequences:**\n\n\u2022 **Inaccurate Risk Assessments**: Misclassifying vulnerability severity leads to incorrect risk assessments, causing teams to prioritize patches based on arbitrary scores rather than real-world risks.\n\u2022 **Inefficient Patching**: This approach results in inefficient patching, as resources are wasted on less critical vulnerabilities while more severe ones remain unaddressed.\n\u2022 **Compliance Issues**: Failing to accurately assess risk can lead to non-compliance with regulatory requirements, such as CISA BOD 26-04, which emphasizes the need for a risk-based approach to patching.\n\n**Avoiding This Misstep:**\n\nTo accurately classify vulnerability severity, I recommend incorporating additional factors, such as:\n\n* Asset criticality and business impact\n* Attack surface and exploitability\n* Patch availability and deployment complexity\n\nBy considering these factors, teams can develop a more nuanced understanding of risk and prioritize patching efforts accordingly.\n\nHave you encountered similar misclassifications in your risk assessments? How do you ensure accurate vulnerability severity classifications in your organization?",
+    "domains": [
+      "GRC",
+      "Security"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-12T02:28:01.889793"
+  },
+  {
+    "title": "Two clean companies, one exposed entity",
+    "linkedin_post": "**The Cloud Paradox: When Clean Lines Hide Dirty Secrets**\n\nI used to think that cloud infrastructure was inherently more secure than on-premises environments. After all, the cloud giants have massive resources to dedicate to security. But then I learned about a notorious breach at a cloud-resident company that had followed every best practice in place.\n\n**LESSON:** Clean systems don't guarantee clean data. Even with robust security measures, human error and third-party vulnerabilities can still expose sensitive information.\n\n**FRAMEWORK:** The Three-Layer Threat Model:\n\n1. **External Threats**: Hackers and malicious actors targeting the cloud provider, infrastructure, or data.\n2. **Internal Threats**: Misconfigured systems, human error, or insider threats exploiting vulnerabilities within the organization.\n3. **Third-Party Threats**: Vulnerabilities in the supply chain, such as compromised software or partner companies with insecure practices.\n\n**ADVICE:**\n\n* **Early career**: Focus on understanding the Three-Layer Threat Model and its implications for cloud security.\n* **Mid-career**: Develop expertise in risk assessment and mitigation strategies for each layer.\n* **Senior career**: Lead teams in implementing comprehensive security frameworks that address all three layers.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-12T02:32:40.038527"
+  },
+  {
+    "title": "Joint Commission Certification Targets Healthcare AI Risks",
+    "linkedin_post": "**A Pattern I Keep Noticing: Joint Commission Certification Misinterpretation of AI Risk Management**\n\nOne mistake I see repeatedly in Joint Commission certification for healthcare organizations is the misinterpretation of AI risk management requirements. Specifically, I've noticed that many organizations conflate their AI risk management plan with their data privacy and security plan.\n\n**The Mistake:**\nThe mistake lies in treating AI risk management as a subset of data privacy and security, rather than a distinct risk management framework. This is reflected in the submission of a single plan that addresses both AI and data security risks. While this might seem like a streamlined approach, it can lead to inadequate consideration of AI-specific risks.\n\n**Consequences:**\n\n\u2022 Inadequate risk assessments: AI risk management requires a different type of assessment, focusing on potential biases, decision-making processes, and unintended consequences.\n\u2022 Incomplete mitigation strategies: AI-specific risks may require unique mitigation strategies, such as human oversight, monitoring, and testing.\n\u2022 Delayed compliance: The Joint Commission may request additional information or evidence to support the organization's AI risk management plan, leading to delays in certification.\n\n**Solution:**\nTo avoid this mistake, healthcare organizations should develop a distinct AI risk management plan that addresses AI-specific risks and mitigation strategies. This plan should be separate from and complementary to the data privacy and security plan.\n\nHave you noticed this pattern in Joint Commission certification submissions?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-12T02:34:13.870891"
+  },
+  {
+    "title": "Atomic Arch npm Campaign Adds Malicious Dependency",
+    "linkedin_post": "**The Dark Side of Open-Source Dependencies: Lessons from the Atomic Arch npm Campaign**\n\nEveryone's talking about the recent Atomic Arch npm campaign, where a malicious dependency was added to thousands of software projects. But the more interesting question is: how did this happen, and what does it reveal about our approach to DevSecOps?\n\nIn my experience, the reliance on open-source dependencies can be a double-edged sword. On one hand, they speed up development and reduce costs. On the other hand, they introduce new attack vectors and security risks. The Atomic Arch campaign highlights the importance of monitoring and securing these dependencies in software development pipelines.\n\nHere are three key takeaways: \n\n* **Unmonitored dependencies are a ticking time bomb**: Without proper monitoring, malicious dependencies can go undetected, putting entire software supply chains at risk.\n* **Transparency is key**: Open-source dependencies require transparency in their development, maintenance, and usage. Developers must be aware of the dependencies they use and their potential security implications.\n* **DevSecOps is not just about security**: It's about integrating security into every stage of software development, from code review to deployment. This means developers, security teams, and operations teams must work together to ensure the integrity of the software supply chain.\n\nWhat does this mean for organizations? They must adopt a more proactive approach to DevSecOps, prioritizing the security and transparency of open-source dependencies. Will we see a shift towards more security-focused development pipelines, or will this incident be just another footnote in the ongoing battle against software vulnerabilities?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-12T02:37:21.336893"
+  },
+  {
+    "title": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
+    "linkedin_post": "**A Lesson in Prioritizing Safety: My Early Days in Product Development**\n\nEarly in my career, I worked on a team building an autonomous vehicle platform. We were all excited about the prospect of revolutionizing transportation with self-driving cars. But as we started testing our robotaxis on real roads, I began to feel a nagging sense of discomfort. Our safety features felt like an afterthought, tacked on to the system as an add-on rather than an integral part of the design.\n\nI remember one particularly harrowing incident where our system failed to detect a pedestrian, and we were lucky to avoid a catastrophic accident. It was a wake-up call that made me realize just how critical it is to prioritize safety in product development. If safety is an afterthought, it's only a matter of time before something goes terribly wrong.\n\nIn my experience, safety must be built into the very fabric of a product, not bolted on as an afterthought. It's a mindset shift that requires a deep understanding of the complexities involved and a commitment to rigorous testing and validation.\n\nSo, I ask: what lessons have you learned about prioritizing safety in product development?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-12T02:38:54.799828"
   }
 ]
