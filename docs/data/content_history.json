@@ -530,5 +530,51 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-15T02:19:05.611086"
+  },
+  {
+    "title": "SearchLeak: How We Turned M365 Copilot Into a One-Click Data Exfiltration Weapon",
+    "linkedin_post": "**Challenging the Assumption: M365 Copilot Isn't a Security Risk**\n\nEveryone says Microsoft 365 Copilot's AI-driven features will revolutionize productivity, but at what cost? I disagree \u2013 the assumption that Copilot doesn't pose a security risk is incomplete.\n\n**Why:**\n\n\u2022 **Lack of transparency**: While Microsoft touts Copilot's benefits, the intricacies of its underlying architecture remain unclear. How do we know that Copilot's data collection and processing practices aren't exposing sensitive information?\n\u2022 **Overemphasis on convenience**: The allure of one-click productivity might lead organizations to overlook the security implications of Copilot. In my experience, convenience often trumps caution, leaving vulnerabilities unaddressed.\n\u2022 **Insufficient training data**: Copilot's AI is only as good as the data it's trained on. What if this data contains biases or inaccuracies, compromising the tool's performance and, by extension, our security posture?\n\u2022 **Misaligned incentives**: Microsoft's primary goal is to drive user adoption, not necessarily to prioritize security. This could lead to a security-by-obscurity approach, where vulnerabilities are intentionally hidden or downplayed.\n\u2022 **Unforeseen consequences**: As Copilot becomes more ubiquitous, its potential for misuse (e.g., data exfiltration) increases. We need to consider the long-term implications of integrating AI-driven tools into our workflows.\n\n**When might the common belief still apply?** If your organization has a robust security framework in place, with clear guidelines for AI tool adoption and regular security audits, the risks associated with M365 Copilot might be mitigated.",
+    "domains": [
+      "Security",
+      "Cloud"
+    ],
+    "template_used": "Contrarian Post",
+    "generated_at": "2026-06-15T17:47:23.756389"
+  },
+  {
+    "title": "What Changed in OWASP Top 10 2025 and Recommendations for Each Category",
+    "linkedin_post": "**What changed my perspective on OWASP Top 10 2025**\n\nI used to think that security was purely a technical problem, something that could be solved with the right software and infrastructure. But then I learned that security is fundamentally an organizational issue.\n\nThe OWASP Top 10 2025 highlights the human element in security vulnerabilities, with categories like \"Security Misconfiguration\" and \"Vulnerable Dependencies\" reflecting the impact of poor processes and practices. The most striking change from previous years is the shift from technical to business-focused categories, emphasizing the importance of security in business decision-making.\n\n**LESSON: People-first security**\n\nThe OWASP Top 10 2025 shows that security is no longer just about patching vulnerabilities, but about understanding the organizational dynamics that create them. This requires a holistic approach that brings together security, development, and business teams to identify and address security risks.\n\n**FRAMEWORK: People-Process-Technology (PPT)**\n\nTo apply this lesson, use the PPT framework to analyze security vulnerabilities:\n\n1. **People**: Identify individuals and teams involved in security-related processes.\n2. **Process**: Map out the workflows and procedures that create security vulnerabilities.\n3. **Technology**: Assess the tools and infrastructure used to address security risks.\n\n**ADVICE:**\n\n- **Entry-level**: Focus on understanding the PPT framework and how it applies to your current role.\n- **Mid-career**: Use the PPT framework to analyze security vulnerabilities in your organization and propose process improvements.\n- **Senior leaders**: Leverage the PPT framework to develop a strategic security plan that aligns with business objectives.\n\n**What career lesson took you years to learn?",
+    "domains": [
+      "GRC"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-15T17:52:01.794033"
+  },
+  {
+    "title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
+    "linkedin_post": "One mistake I see repeatedly in AI development is the failure to distinguish between \"intelligence\" and \"personhood.\" When designing AI agents, teams often conflate the two concepts, assigning human-like qualities to machines that are still far from truly sentient.\n\nThe mistake actually lies in anthropomorphizing AI, imbuing it with human emotions, motivations, and intentions. This can lead to AI systems that mimic human behavior but lack the underlying cognitive framework.\n\nConsequences of this mistake include:\n\n\u2022 **Insufficient accountability**: AI systems that mimic human behavior are harder to hold accountable for their actions, as they are not truly responsible agents.\n\u2022 **Lack of empathy**: Relying on human-like AI agents can create unrealistic expectations, leading to disappointment and frustration when they fail to demonstrate true empathy.\n\u2022 **Risk of exploitation**: Anthropomorphized AI agents can be more vulnerable to manipulation and exploitation, as they may be seen as more relatable and trustworthy.\n\nTo avoid this mistake, focus on developing AI systems that are transparent, explainable, and grounded in cognitive frameworks that accurately reflect their capabilities. NewCore's approach to giving AI agents identities may be a step in the right direction, but it's essential to prioritize substance over superficial human-like traits.\n\nHave you seen similar issues in your own work with AI development?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-15T17:53:35.203299"
+  },
+  {
+    "title": "Revoir le webinaire - Pixels de suivi dans les courriels : pr\u00e9sentation des recommandations de la CNIL",
+    "linkedin_post": "**The Pixel Puzzle: A Framework for Tracking Pixel Compliance**\n\n**Problem:** As marketers and business leaders, we're often faced with the challenge of balancing online tracking and data collection with consumer privacy expectations. With the CNIL (Commission nationale de l'informatique et des libert\u00e9s) releasing guidelines on pixel tracking in emails, I've developed a mental model to help navigate this complex issue.\n\n**The Pixel Puzzle Framework:**\n\n1. **Identify the Pixel**: Recognize the pixels used in your email campaigns, whether it's Facebook, Google, or custom trackers. Be aware of the data being collected and how it's being shared.\n\n2. **Assess the Risk**: Evaluate the potential risks associated with pixel tracking in your specific context. Consider factors like data sensitivity, user consent, and regulatory requirements.\n\n3. **Mitigate the Impact**: Implement measures to minimize the impact of pixel tracking on user privacy. This may involve anonymizing data, using consent-based tracking, or opt-in/opt-out mechanisms.\n\n4. **Evaluate Alternatives**: Explore alternative tracking methods that prioritize user consent and data protection. This could involve using first-party data or more transparent, user-centric approaches.\n\n5. **Continuously Monitor**: Regularly review and update your pixel tracking practices to ensure compliance with evolving regulations and user expectations.\n\n**Application:** Whenever I'm planning an email campaign, I start with these questions: \"What pixels am I using? What data am I collecting? How will I obtain user consent?\" By asking these questions, I can ensure that my tracking practices align with user privacy expectations and regulatory requirements.\n\n**Save this framework for your next email campaign and ensure you're building trust with your users while meeting regulatory demands.**",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-06-15T17:55:08.943652"
+  },
+  {
+    "title": "Docker joins the Athena coalition: a cross-industry collaboration for supply chain security",
+    "linkedin_post": "**Supply Chain Security Takes Center Stage**\n\nEveryone is discussing the growing threat of AI-powered attacks in the cloud, but the more interesting question is: how do we prevent these attacks from exploiting vulnerabilities in our software supply chains?\n\nIn my experience, the answer lies in the growing importance of cross-industry collaborations like the Athena coalition, to which Docker has just joined. By pooling resources and expertise, organizations can better identify and mitigate risks in their supply chains. This is crucial, as the use of open-source components in cloud-native applications has created a complex web of dependencies that are increasingly vulnerable to attack.\n\nHere are three key takeaways for DevSecOps professionals:\n\n* **Visibility is key**: By leveraging tools like Docker, organizations can gain better visibility into their software components and dependencies, making it easier to identify potential vulnerabilities.\n* **Collaboration is essential**: Cross-industry collaborations like Athena can share knowledge, best practices, and threat intelligence, helping to stay ahead of emerging threats.\n* **Automation is critical**: With the help of AI-powered tools, organizations can automate the process of vulnerability scanning and remediation, reducing the risk of human error.\n\nSo, what should organizations do to prioritize supply chain security in the cloud?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-15T17:56:42.188596"
   }
 ]
