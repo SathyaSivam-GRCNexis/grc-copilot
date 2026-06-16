@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**The Hidden Dangers of Search Functionality**\nA company's search function can be a backdoor into sensitive data.\n"
+      "content": "**Risk Management is Not a One-Time Test**\nImagine driving a car without knowing the road conditions ahead. You may pass the initial test, but you'll fail when faced with unexpected challenges.\n"
     },
     {
       "slide_number": 2,
-      "content": "**Data Discovery: The Double-Edged Sword**\nData discovery tools, like search functions, are designed to help employees find information quickly. However, they can also be exploited by insiders or hackers to access sensitive data.\n"
+      "content": "**Risk Assessment is Ongoing**\nHeading: Continuous Vigilance\nThink of risk assessment as scanning the road for potential hazards, not just the initial safety inspection. Regular checks help you adapt to changing conditions and avoid accidents.\n"
     },
     {
       "slide_number": 3,
-      "content": "**The \"Accidental\" Data Leak**\nImagine an insider searching for a document using a search engine and unintentionally stumbling upon sensitive information. This highlights the importance of proper access controls and data classification.\n"
+      "content": "**Governance is Not a Hierarchy**\nHeading: Flattening the Organizational Chart\nImagine a team working together to navigate through a dense forest. Each member's unique perspective and expertise help the group avoid pitfalls and stay on course.\n"
     },
     {
       "slide_number": 4,
-      "content": "**The \"Invisible\" Threat**\nMany companies rely on search functions to index and make their data searchable. However, these search engines can also be used to exfiltrate data without the IT department's knowledge.\n"
+      "content": "**Compliance is Not a Checkbox**\nHeading: Beyond the Minimum Requirements\nThink of compliance as a recipe for a delicious meal. Meeting the basic requirements is like having the ingredients, but failing to follow the instructions results in a subpar dish.\n"
     },
     {
       "slide_number": 5,
-      "content": "**The \"Misconfigured\" Search Engine**\nA misconfigured search engine can lead to data being indexed and made accessible to unauthorized users. This can be a result of inadequate security settings or poor configuration.\n"
+      "content": "**Crisis Management is Not a Script**\nHeading: Thinking on Your Feet\nImagine responding to a sudden medical emergency. A well-rehearsed plan is helpful, but flexibility and quick thinking are crucial to saving lives.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nRegularly review and configure your search engine settings to ensure they are secure and compliant with your organization's data protection policies. This includes implementing proper access controls, data classification, and monitoring.\n"
+      "content": "**What This Means For You**\nTake a proactive approach to risk management by regularly evaluating and updating your processes. This will help you stay resilient in the face of unexpected challenges and reduce the likelihood of costly compliance gaps.\n"
     },
     {
       "slide_number": 7,
-      "content": "Follow me for more GRC insights to stay ahead of emerging security threats and ensure the integrity of your organization's sensitive data.\n"
+      "content": "Follow for more GRC insights to stay ahead of emerging security threats and turn readiness into resilience.\n"
     }
   ],
-  "raw_content": "Here are 7 original educational carousel slides teaching the concept behind search leak vulnerabilities in Microsoft 365 Copilot Enterprise Search:\n\n**SLIDE 1:**\n**The Hidden Dangers of Search Functionality**\nA company's search function can be a backdoor into sensitive data.\n\n**SLIDE 2:**\n**Data Discovery: The Double-Edged Sword**\nData discovery tools, like search functions, are designed to help employees find information quickly. However, they can also be exploited by insiders or hackers to access sensitive data.\n\n**SLIDE 3:**\n**The \"Accidental\" Data Leak**\nImagine an insider searching for a document using a search engine and unintentionally stumbling upon sensitive information. This highlights the importance of proper access controls and data classification.\n\n**SLIDE 4:**\n**The \"Invisible\" Threat**\nMany companies rely on search functions to index and make their data searchable. However, these search engines can also be used to exfiltrate data without the IT department's knowledge.\n\n**SLIDE 5:**\n**The \"Misconfigured\" Search Engine**\nA misconfigured search engine can lead to data being indexed and made accessible to unauthorized users. This can be a result of inadequate security settings or poor configuration.\n\n**SLIDE 6:**\n**What This Means For You**\nRegularly review and configure your search engine settings to ensure they are secure and compliant with your organization's data protection policies. This includes implementing proper access controls, data classification, and monitoring.\n\n**SLIDE 7:**\nFollow me for more GRC insights to stay ahead of emerging security threats and ensure the integrity of your organization's sensitive data.",
+  "raw_content": "Here are the 7 original educational carousel slides on the topic \"NIS2 is raising the bar. Here's how to turn readiness into resilience.\"\n\n**SLIDE 1:**\n**Risk Management is Not a One-Time Test**\nImagine driving a car without knowing the road conditions ahead. You may pass the initial test, but you'll fail when faced with unexpected challenges.\n\n**SLIDE 2:**\n**Risk Assessment is Ongoing**\nHeading: Continuous Vigilance\nThink of risk assessment as scanning the road for potential hazards, not just the initial safety inspection. Regular checks help you adapt to changing conditions and avoid accidents.\n\n**SLIDE 3:**\n**Governance is Not a Hierarchy**\nHeading: Flattening the Organizational Chart\nImagine a team working together to navigate through a dense forest. Each member's unique perspective and expertise help the group avoid pitfalls and stay on course.\n\n**SLIDE 4:**\n**Compliance is Not a Checkbox**\nHeading: Beyond the Minimum Requirements\nThink of compliance as a recipe for a delicious meal. Meeting the basic requirements is like having the ingredients, but failing to follow the instructions results in a subpar dish.\n\n**SLIDE 5:**\n**Crisis Management is Not a Script**\nHeading: Thinking on Your Feet\nImagine responding to a sudden medical emergency. A well-rehearsed plan is helpful, but flexibility and quick thinking are crucial to saving lives.\n\n**SLIDE 6:**\n**What This Means For You**\nTake a proactive approach to risk management by regularly evaluating and updating your processes. This will help you stay resilient in the face of unexpected challenges and reduce the likelihood of costly compliance gaps.\n\n**SLIDE 7:**\nFollow for more GRC insights to stay ahead of emerging security threats and turn readiness into resilience.",
   "inspired_by": {
-    "topic": "SearchLeak: How We Turned M365 Copilot Into a One-Click Data Exfiltration Weapon",
+    "topic": "NIS2 is raising the bar. Here\u2019s how to turn readiness into resilience.",
     "domains": [
-      "Security",
+      "GRC",
       "Cloud"
     ]
   },
-  "generated_at": "2026-06-16T02:43:03.992469",
+  "generated_at": "2026-06-16T18:07:42.139875",
   "type": "carousel",
   "copyright_safe": true
 }
