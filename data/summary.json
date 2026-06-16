@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-15T17:59:48.833861",
-  "articles_fetched": 112,
-  "articles_scored": 112,
+  "last_updated": "2026-06-16T02:44:35.930182",
+  "articles_fetched": 104,
+  "articles_scored": 104,
   "top_article": {
     "title": "SearchLeak: How We Turned M365 Copilot Into a One-Click Data Exfiltration Weapon",
     "score": 8,
@@ -11,6 +11,6 @@
     "linkedin_post": true,
     "domain_posts": 7,
     "carousel": true,
-    "newsletter": false
+    "newsletter": true
   }
 }
