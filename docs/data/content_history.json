@@ -749,5 +749,42 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-18T03:04:29.661174"
+  },
+  {
+    "title": "Seeing the Full Picture: Why Pre- and Post-Designation Exposure Changes Everything in Sanctions Screening",
+    "linkedin_post": "**The Sanctions Screening Blind Spot: Why Pre- and Post-Designation Exposure Matters**\n\nEveryone's talking about the surge in sanctions-related risks in the crypto industry. But the more interesting question is: are we looking at the full picture when it comes to sanctions screening?\n\nIn my experience, the emphasis is often on the \"in-between\" \u2013 the time between a company's knowledge of a sanction designation and its implementation. But what about the periods before and after? Pre-designation exposure (i.e., the time before a sanction is imposed) and post-designation exposure (i.e., the time after a sanction is lifted or becomes obsolete) are equally critical to consider.\n\nFor instance, pre-designation exposure can lead to unwitting transactions with sanctioned parties, while post-designation exposure can result in unnecessary compliance burdens. Ignoring these phases can lead to a fragmented view of sanctions screening, putting organizations at risk.\n\nSo, what should organizations do? They should aim for a comprehensive sanctions screening framework that considers the entire lifecycle \u2013 from pre-designation to post-designation exposure. This means integrating both retroactive and prospective screening, as well as continuous monitoring of sanction designations.\n\nWhat does this mean for the future? As the crypto industry continues to grow, I predict that we'll see more emphasis on end-to-end sanctions screening solutions that account for the complexities of pre- and post-designation exposure.",
+    "domains": [
+      "GRC",
+      "Cloud"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-18T16:57:03.293951"
+  },
+  {
+    "title": "The Scripts on Your Checkout Page Are Now a PCI DSS Problem",
+    "linkedin_post": "**The Scripts on Your Checkout Page Are Now a PCI DSS Problem**\n\nOne mistake I see repeatedly in e-commerce platforms is the improper handling of scripts on the checkout page. Specifically, many sites use third-party scripts (e.g., customer review widgets, social media feeds) that collect sensitive payment information, thereby violating PCI DSS (Payment Card Industry Data Security Standard) requirements.\n\n**Consequences:**\n\n\u2022 **Compliance risks**: Failing to secure payment data puts your business at risk of non-compliance with PCI DSS, potentially leading to fines, penalties, and reputational damage.\n\u2022 **Data breaches**: Insecure scripts can be exploited by attackers, compromising sensitive customer data and putting your customers at risk of identity theft.\n\u2022 **Reputation damage**: A data breach can lead to a loss of customer trust and loyalty, making it challenging to recover.\n\n**Solution:**\n\nTo avoid this mistake, ensure that any third-party scripts used on your checkout page are properly secured and validated by the relevant PCI DSS guidelines. This involves implementing secure protocol (HTTPS) for script loading, validating the script's origin, and regularly updating scripts to the latest versions. \n\n**Have you seen similar mistakes in your e-commerce platform? How do you handle third-party scripts on your checkout page?**",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-18T17:03:15.865806"
+  },
+  {
+    "title": "How software development\u2019s speed obsession enabled TeamPCP\u2019s chaos crusade",
+    "linkedin_post": "**The Dark Side of Speed: How DevOps Exposed Teams to Chaos**\n\nEveryone's discussing the shocking rise of TeamPCP's attacks, but I think that's a symptom of a deeper issue. The more interesting question is: what role did the DevOps community play in creating an environment ripe for these kinds of attacks?\n\nIn my experience, the DevOps mantra of speed above all else has led to a disturbing trend: security taking a backseat to rapid development. This is precisely the opposite of what we should be doing. We need to acknowledge that speed without security is a recipe for disaster, rather than a badge of honor.\n\nHere's what's really at stake: **Point 1**, the rush to deploy code without adequate testing and validation has created a situation where vulnerabilities are not being caught until it's too late. **Point 2**, the focus on developer productivity has led to a lack of visibility and control over security configurations, leaving organizations exposed to attacks. **Point 3**, the lack of integration between development and security teams has resulted in a disjointed approach to risk management.\n\nSo, what should organizations take away from this? They need to prioritize a balanced approach to DevOps, one that combines speed with security. This means investing in tools and processes that enable secure development practices from the outset, rather than trying to patch vulnerabilities later on.\n\nWill this shift in focus be enough to prevent the next TeamPCP-style attack? Only time will tell, but one thing is certain: if we don't change our approach, we'll continue to be caught off guard by the chaos that ensues. Can organizations truly adopt a culture of security and still meet the demands of rapid development?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-18T17:06:22.940480"
+  },
+  {
+    "title": "The rise of the agentic shopper: ASOS\u2019s AI investment",
+    "linkedin_post": "**The Agentic Shopper: A Lesson from ASOS**\n\nI still remember the day I realized the retail industry was changing forever. It was around 2015, and I was working in e-commerce, trying to convince our team to invest in AI-powered product recommendations. We were struggling to keep up with customer demand and were plagued by high returns and low conversion rates. I'd seen it before: customers were getting frustrated with the same old \"recommended for you\" lists that were often just a rehash of what we thought they liked, not what they actually wanted.\n\nThat's when I stumbled upon ASOS's AI investment. They were pioneering the use of machine learning to truly understand their customers' behavior and preferences. It was like a lightbulb went off \u2013 I realized that the future of retail wasn't about pushing products; it was about anticipating and delivering on customer needs. Today, I apply this lesson by working with clients to create personalized experiences that empower customers to take control of their shopping journey. What lessons have you learned about the rise of the agentic shopper?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-18T17:07:56.159409"
   }
 ]
