@@ -1,18 +1,19 @@
 {
-  "content": "**The Sanctions Screening Blind Spot: Why Pre- and Post-Designation Exposure Matters**\n\nEveryone's talking about the surge in sanctions-related risks in the crypto industry. But the more interesting question is: are we looking at the full picture when it comes to sanctions screening?\n\nIn my experience, the emphasis is often on the \"in-between\" \u2013 the time between a company's knowledge of a sanction designation and its implementation. But what about the periods before and after? Pre-designation exposure (i.e., the time before a sanction is imposed) and post-designation exposure (i.e., the time after a sanction is lifted or becomes obsolete) are equally critical to consider.\n\nFor instance, pre-designation exposure can lead to unwitting transactions with sanctioned parties, while post-designation exposure can result in unnecessary compliance burdens. Ignoring these phases can lead to a fragmented view of sanctions screening, putting organizations at risk.\n\nSo, what should organizations do? They should aim for a comprehensive sanctions screening framework that considers the entire lifecycle \u2013 from pre-designation to post-designation exposure. This means integrating both retroactive and prospective screening, as well as continuous monitoring of sanction designations.\n\nWhat does this mean for the future? As the crypto industry continues to grow, I predict that we'll see more emphasis on end-to-end sanctions screening solutions that account for the complexities of pre- and post-designation exposure.",
-  "template_used": "news_analysis",
-  "template_name": "News Analysis Post",
+  "content": "**Operationalize CISA BOD 26-04 with Tenable One: A Common Pitfall**\n\nOne mistake I see repeatedly when implementing CISA BOD 26-04 with Tenable One is misapplying the \"Risk Management Framework\" (RMF) to the entire organization, rather than focusing on the \"Critical Infrastructure Control Systems\" (CICS) defined in the BOD.\n\n**What's the mistake?**\nThe mistake is treating BOD 26-04 as a generic cybersecurity framework, instead of recognizing it specifically targets CICS. This leads to an over-engineered RMF process that wastes resources and doesn't provide the targeted protection required by the BOD.\n\n**Consequences:**\n\n\u2022 Extraordinary administrative burdens on security teams\n\u2022 Inefficient allocation of resources\n\u2022 Misaligned security controls with the actual CICS\n\n**Solution:**\nTo avoid this pitfall, security teams should focus on identifying and prioritizing CICS within the organization, and then apply the RMF and BOD 26-04 controls specifically to these systems. This targeted approach will ensure compliance with the BOD while minimizing unnecessary overhead.\n\nHave you seen organizations fall into this trap? What strategies do you recommend for correctly operationalizing BOD 26-04 with Tenable One?",
+  "template_used": "mistake",
+  "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "Seeing the Full Picture: Why Pre- and Post-Designation Exposure Changes Everything in Sanctions Screening",
-    "concept": "A GRC professional should care about this because it highlights the importance of comprehensive sanctions screening in the crypto industry, which has significant implications for businesses operating in this space.",
+    "topic": "Operationalize CISA BOD 26-04 with Tenable One",
+    "concept": "A GRC professional should care about this because it highlights a significant shift in vulnerability management guidelines for federal agencies, impacting compliance and risk management.",
     "domains": [
       "GRC",
+      "Security",
       "Cloud"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-06-18T16:57:03.293951",
-  "day_of_week": "Thursday",
+  "generated_at": "2026-06-19T03:12:38.890912",
+  "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true
 }
