@@ -1,18 +1,17 @@
 {
-  "content": "**Operationalize CISA BOD 26-04 with Tenable One: A Common Pitfall**\n\nOne mistake I see repeatedly when implementing CISA BOD 26-04 with Tenable One is misapplying the \"Risk Management Framework\" (RMF) to the entire organization, rather than focusing on the \"Critical Infrastructure Control Systems\" (CICS) defined in the BOD.\n\n**What's the mistake?**\nThe mistake is treating BOD 26-04 as a generic cybersecurity framework, instead of recognizing it specifically targets CICS. This leads to an over-engineered RMF process that wastes resources and doesn't provide the targeted protection required by the BOD.\n\n**Consequences:**\n\n\u2022 Extraordinary administrative burdens on security teams\n\u2022 Inefficient allocation of resources\n\u2022 Misaligned security controls with the actual CICS\n\n**Solution:**\nTo avoid this pitfall, security teams should focus on identifying and prioritizing CICS within the organization, and then apply the RMF and BOD 26-04 controls specifically to these systems. This targeted approach will ensure compliance with the BOD while minimizing unnecessary overhead.\n\nHave you seen organizations fall into this trap? What strategies do you recommend for correctly operationalizing BOD 26-04 with Tenable One?",
+  "content": "One mistake I see repeatedly in Splunk Enterprise deployments is neglecting to update the `splunkweb` password. In my experience, this is a simple yet critical oversight that leaves organizations exposed to attacks like the recent Unauthenticated RCE vulnerability (CVE-2026-20253).\n\nThe mistake is failing to update the default `splunkweb` password, which is often set to a well-known value. This creates a vulnerability that allows attackers to exploit the Unauthenticated RCE weakness, giving them full control over the Splunk instance.\n\nThe consequences of this mistake are severe:\n\n\u2022 Unrestricted access to sensitive data: Attackers can view, modify, and delete critical data stored in Splunk.\n\u2022 System compromise: Unauthenticated RCE allows attackers to execute arbitrary code, compromising the Splunk instance and potentially spreading to other systems.\n\u2022 Data exfiltration: Attackers can steal sensitive data, including confidential information and intellectual property.\n\u2022 Reputation damage: A data breach or system compromise can lead to significant reputational harm and loss of customer trust.\n\nTo avoid this mistake, ensure you update the `splunkweb` password immediately after deployment and change it regularly. Consider implementing a password management policy to enforce strong, unique passwords for all critical Splunk components. Have you noticed other common mistakes in Splunk Enterprise deployments that put your organization at risk?",
   "template_used": "mistake",
   "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "Operationalize CISA BOD 26-04 with Tenable One",
-    "concept": "A GRC professional should care about this because it highlights a significant shift in vulnerability management guidelines for federal agencies, impacting compliance and risk management.",
+    "topic": "Unauthenticated RCE in Splunk Enterprise under active attack (CVE-2026-20253)",
+    "concept": "A GRC professional should care about this because it highlights the importance of timely patching and vulnerability management in cloud-based enterprise solutions.",
     "domains": [
-      "GRC",
       "Security",
       "Cloud"
     ]
   },
-  "domain": "GRC",
-  "generated_at": "2026-06-19T03:12:38.890912",
+  "domain": "Security",
+  "generated_at": "2026-06-19T16:40:50.636317",
   "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true

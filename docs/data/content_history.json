@@ -804,5 +804,33 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-19T03:23:30.137599"
+  },
+  {
+    "title": "Unauthenticated RCE in Splunk Enterprise under active attack (CVE-2026-20253)",
+    "linkedin_post": "One mistake I see repeatedly in Splunk Enterprise deployments is neglecting to update the `splunkweb` password. In my experience, this is a simple yet critical oversight that leaves organizations exposed to attacks like the recent Unauthenticated RCE vulnerability (CVE-2026-20253).\n\nThe mistake is failing to update the default `splunkweb` password, which is often set to a well-known value. This creates a vulnerability that allows attackers to exploit the Unauthenticated RCE weakness, giving them full control over the Splunk instance.\n\nThe consequences of this mistake are severe:\n\n\u2022 Unrestricted access to sensitive data: Attackers can view, modify, and delete critical data stored in Splunk.\n\u2022 System compromise: Unauthenticated RCE allows attackers to execute arbitrary code, compromising the Splunk instance and potentially spreading to other systems.\n\u2022 Data exfiltration: Attackers can steal sensitive data, including confidential information and intellectual property.\n\u2022 Reputation damage: A data breach or system compromise can lead to significant reputational harm and loss of customer trust.\n\nTo avoid this mistake, ensure you update the `splunkweb` password immediately after deployment and change it regularly. Consider implementing a password management policy to enforce strong, unique passwords for all critical Splunk components. Have you noticed other common mistakes in Splunk Enterprise deployments that put your organization at risk?",
+    "domains": [
+      "Security",
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-19T16:40:50.636317"
+  },
+  {
+    "title": "A New Bill Takes Aim at Government Pressure to Silence Lawful Online Speech",
+    "linkedin_post": "One mistake I see repeatedly in discussions about government regulation of online speech is misattributing the concept of \"oversight\" with \"censorship.\" Many assume that when governments exercise oversight over online platforms, they're inherently attempting to silence lawful speech. However, oversight is a crucial control mechanism that ensures online platforms are operating fairly and within the bounds of applicable laws.\n\nIn my experience, this misconception can lead to two main consequences:\n\n\u2022 **Undermining public trust**: When online platforms are perceived as being unfairly targeted for censorship, users may lose faith in their ability to provide a platform for lawful expression.\n\u2022 **Overbroad regulatory responses**: Policymakers, in an effort to address the perceived censorship issue, may introduce overly broad regulations that inadvertently stifle lawful speech.\n\u2022 **Erosion of online freedom of expression**: As a result, online platforms may become more reluctant to host diverse viewpoints, fearing government scrutiny and potential backlash.\n\nTo avoid falling into this trap, it's essential to distinguish between oversight and censorship. Oversight involves ensuring that online platforms adhere to applicable laws and regulations, whereas censorship involves suppressing speech based on its content. By understanding this distinction, we can work towards creating a regulatory environment that protects online freedom of expression while also ensuring that online platforms operate fairly and within the law.\n\nHave you noticed any instances where the concepts of oversight and censorship have been conflated in the context of online speech regulation?",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-19T16:47:02.276416"
+  },
+  {
+    "title": "Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network",
+    "linkedin_post": "**Detecting Rogue Agents: A Framework for Orphaned AI Risks**\n\nWhen it comes to AI, we often focus on the benefits \u2013 automation, efficiency, and innovation. But what about the risks? Specifically, the hidden access risks posed by orphaned AI agents, which can quietly compromise your network. I've noticed that these rogue agents can slip through the cracks, causing significant damage before detection.\n\n**Orphaned AI Agent Framework: \"Agent Tracker\"**\n\nTo identify and mitigate these risks, I recommend the \"Agent Tracker\" framework. This 5-step approach helps you detect and address orphaned AI agents in your network.\n\n**Step 1: Identify Agent Origins**\nDetermine the source of your AI agents, including third-party libraries, APIs, or custom-built models. This involves reviewing your codebase and monitoring logs for agent creation events.\n\n**Step 2: Map Agent Permissions**\nAnalyze the permissions and access rights granted to each AI agent, including network access, data storage, and system privileges. This helps you understand the potential damage an orphaned agent could cause.\n\n**Step 3: Detect Agent Activity**\nSet up monitoring systems to detect unusual agent activity, such as unexplained API calls or data transfers. This alerts you to potential security threats before they become major incidents.\n\n**Step 4: Isolate Agent Resources**\nSegregate agent resources, including data storage and network access, to contain potential risks in the event of an orphaned agent. This minimizes the damage if an agent does escape.\n\n**Step 5: Regularly Review Agent Status**\nSchedule regular reviews to ensure AI agents are still in use and their permissions are up-to-date. This helps prevent orphaned agents from accumulating over time.\n\nWhenever I'm reviewing our organization's AI infrastructure, I start with these questions: What AI agents are running on our network? What permissions do they have? How can we contain and monitor them to prevent rogue activity? Save this framework for your next AI infrastructure review.",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-06-19T16:48:36.033175"
   }
 ]
