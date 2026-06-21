@@ -1,17 +1,17 @@
 {
-  "content": "**Most security programs fail at the basics**\n\nIn my experience, even the most advanced security controls can't compensate for lax patch management. The recent Splunk Enterprise RCE vulnerability (CVE-2026-20253) is a stark reminder of this.\n\nThe vulnerability, which is currently under active attack, highlights the importance of timely patching in enterprise software. Yet, many organizations struggle to prioritize and implement patches, leaving their systems vulnerable to exploitation.\n\nHere's an example of how this can play out: A cloud-based system, like a cloud monitoring platform, goes unpatched for months, and eventually, a critical vulnerability like CVE-2026-20253 is exploited, resulting in a breach.\n\nMost people misunderstand the root cause of such breaches: they attribute them to sophisticated attacks or zero-day exploits. However, the reality is that the biggest vulnerability often lies in the basics \u2013 poor patch management, inadequate vulnerability management, and a lack of attention to timely updates.\n\n**TAKEAWAY:** Patch management is not just a technical nicety, but a critical business imperative that requires a culture of continuous improvement and a prioritization of security updates.\n\n**What's your experience with patch management in large-scale enterprise environments? How do you balance the need for timely patches with the risk of potential downtime or disruptions?**",
+  "content": "**The Surprising Truth About FFIEC Final Authentication Guidance**\n\nMost people assume FFIEC Final Authentication Guidance is just about technical controls, but I've noticed it's more about the customer experience.\n\nIn my experience, financial institutions focus on implementing the latest security measures without considering the human factor. They might invest in advanced authentication tools, but neglect to educate customers on the importance of secure online practices.\n\nFor instance, a bank might require customers to use a token for online banking, but not provide clear instructions on how to use it correctly, or what to do if they encounter a security alert. As a result, frustrated customers might abandon the online channel altogether, increasing the risk of identity theft and financial losses.\n\nThe takeaway is that FFIEC Final Authentication Guidance isn't just about meeting regulatory requirements, but about ensuring a seamless customer experience that balances security and convenience.\n\nWhat do you think is the most significant challenge financial institutions face when implementing FFIEC Final Authentication Guidance, and how can they balance security with customer convenience?",
   "template_used": "insight",
   "template_name": "Insight Post",
   "inspired_by": {
-    "topic": "Unauthenticated RCE in Splunk Enterprise under active attack (CVE-2026-20253)",
-    "concept": "A GRC professional should care about this because it highlights the importance of timely patching and vulnerability management in enterprise software, particularly in cloud-based systems.",
+    "topic": "FFIEC Final Authentication Guidance",
+    "concept": "A GRC professional should care about this because it updates the regulatory expectations for customer authentication and security controls in the online environment, which affects financial institutions and their customers.",
     "domains": [
-      "Security",
+      "GRC",
       "Cloud"
     ]
   },
-  "domain": "Security",
-  "generated_at": "2026-06-21T02:38:04.331862",
+  "domain": "GRC",
+  "generated_at": "2026-06-21T15:16:24.832963",
   "day_of_week": "Sunday",
   "type": "text_post",
   "copyright_safe": true
