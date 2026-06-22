@@ -1,194 +1,31 @@
 [
   {
-    "title": "FFIEC Final Authentication Guidance",
-    "url": "https://www.databreachtoday.com/agency-releases/ffiec-final-authentication-guidance-r-2480",
-    "summary": "The Final FFIEC Guidance has been issued and its main intent is to reinforce the 2005 Guidance's risk management framework and update the Agencies' expectations regarding customer authentication, layered security, or other controls in the increasingly hostile online environment.",
-    "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-06-21T14:38:49.073582",
-    "fetched_at": "2026-06-21T14:38:49.073599",
-    "score_business": 8,
-    "score_learning": 9,
-    "score_content": 8,
-    "score_compliance": 9,
-    "score": 8,
-    "total_score": 34,
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it updates the regulatory expectations for customer authentication and security controls in the online environment, which affects financial institutions and their customers.",
-    "content_angle": "Create a post explaining the key takeaways from the FFIEC Guidance and how it impacts financial institutions' security and compliance strategies, highlighting the importance of customer authentication and layered security controls."
-  },
-  {
-    "title": "NIST SP 800-39: Managing Information Security Risk",
-    "url": "https://www.govinfosecurity.com/agency-releases/nist-sp-800-39-managing-information-security-risk-r-2353",
-    "summary": "Organization, Mission and Information System View",
-    "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:48.108598",
-    "fetched_at": "2026-06-21T14:38:48.108608",
-    "score_business": 6,
-    "score_learning": 9,
-    "score_content": 8,
-    "score_compliance": 8,
-    "score": 8,
-    "total_score": 31,
-    "domains": [
-      "GRC",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this article because it provides foundational knowledge on managing information security risk, a crucial aspect of organizational governance and risk management.",
-    "content_angle": "Create a post or newsletter discussing the importance of NIST SP 800-39 in managing information security risk, highlighting its key concepts and takeaways for GRC professionals."
-  },
-  {
-    "title": "HIPAA's No Joke: Gag Gift Firm's Health Plan Pays $450K Fine",
-    "url": "https://www.bankinfosecurity.com/hipaas-no-joke-gag-gift-firms-health-plan-pays-450k-fine-a-32032",
-    "summary": "Investigation of Spencer's Gifts Ransomware Breach Unearths Data Privacy ViolationsThe employer-sponsored health plan of novelty merchandise retailer Spencer Gift has paid a $450,000 HIPAA penalty and agreed to implement a corrective action plan to resolve findings of a federal breach investigation into a 2021 attack by now-defunct ransomware gang Conti.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915839",
-    "fetched_at": "2026-06-21T14:38:46.915862",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 7,
-    "score_compliance": 9,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "GRC",
-      "Privacy",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of HIPAA compliance and the financial consequences of data privacy violations.",
-    "content_angle": "Create a post or newsletter discussing 'HIPAA Compliance Best Practices' and how to avoid costly fines, using this article as a case study."
-  },
-  {
-    "title": "FFIEC: Statement on End of Microsoft Support for Windows XP",
-    "url": "https://www.bankinfosecurity.com/agency-releases/ffiec-statement-on-end-microsoft-support-for-windows-xp-r-2803",
-    "summary": "The FFIEC on Oct. 7 issued a joint statement concerning Microsoft's discontinuation of support for its Windows XP operating system as of April 8, 2014.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915970",
-    "fetched_at": "2026-06-21T14:38:46.915986",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 7,
-    "score_compliance": 9,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of timely software updates and support for maintaining organizational security and compliance.",
-    "content_angle": "Create a post on 'The Importance of Timely Software Updates for Compliance and Security' and use this article as a case study to illustrate the risks of not keeping up with software support."
-  },
-  {
-    "title": "NIST FIPS PUB 201-2: Personal Identity Verification of Federal Employees and Contractors DRAFT",
-    "url": "https://www.govinfosecurity.com/agency-releases/nist-fips-pub-201-2-personal-identity-verification-federal-r-2379",
-    "summary": "Specifying architecture and technical requirements for a common identification standard for federal employees and contractors.",
-    "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:48.108577",
-    "fetched_at": "2026-06-21T14:38:48.108590",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 9,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it outlines the technical requirements for a common identification standard for federal employees and contractors, impacting compliance and security in the cloud.",
-    "content_angle": "Create a post explaining the importance of a common identification standard for federal employees and contractors, and how it affects cloud security and compliance."
-  },
-  {
-    "title": "Accounting of Disclosures Under the HITECH Act",
-    "url": "https://www.databreachtoday.com/agency-releases/accounting-disclosures-under-hitech-act-r-2452",
-    "summary": "A notice of proposed rulemaking from the HHS Office for Civil Rights that would modify the HIPAA Privacy Rule standard for accounting of disclosures of protected health information and add new requirements for access reports.",
-    "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-06-21T14:38:49.073607",
-    "fetched_at": "2026-06-21T14:38:49.073624",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 9,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "GRC",
-      "Privacy"
-    ],
-    "score_reason": "A GRC professional should care about this because it affects the compliance landscape for healthcare organizations and their handling of protected health information.",
-    "content_angle": "Create a post highlighting the proposed changes to the HIPAA Privacy Rule and their implications for healthcare organizations, including potential content on how to prepare for the new requirements."
-  },
-  {
-    "title": "AutoJack Attack Lets One Web Page Hijack AI Agent for Host Code Execution",
-    "url": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
-    "summary": "Microsoft researchers have detailed an exploit chain, named&nbsp;AutoJack, that turns an AI browsing agent into a delivery vehicle for remote code execution. Steer the agent to load an attacker's web page, and that page's JavaScript can reach a privileged local service on the same machine and spawn a process on the host. No credentials, no sign-in screen, and no further user interaction once",
-    "source": "The Hacker News",
-    "published": "2026-06-19T21:00:47",
-    "fetched_at": "2026-06-21T14:38:59.718353",
-    "score_business": 8,
-    "score_learning": 9,
-    "score_content": 8,
-    "score_compliance": 5,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "Security",
-      "AI",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the potential for AI agents to be exploited, compromising both security and compliance.",
-    "content_angle": "Create a post titled '5 Ways to Secure AI Agents from Exploits' and use this article as an example of the AutoJack attack, discussing the importance of implementing robust security measures to prevent such breaches."
-  },
-  {
-    "title": "Forget Data Leakage: Shadow AI's Real Threat Is Access Control",
-    "url": "https://thehackernews.com/2026/06/forget-data-leakage-shadow-ais-real.html",
-    "summary": "The first wave of enterprise AI concern was straightforward. It was simply employees pasting sensitive data into public AI tools. Security teams responded with usage policies, domain blocks, and data loss prevention rules. That response made sense at the time. It doesn't fit the problem anymore. Shadow AI has shifted from a data leakage concern to an access control problem. The threat isn't",
-    "source": "The Hacker News",
-    "published": "2026-06-19T16:00:00",
-    "fetched_at": "2026-06-21T14:38:59.718775",
-    "score_business": 8,
-    "score_learning": 9,
-    "score_content": 8,
-    "score_compliance": 5,
-    "score": 8,
-    "total_score": 30,
-    "domains": [
-      "GRC",
-      "Security",
-      "AI"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the evolving nature of AI-related risks and the need for organizations to adapt their access control strategies.",
-    "content_angle": "Create a post or newsletter discussing the shift from data leakage to access control concerns in Shadow AI and provide actionable tips for organizations to strengthen their access control measures."
-  },
-  {
-    "title": "CISA Warns Fortinet Customers as FortiBleed Hits 86,644 FortiGate Devices",
-    "url": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday urged Fortinet customers with FortiGate appliances to take steps to secure against ongoing malicious activity aimed at thousands of internet-accessible devices. The sweeping campaign, believed to be the work of Russian-speaking threat actors, has been codenamed FortiBleed. The number of compromised devices stands at",
-    "source": "The Hacker News",
-    "published": "2026-06-19T19:30:21",
-    "fetched_at": "2026-06-21T14:38:59.718567",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 8,
-    "score_compliance": 7,
-    "score": 7,
-    "total_score": 29,
-    "domains": [
-      "Security",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of vulnerability management and patching in cloud environments.",
-    "content_angle": "Create a post on 'Cloud Security Best Practices: Lessons from FortiBleed' highlighting the importance of regular vulnerability scans and patching in cloud environments."
-  },
-  {
     "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
     "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
     "summary": "We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. The post Threat Brief: Mitigating Large-Scale Credential Attacks appeared first on Unit 42.",
     "source": "Unit 42",
     "published": "2026-06-20T02:05:33",
-    "fetched_at": "2026-06-21T14:39:01.716726",
+    "fetched_at": "2026-06-22T02:02:12.637479",
+    "score_business": 8,
+    "score_learning": 9,
+    "score_content": 8,
+    "score_compliance": 5,
+    "score": 8,
+    "total_score": 30,
+    "domains": [
+      "Security",
+      "Cloud"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the importance of credential security and the potential impact on organizations' infrastructure and data.",
+    "content_angle": "Create a post on 'Best Practices for Credential Security in Cloud Environments' and discuss the recent campaigns targeting security vendors' devices, providing actionable tips for mitigation and prevention."
+  },
+  {
+    "title": "Loop Engineering: The Missing Governance Layer for Reliable AI Agents",
+    "url": "https://pub.towardsai.net/loop-engineering-the-missing-governance-layer-for-reliable-ai-agents-14961981ec0d?source=rss----98111c9905da---4",
+    "summary": "credit Author: generated by GPT Image 2.0Why your smartest model still needs a governor, an evaluator, and a hard stop buttonBy Mike Oller | AI Tool insiderI\u2019ve spent the last year building AI agents that do real work \u2014 not just answer questions, but write code, generate reports, schedule tasks, and interact with production systems. And I\u2019ve learned an uncomfortable lesson:The smarter the model gets, the more damage it can do before you realize something went wrong.A GPT-generated poem with a hallucinated fact is harmless. A GPT-generated API call that deletes a production database is not. And",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-22T00:01:01",
+    "fetched_at": "2026-06-22T02:02:39.856952",
     "score_business": 8,
     "score_learning": 9,
     "score_content": 8,
@@ -196,131 +33,51 @@
     "score": 7,
     "total_score": 29,
     "domains": [
-      "Security",
-      "Cloud"
+      "AI",
+      "GRC"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of credential security and mitigation strategies in the face of large-scale attacks.",
-    "content_angle": "Create a post on 'Credential Security Best Practices' and use this article as a case study to illustrate the importance of proactive measures against credential attacks."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of governance in AI development and deployment, which can have significant business and regulatory implications.",
+    "content_angle": "Create a post on 'The Missing Governance Layer for AI: Why You Need a Governor, Evaluator, and Hard Stop Button' that explores the article's key takeaways and provides practical advice for implementing effective AI governance"
   },
   {
-    "title": "FDIC: Supervisory Approach to Payment Processing Relationships with Merchant Customers",
-    "url": "https://www.bankinfosecurity.com/agency-releases/fdic-supervisory-approach-to-payment-processing-relationships-r-2802",
-    "summary": "The FDIC is clarifying its policy and supervisory approach related to facilitating payment processing services directly, or indirectly through a third party, for merchant customers engaged in higher-risk activities.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915994",
-    "fetched_at": "2026-06-21T14:38:46.916009",
+    "title": "Walls, Shields, and Illusions: Defenses and Their Limits",
+    "url": "https://pub.towardsai.net/walls-shields-and-illusions-defenses-and-their-limits-cd67b6ec4f92?source=rss----98111c9905da---4",
+    "summary": "Essay #3 in the Humble Model SeriesI. Introduction: The Arms Race BeginsIn Essay #2, we saw the attack. A well-trained model, 99.19% accurate on clean MNIST, was silent about its own limits. Only 4.4% of images flipped within \u03b5 \u2264 0.40 using FGSM \u2014 but the model could not tell us which 4.4%. It outputs a confidence score near 1.0000 for both the robust majority and the fragile minority.That silence is the vulnerability.But the natural response is not silence \u2014 it is defense.\u201dIf the model is vulnerable to small perturbations, we will train it on those perturbations.\u201d \u2192 Adversarial training\u201dIf th",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T19:01:00",
+    "fetched_at": "2026-06-22T02:02:39.859150",
     "score_business": 6,
-    "score_learning": 7,
-    "score_content": 6,
-    "score_compliance": 9,
-    "score": 7,
-    "total_score": 28,
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it clarifies the FDIC's policy and supervisory approach to payment processing relationships, which may impact financial institutions' risk management and compliance strategies.",
-    "content_angle": "Create a post highlighting the key takeaways from the FDIC's policy update and its potential implications for financial institutions, including risk management and compliance considerations."
-  },
-  {
-    "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
-    "url": "https://www.govinfosecurity.com/agency-releases/nist-sp-800-61-revision-1-computer-security-incident-handling-r-2383",
-    "summary": "Guidance on establishing processes to rapidly detect and respond to cyber incidents.",
-    "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:48.108557",
-    "fetched_at": "2026-06-21T14:38:48.108569",
-    "score_business": 6,
-    "score_learning": 9,
-    "score_content": 8,
-    "score_compliance": 5,
-    "score": 7,
-    "total_score": 28,
-    "domains": [
-      "GRC",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it provides foundational knowledge on incident handling, which is crucial for organizations to mitigate cyber risks.",
-    "content_angle": "Create a post highlighting the key takeaways from the NIST SP 800-61 Revision 1, focusing on the importance of incident handling processes and how they can be applied in real-world scenarios."
-  },
-  {
-    "title": "Annual Report to Congress on Breaches of Unsecured Protected Health Information",
-    "url": "https://www.databreachtoday.com/agency-releases/annual-report-to-congress-on-breaches-unsecured-protected-r-2539",
-    "summary": "The Department of Health and Human Services' Office for Civil Rights provided a report to Congress on health information breaches from September 2009 through 2010, as required under the HITECH Act. Nearly 7.9 million Americans were affected by almost 30,800 health information breaches, according to the report.",
-    "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-06-21T14:38:49.073554",
-    "fetched_at": "2026-06-21T14:38:49.073574",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 5,
-    "score_compliance": 9,
-    "score": 7,
-    "total_score": 28,
-    "domains": [
-      "GRC",
-      "Privacy"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of protecting sensitive health information and the need for organizations to comply with relevant regulations.",
-    "content_angle": "Create a post or newsletter discussing the key takeaways from the report, such as the number of breaches and affected individuals, and provide tips for organizations on how to prevent similar breaches in the future."
-  },
-  {
-    "title": "The Gentlemen RaaS Uses GentleKiller EDR Framework Targeting 400 Security Processes",
-    "url": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
-    "summary": "The Gentlemen ransomware-as-a-service (RaaS) operation is actively developing and maintaining a suite of endpoint detection and response (EDR) killers that it hands out to affiliates for impairing system defenses before deploying the encryptor. This mature portfolio of EDR-terminating tools is centered around a framework that's known as GentleKiller. \"They also incorporate third-party or",
-    "source": "The Hacker News",
-    "published": "2026-06-20T00:03:07",
-    "fetched_at": "2026-06-21T14:38:59.718235",
-    "score_business": 8,
-    "score_learning": 7,
-    "score_content": 8,
-    "score_compliance": 4,
-    "score": 7,
-    "total_score": 27,
-    "domains": [
-      "Security",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the evolving threat landscape and the importance of robust endpoint detection and response (EDR) solutions.",
-    "content_angle": "Create a post on 'Ransomware Evolution: Understanding the Threat of EDR Killers' and explore the implications of GentleKiller on security defenses."
-  },
-  {
-    "title": "From Assistive to Agentic: The AI Shift That's Redefining Threat Management",
-    "url": "https://thehackernews.com/2026/06/from-assistive-to-agentic-ai-shift.html",
-    "summary": "Introduction The average enterprise security team has 40 or more security tools, giving a lot of visibility into internal telemetry and asset data. But often, these tools are working in siloes, generating (overlapping) alerts and data. And yet, breach dwell times remain stubbornly long (~43 days), response windows keep closing before teams can act, and analysts burn out triaging noise instead",
-    "source": "The Hacker News",
-    "published": "2026-06-19T17:28:00",
-    "fetched_at": "2026-06-21T14:38:59.718671",
-    "score_business": 7,
-    "score_learning": 8,
-    "score_content": 8,
-    "score_compliance": 4,
-    "score": 7,
-    "total_score": 27,
-    "domains": [
-      "Security",
-      "AI"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the need for more effective threat management strategies in the face of increasing AI-powered threats.",
-    "content_angle": "Create a post or newsletter discussing the challenges of traditional security tools and the benefits of adopting AI-driven threat management approaches, including examples of successful implementations."
-  },
-  {
-    "title": "Weekly Metasploit Update: NTLM Relay Priv Esc, MCP Server Integration, Paperclip AI RCE Chain, and more",
-    "url": "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-19-06-2026",
-    "summary": "This week's release includes five new modules, including a full unauthenticated RCE chain for Paperclip AI and a VS Code extension persistence technique. On the post-exploitation side, the new windows/local/ntlm_relay_2_self module coerces the local machine account to authenticate via OpenEncryptedFileRaw (WebDAV), relays that NTLM authentication to a Domain Controller's LDAP service, then uses the resulting LDAP session to write Shadow Credentials and obtain a Kerberos service ticket as Administrator via S4U2Proxy, enabling PsExec back to itself for SYSTEM access.On the enhancement side, the ",
-    "source": "Rapid7 Cybersecurity Blog",
-    "published": "2026-06-19T17:08:23",
-    "fetched_at": "2026-06-21T14:39:02.484335",
-    "score_business": 8,
     "score_learning": 9,
     "score_content": 8,
     "score_compliance": 2,
-    "score": 7,
-    "total_score": 27,
+    "score": 6,
+    "total_score": 25,
     "domains": [
-      "Security",
-      "DevSecOps"
+      "AI",
+      "Security"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of staying up-to-date with emerging security threats and vulnerabilities in software, such as Metasploit, to ensure effective risk management and compliance.",
-    "content_angle": "Create a post highlighting the new Metasploit modules and their potential impact on organizations, with a focus on the NTLM relay privilege escalation technique and its implications for security and compliance."
+    "score_reason": "A GRC professional should care about this because it highlights the limitations of defenses and the importance of understanding vulnerabilities in AI models.",
+    "content_angle": "This article would make a great post on the limitations of AI defenses and the importance of ongoing security and risk management in AI development."
+  },
+  {
+    "title": "Thinking Tokens Are Not Free. Most Pipelines Treat Them Like They Are.",
+    "url": "https://pub.towardsai.net/thinking-tokens-are-not-free-most-pipelines-treat-them-like-they-are-846708fdcef1?source=rss----98111c9905da---4",
+    "summary": "The hidden ops problem inside agentic pipelines using OpenAI GPT-5.x and o-series, Claude Opus/Sonnet 4.x, Gemini 3/2.5 reasoning models&#x2026;Continue reading on Towards AI \u00bb",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T18:31:00",
+    "fetched_at": "2026-06-22T02:02:39.859201",
+    "score_business": 6,
+    "score_learning": 8,
+    "score_content": 7,
+    "score_compliance": 4,
+    "score": 6,
+    "total_score": 25,
+    "domains": [
+      "AI",
+      "Security"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the potential risks and vulnerabilities in AI-powered pipelines, which can impact organizational security and compliance.",
+    "content_angle": "Create a post discussing the 'hidden ops problem' in AI-powered pipelines and how it can be mitigated through proper governance, risk management, and compliance practices."
   },
   {
     "title": "Week in review: 74k Fortinet firewall credentials stolen, Splunk Enterprise RCE under active attack",
@@ -328,85 +85,7 @@
     "summary": "Here\u2019s an overview of some of last week\u2019s most interesting news, articles, interviews and videos: A hardware neural network backdoor that hides in plain sight Deep learning systems on edge devices often rely on third-party-designed FPGAs and ASICs for performance and efficiency, creating supply chain risks. Researchers from the University of Tennessee and the University of Florida developed HAMLOCK, a backdoor attack that splits malicious functionality between hardware and software, making detection more difficult. Onspring &#8230; More &#8594; The post Week in review: 74k Fortinet firewall cr",
     "source": "Help Net Security",
     "published": "2026-06-21T08:00:25",
-    "fetched_at": "2026-06-21T15:06:45.793150",
-    "score_business": 8,
-    "score_learning": 7,
-    "score_content": 8,
-    "score_compliance": 4,
-    "score": 7,
-    "total_score": 27,
-    "domains": [
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of supply chain risk management in the context of cybersecurity.",
-    "content_angle": "Create a post on 'Supply Chain Risks in Cybersecurity: How to Mitigate the Threat' and use the article as an example of a backdoor attack that exploits these risks."
-  },
-  {
-    "title": "DoD: Notice of Proposed Rulemaking on Privacy Training",
-    "url": "https://www.govinfosecurity.com/agency-releases/dod-notice-proposed-rulemaking-on-privacy-training-r-2575",
-    "summary": "The Department of Defense and two other government agencies have issued a proposed rule designed to help ensure that government contractors provide adequate privacy training to their staff members.",
-    "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:48.108534",
-    "fetched_at": "2026-06-21T14:38:48.108549",
-    "score_business": 6,
-    "score_learning": 5,
-    "score_content": 7,
-    "score_compliance": 8,
-    "score": 6,
-    "total_score": 26,
-    "domains": [
-      "GRC",
-      "Privacy"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of privacy training in government contracting and may set a precedent for other industries.",
-    "content_angle": "Create a post on the importance of privacy training in government contracting and explore the potential implications for other industries, including a brief overview of the proposed rule and its potential impact on compliance."
-  },
-  {
-    "title": "Operation Endgame Disrupts SocGholish Servers, Cleans 14,971 WordPress Sites",
-    "url": "https://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html",
-    "summary": "Dutch law enforcement authorities, along with counterparts from Canada , Germany, and the U.S., have disrupted malicious infrastructure associated with SocGholish and cleaned up nearly 15,000 infected WordPress websites. \"With these actions we deprive cybercriminals of access to infected computer systems,\" Maikel Rollman of the Netherlands National High Tech Crime Unit said. \"This prevents",
-    "source": "The Hacker News",
-    "published": "2026-06-19T20:37:54",
-    "fetched_at": "2026-06-21T14:38:59.718461",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 8,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 26,
-    "domains": [
-      "Security"
-    ],
-    "score_reason": "GRC professionals should care about this operation as it highlights the impact of international collaboration in disrupting cybercrime and protecting organizations from malicious activities.",
-    "content_angle": "Create a post highlighting the importance of international cooperation in cybersecurity and the benefits of proactive measures in preventing cyber threats."
-  },
-  {
-    "title": "The US banned Anthropic\u2019s Fable 5 release, but the numbers don\u2019t seem to care",
-    "url": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
-    "summary": "Just as last week&#160;was ending,&#160;the US government&#160;forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5&#8217;s guardrails.&#160; Cybersecurity researchers have&#160;since signed an open letter&#160;calling&#160;the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models.&#160;So&#160;is [&#8230;]",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-19T16:01:03",
-    "fetched_at": "2026-06-21T14:39:35.116985",
-    "score_business": 7,
-    "score_learning": 6,
-    "score_content": 8,
-    "score_compliance": 5,
-    "score": 6,
-    "total_score": 26,
-    "domains": [
-      "AI",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the risks and challenges of AI model security and the need for effective governance and compliance frameworks.",
-    "content_angle": "Create a post on 'The Risks of AI Model Security: Lessons from the Anthropic Fable 5 Incident' and discuss the importance of robust guardrails and compliance measures in AI development."
-  },
-  {
-    "title": "North Korean IT Workers Try, Try, Try Again",
-    "url": "https://www.bankinfosecurity.com/north-korean-workers-try-try-try-again-a-32033",
-    "summary": "Nisos Links 166K Applications, 21K Interviews and 76 Job Offers to North KoreaNorth Korean IT worker scammers flooded hundreds of thousands of U.S. companies with applications in 2024 and 2025, appropriating identities and using AI to infiltrate technology sector. Nisos began looking into the scam after a suspected North Korean applied for a lead remote AI architect role.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915798",
-    "fetched_at": "2026-06-21T14:38:46.915829",
+    "fetched_at": "2026-06-22T02:29:47.971415",
     "score_business": 8,
     "score_learning": 6,
     "score_content": 7,
@@ -415,209 +94,10 @@
     "total_score": 25,
     "domains": [
       "Security",
-      "GRC"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the ongoing threat of North Korean IT worker scams and the importance of robust security measures to prevent such infiltrations.",
-    "content_angle": "Create a post titled 'Protecting Against North Korean IT Worker Scams: Lessons Learned' that discusses the tactics used by these scammers and provides tips on how to prevent similar infiltrations."
-  },
-  {
-    "title": "ISMG Editors: Cyber Backlash Over the US Ban on Anthropic AI",
-    "url": "https://www.bankinfosecurity.com/ismg-editors-cyber-backlash-over-us-ban-on-anthropic-ai-a-32030",
-    "summary": "Also: Why Smaller AI Models Are Gaining Ground, CISOs Navigating the AI Trust GapIn this week's panel, four ISMG editors discussed the fallout from U.S. restrictions on Anthropic's most advanced AI models, the growing debate over frontier AI versus smaller models in cybersecurity and a preview of key themes emerging from upcoming ISMG roundtables.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915898",
-    "fetched_at": "2026-06-21T14:38:46.915919",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 25,
-    "domains": [
-      "GRC",
-      "AI"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the regulatory implications of AI model restrictions on organizations and the need for effective risk management.",
-    "content_angle": "Create a post on 'Navigating AI Model Restrictions: Compliance and Risk Considerations for Organizations' and discuss the impact of U.S. restrictions on Anthropic's AI models on businesses and the importance of AI governance in mitigating risks."
-  },
-  {
-    "title": "FDIC Issues Guidance to Areas in Illinois Impacted by Severe Storms",
-    "url": "https://www.bankinfosecurity.com/agency-releases/fdic-issues-guidance-to-areas-in-illinois-impacted-by-severe-r-2805",
-    "summary": "The FDIC has announced a series of steps intended to provide regulatory relief to financial institutions and facilitate recovery in areas of Illinois affected by severe storms, straight-line winds, and tornadoes.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915927",
-    "fetched_at": "2026-06-21T14:38:46.915943",
-    "score_business": 6,
-    "score_learning": 4,
-    "score_content": 7,
-    "score_compliance": 8,
-    "score": 6,
-    "total_score": 25,
-    "domains": [
-      "GRC",
       "Cloud"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the FDIC's response to natural disasters and its impact on financial institutions' compliance and risk management.",
-    "content_angle": "Create a post or newsletter discussing the FDIC's guidance and its implications for financial institutions, highlighting the importance of disaster recovery planning and business continuity in the face of severe weather events."
-  },
-  {
-    "title": "Vibe Machine Learning: Using GenAI for ML, AI and R&D",
-    "url": "https://pub.towardsai.net/vibe-machine-learning-using-genai-for-ml-ai-and-r-d-69bb473676a1?source=rss----98111c9905da---4",
-    "summary": "The rise of AI tools has affected many people across different areas of IT. But the field that has been affected the most is, without a&#x2026;Continue reading on Towards AI \u00bb",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T13:31:01",
-    "fetched_at": "2026-06-21T14:39:34.962660",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 25,
-    "domains": [
-      "AI",
-      "Cloud"
-    ],
-    "score_reason": "A GRC professional should care about this because the rise of AI tools and their impact on various IT fields, including R&D, requires consideration of governance and compliance frameworks.",
-    "content_angle": "Create a post exploring the intersection of AI and GRC, discussing how organizations can balance innovation with regulatory requirements and risk management best practices."
-  },
-  {
-    "title": "Signal\u2019s Meredith Whittaker wants you to remember that AI chatbots \u2018are not your friends\u2019",
-    "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
-    "summary": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.\u201d",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-20T20:32:29",
-    "fetched_at": "2026-06-21T14:39:35.116472",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 25,
-    "domains": [
-      "AI",
-      "GRC"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of understanding the limitations and potential risks of AI chatbots in organizational decision-making.",
-    "content_angle": "Create a post exploring the implications of AI chatbots on organizational governance and risk management, and provide tips for professionals to evaluate and mitigate potential risks."
-  },
-  {
-    "title": "From PGP to Mythos: a brief history of export controls that didn\u2019t stop anyone",
-    "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
-    "summary": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic\u2019s cybersecurity model Mythos.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-19T22:40:14",
-    "fetched_at": "2026-06-21T14:39:35.116773",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 25,
-    "domains": [
-      "Security",
-      "GRC"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the limitations of export controls in stopping the flow of cybersecurity-related software, which can inform risk management strategies.",
-    "content_angle": "Create a post exploring the history of export controls and their effectiveness in stopping the spread of cybersecurity-related software, highlighting the implications for GRC professionals and organizations."
-  },
-  {
-    "title": "Unpatchable 'usbliter8' Exploit Breaks Apple A12 and A13 SecureROM Boot Chain",
-    "url": "https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html",
-    "summary": "Security researchers at&nbsp;Paradigm Shift&nbsp;have published a working exploit, dubbed&nbsp;usbliter8, that achieves arbitrary code execution inside the SecureROM of Apple's A12 and A13 chips. That code is burned into the silicon at manufacture. No software update can reach it. Affected devices will carry this flaw for as long as they stay in use. This is not a remote attack. It requires",
-    "source": "The Hacker News",
-    "published": "2026-06-20T00:07:41",
-    "fetched_at": "2026-06-21T14:38:59.718101",
-    "score_business": 8,
-    "score_learning": 6,
-    "score_content": 8,
-    "score_compliance": 2,
-    "score": 6,
-    "total_score": 24,
-    "domains": [
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the potential for unpatchable security vulnerabilities in widely used hardware, emphasizing the importance of robust security measures and risk management.",
-    "content_angle": "Create a post discussing the implications of unpatchable security vulnerabilities and how organizations can mitigate risks, including strategies for secure hardware design and deployment."
-  },
-  {
-    "title": "Building AI Agents Part 3C: Why Your Framework Choice Will Make or Break Your Production System",
-    "url": "https://pub.towardsai.net/building-ai-agents-part-3c-choosing-the-right-framework-for-agentic-ai-systems-94385179e8cb?source=rss----98111c9905da---4",
-    "summary": "Why the framework that worked in your prototype will stall your production systemContinue reading on Towards AI \u00bb",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T06:43:13",
-    "fetched_at": "2026-06-21T14:39:34.965442",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 8,
-    "score_compliance": 2,
-    "score": 6,
-    "total_score": 24,
-    "domains": [
-      "AI",
-      "DevSecOps"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of choosing the right framework for AI agent production systems, which can impact the overall security and compliance of the system.",
-    "content_angle": "This article could be used to create a post on 'Choosing the Right Framework for AI Agent Production Systems: Best Practices for GRC Professionals' that discusses the importance of framework selection and provides tips for making the right choice."
-  },
-  {
-    "title": "I always change these 7 phone privacy settings on every new device - here's why",
-    "url": "https://www.zdnet.com/article/phone-privacy-settings-to-disable-review-avoid-exposing-data/",
-    "summary": "Your phone holds a lot of personal information, from where you go to who you talk to every day. Here's how to limit who can access your data and when.",
-    "source": "Latest news",
-    "published": "2026-06-21T12:00:43",
-    "fetched_at": "2026-06-21T14:39:06.044447",
-    "score_business": 5,
-    "score_learning": 8,
-    "score_content": 6,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 23,
-    "domains": [
-      "Privacy",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of individual data protection and privacy settings, which is a critical aspect of overall security and compliance.",
-    "content_angle": "Create a post on '7 Essential Phone Security Settings to Protect Your Personal Data' and provide a brief overview of the article's key takeaways, along with additional tips and best practices for securing mobile devices."
-  },
-  {
-    "title": "Agentic AI is not a Feature. It is a New System Design Paradigm.",
-    "url": "https://pub.towardsai.net/agentic-ai-is-not-a-feature-it-is-a-new-system-design-paradigm-5bd793adfd03?source=rss----98111c9905da---4",
-    "summary": "Introduction: From Reliability to ReasoningDistributed systems taught us how to build software that scales, recovers, and performs. Agentic systems demand something deeper \u2014 software that reasons, learns, and earns trust.The shift isn\u2019t just technical; it\u2019s philosophical. Where traditional architecture optimizes for uptime, agentic architecture optimizes for judgment. Each principle below reinterprets a familiar pattern through the lens of autonomy and trust.System design used to be about drawing neat boxes and arrows. Today, those boxes are expected to think, adapt, and earn trust. That shift",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T11:31:01",
-    "fetched_at": "2026-06-21T14:39:34.964476",
-    "score_business": 6,
-    "score_learning": 8,
-    "score_content": 7,
-    "score_compliance": 2,
-    "score": 6,
-    "total_score": 23,
-    "domains": [
-      "AI",
-      "GRC"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights a shift in system design paradigms that may impact organizational risk management and governance.",
-    "content_angle": "Create a post explaining the philosophical shift from traditional to agentic system design, highlighting the implications for GRC professionals and organizations."
-  },
-  {
-    "title": "Exclusive: Former Docusign executive sues company for whistleblower retaliation",
-    "url": "https://www.complianceweek.com/whistleblowers/former-docusign-executive-sues-company-for-whistleblower-retaliation-over-alleged-data-fraud/",
-    "summary": "A former Docusign executive alleged in a federal whistleblower lawsuit that the software company constructively discharged her after she blew the whistle on the company\u2019s mishandling of sensitive data for customers, including Bank of America and Wells Fargo.",
-    "source": "Compliance Week",
-    "published": "2026-06-19T15:19:00",
-    "fetched_at": "2026-06-21T14:38:45.333521",
-    "score_business": 6,
-    "score_learning": 5,
-    "score_content": 7,
-    "score_compliance": 4,
-    "score": 6,
-    "total_score": 22,
-    "domains": [
-      "GRC",
-      "Privacy"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of whistleblower protection and data handling in organizations.",
-    "content_angle": "Create a post discussing the intersection of whistleblower protection and data handling in organizations, using this article as a case study."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of supply chain risk management and the potential for backdoor attacks in cloud-based security systems.",
+    "content_angle": "Create a post on 'Supply Chain Risks in Cloud Security: How to Mitigate Backdoor Attacks' and discuss the implications of the HAMLOCK attack on cloud-based security systems."
   },
   {
     "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
@@ -625,46 +105,106 @@
     "summary": "Threat actors are exploiting a recently patched security flaw impacting Gravity SMTP, a WordPress plugin that's installed on about 100,000 sites. The vulnerability, tracked as CVE-2026-4020 (CVSS score: 5.3), is a medium-severity information disclosure flaw that can allow unauthenticated attackers to extract sensitive data, such as configuration data, API keys, secrets, and OAuth tokens",
     "source": "The Hacker News",
     "published": "2026-06-20T15:26:04",
-    "fetched_at": "2026-06-21T14:38:59.717978",
+    "fetched_at": "2026-06-22T02:02:10.507292",
     "score_business": 6,
-    "score_learning": 7,
-    "score_content": 6,
+    "score_learning": 8,
+    "score_content": 7,
     "score_compliance": 2,
-    "score": 5,
-    "total_score": 21,
+    "score": 6,
+    "total_score": 23,
     "domains": [
       "Security"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of timely patching and vulnerability management in WordPress plugin security.",
-    "content_angle": "Create a post on '5 Common WordPress Plugin Security Mistakes and How to Avoid Them' and include this article as an example of a recent vulnerability."
+    "score_reason": "This article highlights a specific vulnerability that GRC professionals should be aware of to assess their organization's security posture and ensure compliance with security best practices.",
+    "content_angle": "Create a post on 'Common WordPress Plugin Vulnerabilities and How to Mitigate Them' and include this article as an example, discussing the importance of regular plugin updates and security audits."
   },
   {
-    "title": "France and Germany Boost Digital Sovereignty Push",
-    "url": "https://www.bankinfosecurity.com/france-germany-boost-digital-sovereignty-push-a-32031",
-    "summary": "Franco-German Plan Defines Digital Sovereignty, Paris Unveiles Tech FundEurope's push for technological sovereignty continues to accelerate, with France and Germany agreeing a common position and Paris announcing a fund totaling 13 billion euros - $14.9 billion - for French and European tech firms. France has been keen on tech sovereignty for quite some time.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915870",
-    "fetched_at": "2026-06-21T14:38:46.915890",
-    "score_business": 8,
-    "score_learning": 4,
-    "score_content": 6,
+    "title": "Google Paid $2.4B for Windsurf. Why Did Musk Pay $60B for Cursor?",
+    "url": "https://pub.towardsai.net/google-paid-2-4b-for-windsurf-why-did-musk-pay-60b-for-cursor-2cf67380c33b?source=rss----98111c9905da---4",
+    "summary": "Two beloved AI IDEs absorbed in twelve months, a 25x price gap, and the architectural reason the model inside barely matters.Continue reading on Towards AI \u00bb",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T23:01:01",
+    "fetched_at": "2026-06-22T02:02:39.857016",
+    "score_business": 7,
+    "score_learning": 6,
+    "score_content": 8,
     "score_compliance": 2,
-    "score": 5,
-    "total_score": 20,
+    "score": 6,
+    "total_score": 23,
     "domains": [
-      "GRC",
-      "Cloud"
+      "AI",
+      "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the growing importance of digital sovereignty and its implications on organizational governance and risk management.",
-    "content_angle": "Create a post exploring the concept of digital sovereignty and its relevance to GRC professionals, highlighting the Franco-German plan and its potential impact on European tech firms."
+    "score_reason": "A GRC professional should care about this because it highlights the rapidly changing landscape of AI development and the need for effective governance and risk management.",
+    "content_angle": "Create a post exploring the implications of the price gap between Windsurf and Cursor, and how it reflects the current state of AI development and investment in the industry."
   },
   {
-    "title": "ENISA: Software vulnerability prevention initiatives",
-    "url": "https://www.databreachtoday.com/agency-releases/enisa-software-vulnerability-prevention-initiatives-r-2448",
-    "summary": "The European Network and Information Security Agency, ENISA, has compiled a list of existing initiatives focused on finding and preventing software vulnerabilities.",
-    "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-06-21T14:38:49.073632",
-    "fetched_at": "2026-06-21T14:38:49.073645",
+    "title": "Why ChatGPT Is More Than Autocomplete",
+    "url": "https://pub.towardsai.net/why-chatgpt-is-more-than-autocomplete-233d4c2f7605?source=rss----98111c9905da---4",
+    "summary": "A rich internal state, rebuilt one token at a timeFigure by the author with assistance from Claude (Anthropic)IntroductionCalling a large language model (LLM) like ChatGPT \u201cautocomplete\u201d is not exactly wrong, but it is deeply misleading. Most of us think of autocomplete as a text-completion tool: a phone keyboard guessing the next word, a search bar finishing a phrase. But that picture is not powerful enough to explain what LLMs actually produce \u2014 explanations, analogies, plans, summaries, arguments, code, stories, dialogue.A transformer-based LLM does predict one token at a time \u2014 roughly a w",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T22:31:00",
+    "fetched_at": "2026-06-22T02:02:39.857892",
+    "score_business": 6,
+    "score_learning": 8,
+    "score_content": 7,
+    "score_compliance": 2,
+    "score": 6,
+    "total_score": 23,
+    "domains": [
+      "AI",
+      "Product"
+    ],
+    "score_reason": "A GRC professional should care about this article because it highlights the limitations of traditional views on AI and LLMs, which can impact their adoption and integration in various industries.",
+    "content_angle": "Create a post exploring the implications of LLMs on GRC professionals, discussing how they can leverage these models to improve their work while mitigating potential risks."
+  },
+  {
+    "title": "Amazon AI search generates images from text descriptions",
+    "url": "https://pub.towardsai.net/amazon-ai-search-generates-images-from-text-descriptions-6ce82e668974?source=rss----98111c9905da---4",
+    "summary": "Amazon launches a generative AI search tool that creates real-time images based on user descriptions to improve product discovery.Continue reading on Towards AI \u00bb",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T20:01:01",
+    "fetched_at": "2026-06-22T02:02:39.858732",
+    "score_business": 6,
+    "score_learning": 7,
+    "score_content": 8,
+    "score_compliance": 2,
+    "score": 6,
+    "total_score": 23,
+    "domains": [
+      "Cloud",
+      "AI"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the increasing importance of AI governance and the potential risks associated with AI-generated content.",
+    "content_angle": "Create a post discussing the implications of AI-generated content on product discovery and the potential risks and benefits for businesses, including a brief overview of AI governance best practices."
+  },
+  {
+    "title": "Signal\u2019s Meredith Whittaker wants you to remember that AI chatbots \u2018are not your friends\u2019",
+    "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
+    "summary": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.\u201d",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-06-20T20:32:29",
+    "fetched_at": "2026-06-22T02:02:39.933619",
+    "score_business": 6,
+    "score_learning": 8,
+    "score_content": 7,
+    "score_compliance": 2,
+    "score": 6,
+    "total_score": 23,
+    "domains": [
+      "AI",
+      "GRC"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the importance of understanding AI's limitations and potential risks in governance and risk management.",
+    "content_angle": "Create a post exploring the implications of AI chatbots on organizational governance and risk management, and provide tips on how to ensure responsible AI adoption."
+  },
+  {
+    "title": "I always change these 7 phone privacy settings on every new device - here's why",
+    "url": "https://www.zdnet.com/article/phone-privacy-settings-to-disable-review-avoid-exposing-data/",
+    "summary": "Your phone holds a lot of personal information, from where you go to who you talk to every day. Here's how to limit who can access your data and when.",
+    "source": "Latest news",
+    "published": "2026-06-21T12:00:43",
+    "fetched_at": "2026-06-22T02:02:15.941072",
     "score_business": 4,
     "score_learning": 7,
     "score_content": 6,
@@ -672,19 +212,19 @@
     "score": 5,
     "total_score": 20,
     "domains": [
-      "GRC",
+      "Privacy",
       "Security"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of software vulnerability prevention initiatives, which can have a significant impact on an organization's security posture.",
-    "content_angle": "Create a post on 'Best Practices for Software Vulnerability Prevention' and use the ENISA list as a reference, highlighting key takeaways and actionable steps for GRC professionals to implement in their organizations."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of data protection and security settings on personal devices, which can have implications for organizational data security.",
+    "content_angle": "Create a post on '10 Essential Data Security Settings to Protect Your Personal and Organizational Data' and use this article as a starting point."
   },
   {
-    "title": "Reliable Knowledge Extraction for AI Systems",
-    "url": "https://pub.towardsai.net/reliable-knowledge-extraction-for-ai-systems-57abcba16a3a?source=rss----98111c9905da---4",
-    "summary": "A design-patterns perspective on knowledge graphs and GraphRAGKnowledge graph extraction. Source: Chat GPT generation based on the article content.IntroductionHave you run into a case where the model cannot answer a question while the answer is plainly somewhere in the documents, even with a retrieval pipeline connected? Or where an agent returns passages that read as relevant yet never mention the one term the customer actually asked about?Both are symptoms of the same gap: retrieval that returns text which looks like the question without returning the facts that answer it. A larger or newer ",
+    "title": "The Truth About Huge LLMs Context Windows",
+    "url": "https://pub.towardsai.net/the-truth-about-huge-llms-context-windows-912b36e8d6d6?source=rss----98111c9905da---4",
+    "summary": "Bigger windows, same old attention problem. Here&#x2019;s what the research actually shows.Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-06-21T14:01:03",
-    "fetched_at": "2026-06-21T14:39:34.962539",
+    "published": "2026-06-21T19:31:00",
+    "fetched_at": "2026-06-22T02:02:39.858777",
     "score_business": 4,
     "score_learning": 8,
     "score_content": 6,
@@ -693,38 +233,18 @@
     "total_score": 20,
     "domains": [
       "AI",
-      "DevSecOps"
+      "GRC"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of accurate knowledge extraction in AI systems, which can have significant implications for risk management and compliance.",
-    "content_angle": "Create a post on 'The Importance of Accurate Knowledge Extraction in AI Systems' and explore its implications for risk management and compliance in the GRC industry."
+    "score_reason": "A GRC professional should care about this as it highlights the limitations of Large Language Models (LLMs) and their potential impact on governance and risk management.",
+    "content_angle": "Create a post discussing the implications of LLMs on GRC, focusing on the attention problem and its potential consequences for organizations."
   },
   {
-    "title": "Claude Code for Data Science Projects",
-    "url": "https://pub.towardsai.net/claude-code-for-data-science-projects-15001abc2ccd?source=rss----98111c9905da---4",
-    "summary": "Moving data science from &#x201c;a notebook full of one-off cells&#x201d; to a reproducible, agent-assisted workflow with Claude Code.Continue reading on Towards AI \u00bb",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T05:53:50",
-    "fetched_at": "2026-06-21T14:39:34.965540",
-    "score_business": 4,
-    "score_learning": 8,
-    "score_content": 6,
-    "score_compliance": 2,
-    "score": 5,
-    "total_score": 20,
-    "domains": [
-      "AI",
-      "DevSecOps"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of reproducibility and agent-assisted workflows in data science projects, which can have implications for risk management and compliance.",
-    "content_angle": "Create a post on 'Best Practices for Reproducible Data Science Workflows' and discuss how Claude Code can help achieve this, including potential risks and compliance considerations."
-  },
-  {
-    "title": "I tested the new modular ThinkPad, and it's the repairable future I'm hoping for",
+    "title": "I tested the new modular ThinkPad, and it's the repairable future I've been hoping for",
     "url": "https://www.zdnet.com/article/thinkpad-x1-carbon-gen-14-aura-edition-review/",
     "summary": "Unveiled at CES, the 14th-gen Lenovo ThinkPad X1 Carbon Aura Edition features a redesigned double-sided motherboard and modular components.",
     "source": "Latest news",
-    "published": "2026-06-21T10:00:43",
-    "fetched_at": "2026-06-21T14:39:06.044627",
+    "published": "2026-06-21T10:00:00",
+    "fetched_at": "2026-06-22T02:02:15.941176",
     "score_business": 4,
     "score_learning": 6,
     "score_content": 7,
@@ -735,68 +255,48 @@
       "Product",
       "Cloud"
     ],
-    "score_reason": "A GRC professional should care about this because it showcases emerging trends in product design and modular components, which may influence future cloud infrastructure and security considerations.",
-    "content_angle": "Create a post discussing the implications of modular design on cloud infrastructure and security, highlighting potential benefits and challenges for organizations."
+    "score_reason": "GRC professionals should care about this because it showcases a potential shift towards more sustainable and repairable technology, which could have long-term implications for organizations' supply chain management and environmental impact.",
+    "content_angle": "This article could be repurposed into a post about the future of sustainable technology and its potential impact on businesses, with a focus on the modular design of the ThinkPad and its implications for repairability and environmental sustainability."
   },
   {
-    "title": "Apple\u2019s Hide My Email tweak leaves privacy fans fuming",
-    "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/apples-hide-my-email-tweak-leaves-privacy-fans-fuming",
-    "summary": "Apple has long marketed itself as the privacy-first tech giant. So why is it making a change to Hide My Email that will make it easier for websites to block anonymous sign-ups - and harder for you to stay private online? Read more in my article on the Hot for Security blog.",
-    "source": "GRAHAM CLULEY",
-    "published": "2026-06-19T15:47:53",
-    "fetched_at": "2026-06-21T14:39:06.781409",
-    "score_business": 6,
-    "score_learning": 4,
-    "score_content": 7,
-    "score_compliance": 2,
-    "score": 5,
-    "total_score": 19,
-    "domains": [
-      "GRC",
-      "Privacy"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the tension between business interests and user privacy, which is a key aspect of governance and risk management.",
-    "content_angle": "Create a post on 'Balancing Business Interests and User Privacy: Lessons from Apple's Hide My Email tweak' that explores the implications of this change for organizations and users."
-  },
-  {
-    "title": "Is the US government\u2019s Anthropic ban accidentally helping the brand?",
-    "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
-    "summary": "Just as last week&#160;was ending,&#160;the US government&#160;forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5&#8217;s guardrails.&#160; Cybersecurity researchers have&#160;since signed an open letter&#160;calling&#160;the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models.&#160;So&#160;is [&#8230;]",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-19T16:08:17",
-    "fetched_at": "2026-06-21T14:39:35.116879",
-    "score_business": 6,
-    "score_learning": 4,
-    "score_content": 7,
-    "score_compliance": 2,
-    "score": 5,
-    "total_score": 19,
-    "domains": [
-      "Security",
-      "AI"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the tension between AI model security and government regulation, which may impact the development and deployment of AI models.",
-    "content_angle": "Create a post discussing the implications of government regulation on AI model development and deployment, and how it affects the balance between security and innovation."
-  },
-  {
-    "title": "Billionaire Ambani wants AI in every call, app, and home",
-    "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
-    "summary": "Reliance is weaving AI into telecom services used by more than 500 million people.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-19T15:23:28",
-    "fetched_at": "2026-06-21T14:39:35.117077",
-    "score_business": 6,
-    "score_learning": 4,
-    "score_content": 7,
+    "title": "Vector Databases: 20 Scenario-Based Questions & Solutions (Part 1 of 2)",
+    "url": "https://pub.towardsai.net/vector-databases-20-scenario-based-questions-solutions-part-1-of-2-1c6b686dad2c?source=rss----98111c9905da---4",
+    "summary": "AI Engineer Interview PreparationContinue reading on Towards AI \u00bb",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T21:01:01",
+    "fetched_at": "2026-06-22T02:02:39.857995",
+    "score_business": 3,
+    "score_learning": 8,
+    "score_content": 6,
     "score_compliance": 2,
     "score": 5,
     "total_score": 19,
     "domains": [
       "AI",
-      "Cloud"
+      "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the increasing integration of AI into critical infrastructure, which may have implications for risk management and compliance.",
-    "content_angle": "Create a post exploring the potential risks and benefits of widespread AI adoption in telecom services, and discuss the compliance implications for organizations operating in this space."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of AI and data management in the context of education and interview preparation.",
+    "content_angle": "Create a post discussing the relevance of AI and data management in the education sector, and how it can be applied to GRC and compliance frameworks."
+  },
+  {
+    "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+    "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+    "summary": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-06-21T14:40:28",
+    "fetched_at": "2026-06-22T02:02:39.933567",
+    "score_business": 4,
+    "score_learning": 6,
+    "score_content": 7,
+    "score_compliance": 2,
+    "score": 5,
+    "total_score": 19,
+    "domains": [
+      "Product",
+      "AI"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the increasing importance of AI in product development and its potential impact on user experience and data handling.",
+    "content_angle": "Create a post on 'The Future of AI in Product Development: Key Takeaways from iOS 27' and discuss how AI is being integrated into various product features, its benefits, and potential challenges."
   },
   {
     "title": "\ud83e\udde0 Community Wisdom: Fractional CPO compensation, free e-signature tools, why some users pay but never use your product, sharing Claude Code context across a team, and more",
@@ -804,7 +304,7 @@
     "summary": "Community Wisdom 190",
     "source": "Lenny's Newsletter",
     "published": "2026-06-20T15:53:05",
-    "fetched_at": "2026-06-21T14:39:35.629360",
+    "fetched_at": "2026-06-22T02:02:40.306238",
     "score_business": 4,
     "score_learning": 6,
     "score_content": 7,
@@ -814,93 +314,36 @@
     "domains": [
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights practical product management strategies and user behavior that can inform risk management and compliance decisions.",
-    "content_angle": "Create a post or newsletter discussing the importance of understanding user behavior and product adoption in the context of GRC, using the article as a case study."
+    "score_reason": "A GRC professional should care about this because it highlights practical insights from a community that can be applied to product management and strategy.",
+    "content_angle": "Create a post titled '5 Product Management Takeaways from Community Wisdom' and summarize the key points, including the discussion on fractional CPO compensation and free e-signature tools."
   },
   {
-    "title": "Enterprise software is getting personal",
-    "url": "https://uxdesign.cc/enterprise-software-is-getting-personal-dea453bee3e3?source=rss----138adf9c44c---4",
-    "summary": "Three design trends reshaping the user experience of enterprise software as we know it.Continue reading on UX Collective \u00bb",
-    "source": "UX Collective - Medium",
-    "published": "2026-06-19T20:33:57",
-    "fetched_at": "2026-06-21T14:39:42.673503",
+    "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+    "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+    "summary": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-06-21T15:28:17",
+    "fetched_at": "2026-06-22T02:02:39.933506",
     "score_business": 4,
     "score_learning": 6,
-    "score_content": 7,
-    "score_compliance": 2,
-    "score": 5,
-    "total_score": 19,
-    "domains": [
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the evolving user experience in enterprise software, which can impact organizational efficiency and effectiveness.",
-    "content_angle": "Create a post discussing the implications of personalized enterprise software on organizational governance and risk management, and how it can be used to improve user experience and engagement."
-  },
-  {
-    "title": "Nearly 15,000 infected websites cleaned in SocGholish crackdown",
-    "url": "https://www.malwarebytes.com/blog/news/2026/06/nearly-15000-infected-websites-cleaned-in-socgholish-crackdown",
-    "summary": "Thousands of everyday websites were cleaned as part of a global operation targeting the malware network behind fake browser update scams.",
-    "source": "Malwarebytes",
-    "published": "2026-06-19T16:05:53",
-    "fetched_at": "2026-06-21T14:39:12.830089",
-    "score_business": 6,
-    "score_learning": 4,
     "score_content": 6,
     "score_compliance": 2,
     "score": 4,
     "total_score": 18,
     "domains": [
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the ongoing threat of malware and the importance of cybersecurity measures in protecting organizations.",
-    "content_angle": "Create a post on 'Common types of malware and how to prevent them' and use this article as an example of a successful crackdown on a malware network."
-  },
-  {
-    "title": "How to Safely Run Coding Agents",
-    "url": "https://pub.towardsai.net/how-to-safely-run-coding-agents-c1788cd2ef9b?source=rss----98111c9905da---4",
-    "summary": "Coding agents such as Claude Code and Codex have provided me the biggest efficiency boost I&#x2019;ve ever experienced while programming, way&#x2026;Continue reading on Towards AI \u00bb",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T12:31:01",
-    "fetched_at": "2026-06-21T14:39:34.962868",
-    "score_business": 4,
-    "score_learning": 6,
-    "score_content": 5,
-    "score_compliance": 2,
-    "score": 4,
-    "total_score": 17,
-    "domains": [
       "AI",
-      "Product"
+      "GRC"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of safely integrating AI-powered tools in software development, which can have significant implications for governance and risk management.",
-    "content_angle": "Create a post on 'Best Practices for Integrating AI-Powered Coding Agents in Software Development' and explore the benefits and risks associated with using these tools, including how to ensure safe and secure adoption."
+    "score_reason": "A GRC professional should care about this because it highlights the regulatory challenges and implications for the AI ecosystem.",
+    "content_angle": "Create a post discussing the regulatory implications of the Trump administration's actions on Anthropic and how it may impact the AI industry, including potential compliance requirements and risk management strategies."
   },
   {
-    "title": "A Startup Says It Cracked AI's Decade-Old Math Limit \u2014 Its LLM Read 12M Tokens for $8",
-    "url": "https://pub.towardsai.net/a-startup-says-it-cracked-ais-decade-old-math-limit-its-llm-read-12m-tokens-for-8-2ee108a320b3?source=rss----98111c9905da---4",
-    "summary": "A Miami startup says it ran a long-context job that costs about $2,600 on Anthropic&#x2019;s top model for $8 on its own LLM, read 12 million&#x2026;Continue reading on Towards AI \u00bb",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T06:43:41",
-    "fetched_at": "2026-06-21T14:39:34.965342",
-    "score_business": 4,
-    "score_learning": 6,
-    "score_content": 5,
-    "score_compliance": 2,
-    "score": 4,
-    "total_score": 17,
-    "domains": [
-      "AI"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the potential for AI model optimization and cost reduction, which could impact organizational decision-making and resource allocation.",
-    "content_angle": "Create a post on 'The Future of AI Model Optimization: What it Means for GRC Professionals' and explore the implications of cost-effective AI model training on governance, risk, and compliance."
-  },
-  {
-    "title": "11 AI GitHub Repositories Every Developer Is Watching in 2026",
-    "url": "https://pub.towardsai.net/11-ai-github-repositories-every-developer-is-watching-in-2026-991550639d02?source=rss----98111c9905da---4",
-    "summary": "Most of what shows up on GitHub\u2019s trending page this year is noise. These eleven repositories are not, and looking at them together tells you more about where AI development is actually heading than any single one does on its own.Photo by Praveen Thirumurugan on UnsplashGitHub\u2019s Octoverse report pegged AI-related repositories at over 4.3 million by the end of last year, a number that\u2019s almost meaningless on its own because most of those repos are wrappers, demos, or someone\u2019s weekend experiment that never got a second commit. What\u2019s interesting isn\u2019t the volume. It\u2019s the small number of projec",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T06:46:08",
-    "fetched_at": "2026-06-21T14:39:34.965228",
+    "title": "Building the most AI-pilled engineering team in the world | Fiona Fung (Manager of the Claude Code and Cowork Teams)",
+    "url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+    "summary": "Listen now | Fiona Fung on leading the Claude Code and Cowork teams, and how to maintain culture when roles are blurring and agents are everywhere",
+    "source": "Lenny's Newsletter",
+    "published": "2026-06-21T12:31:43",
+    "fetched_at": "2026-06-22T02:02:40.306178",
     "score_business": 3,
     "score_learning": 6,
     "score_content": 5,
@@ -908,38 +351,57 @@
     "score": 4,
     "total_score": 16,
     "domains": [
-      "AI",
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the growing importance of AI governance and the need for professionals to stay up-to-date on emerging trends in AI development.",
-    "content_angle": "Create a post or newsletter discussing the implications of AI development on GRC and how professionals can stay ahead of the curve, highlighting the importance of AI governance and the need for continuous learning."
+    "score_reason": "A GRC professional should care about this because it touches on organizational culture and team management, which can impact overall governance and risk management.",
+    "content_angle": "Create a post on 'Maintaining Culture in a Blurred Role Environment: Lessons from Fiona Fung's Experience' and discuss how this can be applied to a GRC context."
   },
   {
-    "title": "FDIC: Institutions Encouraged to Work with Borrowers Impacted by Shutdown",
-    "url": "https://www.bankinfosecurity.com/agency-releases/fdic-institutions-encouraged-to-work-borrowers-impacted-by-r-2804",
-    "summary": "Five federal regulatory agencies encourage financial institutions to work with customers affected by the federal government shutdown.",
-    "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-06-21T14:38:46.915950",
-    "fetched_at": "2026-06-21T14:38:46.915963",
-    "score_business": 5,
-    "score_learning": 2,
+    "title": "Why the best part of the flow isn't the end",
+    "url": "https://uxdesign.cc/why-the-best-part-of-the-flow-isnt-the-end-e9fef73f6bb3?source=rss----138adf9c44c---4",
+    "summary": "South Korea&#x2019;s &#x201c;dopamine sites&#x201d; let you order food that never arrives. Strip out the transaction and what&#x2019;s left still works &#x2014; which should&#x2026;Continue reading on UX Collective \u00bb",
+    "source": "UX Collective - Medium",
+    "published": "2026-06-21T18:23:01",
+    "fetched_at": "2026-06-22T02:02:46.448377",
+    "score_business": 3,
+    "score_learning": 6,
+    "score_content": 5,
+    "score_compliance": 2,
+    "score": 4,
+    "total_score": 16,
+    "domains": [
+      "Product"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the importance of understanding the underlying mechanics of a system, even when the surface-level transaction fails.",
+    "content_angle": "Create a content piece that explores the concept of 'dopamine sites' and how they can be used to illustrate the value of understanding the underlying mechanics of a system, even in the context of failed transactions."
+  },
+  {
+    "title": "MCP for LangGraph Developers: From Basics to Production",
+    "url": "https://pub.towardsai.net/mcp-for-langgraph-developers-from-basics-to-production-12ff52df3d3c?source=rss----98111c9905da---4",
+    "summary": "The seven-level staircasePart 6 of the LangGraph Mental Model series, a ground-up introduction to the Model Context Protocol, building toward full integration with everything from Parts 1\u20136For other parts of the series : Part 0 , Part 1 , Part 2 , Part 3 , Part 4 , Part 5,What this article assumes: You\u2019re comfortable with the seven-module LangGraph structure and the idea of a @tool-decorated function (Part 1, Module 3). That's the only prerequisite. MCP is a new piece of infrastructure, not a new way of thinking about graphs, so we start from zero on MCP itself, and only reconnect to LangGraph",
+    "source": "Towards AI - Medium",
+    "published": "2026-06-21T20:31:00",
+    "fetched_at": "2026-06-22T02:02:39.858678",
+    "score_business": 2,
+    "score_learning": 8,
     "score_content": 4,
-    "score_compliance": 4,
+    "score_compliance": 1,
     "score": 4,
     "total_score": 15,
     "domains": [
-      "GRC"
+      "GRC",
+      "DevSecOps"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of regulatory guidance in times of crisis and the need for financial institutions to adapt to changing circumstances.",
-    "content_angle": "Create a post on 'Regulatory Guidance in Times of Crisis: How Financial Institutions Can Adapt' and discuss the role of regulatory agencies in providing support to affected customers."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of foundational knowledge in GRC and DevSecOps, specifically in the context of LangGraph and MCP.",
+    "content_angle": "This article could be used as a starting point for creating a series of posts or a newsletter focused on explaining complex concepts in GRC and DevSecOps, with a focus on real-world applications and practical examples."
   },
   {
-    "title": "My Peripheral Brain: The Cold Memory Layer for My Coding Agents",
-    "url": "https://pub.towardsai.net/my-peripheral-brain-the-cold-memory-layer-for-my-coding-agents-b1e331cdcf2a?source=rss----98111c9905da---4",
-    "summary": "AI generated illustrationThe ProblemEveryone is building their second brain for their coding agents and rightly so. In the agentic development era, I also found it particularly difficult to keep track of all my in-progress ideas and projects, sometimes too many things are moving at once. Some projects have completed development but are pending thorough testing. Low-priority items keep getting pushed aside to make way for burning items. And somewhere in between, few ideas get lost.The loss is not dramatic. You do not forget a project exists. You just forget where you left it. You forget what yo",
-    "source": "Towards AI - Medium",
-    "published": "2026-06-21T12:01:01",
-    "fetched_at": "2026-06-21T14:39:34.963352",
+    "title": "The systemd 261 release brings a software TPM, new OS installer",
+    "url": "https://www.helpnetsecurity.com/2026/06/22/systemd-261-released/",
+    "summary": "Linux distributions that ship systemd as their init system now have a new version to track. The systemd 261 update adds a cloud metadata subsystem, carries process state through kexec reboots, and continues a long-running effort to load external libraries on demand. Cloud metadata gets a local interface systemd 261 adds an IMDS subsystem for cloud instance metadata. A daemon, systemd-imdsd, provides a local Varlink API that gives programs access to instance metadata services. A &#8230; More &#8594; The post The systemd 261 release brings a software TPM, new OS installer appeared first on Help ",
+    "source": "Help Net Security",
+    "published": "2026-06-21T22:30:29",
+    "fetched_at": "2026-06-22T02:29:47.971334",
     "score_business": 3,
     "score_learning": 6,
     "score_content": 5,
@@ -947,58 +409,38 @@
     "score": 4,
     "total_score": 15,
     "domains": [
-      "AI",
-      "Product"
+      "Cloud",
+      "DevSecOps"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of information management and organization in the context of AI and product development.",
-    "content_angle": "Create a content piece around 'Information Management for AI and Product Development' where you discuss the challenges of keeping track of ideas and projects, and provide tips and best practices for staying organized."
+    "score_reason": "A GRC professional should care about this because it highlights the evolution of cloud infrastructure and potential security implications.",
+    "content_angle": "Create a post discussing the implications of a software TPM on cloud security and how it affects DevSecOps practices."
   },
   {
-    "title": "I Turned Claude Code Into My Chief of Staff (One Folder, 6 Skills)",
-    "url": "https://pub.towardsai.net/i-turned-claude-code-into-my-chief-of-staff-one-folder-6-skills-7a8797ddca25?source=rss----98111c9905da---4",
-    "summary": "Everyone aims Claude Code at their repo. I aimed it at my week. The folder that came out runs my mornings, and it taught me the two things&#x2026;Continue reading on Towards AI \u00bb",
+    "title": "When a Sequence Is Not Enough: What Knowledge Graphs Add to Agentic Systems",
+    "url": "https://pub.towardsai.net/when-a-sequence-is-not-enough-what-knowledge-graphs-add-to-agentic-systems-782af7e8bc9d?source=rss----98111c9905da---4",
+    "summary": "The series closer &#x2014; and the failure that flat state can never fix.Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-06-21T13:01:01",
-    "fetched_at": "2026-06-21T14:39:34.962769",
+    "published": "2026-06-21T22:01:01",
+    "fetched_at": "2026-06-22T02:02:39.857948",
     "score_business": 2,
     "score_learning": 6,
-    "score_content": 5,
-    "score_compliance": 1,
-    "score": 4,
-    "total_score": 14,
-    "domains": [
-      "AI",
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the application of AI in productivity and time management, which can be relevant to organizational efficiency and employee experience.",
-    "content_angle": "Create a post on 'Productivity Tools and AI: How to Optimize Your Workflow' and use this article as a case study to discuss the benefits and limitations of AI-powered productivity tools."
-  },
-  {
-    "title": "2026.25: The Stuff of Myth(os)",
-    "url": "https://stratechery.com/2026/the-stuff-of-mythos/",
-    "summary": "The best Stratechery content from the week of June 15, 2026, including Anthropic, e-commerce in the age of AI, and the NBA Finals being a perfect 10.",
-    "source": "Stratechery by Ben Thompson",
-    "published": "2026-06-19T17:00:00",
-    "fetched_at": "2026-06-21T14:39:37.987284",
-    "score_business": 2,
-    "score_learning": 4,
-    "score_content": 6,
+    "score_content": 4,
     "score_compliance": 2,
     "score": 4,
     "total_score": 14,
     "domains": [
-      "Product"
+      "AI"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of staying up-to-date with industry trends and news, even if they don't directly impact compliance or governance.",
-    "content_angle": "Create a 'Week in Review' style post highlighting key takeaways from the article and how they relate to GRC professionals, focusing on the e-commerce in the age of AI aspect."
+    "score_reason": "A GRC professional should care about this because it highlights the importance of knowledge graphs in AI systems, which can have implications for data governance and risk management.",
+    "content_angle": "Create a post exploring the concept of knowledge graphs and their applications in AI systems, including their potential benefits and challenges for GRC professionals."
   },
   {
-    "title": "I made 7 changes to my Android Auto setup for better functionality when I'm driving",
-    "url": "https://www.zdnet.com/article/android-auto-6-ways-to-customize/",
-    "summary": "You can customize Android Auto to make it more tailored to your ideal driving experience - all in just minutes.",
+    "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
+    "url": "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/",
+    "summary": "As audio quality reaches technological limits, brands are exploring alternative features.",
     "source": "Latest news",
-    "published": "2026-06-20T11:00:51",
-    "fetched_at": "2026-06-21T14:39:06.044800",
+    "published": "2026-06-21T11:00:09",
+    "fetched_at": "2026-06-22T02:02:15.941121",
     "score_business": 2,
     "score_learning": 4,
     "score_content": 6,
@@ -1008,8 +450,27 @@
     "domains": [
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it showcases the importance of tailoring technology to meet user needs, which can be applied to GRC tooling and user experience.",
-    "content_angle": "Create a post on '5 ways to tailor GRC tools to improve user experience' and use this article as an example of how customization can lead to better outcomes."
+    "score_reason": "A GRC professional should care about this because it highlights the evolving nature of consumer expectations and the importance of adapting to changing market trends.",
+    "content_angle": "Create a post discussing how companies can balance innovation with customer needs and expectations, using this article as a case study."
+  },
+  {
+    "title": "I made 7 changes to my Android Auto setup for better functionality when I'm driving",
+    "url": "https://www.zdnet.com/article/android-auto-6-ways-to-customize/",
+    "summary": "You can customize Android Auto to make it more tailored to your ideal driving experience - all in just minutes.",
+    "source": "Latest news",
+    "published": "2026-06-20T11:00:51",
+    "fetched_at": "2026-06-22T02:02:15.941265",
+    "score_business": 2,
+    "score_learning": 4,
+    "score_content": 6,
+    "score_compliance": 1,
+    "score": 3,
+    "total_score": 13,
+    "domains": [
+      "Product"
+    ],
+    "score_reason": "A GRC professional should care about this because it showcases the importance of user experience and customization in product development, which can impact organizational governance and risk management.",
+    "content_angle": "Create a blog post titled '5 Tips for Improving User Experience in Product Development' and use this article as an example of how customization can enhance user experience."
   },
   {
     "title": "In the Weights is your new AI-centric vanity search",
@@ -1017,39 +478,18 @@
     "summary": "So ... what's your In the Weights score?",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-06-20T19:41:11",
-    "fetched_at": "2026-06-21T14:39:35.116576",
+    "fetched_at": "2026-06-22T02:02:39.933666",
     "score_business": 2,
-    "score_learning": 3,
-    "score_content": 4,
+    "score_learning": 4,
+    "score_content": 3,
     "score_compliance": 2,
     "score": 3,
     "total_score": 11,
     "domains": [
-      "AI",
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the growing trend of AI-centric features in product development, which may have implications for governance and risk management.",
-    "content_angle": "Create a post on 'The Rise of AI-Centric Features in Product Development: Governance and Risk Implications' and discuss how companies can balance innovation with regulatory compliance."
-  },
-  {
-    "title": "Friday Squid Blogging: Victims of Unregulated Squid Fishing",
-    "url": "https://www.schneier.com/blog/archives/2026/06/friday-squid-blogging-victims-of-unregulated-squid-fishing.html",
-    "summary": "Dolphins, sharks, turtles, and human workers are all victims of unregulated squid fishing fleets. Another news article. As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered. Blog moderation policy.",
-    "source": "Schneier on Security",
-    "published": "2026-06-19T21:03:48",
-    "fetched_at": "2026-06-21T14:38:58.742870",
-    "score_business": 2,
-    "score_learning": 3,
-    "score_content": 3,
-    "score_compliance": 2,
-    "score": 2,
-    "total_score": 10,
-    "domains": [
-      "GRC",
-      "Security"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the broader social and environmental impacts of unregulated industries, which can inform risk management and compliance strategies.",
-    "content_angle": "Create a post discussing the security implications of unregulated industries and how GRC professionals can apply lessons from this example to their own risk management and compliance practices."
+    "score_reason": "A GRC professional should care about this because it showcases the intersection of AI and user experience, highlighting the importance of considering the impact of AI-driven features on users.",
+    "content_angle": "Create a post titled 'The AI-centric Vanity Search: What it Means for User Experience' and explore the implications of AI-driven features on user behavior and experience."
   },
   {
     "title": "How I set up this $17 solar panel to give my doorbell camera unlimited battery life",
@@ -1057,64 +497,7 @@
     "summary": "I didn't think that this would work, but the EverExceed 5V solar panel has done wonders for my security cameras.",
     "source": "Latest news",
     "published": "2026-06-21T12:00:59",
-    "fetched_at": "2026-06-21T14:39:06.044338",
-    "score_business": 2,
-    "score_learning": 3,
-    "score_content": 4,
-    "score_compliance": 1,
-    "score": 2,
-    "total_score": 10,
-    "domains": [
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it showcases a practical solution for a common problem in a non-security context, which can be applied to other areas of GRC.",
-    "content_angle": "Create a post on 'Creative Solutions for Common GRC Challenges' highlighting innovative ways professionals can address everyday issues."
-  },
-  {
-    "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
-    "url": "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/",
-    "summary": "As audio quality reaches technological limits, brands are exploring alternative features.",
-    "source": "Latest news",
-    "published": "2026-06-21T11:00:09",
-    "fetched_at": "2026-06-21T14:39:06.044538",
-    "score_business": 3,
-    "score_learning": 2,
-    "score_content": 4,
-    "score_compliance": 1,
-    "score": 2,
-    "total_score": 10,
-    "domains": [
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the evolving landscape of consumer electronics and the importance of considering emerging trends in product development.",
-    "content_angle": "Create a post discussing the implications of technological limits on product development and the potential for companies to explore alternative features, using this article as a case study."
-  },
-  {
-    "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
-    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-    "summary": "Jumper isn't the only big name leaving Google DeepMind.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-06-20T16:39:57",
-    "fetched_at": "2026-06-21T14:39:35.116672",
-    "score_business": 3,
-    "score_learning": 2,
-    "score_content": 4,
-    "score_compliance": 1,
-    "score": 2,
-    "total_score": 10,
-    "domains": [
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights talent movement and potential implications for AI research and development.",
-    "content_angle": "Create a post on 'Key Takeaways from AI Talent Movement' and discuss the implications of top researchers leaving companies for rival organizations."
-  },
-  {
-    "title": "Building the most AI-pilled engineering team in the world | Fiona Fung (Manager of the Claude Code and Cowork Teams)",
-    "url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
-    "summary": "Listen now | Fiona Fung on leading the Claude Code and Cowork teams, and how to maintain culture when roles are blurring and agents are everywhere",
-    "source": "Lenny's Newsletter",
-    "published": "2026-06-21T12:31:43",
-    "fetched_at": "2026-06-21T14:39:35.629253",
+    "fetched_at": "2026-06-22T02:02:15.941017",
     "score_business": 2,
     "score_learning": 4,
     "score_content": 3,
@@ -1124,27 +507,46 @@
     "domains": [
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it touches on organizational culture and team management, which can impact overall governance and risk management.",
-    "content_angle": "Create a post on 'Maintaining Culture in a Blurring Work Environment' and discuss how GRC professionals can help organizations adapt to changing roles and expectations."
+    "score_reason": "A GRC professional should care about this because it showcases an innovative solution for a common problem, demonstrating the importance of creative problem-solving in a business context.",
+    "content_angle": "Create a post titled '5 Creative Solutions for Common Business Problems' and feature this article as an example of thinking outside the box to address everyday challenges."
   },
   {
-    "title": "This HP Omen gaming laptop is $700 off on Amazon - and it's a serious powerhouse",
-    "url": "https://www.zdnet.com/article/hp-omen-gaming-laptop-amazon-prime-day-deal-2026/",
-    "summary": "HP's Omen gaming laptop has dropped to $1,599, making it a great early deal for gamers on a budget.",
-    "source": "Latest news",
-    "published": "2026-06-19T22:39:00",
-    "fetched_at": "2026-06-21T14:39:06.044886",
+    "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
+    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+    "summary": "Jumper isn't the only big name leaving Google DeepMind.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-06-20T16:39:57",
+    "fetched_at": "2026-06-22T02:02:39.933713",
     "score_business": 2,
-    "score_learning": 2,
+    "score_learning": 3,
     "score_content": 4,
     "score_compliance": 1,
     "score": 2,
-    "total_score": 9,
+    "total_score": 10,
     "domains": [
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of monitoring market trends and staying up-to-date with consumer demand in the tech industry.",
-    "content_angle": "Create a content piece discussing the intersection of business strategy and consumer demand in the tech industry, highlighting how companies like HP adapt to market trends and consumer preferences."
+    "score_reason": "A GRC professional should care about this because it highlights the changing landscape of AI research and development, potentially impacting future product strategies.",
+    "content_angle": "Create a post discussing the implications of key talent leaving AI research organizations and how it may impact product development and GRC in the AI space."
+  },
+  {
+    "title": "Two modernisms",
+    "url": "https://uxdesign.cc/two-modernisms-ba94169b79dd?source=rss----138adf9c44c---4",
+    "summary": "Mies hid the steel. Beck removed the geography. Radix stripped the styles. None of them were making a philosophical statement&#x200a;&#x2014;&#x200a;they were&#x2026;Continue reading on UX Collective \u00bb",
+    "source": "UX Collective - Medium",
+    "published": "2026-06-21T18:21:07",
+    "fetched_at": "2026-06-22T02:02:46.448436",
+    "score_business": 2,
+    "score_learning": 4,
+    "score_content": 3,
+    "score_compliance": 1,
+    "score": 2,
+    "total_score": 10,
+    "domains": [
+      "Product"
+    ],
+    "score_reason": "A GRC professional should care about this because it highlights the importance of understanding design principles and their impact on user experience, which can be applied to various organizational contexts.",
+    "content_angle": "Create a post discussing the intersection of design and governance, exploring how design principles can be used to improve organizational decision-making and risk management."
   },
   {
     "title": "4 easy tweaks you can make to your TV soundbar for more immersive audio",
@@ -1152,36 +554,17 @@
     "summary": "Some of your favorite soundbar settings for music and movies aren't compatible with live sports broadcasts. Here's my fix.",
     "source": "Latest news",
     "published": "2026-06-20T12:00:41",
-    "fetched_at": "2026-06-21T14:39:06.044714",
+    "fetched_at": "2026-06-22T02:02:15.941222",
     "score_business": 1,
-    "score_learning": 3,
-    "score_content": 2,
+    "score_learning": 2,
+    "score_content": 3,
     "score_compliance": 1,
     "score": 2,
     "total_score": 7,
     "domains": [
       "Product"
     ],
-    "score_reason": "A GRC professional should care about this because it showcases the importance of understanding the nuances of consumer technology and its potential impact on user experience.",
-    "content_angle": "Create a content piece on '5 ways to improve user experience in consumer technology' and use this article as an example of how tweaking settings can enhance the user experience."
-  },
-  {
-    "title": "The Ninja Creami just dropped to an all time low price for Prime Day - and I recommend one",
-    "url": "https://www.zdnet.com/article/ninja-creami-amazon-prime-day-2026-deal/",
-    "summary": "Make your own ice cream, gelato, sorbet, and smoothie bowls with the Ninja Creami, now 22% off for Amazon Prime Day.",
-    "source": "Latest news",
-    "published": "2026-06-19T15:21:00",
-    "fetched_at": "2026-06-21T14:39:06.044973",
-    "score_business": 2,
-    "score_learning": 1,
-    "score_content": 2,
-    "score_compliance": 1,
-    "score": 2,
-    "total_score": 6,
-    "domains": [
-      "Product"
-    ],
-    "score_reason": "A GRC professional should care about this because it highlights the importance of understanding consumer trends and market analysis in product management.",
-    "content_angle": "Create a post on 'Product Management Trends: How to Stay Ahead of the Curve' and use this article as an example of how understanding consumer behavior can inform product decisions."
+    "score_reason": "A GRC professional should care about this because it demonstrates the importance of considering multiple perspectives and adaptability in a rapidly changing environment, although in a non-GRC context.",
+    "content_angle": "This article could be used as a thought experiment to discuss the importance of adaptability and considering multiple perspectives in a GRC context, such as when implementing new regulations or technologies."
   }
 ]

@@ -1,18 +1,18 @@
 {
-  "content": "**The Surprising Truth About FFIEC Final Authentication Guidance**\n\nMost people assume FFIEC Final Authentication Guidance is just about technical controls, but I've noticed it's more about the customer experience.\n\nIn my experience, financial institutions focus on implementing the latest security measures without considering the human factor. They might invest in advanced authentication tools, but neglect to educate customers on the importance of secure online practices.\n\nFor instance, a bank might require customers to use a token for online banking, but not provide clear instructions on how to use it correctly, or what to do if they encounter a security alert. As a result, frustrated customers might abandon the online channel altogether, increasing the risk of identity theft and financial losses.\n\nThe takeaway is that FFIEC Final Authentication Guidance isn't just about meeting regulatory requirements, but about ensuring a seamless customer experience that balances security and convenience.\n\nWhat do you think is the most significant challenge financial institutions face when implementing FFIEC Final Authentication Guidance, and how can they balance security with customer convenience?",
-  "template_used": "insight",
-  "template_name": "Insight Post",
+  "content": "**Challenging the Status Quo: Credential Attacks**\n\nEveryone says that the key to mitigating large-scale credential attacks is to implement multi-factor authentication (MFA) across the board. I disagree. While MFA is a crucial step, it's not a silver bullet.\n\nHere's why:\n\n\u2022 **Credential phishing remains a threat**: MFA can be bypassed with targeted phishing attacks that compromise user credentials, rendering MFA ineffective.\n\u2022 **Attackers adapt quickly**: As MFA becomes more widespread, attackers will adapt and find new ways to bypass or exploit it.\n\u2022 **Human factor is still the weakest link**: Users will always be vulnerable to social engineering attacks, making MFA less effective than we think.\n\u2022 **Implementing MFA is just the beginning**: It's a necessary but not sufficient step. Organizations must also invest in education, awareness, and continuous monitoring to stay ahead of attackers.\n\nIn my experience, organizations often focus on the technical aspect of MFA, overlooking the human element. While MFA is a crucial control, it's not a foolproof solution. We need to shift our focus towards creating a culture of security awareness and continuous learning to truly mitigate large-scale credential attacks.\n\nCan we discuss the limitations of MFA and explore alternative strategies for staying ahead of attackers?",
+  "template_used": "contrarian",
+  "template_name": "Contrarian Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this because it updates the regulatory expectations for customer authentication and security controls in the online environment, which affects financial institutions and their customers.",
+    "topic": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+    "concept": "A GRC professional should care about this because it highlights the importance of credential security and the potential impact on organizations' infrastructure and data.",
     "domains": [
-      "GRC",
+      "Security",
       "Cloud"
     ]
   },
-  "domain": "GRC",
-  "generated_at": "2026-06-21T15:16:24.832963",
-  "day_of_week": "Sunday",
+  "domain": "Security",
+  "generated_at": "2026-06-22T02:35:11.535557",
+  "day_of_week": "Monday",
   "type": "text_post",
   "copyright_safe": true
 }

@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**Protecting Customer Identities in the Digital Age**\nThe integrity of customer data is a business imperative, not just a regulatory requirement.\n"
+      "content": "**Credential Security: The Foundation of Trust**\nImagine building a house on shaky ground. If the foundation is weak, the entire structure will crumble under pressure. Similarly, a strong foundation of credential security is essential for protecting an organization's infrastructure and data.\n"
     },
     {
       "slide_number": 2,
-      "content": "**Authentication Controls: The Why**\nJust as you wouldn't give your house key to a stranger, financial institutions must ensure that only authorized customers can access their accounts online.\n"
+      "content": "**What Are Credentials?**\nCredentials are the digital keys that grant access to sensitive information and systems. Think of them as the passwords, PINs, or tokens that unlock your online accounts, just like your house key unlocks your front door.\n"
     },
     {
       "slide_number": 3,
-      "content": "**Risk-Based Authentication: The How**\nThink of risk-based authentication like a bouncer at a nightclub \u2013 it assesses the customer's \"entrance credentials\" (e.g., IP address, device type) before granting access.\n"
+      "content": "**The Anatomy of a Credential Attack**\nCredential attacks exploit vulnerabilities in the way credentials are created, stored, and verified. It's like a thief using social engineering to trick a bank teller into revealing a customer's PIN. Once the PIN is compromised, the thief can access the account.\n"
     },
     {
       "slide_number": 4,
-      "content": "**Compliance Gaps: The Consequences**\nIgnoring authentication guidelines is like leaving a door unlocked \u2013 it invites potential security breaches and reputational damage.\n"
+      "content": "**Password Policies: A Critical Barrier**\nPassword policies, such as complexity requirements and rotation schedules, are like a strong fence around your house. They prevent unauthorized access by ensuring that only strong, unique passwords are used. However, weak policies can leave the door open for attackers.\n"
     },
     {
       "slide_number": 5,
-      "content": "**Continuous Monitoring: The Key to Success**\nRegularly reviewing and updating authentication controls is like checking the locks on your house \u2013 it ensures that your security measures stay effective over time.\n"
+      "content": "**The Importance of Multi-Factor Authentication**\nMulti-factor authentication (MFA) is like having a second lock on your front door. Even if an attacker has a copy of your house key, they still need to enter the correct code to gain entry. MFA adds an extra layer of security, making it much harder for attackers to gain access.\n"
     },
     {
       "slide_number": 6,
-      "content": "**Practical Application: Prioritize Customer Identity Protection**\nUpdate your authentication controls to reflect the evolving threat landscape, and prioritize customer education on online security best practices.\n"
+      "content": "**What This Means For You**\nAs a GRC professional, prioritize credential security by implementing strong password policies, using MFA, and regularly auditing and updating your organization's credential management practices. This will help prevent large-scale credential attacks and protect your organization's infrastructure and data.\n"
     },
     {
       "slide_number": 7,
-      "content": "**Stay Ahead of Emerging Threats**\nFollow me for more GRC insights to stay up-to-date on the latest security trends and best practices in customer authentication and identity protection.\n"
+      "content": "Stay Ahead of Emerging Security Threats\nFollow us for more GRC insights and stay up-to-date on the latest security trends and best practices. By prioritizing credential security and staying informed, you can help keep your organization secure in a rapidly changing landscape.\n"
     }
   ],
-  "raw_content": "Here are the 7 original educational carousel slides teaching the concept behind FFIEC Final Authentication Guidance:\n\n**SLIDE 1:**\n**Protecting Customer Identities in the Digital Age**\nThe integrity of customer data is a business imperative, not just a regulatory requirement.\n\n**SLIDE 2:**\n**Authentication Controls: The Why**\nJust as you wouldn't give your house key to a stranger, financial institutions must ensure that only authorized customers can access their accounts online.\n\n**SLIDE 3:**\n**Risk-Based Authentication: The How**\nThink of risk-based authentication like a bouncer at a nightclub \u2013 it assesses the customer's \"entrance credentials\" (e.g., IP address, device type) before granting access.\n\n**SLIDE 4:**\n**Compliance Gaps: The Consequences**\nIgnoring authentication guidelines is like leaving a door unlocked \u2013 it invites potential security breaches and reputational damage.\n\n**SLIDE 5:**\n**Continuous Monitoring: The Key to Success**\nRegularly reviewing and updating authentication controls is like checking the locks on your house \u2013 it ensures that your security measures stay effective over time.\n\n**SLIDE 6:**\n**Practical Application: Prioritize Customer Identity Protection**\nUpdate your authentication controls to reflect the evolving threat landscape, and prioritize customer education on online security best practices.\n\n**SLIDE 7:**\n**Stay Ahead of Emerging Threats**\nFollow me for more GRC insights to stay up-to-date on the latest security trends and best practices in customer authentication and identity protection.",
+  "raw_content": "Here are the 7 original educational carousel slides on the concept of mitigating large-scale credential attacks:\n\n**SLIDE 1:**\n**Credential Security: The Foundation of Trust**\n\nImagine building a house on shaky ground. If the foundation is weak, the entire structure will crumble under pressure. Similarly, a strong foundation of credential security is essential for protecting an organization's infrastructure and data.\n\n**SLIDE 2:**\n**What Are Credentials?**\nCredentials are the digital keys that grant access to sensitive information and systems. Think of them as the passwords, PINs, or tokens that unlock your online accounts, just like your house key unlocks your front door.\n\n**SLIDE 3:**\n**The Anatomy of a Credential Attack**\nCredential attacks exploit vulnerabilities in the way credentials are created, stored, and verified. It's like a thief using social engineering to trick a bank teller into revealing a customer's PIN. Once the PIN is compromised, the thief can access the account.\n\n**SLIDE 4:**\n**Password Policies: A Critical Barrier**\nPassword policies, such as complexity requirements and rotation schedules, are like a strong fence around your house. They prevent unauthorized access by ensuring that only strong, unique passwords are used. However, weak policies can leave the door open for attackers.\n\n**SLIDE 5:**\n**The Importance of Multi-Factor Authentication**\nMulti-factor authentication (MFA) is like having a second lock on your front door. Even if an attacker has a copy of your house key, they still need to enter the correct code to gain entry. MFA adds an extra layer of security, making it much harder for attackers to gain access.\n\n**SLIDE 6:**\n**What This Means For You**\nAs a GRC professional, prioritize credential security by implementing strong password policies, using MFA, and regularly auditing and updating your organization's credential management practices. This will help prevent large-scale credential attacks and protect your organization's infrastructure and data.\n\n**SLIDE 7:**\nStay Ahead of Emerging Security Threats\nFollow us for more GRC insights and stay up-to-date on the latest security trends and best practices. By prioritizing credential security and staying informed, you can help keep your organization secure in a rapidly changing landscape.",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
+    "topic": "Threat Brief: Mitigating Large-Scale Credential Attacks",
     "domains": [
-      "GRC",
+      "Security",
       "Cloud"
     ]
   },
-  "generated_at": "2026-06-21T15:28:49.846534",
+  "generated_at": "2026-06-22T02:47:36.517034",
   "type": "carousel",
   "copyright_safe": true
 }
