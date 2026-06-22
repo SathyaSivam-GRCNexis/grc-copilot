@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**Credential Security: The Foundation of Trust**\nImagine building a house on shaky ground. If the foundation is weak, the entire structure will crumble under pressure. Similarly, a strong foundation of credential security is essential for protecting an organization's infrastructure and data.\n"
+      "content": "**Authentication is the Front Door of Security**\nThe security of your digital assets starts with strong customer authentication.\n"
     },
     {
       "slide_number": 2,
-      "content": "**What Are Credentials?**\nCredentials are the digital keys that grant access to sensitive information and systems. Think of them as the passwords, PINs, or tokens that unlock your online accounts, just like your house key unlocks your front door.\n"
+      "content": "**The Authentication Process: A Three-Layered Fortress**\nThink of authentication like a multi-layered security system. The FFIEC's guidelines ensure that each layer is robust, so even if one layer is compromised, the others can still protect your customers.\n"
     },
     {
       "slide_number": 3,
-      "content": "**The Anatomy of a Credential Attack**\nCredential attacks exploit vulnerabilities in the way credentials are created, stored, and verified. It's like a thief using social engineering to trick a bank teller into revealing a customer's PIN. Once the PIN is compromised, the thief can access the account.\n"
+      "content": "**User Behavior Analysis: The Human Factor**\nAuthentication relies on the user's behavior to verify their identity. This is like a detective trying to solve a puzzle - the more pieces (data points) they have, the clearer the picture becomes.\n"
     },
     {
       "slide_number": 4,
-      "content": "**Password Policies: A Critical Barrier**\nPassword policies, such as complexity requirements and rotation schedules, are like a strong fence around your house. They prevent unauthorized access by ensuring that only strong, unique passwords are used. However, weak policies can leave the door open for attackers.\n"
+      "content": "**Risk-Based Authentication: The Right Tool for the Job**\nRisk-based authentication is like choosing the right tool for a specific job. If you're handling sensitive data, you need a more robust tool to ensure security.\n"
     },
     {
       "slide_number": 5,
-      "content": "**The Importance of Multi-Factor Authentication**\nMulti-factor authentication (MFA) is like having a second lock on your front door. Even if an attacker has a copy of your house key, they still need to enter the correct code to gain entry. MFA adds an extra layer of security, making it much harder for attackers to gain access.\n"
+      "content": "**The Importance of Continuous Monitoring**\nContinuous monitoring is like having a security guard who stays alert 24/7. It ensures that your authentication system is always up-to-date and secure.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nAs a GRC professional, prioritize credential security by implementing strong password policies, using MFA, and regularly auditing and updating your organization's credential management practices. This will help prevent large-scale credential attacks and protect your organization's infrastructure and data.\n"
+      "content": "**What This Means For You**\nAs a GRC professional, it's essential to ensure that your organization's authentication system is aligned with the FFIEC's guidelines. This means regularly reviewing and updating your authentication processes to stay ahead of emerging security threats.\n"
     },
     {
       "slide_number": 7,
-      "content": "Stay Ahead of Emerging Security Threats\nFollow us for more GRC insights and stay up-to-date on the latest security trends and best practices. By prioritizing credential security and staying informed, you can help keep your organization secure in a rapidly changing landscape.\n"
+      "content": "Follow for more GRC insights to stay ahead of emerging security threats and ensure your organization's security posture remains strong. What are the biggest challenges you face in implementing strong customer authentication?\n"
     }
   ],
-  "raw_content": "Here are the 7 original educational carousel slides on the concept of mitigating large-scale credential attacks:\n\n**SLIDE 1:**\n**Credential Security: The Foundation of Trust**\n\nImagine building a house on shaky ground. If the foundation is weak, the entire structure will crumble under pressure. Similarly, a strong foundation of credential security is essential for protecting an organization's infrastructure and data.\n\n**SLIDE 2:**\n**What Are Credentials?**\nCredentials are the digital keys that grant access to sensitive information and systems. Think of them as the passwords, PINs, or tokens that unlock your online accounts, just like your house key unlocks your front door.\n\n**SLIDE 3:**\n**The Anatomy of a Credential Attack**\nCredential attacks exploit vulnerabilities in the way credentials are created, stored, and verified. It's like a thief using social engineering to trick a bank teller into revealing a customer's PIN. Once the PIN is compromised, the thief can access the account.\n\n**SLIDE 4:**\n**Password Policies: A Critical Barrier**\nPassword policies, such as complexity requirements and rotation schedules, are like a strong fence around your house. They prevent unauthorized access by ensuring that only strong, unique passwords are used. However, weak policies can leave the door open for attackers.\n\n**SLIDE 5:**\n**The Importance of Multi-Factor Authentication**\nMulti-factor authentication (MFA) is like having a second lock on your front door. Even if an attacker has a copy of your house key, they still need to enter the correct code to gain entry. MFA adds an extra layer of security, making it much harder for attackers to gain access.\n\n**SLIDE 6:**\n**What This Means For You**\nAs a GRC professional, prioritize credential security by implementing strong password policies, using MFA, and regularly auditing and updating your organization's credential management practices. This will help prevent large-scale credential attacks and protect your organization's infrastructure and data.\n\n**SLIDE 7:**\nStay Ahead of Emerging Security Threats\nFollow us for more GRC insights and stay up-to-date on the latest security trends and best practices. By prioritizing credential security and staying informed, you can help keep your organization secure in a rapidly changing landscape.",
+  "raw_content": "Here are the 7 original educational carousel slides on the topic of FFIEC Final Authentication Guidance:\n\n**SLIDE 1:**\n\n**Authentication is the Front Door of Security**\nThe security of your digital assets starts with strong customer authentication.\n\n**SLIDE 2:**\n\n**The Authentication Process: A Three-Layered Fortress**\nThink of authentication like a multi-layered security system. The FFIEC's guidelines ensure that each layer is robust, so even if one layer is compromised, the others can still protect your customers.\n\n**SLIDE 3:**\n\n**User Behavior Analysis: The Human Factor**\nAuthentication relies on the user's behavior to verify their identity. This is like a detective trying to solve a puzzle - the more pieces (data points) they have, the clearer the picture becomes.\n\n**SLIDE 4:**\n\n**Risk-Based Authentication: The Right Tool for the Job**\nRisk-based authentication is like choosing the right tool for a specific job. If you're handling sensitive data, you need a more robust tool to ensure security.\n\n**SLIDE 5:**\n\n**The Importance of Continuous Monitoring**\nContinuous monitoring is like having a security guard who stays alert 24/7. It ensures that your authentication system is always up-to-date and secure.\n\n**SLIDE 6:**\n\n**What This Means For You**\nAs a GRC professional, it's essential to ensure that your organization's authentication system is aligned with the FFIEC's guidelines. This means regularly reviewing and updating your authentication processes to stay ahead of emerging security threats.\n\n**SLIDE 7:**\n\nFollow for more GRC insights to stay ahead of emerging security threats and ensure your organization's security posture remains strong. What are the biggest challenges you face in implementing strong customer authentication?",
   "inspired_by": {
-    "topic": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+    "topic": "FFIEC Final Authentication Guidance",
     "domains": [
-      "Security",
-      "Cloud"
+      "GRC",
+      "Security"
     ]
   },
-  "generated_at": "2026-06-22T02:47:36.517034",
+  "generated_at": "2026-06-22T18:13:54.487430",
   "type": "carousel",
   "copyright_safe": true
 }
