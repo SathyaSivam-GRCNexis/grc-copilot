@@ -1,18 +1,17 @@
 {
-  "content": "**Stop Your Legacy Infrastructure from Hijacking Your AI Agents: The \"Isolate, Inspect, Integrate\" Framework**\n\nAs we inject AI into our legacy infrastructure, we risk compromising the security and integrity of our systems. I've noticed that this is often due to the lack of proper controls, allowing malicious actors to exploit vulnerabilities in our outdated systems.\n\n**The \"Isolate, Inspect, Integrate\" Framework:**\n\n1. **Isolate Critical Components**: Separate your AI agents from the rest of your legacy infrastructure to prevent potential contamination. Consider implementing network segmentation or containerization to create a secure boundary around your AI components.\n2. **Inspect and Validate Data Flows**: Regularly inspect data flows between your AI agents and the rest of the system to detect and prevent data tampering or exfiltration. This includes monitoring for unauthorized access, data encryption, and data validation.\n3. **Integrate with Secure APIs**: Ensure that any integrations between your AI agents and the rest of the system use secure APIs that authenticate and authorize requests. This includes implementing OAuth, JWT, or other authentication mechanisms to prevent unauthorized access.\n\n**Application:**\n\nWhenever I'm introducing a new AI agent into a legacy system, I start with these questions: What are the potential risks of integration? Have I isolated the critical components? Can I inspect and validate data flows to ensure security?\n\n**Takeaway:** By applying the \"Isolate, Inspect, Integrate\" framework, you can prevent your legacy infrastructure from hijacking your AI agents and ensure the security and integrity of your systems.\n\n**Save this framework for your next AI-infused legacy system integration project.**",
+  "content": "**Authenticating Identity: A Framework for Compliance**\n\nThe FFIEC Final Authentication Guidance poses a significant challenge for financial institutions: striking a balance between security and customer experience. With the ever-present threat of identity theft and the need for streamlined authentication, organizations must navigate a complex landscape to ensure compliance.\n\n**The \"3C\" Framework**\n\nI've found that the \"3C\" framework helps me approach authentication from a holistic perspective:\n\n**Step 1: \"Contextualize\"**\n\nUnderstand the user's context before authenticating. Ask: What is the user's location, device, and behavior? Contextualization helps identify legitimate users and flag potential threats.\n\n**Step 2: \"Classify\"**\n\nCategorize users based on their risk profile. High-risk users (e.g., those with multiple failed login attempts) require stronger authentication, while low-risk users may be able to access accounts with weaker methods.\n\n**Step 3: \"Challenge\"**\n\nImplement a layered authentication approach, challenging users with increasingly robust methods based on their risk classification. For example, a low-risk user might only need a password, while a high-risk user may require a one-time password (OTP) or biometric authentication.\n\n**Step 4: \"Continuously Monitor\"**\n\nRegularly review and update authentication protocols to stay ahead of evolving threats. This involves monitoring user behavior, adjusting risk profiles, and refining challenge methods.\n\nWhenever I'm designing an authentication system, I start with these questions: What is the user's context, and how can I classify them based on risk? How can I challenge users with increasingly robust methods to ensure security? What are the potential blind spots in my system, and how can I continuously monitor and improve?",
   "template_used": "framework",
   "template_name": "Framework Breakdown Post",
   "inspired_by": {
-    "topic": "Stop Your Legacy Infrastructure from Hijacking Your AI Agents",
-    "concept": "GRC professionals should care about this because it highlights a critical blind spot in AI security programs that attackers are exploiting.",
+    "topic": "FFIEC Final Authentication Guidance",
+    "concept": "A GRC professional should care about this because it updates the Agencies' expectations regarding customer authentication and security controls, affecting the financial industry and potentially other sectors.",
     "domains": [
-      "Security",
-      "Cloud",
-      "AI"
+      "GRC",
+      "Security"
     ]
   },
-  "domain": "Security",
-  "generated_at": "2026-06-23T02:14:31.936200",
+  "domain": "GRC",
+  "generated_at": "2026-06-23T16:22:26.184436",
   "day_of_week": "Tuesday",
   "type": "text_post",
   "copyright_safe": true
