@@ -2,42 +2,43 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**Authentication is the Front Door of Security**\nThe security of your digital assets starts with strong customer authentication.\n"
+      "content": "**Legacy Infrastructure Hijacking AI**\n**Why Old Systems Are Sabotaging AI Security**\nLegacy infrastructure can create a blind spot in AI security programs, making them vulnerable to attacks.\n"
     },
     {
       "slide_number": 2,
-      "content": "**The Authentication Process: A Three-Layered Fortress**\nThink of authentication like a multi-layered security system. The FFIEC's guidelines ensure that each layer is robust, so even if one layer is compromised, the others can still protect your customers.\n"
+      "content": "**Data Silos and AI**\nData silos are like separate filing cabinets in a office. If each cabinet has its own key, but the keys are not shared, it's hard to access the information you need. Similarly, data silos in legacy infrastructure can make it difficult for AI systems to access the data they need to learn and improve.\n"
     },
     {
       "slide_number": 3,
-      "content": "**User Behavior Analysis: The Human Factor**\nAuthentication relies on the user's behavior to verify their identity. This is like a detective trying to solve a puzzle - the more pieces (data points) they have, the clearer the picture becomes.\n"
+      "content": "**Security by Obfuscation**\nSecurity by obscurity is like hiding a safe behind a fake wall. It may seem secure, but if someone knows where to look, they can still find the safe. Similarly, legacy infrastructure can create a false sense of security, making it harder to detect and prevent attacks.\n"
     },
     {
       "slide_number": 4,
-      "content": "**Risk-Based Authentication: The Right Tool for the Job**\nRisk-based authentication is like choosing the right tool for a specific job. If you're handling sensitive data, you need a more robust tool to ensure security.\n"
+      "content": "**Lack of Visibility into AI**\nLegacy infrastructure can make it difficult to monitor and control AI systems, like trying to monitor a complex web of threads. Without visibility, it's hard to detect when an AI system is being exploited or used for malicious purposes.\n"
     },
     {
       "slide_number": 5,
-      "content": "**The Importance of Continuous Monitoring**\nContinuous monitoring is like having a security guard who stays alert 24/7. It ensures that your authentication system is always up-to-date and secure.\n"
+      "content": "**Inadequate Patch Management**\nPatch management is like keeping a car's tires properly inflated. If the tires are underinflated, it can lead to a blowout. Similarly, inadequate patch management can lead to security vulnerabilities that can be exploited.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nAs a GRC professional, it's essential to ensure that your organization's authentication system is aligned with the FFIEC's guidelines. This means regularly reviewing and updating your authentication processes to stay ahead of emerging security threats.\n"
+      "content": "**What This Means For You**\nTo mitigate the risks of legacy infrastructure hijacking AI, it's essential to prioritize patch management, implement data sharing protocols, and ensure adequate visibility into AI systems. By doing so, you can prevent blind spots and ensure the security of your AI programs.\n"
     },
     {
       "slide_number": 7,
-      "content": "Follow for more GRC insights to stay ahead of emerging security threats and ensure your organization's security posture remains strong. What are the biggest challenges you face in implementing strong customer authentication?\n"
+      "content": "Stay Ahead of Emerging Threats\nFollow me for more insights on GRC and security, and stay ahead of emerging threats that can compromise your organization's security and reputation.\n"
     }
   ],
-  "raw_content": "Here are the 7 original educational carousel slides on the topic of FFIEC Final Authentication Guidance:\n\n**SLIDE 1:**\n\n**Authentication is the Front Door of Security**\nThe security of your digital assets starts with strong customer authentication.\n\n**SLIDE 2:**\n\n**The Authentication Process: A Three-Layered Fortress**\nThink of authentication like a multi-layered security system. The FFIEC's guidelines ensure that each layer is robust, so even if one layer is compromised, the others can still protect your customers.\n\n**SLIDE 3:**\n\n**User Behavior Analysis: The Human Factor**\nAuthentication relies on the user's behavior to verify their identity. This is like a detective trying to solve a puzzle - the more pieces (data points) they have, the clearer the picture becomes.\n\n**SLIDE 4:**\n\n**Risk-Based Authentication: The Right Tool for the Job**\nRisk-based authentication is like choosing the right tool for a specific job. If you're handling sensitive data, you need a more robust tool to ensure security.\n\n**SLIDE 5:**\n\n**The Importance of Continuous Monitoring**\nContinuous monitoring is like having a security guard who stays alert 24/7. It ensures that your authentication system is always up-to-date and secure.\n\n**SLIDE 6:**\n\n**What This Means For You**\nAs a GRC professional, it's essential to ensure that your organization's authentication system is aligned with the FFIEC's guidelines. This means regularly reviewing and updating your authentication processes to stay ahead of emerging security threats.\n\n**SLIDE 7:**\n\nFollow for more GRC insights to stay ahead of emerging security threats and ensure your organization's security posture remains strong. What are the biggest challenges you face in implementing strong customer authentication?",
+  "raw_content": "**SLIDE 1:**\n**Legacy Infrastructure Hijacking AI**\n\n**Why Old Systems Are Sabotaging AI Security**\n\n Legacy infrastructure can create a blind spot in AI security programs, making them vulnerable to attacks.\n\n**SLIDE 2:**\n**Data Silos and AI**\n\nData silos are like separate filing cabinets in a office. If each cabinet has its own key, but the keys are not shared, it's hard to access the information you need. Similarly, data silos in legacy infrastructure can make it difficult for AI systems to access the data they need to learn and improve.\n\n**SLIDE 3:**\n**Security by Obfuscation**\n\nSecurity by obscurity is like hiding a safe behind a fake wall. It may seem secure, but if someone knows where to look, they can still find the safe. Similarly, legacy infrastructure can create a false sense of security, making it harder to detect and prevent attacks.\n\n**SLIDE 4:**\n**Lack of Visibility into AI**\n\nLegacy infrastructure can make it difficult to monitor and control AI systems, like trying to monitor a complex web of threads. Without visibility, it's hard to detect when an AI system is being exploited or used for malicious purposes.\n\n**SLIDE 5:**\n**Inadequate Patch Management**\n\nPatch management is like keeping a car's tires properly inflated. If the tires are underinflated, it can lead to a blowout. Similarly, inadequate patch management can lead to security vulnerabilities that can be exploited.\n\n**SLIDE 6:**\n**What This Means For You**\n\nTo mitigate the risks of legacy infrastructure hijacking AI, it's essential to prioritize patch management, implement data sharing protocols, and ensure adequate visibility into AI systems. By doing so, you can prevent blind spots and ensure the security of your AI programs.\n\n**SLIDE 7:**\nStay Ahead of Emerging Threats\n\nFollow me for more insights on GRC and security, and stay ahead of emerging threats that can compromise your organization's security and reputation.",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
+    "topic": "Stop Your Legacy Infrastructure from Hijacking Your AI Agents",
     "domains": [
-      "GRC",
-      "Security"
+      "Security",
+      "Cloud",
+      "AI"
     ]
   },
-  "generated_at": "2026-06-22T18:13:54.487430",
+  "generated_at": "2026-06-23T02:26:56.706957",
   "type": "carousel",
   "copyright_safe": true
 }
