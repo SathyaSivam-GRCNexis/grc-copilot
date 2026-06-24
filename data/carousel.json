@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**Authentication Controls Evolve with Industry**\nAs a GRC professional, it's essential to understand that regulatory standards often drive security controls in the financial industry. Just as new technologies require updated security measures, shifting regulatory expectations necessitate adjustments in authentication processes to maintain customer trust and protect sensitive information.\n"
+      "content": "**The Quantum Threat to Data Security**\nCryptography's Achilles' Heel: Vulnerability to Quantum Attacks\n"
     },
     {
       "slide_number": 2,
-      "content": "**Risk of Insufficient Controls**\n**The House of Cards Analogy**\nImagine a house with multiple layers of security: a strong foundation, a sturdy frame, and secure doors. If one layer fails, the entire house becomes vulnerable. Similarly, in GRC, each control is a layer of protection. When one control is inadequate, the entire system is compromised. This highlights the importance of ensuring all controls are robust and up-to-date.\n"
+      "content": "**Quantum Computing Basics**\nImagine a supercomputer that can try an infinite number of keys in seconds: this is what quantum computers do to traditional cryptography.\n"
     },
     {
       "slide_number": 3,
-      "content": "**Regulatory Expectations**\n**Keeping Pace with Changing Standards**\nThink of a road map with constantly updated milestones. Similarly, regulatory standards evolve to address emerging threats and vulnerabilities. As a GRC professional, it's crucial to stay informed about these changes and implement new controls accordingly. This helps organizations avoid compliance gaps and maintain a strong security posture.\n"
+      "content": "**Key Exchange and Quantum Vulnerability**\nPicture two friends trying to meet in a crowded restaurant while keeping their location secret. Quantum computers can eavesdrop on the conversation and discover the meeting spot.\n"
     },
     {
       "slide_number": 4,
-      "content": "**Customer Authentication Matters**\n**The Password Puzzle**\nImagine trying to access a locked safe with a complex combination lock. If the combination is easily guessable or compromised, the safe becomes vulnerable. In the context of GRC, customer authentication is like this combination lock. If it's weak or easily breached, sensitive information is at risk. Strong authentication controls ensure that customer data remains secure.\n"
+      "content": "**The Implications of Quantum Attacks**\nIf an attacker compromises the encryption keys, they can access sensitive information, putting organizations at risk of data breaches and reputational damage.\n"
     },
     {
       "slide_number": 5,
-      "content": "**Security is a Continuous Process**\n**The Ongoing Maintenance Analogy**\nEnvision a car that needs regular tune-ups to run smoothly. Similarly, security controls require ongoing maintenance to stay effective. As threats evolve, controls must adapt to stay ahead. This emphasis on continuous improvement helps organizations stay secure and compliant.\n"
+      "content": "**Why Post-Quantum Cryptography Matters**\nThink of post-quantum cryptography as upgrading from a simple lock to a high-security safe: it provides a future-proof defense against quantum attacks.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nAs a GRC professional, prioritize regular review and update of your organization's security controls to align with evolving regulatory standards. This involves monitoring industry developments, assessing control effectiveness, and implementing new measures as needed. Regular maintenance ensures your organization remains secure and compliant.\n"
+      "content": "**What This Means For You**\nRegularly review and update your encryption protocols to ensure they can withstand quantum attacks. Consider collaborating with experts to ensure you're prepared for emerging threats.\n"
     },
     {
       "slide_number": 7,
-      "content": "**Stay Ahead of Emerging Security Threats**\nFollow us for more GRC insights and expert advice on staying secure in a rapidly changing landscape.\n"
+      "content": "Stay ahead of emerging security threats by following us for more GRC insights and practical advice on how to safeguard your organization's sensitive data.\n"
     }
   ],
-  "raw_content": "**SLIDE 1:**\n**Authentication Controls Evolve with Industry**\n\nAs a GRC professional, it's essential to understand that regulatory standards often drive security controls in the financial industry. Just as new technologies require updated security measures, shifting regulatory expectations necessitate adjustments in authentication processes to maintain customer trust and protect sensitive information.\n\n**SLIDE 2:**\n**Risk of Insufficient Controls**\n\n**The House of Cards Analogy**\n\nImagine a house with multiple layers of security: a strong foundation, a sturdy frame, and secure doors. If one layer fails, the entire house becomes vulnerable. Similarly, in GRC, each control is a layer of protection. When one control is inadequate, the entire system is compromised. This highlights the importance of ensuring all controls are robust and up-to-date.\n\n**SLIDE 3:**\n**Regulatory Expectations**\n\n**Keeping Pace with Changing Standards**\n\nThink of a road map with constantly updated milestones. Similarly, regulatory standards evolve to address emerging threats and vulnerabilities. As a GRC professional, it's crucial to stay informed about these changes and implement new controls accordingly. This helps organizations avoid compliance gaps and maintain a strong security posture.\n\n**SLIDE 4:**\n**Customer Authentication Matters**\n\n**The Password Puzzle**\n\nImagine trying to access a locked safe with a complex combination lock. If the combination is easily guessable or compromised, the safe becomes vulnerable. In the context of GRC, customer authentication is like this combination lock. If it's weak or easily breached, sensitive information is at risk. Strong authentication controls ensure that customer data remains secure.\n\n**SLIDE 5:**\n**Security is a Continuous Process**\n\n**The Ongoing Maintenance Analogy**\n\nEnvision a car that needs regular tune-ups to run smoothly. Similarly, security controls require ongoing maintenance to stay effective. As threats evolve, controls must adapt to stay ahead. This emphasis on continuous improvement helps organizations stay secure and compliant.\n\n**SLIDE 6:**\n**What This Means For You**\n\nAs a GRC professional, prioritize regular review and update of your organization's security controls to align with evolving regulatory standards. This involves monitoring industry developments, assessing control effectiveness, and implementing new measures as needed. Regular maintenance ensures your organization remains secure and compliant.\n\n**SLIDE 7:**\n**Stay Ahead of Emerging Security Threats**\n\nFollow us for more GRC insights and expert advice on staying secure in a rapidly changing landscape.",
+  "raw_content": "**SLIDE 1:**\n**The Quantum Threat to Data Security**\nCryptography's Achilles' Heel: Vulnerability to Quantum Attacks\n\n**SLIDE 2:**\n**Quantum Computing Basics**\nImagine a supercomputer that can try an infinite number of keys in seconds: this is what quantum computers do to traditional cryptography.\n\n**SLIDE 3:**\n**Key Exchange and Quantum Vulnerability**\nPicture two friends trying to meet in a crowded restaurant while keeping their location secret. Quantum computers can eavesdrop on the conversation and discover the meeting spot.\n\n**SLIDE 4:**\n**The Implications of Quantum Attacks**\nIf an attacker compromises the encryption keys, they can access sensitive information, putting organizations at risk of data breaches and reputational damage.\n\n**SLIDE 5:**\n**Why Post-Quantum Cryptography Matters**\nThink of post-quantum cryptography as upgrading from a simple lock to a high-security safe: it provides a future-proof defense against quantum attacks.\n\n**SLIDE 6:**\n**What This Means For You**\nRegularly review and update your encryption protocols to ensure they can withstand quantum attacks. Consider collaborating with experts to ensure you're prepared for emerging threats.\n\n**SLIDE 7:**\nStay ahead of emerging security threats by following us for more GRC insights and practical advice on how to safeguard your organization's sensitive data.",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
+    "topic": "Trump Order Sets 2030 Deadline for Federal Post-Quantum Crypto Migration",
     "domains": [
       "GRC",
-      "Security"
+      "Cloud"
     ]
   },
-  "generated_at": "2026-06-23T16:34:52.235642",
+  "generated_at": "2026-06-24T02:32:02.169869",
   "type": "carousel",
   "copyright_safe": true
 }

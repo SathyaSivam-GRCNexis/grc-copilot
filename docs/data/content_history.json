@@ -1088,5 +1088,42 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-23T16:33:18.409522"
+  },
+  {
+    "title": "Trump Order Sets 2030 Deadline for Federal Post-Quantum Crypto Migration",
+    "linkedin_post": "**A Career Lesson in Resilience: Adapting to Post-Quantum Crypto**\n\nI used to think that GRC (Governance, Risk, and Compliance) was a static field, where once-established frameworks and technologies reigned supreme for years. But then I learned about the emergence of quantum computing, and how it would soon render many of our current encryption methods obsolete.\n\nBut then I learned...\n\nIn 2023, the White House issued an executive order setting a 2030 deadline for federal agencies to migrate to post-quantum cryptographic systems. This has significant implications for GRC professionals. The lesson here is that **resilience is key in a rapidly evolving field**: staying ahead of emerging threats and technologies requires continuous learning and adaptation.\n\n**FRAMEWORK: The PQ Crypto Maturity Model**\n\nImagine a pyramid with three levels:\n\n1. **Awareness**: understanding the threat landscape and the need for post-quantum crypto.\n2. **Assessment**: evaluating the impact of PQ crypto on your organization's systems and data.\n3. **Action**: developing and implementing post-quantum cryptographic solutions.\n\n**ADVICE:**\n\n* Early-career professionals: stay curious and keep learning about emerging technologies.\n* Mid-career professionals: assess your organization's PQ crypto readiness and develop a plan.\n* Senior professionals: lead by example, and encourage others to adopt a resilience mindset.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "GRC",
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-24T02:19:36.652923"
+  },
+  {
+    "title": "The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration",
+    "linkedin_post": "**The Hidden Dangers of Universal Bucket Hijacking**\n\nI used to think that cloud security was all about firewalls and intrusion detection systems. But then I learned about the Global Namespace Risk, a technique called Universal Bucket Hijacking that can exfiltrate sensitive data from cloud storage.\n\nThis technique works by exploiting the permissions granted to a bucket's owner, allowing attackers to write data to a bucket and then read it back as if it were the owner's own data. In my experience, this type of attack is particularly insidious because it can occur even if the bucket's permissions are set to private.\n\n**Lesson:** The Global Namespace Risk highlights the importance of thinking about access control as a \"least privilege\" principle, rather than just relying on default permissions. This means that each user or service should only have the minimum level of access required to perform their tasks, rather than relying on broad permissions that can be exploited by attackers.\n\n**Framework:** I call this the \" Principle of Least Privilege Pyramid\" - prioritize access control from narrow to broad, and continuously review and refine permissions to ensure they align with changing business needs.\n\n**Advice:** For junior security professionals, focus on understanding the permissions granted to each user and service, and prioritize implementing least privilege access control. For more experienced professionals, consider implementing automated tools to continuously monitor and refine permissions.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-24T02:24:14.578482"
+  },
+  {
+    "title": "OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat",
+    "linkedin_post": "**The Hidden Cost of Over-reliance on OpenClaw's Skill Marketplace**\n\nOne pattern I keep noticing in AI projects is the over-reliance on OpenClaw's Skill Marketplace for custom AI models. While it's an excellent platform for accessing pre-trained models, I've seen teams relying too heavily on it, neglecting the long-term risks this creates in their AI supply chain.\n\n**The mistake: not building a diverse AI model portfolio**\n\nThe mistake is not creating a balanced mix of in-house AI model development and external sourcing, like OpenClaw's Skill Marketplace. This lack of diversity leads to:\n\n\u2022 **Single-point failure**: Over-reliance on a single platform or model type makes teams vulnerable to outages, data breaches, or changes in the platform's policies.\n\u2022 **Lack of control**: By not having in-house expertise, teams are at the mercy of external vendors, limiting their ability to make changes or adapt to new requirements.\n\u2022 **Insufficient knowledge retention**: Relying too heavily on external models means teams may not develop the necessary expertise to create and maintain their own AI models, leading to knowledge gaps.\n\n**The solution: build a balanced AI model portfolio**\n\nTo avoid these risks, I recommend teams prioritize in-house AI development, alongside strategic sourcing from external platforms like OpenClaw's Skill Marketplace. This balanced approach will ensure a diverse AI model portfolio, reducing the threat of single-point failures and enabling teams to make informed decisions about their AI supply chain.\n\nHave you seen teams over-relying on external AI model sources, and if so, what were the consequences?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-24T02:25:48.054174"
+  },
+  {
+    "title": "From DOJ to in-house: Five mindset shifts for success in internal investigations",
+    "linkedin_post": "Early in my career, I was a prosecutor at the DOJ, tasked with investigating product liability cases. When I made the transition to in-house counsel at a large tech company, I quickly realized how different the landscape was. As a prosecutor, I was used to being the one in control, dictating the investigation's pace and direction. But in-house, the tables turned - I was now part of the company's internal investigation team, tasked with uncovering the truth behind a product defect.\n\nOne of the biggest challenges I faced was adjusting to the corporate mindset. As a prosecutor, I was accustomed to a more adversarial approach, always ready to pounce on evidence and witnesses. But in-house, I had to shift into a more collaborative gear, working closely with product teams and executives to understand the intricacies of our products. It wasn't easy - I remember many late nights wrestling with the tension between being a zealous investigator and a trusted advisor.\n\nBut as I navigated these uncharted waters, I began to see the value in this dual role. I learned that successful internal investigations require a delicate balance between getting to the truth and protecting the company's interests. Today, I apply this lesson to every investigation I lead, always mindful of the delicate dance between being a rigorous investigator and a trusted advisor. What mindset shifts have you had to make in your career - how did you adapt to new challenges?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-24T02:30:28.886649"
   }
 ]

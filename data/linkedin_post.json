@@ -1,18 +1,18 @@
 {
-  "content": "**Authenticating Identity: A Framework for Compliance**\n\nThe FFIEC Final Authentication Guidance poses a significant challenge for financial institutions: striking a balance between security and customer experience. With the ever-present threat of identity theft and the need for streamlined authentication, organizations must navigate a complex landscape to ensure compliance.\n\n**The \"3C\" Framework**\n\nI've found that the \"3C\" framework helps me approach authentication from a holistic perspective:\n\n**Step 1: \"Contextualize\"**\n\nUnderstand the user's context before authenticating. Ask: What is the user's location, device, and behavior? Contextualization helps identify legitimate users and flag potential threats.\n\n**Step 2: \"Classify\"**\n\nCategorize users based on their risk profile. High-risk users (e.g., those with multiple failed login attempts) require stronger authentication, while low-risk users may be able to access accounts with weaker methods.\n\n**Step 3: \"Challenge\"**\n\nImplement a layered authentication approach, challenging users with increasingly robust methods based on their risk classification. For example, a low-risk user might only need a password, while a high-risk user may require a one-time password (OTP) or biometric authentication.\n\n**Step 4: \"Continuously Monitor\"**\n\nRegularly review and update authentication protocols to stay ahead of evolving threats. This involves monitoring user behavior, adjusting risk profiles, and refining challenge methods.\n\nWhenever I'm designing an authentication system, I start with these questions: What is the user's context, and how can I classify them based on risk? How can I challenge users with increasingly robust methods to ensure security? What are the potential blind spots in my system, and how can I continuously monitor and improve?",
-  "template_used": "framework",
-  "template_name": "Framework Breakdown Post",
+  "content": "**A Career Lesson in Resilience: Adapting to Post-Quantum Crypto**\n\nI used to think that GRC (Governance, Risk, and Compliance) was a static field, where once-established frameworks and technologies reigned supreme for years. But then I learned about the emergence of quantum computing, and how it would soon render many of our current encryption methods obsolete.\n\nBut then I learned...\n\nIn 2023, the White House issued an executive order setting a 2030 deadline for federal agencies to migrate to post-quantum cryptographic systems. This has significant implications for GRC professionals. The lesson here is that **resilience is key in a rapidly evolving field**: staying ahead of emerging threats and technologies requires continuous learning and adaptation.\n\n**FRAMEWORK: The PQ Crypto Maturity Model**\n\nImagine a pyramid with three levels:\n\n1. **Awareness**: understanding the threat landscape and the need for post-quantum crypto.\n2. **Assessment**: evaluating the impact of PQ crypto on your organization's systems and data.\n3. **Action**: developing and implementing post-quantum cryptographic solutions.\n\n**ADVICE:**\n\n* Early-career professionals: stay curious and keep learning about emerging technologies.\n* Mid-career professionals: assess your organization's PQ crypto readiness and develop a plan.\n* Senior professionals: lead by example, and encourage others to adopt a resilience mindset.\n\n**What career lesson took you years to learn?**",
+  "template_used": "career",
+  "template_name": "Career Growth Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this because it updates the Agencies' expectations regarding customer authentication and security controls, affecting the financial industry and potentially other sectors.",
+    "topic": "Trump Order Sets 2030 Deadline for Federal Post-Quantum Crypto Migration",
+    "concept": "A GRC professional should care about this because it sets a critical deadline for federal agencies to migrate to post-quantum cryptography, impacting the security and compliance of sensitive data.",
     "domains": [
       "GRC",
-      "Security"
+      "Cloud"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-06-23T16:22:26.184436",
-  "day_of_week": "Tuesday",
+  "generated_at": "2026-06-24T02:19:36.652923",
+  "day_of_week": "Wednesday",
   "type": "text_post",
   "copyright_safe": true
 }
