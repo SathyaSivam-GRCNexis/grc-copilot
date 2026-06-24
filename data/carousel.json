@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**The Quantum Threat to Data Security**\nCryptography's Achilles' Heel: Vulnerability to Quantum Attacks\n"
+      "content": "**Risk Management Frameworks Need Continuous Updates**\nThe risk management framework for customer authentication is constantly evolving, requiring financial institutions to adapt and stay compliant.\n"
     },
     {
       "slide_number": 2,
-      "content": "**Quantum Computing Basics**\nImagine a supercomputer that can try an infinite number of keys in seconds: this is what quantum computers do to traditional cryptography.\n"
+      "content": "**Authentication as a Moving Target**\nThink of customer authentication like trying to hit a moving target. The risk landscape is constantly shifting, and authentication methods must keep pace to maintain security posture.\n"
     },
     {
       "slide_number": 3,
-      "content": "**Key Exchange and Quantum Vulnerability**\nPicture two friends trying to meet in a crowded restaurant while keeping their location secret. Quantum computers can eavesdrop on the conversation and discover the meeting spot.\n"
+      "content": "**Layered Security: A Defense-in-Depth Approach**\nLayering security controls, like a castle's walls and moat, helps protect against various types of attacks. In customer authentication, this means combining multiple factors to verify user identity.\n"
     },
     {
       "slide_number": 4,
-      "content": "**The Implications of Quantum Attacks**\nIf an attacker compromises the encryption keys, they can access sensitive information, putting organizations at risk of data breaches and reputational damage.\n"
+      "content": "**Authentication Methods: A Spectrum of Risk**\nImagine a spectrum with password-only authentication on one end and advanced biometrics on the other. Financial institutions must balance user experience with security risk, choosing methods that fit their unique needs.\n"
     },
     {
       "slide_number": 5,
-      "content": "**Why Post-Quantum Cryptography Matters**\nThink of post-quantum cryptography as upgrading from a simple lock to a high-security safe: it provides a future-proof defense against quantum attacks.\n"
+      "content": "**Continuous Authentication: The New Normal**\nContinuous authentication is like having a security guard monitoring the premises 24/7. Instead of just verifying identity at login, it checks for suspicious activity throughout the user session.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nRegularly review and update your encryption protocols to ensure they can withstand quantum attacks. Consider collaborating with experts to ensure you're prepared for emerging threats.\n"
+      "content": "**What This Means For You**\nAs a GRC professional, it's essential to stay up-to-date on emerging authentication technologies and risk management frameworks. Regularly review and update your institution's authentication processes to ensure they're aligned with the latest security best practices.\n"
     },
     {
       "slide_number": 7,
-      "content": "Stay ahead of emerging security threats by following us for more GRC insights and practical advice on how to safeguard your organization's sensitive data.\n"
+      "content": "Follow for more GRC insights to stay ahead of emerging security threats and ensure your financial institution's security posture remains strong in a rapidly changing landscape.\n"
     }
   ],
-  "raw_content": "**SLIDE 1:**\n**The Quantum Threat to Data Security**\nCryptography's Achilles' Heel: Vulnerability to Quantum Attacks\n\n**SLIDE 2:**\n**Quantum Computing Basics**\nImagine a supercomputer that can try an infinite number of keys in seconds: this is what quantum computers do to traditional cryptography.\n\n**SLIDE 3:**\n**Key Exchange and Quantum Vulnerability**\nPicture two friends trying to meet in a crowded restaurant while keeping their location secret. Quantum computers can eavesdrop on the conversation and discover the meeting spot.\n\n**SLIDE 4:**\n**The Implications of Quantum Attacks**\nIf an attacker compromises the encryption keys, they can access sensitive information, putting organizations at risk of data breaches and reputational damage.\n\n**SLIDE 5:**\n**Why Post-Quantum Cryptography Matters**\nThink of post-quantum cryptography as upgrading from a simple lock to a high-security safe: it provides a future-proof defense against quantum attacks.\n\n**SLIDE 6:**\n**What This Means For You**\nRegularly review and update your encryption protocols to ensure they can withstand quantum attacks. Consider collaborating with experts to ensure you're prepared for emerging threats.\n\n**SLIDE 7:**\nStay ahead of emerging security threats by following us for more GRC insights and practical advice on how to safeguard your organization's sensitive data.",
+  "raw_content": "Here are the 7 original educational carousel slides:\n\n**SLIDE 1:**\n**Risk Management Frameworks Need Continuous Updates**\nThe risk management framework for customer authentication is constantly evolving, requiring financial institutions to adapt and stay compliant.\n\n**SLIDE 2:**\n**Authentication as a Moving Target**\nThink of customer authentication like trying to hit a moving target. The risk landscape is constantly shifting, and authentication methods must keep pace to maintain security posture.\n\n**SLIDE 3:**\n**Layered Security: A Defense-in-Depth Approach**\nLayering security controls, like a castle's walls and moat, helps protect against various types of attacks. In customer authentication, this means combining multiple factors to verify user identity.\n\n**SLIDE 4:**\n**Authentication Methods: A Spectrum of Risk**\nImagine a spectrum with password-only authentication on one end and advanced biometrics on the other. Financial institutions must balance user experience with security risk, choosing methods that fit their unique needs.\n\n**SLIDE 5:**\n**Continuous Authentication: The New Normal**\nContinuous authentication is like having a security guard monitoring the premises 24/7. Instead of just verifying identity at login, it checks for suspicious activity throughout the user session.\n\n**SLIDE 6:**\n**What This Means For You**\nAs a GRC professional, it's essential to stay up-to-date on emerging authentication technologies and risk management frameworks. Regularly review and update your institution's authentication processes to ensure they're aligned with the latest security best practices.\n\n**SLIDE 7:**\nFollow for more GRC insights to stay ahead of emerging security threats and ensure your financial institution's security posture remains strong in a rapidly changing landscape.",
   "inspired_by": {
-    "topic": "Trump Order Sets 2030 Deadline for Federal Post-Quantum Crypto Migration",
+    "topic": "FFIEC Final Authentication Guidance",
     "domains": [
       "GRC",
-      "Cloud"
+      "Security"
     ]
   },
-  "generated_at": "2026-06-24T02:32:02.169869",
+  "generated_at": "2026-06-24T16:24:37.911943",
   "type": "carousel",
   "copyright_safe": true
 }
