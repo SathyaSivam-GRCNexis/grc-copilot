@@ -1254,5 +1254,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-26T02:46:03.333243"
+  },
+  {
+    "title": "Miasma Returns: Leo Platform Compromise in npm",
+    "linkedin_post": "**A Lesson in Vulnerability: My npm Compromise Experience**\n\nEarly in my career, I was part of a team that integrated the npm package manager into our DevOps pipeline. It was X years ago, and the idea of automated dependency management seemed like a dream come true. We were ecstatic about the speed and efficiency it brought to our development process. However, our excitement was short-lived.\n\nWe soon encountered the dreaded \"npm compromise\" issue, where a compromised package on the npm registry would infect our entire application with malicious code. I vividly remember the sleepless nights spent trying to debug and clean up the mess.\n\nIt wasn't until I stumbled upon the concept of \"miasma\" \u2013 the idea that security vulnerabilities can spread like a bad odor through a system \u2013 that the solution became clear. The realization hit me like a ton of bricks: our lack of visibility and control over the dependencies was the root cause of the problem.\n\nToday, I apply this lesson to every DevSecOps project I work on. I make sure to implement robust dependency management, monitor for vulnerabilities, and maintain a culture of transparency and accountability. I'd love to hear from others: what lessons did you learn from a similar experience?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-26T16:14:44.309881"
   }
 ]
