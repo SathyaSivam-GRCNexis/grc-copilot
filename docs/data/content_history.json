@@ -1309,5 +1309,23 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-27T15:12:09.630385"
+  },
+  {
+    "title": "ZeroTier Quantum RC2 brings post-quantum security closer to general availability",
+    "linkedin_post": "**Cloud Security: A Common Mistake in Implementing Post-Quantum Security**\n\nOne mistake I see repeatedly in cloud migration plans is the assumption that post-quantum cryptography can be easily retrofitted into existing encryption protocols. Specifically, I've noticed that many teams fail to account for the need to upgrade their underlying key exchange mechanisms to support post-quantum algorithms.\n\n**The Consequences:**\n\n\u2022 **Incompatible Key Exchange Protocols**: Failing to upgrade key exchange mechanisms can lead to incompatible protocols, rendering post-quantum cryptography ineffective.\n\u2022 **Key Escrow Vulnerabilities**: Retaining legacy key exchange protocols can create vulnerabilities for key escrow attacks.\n\u2022 **Performance Overhead**: Inadequate key exchange upgrades can introduce significant performance overhead, compromising the efficiency of post-quantum cryptography.\n\n**The Solution:**\n\nTo avoid this mistake, I recommend that teams plan for a comprehensive key exchange protocol upgrade from the outset. This includes evaluating the compatibility of existing protocols with post-quantum algorithms and implementing necessary upgrades during the migration process.\n\n**Have you seen this mistake in your own cloud migration plans? How did you address the need for post-quantum key exchange upgrades?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-28T02:25:24.640146"
+  },
+  {
+    "title": "Loop Engineering in 2026: Why the Best Developers Don\u2019t Prompt AI Agents Anymore : They Design\u2026",
+    "linkedin_post": "**The AI Loop Paradox: Why Developers Are Trading Prompts for Design**\n\nEveryone's talking about the surge in AI adoption, but I've noticed a more intriguing trend beneath the surface. The more interesting question is: What happens when developers stop relying on AI prompts and start designing loops for their AI agents instead?\n\nIn my experience, this shift has significant implications for DevSecOps professionals. Firstly, it means that developers are taking a more proactive approach to AI risk management. By designing loops, they're building in safeguards that prevent AI agents from making mistakes or causing harm. Secondly, this shift highlights the importance of human oversight in AI development. Developers are recognizing that AI agents aren't simply tools, but complex systems that require careful design and testing. Finally, the rise of loop engineering underscores the need for more rigorous compliance frameworks in AI development.\n\nSo, what should organizations do? They should prioritize designing and testing AI loops as a key component of their DevSecOps strategy. This will help them mitigate AI-related risks and ensure that their AI agents are both effective and safe. But here's the question: As AI development continues to accelerate, how will we scale our compliance frameworks to keep pace with the complexity of AI systems?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-28T02:28:31.626895"
   }
 ]

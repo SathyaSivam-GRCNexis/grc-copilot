@@ -1,18 +1,18 @@
 {
-  "content": "**A Personal Cautionary Tale: The SEC's Crypto Taxonomy**\n\nX years ago, I worked on a project where our company's crypto assets were misclassified as a \"fictitious\" asset class. Our team didn't believe it would be an issue, thinking it was just a technicality. That was until we received an email from our audit team stating we were in non-compliance with the SEC's regulations.\n\nI remember feeling like we were caught off guard, even though it was our responsibility to ensure compliance. We scrambled to correct the issue, but it took months of back-and-forth with auditors and lawyers to get everything in order.\n\nThat experience taught me a valuable lesson: clarity around regulatory requirements is crucial. The SEC's recent crypto taxonomy changes highlight the importance of proper classification and disclosure. Companies with pending enforcement targets should take notice and act now to avoid costly delays and reputational damage.\n\nIn my experience, a clear understanding of regulatory requirements can be the difference between a smooth audit and a costly rework. What lessons have you learned from navigating complex regulatory environments?",
-  "template_used": "personal_story",
-  "template_name": "Personal Story Post",
+  "content": "**The Hidden Flaw in Your Risk Registers**\n\nMost risk registers fail before anyone calculates risk. I've reviewed countless risk assessments, and it's astonishing how often the process ends in a list of identified risks, without a clear understanding of their significance.\n\nThe issue lies in the assumption that a risk register is a static document, a snapshot of potential threats. In reality, risk is a dynamic concept, constantly evolving as new information emerges. By not regularly updating and recalculating risk, organizations are left with an incomplete picture of their vulnerabilities.\n\nFor instance, consider a company that identifies a cybersecurity threat as a high-risk issue. However, without ongoing monitoring and reassessment, they may not realize that the threat landscape has shifted, and the risk is now relatively low. This is a common pattern I've observed in many risk registers.\n\nThe takeaway is that risk registers should be living, breathing documents that adapt to changing circumstances. By prioritizing ongoing risk assessment and management, organizations can ensure their risk registers remain effective and relevant.\n\nHow do you prioritize ongoing risk assessment in your organization?",
+  "template_used": "insight",
+  "template_name": "Insight Post",
   "inspired_by": {
-    "topic": "The SEC\u2019s crypto taxonomy changes everything. Pending enforcement targets should act now",
-    "concept": "A GRC professional should care about this because the SEC's crypto taxonomy changes have significant implications for organizations involved in digital assets, requiring them to reassess their compliance and risk management strategies.",
+    "topic": "NIST SP 800-39: Managing Information Security Risk",
+    "concept": "A GRC professional should care about this because it highlights the importance of managing information security risk, which is a crucial aspect of overall risk management.",
     "domains": [
       "GRC",
-      "Cloud"
+      "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-06-27T15:01:17.374139",
-  "day_of_week": "Saturday",
+  "generated_at": "2026-06-28T02:19:14.305041",
+  "day_of_week": "Sunday",
   "type": "text_post",
   "copyright_safe": true
 }
