@@ -1381,5 +1381,41 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-29T02:23:55.727706"
+  },
+  {
+    "title": "What the post-quantum executive order really demands of CISOs",
+    "linkedin_post": "**A Quantum Shift in Cloud Security**\n\nI used to think that cloud security was all about perimeter defense \u2013 keeping the bad guys out with firewalls and access controls. But then I learned that the post-quantum executive order has changed the game.\n\nIn my experience, the order's focus on quantum-resistant cryptography means that CISOs must now prioritize cryptographic agility \u2013 the ability to quickly adapt to new cryptographic standards and algorithms. This is a seismic shift, as traditional cryptographic controls are no longer sufficient to protect against quantum computers.\n\n**Lesson:** The career insight here is that cloud security is no longer just about defense, but also about adaptability. CISOs must now invest in cryptographic agility, which demands a new set of skills and technologies.\n\n**Framework:** To apply this lesson, I recommend using the \"C.A.R.E.\" framework:\n\n1. **C**ryptographic agility: Assess your organization's ability to adapt to new cryptographic standards and algorithms.\n2. **A**uthenticity: Verify the authenticity of cryptographic keys and certificates.\n3. **R**esilience: Build redundancy and failover into your cryptographic infrastructure.\n4. **E**xchange: Establish relationships with vendors and partners who can provide quantum-resistant cryptography.\n\n**Advice:** For junior CISOs, focus on building a strong team with diverse cryptographic expertise. For senior CISOs, invest in cryptographic agility platforms and technologies that can help your organization adapt quickly.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-06-29T17:03:40.078476"
+  },
+  {
+    "title": "Modernizing Global Vulnerability Standards For The Age Of AI",
+    "linkedin_post": "**One mistake I see repeatedly in modernizing global vulnerability standards for AI**\n\nA pattern I keep noticing when organizations attempt to integrate AI into their vulnerability management frameworks is a failure to account for the unique characteristics of AI-driven vulnerabilities. Specifically, many teams focus solely on updating their existing vulnerability scanning tools to detect AI-related threats, without considering the fundamentally different nature of AI-driven risks.\n\n**The mistake: treating AI-driven vulnerabilities as code-based threats**\n\nWhen updating their frameworks, teams often rely on existing code-based vulnerability scanning tools, assuming these will suffice for detecting AI-driven threats. However, AI-driven vulnerabilities are often the result of data poisoning, adversarial attacks, or other non-code-based exploits. This leads to a significant blind spot in their vulnerability management.\n\n**Consequences:**\n\n\u2022 **Insufficient coverage**: AI-driven vulnerabilities are not detected, allowing these threats to go unaddressed.\n\u2022 **False positives**: AI-driven vulnerabilities are misclassified as code-based threats, leading to unnecessary remediation efforts.\n\u2022 **Increased risk**: Unaddressed AI-driven vulnerabilities create an opportunity for adversaries to exploit these weaknesses.\n\n**To avoid this mistake, organizations should develop a separate framework for detecting and addressing AI-driven vulnerabilities, incorporating data-driven approaches and AI-specific threat models.**\n\nHave you seen similar blind spots in your organization's vulnerability management efforts?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-06-29T17:05:13.404037"
+  },
+  {
+    "title": "Companies keep bolting AI onto their products, and the security bill is coming due",
+    "linkedin_post": "**The AI Security Loophole: Why Rapid Adoption is a Risk Worth Assessing**\n\nEveryone's talking about AI, and how it's being integrated into every product under the sun. But the more interesting question is: are companies adequately addressing the security implications of these AI-powered features?\n\nIn my experience, the answer is often no. As AI is bolted onto products, the complexity of the underlying systems increases exponentially. This creates a perfect storm of potential vulnerabilities, ripe for exploitation by hackers. The security bill is coming due, and GRC professionals need to be prepared to assess these risks in their risk management strategies.\n\nHere are three key areas of concern:\n\n* **Lack of transparency**: With AI-powered features, it's often unclear what data is being used, how it's being processed, and what risks are associated with it.\n* **Insufficient testing**: The rapid pace of AI development means that products are often being released without sufficient testing for security vulnerabilities.\n* **Inadequate training**: As AI becomes more ubiquitous, there's a growing need for professionals to understand how to identify and mitigate AI-related security risks.\n\nSo, what should organizations do? They should prioritize a thorough risk assessment, taking into account the unique security implications of AI-powered features. This will require a fundamental shift in how GRC teams approach risk management.\n\nWhat does this mean for the future of product development? Will we see a backlash against AI-powered features, as security concerns outweigh potential benefits? Or will companies find ways to integrate AI securely, and reap the rewards of innovation?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-06-29T17:08:20.795731"
+  },
+  {
+    "title": "Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer",
+    "linkedin_post": "**A Harsh Lesson in DevSecOps**\n\nEarly in my career, I was tasked with deploying a Python application to production. I was given a choice: use an existing CI/CD pipeline or write a custom script. I chose the latter, confident in my code's simplicity and my own troubleshooting skills. But my script was hijacked by an info-stealer, exposing our company's sensitive data.\n\nI was devastated. How could I have been so reckless? I spent countless hours reviewing my code, questioning every decision. The realization hit me: security isn't just about code quality; it's about the entire development process. I had ignored the security protocols and best practices that I knew existed.\n\nThe lesson I learned that day was the importance of integrating security into every stage of development. It's not just about writing secure code; it's about having a culture that prioritizes security. Today, I make sure to apply this lesson in every project I work on, by incorporating security checks and tasks into our CI/CD pipelines.\n\nWhat lessons have you learned the hard way in DevSecOps?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-06-29T17:09:54.079794"
   }
 ]
