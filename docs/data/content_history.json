@@ -1500,5 +1500,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-01T02:52:00.484492"
+  },
+  {
+    "title": "Discover, govern, and scale Azure infrastructure in the AI era",
+    "linkedin_post": "**Discovering Azure in the AI Era: A Lesson in Governance**\n\nEarly in my career, I was tasked with migrating our on-prem infrastructure to the cloud. We chose Azure, but I soon realized that our lack of understanding of its nuances would lead to chaos. X years ago, I was struggling to navigate Azure's vast array of services, leading to a tangled web of unsecured resources.\n\nOne day, I was working late, trying to troubleshoot a permissions issue. I stumbled upon Azure's access control model and realized that our team had been using Azure Active Directory (AAD) like a traditional on-prem AD. The moment it clicked was when I understood that AAD is more than just identity management \u2013 it's a governance framework.\n\nMy realization was that proper governance of Azure infrastructure requires a shift in mindset. It's not just about securing individual resources; it's about defining and enforcing policies across an entire organization. Today, I apply this lesson by ensuring that every Azure deployment includes a clear governance plan, from access control to cost optimization.\n\nI'd love to hear from you: what lessons have you learned about governing cloud infrastructure in the AI era?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-01T16:22:52.211471"
   }
 ]
