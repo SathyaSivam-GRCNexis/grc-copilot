@@ -1482,5 +1482,23 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-06-30T16:07:34.031790"
+  },
+  {
+    "title": "39 principles for designing human-AI interaction",
+    "linkedin_post": "**Rethinking Human-AI Interaction: Beyond the Buzz**\n\nEveryone is discussing the potential of AI to transform industries, but what's often overlooked is how we design the human-AI interaction itself. The 39 principles for designing human-AI interaction recently outlined in a report are a welcome attempt to standardize this crucial aspect of AI development.\n\nThe more interesting question is: what are the underlying principles that drive effective human-AI interaction, and how can Product professionals apply them to create responsible and compliant AI systems?\n\nFor instance, principle 1 emphasizes transparency in AI decision-making, which is essential for explaining AI outcomes to users. Principle 2 highlights the importance of avoiding bias in AI training data, a critical step towards ensuring fairness in AI-driven decisions. Principle 3 stresses the need for clear user feedback mechanisms, allowing users to correct AI mistakes and improve the overall interaction.\n\nWhat organizations should do is prioritize these principles when developing AI systems. By doing so, they can mitigate the risks associated with AI and create systems that are not only effective but also trustworthy and compliant.\n\nWhat this means for the future is that organizations will need to invest in designing human-AI interaction with care and attention to detail. Those that fail to do so risk creating AI systems that are not only ineffective but also potentially damaging. Can we afford to wait and see which organizations get it right?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-01T02:50:27.140110"
+  },
+  {
+    "title": "Aikido Security acquires Root to expand backported fixes for open source vulnerabilities",
+    "linkedin_post": "**A Lesson in Embracing Backported Fixes**\n\nEarly in my career as a DevSecOps engineer, I worked on a high-profile project where a critical open source vulnerability was discovered in one of our dependencies. Our team was under pressure to release a patch as soon as possible, but the fix wasn't yet available in a stable release. I struggled with the decision to backport the patch, fearing it would introduce new bugs or compromise our system's stability.\n\nThat was until one of my mentors, a seasoned DevSecOps expert, shared an analogy with me: \"Backported fixes are like applying a temporary patch to a torn page in a book. It's not ideal, but it gets you through the night until you can replace the page with a new one.\" This simple explanation helped me understand the value of backported fixes in a high-pressure situation.\n\nToday, I apply this lesson when dealing with open source vulnerabilities. I recognize that backported fixes can be a temporary solution, but they're often better than waiting for a stable release that may never come. How about you - have you ever had to navigate the challenge of backported fixes in a high-pressure situation? What lessons did you learn from it?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-01T02:52:00.484492"
   }
 ]
