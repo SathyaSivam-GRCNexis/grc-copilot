@@ -1509,5 +1509,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-01T16:22:52.211471"
+  },
+  {
+    "title": "US FTC Eyes AI Model Behavior in New Policy Push",
+    "linkedin_post": "**A Career Lesson from the Evolution of AI Policy**\n\nI used to think AI was solely the domain of engineers and data scientists, but then I learned that its behavior is now under regulatory scrutiny.\n\nBut then I learned that the US FTC is shifting its focus from AI's technical capabilities to its potential impact on consumers. The agency's new policy push emphasizes understanding and governing AI model behavior.\n\n**Lesson:** The career insight I gained is that in today's (yes, \"today's\" is allowed, but use sparingly!) rapidly advancing AI landscape, being a generalist is no longer enough. Professionals need to stay adaptable and develop a deeper understanding of the regulatory environment surrounding AI.\n\n**Framework:** I apply the \"Three C's\" framework to navigate this shift: **Context**, where I consider the regulatory landscape and potential impact on consumers; **Capabilities**, where I assess the technical abilities of the AI model; and **Consequences**, where I evaluate the potential outcomes of the model's behavior.\n\n**Advice:** For early-career professionals, this means developing a basic understanding of AI fundamentals and regulatory frameworks. For experienced professionals, it's about staying up-to-date on industry developments and adapting your skillset to address the evolving regulatory landscape.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-02T02:32:05.513394"
+  },
+  {
+    "title": "V\u00e9hicules connect\u00e9s : dans quelles conditions vos donn\u00e9es de localisation peuvent \u00eatre utilis\u00e9es ?",
+    "linkedin_post": "The Problem: As we increasingly rely on connected vehicles, the risk of our personal data being misused grows. Our location data, in particular, can be sensitive and vulnerable to exploitation.\n\nIntroducing the \"Data Shield\" framework, a mental model to help you navigate the complexities of connected vehicle data privacy.\n\n**FRAMEWORK: Data Shield**\n\n**Step 1: \"Contextual Clarity\"**\n Identify the purpose of collecting your location data. Is it for navigation, traffic monitoring, or advertising? Understanding the context helps you determine what data is being collected and how it might be used.\n\n**Step 2: \"Data Ownership\"**\n Determine who is collecting and storing your location data. Is it the vehicle manufacturer, a third-party service provider, or an app developer? Knowing who has access to your data is crucial in assessing the risk of misuse.\n\n**Step 3: \"Data Minimization\"**\n Ask yourself if the location data being collected is necessary for the intended purpose. Are there alternative methods that could provide the same benefits without compromising your data? By minimizing data collection, you reduce the risk of data breaches and misuse.\n\n**Step 4: \"Data Transparency\"**\n Investigate how your location data will be used and shared. Are there any provisions in place to protect your data, and are you given control over its use? Transparency is key to building trust with data collectors.\n\n**Step 5: \"Data Protection\"**\n Consider the measures in place to safeguard your location data. Are there encryption, access controls, and regular security audits? A robust data protection strategy can help mitigate the risk of data breaches.\n\n**APPLICATION:**\nWhenever I consider using a connected vehicle service, I start with these questions: \"What data is being collected, and for what purpose? Who has access to my data, and how will it be used and shared?\" By applying the Data Shield framework, I can make informed decisions about my connected vehicle data and protect my privacy.\n\n**Save this framework for your next connected vehicle data decision.**",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-02T02:35:12.041444"
+  },
+  {
+    "title": "Vulnerability Prioritization Is Missing the AI-Era Point",
+    "linkedin_post": "**Vulnerability Prioritization: The AI-Era Blind Spot**\n\nEveryone's talking about prioritizing vulnerabilities in software development, but I've noticed that the conversation often overlooks the elephant in the room: the changing nature of threats in the AI era. The more interesting question is: are we prioritizing vulnerabilities based on the right criteria for this new landscape?\n\nIn my experience, the traditional approach to vulnerability prioritization \u2013 focusing on exploitability, impact, and likelihood \u2013 no longer holds up when AI-powered attacks come into play. These attacks can adapt and evolve at breakneck speed, making it difficult to predict and prepare for the next threat. Moreover, the reliance on static vulnerability assessments can leave organizations blind to the dynamic risks posed by AI-driven exploits.\n\nHere's what DevSecOps professionals should focus on: **incorporating AI-driven risk modeling** into their prioritization frameworks. This means moving beyond traditional metrics and incorporating machine learning algorithms that can analyze complex threat scenarios and predict potential attack vectors. By doing so, organizations can better anticipate and mitigate the risks posed by AI-powered threats, rather than just reacting to the latest vulnerability patch.\n\nWhat if AI-powered attacks become the new normal, and traditional vulnerability prioritization frameworks become obsolete?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-02T02:36:45.231505"
   }
 ]
