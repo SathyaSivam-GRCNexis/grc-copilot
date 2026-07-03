@@ -1555,5 +1555,42 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-02T15:39:14.918883"
+  },
+  {
+    "title": "AI in compliance: Are we still driving, or just riding shotgun?",
+    "linkedin_post": "**Are we still driving, or just riding shotgun? A common mistake in AI-driven compliance**\n\nOne mistake I see repeatedly in organizations integrating AI into their compliance frameworks is treating AI as a passive tool rather than an active partner. Specifically, I've noticed that many teams are relying too heavily on AI-powered \"risk scoring\" models without actively reviewing or challenging the underlying data and algorithms.\n\n**The Consequences**\n\n\u2022 **Over-reliance on flawed data**: AI models are only as good as the data they're trained on. If the data is biased, incomplete, or inaccurate, the AI model will reflect these flaws, potentially leading to false positives or false negatives.\n\u2022 **Lack of transparency and explainability**: AI models can be complex and opaque, making it difficult to understand why a particular risk was scored a certain way. This lack of transparency can lead to a lack of trust in the model's output.\n\u2022 **Inadequate human oversight**: By relying solely on AI, organizations may not be adequately reviewing and challenging the model's output, potentially missing important compliance issues.\n\n**The Solution**\n\nTo avoid this mistake, I recommend that organizations take a more active role in their AI-driven compliance frameworks. This means regularly reviewing and validating the data and algorithms used in AI-powered risk scoring models, as well as actively challenging and verifying the output of these models.\n\nHave you seen organizations over-relying on AI in their compliance frameworks, without adequate human oversight?",
+    "domains": [
+      "GRC",
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-03T01:59:26.597742"
+  },
+  {
+    "title": "SharePoint RCE CVE-2026-45659 Added to CISA KEV After Active Exploitation",
+    "linkedin_post": "**When Expertise Becomes a Liability**\n\nI used to think that mastering technical skills in security was the ultimate goal. The more vulnerabilities I could patch, the stronger our defenses would be. But then I learned that even with expertise, the biggest risks often lie in the gaps between systems, not in the vulnerabilities themselves.\n\nLESSON: The Career Insight\nIn my experience, the most effective security professionals are those who understand not just the technical controls but also the organizational and social dynamics that can compromise even the most secure systems. They recognize that security is a people problem as much as a technology problem.\n\nFRAMEWORK: A mental model to apply\nThe \"Three Rings of Control\" model can help security professionals prioritize their efforts: (1) technical controls (e.g., patching, firewalls), (2) process controls (e.g., access management, incident response), and (3) cultural controls (e.g., awareness training, phishing simulations). By understanding the interplay between these three rings, security teams can develop more comprehensive strategies to mitigate risks.\n\nADVICE\nFor new security professionals, focus on building a broad understanding of the technical, process, and cultural controls that contribute to a secure environment. For experienced professionals, consider how your expertise might be creating blind spots in your organization's security posture. \n\nWhat career lesson took you years to learn?",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-03T02:04:04.367715"
+  },
+  {
+    "title": "EFF and Allies: X\u2019s FTC Petition to Waive Privacy Violation Order Should be Rejected",
+    "linkedin_post": "**The \"Red Flag\" Framework: A Cautionary Approach to Evaluating FTC Petitions**\n\nAs an industry observer, I've noticed a concerning trend of companies seeking leniency on privacy violations through regulatory waivers. The FTC's recent petition by EFF and allies to reject X's waiver request highlights the need for a structured approach to evaluating such petitions.\n\n**The \"Red Flag\" Framework:**\n\n1. **Identify the \"Get Out of Jail Free\" Card**: Look for language that suggests the company is seeking a waiver as a means of avoiding accountability for past transgressions. Be wary of claims that the company is taking proactive steps to rectify the issue when, in reality, they're trying to sidestep responsibility.\n2. **Assess the Severity of the Violation**: Evaluate the scope and impact of the privacy violation. Has the company exposed sensitive user data, or has it simply failed to comply with a minor regulatory requirement? A more severe violation warrants a more robust response from the FTC.\n3. **Determine the Company's Commitment to Compliance**: Examine the company's track record of adhering to data protection regulations. Have they demonstrated a history of non-compliance, or are they genuinely committed to reforming their practices? A pattern of non-compliance raises red flags.\n4. **Consider the Broader Industry Implications**: Think about the precedent that rejecting or granting the waiver would set for other companies in the industry. Would it create an uneven playing field, or would it reinforce the importance of data protection?\n5. **Evaluate the FTC's Priorities**: Consider the FTC's stated priorities and whether this petition aligns with their goals. Are they focusing on protecting consumer interests, or are they accommodating special interests?\n\n**Whenever I see a company trying to circumvent regulatory accountability, I start with these questions.**\n\nSave this framework for your next privacy petition review.",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-03T02:07:11.418383"
+  },
+  {
+    "title": "How to measure the customer experience as AI scales",
+    "linkedin_post": "**Measuring the Unmeasurable: A Personal Journey**\n\nEarly in my career, I was tasked with scaling a product that relied heavily on AI-driven recommendations. As the user base grew, so did the complexity of our customer experience. I struggled to understand why certain features resonated with users, while others fell flat.\n\nI recall a particular instance where we launched a new feature that was supposed to simplify the user interface. However, user feedback was lukewarm at best, and our metrics showed a significant drop in engagement. I was stumped. How could we improve the experience when our users weren't telling us what they wanted?\n\nOne evening, I stumbled upon a conversation with a user who shared a poignant insight: \"Your new feature saved me time, but it also made me feel like I was losing control.\" This moment clicked for me \u2013 I realized that our customers weren't just interacting with our product, they were investing their emotions and trust.\n\nToday, I make sure to prioritize empathy in our product development. We use a framework that accounts for both functional metrics (e.g., time saved) and emotional metrics (e.g., sense of control). By doing so, we've been able to create a more holistic understanding of our customer experience.\n\nWhat lessons have you learned about measuring the customer experience as your product has scaled?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-03T02:10:17.926363"
   }
 ]
