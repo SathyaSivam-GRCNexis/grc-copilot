@@ -1610,5 +1610,32 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-03T15:39:57.157246"
+  },
+  {
+    "title": "Insider Risk in 2026: AI Didn\u2019t Create Insider Risk. It Removed the Limits.",
+    "linkedin_post": "**The Unintended Consequences of Overreliance on AI-driven Insider Threat Detection**\n\nOne mistake I see repeatedly in organizations is over-relying on AI-driven insider threat detection tools to identify and mitigate insider risk. In my experience, this approach can create a false sense of security.\n\nThe mistake is assuming that AI can simply substitute for human judgment and oversight in identifying insider threats. While AI can process vast amounts of data and identify patterns, it often lacks the nuance and context required to distinguish between legitimate access and malicious intent.\n\n**Consequences:**\n\n\u2022 **Alert fatigue**: AI-generated alerts can lead to a flood of false positives, causing security teams to become desensitized to legitimate threats.\n\u2022 **Inadequate investigation**: Relying solely on AI-driven detection can result in superficial investigations, failing to uncover the underlying motivations and circumstances of insider threats.\n\u2022 **Delayed response**: Over-reliance on AI can lead to delayed responses to insider threats, allowing malicious actors to cause significant damage.\n\n**Solution:** To avoid these consequences, I recommend a balanced approach that combines AI-driven detection with human oversight and investigation. This includes implementing regular training and awareness programs to educate employees on insider threat risks and conducting thorough investigations to identify the root causes of insider threats.\n\nHave you seen similar issues arise in your organization? How do you balance the use of AI-driven detection with human oversight?",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-04T02:02:13.815552"
+  },
+  {
+    "title": "Microsoft Copilot Cowork and the Rise of the AI-Native Work",
+    "linkedin_post": "Microsoft's Copilot Cowork is the latest chapter in the rapidly evolving story of AI in the workplace. The more interesting question, however, is not how AI is changing the way we work, but how this shift is redefining the boundaries of organizational governance and risk management.\n\nAs AI-native work becomes more prevalent, traditional controls and frameworks are struggling to keep pace. In my experience, this is because they were designed with humans in mind, not machines. The AI-native workforce operates under different rules, prioritizing speed and adaptability over precision and predictability. This creates a paradox: while AI can augment human capabilities, it also amplifies our vulnerabilities.\n\nFor Product professionals, the key takeaway is that AI-native work requires a fundamentally different approach to risk management. We need to move beyond traditional controls and focus on designing systems that can learn, adapt, and correct themselves in real-time. This involves adopting a more agile and data-driven mindset, one that prioritizes experimentation and continuous improvement over rigid protocols and checklists. As we hurtle towards this new reality, I'm left wondering: will we be able to create a governance framework that can keep pace with the AI-native workforce?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-04T02:05:21.274149"
+  },
+  {
+    "title": "Intezer helps SOC teams automate custom security tasks",
+    "linkedin_post": "**Lessons from a Sleepless Night: Automating Custom Security Tasks**\n\nEarly in my career, I was a security operations specialist at a mid-sized firm. One of our development teams had just deployed a new application, and our security information and event management (SIEM) system was flooded with alerts. I spent a sleepless night trying to triage the noise, only to find that most of the alerts were false positives related to custom code.\n\nThe challenge was clear: our custom security tasks were manual, time-consuming, and prone to human error. I realized that we needed a more efficient way to handle these tasks, but I didn't know where to start. That's when I learned about the concept of machine learning-based security automation.\n\nThe lesson I took away from that experience was that automation doesn't just save time; it also improves accuracy and reduces the risk of human fatigue. Today, I apply this lesson when working with customers, helping them implement custom security automation using tools like Intezer. I've seen firsthand how it can transform their security posture.\n\nAs I reflect on that sleepless night, I wonder: what lessons have you learned from your own experiences with custom security automation? How have you applied them to improve your security operations?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-04T02:06:54.248686"
   }
 ]
