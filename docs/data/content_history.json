@@ -1,25 +1,5 @@
 [
   {
-    "title": "Security Advisory \u2013 Action Required \u2013 Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
-    "linkedin_post": "**The Misconception of 'Immediate Action Required' in Security Advisories**\n\nEveryone says that when a security advisory is issued, you should drop everything and take immediate action. The latest Check Point VPN authentication bypass vulnerability (CVE-2026-50751) is a perfect example. But I'm not convinced that's always the best approach.\n\n**The Contrarian View**\nI disagree with the prevailing wisdom that immediate action is always necessary. In my experience, many security advisories are based on outdated or hypothetical attack vectors that aren't actually being exploited in the wild.\n\n**Why**\nHere are a few reasons why I think this is the case:\n\n* **Exploitation timelines**: Many advisories are based on theoretical attacks that may not be feasible or practical for actual exploitation.\n* **Patch prioritization**: Issuing an advisory doesn't necessarily mean a patch is available or that it's a high-priority fix.\n* **Vulnerability severity**: Even critical vulnerabilities may not be actively exploited, especially if there's no clear attack vector or if a workaround exists.\n* **Resource constraints**: Organizations often have limited resources to dedicate to immediate patching, which can lead to prioritization and delay.\n\n**Nuance**\nOf course, there are situations where immediate action is necessary - for instance, when a known exploit is already in the wild and you're a direct target. But I'd argue that these cases are relatively rare.\n\n**So, what's the sweet spot between caution and paralysis?**",
-    "domains": [
-      "Security",
-      "GRC"
-    ],
-    "template_used": "Contrarian Post",
-    "generated_at": "2026-06-08T16:46:32.746101"
-  },
-  {
-    "title": "Iran Signed a Ceasefire \u2014 Its Hackers Didn't",
-    "linkedin_post": "**The Disconnection Principle: A Framework for Evaluating State-Sponsored Cyber Threats**\n\n**PROBLEM:** When a nation signs a ceasefire, we often assume a corresponding decrease in cyber aggression. However, Iran's hackers continue to operate with relative impunity, demonstrating the need for a more nuanced approach to understanding state-sponsored cyber threats.\n\n**FRAMEWORK:** The Disconnection Principle helps you evaluate the likelihood of a state's hackers adhering to a ceasefire agreement.\n\n1. **Assess the state's motivations**: Identify the primary drivers behind the ceasefire agreement. Are they ideological, economic, or strategic? If the motivations are primarily ideological, the hackers may continue to operate autonomously, disregarding the ceasefire.\n2. **Examine the state's organizational structure**: Determine the level of separation between the government and its hacking groups. If the hacking groups are independent, they may not be bound by the same ceasefire agreement.\n3. **Look for parallel operations**: Investigate whether the state is engaging in other operations that could undermine the ceasefire agreement. Are they simultaneously negotiating a ceasefire while supporting proxy groups that continue to engage in cyber warfare?\n4. **Evaluate the state's past behavior**: Consider the state's historical behavior regarding cyber operations. Have they shown a willingness to compromise on cyber activities in the past?\n5. **Consider the hackers' culture**: Assess the hackers' mindset and their sense of duty to the state. If they view themselves as independent actors, they may not be swayed by the ceasefire agreement.\n\n**APPLICATION:** Whenever I'm evaluating a ceasefire agreement in the context of a state-sponsored cyber threat, I start with these questions: What are the primary motivations behind the agreement? How separate are the hacking groups from the government? Are there any parallel operations that could undermine the ceasefire?\n\n**SAVE THIS FRAMEWORK** for your next situation where a nation is signing a ceasefire agreement, and you want to assess the likelihood of its hackers adhering to the agreement.",
-    "domains": [
-      "Security",
-      "GRC"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-09T01:42:00.737340"
-  },
-  {
     "title": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
     "linkedin_post": "**Mitigating Kernel Flaws: A Framework for Prioritizing Vulnerability Remediation**\n\nWhen a high-severity kernel flaw like the recent one-character Linux bug is disclosed, IT teams are faced with a daunting task: determining the best course of action to prevent local root access exploits. This framework helps streamline the process.\n\n**Framework: 3-Step Kernel Flaw Mitigation Checklist**\n\n**Step 1: Assess and Triage (ATTAC)**\nQuickly evaluate the severity and impact of the flaw, considering factors like exploitability, attack surface, and potential damage. This step ensures that your team focuses on the most critical vulnerabilities first.\n\n**Step 2: Develop an Exploit-Resistant Configuration (ERC)**\nImplement secure kernel configurations and settings to minimize the exploit's effectiveness. This involves applying kernel hardening techniques, disabling unnecessary kernel modules, and configuring secure boot mechanisms.\n\n**Step 3: Rapid Patch and Validate (RPV)**\nDevelop a rapid patching process to apply the latest kernel updates and validate their effectiveness. This involves integrating vulnerability scanning tools, automating patch deployment, and conducting thorough testing to ensure the patch doesn't introduce new issues.\n\n**Step 4: Continuous Monitoring and Review (CMR)**\nEstablish a continuous monitoring and review process to detect and respond to similar vulnerabilities in the future. This involves integrating vulnerability management tools, conducting regular security audits, and refining your team's knowledge and processes.\n\n**Application:**\nWhenever I'm faced with a newly disclosed kernel flaw, I start with these questions: What's the severity and impact of the flaw? What kernel configurations and settings can I adjust to minimize exploit effectiveness? How can I rapidly apply patches and validate their effectiveness?\n\n**Save this framework for your next kernel flaw scenario.**",
     "domains": [
@@ -1828,5 +1808,24 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-07T16:20:12.300897"
+  },
+  {
+    "title": "OMB M-26-14: Why federal agencies must fix asset visibility first",
+    "linkedin_post": "I used to think that GRC (governance, risk, and compliance) was primarily about checklists and audits. But then I learned about OMB M-26-14, which revealed a much deeper issue: federal agencies' inability to see their assets in real-time.\n\nAs I worked with agencies to implement M-26-14, I realized that asset visibility is the linchpin of effective GRC. Without it, agencies are flying blind, struggling to identify and mitigate risks. It's like trying to steer a ship without a compass \u2013 you're making decisions in the dark.\n\nLesson: The first step to effective GRC is asset visibility. This means having a clear, up-to-date picture of your organization's assets, from financial systems to personnel. Without it, you're doomed to repeat the same mistakes and miss opportunities.\n\nFramework: I call this the \" Asset Visibility Matrix\" \u2013 a simple grid that helps you assess your agency's asset visibility across different domains (financial, operational, etc.).\n\nAdvice: For early-career professionals, focus on understanding the basics of asset management and its connection to GRC. For mid-career professionals, look for opportunities to implement asset visibility initiatives within your organization. For senior leaders, prioritize asset visibility as a key component of your overall GRC strategy.\n\nWhat career lesson took you years to learn?",
+    "domains": [
+      "GRC",
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-08T01:53:18.735038"
+  },
+  {
+    "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+    "linkedin_post": "I used to think that security controls were a one-size-fits-all solution. But then I learned about the RedWing MaaS Packages Android Bank Fraud, which masqueraded as a Telegram rental service.\n\nThe attack, which I'll never forget, taught me a valuable lesson: **controls exist to mitigate the exploitation of human psychology**. In this case, the attackers exploited the psychological aspect of users' desire for convenience and anonymity. They created a convincing Telegram rental service that, unbeknownst to users, was actually a backdoor for bank fraud.\n\nThis experience made me realize that security controls must be designed with human psychology in mind. The **framework** I use to think about this is the \"3 Ps\": **Perception, Psychology, and Process**. When designing security controls, we must consider how users will perceive and interact with them, taking into account psychological biases and weaknesses. We must also analyze the processes that users follow to identify potential vulnerabilities.\n\n**Advice**: For early-career professionals, focus on understanding human psychology and its intersection with security. Ask yourself: \"How can I design controls that anticipate and mitigate the psychological aspects of human behavior?\" For experienced professionals, consider revisiting your control design processes to ensure they account for the psychological factors that can lead to exploitation.",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-08T01:57:56.686512"
   }
 ]
