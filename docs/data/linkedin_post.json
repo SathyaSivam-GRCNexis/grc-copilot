@@ -1,18 +1,18 @@
 {
-  "content": "**Lesson Learned: Prioritizing Asset Visibility in GRC**\n\nI used to think that implementing a strong audit program was the key to ensuring compliance and mitigating risks. But then I learned about OMB M-26-14, which mandated that federal agencies prioritize asset visibility as a critical step in their risk management strategies.\n\nThis shift in perspective has taught me a valuable career lesson: **without accurate asset visibility, GRC initiatives are built on shaky ground**. When agencies can't track their assets, they can't effectively assess risks or allocate resources. I've seen it firsthand in my experience working with government clients. \n\nTo apply this lesson, I recommend using the \" Asset- Risk- Control\" framework:\n\n1. **Identify and catalog all assets**: This includes everything from physical property to intangible assets like data.\n2. **Assess the risks associated with each asset**: This involves evaluating the potential impact of asset loss or compromise.\n3. **Develop and implement effective controls**: This includes policies, procedures, and technologies that mitigate identified risks.\n\nFor early-career professionals, I advise starting with a thorough asset inventory to establish a solid foundation for risk management. For those further along in their careers, I recommend reviewing your agency's asset visibility and risk assessment processes to identify areas for improvement. \n\nWhat career lesson took you years to learn?",
-  "template_used": "career",
-  "template_name": "Career Growth Post",
+  "content": "**Risk Management in the Time of Cybersecurity Hysteria**\n\nEveryone's talking about cybersecurity threats, but what are we really doing to manage them? The more interesting question is: are we prioritizing risk management or just reacting to the latest breach?\n\nIn my experience, GRC professionals often overlook a crucial aspect of risk management: information security risk. NIST SP 800-39 provides a framework for managing this type of risk, but it's not just about following a checklist.\n\nHere are three key takeaways from the framework that GRC pros should focus on:\n\n* **Risk management is not a one-time task**: It's an ongoing process that requires continuous monitoring and evaluation of information security risks.\n* **Risk is not just about probability**: It's also about impact, which means considering the potential consequences of a breach on an organization's reputation and business operations.\n* **Management involvement is crucial**: Effective risk management requires buy-in from senior management, which means communicating the importance of information security risk management to the C-suite.\n\nOrganizations should take a proactive approach to managing information security risk by embedding it into their overall risk management framework. This means allocating sufficient resources, establishing clear policies and procedures, and regularly reviewing and updating their risk management strategy.\n\nWhat does this mean for the future of risk management? Will organizations finally prioritize information security risk management, or will we continue to react to the latest cybersecurity threat?",
+  "template_used": "news_analysis",
+  "template_name": "News Analysis Post",
   "inspired_by": {
-    "topic": "OMB M-26-14: Why federal agencies must fix asset visibility first",
-    "concept": "A GRC professional should care about this because it highlights the importance of asset visibility in federal agencies and its impact on compliance with new logging directives.",
+    "topic": "NIST SP 800-39: Managing Information Security Risk",
+    "concept": "A GRC professional should care about this because it provides insights into managing information security risk, a critical aspect of risk management.",
     "domains": [
       "GRC",
-      "Cloud"
+      "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-08T15:42:05.052548",
-  "day_of_week": "Wednesday",
+  "generated_at": "2026-07-09T02:04:07.689571",
+  "day_of_week": "Thursday",
   "type": "text_post",
   "copyright_safe": true
 }
