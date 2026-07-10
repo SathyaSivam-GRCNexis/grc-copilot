@@ -1,41 +1,5 @@
 [
   {
-    "title": "OWASP Dependency-Track 5.0 Is Now Generally Available",
-    "linkedin_post": "**A Pattern I Keep Noticing: Underestimating Dependency-Track's Impact on Vulnerability Scanning**\n\nOne mistake I see repeatedly in DevSecOps teams is underestimating the impact of OWASP Dependency-Track 5.0 on vulnerability scanning. Specifically, teams often overlook the fact that Dependency-Track 5.0 now requires a more comprehensive understanding of the Software Bill of Materials (SBOM) to accurately identify and prioritize vulnerabilities.\n\n**What happens when you underestimate Dependency-Track's impact?**\n\n\u2022 **Incomplete Vulnerability Scans**: Without a thorough understanding of the SBOM, teams may miss critical vulnerabilities, leading to incomplete scans that don't accurately reflect the security posture of their applications.\n\u2022 **Ineffective Prioritization**: Incomplete SBOM data can lead to poor prioritization of vulnerabilities, resulting in wasted resources on non-critical issues and neglect of more severe threats.\n\u2022 **Delayed Software Releases**: Incomplete or inaccurate vulnerability scans can delay software releases, causing project timelines to slip and impacting business objectives.\n\n**How to avoid this mistake?**\n\nTo avoid underestimating Dependency-Track's impact, I recommend investing time in understanding the SBOM and its role in vulnerability scanning. This includes creating a comprehensive SBOM, updating your team's training on the new Dependency-Track features, and regularly reviewing and refining your vulnerability scanning processes. Have you noticed this pattern in your own DevSecOps teams? How are you addressing the challenges of Dependency-Track 5.0?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-09T16:00:55.167320"
-  },
-  {
-    "title": "New FROST Attack Lets Websites Track What Sites and Apps You Open via SSD Timing",
-    "linkedin_post": "**The SSD Timing Threat: A Framework for Understanding the FROST Attack**\n\nAs a digital privacy advocate, I've noticed that the recent FROST attack has left many website owners and developers scrambling to understand the implications of this vulnerability. The problem is that this attack allows websites to track what sites and apps you open, even if you use a private browsing mode, by exploiting the timing of SSD (solid-state drive) accesses.\n\n**The Timing Threat Framework**\n\nTo better grasp this issue, let's break down the FROST attack into its core components. I call this framework the \"Timing Threat Matrix.\"\n\n**Step 1: Timing Analysis**\nPerform a thorough analysis of your website's SSD access patterns to identify potential vulnerabilities. This involves studying how your website interacts with the user's SSD, including the timing and frequency of these interactions.\n\n**Step 2: Fingerprinting Detection**\nImplement measures to detect and prevent fingerprinting attacks, which involve collecting information about the user's device or browsing behavior. This may involve using tools like FingerprintJS or Cookiebot to identify potential threats.\n\n**Step 3: SSD Access Control**\nEstablish strict access controls for your website's SSD, including limiting the types of data that can be accessed and the frequency of accesses. This may involve using techniques like rate limiting or IP blocking to prevent attackers from exploiting the FROST attack.\n\n**Step 4: Private Browsing Mitigation**\nDevelop strategies to mitigate the impact of private browsing mode, such as using alternative storage solutions or implementing additional security measures to prevent tracking.\n\n**Step 5: Regular Audits and Testing**\nRegularly conduct audits and testing to ensure that your website is not vulnerable to the FROST attack. This may involve using tools like Burp Suite or ZAP to simulate attacks and identify potential vulnerabilities.\n\nWhenever I'm building a website or updating my website security, I start with these questions: What are the potential timing threats to my users' SSD accesses? Am I doing enough to prevent fingerprinting attacks? How can I improve my SSD access control and private browsing mitigation strategies? Save this framework for your next website security audit.",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-09T16:02:28.918932"
-  },
-  {
-    "title": "How and Why to Fight Back Against Social Media Bans",
-    "linkedin_post": "I used to think that social media bans were solely a consequence of reckless behavior online. But then I learned that even established professionals with impeccable online reputations can fall victim to arbitrary censorship.\n\nBut then I learned that it's not just about individual behavior; it's about understanding the complex algorithms and moderation policies that govern online platforms. I realized that these policies can be biased, inconsistent, and opaque \u2013 making it difficult for individuals to navigate the ever-changing landscape.\n\nLESSON: The career insight with specific examples\nWhen I worked as a digital marketing consultant, I saw firsthand how social media bans can impact businesses. A client's account was suspended due to a technical glitch, resulting in a significant loss of revenue. This experience taught me the importance of having a robust online presence strategy that includes multiple platforms and a contingency plan for potential bans.\n\nFRAMEWORK: A mental model others can apply\nThe \"Pillar Principle\" \u2013 understand the platform's policies, identify potential risks, and build a diversified online presence to mitigate the impact of bans.\n\nADVICE:\nFor early-career professionals: Familiarize yourself with social media policies and best practices to avoid common mistakes.\nFor mid-career professionals: Develop a contingency plan for potential bans, including alternative platforms and crisis communication strategies.\nFor senior professionals: Advocate for industry-wide changes to improve transparency and accountability in social media moderation policies.\n\nWhat career lesson took you years to learn?",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-06-10T02:05:31.822566"
-  },
-  {
-    "title": "Dieter Rams avoids computers. His ten rules still fit designing for AI.",
-    "linkedin_post": "**Designing for AI: Lessons from Dieter Rams' Timeless Principles**\n\nEveryone's talking about the impact of AI on product design, but I've noticed that the conversation often gets sidetracked by flashy tech. The more interesting question is: how can we apply timeless design principles to create products that effectively integrate AI?\n\nDieter Rams' ten principles of good design, which he first outlined in the 1970s, remain surprisingly relevant in an age of AI. Rams advocated for simplicity, clarity, and user-centricity \u2013 qualities that are just as essential for designing products with AI as they were for designing physical objects. In my experience, these principles can help Product teams avoid the pitfalls of over-engineering and create intuitive interfaces that put users at ease.\n\nProduct professionals should focus on distilling complex AI-powered features into simple, easily navigable interfaces. This means prioritizing clarity over complexity, and avoiding unnecessary features that can compromise user experience. By applying Rams' principles, organizations can create products that are not only user-friendly but also secure and reliable. As we move forward, I predict that companies that prioritize simplicity and clarity in their AI-powered products will be the ones that truly thrive. Can we still design AI-powered products that truly serve human needs, or are we losing sight of what matters most?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-10T02:10:11.580051"
-  },
-  {
     "title": "NIST SP 800-39: Managing Information Security Risk",
     "linkedin_post": "**Risk Management: A Lesson in Humility**\n\nI used to think that risk management was a straightforward process \u2013 identify threats, assess likelihood, and implement controls. But then I learned that NIST SP 800-39, Managing Information Security Risk, is about more than just ticking boxes.\n\nThe framework emphasizes the importance of understanding business objectives and aligning risk management with strategic goals. In my experience, this means that a well-structured risk management program doesn't just mitigate potential risks, but also enables informed decision-making and drives business value.\n\n**Lesson:** A holistic risk management approach requires a deep understanding of organizational objectives and the ability to communicate risk effectively to stakeholders. This means involving business leaders in risk assessments and prioritizing controls based on business impact.\n\n**Framework:** Apply a \"Risk-Driven\" approach to GRC, where risk management is an integral part of business decision-making. This involves:\n\n1. Aligning risk management with organizational objectives\n2. Involving business leaders in risk assessments\n3. Prioritizing controls based on business impact\n\n**Advice:**\n\n* For junior professionals: Learn to communicate risk effectively and involve stakeholders in risk assessments.\n* For mid-level professionals: Develop a deep understanding of organizational objectives and how risk management contributes to business value.\n* For senior leaders: Embed risk management into business decision-making and prioritize controls based on strategic objectives.\n\n**What career lesson took you years to learn?**",
     "domains": [
@@ -1823,5 +1787,42 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-10T02:12:57.076546"
+  },
+  {
+    "title": "How to Meet a 3-Day Remediation SLA & Comply with CISA BOD 26-04",
+    "linkedin_post": "**Mistaking CISA BOD 26-04's Remediation Requirements for a Checklist**\n\nOne mistake I see repeatedly in CISA BOD 26-04 remediations is equating the regulation's requirements with a simple checklist. I've noticed that teams focus on completing each item on the list, rather than understanding the underlying principles and risk-based approach that BOD 26-04 demands.\n\n**What's the mistake?**\nThe mistake lies in assuming that BOD 26-04's remediation requirements are a static, one-time task. Instead, the regulation emphasizes a continuous, risk-based approach to monitoring and remediating vulnerabilities.\n\n**Consequences:**\n\n\u2022 **Inadequate remediation**: By focusing on completing a checklist, teams often overlook critical vulnerabilities that require more in-depth remediation efforts.\n\u2022 **Lack of ongoing monitoring**: Teams may fail to establish ongoing monitoring and risk assessment processes, leaving them vulnerable to future threats.\n\u2022 **Inefficient resource allocation**: Teams may allocate resources inefficiently, prioritizing low-risk vulnerabilities over high-risk ones.\n\n**How to avoid it?**\nTo meet the 3-day remediation SLA and comply with BOD 26-04, teams should adopt a risk-based approach that prioritizes high-risk vulnerabilities and focuses on continuous monitoring and improvement. This requires ongoing risk assessments, prioritization, and remediation efforts, rather than a one-time checklist exercise.\n\nHave you seen other teams making similar mistakes in their CISA BOD 26-04 remediations?",
+    "domains": [
+      "GRC",
+      "Security"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-10T16:01:43.684380"
+  },
+  {
+    "title": "The hidden compliance cost of building AI-based AML tools in-house",
+    "linkedin_post": "**The Hidden Compliance Cost of Building AI-Based AML Tools In-House**\n\nI used to think that building AI-based AML tools in-house was a cost-effective way to stay ahead of financial crime. But then I learned how compliance costs can quickly spiral out of control.\n\nIn my experience, regulatory requirements and audits can add up to 30-40% to the total development cost of AI-based AML tools. This is because building and maintaining these tools requires a deep understanding of anti-money laundering (AML) regulations, data protection laws, and cybersecurity standards.\n\n**Lesson:** The career insight is that building AI-based AML tools in-house often comes with a hidden compliance cost that can outweigh the benefits of cost savings.\n\n**Framework:** The \"Compliance Cost Quotient\" - a mental model to estimate the additional cost of compliance when building AI-based AML tools in-house. Consider the following factors: regulatory requirements, data protection laws, cybersecurity standards, and audit costs.\n\n**Advice:**\n\n* For junior professionals, focus on building a solid understanding of AML regulations and compliance requirements.\n* For mid-career professionals, assess the compliance costs associated with building AI-based AML tools in-house and consider partnering with specialized vendors.\n* For senior leaders, prioritize compliance and risk management when evaluating in-house development versus vendor partnerships.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-10T16:06:21.452186"
+  },
+  {
+    "title": "Workato expands Agent Studio with Headless API, AI guardrails",
+    "linkedin_post": "Everyone's talking about the explosion of low-code automation in the DevOps space.\n\nThe more interesting question is, are we using these tools to create a fortress of compliance, or a house of cards that will crumble under scrutiny?\n\nWhen tools like Workato expand their capabilities with Headless API and AI guardrails, it's not just about making automation more efficient \u2013 it's about creating a safety net for our DevOps practices. In my experience, the biggest challenge isn't implementing automation itself, but ensuring that it aligns with our security and compliance requirements.\n\nHere are three things DevSecOps professionals should focus on:\n\n * Integrating security and compliance into our automation pipelines, so we can catch potential issues before they become major problems.\n * Using AI guardrails to enforce security policies and prevent human error from creeping into our automated workflows.\n * Ensuring that our automation tools are not only integrated with our security systems, but also that they are designed with security in mind from the ground up.\n\nThe takeaway is clear: organizations need to prioritize integrating security and compliance into their DevOps practices, rather than treating them as afterthoughts. Will we see a shift towards more secure, compliant automation practices, or will we continue to sacrifice security for the sake of speed and efficiency?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-10T16:11:02.191548"
+  },
+  {
+    "title": "CCOs more likely to report to general counsel than any other executive, ITM survey finds",
+    "linkedin_post": "**When a CCO Outranked Me**\n\nX years ago, I was a product manager at a small startup, responsible for launching a new software product. Early in my career, I struggled to balance my technical expertise with the business needs of the company. I was so focused on the product's features and functionality that I neglected to consider the potential risks and liabilities associated with it.\n\nI recall a particularly heated discussion with our CEO, who was pushing me to launch the product ASAP. I was adamant that we needed to slow down and address the concerns raised by our CCO (Chief Compliance Officer), but the CEO wasn't convinced. In hindsight, I realize that I was underestimating the importance of compliance in the product development process.\n\nLooking back, I've come to appreciate the value of having a strong CCO in the leadership team. It's not just about reporting to the general counsel, but about having a holistic understanding of the business that considers both risk and opportunity.\n\nWhat lessons did others learn from their own experiences with CCOs and product development? How do you balance compliance with innovation in your own work?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-10T16:12:35.733166"
   }
 ]

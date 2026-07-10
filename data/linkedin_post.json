@@ -1,17 +1,17 @@
 {
-  "content": "**A Misstep in Multi-Factor Authentication Compliance**\n\nOne mistake I see repeatedly in FFIEC Final Authentication Guidance is the incorrect assumption that a risk assessment is a one-time event. In my experience, financial institutions often conduct a comprehensive risk assessment upfront, only to neglect ongoing monitoring and regular updates.\n\n**The Mistake: Failing to Regularly Review and Update Risk Assessments**\n\nThis oversight can lead to several consequences:\n\n\u2022 **Inadequate controls:** Risk assessments that are not regularly reviewed or updated may lead to ineffective or outdated controls, which can compromise the security of customer data.\n\u2022 **Non-compliance:** Failure to meet FFIEC guidelines can result in regulatory scrutiny, fines, and reputational damage.\n\u2022 **Increased risk:** Neglecting risk assessments can leave institutions exposed to emerging threats, such as new types of malware or phishing attacks.\n\n**Avoiding This Mistake**\n\nTo avoid this misstep, financial institutions should regularly review and update their risk assessments to reflect changes in their environment, such as new technologies or increased threat activity. This ongoing process will ensure that their multi-factor authentication controls remain effective and compliant with FFIEC guidelines.\n\nHave you seen this mistake in your own institution, or in working with clients?",
+  "content": "**Mistaking CISA BOD 26-04's Remediation Requirements for a Checklist**\n\nOne mistake I see repeatedly in CISA BOD 26-04 remediations is equating the regulation's requirements with a simple checklist. I've noticed that teams focus on completing each item on the list, rather than understanding the underlying principles and risk-based approach that BOD 26-04 demands.\n\n**What's the mistake?**\nThe mistake lies in assuming that BOD 26-04's remediation requirements are a static, one-time task. Instead, the regulation emphasizes a continuous, risk-based approach to monitoring and remediating vulnerabilities.\n\n**Consequences:**\n\n\u2022 **Inadequate remediation**: By focusing on completing a checklist, teams often overlook critical vulnerabilities that require more in-depth remediation efforts.\n\u2022 **Lack of ongoing monitoring**: Teams may fail to establish ongoing monitoring and risk assessment processes, leaving them vulnerable to future threats.\n\u2022 **Inefficient resource allocation**: Teams may allocate resources inefficiently, prioritizing low-risk vulnerabilities over high-risk ones.\n\n**How to avoid it?**\nTo meet the 3-day remediation SLA and comply with BOD 26-04, teams should adopt a risk-based approach that prioritizes high-risk vulnerabilities and focuses on continuous monitoring and improvement. This requires ongoing risk assessments, prioritization, and remediation efforts, rather than a one-time checklist exercise.\n\nHave you seen other teams making similar mistakes in their CISA BOD 26-04 remediations?",
   "template_used": "mistake",
   "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this because it updates the risk management framework for customer authentication and security in the financial industry.",
+    "topic": "How to Meet a 3-Day Remediation SLA & Comply with CISA BOD 26-04",
+    "concept": "GRC professionals should care about this because it highlights the importance of timely vulnerability remediation and compliance with CISA BOD 26-04.",
     "domains": [
       "GRC",
       "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-10T02:02:05.660248",
+  "generated_at": "2026-07-10T16:01:43.684380",
   "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true
