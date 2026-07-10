@@ -1,42 +1,5 @@
 [
   {
-    "title": "Mythos Preview can weaponize N-day vulnerabilities in hours",
-    "linkedin_post": "**The Mythos Threat Matrix: A Framework for Mitigating N-day Vulnerabilities**\n\nAs a security professional, I've seen numerous instances where N-day vulnerabilities \u2013 those not yet publicly disclosed \u2013 have been exploited to devastating effect. The Mythos Threat Matrix is a framework designed to help DevSecOps teams proactively identify and mitigate these risks.\n\n**Step 1: Reconnaissance**\nIdentify potential attack surfaces by mapping your organization's digital footprint, including vendors, suppliers, and third-party services. This involves creating a comprehensive inventory of all software, systems, and dependencies.\n\n**Step 2: Vulnerability Scanning**\nUtilize vulnerability scanning tools to identify potential N-day vulnerabilities within your attack surface. This step involves both internal and external scanning to ensure a thorough understanding of your organization's exposure.\n\n**Step 3: Prioritization**\nPrioritize identified vulnerabilities based on likelihood of exploitation and potential impact. This requires a nuanced understanding of your organization's threat landscape and the likelihood of N-day vulnerabilities being exploited.\n\n**Step 4: Mitigation**\nImplement mitigation strategies, such as patches, configuration changes, or workarounds, to reduce the risk of exploitation. This step involves careful consideration of the potential impact of mitigation efforts on your organization's operations.\n\n**Step 5: Continuous Monitoring**\nEstablish a continuous monitoring program to detect and respond to potential N-day vulnerabilities in real-time. This involves integrating threat intelligence feeds and monitoring for suspicious activity.\n\n**Whenever I'm preparing for a potential N-day vulnerability, I start with these questions:**\n- What are the potential attack surfaces in my organization?\n- What vulnerability scanning tools can I utilize to identify N-day vulnerabilities?\n- How do I prioritize identified vulnerabilities based on likelihood of exploitation and potential impact?\n\n**Save this framework for your next vulnerability assessment.**",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-09T10:24:41.256628"
-  },
-  {
-    "title": "The Success That Killed Success: Product Cannibalization",
-    "linkedin_post": "**The Dark Side of Innovation: When Success Can Be a Recipe for Disaster**\n\nEveryone is buzzing about companies disrupting their own markets with innovative new products. But the more interesting question is: what happens when those innovations cannibalize the very products that made those companies successful in the first place?\n\nI've noticed that this phenomenon, known as product cannibalization, can have devastating consequences for organizations. When a company introduces a new product that competes with its existing ones, it can lead to a decline in sales, revenue, and market share. This is because the new product often attracts customers who would have otherwise purchased the existing product, essentially \"eating away\" at its market.\n\nIn my experience, product cannibalization is often the result of a company's desire to innovate and stay ahead of the competition. However, this can lead to a culture of complacency, where companies become too focused on new products and neglect their existing ones. As a result, they can end up sacrificing their core business in the process.\n\nWhat product professionals should focus on is understanding the delicate balance between innovation and disruption. By prioritizing their existing products and managing the risks associated with cannibalization, organizations can avoid the pitfalls of disruption and maintain their market share.\n\nSo, what's the lesson here? How can companies innovate while minimizing the risk of cannibalizing their own success?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-09T10:26:14.627037"
-  },
-  {
-    "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
-    "linkedin_post": "**Incident Response Sanity: A Framework for Managing Cybersecurity Crises**\n\nWhen a security incident strikes, chaos ensues. IT teams scramble to contain the damage, while executives worry about reputational fallout. This is where the NIST SP 800-61 Revision 1 guide shines a light on a clear path forward.\n\n**The Incident Response Sanity Framework**\n\n1. **Detect and Acknowledge**: Identify the incident early and acknowledge its existence. This step is about recognizing the elephant in the room \u2013 don't sweep it under the rug. In my experience, early detection is key to limiting damage.\n2. **Contain and Isolate**: Quickly contain the incident to prevent further damage. Think of it like a fire \u2013 you need to starve it of oxygen (access, power, etc.) to prevent it from spreading. I've seen teams struggle with this step, leading to costly mistakes.\n3. **Assess and Prioritize**: Assess the incident's impact and prioritize response efforts. This is like triaging a patient \u2013 you focus on the most critical issues first. In my opinion, this step is often rushed, leading to a piecemeal response.\n4. **Communicate and Coordinate**: Inform stakeholders and coordinate response efforts. This is like calling in reinforcements \u2013 you need a unified front to tackle the incident. I've noticed that clear communication is often the biggest challenge.\n5. **Recover and Review**: Once the incident is contained, focus on recovery and review the response process. This is like post-game analysis \u2013 you learn from your mistakes to improve next time.\n\n**Whenever I face a cybersecurity crisis, I start with these questions:** \"What's the incident's impact?\" \"What are our top priorities?\" \"Who needs to be informed?\" Save this framework for your next security incident \u2013 it'll help you stay sane and focused.",
-    "domains": [
-      "Security",
-      "GRC"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-09T15:54:42.610521"
-  },
-  {
-    "title": "Frontier AI Goes Federal: How the Great American AI Act Compares to State Laws",
-    "linkedin_post": "**From State to Federal: A Career Lesson in AI Governance**\n\nI used to think that state-level AI regulations were a patchwork of inconsistent laws, making it difficult for companies to navigate the complex landscape of AI ethics. But then I learned about the Great American AI Act, which aims to create a unified federal framework for AI development and deployment.\n\nBut then I learned that this federal law has significant implications for my career as an AI professional. **Lesson:** In AI governance, clarity and consistency are crucial for companies to innovate while minimizing risk. The Great American AI Act's focus on transparency, accountability, and human oversight is a framework that companies can apply to their AI initiatives.\n\nAs a career advice, I'd say that professionals at different stages can benefit from this lesson in various ways: **Early-career AI professionals** can focus on understanding the nuances of state laws before jumping into federal regulations, while **mid-career professionals** can leverage their experience to advise companies on how to adapt to the changing regulatory landscape, and **senior leaders** can use this framework to shape their organizations' AI strategies.\n\nWhat career lesson took you years to learn?",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-06-09T15:59:20.822149"
-  },
-  {
     "title": "OWASP Dependency-Track 5.0 Is Now Generally Available",
     "linkedin_post": "**A Pattern I Keep Noticing: Underestimating Dependency-Track's Impact on Vulnerability Scanning**\n\nOne mistake I see repeatedly in DevSecOps teams is underestimating the impact of OWASP Dependency-Track 5.0 on vulnerability scanning. Specifically, teams often overlook the fact that Dependency-Track 5.0 now requires a more comprehensive understanding of the Software Bill of Materials (SBOM) to accurately identify and prioritize vulnerabilities.\n\n**What happens when you underestimate Dependency-Track's impact?**\n\n\u2022 **Incomplete Vulnerability Scans**: Without a thorough understanding of the SBOM, teams may miss critical vulnerabilities, leading to incomplete scans that don't accurately reflect the security posture of their applications.\n\u2022 **Ineffective Prioritization**: Incomplete SBOM data can lead to poor prioritization of vulnerabilities, resulting in wasted resources on non-critical issues and neglect of more severe threats.\n\u2022 **Delayed Software Releases**: Incomplete or inaccurate vulnerability scans can delay software releases, causing project timelines to slip and impacting business objectives.\n\n**How to avoid this mistake?**\n\nTo avoid underestimating Dependency-Track's impact, I recommend investing time in understanding the SBOM and its role in vulnerability scanning. This includes creating a comprehensive SBOM, updating your team's training on the new Dependency-Track features, and regularly reviewing and refining your vulnerability scanning processes. Have you noticed this pattern in your own DevSecOps teams? How are you addressing the challenges of Dependency-Track 5.0?",
     "domains": [
@@ -1824,5 +1787,41 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-09T16:46:08.982466"
+  },
+  {
+    "title": "Companies risk violating data, consumer laws over agentic AI use",
+    "linkedin_post": "**A Career Lesson in Privacy: The Agentic AI Conundrum**\n\nI used to think that AI was just a tool, a means to automate tasks and improve efficiency. But then I learned about the concept of \"agentic AI,\" where systems begin to make decisions on their own, often without clear oversight.\n\nBut then I learned about the concept of \"agentic AI,\" where systems begin to make decisions on their own, often without clear oversight. This got me thinking about the implications for data privacy and consumer protection.\n\n**LESSON:** Companies risk violating data and consumer laws when using agentic AI without proper safeguards. This is because these systems can collect, process, and act on personal data without human oversight, leading to potential biases and misuses.\n\n**FRAMEWORK:** The \"3Cs\" of Agentic AI: **Control**, **Accountability**, and **Transparency**. Companies must have control over AI decision-making, hold people accountable for AI-driven actions, and provide clear transparency into AI processes.\n\n**ADVICE:** For junior professionals, develop your critical thinking skills to identify potential agentic AI risks. For mid-career professionals, ensure you understand the data flows and decision-making processes within your organization. For senior leaders, prioritize the implementation of the 3Cs framework.\n\nWhat career lesson took you years to learn?",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-10T02:06:42.785533"
+  },
+  {
+    "title": "Why Post-Quantum Migration Might Be Bigger Than It Looks",
+    "linkedin_post": "**The Quantum Leap Framework: A Mental Model for Post-Quantum Migration**\n\n**Problem:** As cloud professionals, we're facing a daunting challenge: post-quantum migration. With the rise of quantum computing, our current cryptographic systems are at risk of being compromised. But is this shift really as daunting as it seems?\n\n**The Quantum Leap Framework:**\n\nStep 1: **Assess Your Quantum Footprint**\nTake stock of your organization's cryptographic dependencies. Which systems rely on vulnerable public-key algorithms like RSA and elliptic curve cryptography? This step is crucial in identifying areas that need immediate attention.\n\nStep 2: **Evaluate Your Migration Options**\nConsider the different post-quantum alternatives, such as lattice-based cryptography (e.g., NTRU) and hash-based signatures (e.g., SPHINCS). Each option has its pros and cons, and a thorough evaluation will help you determine the best fit for your organization.\n\nStep 3: **Prioritize and Phase Your Migration**\nBased on your assessment, prioritize the most critical systems that need to be migrated. Develop a phased approach to migration, starting with the most vulnerable areas first. This will help you avoid a massive, costly overhaul.\n\nStep 4: **Develop a Quantum-Ready Roadmap**\nCreate a long-term plan for post-quantum migration, including timelines, resource allocation, and training for your team. A well-planned roadmap will ensure a smooth transition to a quantum-resistant infrastructure.\n\n**Application:** Whenever I'm faced with a complex migration project, I start with these questions: \"What are the most critical systems that require attention? What are the key trade-offs between different post-quantum alternatives?\"\n\n**Save this framework for your next post-quantum migration project.**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-10T02:09:49.457927"
+  },
+  {
+    "title": "Google's New Remote Attestation Scheme is As Bad As Its Old One",
+    "linkedin_post": "Everyone's been buzzing about Google's new remote attestation scheme, but is it really an improvement over its previous approach?\n\nThe more interesting question is: are we just trading one set of problems for another? In my experience, the tension between user privacy and corporate interests is a classic example of a security dilemma \u2013 where one entity's gain is another's loss.\n\nLet's break it down: remote attestation is a security mechanism that allows devices to prove their integrity to a server. The problem is, it's typically implemented in a way that prioritizes corporate interests over user privacy. Google's new scheme is no exception, relying on a combination of hardware and software checks that can be exploited by malicious actors.\n\nHere's what Product professionals should focus on: the fact that remote attestation schemes often rely on trusted computing bases, which can be compromised by a single vulnerability. This creates a domino effect, where a small issue can lead to a much larger security breach. Moreover, these schemes can also be used to collect sensitive user data, which raises serious concerns about corporate accountability.\n\nWhat organizations should do is take a step back and reevaluate their approach to security and user privacy. Instead of relying on remote attestation schemes, they should focus on building more secure by design products that prioritize user trust and consent.\n\nWhat will happen when more organizations follow Google's lead and prioritize corporate interests over user privacy? Will we see a surge in user distrust and a corresponding decrease in adoption rates?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-10T02:11:22.694416"
+  },
+  {
+    "title": "Symlinks Are Still Scary (And Yes, You Can Commit Them to Git)",
+    "linkedin_post": "**Symlinks Are Still Scary - A DevSecOps Story**\n\nEarly in my career, I recall working on a personal project and struggling to manage a complex directory structure. I was using symlinks to create shortcuts to frequently used files, but every time I tried to commit them to Git, my code reviews would get rejected. The reason was simple: Git doesn't play nicely with symlinks. But I knew symlinks were a useful tool, so I searched for a solution.\n\nThat's when I stumbled upon `git ls-files --error-unmatch` - a command that can safely commit symlinks by ignoring their link status. It was a lightbulb moment for me, realizing that with the right tools, even scary concepts like symlinks can be harnessed. I learned that sometimes, understanding the underlying mechanics of a problem is key to finding creative solutions.\n\nToday, I apply this lesson to all sorts of DevSecOps challenges. When a seemingly insurmountable problem arises, I take a step back, revisit the fundamentals, and search for innovative ways to tackle it. I'd love to hear from you - what scary concepts have you tamed in your own DevSecOps journey?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-10T02:12:57.076546"
   }
 ]
