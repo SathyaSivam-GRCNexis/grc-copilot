@@ -1,18 +1,18 @@
 {
-  "content": "**Mistaking CISA BOD 26-04's Remediation Requirements for a Checklist**\n\nOne mistake I see repeatedly in CISA BOD 26-04 remediations is equating the regulation's requirements with a simple checklist. I've noticed that teams focus on completing each item on the list, rather than understanding the underlying principles and risk-based approach that BOD 26-04 demands.\n\n**What's the mistake?**\nThe mistake lies in assuming that BOD 26-04's remediation requirements are a static, one-time task. Instead, the regulation emphasizes a continuous, risk-based approach to monitoring and remediating vulnerabilities.\n\n**Consequences:**\n\n\u2022 **Inadequate remediation**: By focusing on completing a checklist, teams often overlook critical vulnerabilities that require more in-depth remediation efforts.\n\u2022 **Lack of ongoing monitoring**: Teams may fail to establish ongoing monitoring and risk assessment processes, leaving them vulnerable to future threats.\n\u2022 **Inefficient resource allocation**: Teams may allocate resources inefficiently, prioritizing low-risk vulnerabilities over high-risk ones.\n\n**How to avoid it?**\nTo meet the 3-day remediation SLA and comply with BOD 26-04, teams should adopt a risk-based approach that prioritizes high-risk vulnerabilities and focuses on continuous monitoring and improvement. This requires ongoing risk assessments, prioritization, and remediation efforts, rather than a one-time checklist exercise.\n\nHave you seen other teams making similar mistakes in their CISA BOD 26-04 remediations?",
-  "template_used": "mistake",
-  "template_name": "Mistake Post",
+  "content": "**The Unseen Cost of In-House AML Tools**\n\nEarly in my career, I was tasked with leading a team to develop an AI-based anti-money laundering (AML) tool in-house. We were convinced that building a custom solution would allow us to tailor it to our specific needs and avoid vendor lock-in.\n\nAs we delved deeper into the project, I struggled to balance the technical demands of building a robust AML engine with the need to ensure compliance with complex regulations. We spent countless hours fine-tuning our model, only to realize that we were neglecting the crucial aspect of ongoing monitoring and maintenance.\n\nIt wasn't until we faced a compliance audit that the full weight of our oversight became clear. The auditors pointed out that our custom solution lacked the transparency and documentation required to demonstrate our AML practices were effective. We had inadvertently created a compliance nightmare.\n\nIn hindsight, I realize that we underestimated the hidden cost of building in-house AML tools. It's not just about the upfront investment in technology, but also the ongoing resources required to maintain compliance. Today, I prioritize partnering with experienced vendors who can provide not only effective AML tools but also the necessary compliance expertise.\n\nWhat lessons have you learned from your own experiences with in-house AML tool development?",
+  "template_used": "personal_story",
+  "template_name": "Personal Story Post",
   "inspired_by": {
-    "topic": "How to Meet a 3-Day Remediation SLA & Comply with CISA BOD 26-04",
-    "concept": "GRC professionals should care about this because it highlights the importance of timely vulnerability remediation and compliance with CISA BOD 26-04.",
+    "topic": "The hidden compliance cost of building AI-based AML tools in-house",
+    "concept": "A GRC professional should care about this because it highlights the potential risks and compliance liabilities associated with building AI-based AML tools in-house.",
     "domains": [
       "GRC",
-      "Security"
+      "AI"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-10T16:01:43.684380",
-  "day_of_week": "Friday",
+  "generated_at": "2026-07-11T01:48:05.237957",
+  "day_of_week": "Saturday",
   "type": "text_post",
   "copyright_safe": true
 }
