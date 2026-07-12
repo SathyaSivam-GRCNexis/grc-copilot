@@ -1,43 +1,14 @@
 {
-  "slides": [
-    {
-      "slide_number": 1,
-      "content": "**The Hidden Cost of Homegrown AI**\nWhen building AI-based AML tools in-house, organizations may overlook the hidden compliance costs that can arise from inadequate governance.\n"
-    },
-    {
-      "slide_number": 2,
-      "content": "**Data Silos: The AI Blind Spot**\nData silos occur when AI models are trained on isolated, fragmented data sets, making it challenging to ensure compliance with regulations and standards. Think of data silos like separate filing cabinets in a large office; each cabinet holds valuable information, but without a comprehensive catalog, finding specific documents becomes a daunting task.\n"
-    },
-    {
-      "slide_number": 3,
-      "content": "**Model Risk: The Unknown Variable**\nIn-house AI development often lacks transparency, making it difficult to identify potential risks and biases in the models. This is like trying to predict a complex weather pattern without considering all the underlying atmospheric conditions \u2013 the outcome is uncertain and potentially disastrous.\n"
-    },
-    {
-      "slide_number": 4,
-      "content": "**Regulatory Overlap: The Compliance Catch-22**\nDeveloping AI-based AML tools in-house may lead to overlapping or conflicting regulatory requirements, causing compliance headaches. Imagine trying to navigate a complex maze with multiple exit doors, each representing a different regulatory standard \u2013 finding the right path is a daunting task.\n"
-    },
-    {
-      "slide_number": 5,
-      "content": "**Lack of Auditing and Testing: The Blind Trust**\nWithout proper auditing and testing, in-house AI development may lead to a blind trust in the models, ignoring potential flaws and vulnerabilities. This is like relying on a friend to check your finances without double-checking the numbers \u2013 you may be missing critical errors.\n"
-    },
-    {
-      "slide_number": 6,
-      "content": "**What This Means For You**\nTo mitigate the hidden compliance costs of in-house AI development, organizations should implement robust governance frameworks, ensuring transparency, model risk management, and regulatory compliance. This involves establishing clear policies, conducting regular audits, and fostering a culture of accountability.\n"
-    },
-    {
-      "slide_number": 7,
-      "content": "Stay ahead of emerging security threats and compliance challenges by following our GRC insights for expert advice on governance, risk management, and compliance.\n"
-    }
-  ],
-  "raw_content": "**SLIDE 1:**\n**The Hidden Cost of Homegrown AI**\n\nWhen building AI-based AML tools in-house, organizations may overlook the hidden compliance costs that can arise from inadequate governance.\n\n**SLIDE 2:**\n**Data Silos: The AI Blind Spot**\n\nData silos occur when AI models are trained on isolated, fragmented data sets, making it challenging to ensure compliance with regulations and standards. Think of data silos like separate filing cabinets in a large office; each cabinet holds valuable information, but without a comprehensive catalog, finding specific documents becomes a daunting task.\n\n**SLIDE 3:**\n**Model Risk: The Unknown Variable**\n\nIn-house AI development often lacks transparency, making it difficult to identify potential risks and biases in the models. This is like trying to predict a complex weather pattern without considering all the underlying atmospheric conditions \u2013 the outcome is uncertain and potentially disastrous.\n\n**SLIDE 4:**\n**Regulatory Overlap: The Compliance Catch-22**\n\nDeveloping AI-based AML tools in-house may lead to overlapping or conflicting regulatory requirements, causing compliance headaches. Imagine trying to navigate a complex maze with multiple exit doors, each representing a different regulatory standard \u2013 finding the right path is a daunting task.\n\n**SLIDE 5:**\n**Lack of Auditing and Testing: The Blind Trust**\n\nWithout proper auditing and testing, in-house AI development may lead to a blind trust in the models, ignoring potential flaws and vulnerabilities. This is like relying on a friend to check your finances without double-checking the numbers \u2013 you may be missing critical errors.\n\n**SLIDE 6:**\n**What This Means For You**\n\nTo mitigate the hidden compliance costs of in-house AI development, organizations should implement robust governance frameworks, ensuring transparency, model risk management, and regulatory compliance. This involves establishing clear policies, conducting regular audits, and fostering a culture of accountability.\n\n**SLIDE 7:**\nStay ahead of emerging security threats and compliance challenges by following our GRC insights for expert advice on governance, risk management, and compliance.",
+  "slides": [],
+  "raw_content": "**Slide 1:**\n**Foundational Risk Management is Key to Success**\nUnderstanding NIST SP 800-39: Managing Information Security Risk\nEffective information security risk management is like building a house on solid ground. If the foundation is weak, the entire structure is vulnerable to collapse. A strong foundation is essential for a robust and secure information security program.\n\n**Slide 2:**\n**Identifying Risks is Not a One-Time Task**\nRisk Management is Ongoing\nJust as a fire alarm system requires regular testing to ensure it's working correctly, risk management is an ongoing process that involves regularly assessing and updating risk profiles to stay ahead of emerging threats.\n\n**Slide 3:**\n**Risk Assessment is Not Just About Threats**\nRisk Assessment is About Opportunities\nA risk assessment is like taking a snapshot of your organization's current situation. It's not just about identifying threats, but also about recognizing opportunities to improve security, reduce costs, and enhance compliance.\n\n**Slide 4:**\n**Risk Tolerance is Personal and Contextual**\nRisk Tolerance is Not a One-Size-Fits-All Approach\nRisk tolerance is like a thermostat setting \u2013 it needs to be adjusted based on the specific situation. What's acceptable risk for one organization may not be acceptable for another, and risk tolerance needs to be tailored to the organization's culture, goals, and values.\n\n**Slide 5:**\n**Control Selection is Not Just About Cost**\nControl Selection is About Effectiveness\nChoosing the right controls is like selecting the right tool for the job. While cost is an important consideration, it's not the only factor. Effective controls should be selected based on their ability to reduce risk, improve security, and meet regulatory requirements.\n\n**Slide 6:**\n**What This Means For You**\nApply the Principles to Your Organization\nAs a GRC professional, it's essential to apply the principles of risk management to your organization. This involves regularly assessing and updating risk profiles, selecting effective controls, and adjusting risk tolerance based on the organization's culture, goals, and values.\n\n**Slide 7:**\nFollow us for more GRC insights to stay ahead of emerging security threats and protect your organization's assets with a robust and effective information security program.",
   "inspired_by": {
-    "topic": "The hidden compliance cost of building AI-based AML tools in-house",
+    "topic": "NIST SP 800-39: Managing Information Security Risk",
     "domains": [
       "GRC",
-      "AI"
+      "Security"
     ]
   },
-  "generated_at": "2026-07-12T01:59:58.421758",
+  "generated_at": "2026-07-12T14:53:38.154221",
   "type": "carousel",
   "copyright_safe": true
 }

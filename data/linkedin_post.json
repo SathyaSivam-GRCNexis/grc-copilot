@@ -1,17 +1,17 @@
 {
-  "content": "**The Hidden Compliance Cost of In-house AI AML Tools**\n\n**Most risk registers fail before anyone calculates risk.**\n\nI've reviewed countless risk registers, and it's astonishing how often they're based on assumptions rather than data-driven calculations. This is particularly true for AI-based Anti-Money Laundering (AML) tools developed in-house.\n\n**What most people misunderstand is that building AML tools without proper governance can lead to costly compliance failures.** When organizations create their own AML tools without adhering to established regulatory frameworks, they inadvertently introduce new risks that can outweigh any potential benefits.\n\n**For instance, I've seen companies spend millions on in-house AML development, only to have their tools fail regulatory audits due to inadequate testing and validation.** This is because they didn't invest enough time in designing controls that align with industry standards, such as those set by the Financial Action Task Force (FATF).\n\n**The takeaway is that governance matters just as much as technology when it comes to developing AI-based AML tools.** Ignoring this can lead to costly compliance failures and damage to your organization's reputation.\n\n**Do you agree that governance should be a top priority when developing AI-based AML tools? Should compliance and security teams be more involved in the development process to mitigate these risks?**",
+  "content": "**The Silent Failure of Risk Registers**\n\nMany organizations struggle to manage information security risk effectively, and it's not due to lack of effort. In my experience, the root cause lies in a fundamental misunderstanding of the risk management process.\n\n**Context**: NIST SP 800-39 provides a widely adopted framework for managing information security risk, emphasizing the importance of risk assessment and mitigation. However, its implementation often falls short.\n\n**Insight**: The biggest misconception is that risk registers are a one-time exercise, where all risks are identified and ranked. This approach ignores the dynamic nature of risk, which changes over time due to new threats, vulnerabilities, and changes in business operations.\n\n**Example**: I've seen organizations create exhaustive risk registers only to abandon them months later, as new risks emerge and old ones become obsolete. This is not a matter of resources or expertise but rather a flawed understanding of the risk management process.\n\n**Takeaway**: Effective risk management requires a continuous cycle of risk assessment, mitigation, and monitoring, not a static snapshot of risks at a single point in time.\n\n**Question**: How do you ensure that your organization's risk register remains relevant and effective in managing information security risk?",
   "template_used": "insight",
   "template_name": "Insight Post",
   "inspired_by": {
-    "topic": "The hidden compliance cost of building AI-based AML tools in-house",
-    "concept": "A GRC professional should care about this because it highlights the importance of governance in AI-based AML tool development, which can have significant compliance implications.",
+    "topic": "NIST SP 800-39: Managing Information Security Risk",
+    "concept": "A GRC professional should care about this because it provides foundational knowledge on managing information security risk, which is critical for organizations to protect their assets and comply with regulations.",
     "domains": [
       "GRC",
-      "AI"
+      "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-12T01:47:34.154138",
+  "generated_at": "2026-07-12T14:41:13.708050",
   "day_of_week": "Sunday",
   "type": "text_post",
   "copyright_safe": true
