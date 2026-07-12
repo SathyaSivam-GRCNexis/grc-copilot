@@ -1,18 +1,18 @@
 {
-  "content": "**The Cost of Going It Alone: A Cautionary Tale in AML Compliance**\n\nEarly in my career, my team and I set out to build an in-house AI-based AML tool. We were driven by the promise of cost savings and control over the technology stack. But what we underestimated was the compliance cost of going it alone.\n\n**The Challenge:** As we poured resources into developing the tool, we struggled to keep pace with the ever-changing regulatory landscape. We were expending significant time and energy on manual processes to ensure compliance, which quickly eroded the cost savings we had hoped to achieve.\n\n**The Realization:** It wasn't until we were hit with a hefty fine for non-compliance that we realized the true cost of building in-house. The fine was a stark reminder that compliance is a top-down priority, not just a checkbox exercise.\n\n**The Lesson:** I learned that trying to \"build it all\" can lead to a hidden compliance cost that far outweighs any potential benefits. In this case, it was the price of our inexperience and the costs of manual compliance processes.\n\n**The Application:** Today, I advise clients to carefully weigh the pros and cons of building in-house AML tools. Can the benefits of control and cost savings truly outweigh the risks of non-compliance? I'd love to hear about your own experiences with in-house AML tool development \u2013 what lessons did you learn along the way?",
-  "template_used": "personal_story",
-  "template_name": "Personal Story Post",
+  "content": "**The Hidden Compliance Cost of In-house AI AML Tools**\n\n**Most risk registers fail before anyone calculates risk.**\n\nI've reviewed countless risk registers, and it's astonishing how often they're based on assumptions rather than data-driven calculations. This is particularly true for AI-based Anti-Money Laundering (AML) tools developed in-house.\n\n**What most people misunderstand is that building AML tools without proper governance can lead to costly compliance failures.** When organizations create their own AML tools without adhering to established regulatory frameworks, they inadvertently introduce new risks that can outweigh any potential benefits.\n\n**For instance, I've seen companies spend millions on in-house AML development, only to have their tools fail regulatory audits due to inadequate testing and validation.** This is because they didn't invest enough time in designing controls that align with industry standards, such as those set by the Financial Action Task Force (FATF).\n\n**The takeaway is that governance matters just as much as technology when it comes to developing AI-based AML tools.** Ignoring this can lead to costly compliance failures and damage to your organization's reputation.\n\n**Do you agree that governance should be a top priority when developing AI-based AML tools? Should compliance and security teams be more involved in the development process to mitigate these risks?**",
+  "template_used": "insight",
+  "template_name": "Insight Post",
   "inspired_by": {
     "topic": "The hidden compliance cost of building AI-based AML tools in-house",
-    "concept": "A GRC professional should care about this because it highlights the potential risks and costs associated with building AI-based AML tools in-house, which can have significant compliance implications.",
+    "concept": "A GRC professional should care about this because it highlights the importance of governance in AI-based AML tool development, which can have significant compliance implications.",
     "domains": [
       "GRC",
       "AI"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-11T14:49:18.453397",
-  "day_of_week": "Saturday",
+  "generated_at": "2026-07-12T01:47:34.154138",
+  "day_of_week": "Sunday",
   "type": "text_post",
   "copyright_safe": true
 }
