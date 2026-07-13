@@ -1,14 +1,43 @@
 {
-  "slides": [],
-  "raw_content": "**Slide 1:**\n**Foundational Risk Management is Key to Success**\nUnderstanding NIST SP 800-39: Managing Information Security Risk\nEffective information security risk management is like building a house on solid ground. If the foundation is weak, the entire structure is vulnerable to collapse. A strong foundation is essential for a robust and secure information security program.\n\n**Slide 2:**\n**Identifying Risks is Not a One-Time Task**\nRisk Management is Ongoing\nJust as a fire alarm system requires regular testing to ensure it's working correctly, risk management is an ongoing process that involves regularly assessing and updating risk profiles to stay ahead of emerging threats.\n\n**Slide 3:**\n**Risk Assessment is Not Just About Threats**\nRisk Assessment is About Opportunities\nA risk assessment is like taking a snapshot of your organization's current situation. It's not just about identifying threats, but also about recognizing opportunities to improve security, reduce costs, and enhance compliance.\n\n**Slide 4:**\n**Risk Tolerance is Personal and Contextual**\nRisk Tolerance is Not a One-Size-Fits-All Approach\nRisk tolerance is like a thermostat setting \u2013 it needs to be adjusted based on the specific situation. What's acceptable risk for one organization may not be acceptable for another, and risk tolerance needs to be tailored to the organization's culture, goals, and values.\n\n**Slide 5:**\n**Control Selection is Not Just About Cost**\nControl Selection is About Effectiveness\nChoosing the right controls is like selecting the right tool for the job. While cost is an important consideration, it's not the only factor. Effective controls should be selected based on their ability to reduce risk, improve security, and meet regulatory requirements.\n\n**Slide 6:**\n**What This Means For You**\nApply the Principles to Your Organization\nAs a GRC professional, it's essential to apply the principles of risk management to your organization. This involves regularly assessing and updating risk profiles, selecting effective controls, and adjusting risk tolerance based on the organization's culture, goals, and values.\n\n**Slide 7:**\nFollow us for more GRC insights to stay ahead of emerging security threats and protect your organization's assets with a robust and effective information security program.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "content": "**Incident Response: The First Line of Defense**\nWhen a cyber attack hits, swift action can mean the difference between containing the damage and facing catastrophic consequences.\n"
+    },
+    {
+      "slide_number": 2,
+      "content": "**Containment: Stopping the Bleeding**\nThink of containment like plugging a hole in a sinking ship: it's about halting the spread of the breach to prevent further damage.\n"
+    },
+    {
+      "slide_number": 3,
+      "content": "**Assessment: Diagnosing the Wound**\nAssessment is like a medical diagnosis: you need to understand the nature and extent of the breach to develop an effective treatment plan.\n"
+    },
+    {
+      "slide_number": 4,
+      "content": "**Eradiation: Removing the Threat**\nEradiation is like a fire drill: you need to identify and eliminate the source of the threat to prevent it from happening again.\n"
+    },
+    {
+      "slide_number": 5,
+      "content": "**Recovery: Restoring Order**\nRecovery is like rebuilding after a natural disaster: it's about restoring systems and processes to their pre-breach state and ensuring they're more resilient than before.\n"
+    },
+    {
+      "slide_number": 6,
+      "content": "**What This Means For You**\nAs a GRC professional, it's essential to prioritize incident response planning and ensure your organization has a robust response strategy in place. This includes establishing clear roles and responsibilities, conducting regular training and exercises, and staying up-to-date with the latest security threats and best practices.\n"
+    },
+    {
+      "slide_number": 7,
+      "content": "Stay Ahead of Emerging Security Threats\nFollow us for more GRC insights and expert advice on how to strengthen your organization's security posture and mitigate cyber risks. What are the most critical incident response lessons you've learned from your experience?\n"
+    }
+  ],
+  "raw_content": "**SLIDE 1**\n\n**Incident Response: The First Line of Defense**\nWhen a cyber attack hits, swift action can mean the difference between containing the damage and facing catastrophic consequences.\n\n**SLIDE 2**\n\n**Containment: Stopping the Bleeding**\nThink of containment like plugging a hole in a sinking ship: it's about halting the spread of the breach to prevent further damage.\n\n**SLIDE 3**\n\n**Assessment: Diagnosing the Wound**\nAssessment is like a medical diagnosis: you need to understand the nature and extent of the breach to develop an effective treatment plan.\n\n**SLIDE 4**\n\n**Eradiation: Removing the Threat**\nEradiation is like a fire drill: you need to identify and eliminate the source of the threat to prevent it from happening again.\n\n**SLIDE 5**\n\n**Recovery: Restoring Order**\nRecovery is like rebuilding after a natural disaster: it's about restoring systems and processes to their pre-breach state and ensuring they're more resilient than before.\n\n**SLIDE 6**\n\n**What This Means For You**\nAs a GRC professional, it's essential to prioritize incident response planning and ensure your organization has a robust response strategy in place. This includes establishing clear roles and responsibilities, conducting regular training and exercises, and staying up-to-date with the latest security threats and best practices.\n\n**SLIDE 7**\n\nStay Ahead of Emerging Security Threats\nFollow us for more GRC insights and expert advice on how to strengthen your organization's security posture and mitigate cyber risks. What are the most critical incident response lessons you've learned from your experience?",
   "inspired_by": {
-    "topic": "NIST SP 800-39: Managing Information Security Risk",
+    "topic": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
     "domains": [
       "GRC",
       "Security"
     ]
   },
-  "generated_at": "2026-07-12T14:53:38.154221",
+  "generated_at": "2026-07-13T01:51:04.576281",
   "type": "carousel",
   "copyright_safe": true
 }
