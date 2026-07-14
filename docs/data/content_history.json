@@ -1,23 +1,5 @@
 [
   {
-    "title": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
-    "linkedin_post": "**A Lesson in Prioritizing Safety: My Early Days in Product Development**\n\nEarly in my career, I worked on a team building an autonomous vehicle platform. We were all excited about the prospect of revolutionizing transportation with self-driving cars. But as we started testing our robotaxis on real roads, I began to feel a nagging sense of discomfort. Our safety features felt like an afterthought, tacked on to the system as an add-on rather than an integral part of the design.\n\nI remember one particularly harrowing incident where our system failed to detect a pedestrian, and we were lucky to avoid a catastrophic accident. It was a wake-up call that made me realize just how critical it is to prioritize safety in product development. If safety is an afterthought, it's only a matter of time before something goes terribly wrong.\n\nIn my experience, safety must be built into the very fabric of a product, not bolted on as an afterthought. It's a mindset shift that requires a deep understanding of the complexities involved and a commitment to rigorous testing and validation.\n\nSo, I ask: what lessons have you learned about prioritizing safety in product development?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-12T02:38:54.799828"
-  },
-  {
-    "title": "How to use NIST and ISO frameworks to govern AI agents",
-    "linkedin_post": "**A Pattern I Keep Noticing: Misapplying NIST and ISO Frameworks to Govern AI Agents**\n\nOne mistake I see repeatedly when organizations attempt to govern AI agents using the NIST and ISO frameworks is treating them as separate, one-time assessments rather than ongoing processes. Specifically, they tend to focus solely on the AI/ML development lifecycle (ADL) phase, neglecting the subsequent operational deployment and maintenance phases.\n\n**Consequences of Misapplication:**\n\n\u2022 AI agents are deployed without adequate risk assessments, leading to potential biases and inaccuracies.\n\u2022 Compliance and regulatory requirements are not properly addressed, resulting in costly fines and reputational damage.\n\u2022 The organization fails to capture valuable insights from AI-generated data, missing opportunities for innovation and growth.\n\n**Solution:**\n\nI recommend that organizations integrate NIST and ISO frameworks into their AI governance strategies by incorporating regular risk assessments, compliance checks, and data analytics throughout the AI lifecycle. This ensures that AI agents are continuously monitored and improved, reducing the risk of errors and maintaining regulatory compliance.\n\n**Have you seen this pattern in your organization? How do you ensure ongoing governance of your AI agents?**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-12T16:23:49.157320"
-  },
-  {
     "title": "The seven operating truths of AI-native companies",
     "linkedin_post": "Early in my career, I was tasked with launching a new product at a traditional company trying to make the transition to AI-native. The challenge was clear: our existing processes were slowing us down, and our competitors were nipping at our heels with more agile offerings.\n\nI struggled to balance the need for innovation with the constraints of our existing infrastructure. It felt like trying to get a cat to walk through a doorway without getting scratched \u2013 we just couldn't seem to find the right fit.\n\nThen, something clicked. I realized that the seven operating truths of AI-native companies \u2013 data-driven decision-making, continuous experimentation, and a focus on customer experience, to name a few \u2013 were not just buzzwords, but fundamental principles that would make or break our product's success.\n\nI learned that the key to thriving in this environment was to be willing to experiment and adapt quickly, just like an AI-native company. Today, I apply this lesson to every product launch, recognizing that the only way to stay ahead is to be willing to disrupt our own processes and take calculated risks.\n\nWhat lessons have you learned from navigating the AI-native landscape?",
     "domains": [
@@ -1824,5 +1806,23 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-13T16:12:02.682904"
+  },
+  {
+    "title": "AI-generated code has made security debt a governance problem",
+    "linkedin_post": "**Mitigating Security Debt: A Governance Framework for the AI-Driven Age**\n\nWhen AI-generated code becomes the norm, security debt evolves from a technical concern to a governance problem. This framework helps you navigate this shift.\n\n**The Governance Matrix**\n\nTo address the governance implications of AI-generated code, I've developed the Governance Matrix. This model consists of five core steps:\n\n**Step 1: Identify Vulnerability Exposure**\nAssess which AI-generated code components pose the greatest security risks. This involves analyzing the code's complexity, dependencies, and potential attack surfaces.\n\n**Step 2: Establish Clear Policies**\nDevelop and communicate explicit policies for AI-generated code governance. This includes defining standards for code review, testing, and remediation.\n\n**Step 3: Implement Code Review and Audits**\nRegularly review and audit AI-generated code to ensure it meets organizational standards. This may involve manual review, automated testing, or a combination of both.\n\n**Step 4: Develop Remediation Plans**\nCreate plans for addressing security vulnerabilities in AI-generated code. This includes prioritizing remediation efforts, allocating resources, and tracking progress.\n\n**Step 5: Monitor and Report Governance Metrics**\nEstablish key performance indicators (KPIs) to measure the effectiveness of your governance framework. This helps identify areas for improvement and ensures accountability.\n\nWhenever I'm faced with a complex security debt issue, I start with these questions: What AI-generated code components need immediate attention? What policies and procedures do we need to establish or update? What are the potential risks and consequences of not addressing these issues?\n\nSave this framework for your next security debt challenge.",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-14T01:46:34.213644"
+  },
+  {
+    "title": "\u26a1 Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks, and More",
+    "linkedin_post": "**Weekly Recap: A Wake-Up Call for DevSecOps**\n\nEveryone's buzzing about the latest security threats, from ShareFile to AI-powered coding attacks. But the more interesting question is: how will these incidents reshape our approach to DevSecOps?\n\nIn my experience, the root of the problem lies in our reliance on outdated security tools and our failure to keep pace with the evolving threat landscape. The ShareFile threat, for instance, highlights the risks of unpatched vulnerabilities in software-as-a-service applications. Meanwhile, Citrix Bleed 2 demonstrates how even the most seemingly secure systems can be exploited by determined attackers.\n\nWhat should DevSecOps professionals focus on? Firstly, we need to prioritize vulnerability management and ensure our security tools are up-to-date. Secondly, we must adopt a more proactive approach to threat hunting, leveraging AI-powered analytics to anticipate and prevent attacks. Finally, we need to rethink our security protocols to account for the growing threat of AI-powered coding attacks.\n\nSo, what should organizations do? They should invest in modern security tools and prioritize vulnerability management. By doing so, they'll be better equipped to respond to emerging threats and stay one step ahead of attackers.\n\nWhat does this mean for the future of DevSecOps? Will we see a shift towards more AI-powered security solutions, or will we revert to more manual, risk-based approaches? Can organizations truly keep pace with the evolving threat landscape, or will we be forever playing catch-up?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-14T01:48:07.325167"
   }
 ]
