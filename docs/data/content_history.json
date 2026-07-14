@@ -1,41 +1,5 @@
 [
   {
-    "title": "The seven operating truths of AI-native companies",
-    "linkedin_post": "Early in my career, I was tasked with launching a new product at a traditional company trying to make the transition to AI-native. The challenge was clear: our existing processes were slowing us down, and our competitors were nipping at our heels with more agile offerings.\n\nI struggled to balance the need for innovation with the constraints of our existing infrastructure. It felt like trying to get a cat to walk through a doorway without getting scratched \u2013 we just couldn't seem to find the right fit.\n\nThen, something clicked. I realized that the seven operating truths of AI-native companies \u2013 data-driven decision-making, continuous experimentation, and a focus on customer experience, to name a few \u2013 were not just buzzwords, but fundamental principles that would make or break our product's success.\n\nI learned that the key to thriving in this environment was to be willing to experiment and adapt quickly, just like an AI-native company. Today, I apply this lesson to every product launch, recognizing that the only way to stay ahead is to be willing to disrupt our own processes and take calculated risks.\n\nWhat lessons have you learned from navigating the AI-native landscape?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-12T16:28:30.315395"
-  },
-  {
-    "title": "Google can be liable for false AI Overviews, court rules",
-    "linkedin_post": "**A Career Lesson in AI Accountability**\n\nI used to think that AI systems were infallible, and their outputs were solely the responsibility of the developers who built them. But then I learned about the court ruling that held Google liable for a false AI-generated overview of a company.\n\n**The Lesson:** AI models are only as good as the data they're trained on, and the interpretations of that data. If the data is biased or outdated, the AI output will reflect that. Moreover, AI systems are not absolved of liability simply because they're \"just\" tools. Their outputs can have real-world consequences, and developers must take responsibility for those consequences.\n\n**The Framework:** I call it the \"Data-Signal-Noise\" model. Think of AI outputs as a signal (the information we want to extract) embedded in a noisy environment (the data and interpretations that influence that signal). If the noise is too great, the signal gets distorted, and we end up with false or misleading information.\n\n**Advice:** For junior developers, this means being mindful of the data you're training on and the potential biases within it. For senior developers, it means taking a more nuanced view of AI outputs and being prepared to defend them in court. For everyone, it means recognizing that AI is not a silver bullet, but a tool that requires careful consideration and responsibility. \n\nWhat career lesson took you years to learn?",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-06-13T02:07:16.330524"
-  },
-  {
-    "title": "ANTS cyberattack: when government communication Mirrors the attacker playbook",
-    "linkedin_post": "One mistake I see repeatedly in government communication during cyberattacks is when officials mirror the attacker's playbook by releasing sensitive information to the public. Specifically, this happens when government agencies inadvertently or intentionally disclose details about the attack, such as the exploited vulnerability or the affected systems.\n\nConsequences of this mistake include:\n\n\u2022 **Amplifying the attacker's message**: By releasing sensitive information, governments inadvertently amplify the attacker's message and provide them with valuable insights into the effectiveness of their tactics.\n\u2022 **Compromising future investigations**: The disclosure of sensitive information can compromise future investigations, making it more challenging for law enforcement agencies to track down the attackers and gather evidence.\n\u2022 **Undermining public trust**: Releasing sensitive information can also undermine public trust in government institutions, as citizens may perceive the government as incompetent or irresponsible in handling the attack.\n\nTo avoid this mistake, government agencies should adopt a more measured approach when communicating about cyberattacks. This includes carefully considering the information released to the public and ensuring that it does not compromise ongoing investigations or provide valuable insights to potential attackers. Have you seen this mistake play out in other government communications?",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-13T02:08:49.406535"
-  },
-  {
-    "title": "Next generation DMARC: what\u2019s changing and why it matters",
-    "linkedin_post": "**Next-Gen DMARC: A Framework for Email Security**\n\nAs a cloud professional, I've noticed that email security threats are becoming increasingly sophisticated, putting our organizations at risk. One key area of concern is the evolving landscape of DMARC (Domain-based Message Authentication, Reporting, and Conformance).\n\n**The DMARC Proactive Framework**\n\nTo tackle this challenge, I've developed a mental model that I call the DMARC Proactive Framework. This framework helps you navigate the complexities of next-generation DMARC and ensure your email security is future-proof.\n\n**Step 1: Assess Your DMARC Maturity**\nEvaluate your current DMARC setup and identify areas for improvement. Ask yourself: What are my DMARC record types (p=none, p=reject, p=quarantine)? Are my SPF and DKIM records properly configured? This self-assessment will help you understand your starting point.\n\n**Step 2: Prioritize DMARC Policy Enforcement**\nIdentify the most critical email flows that require DMARC enforcement. I recommend starting with high-risk transactions, such as login attempts or financial transactions. By enforcing DMARC policy for these flows, you can minimize phishing attacks and protect your users.\n\n**Step 3: Implement DMARC Forensics**\nSet up a robust DMARC reporting system that provides actionable insights into email authentication issues. This will help you identify potential vulnerabilities and optimize your DMARC configuration. Consider using DMARC forensics tools to analyze email traffic and detect anomalies.\n\n**Step 4: Integrate with Cloud Security Services**\nLeverage cloud security services that integrate with DMARC to enhance email protection. Examples include Cloudflare's DMARC service or Google Cloud's Identity & Access Management (IAM) service. These integrations can help you automate DMARC configuration and enforcement.\n\n**Step 5: Continuously Monitor and Refine**\nRegularly review your DMARC setup and refine your configuration as needed. This includes monitoring DMARC reports, adjusting your policy enforcement, and testing your email flows for authentication issues.\n\n**Whenever I'm evaluating an organization's email security, I start with these questions:**\n\n* Are they using DMARC policy enforcement for high-risk transactions?\n* Do they have a robust DMARC reporting system in place?\n* Are they integrating DMARC with cloud security services?\n\n**Save this framework for your next email security audit.**",
-    "domains": [
-      "Cloud"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-13T02:10:22.768846"
-  },
-  {
     "title": "ChatGPT Was 76% of the AI Market. It Just Fell to 54%, and Quality Isn\u2019t Why.",
     "linkedin_post": "**Lessons from the Rise and Fall of a Chatbot Giant**\n\nEarly in my career, I was part of a team that launched a chatbot, and we were thrilled to see our creation rise to 76% market share. It was the darling of the industry, touted as the future of customer support. But behind the scenes, I struggled with the limitations of our technology. I saw firsthand how our bot would misinterpret user intent, leading to frustrating interactions.\n\nAs the months went by, I noticed our users' patience wearing thin, and our retention rates plummeting. We were hemorrhaging customers. It was a humbling experience that forced me to confront the reality of our product's shortcomings.\n\nThe realization hit me when I saw our competitors releasing new, more sophisticated chatbots. They weren't just better at understanding intent; they were also more empathetic and human-like in their responses. It was then that I realized the importance of prioritizing user experience over technical achievements.\n\nToday, I apply this lesson to every product I work on. I prioritize understanding the user's emotional needs and crafting experiences that delight, rather than just solving a technical problem. What lessons have you learned from watching a product rise and fall?",
     "domains": [
@@ -1824,5 +1788,41 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-14T01:48:07.325167"
+  },
+  {
+    "title": "Why cloud security is mission-critical for federal civilian and defense agencies",
+    "linkedin_post": "**A Lesson Learned in the Cloud: Prioritizing Security**\n\nI used to think that cloud security was a nice-to-have feature, a checkbox in the migration process. But then I learned about the devastating consequences of cloud breaches on federal civilian and defense agencies. Take the 2020 breach of SolarWinds, a cloud-based IT monitoring platform used by numerous U.S. government agencies, including the Pentagon. The attackers' ability to access sensitive data and disrupt operations highlighted the critical need for robust cloud security.\n\n**LESSON**: Cloud security is mission-critical for federal civilian and defense agencies. The stakes are high, and the consequences of a breach can be catastrophic. This lesson can be applied to other industries and organizations that rely heavily on cloud services. Consider the potential risks of a cloud breach and prioritize security measures accordingly.\n\n**FRAMEWORK**: Assess your organization's cloud security posture by evaluating the following:\n\n1. Data sensitivity and classification\n2. Access controls and identity management\n3. Network and endpoint security\n4. Incident response and disaster recovery\n\n**ADVICE**:\n\n* For career starters: Familiarize yourself with cloud security best practices and frameworks like NIST 800-53.\n* For mid-career professionals: Advocate for cloud security investments and lead by example.\n* For leaders: Allocate sufficient resources to cloud security initiatives and hold teams accountable for compliance.\n\n**QUESTION**: What career lesson took you years to learn?",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-14T15:17:12.670552"
+  },
+  {
+    "title": "Email Agent Hijacking: The Hidden Threat That Breaks Post-Delivery Security",
+    "linkedin_post": "**The Hidden Threat That Breaks Post-Delivery Security: Email Agent Hijacking**\n\nAs we rely increasingly on AI-driven email services, a silent threat lurks in the shadows, compromising post-delivery security: Email Agent Hijacking. This framework helps you identify and mitigate this risk.\n\n**The Hijacking Framework**\n\n1. **Identify the Agent**: Recognize the email agents at play, such as Microsoft 365's Clutter folder or Google's Spam folder. These agents filter and manage email, but can also be manipulated by attackers.\n2. **Assess Agent Configuration**: Evaluate how these agents are configured and used within your organization. Are they set to automatically purge or quarantine emails? Are employees aware of how to interact with them?\n3. **Monitor Agent Activity**: Set up logging and monitoring to track agent activity, including filtering decisions and potential security incidents. This helps you detect and respond to potential agent hijacking attempts.\n4. **Analyze Agent Impact**: Determine how agent actions are affecting email security, delivery, and employee productivity. Are specific agents or configurations creating more problems than they solve?\n5. **Optimize Agent Settings**: Regularly review and adjust agent settings to ensure they align with your organization's security and productivity goals. This might involve adjusting filtering rules, whitelisting or blacklisting senders, or implementing additional security measures.\n\n**Whenever I review our email security setup, I start with these questions:**\n\n- What email agents are in use, and how are they configured?\n- Are our agents effectively filtering out spam and phishing attempts, or are they creating unnecessary delays or blockages?\n- Are employees aware of how to interact with our email agents, and are they using them correctly?\n\n**Save this framework for your next email security review.**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-14T15:20:19.143016"
+  },
+  {
+    "title": "LLM Evaluation Frameworks Compared: How to Actually Measure What Your Model Does",
+    "linkedin_post": "Everyone's talking about Large Language Model (LLM) evaluation frameworks, but the more interesting question is: can we truly measure what our models do?\n\nIn my experience, many organizations are eager to adopt LLMs, but they often overlook the importance of evaluating their performance and potential risks. DevSecOps professionals should be concerned about this because AI adoption can lead to increased security vulnerabilities if not properly managed.\n\nHere's why: most evaluation frameworks focus on metrics like accuracy and recall, but they don't actually tell us what our models are doing. It's like trying to gauge a car's safety by just looking at its speedometer \u2013 you need to consider the road conditions, traffic, and driver behavior as well. Similarly, LLM evaluation frameworks should assess not just the model's performance, but also its ability to handle edge cases, identify biases, and maintain data privacy.\n\nTo actually measure what our models do, DevSecOps professionals should focus on evaluating the following:\n\n* Model interpretability: can we understand why the model made a particular decision?\n* Model adaptability: can the model adjust to new or changing data?\n* Model resilience: can the model withstand attacks or data corruption?\n\nIf organizations can develop a more comprehensive evaluation framework, they'll be better equipped to mitigate risks associated with AI adoption and make informed decisions about their LLM applications. What do you think: should we prioritize model interpretability over accuracy in LLM evaluation frameworks?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-14T15:21:52.555072"
+  },
+  {
+    "title": "Sony Nerfs Videogame Ownership",
+    "linkedin_post": "**The Agony of Ownership: When Sony Nerfed My Love for Videogames**\n\nEarly in my career, I was a huge fan of the PlayStation 3. I spent countless hours exploring the world of Uncharted, and my friends would often gather at my place to try and beat each other's high scores in LittleBigPlanet. However, things took a turn when Sony announced that they would be phasing out the original PS3's backwards compatibility with older games.\n\nThe challenge I faced was that many of my favorite games were no longer playable on the latest consoles. I felt a sense of ownership loss \u2013 I had bought these games, and now they were essentially worthless. It was frustrating to think that I had invested so much time and money, only to have it taken away from me.\n\nThe realization came when I started to see Sony's strategy as a clever way to push gamers towards newer, more expensive hardware. It was a masterclass in customer manipulation \u2013 by taking away a feature that I valued, they were forcing me to upgrade and spend more money.\n\nToday, I apply this lesson to my approach to product ownership. When I see companies phasing out features or services, I ask myself if there's a larger strategy at play. What can I learn from their approach, and how can I apply it to my own life?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-14T15:23:25.670231"
   }
 ]
