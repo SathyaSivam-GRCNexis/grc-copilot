@@ -1,11 +1,19 @@
 [
   {
+    "title": "U.K. set to ramp up consumer protection against price gouging",
+    "url": "https://www.complianceweek.com/regulatory-policy/u-k-set-to-ramp-up-consumer-protection-against-price-gouging/",
+    "summary": "Companies risk finding that commercially sensitive information about their pricing strategies could be made public if competition authorities and other regulators believe they have unduly hiked prices to take advantage of a spike in customer demand due to a crisis.",
+    "source": "Compliance Week",
+    "published": "2026-07-15T17:24:31",
+    "fetched_at": "2026-07-16T00:55:39.078265"
+  },
+  {
     "title": "By creating a new AI and exams position, SEC may be ramping up Marketing Rule enforcement",
     "url": "https://www.complianceweek.com/regulatory-policy/by-creating-a-new-ai-and-exams-position-sec-may-be-ramping-up-marketing-rule-enforcement/",
     "summary": "The SEC has created a new position on AI and examinations for broker-dealers and investment advisers. The move should signal to regulated entities that the SEC may begin applying more sophisticated AI tools to scour advertisements made by firms for false or misleading claims",
     "source": "Compliance Week",
     "published": "2026-07-14T17:45:27",
-    "fetched_at": "2026-07-15T14:17:29.515905"
+    "fetched_at": "2026-07-16T00:55:39.078387"
   },
   {
     "title": "Regulators are likely to pass laws on AI use in healthcare. Here\u2019s how to prepare",
@@ -13,7 +21,7 @@
     "summary": "Artificial intelligence tools hold breathtaking potential in the healthcare ecosystem. The post Regulators are likely to pass laws on AI use in healthcare. Here&#8217;s how to prepare appeared first on Compliance Week.",
     "source": "Compliance Week",
     "published": "2026-07-14T14:00:00",
-    "fetched_at": "2026-07-15T14:17:29.516006"
+    "fetched_at": "2026-07-16T00:55:39.078491"
   },
   {
     "title": "Lawyers warn U.K. financial firms to prepare for faster regulatory changes with less consultation",
@@ -21,151 +29,135 @@
     "summary": "The U.K. government is giving the financial and banking regulators more flexibility to make regulations without submitting these to a full consultation process.",
     "source": "Compliance Week",
     "published": "2026-07-14T13:00:00",
-    "fetched_at": "2026-07-15T14:17:29.516098"
+    "fetched_at": "2026-07-16T00:55:39.078579"
   },
   {
-    "title": "GDPR 10 years on: Differences in regulatory enforcement still problematic",
-    "url": "https://www.complianceweek.com/data-privacy/gdpr-10-years-on-differences-in-regulatory-enforcement-still-problematic/",
-    "summary": "In the decade since the EU&#8217;s groundbreaking privacy legislation, the GDPR was approved, companies have faced increased scrutiny over the reasons they collect, retain, and share personal information, as well as the measures they take to ensure its security.",
-    "source": "Compliance Week",
-    "published": "2026-07-13T15:00:00",
-    "fetched_at": "2026-07-15T14:17:29.516170"
-  },
-  {
-    "title": "US Government Launches AI Vulnerability Clearinghouse",
-    "url": "https://www.bankinfosecurity.com/us-government-launches-ai-vulnerability-clearinghouse-a-32228",
-    "summary": "Initiative seeks to prevent duplicate vulnerability scanning and remediation efforts.The Trump administration has launched Gold Eagle, a federal AI cybersecurity clearinghouse that coordinates AI-discovered software vulnerabilities through Carnegie Mellon University's VINCE platform to speed validation, disclosure and remediation while reducing duplicate efforts across government and industry.",
+    "title": "Why AI in Healthcare Demands Stronger Data Oversight",
+    "url": "https://www.bankinfosecurity.com/ai-in-healthcare-demands-stronger-data-oversight-a-32237",
+    "summary": "Attorney Jordan Cohen of Akerman on AI Challenges AheadAs healthcare firms and vendors develop and implement agentic artificial intelligence and other AI technology, it's critical to conduct a data inventory and have a solid understanding of what data can and cannot be used under HIPAA and other laws, said attorney Jordan Cohen of law firm Akerman.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369764",
-    "fetched_at": "2026-07-15T14:17:30.369794"
+    "published": "2026-07-16T00:55:40.003738",
+    "fetched_at": "2026-07-16T00:55:40.003781"
   },
   {
-    "title": "CISA Stresses Router Hardening Against Nation-State Hackers",
-    "url": "https://www.bankinfosecurity.com/cisa-stresses-router-hardening-against-nation-state-hackers-a-32227",
-    "summary": "Advisory Cites Poor Cyber Hygiene, Legacy Protocols as Key WeaknessA slew of international cybersecurity agencies are urging system administrators to harden their networks amid warnings that Russian nation-state hackers are opportunistically targeting weakly secured networks.",
+    "title": "Researcher Drops 9th Windows Zero-Day",
+    "url": "https://www.bankinfosecurity.com/researcher-drops-9th-windows-zero-day-a-32236",
+    "summary": "LegacyHive Is a Local Privilege Escalation BugThe vulnerability hunter in a feud with Microsoft released yet another Windows zero-day Tuesday as promised, though the touted \"bone-shattering\" disclosure was stripped down to prevent public exploitation. LegacyHive, exploits a profile-loading race condition to access another user's registry hive.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369802",
-    "fetched_at": "2026-07-15T14:17:30.369818"
+    "published": "2026-07-16T00:55:40.003792",
+    "fetched_at": "2026-07-16T00:55:40.003813"
   },
   {
-    "title": "AI Adds a Human Oversight Tax to Cybersecurity",
-    "url": "https://www.bankinfosecurity.com/ai-adds-human-oversight-tax-to-cybersecurity-a-32226",
-    "summary": "Security Teams Save Time on Tasks but Spend More Time Checking AI's WorkAI is reshaping cybersecurity work but not eliminating the need for human judgment. New ISC2 research finds security teams are spending more time validating AI outputs, facing accountability for AI errors and rethinking skill sets for entry-level talent.",
+    "title": "AI Leaders Are Pulling Ahead on Quantum Readiness",
+    "url": "https://www.bankinfosecurity.com/ai-leaders-are-pulling-ahead-on-quantum-readiness-a-32235",
+    "summary": "Strong Data Foundations Give AI Leaders an Edge in Quantum SecurityCompanies leading in AI security are also better prepared for quantum threats. New Thales research shows that data visibility, governance, encryption and crypto agility are helping CIOs build stronger foundations for both AI adoption and post-quantum readiness.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369825",
-    "fetched_at": "2026-07-15T14:17:30.369842"
+    "published": "2026-07-16T00:55:40.003822",
+    "fetched_at": "2026-07-16T00:55:40.003843"
   },
   {
-    "title": "Why Cynomi Is Eyeing Autonomous AI Agents for Security Teams",
-    "url": "https://www.bankinfosecurity.com/cynomi-eyeing-autonomous-ai-agents-for-security-teams-a-32225",
-    "summary": "CEO David Primor Says AI Has Boosted Engineering Productivity up to ThreefoldCynomi CEO David Primor says AI has increased engineering productivity by up to threefold while the company develops autonomous security agents capable of generating remediation plans, managing compliance workflows and executing predefined security tasks with human oversight only when needed.",
+    "title": "Cribl Targets TTP-Based Detection With CardinalOps Purchase",
+    "url": "https://www.bankinfosecurity.com/cribl-targets-ttp-based-detection-cardinalops-purchase-a-32234",
+    "summary": "Startup Maps Detections Against MITRE ATT&amp;CK and Recommends Missing ProtectionsCribl acquired Boston-based detection engineering startup CardinalOps to help organizations continuously measure MITRE ATT&amp;CK coverage, automate TTP-based detections across SIEM platforms and move behavioral threat detection closer to the telemetry pipeline.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369848",
-    "fetched_at": "2026-07-15T14:17:30.369868"
+    "published": "2026-07-16T00:55:40.003851",
+    "fetched_at": "2026-07-16T00:55:40.003874"
   },
   {
     "title": "FDIC Issues Guidance to Areas in Illinois Impacted by Severe Storms",
     "url": "https://www.bankinfosecurity.com/agency-releases/fdic-issues-guidance-to-areas-in-illinois-impacted-by-severe-r-2805",
     "summary": "The FDIC has announced a series of steps intended to provide regulatory relief to financial institutions and facilitate recovery in areas of Illinois affected by severe storms, straight-line winds, and tornadoes.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369875",
-    "fetched_at": "2026-07-15T14:17:30.369888"
+    "published": "2026-07-16T00:55:40.003882",
+    "fetched_at": "2026-07-16T00:55:40.003898"
   },
   {
     "title": "FDIC: Institutions Encouraged to Work with Borrowers Impacted by Shutdown",
     "url": "https://www.bankinfosecurity.com/agency-releases/fdic-institutions-encouraged-to-work-borrowers-impacted-by-r-2804",
     "summary": "Five federal regulatory agencies encourage financial institutions to work with customers affected by the federal government shutdown.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369894",
-    "fetched_at": "2026-07-15T14:17:30.369905"
+    "published": "2026-07-16T00:55:40.003906",
+    "fetched_at": "2026-07-16T00:55:40.003919"
   },
   {
     "title": "FFIEC: Statement on End of Microsoft Support for Windows XP",
     "url": "https://www.bankinfosecurity.com/agency-releases/ffiec-statement-on-end-microsoft-support-for-windows-xp-r-2803",
     "summary": "The FFIEC on Oct. 7 issued a joint statement concerning Microsoft's discontinuation of support for its Windows XP operating system as of April 8, 2014.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369911",
-    "fetched_at": "2026-07-15T14:17:30.369922"
+    "published": "2026-07-16T00:55:40.003928",
+    "fetched_at": "2026-07-16T00:55:40.003941"
   },
   {
     "title": "FDIC: Supervisory Approach to Payment Processing Relationships with Merchant Customers",
     "url": "https://www.bankinfosecurity.com/agency-releases/fdic-supervisory-approach-to-payment-processing-relationships-r-2802",
     "summary": "The FDIC is clarifying its policy and supervisory approach related to facilitating payment processing services directly, or indirectly through a third party, for merchant customers engaged in higher-risk activities.",
     "source": "BankInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.369928",
-    "fetched_at": "2026-07-15T14:17:30.369941"
+    "published": "2026-07-16T00:55:40.003949",
+    "fetched_at": "2026-07-16T00:55:40.003964"
   },
   {
     "title": "DoD: Notice of Proposed Rulemaking on Privacy Training",
     "url": "https://www.govinfosecurity.com/agency-releases/dod-notice-proposed-rulemaking-on-privacy-training-r-2575",
     "summary": "The Department of Defense and two other government agencies have issued a proposed rule designed to help ensure that government contractors provide adequate privacy training to their staff members.",
     "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.922875",
-    "fetched_at": "2026-07-15T14:17:30.922887"
+    "published": "2026-07-16T00:55:40.952226",
+    "fetched_at": "2026-07-16T00:55:40.952241"
   },
   {
     "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
     "url": "https://www.govinfosecurity.com/agency-releases/nist-sp-800-61-revision-1-computer-security-incident-handling-r-2383",
     "summary": "Guidance on establishing processes to rapidly detect and respond to cyber incidents.",
     "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.922893",
-    "fetched_at": "2026-07-15T14:17:30.922902"
+    "published": "2026-07-16T00:55:40.952249",
+    "fetched_at": "2026-07-16T00:55:40.952260"
   },
   {
     "title": "NIST FIPS PUB 201-2: Personal Identity Verification of Federal Employees and Contractors DRAFT",
     "url": "https://www.govinfosecurity.com/agency-releases/nist-fips-pub-201-2-personal-identity-verification-federal-r-2379",
     "summary": "Specifying architecture and technical requirements for a common identification standard for federal employees and contractors.",
     "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.922908",
-    "fetched_at": "2026-07-15T14:17:30.922919"
+    "published": "2026-07-16T00:55:40.952268",
+    "fetched_at": "2026-07-16T00:55:40.952281"
   },
   {
     "title": "NIST SP 800-39: Managing Information Security Risk",
     "url": "https://www.govinfosecurity.com/agency-releases/nist-sp-800-39-managing-information-security-risk-r-2353",
     "summary": "Organization, Mission and Information System View",
     "source": "GovInfoSecurity.com  RSS Syndication",
-    "published": "2026-07-15T14:17:30.922925",
-    "fetched_at": "2026-07-15T14:17:30.922947"
+    "published": "2026-07-16T00:55:40.952288",
+    "fetched_at": "2026-07-16T00:55:40.952298"
   },
   {
     "title": "Annual Report to Congress on Breaches of Unsecured Protected Health Information",
     "url": "https://www.databreachtoday.com/agency-releases/annual-report-to-congress-on-breaches-unsecured-protected-r-2539",
     "summary": "The Department of Health and Human Services' Office for Civil Rights provided a report to Congress on health information breaches from September 2009 through 2010, as required under the HITECH Act. Nearly 7.9 million Americans were affected by almost 30,800 health information breaches, according to the report.",
     "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-07-15T14:17:32.331763",
-    "fetched_at": "2026-07-15T14:17:32.331778"
+    "published": "2026-07-16T00:55:42.142366",
+    "fetched_at": "2026-07-16T00:55:42.142385"
   },
   {
     "title": "FFIEC Final Authentication Guidance",
     "url": "https://www.databreachtoday.com/agency-releases/ffiec-final-authentication-guidance-r-2480",
     "summary": "The Final FFIEC Guidance has been issued and its main intent is to reinforce the 2005 Guidance's risk management framework and update the Agencies' expectations regarding customer authentication, layered security, or other controls in the increasingly hostile online environment.",
     "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-07-15T14:17:32.331784",
-    "fetched_at": "2026-07-15T14:17:32.331796"
+    "published": "2026-07-16T00:55:42.142393",
+    "fetched_at": "2026-07-16T00:55:42.142408"
   },
   {
     "title": "Accounting of Disclosures Under the HITECH Act",
     "url": "https://www.databreachtoday.com/agency-releases/accounting-disclosures-under-hitech-act-r-2452",
     "summary": "A notice of proposed rulemaking from the HHS Office for Civil Rights that would modify the HIPAA Privacy Rule standard for accounting of disclosures of protected health information and add new requirements for access reports.",
     "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-07-15T14:17:32.331802",
-    "fetched_at": "2026-07-15T14:17:32.331814"
+    "published": "2026-07-16T00:55:42.142417",
+    "fetched_at": "2026-07-16T00:55:42.142432"
   },
   {
     "title": "ENISA: Software vulnerability prevention initiatives",
     "url": "https://www.databreachtoday.com/agency-releases/enisa-software-vulnerability-prevention-initiatives-r-2448",
     "summary": "The European Network and Information Security Agency, ENISA, has compiled a list of existing initiatives focused on finding and preventing software vulnerabilities.",
     "source": "DataBreachToday.com  RSS Syndication",
-    "published": "2026-07-15T14:17:32.331821",
-    "fetched_at": "2026-07-15T14:17:32.331831"
-  },
-  {
-    "title": "The future of delivering software as a medical device",
-    "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/the-future-of-delivering-software-as-a-medical-device",
-    "summary": "Software is reshaping how medtech organizations create value. A new approach to quality assurance during software-as-a-medical-device development, supported by agentic AI, can help them realize it.",
-    "source": "McKinsey Insights & Publications",
-    "published": "2026-07-15T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014065"
+    "published": "2026-07-16T00:55:42.142440",
+    "fetched_at": "2026-07-16T00:55:42.142453"
   },
   {
     "title": "The CEO\u2019s role in transformation",
@@ -173,7 +165,31 @@
     "summary": "Transformations often falter due to internal dynamics that divide organizations, such as misaligned incentives, siloed efforts, and risk aversion. CEOs are uniquely positioned to address these challenges by tackling the root causes of collective-action problems and uniting their organizations around bold aspirations. Join Meagan Hill, Mathew Lee, and Kurt Strovink as they explore the role of the CEO in driving enterprise-wide transformation and embedding lasting change into the fabric of their organizations.",
     "source": "McKinsey Insights & Publications",
     "published": "2026-07-15T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014137"
+    "fetched_at": "2026-07-16T00:55:42.407974"
+  },
+  {
+    "title": "How AI is reshaping the future of the AEC industry",
+    "url": "https://www.mckinsey.com/industries/engineering-construction-and-building-materials/our-insights/how-ai-is-reshaping-the-future-of-the-aec-industry",
+    "summary": "AI is poised to rewire the architecture, engineering, and construction sector. Firms that move quickly to reimagine workflows, improve data use, and automate work sites will thrive.",
+    "source": "McKinsey Insights & Publications",
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408052"
+  },
+  {
+    "title": "How can the public sector meet the AI moment?",
+    "url": "https://www.mckinsey.com/industries/public-sector/our-insights/rewiring-public-sector",
+    "summary": "AI can help public sector agencies improve outcomes for residents and make every taxpayer dollar go further. But realizing that potential requires moving beyond experimentation and rewiring how services are delivered.",
+    "source": "McKinsey Insights & Publications",
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408118"
+  },
+  {
+    "title": "The future of delivering software as a medical device",
+    "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/the-future-of-delivering-software-as-a-medical-device",
+    "summary": "Software is reshaping how medtech organizations create value. A new approach to quality assurance during software-as-a-medical-device development, supported by agentic AI, can help them realize it.",
+    "source": "McKinsey Insights & Publications",
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408176"
   },
   {
     "title": "Patrick Finn on how tension can lead to healthcare\u2019s reinvention",
@@ -181,39 +197,71 @@
     "summary": "McKinsey Senior Partner Patrick Finn examines the current unique moment in healthcare and why AI could help reshape who leads healthcare\u2019s next era.",
     "source": "McKinsey Insights & Publications",
     "published": "2026-07-15T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014187"
+    "fetched_at": "2026-07-16T00:55:42.408234"
   },
   {
-    "title": "How consumers are reshaping the future of mobility",
-    "url": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/how-consumers-are-reshaping-the-future-of-mobility",
-    "summary": "Our recent survey reveals shifting consumer priorities, with rising expectations for affordability, sustainability, and technology and greater openness to new brands and transportation modes.",
+    "title": "Is commercial aerospace ready for a demand reckoning?",
+    "url": "https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/is-commercial-aerospace-ready-for-a-demand-reckoning",
+    "summary": "A new survey reveals a widening gap between airline sentiment and the rest of the value chain.",
     "source": "McKinsey Insights & Publications",
-    "published": "2026-07-14T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014233"
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408286"
   },
   {
-    "title": "How physician CEOs hone the double-edged sword of clinical training",
-    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/how-physician-ceos-hone-the-double-edged-sword-of-clinical-training",
-    "summary": "The journey from physician to CEO has no prescribed path, but those who\u2019ve reached the top reveal how they evolved the strengths and instincts forged in clinical training for enterprise leadership.",
+    "title": "The \u2018bridge builder\u2019 COO: Delivering results by engaging stakeholders",
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-bridge-builder-coo-delivering-results-by-engaging-stakeholders",
+    "summary": "Today\u2019s COOs work with an increasingly broad set of stakeholders. Success means understanding the \u201cwhy\u201d that drives each one.",
     "source": "McKinsey Insights & Publications",
-    "published": "2026-07-14T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014278"
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408340"
   },
   {
-    "title": "Building expertise in the age of AI: Who trains the next generation?",
-    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/building-expertise-in-the-age-of-ai-who-trains-the-next-generation",
-    "summary": "As AI reshapes entry-level work, organizations should rethink how expertise is developed by integrating knowledge management, role design, learning, and coaching into a single system.",
+    "title": "Gigafactory delivery on time: Solving the SOP delay challenge",
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/gigafactory-delivery-on-time-solving-the-sop-delay-challenge",
+    "summary": "Battery plants are essential for the energy transition. Most miss their ramp-up deadlines, however. Here\u2019s how to fix the delivery model.",
     "source": "McKinsey Insights & Publications",
-    "published": "2026-07-14T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014321"
+    "published": "2026-07-15T00:00:00",
+    "fetched_at": "2026-07-16T00:55:42.408394"
   },
   {
-    "title": "Rewiring customer experience for the agentic era",
-    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/rewiring-customer-experience-for-the-agentic-era",
-    "summary": "As AI agents take on moment-to-moment decisions, leading companies are redesigning customer experience from predefined journeys to dynamic, cross-channel orchestration.",
-    "source": "McKinsey Insights & Publications",
-    "published": "2026-07-14T00:00:00",
-    "fetched_at": "2026-07-15T14:17:33.014362"
+    "title": "FPF Submits Comments to Inform California Children\u2019s Social Media Protections Rulemaking Process",
+    "url": "https://fpf.org/blog/fpf-submits-comments-to-inform-california-childrens-social-media-protections-rulemaking-process/",
+    "summary": "Co-authored by Jack Maketa, U.S. Legislation Intern On June 30, the Future of Privacy Forum (FPF) submitted comments in response to the California Department of Justice\u2019s (the Department\u2019s) ongoing rulemaking process for the \u201cProtecting Our Kids from Social Media Addiction Act\u201d (the Act or SB 976). Signed into law in 2024, SB 976 bars operators [&#8230;]",
+    "source": "Future of Privacy Forum",
+    "published": "2026-07-15T16:37:25",
+    "fetched_at": "2026-07-16T00:55:42.635684"
+  },
+  {
+    "title": "Mandating \u201cEvidence-Based\u201d Suicide Detection in Chatbots",
+    "url": "https://fpf.org/blog/mandating-evidence-based-suicide-detection-in-chatbots/",
+    "summary": "Co-authored by Sarah Hanson, FPF Health &#38; Wellness Intern This article discusses suicidal ideation, which may be distressing for some readers. (If you or someone you know is struggling, help is available. You can call or text the Suicide &#38; Crisis Lifeline at 988 or visit 988 Lifeline for free, confidential, 24/7 support.) As many [&#8230;]",
+    "source": "Future of Privacy Forum",
+    "published": "2026-07-15T14:49:22",
+    "fetched_at": "2026-07-16T00:55:42.635800"
+  },
+  {
+    "title": "California Steps Back From Dangerous Expansion of its Age-Gating Law",
+    "url": "https://www.eff.org/deeplinks/2026/07/california-steps-back-dangerous-expansion-its-age-gating-law",
+    "summary": "The California legislature has stepped back from a plan that would have expanded its age-gating law, removing language that could have compounded serious threats to users\u2019 speech, privacy and security just to browse the internet. A.B. 1856, authored by Assemblymember Buffy Wicks, will now move forward through the legislature without its most problematic pieces. EFF still believes the underlying law that A.B. 1856 amends, A.B. 1043, is unconstitutional. Signed into law in 2025 (and effective January of 2027), A.B. 1043 requires all operating systems and app stores to collect users\u2019 ages, place ",
+    "source": "Deeplinks",
+    "published": "2026-07-15T20:50:48",
+    "fetched_at": "2026-07-16T00:55:48.201805"
+  },
+  {
+    "title": "Most Smart Watches, Rings, and Bands Lack Basic Transparency Reports and Key Privacy Features",
+    "url": "https://www.eff.org/deeplinks/2026/07/most-smart-watches-rings-and-bands-lack-basic-transparency-reports-and-key-privacy",
+    "summary": "Oura Rings, Garmin GPS fitness watches, Apple Watches, Whoop bands\u2014every year, more and more tech devices are promising to monitor our health and fitness, guide us toward healthier living, and provide useful health metrics to take to our doctors. But few of these tools provide the sorts of privacy and security promises we demand from all technology, let alone tech that captures personal health data. It\u2019s time they step up and start providing transparency reports and stronger encryption options. Surveys suggest that around 40 percent of people in the United States own some sort of commercially ",
+    "source": "Deeplinks",
+    "published": "2026-07-15T19:56:18",
+    "fetched_at": "2026-07-16T00:55:48.202359"
+  },
+  {
+    "title": "\ud83d\udeab Don't Let Congress Age-Gate the Internet | EFFector 38.13",
+    "url": "https://www.eff.org/deeplinks/2026/07/dont-let-congress-age-gate-internet-effector-3813",
+    "summary": "The effort to age gate the internet is back in Washington\u2014and now it has a new name. Recently passed by the House of Representatives, the KIDS Act is a sprawling package of proposals to control what we can see and say online. Supporters claim the KIDS Act is needed to protect minors online. But if lawmakers really want to make the internet safer, why are they encouraging more surveillance instead of protecting our privacy? We dive into this question with our EFFector newsletter. JOIN OUR NEWSLETTER For over 35 years, EFFector has been your guide to understanding the intersection of technology,",
+    "source": "Deeplinks",
+    "published": "2026-07-15T17:02:02",
+    "fetched_at": "2026-07-16T00:55:48.202533"
   },
   {
     "title": "European Court: Apple Can Not Shirk Off its Interoperability Requirements",
@@ -221,7 +269,7 @@
     "summary": "One of the best bulwarks against monopoly is interoperability\u2014that is making a new product or service work with an existing product or service. Interoperability allows users, and not the manufacturers of their devices or largest player in a market, to decide what application best serves them. Unsurprisingly, companies like Apple have worked hard to resist interoperability requirements. On July 8, the General Court of the European Union (General Court) ruled against Apple in several cases the company brought against the European Commission (joint cases), affirming the company\u2019s obligations unde",
     "source": "Deeplinks",
     "published": "2026-07-14T21:14:31",
-    "fetched_at": "2026-07-15T14:17:39.123384"
+    "fetched_at": "2026-07-16T00:55:48.202839"
   },
   {
     "title": "Don\u2019t Repeat NY\u2019s 3D Printing Blunder",
@@ -229,15 +277,7 @@
     "summary": "This year the state of New York had the dubious honor of being the first to pass a controversial provision to mandate all 3D printers come with surveillance and censorship. That means not only is there a ticking clock to protect every artist, researcher, engineer, and hobbyist in the state, but there is a real risk of other states thoughtlessly following suit\u2014prior to the New York rules even taking effect. We, along with many other experts, already warned about this bill buried in the state\u2019s crowded budget process. Hundreds of our supporters and 3D printing enthusiasts in New York reached out",
     "source": "Deeplinks",
     "published": "2026-07-14T19:52:39",
-    "fetched_at": "2026-07-15T14:17:39.123676"
-  },
-  {
-    "title": "Sony Nerfs Videogame Ownership",
-    "url": "https://www.eff.org/deeplinks/2026/07/sony-nerfs-videogame-ownership",
-    "summary": "Legal intern Suzanne Castillo co-authored of this post. Playstation\u2019s decision to kill physical game discs is the latest attack on our diminishing rights to access and engage with culture digitally. Rent-seeking corporations and negligent lawmakers share the blame \u2014 and they can do better. We\u2019ve seen the same playbook used in the move to digital distribution of film, TV, and music: draw in customers with the convenience of a digital download, then limit physical access and move the goalpost on what it actually means to \u201cown\u201d a piece of media. The end goal is to turn the customer into a renter,",
-    "source": "Deeplinks",
-    "published": "2026-07-13T17:30:45",
-    "fetched_at": "2026-07-15T14:17:39.123956"
+    "fetched_at": "2026-07-16T00:55:48.203147"
   },
   {
     "title": "Not AI for Good",
@@ -245,7 +285,7 @@
     "summary": "Join the Zoom event Session description:&#160; This civil society-led counter-event to the AI for Good Global Summit takes a critical look at the overhyped role of AI in solving humanity&#8217;s The post Not AI for Good appeared first on Access Now.",
     "source": "Access Now",
     "published": "2026-07-15T17:00:00",
-    "fetched_at": "2026-07-15T14:17:41.065238"
+    "fetched_at": "2026-07-16T00:55:50.150827"
   },
   {
     "title": "Microsoft Patches a Record 570 Security Flaws",
@@ -253,15 +293,7 @@
     "summary": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Microsoft attributed the burgeoning patch counts to vulnerability discoveries aided by artificial intelligence.",
     "source": "Krebs on Security",
     "published": "2026-07-14T19:22:42",
-    "fetched_at": "2026-07-15T14:17:41.236860"
-  },
-  {
-    "title": "Lessons Learned from CISA\u2019s Recent GitHub Leak",
-    "url": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
-    "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a data leak in which a contractor published dozens of internal CISA credentials -- including AWS Govcloud keys -- in a public GitHub repository for almost six months before being notified by KrebsOnSecurity. Experts say the gaps identified in the agency's initial response provide important lessons that all security teams should absorb.",
-    "source": "Krebs on Security",
-    "published": "2026-07-13T15:03:28",
-    "fetched_at": "2026-07-15T14:17:41.236947"
+    "fetched_at": "2026-07-16T00:55:50.342999"
   },
   {
     "title": "A Video Screen That Is Also a Camera",
@@ -269,7 +301,7 @@
     "summary": "Amazing: Researchers from ETH Zurich in Switzerland, however, managed to create a new type of pixel that can simultaneously do both. This hypercharged pixel, called a Fourier pixel, can generate and sense arbitrary light fields and tap into a pixel&#8217;s full potential for carrying information by manipulating light&#8217;s intensity, oscillation phases, and polarization. The team reported its findings in a paper published yesterday in Nature. We are one step closer to 1984 technology: The telescreen received and transmitted simultaneously. Any sound that Winston made, above the level of a ve",
     "source": "Schneier on Security",
     "published": "2026-07-15T11:04:06",
-    "fetched_at": "2026-07-15T14:17:41.396703"
+    "fetched_at": "2026-07-16T00:55:50.518964"
   },
   {
     "title": "Upcoming Speaking Engagements",
@@ -277,7 +309,7 @@
     "summary": "This is a current list of where and when I am scheduled to speak: I\u2019m speaking (virtually) at the Policy-Relevant Privacy Research Workshop in Calgary, Canada, on Monday, July 20, 2026. I\u2019m speaking at Boston Leadership Exchange in Boston, Massachusetts, USA, on Wednesday, July 22, 2026. I\u2019m speaking at Cognitive Security Conference in Las Vegas, Nevada, USA. The conference runs August 6-7, 2026; my speaking time is TBD. I\u2019m speaking at DEF CON 34 in Las Vegas, Nevada, USA. The conventions runs August 6-9, 2026; my speaking time is TBD...",
     "source": "Schneier on Security",
     "published": "2026-07-14T16:04:49",
-    "fetched_at": "2026-07-15T14:17:41.396784"
+    "fetched_at": "2026-07-16T00:55:50.519070"
   },
   {
     "title": "Vulnerability in FIFA\u2019s Network",
@@ -285,7 +317,47 @@
     "summary": "FIFA&#8217;s network was vulnerable to anyone with even minimal access.",
     "source": "Schneier on Security",
     "published": "2026-07-14T11:06:51",
-    "fetched_at": "2026-07-15T14:17:41.396836"
+    "fetched_at": "2026-07-16T00:55:50.519138"
+  },
+  {
+    "title": "Forgotten Bootloaders Expose Secure Boot Blind Spot",
+    "url": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot",
+    "summary": "Nearly a dozen vulnerable and now revoked UEFI shim bootloaders remained trusted for years, giving attackers a path to bypass Secure Boot.",
+    "source": "darkreading",
+    "published": "2026-07-15T21:19:19",
+    "fetched_at": "2026-07-16T00:55:51.072534"
+  },
+  {
+    "title": "Identity Attacks Overtake Exploits as Top Ransomware Cause",
+    "url": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
+    "summary": "Email attacks overtook exploits as the top ransomware root cause last year. Multifactor authentication (MFA) was deployed in 97% of credential-based attacks but failed to prevent compromise.",
+    "source": "darkreading",
+    "published": "2026-07-15T20:16:13",
+    "fetched_at": "2026-07-16T00:55:51.072647"
+  },
+  {
+    "title": "Guten Tag, Bonjour, Hola to Our European Cyber Defenders!",
+    "url": "https://www.darkreading.com/threat-intelligence/guten-tag-bonjour-hola-european-cyber-defenders",
+    "summary": "We're thrilled to unveil the latest evolution of Dark Reading's DR Global section \u2014 your go-to source for region-specific cybersecurity intelligence beyond North America.",
+    "source": "darkreading",
+    "published": "2026-07-15T18:08:56",
+    "fetched_at": "2026-07-16T00:55:51.072737"
+  },
+  {
+    "title": "Is 'Tech-xit' Imminent? UK Steps Up Sovereignty Push Amid AI Strife",
+    "url": "https://www.darkreading.com/cybersecurity-operations/tech-xit-uk-sovereignty-push-amid-ai-strife",
+    "summary": "The US government's restrictions on Anthropic and OpenAI frontier models have intensified calls in the UK and other countries to reduce their reliance on US tech companies, with significant cyber implications.",
+    "source": "darkreading",
+    "published": "2026-07-15T17:03:23",
+    "fetched_at": "2026-07-16T00:55:51.072821"
+  },
+  {
+    "title": "Claude Flaw Automatically Sends Malicious Prompts to AI Agents",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents",
+    "summary": "When combined with another exploit, the &quot;PromptFiction&quot; vulnerability, which has been fixed, could have enabled an end-to-end attack on a targeted system.",
+    "source": "darkreading",
+    "published": "2026-07-15T15:27:35",
+    "fetched_at": "2026-07-16T00:55:51.072898"
   },
   {
     "title": "2-Click Cursor Exploit Enables Dev Environment Takeover",
@@ -293,7 +365,7 @@
     "summary": "Simple age-old bugs give bad actors access to developers' secrets and source code-rich environments.",
     "source": "darkreading",
     "published": "2026-07-15T13:00:00",
-    "fetched_at": "2026-07-15T14:17:41.853187"
+    "fetched_at": "2026-07-16T00:55:51.072976"
   },
   {
     "title": "Nigeria Deepens Cybersecurity Efforts as Cybercriminals See More Profits",
@@ -301,7 +373,7 @@
     "summary": "The West African country advanced rules to force organizations to disclose cyberattacks, joining other nations in a shift to mandated transparency.",
     "source": "darkreading",
     "published": "2026-07-15T08:00:00",
-    "fetched_at": "2026-07-15T14:17:41.853262"
+    "fetched_at": "2026-07-16T00:55:51.073050"
   },
   {
     "title": "Cribl Adds Agentic Detection Engineering &amp; Boosts SecOps With CardinalOps Deal",
@@ -309,7 +381,7 @@
     "summary": "CardinalOps will give Cribl customers the ability to map detection rules and security controls to the MITRE ATT&amp;CK framework. SecOps teams can identify coverage gaps and operationalize threat intelligence.",
     "source": "darkreading",
     "published": "2026-07-15T00:05:31",
-    "fetched_at": "2026-07-15T14:17:41.853328"
+    "fetched_at": "2026-07-16T00:55:51.073126"
   },
   {
     "title": "Records Are Made to Be Broken: Patch Tuesday Raises Triage Stakes",
@@ -317,7 +389,7 @@
     "summary": "Three of the 622 CVEs for which Microsoft issued patches this week are zero-days; there are more than 60 critical vulnerabilities.",
     "source": "darkreading",
     "published": "2026-07-14T21:50:56",
-    "fetched_at": "2026-07-15T14:17:41.853388"
+    "fetched_at": "2026-07-16T00:55:51.073202"
   },
   {
     "title": "6 GHz Wi-Fi Flaws Could Disrupt Critical Systems",
@@ -325,47 +397,23 @@
     "summary": "Automated Frequency Coordination systems by default trust client-side data, which could lead to location spoofing and other attacks that disrupt traffic.",
     "source": "darkreading",
     "published": "2026-07-14T19:58:31",
-    "fetched_at": "2026-07-15T14:17:41.853443"
+    "fetched_at": "2026-07-16T00:55:51.073276"
   },
   {
-    "title": "Manage Vendor Risk in a Few Practical Steps",
-    "url": "https://www.darkreading.com/cyber-risk/manage-vendor-risk-in-a-few-practical-steps",
-    "summary": "Risk tolerance, exposure visibility, board oversight \u2014 handling third-party risk is complicated but achievable with disciplined, precise governance.",
-    "source": "darkreading",
-    "published": "2026-07-14T17:44:55",
-    "fetched_at": "2026-07-15T14:17:41.853501"
+    "title": "TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development",
+    "url": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
+    "summary": "Cybersecurity researchers have disclosed details of a previously unreported Internet-of-Things (IoT) botnet framework dubbed TuxBot v3 Evolution that shows signs of being developed with assistance from a large language model (LLM), albeit with not so successful results. \"While the AI complied with their request to generate botnet code, it included a safety disclaimer that the developer failed",
+    "source": "The Hacker News",
+    "published": "2026-07-16T00:13:08",
+    "fetched_at": "2026-07-16T00:55:51.408730"
   },
   {
-    "title": "Frontier AI: The Genie's Out of the Bottle, but Where's the Rulebook?",
-    "url": "https://www.darkreading.com/cybersecurity-operations/frontier-ai-genie-out-of-bottle-where-rulebook",
-    "summary": "Cutting-edge artificial intelligence models are deploying with more independence and less human oversight. Several state governments are trying to legislate transparency in their use.",
-    "source": "darkreading",
-    "published": "2026-07-14T16:02:39",
-    "fetched_at": "2026-07-15T14:17:41.853557"
-  },
-  {
-    "title": "ClickFix's Mushrooming Ecosystem Demands New Defense Tactics",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/clickfixs-ecosystem-demands-new-defense",
-    "summary": "The attack vector is available for rent at scale, and evades AV and EDR, leaving YARA analysis as the best detection option.",
-    "source": "darkreading",
-    "published": "2026-07-14T15:53:54",
-    "fetched_at": "2026-07-15T14:17:41.853610"
-  },
-  {
-    "title": "Cursor IDE Auto-Executes Malicious Code in Poisoned Repos",
-    "url": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos",
-    "summary": "Researchers reported the vulnerability to Cursor in December, but it still remains in the popular AI coding platform and can be exploited in poisoned repository attacks.",
-    "source": "darkreading",
-    "published": "2026-07-14T13:00:00",
-    "fetched_at": "2026-07-15T14:17:41.853668"
-  },
-  {
-    "title": "Weak Security Continues to Fuel Russian Cyberattacks",
-    "url": "https://www.darkreading.com/endpoint-security/weak-security-fuel-russian-cyberattacks",
-    "summary": "In a first, the UK and the EU jointly imposed sanctions on Russian individuals and entities for cyberattacks and disinformation campaigns in the region.",
-    "source": "darkreading",
-    "published": "2026-07-13T21:24:59",
-    "fetched_at": "2026-07-15T14:17:41.853723"
+    "title": "OkoBot Malware Framework Injects Seed Phrase Phishing Into Ledger and Trezor Apps",
+    "url": "https://thehackernews.com/2026/07/okobot-malware-framework-injects-seed.html",
+    "summary": "A malware framework called OkoBot has been running on Windows machines since April 2025, and one of its modules is built to con hardware wallet owners out of their recovery phrase. On an infected PC, the request comes from inside the wallet's own desktop software. Sometimes it waits until you plug the device in first. The page is malicious. The app around it is the real one you installed, and",
+    "source": "The Hacker News",
+    "published": "2026-07-15T21:00:30",
+    "fetched_at": "2026-07-16T00:55:51.408843"
   },
   {
     "title": "Firefox, Chrome, Adobe, and VMware Updates Fix Multiple Critical Security Flaws",
@@ -373,7 +421,7 @@
     "summary": "Mozilla has released updates to address two critical flaws in Firefox for which it warned that exploit code has been published. The vulnerabilities are listed below - CVE-2026-15718, an invalid pointer in the JavaScript: WebAssembly component CVE-2026-15719, a site isolation in the DOM: Navigation component \"We are aware that exploit code for this is public, however we are not aware of",
     "source": "The Hacker News",
     "published": "2026-07-15T18:48:53",
-    "fetched_at": "2026-07-15T14:17:42.172368"
+    "fetched_at": "2026-07-16T00:55:51.408938"
   },
   {
     "title": "SASE Has An AI Blind Spot. Inspecting Packets Is No Longer Enough.",
@@ -381,7 +429,7 @@
     "summary": "For years, routing traffic through cloud proxies was good enough. Then work moved to the browser, AI entered the workflow, and the inspection model stopped keeping up. Enterprise workflows now live across SaaS applications, browsers, and an expanding ecosystem of generative AI tools, unsanctioned browser extensions, and autonomous agents. Employees routinely paste intellectual property into",
     "source": "The Hacker News",
     "published": "2026-07-15T17:20:01",
-    "fetched_at": "2026-07-15T14:17:42.172454"
+    "fetched_at": "2026-07-16T00:55:51.409030"
   },
   {
     "title": "Researcher Drops New Windows Zero-Day PoC Hours After Microsoft Patch Tuesday",
@@ -389,7 +437,7 @@
     "summary": "Security researcher Chaotic Eclipse (aka Nightmare-Eclipse) has released a new proof-of-concept (PoC) exploit called LegacyHive. It has been described as a Windows User Profile Service arbitrary hive load elevation of privileges vulnerability. The Windows User Profile Service, also referred to as ProfSvc, is a core system component that manages user accounts and environments. \"The PoC requires",
     "source": "The Hacker News",
     "published": "2026-07-15T16:37:07",
-    "fetched_at": "2026-07-15T14:17:42.172526"
+    "fetched_at": "2026-07-16T00:55:51.409117"
   },
   {
     "title": "New Webinar: Closing the Approval Gap in AI-Era Ad Tech",
@@ -397,7 +445,7 @@
     "summary": "A single approved marketing tag can quietly load fourth-party code your security team has never seen, granting full access to your forms, customer data, and checkout pages. This on-demand webinar reveals how this Approval Gap forms, and gives your team the blueprint to close it before an auditor, regulator, or attacker finds it first. The Reality of the Approval Gap It's a pattern every",
     "source": "The Hacker News",
     "published": "2026-07-15T16:36:57",
-    "fetched_at": "2026-07-15T14:17:42.172597"
+    "fetched_at": "2026-07-16T00:55:51.409201"
   },
   {
     "title": "Cursor Flaw Lets Malicious Cloned Repositories Trigger Windows Code Execution",
@@ -405,7 +453,7 @@
     "summary": "Open a repository in Cursor&nbsp;on Windows and, if a file named&nbsp;git.exe&nbsp;is sitting in the project root, Cursor runs it. No click, no approval dialog, no warning that anything in the folder is about to execute. Whatever that binary does, it does as you, with your source, your SSH keys and your cloud tokens. Cursor keeps re-running it for as long as the project stays open. No prompt",
     "source": "The Hacker News",
     "published": "2026-07-15T16:25:22",
-    "fetched_at": "2026-07-15T14:17:42.172665"
+    "fetched_at": "2026-07-16T00:55:51.409283"
   },
   {
     "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
@@ -413,7 +461,7 @@
     "summary": "Four compromised npm packages in the @asyncapi namespace have been observed distributing a multi-stage botnet loader, according to findings from OX Security, SafeDep, Socket, and StepSecurity. The affected packages are listed below - @asyncapi/generator-helpers@1.1.1 @asyncapi/generator-components@0.7.1 @asyncapi/generator@3.3.1 @asyncapi/specs(v6.11.2, v6.11.2-alpha.1) \"The",
     "source": "The Hacker News",
     "published": "2026-07-15T14:46:13",
-    "fetched_at": "2026-07-15T14:17:42.172728"
+    "fetched_at": "2026-07-16T00:55:51.409365"
   },
   {
     "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
@@ -421,7 +469,7 @@
     "summary": "SonicWall has warned of active exploitation of two zero-day vulnerabilities impacting Secure Mobile Access (SMA) 1000 series appliances, one of which could be exploited to achieve arbitrary command execution. The vulnerabilities are listed below - CVE-2026-15409 (CVSS score: 10.0) - A Server-side request forgery (SSRF) vulnerability that a remote unauthenticated attacker could exploit to",
     "source": "The Hacker News",
     "published": "2026-07-15T11:00:21",
-    "fetched_at": "2026-07-15T14:17:42.172793"
+    "fetched_at": "2026-07-16T00:55:51.409447"
   },
   {
     "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
@@ -429,23 +477,15 @@
     "summary": "Microsoft shipped its largest Patch Tuesday on record today, and two of the fixes close holes that attackers are already exploiting. The release covers 622 of Microsoft's own CVEs by its&nbsp;Security Update Guide&nbsp;count, more than triple&nbsp;June's previous high of around 200. Those two live bugs are the ones to grab first. Microsoft credits incident responders for both. Both are",
     "source": "The Hacker News",
     "published": "2026-07-15T01:55:47",
-    "fetched_at": "2026-07-15T14:17:42.172858"
+    "fetched_at": "2026-07-16T00:55:51.409530"
   },
   {
-    "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
-    "url": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
-    "summary": "SAP has rolled out updates to address multiple vulnerabilities as part of its July 2026 security updates, including a critical flaw in SAP NetWeaver Application Server ABAP. The vulnerability in question is CVE-2026-44747 (CVSS score: 9.9), an out-of-bounds write flaw that allows an authenticated attacker to leverage logical errors in memory management to cause a memory corruption that could",
-    "source": "The Hacker News",
-    "published": "2026-07-14T23:47:57",
-    "fetched_at": "2026-07-15T14:17:42.172923"
-  },
-  {
-    "title": "Researchers Say Claude for Chrome Flaw Lets Rogue Extensions Trigger Gmail Reads",
-    "url": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
-    "summary": "Any other browser extension that can run a script on claude.ai can still trigger Claude for Chrome tasks aimed at your Gmail, your latest Google Doc and its comments, and your Calendar. Both this and ClaudeBleed need a rogue extension that can already run a script on claude.ai; the difference is scope. Anthropic restricted the arbitrary-prompt path in May as part of its response to the&nbsp;",
-    "source": "The Hacker News",
-    "published": "2026-07-14T22:57:23",
-    "fetched_at": "2026-07-15T14:17:42.172986"
+    "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated July 15)",
+    "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+    "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated July 15) appeared first on Unit 42.",
+    "source": "Unit 42",
+    "published": "2026-07-15T23:00:33",
+    "fetched_at": "2026-07-16T00:55:52.737733"
   },
   {
     "title": "TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development",
@@ -453,7 +493,15 @@
     "summary": "TuxBot v3 Evolution, an IoT botnet framework built with LLMs. Read our analysis of its cross-compiled binaries, C2 architecture and bugs. The post TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development appeared first on Unit 42.",
     "source": "Unit 42",
     "published": "2026-07-15T10:00:54",
-    "fetched_at": "2026-07-15T14:17:43.510507"
+    "fetched_at": "2026-07-16T00:55:52.737839"
+  },
+  {
+    "title": "Rapid7 MDR Team Discovers New SonicWall SMA1000 Zero Days being Actively Exploited (CVE-2026-15409, CVE-2026-15410)",
+    "url": "https://www.rapid7.com/blog/post/etr-rapid7-mdr-team-discovers-new-sonicwall-sma1000-zero-days-being-actively-exploited-cve-2026-15409-cve-2026-15410",
+    "summary": "OverviewOn July 14, 2026, SonicWall published a security advisory addressing two vulnerabilities affecting SMA1000 Series remote access appliances, including the critical server-side request forgery (SSRF) vulnerability CVE-2026-15409 (CVSS 10.0) and the high-severity code injection vulnerability CVE-2026-15410. The advisory urges customers to immediately apply the latest platform hotfix releases.Successful exploitation of CVE-2026-15409 permits an unauthenticated attacker to open a websocket-based tunnel to arbitrary localhost-only services, while CVE-2026-15410 is a local privilege escalatio",
+    "source": "Rapid7 Cybersecurity Blog",
+    "published": "2026-07-15T16:19:26",
+    "fetched_at": "2026-07-16T00:55:53.389319"
   },
   {
     "title": "Investigating Persistence Mechanisms in AWS",
@@ -461,7 +509,7 @@
     "summary": "OverviewIn the cloud, your infrastructure may be short-lived, but an attacker\u2019s persistence doesn't have to be. While your environment scales and changes in seconds, adversaries are embedding themselves into your IAM policies, Lambda functions, and federated sessions, creating invisible footholds that survive long after you believe an incident is closed.Persistence in AWS is not just a technical oversight; it is a fundamental business risk. If you cannot see how an attacker has rooted themselves in your environment, you cannot contain them. This article moves beyond theory to provide the criti",
     "source": "Rapid7 Cybersecurity Blog",
     "published": "2026-07-15T13:00:00",
-    "fetched_at": "2026-07-15T14:17:43.980534"
+    "fetched_at": "2026-07-16T00:55:53.390222"
   },
   {
     "title": "Patch Tuesday - July 2026",
@@ -469,7 +517,7 @@
     "summary": "Microsoft is publishing 622 vulnerabilities on July 2026 Patch Tuesday, including a record-breaking 416 Windows vulnerabilities. Microsoft is aware of exploitation in the wild for two of the vulnerabilities published today, both of which are listed on CISA KEV, as well as public disclosure for one other. As usual, browser vulns are not included in the Patch Tuesday count above. Rapid7 noted last month that Microsoft no longer enumerates Chromium CVEs in the Security Update Guide. However, Microsoft has now taken the pursuit of minimalism much further, since today\u2019s Security Update Guide no lon",
     "source": "Rapid7 Cybersecurity Blog",
     "published": "2026-07-14T22:00:26",
-    "fetched_at": "2026-07-15T14:17:43.984378"
+    "fetched_at": "2026-07-16T00:55:53.394686"
   },
   {
     "title": "CVE-2026-55040: Microsoft SharePoint JWT Token Authentication Bypass (FIXED)",
@@ -477,7 +525,7 @@
     "summary": "OverviewRapid7 Labs conducted a zero-day research project against Microsoft SharePoint, resulting in the discovery of two new vulnerabilities that, when chained together, achieve unauthenticated remote code execution (RCE) against a vulnerable SharePoint server. Today, both Rapid7 and Microsoft are disclosing the first vulnerability in this chain, the authentication bypass vulnerability CVE-2026-55040. The RCE component of the exploit chain is expected to be patched by Microsoft in the next update cycle for August 2026. The exploit chain was developed as an entry for the recent Pwn2Own Berlin ",
     "source": "Rapid7 Cybersecurity Blog",
     "published": "2026-07-14T13:00:00",
-    "fetched_at": "2026-07-15T14:17:43.984685"
+    "fetched_at": "2026-07-16T00:55:53.395066"
   },
   {
     "title": "Rapid7 and Mindshare Partner to Accelerate Cyber Resilience Across the Middle East",
@@ -485,7 +533,23 @@
     "summary": "Gopan Sivasankaran is Regional Director, Middle East & Africa, at Rapid7From AI adoption and cloud-first strategies to smart cities and critical infrastructure modernization, organizations across the United Arab Emirates are embracing innovation at an unprecedented rate. The country truly is setting the pace for digital transformation.Against this backdrop of rapid innovation, today's security teams are managing increasingly complex environments while defending against more sophisticated, AI-enabled threats. In this environment, business leaders still expect security to enable innovation, not ",
     "source": "Rapid7 Cybersecurity Blog",
     "published": "2026-07-14T08:00:00",
-    "fetched_at": "2026-07-15T14:17:43.984895"
+    "fetched_at": "2026-07-16T00:55:53.395328"
+  },
+  {
+    "title": "CVE-2026-15409, CVE-2026-15410: SonicWall SMA 1000 zero-day vulnerabilities exploited in the wild",
+    "url": "https://www.tenable.com/blog/cve-2026-15409-cve-2026-15410-sonicwall-sma-1000-zero-day-vulnerabilities-exploited-in-the",
+    "summary": "SonicWall patched two recently exploited zero-day vulnerabilities in its SMA 1000 Series secure remote access appliances which may have been chained for unauthenticated remote code execution.Key takeawaysCVE-2026-15409 and CVE-2026-15410 are a pair of exploited vulnerabilities that may have been chained together to allow for code execution on SonicWall SMA1000 series appliances.&nbsp;Zero-day exploitation of these vulnerabilities has been observed and confirmed by SonicWall.&nbsp;Patches and indicators of compromise are available and urgent patching is recommended.BackgroundSonicWall's Secure ",
+    "source": "Tenable Blog",
+    "published": "2026-07-15T13:14:09",
+    "fetched_at": "2026-07-16T00:55:53.583901"
+  },
+  {
+    "title": "Understanding Claude Tag\u2019s access model in Slack and how to configure it securely",
+    "url": "https://www.tenable.com/blog/claude-tag-slack-access-model",
+    "summary": "Anthropic\u2019s new AI agent for Slack acts under an admin-configured access bundle rather than each user\u2019s own credentials. Here\u2019s how that model works, what admins should understand and how to securely configure it.Key takeawaysClaude Tag, Anthropic\u2019s newly launched AI agent for Slack, acts on connected services using shared credentials an admin configures for a workspace or for a specific private channel, not the credentials of the user tagging it.Claude Tag uses the service-identity pattern, like deploy bots, workflow automations, and incoming webhooks, rather than per-user OAuth delegation. A",
+    "source": "Tenable Blog",
+    "published": "2026-07-15T11:08:00",
+    "fetched_at": "2026-07-16T00:55:53.584441"
   },
   {
     "title": "5 reasons to bring application security data into your exposure management platform",
@@ -493,7 +557,7 @@
     "summary": "When you incorporate data from application security scanners into your exposure management platform, you can assess the threat from formerly isolated code flaws using a broader risk context, which illuminates hidden exposures that your security and development teams can eliminate together.Key takeawaysBreak application security silos and obtain full code-to-runtime visibility by integrating standalone code scanner data with your exposure management platform.By contextualizing application security findings, filtering out alert noise, and automating patches, exposure management helps organizatio",
     "source": "Tenable Blog",
     "published": "2026-07-15T08:45:00",
-    "fetched_at": "2026-07-15T14:17:44.151029"
+    "fetched_at": "2026-07-16T00:55:53.584998"
   },
   {
     "title": "Microsoft\u2019s July 2026 Patch Tuesday Addresses 569 CVEs (CVE-2026-56155, CVE-2026-56164)",
@@ -501,7 +565,7 @@
     "summary": "56Critical510Important3Moderate0LowMicrosoft addresses 569 CVEs in the largest Patch Tuesday release yet. This month\u2019s release includes three zero-days, two of which were exploited in the wild.Microsoft patched 569 CVEs in its July 2026 Patch Tuesday release, with 56 rated critical, 510 rated as important, and 3 rated as moderate. This marks the largest Patch Tuesday release ever, crushing the previous record of 198 CVEs in June. Last week, Microsoft announced that its multi-model agentic scanning harness (MDASH) is being used to identify vulnerabilities faster and noted that \u201ccustomers will s",
     "source": "Tenable Blog",
     "published": "2026-07-14T14:23:36",
-    "fetched_at": "2026-07-15T14:17:44.151487"
+    "fetched_at": "2026-07-16T00:55:53.585572"
   },
   {
     "title": "The Shift: A New Era of AI Regulation",
@@ -509,15 +573,39 @@
     "summary": "Explore how recent US export controls on frontier AI models like Anthropic's Fable signal a new era of regulatory uncertainty. Learn how security leaders can build resilient AI strategies by treating frontier models as volatile assets rather than stable technology",
     "source": "Recorded Future",
     "published": "2026-07-15T00:00:00",
-    "fetched_at": "2026-07-15T14:17:44.474004"
+    "fetched_at": "2026-07-16T00:55:54.025336"
   },
   {
-    "title": "The FBI Warned About Fake Permit Fees. The Harder Question Is Where the Money Goes. | Recorded Future",
-    "url": "https://www.recordedfuture.com/blog/fbi-fake-permit-fees",
-    "summary": "A government impersonation scam is targeting property owners with fake planning and zoning permit invoices, and authorized wire transfers are clearing behavioral controls. Here's how the scheme works and why beneficiary account intelligence is the signal that catches it.",
-    "source": "Recorded Future",
-    "published": "2026-07-14T00:00:00",
-    "fetched_at": "2026-07-15T14:17:44.474098"
+    "title": "Security researchers find stalkers abusing Chrome\u2019s sync feature",
+    "url": "https://cyberscoop.com/google-chrome-sync-cyberstalking-exploit/",
+    "summary": "Certo Software warns that the capability, designed for convenience, can easily be used to spy on online activity. The post Security researchers find stalkers abusing Chrome&#8217;s sync feature appeared first on CyberScoop.",
+    "source": "CyberScoop",
+    "published": "2026-07-15T20:42:37",
+    "fetched_at": "2026-07-16T00:55:54.186308"
+  },
+  {
+    "title": "SonicWall customers under threat as attackers exploit 2 zero-days",
+    "url": "https://cyberscoop.com/sonicwall-zero-day-vulnerabilities-exploited/",
+    "summary": "Researchers said the vulnerabilities, which attackers are chaining together, were first exploited three weeks before the vendor disclosed and patched the defects. The post SonicWall customers under threat as attackers exploit 2 zero-days appeared first on CyberScoop.",
+    "source": "CyberScoop",
+    "published": "2026-07-15T18:51:59",
+    "fetched_at": "2026-07-16T00:55:54.186415"
+  },
+  {
+    "title": "Dems press DNI nominee Jay Clayton on election security questions, but leave dismayed",
+    "url": "https://cyberscoop.com/jay-clayton-dni-confirmation-hearing-election-security/",
+    "summary": "Clayton maintained he was not an \u201celection denier\u201d but wouldn\u2019t directly answer a number of questions about the 2020 race, his predecessor\u2019s appearance at a January election office raid and more. The post Dems press DNI nominee Jay Clayton on election security questions, but leave dismayed appeared first on CyberScoop.",
+    "source": "CyberScoop",
+    "published": "2026-07-15T18:29:39",
+    "fetched_at": "2026-07-16T00:55:54.186516"
+  },
+  {
+    "title": "Forget the model. When it comes to cybersecurity, it\u2019s all about the harness",
+    "url": "https://cyberscoop.com/ai-cybersecurity-harness-autonomous-hacking/",
+    "summary": "Industry has quickly developed tools meant to guide and direct frontier LLMs in cybersecurity. Attackers aren\u2019t far behind. The post Forget the model. When it comes to cybersecurity, it\u2019s all about the harness appeared first on CyberScoop.",
+    "source": "CyberScoop",
+    "published": "2026-07-15T15:29:57",
+    "fetched_at": "2026-07-16T00:55:54.186612"
   },
   {
     "title": "White House details \u2018Gold Eagle\u2019 clearinghouse for AI cyber threats",
@@ -525,7 +613,7 @@
     "summary": "The White House said the clearinghouse has already started to receive intelligence on vulnerabilities and prioritize patches. The post White House details \u2018Gold Eagle\u2019 clearinghouse for AI cyber threats appeared first on CyberScoop.",
     "source": "CyberScoop",
     "published": "2026-07-14T21:44:31",
-    "fetched_at": "2026-07-15T14:17:44.613298"
+    "fetched_at": "2026-07-16T00:55:54.186722"
   },
   {
     "title": "Microsoft discloses \u2018the mother of all\u2019 vulnerability loads, tripling June\u2019s previous record",
@@ -533,7 +621,7 @@
     "summary": "The company forewarned customers and defenders that a flood of defects would be uncovered by AI. It delivered with a striking exponential increase. The post Microsoft discloses \u2018the mother of all\u2019 vulnerability loads, tripling June\u2019s previous record appeared first on CyberScoop.",
     "source": "CyberScoop",
     "published": "2026-07-14T20:05:46",
-    "fetched_at": "2026-07-15T14:17:44.613384"
+    "fetched_at": "2026-07-16T00:55:54.186817"
   },
   {
     "title": "Treasury sanctions First VPN Service, others for abetting ransomware gangs",
@@ -541,31 +629,15 @@
     "summary": "The designations hit 1VPNS, its alleged Ukrainian administrator and a Belarusian who allegedly sold \u201ccryptors\u201d to disguise ransomware and other malware. The post Treasury sanctions First VPN Service, others for abetting ransomware gangs appeared first on CyberScoop.",
     "source": "CyberScoop",
     "published": "2026-07-14T15:41:19",
-    "fetched_at": "2026-07-15T14:17:44.613457"
+    "fetched_at": "2026-07-16T00:55:54.186904"
   },
   {
-    "title": "States are building their own election defense networks as federal support evaporates",
-    "url": "https://cyberscoop.com/trump-administration-eac-firings-doj-election-officials-threat/",
-    "summary": "Election officials are facing an impossible choice: follow federal directives they don\u2019t trust, or risk becoming targets of a criminal investigation. The post States are building their own election defense networks as federal support evaporates appeared first on CyberScoop.",
-    "source": "CyberScoop",
-    "published": "2026-07-13T20:59:31",
-    "fetched_at": "2026-07-15T14:17:44.613528"
-  },
-  {
-    "title": "Europe strikes out against Russia\u2019s Turla over espionage, \u2018destructive attacks\u2019",
-    "url": "https://cyberscoop.com/eu-uk-russian-cyberespionage-sanctions/",
-    "summary": "The EU, its members and the U.K. took action against Russian government officials and others while attributing the winter cyberattacks against Poland\u2019s energy grid to the FSB. The post Europe strikes out against Russia\u2019s Turla over espionage, \u2018destructive attacks\u2019 appeared first on CyberScoop.",
-    "source": "CyberScoop",
-    "published": "2026-07-13T16:28:10",
-    "fetched_at": "2026-07-15T14:17:44.613599"
-  },
-  {
-    "title": "Officials once again warn defenders that Russian hackers are targeting network devices",
-    "url": "https://cyberscoop.com/russian-fsb-cisco-joint-cybersecurity-advisory/",
-    "summary": "State-sponsored attackers are targeting critical infrastructure networks in defense, communications, energy, finance, government and health care. The post Officials once again warn defenders that Russian hackers are targeting network devices appeared first on CyberScoop.",
-    "source": "CyberScoop",
-    "published": "2026-07-13T15:23:46",
-    "fetched_at": "2026-07-15T14:17:44.613665"
+    "title": "Phishing Campaign Abuses eCards to Deploy RMM Tools",
+    "url": "https://www.infosecurity-magazine.com/news/seasonalinvite-phishing-ecards-rmm/",
+    "summary": "Six-month phishing campaign used seasonal eCard lures to plant legitimate RMM tools on victims",
+    "source": "Infosecurity-Magazine",
+    "published": "2026-07-15T15:00:00",
+    "fetched_at": "2026-07-16T00:55:55.028578"
   },
   {
     "title": "Eleven Vulnerable UEFI Shims Enable Secure Boot Bypass",
@@ -573,7 +645,7 @@
     "summary": "Eleven forgotten Microsoft-signed UEFI shims can bypass Secure Boot on almost any machine",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-15T14:00:00",
-    "fetched_at": "2026-07-15T14:17:45.414741"
+    "fetched_at": "2026-07-16T00:55:55.028688"
   },
   {
     "title": "Compromised Logins Surge as the Most Common Entry Point for Ransomware Attacks",
@@ -581,15 +653,15 @@
     "summary": "Research of incidents by Sophos finds that phishing, brute force attacks and other identity-based threats have surpassed software vulnerabilities as means of delivering ransomware",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-15T12:45:00",
-    "fetched_at": "2026-07-15T14:17:45.414816"
+    "fetched_at": "2026-07-16T00:55:55.028773"
   },
   {
-    "title": "Progress Restores ShareFile Storage Zones Access After Vulnerability Exploit Concerns",
+    "title": "Progress Restores ShareFile Storage Zones Access After Security Warning",
     "url": "https://www.infosecurity-magazine.com/news/progress-restores-sharefile/",
     "summary": "Progress has restored access to its ShareFile Storage Zones Controller after a four-day suspension triggered by a credible external security threat",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-15T12:00:00",
-    "fetched_at": "2026-07-15T14:17:45.414880"
+    "fetched_at": "2026-07-16T00:55:55.028851"
   },
   {
     "title": "Microsoft Patches 570 CVEs in Record Patch Tuesday",
@@ -597,7 +669,7 @@
     "summary": "Microsoft released fixes for a record 570 CVEs in its July Patch Tuesday update, as experts warn AI is dramatically accelerating vulnerability discovery and increasing patch volumes",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-15T09:20:00",
-    "fetched_at": "2026-07-15T14:17:45.414940"
+    "fetched_at": "2026-07-16T00:55:55.028928"
   },
   {
     "title": "Government Updates UK\u2019s National Risk Register with Cyber Warnings",
@@ -605,7 +677,7 @@
     "summary": "The UK government is warning of the potential impact of catastrophic cyber-attacks",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-15T08:48:00",
-    "fetched_at": "2026-07-15T14:17:45.414998"
+    "fetched_at": "2026-07-16T00:55:55.029004"
   },
   {
     "title": "US: Pentagon Suspends CMMC Phase II Requirements for Defense Contractors",
@@ -613,7 +685,7 @@
     "summary": "The US Department of Defense announced the immediate suspension of the CMMC Phase II requirements until further review",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-14T15:28:00",
-    "fetched_at": "2026-07-15T14:17:45.415069"
+    "fetched_at": "2026-07-16T00:55:55.029078"
   },
   {
     "title": "New MacOS Malware Exploits Legitimate Developer ID to Pose as Apple Crash Reporter",
@@ -621,7 +693,7 @@
     "summary": "Researchers at Jamf Threat Labs detail CrashStealer, which steals passwords, cryptocurrency wallets and more",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-14T12:00:00",
-    "fetched_at": "2026-07-15T14:17:45.415124"
+    "fetched_at": "2026-07-16T00:55:55.029153"
   },
   {
     "title": "Lidl Notifies Customers of Third-Party Data Breach",
@@ -629,7 +701,7 @@
     "summary": "Supermarket giant Lidl has revealed details of a supplier breach impacting customer data",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-14T09:43:00",
-    "fetched_at": "2026-07-15T14:17:45.415178"
+    "fetched_at": "2026-07-16T00:55:55.029224"
   },
   {
     "title": "Five Charged in \u201cRussian Coms\u201d Fraud Platform Case",
@@ -637,15 +709,7 @@
     "summary": "Five UK residents have been charged in relation to supplying Russian Coms fraud devices and apps",
     "source": "Infosecurity-Magazine",
     "published": "2026-07-14T08:21:00",
-    "fetched_at": "2026-07-15T14:17:45.415234"
-  },
-  {
-    "title": "Open Directory Exposes Three Evilginx Phishing Operators",
-    "url": "https://www.infosecurity-magazine.com/news/open-directory-exposes-evilginx/",
-    "summary": "Misconfigured server exposed three phishing operators running Evilginx forks to bypass MFA",
-    "source": "Infosecurity-Magazine",
-    "published": "2026-07-13T15:30:00",
-    "fetched_at": "2026-07-15T14:17:45.415287"
+    "fetched_at": "2026-07-16T00:55:55.029294"
   },
   {
     "title": "Forgotten UEFI shims undermining Secure Boot",
@@ -653,87 +717,87 @@
     "summary": "ESET researchers discovered 11 vulnerable UEFI shim bootloaders signed by Microsoft that allow attackers to bypass UEFI Secure Boot by exploiting decade-old vulnerabilities",
     "source": "WeLiveSecurity",
     "published": "2026-07-14T08:53:00",
-    "fetched_at": "2026-07-15T14:17:46.305635"
+    "fetched_at": "2026-07-16T00:55:56.163884"
   },
   {
-    "title": "Sony Bravia Theater vs. Sonos: I've used both home theaters - here's how to choose",
-    "url": "https://www.zdnet.com/article/sony-bravia-theater-vs-sonos/",
-    "summary": "Sony and Sonos have spectacular, high-performing home theater gear. But personal preferences matter more than brand name alone.",
+    "title": "I never leave for vacation without doing these 7 home security checks first",
+    "url": "https://www.zdnet.com/article/7-home-security-checks-before-vacation/",
+    "summary": "Burglars target empty homes, and insurers deny frozen-pipe claims. Here's the tech that solves these issues and others before you leave.",
     "source": "Latest news",
-    "published": "2026-07-15T13:39:00",
-    "fetched_at": "2026-07-15T14:17:46.487819"
+    "published": "2026-07-16T00:00:49",
+    "fetched_at": "2026-07-16T00:55:56.350739"
   },
   {
-    "title": "I tested all three OpenVPN tiers: Why the free version is still the best choice for most users",
-    "url": "https://www.zdnet.com/article/managed-self-hosted-or-open-source-how-to-choose-the-right-version-of-openvpn/",
-    "summary": "OpenVPN offers three modes of deployment with varied pricing based on the same underlying protocol. Here are the pros, cons, and costs associated with each.",
+    "title": "5 smart home gadgets I consider completely non-negotiable - and why",
+    "url": "https://www.zdnet.com/article/5-smart-home-gadgets-i-consider-completely-non-negotiable-and-why/",
+    "summary": "These smart home gadgets elevate my home and routine. Here's why you may want them too.",
     "source": "Latest news",
-    "published": "2026-07-15T13:27:00",
-    "fetched_at": "2026-07-15T14:17:46.487893"
+    "published": "2026-07-15T19:50:18",
+    "fetched_at": "2026-07-16T00:55:56.350832"
   },
   {
-    "title": "How to use Gemini to plan your next summer vacation - in minutes",
-    "url": "https://www.zdnet.com/article/gemini-prompt-to-plan-vacation-build-itinerary-doc/",
-    "summary": "This Gemini prompt can find flights, stays, and things to do for you. It'll even build an itinerary doc.",
+    "title": "Microsoft patches record 570 Windows security bugs with two exploited zero days - update now",
+    "url": "https://www.zdnet.com/article/microsoft-patches-570-vulnerabilities-exploited-zero-days/",
+    "summary": "The July Patch Tuesday Windows update breaks the record for the most security bugs fixed in a single month, with three zero-day flaws and 61 rated critical.",
     "source": "Latest news",
-    "published": "2026-07-15T12:58:12",
-    "fetched_at": "2026-07-15T14:17:46.487956"
+    "published": "2026-07-15T18:28:38",
+    "fetched_at": "2026-07-16T00:55:56.350919"
   },
   {
-    "title": "I highly recommend Nomad's chargers, phone cases, and watch bands - and my favorites are on sale now",
-    "url": "https://www.zdnet.com/article/nomad-anniversary-sale-2026/",
-    "summary": "Nomad's tech accessories rarely go on sale, but now is your chance to scoop up some of our favorites at over 20% off.",
+    "title": "73% of tech job listings require AI skills now: How to show off yours",
+    "url": "https://www.zdnet.com/article/73-of-tech-job-listings-require-ai-skills-show-off-yours/",
+    "summary": "Employers are looking for AI skills - here's how to let them demonstrate you know what you're doing.",
     "source": "Latest news",
-    "published": "2026-07-15T12:51:29",
-    "fetched_at": "2026-07-15T14:17:46.488027"
+    "published": "2026-07-15T18:00:00",
+    "fetched_at": "2026-07-16T00:55:56.350996"
   },
   {
-    "title": "Waze just gave me 5 new reasons to switch from Apple Maps",
-    "url": "https://www.zdnet.com/article/waze-update-may-beat-apple-maps/",
-    "summary": "None of these new Waze features is offered in Apple Maps.",
+    "title": "New Mac malware masquerades as Apple's crash reporter: 3 ways to dodge the threat",
+    "url": "https://www.zdnet.com/article/crashstealer-mac-malware-masquerades-as-apples-crash-reporter/",
+    "summary": "CrashStealer is now in the wild, targeting your data, passwords, and cryptocurrency. Here's everything you need to know about this new MacOS threat.",
     "source": "Latest news",
-    "published": "2026-07-15T12:33:17",
-    "fetched_at": "2026-07-15T14:17:46.488085"
+    "published": "2026-07-15T17:18:35",
+    "fetched_at": "2026-07-16T00:55:56.351071"
   },
   {
-    "title": "I tested Google Maps vs. Waze to find the best updated navigation app - and this one wins",
-    "url": "https://www.zdnet.com/article/google-maps-vs-waze-2026/",
-    "summary": "Want to know whether Waze or Google Maps is better? I've driven with both for hundreds of miles. Here's my choice.",
+    "title": "I tested Jabra Evolve3 75 vs. ThinkPad 8550 - and I'd buy this headset for the ANC alone",
+    "url": "https://www.zdnet.com/article/jabra-evolve3-75-vs-thinkpad-aura-edition-headset/",
+    "summary": "Here's how two of my favorite premium business headphones of 2026 compare.",
     "source": "Latest news",
-    "published": "2026-07-15T12:17:00",
-    "fetched_at": "2026-07-15T14:17:46.488141"
+    "published": "2026-07-15T17:00:46",
+    "fetched_at": "2026-07-16T00:55:56.351144"
   },
   {
-    "title": "Four months with my first home battery taught me what whole-home backup really means",
-    "url": "https://www.zdnet.com/article/anker-solix-e10-review/",
-    "summary": "Anker's Solix E10 made backup power understandable for this first-timer, and I can't wait to expand the system.",
+    "title": "I turned my Moto Razr into a tiny workstation - and wrote this entire story on it",
+    "url": "https://www.zdnet.com/article/motorola-razr-tiny-workstation/",
+    "summary": "I wanted to save my back during my next work trip, so I assembled a workstation using the smallest devices I could find.",
     "source": "Latest news",
-    "published": "2026-07-15T09:45:39",
-    "fetched_at": "2026-07-15T14:17:46.488195"
+    "published": "2026-07-15T16:22:00",
+    "fetched_at": "2026-07-16T00:55:56.351217"
   },
   {
-    "title": "I tested my USB-C cables with this free Mac app - some weren't what they claimed",
-    "url": "https://www.zdnet.com/article/whatcable-mac-app-usbc-cable-review/",
-    "summary": "WhatCable is a free Mac app that gives you all the information you could need for your USB-C cables.",
+    "title": "'Rust makes coding fun again': Why Linux is moving away from C, according to Greg Kroah-Hartman",
+    "url": "https://www.zdnet.com/article/greg-kroah-hartman-linux-kernel-rust/",
+    "summary": "C won't be disappearing tomorrow, says the stable kernel maintainer, but the future of Linux belongs to Rust.",
     "source": "Latest news",
-    "published": "2026-07-15T07:45:43",
-    "fetched_at": "2026-07-15T14:17:46.488249"
+    "published": "2026-07-15T16:13:42",
+    "fetched_at": "2026-07-16T00:55:56.351290"
   },
   {
-    "title": "Why I'm using wired Android Auto when all the cool kids are switching to wireless",
-    "url": "https://www.zdnet.com/article/why-im-using-wired-android-auto-when-all-the-cool-kids-are-switching-to-wireless/",
-    "summary": "Sometimes, you have to dial back the tech to make ends meet.",
+    "title": "This free Mac tool lets me see which apps are quietly accessing the internet - and block them fast",
+    "url": "https://www.zdnet.com/article/firewally-mac-tool-monitor-app-traffic/",
+    "summary": "I try to be diligent about my default firewall policies and which apps access the internet. A simple-to-use tool called Firewally\u200b makes it easy.",
     "source": "Latest news",
-    "published": "2026-07-15T01:00:43",
-    "fetched_at": "2026-07-15T14:17:46.488302"
+    "published": "2026-07-15T15:46:11",
+    "fetched_at": "2026-07-16T00:55:56.351367"
   },
   {
-    "title": "I've used the iOS 27 beta for a month: 7 ways the new Siri is dramatically better",
-    "url": "https://www.zdnet.com/article/public-beta-ios-27-siri-ai-hands-on-testing/",
-    "summary": "Siri AI is the star of iOS 27, and now most iPhone users can try it with the first public beta of the OS.",
+    "title": "I let ChatGPT Work and Claude Cowork loose on my files - only one made me nervous",
+    "url": "https://www.zdnet.com/article/chatgpt-work-claude-cowork/",
+    "summary": "How does ChatGPT Work compare with Claude Cowork for desktop automation? My testing reveals similar results, similar strengths, and one major reason Claude currently feels considerably safer right now.",
     "source": "Latest news",
-    "published": "2026-07-14T20:15:17",
-    "fetched_at": "2026-07-15T14:17:46.488356"
+    "published": "2026-07-15T14:29:00",
+    "fetched_at": "2026-07-16T00:55:56.351440"
   },
   {
     "title": "Weekly Update 512: IoT Lockout Fail",
@@ -741,7 +805,7 @@
     "summary": "&quot;Build a smart home&quot;, they said. &quot;It&apos;ll make life so much better&quot;, they said. Well, life wasn&apos;t very bloody good at 23:00 the other night after travelling 33 hours from Paris only to find the IoT doorlock batteries dead and the",
     "source": "Troy Hunt",
     "published": "2026-07-15T00:35:38",
-    "fetched_at": "2026-07-15T14:17:46.681032"
+    "fetched_at": "2026-07-16T00:55:56.581409"
   },
   {
     "title": "The ransomware negotiator who was working for the other side",
@@ -749,7 +813,15 @@
     "summary": "When a company falls victim to a ransomware attack, it is not uncommon for it to turn to experts for help. Specialist ransomware negotiation firms handle communications with criminal gangs on a victim's behalf. What victims don't expect is that their trusted negotiator might be separately sharing details of the victim's cyber-insurance policy and negotiation strategy directly with the attackers themselves. Read more in my article on the Hot for Security blog.",
     "source": "GRAHAM CLULEY",
     "published": "2026-07-14T07:54:08",
-    "fetched_at": "2026-07-15T14:17:46.851200"
+    "fetched_at": "2026-07-16T00:55:56.836384"
+  },
+  {
+    "title": "We third-party tested our firewall built for AI-scale. The test tools hit their limit first.",
+    "url": "https://blogs.cisco.com/security/we-third-party-tested-our-firewall-built-for-ai-scale-the-test-tools-hit-their-limit-first/",
+    "summary": "We tested Cisco Secure Firewall 6160 with NetSecOPEN for AI-scale. It delivered 5X more throughput than previously tested and 100% threat block rate.",
+    "source": "Security @ Cisco Blogs",
+    "published": "2026-07-15T15:00:06",
+    "fetched_at": "2026-07-16T00:55:57.871149"
   },
   {
     "title": "OkoBot: new sophisticated malware framework targets cryptocurrency users",
@@ -757,7 +829,31 @@
     "summary": "Kaspersky GReAT experts dissect the new OkoBot campaign targeting cryptocurrency users. This complex framework employs TookPS, exfiltrates seed phrases, monitors Chromium-based browsers, and installs various malware strains, including the Rilide stealer.",
     "source": "Securelist",
     "published": "2026-07-15T10:00:26",
-    "fetched_at": "2026-07-15T14:17:49.253430"
+    "fetched_at": "2026-07-16T00:55:59.272206"
+  },
+  {
+    "title": "Key vulnerabilities of Microsoft\u2019s July 2026 Patch Tuesday",
+    "url": "https://www.kaspersky.com/blog/update-microsoft-patch-tuesday-july-2026-570-bugs/56128/",
+    "summary": "Which Windows, SharePoint, and AD vulnerabilities are being exploited in July 2026, and how can organizations adapt to updates containing 500+ fixes?",
+    "source": "Kaspersky official blog",
+    "published": "2026-07-15T19:30:25",
+    "fetched_at": "2026-07-16T00:56:00.618140"
+  },
+  {
+    "title": "Meta launched and almost instantly rolled back a feature that trained its AI image generator on Instagram user content. | Kaspersky official blog",
+    "url": "https://www.kaspersky.com/blog/meta-muse-image-instagram/56121/",
+    "summary": "Meta turned on \u2014 then immediately killed \u2014 an AI feature that used public Instagram content to generate images. Here\u2019s a look at why they pivoted, what this means for the future, and how you can protect your social media accounts from unauthorized use.",
+    "source": "Kaspersky official blog",
+    "published": "2026-07-14T15:27:03",
+    "fetched_at": "2026-07-16T00:56:00.618250"
+  },
+  {
+    "title": "AI Security Is Never Finished: Building the Continuous Red Teaming Loop",
+    "url": "https://blog.checkpoint.com/ai-security/ai-security-is-never-finished-building-the-continuous-red-teaming-loop/",
+    "summary": "Security programs are built around moments of closure: the finding is closed, the control passed, and the release can move forward. AI security refuses to cooperate with that model. A passing test is useful evidence, but only for a specific system, configuration, and moment. Production AI keeps moving. Models change behavior, prompts are revised, retrieval sources are added, agents gain tools, and users introduce unexpected context. Attackers adapt just as quickly. Yesterday&#8217;s clean result may not describe tomorrow&#8217;s risk. That has been the practical case for continuous AI red team",
+    "source": "Check Point Blog",
+    "published": "2026-07-15T13:00:43",
+    "fetched_at": "2026-07-16T00:56:00.734113"
   },
   {
     "title": "AI Security Threats in 2026: Annual Insights from Check Point Research",
@@ -765,7 +861,15 @@
     "summary": "Key Takeaways Vulnerability response times have collapsed from days to hours. AI can reason about code well enough to generate working exploits at scale, so defenders now face patch windows of 12 to 72 hours instead of the traditional timeframe Your exposed AI infrastructure is being actively probed right now. Model servers, inference endpoints, and agent control panels are facing the internet, and most security teams don&#8217;t know they&#8217;re there Data leakage through approved AI use doubled in one year. Employees sharing context with generative AI to get useful answers are exposing cre",
     "source": "Check Point Blog",
     "published": "2026-07-14T01:00:42",
-    "fetched_at": "2026-07-15T14:17:50.444147"
+    "fetched_at": "2026-07-16T00:56:00.734240"
+  },
+  {
+    "title": "Claude for Chrome flaw could let rogue extensions access your Gmail",
+    "url": "https://www.malwarebytes.com/blog/news/2026/07/claude-for-chrome-flaw-could-let-rogue-extensions-access-your-gmail",
+    "summary": "The ClaudeBleed vulnerability still lets malicious Chrome extensions abuse Claude for Chrome's permissions.",
+    "source": "Malwarebytes",
+    "published": "2026-07-15T14:25:53",
+    "fetched_at": "2026-07-16T00:56:01.226423"
   },
   {
     "title": "July 2026 Patch Tuesday fixes 622 Microsoft CVEs, including three zero-days",
@@ -773,7 +877,7 @@
     "summary": "Microsoft's July 2026 Patch Tuesday sets yet another record, fixing 622 Microsoft CVEs\u2014three times as many as last month.",
     "source": "Malwarebytes",
     "published": "2026-07-15T12:21:11",
-    "fetched_at": "2026-07-15T14:17:51.060042"
+    "fetched_at": "2026-07-16T00:56:01.226520"
   },
   {
     "title": "This fake Apple app can unlock your Mac&#8217;s password vault",
@@ -781,7 +885,7 @@
     "summary": "Disguised as Apple's CrashReporter, CrashStealer steals passwords, browser data, crypto wallets, and other sensitive information.",
     "source": "Malwarebytes",
     "published": "2026-07-15T08:42:03",
-    "fetched_at": "2026-07-15T14:17:51.060117"
+    "fetched_at": "2026-07-16T00:56:01.226601"
   },
   {
     "title": "Warning: Scammers are using FaceTime to empty bank accounts",
@@ -789,7 +893,7 @@
     "summary": "Cybercriminals are combining social engineering through apps like FaceTime with unpatched devices to steal credentials and drain bank accounts.",
     "source": "Malwarebytes",
     "published": "2026-07-14T11:09:02",
-    "fetched_at": "2026-07-15T14:17:51.060180"
+    "fetched_at": "2026-07-16T00:56:01.226695"
   },
   {
     "title": "The inside job that cost ransomware victims millions",
@@ -797,15 +901,7 @@
     "summary": "Instead of helping victims negotiate with BlackCat, a trusted ransomware negotiator secretly helped the gang extort them.",
     "source": "Malwarebytes",
     "published": "2026-07-14T09:26:51",
-    "fetched_at": "2026-07-15T14:17:51.060239"
-  },
-  {
-    "title": "Trusting your kids online isn&#8217;t enough (Lock and Code S07E14)",
-    "url": "https://www.malwarebytes.com/blog/podcast/2026/07/trusting-your-kids-online-isnt-enough-lock-and-code-s07e14",
-    "summary": "This week on the Lock and Code podcast, we speak with Anna Brading about what actually works in keeping her kids safe online.",
-    "source": "Malwarebytes",
-    "published": "2026-07-13T14:33:41",
-    "fetched_at": "2026-07-15T14:17:51.060296"
+    "fetched_at": "2026-07-16T00:56:01.226770"
   },
   {
     "title": "AI Agents Are Creating a New Class of Employee Risk",
@@ -813,7 +909,7 @@
     "summary": "Varonis security brief&nbsp; AI agents are creating a new digital workforce, rapidly increasing the number of non-human identities accessing sensitive data.&nbsp; As AI becomes more autonomous, security shifts from controlling access to controlling actions and intent.&nbsp; Organizations need a data-centric security layer that enforces policy, reduces risk, and enables safe AI adoption.&nbsp; AI agents: the new digital employee risk Human error has traditionally posed the greatest risk in cybersecurity, fueling breaches through compromised identities and excessive access to sensitive data. Now",
     "source": "Varonis Blog",
     "published": "2026-07-14T15:47:03",
-    "fetched_at": "2026-07-15T14:17:53.730028"
+    "fetched_at": "2026-07-16T00:56:04.623211"
   },
   {
     "title": "Varonis Atlas Extends Coverage Across the Claude Enterprise Suite \u2014 From Claude Cowork to Claude Code",
@@ -821,7 +917,7 @@
     "summary": "Varonis' Atlas AI Security Platform&nbsp;now&nbsp;secures the&nbsp;entire&nbsp;Claude enterprise suite \u2014 extending existing support for&nbsp;Claude Enterprise&nbsp;and Claude Platform&nbsp;to Claude Code and Claude Cowork.&nbsp;",
     "source": "Varonis Blog",
     "published": "2026-07-14T12:55:01",
-    "fetched_at": "2026-07-15T14:17:53.730153"
+    "fetched_at": "2026-07-16T00:56:04.623319"
   },
   {
     "title": "Microsoft and Adobe Patch Tuesday, July 2026 Security Update Review",
@@ -829,7 +925,7 @@
     "summary": "Microsoft&#8217;s July 2026 Patch Tuesday delivers security updates for a broad range of products and services, including several vulnerabilities that pose significant risks to enterprise environments. As attackers continue to target unpatched systems,&#160;the timely&#160;deployment of these updates&#160;remains&#160;one of the most effective defenses against exploitation. This blog provides an overview of the month&#8217;s key security fixes, [&#8230;]",
     "source": "Qualys Security Blog",
     "published": "2026-07-14T21:23:09",
-    "fetched_at": "2026-07-15T14:17:54.167862"
+    "fetched_at": "2026-07-16T00:56:05.095766"
   },
   {
     "title": "How Qualys ETM Identity Detects Identity-Based Attacks Faster",
@@ -837,7 +933,15 @@
     "summary": "Key Takeaways Identity-based attacks are among the fastest and most effective intrusion methods because valid credentials let attackers operate as trusted users. Techniques like Pass-the-Hash, Kerberoasting, Domain Controller Synchronization (DCSync), and Authentication Server Response Roasting (AS-REP Roasting) are common Active Directory (AD) attacks that exploit AD trust relationships. Qualys ETM Identity helps organizations discover risky [&#8230;]",
     "source": "Qualys Security Blog",
     "published": "2026-07-14T18:00:00",
-    "fetched_at": "2026-07-15T14:17:54.167945"
+    "fetched_at": "2026-07-16T00:56:05.095875"
+  },
+  {
+    "title": "TELEPUZ: a modular MaaS malware spreading via CLICKFIX-VIDAR chains",
+    "url": "https://www.elastic.co/security-labs/telepuz-maas-malware-clickfix",
+    "summary": "TELEPUZ is a modular malware that emerged through CLICKFIX-VIDAR attacks in April. We reverse-engineered it to show you the infrastructure and evasion techniques that matter.",
+    "source": "Elastic Security Labs",
+    "published": "2026-07-16T00:00:00",
+    "fetched_at": "2026-07-16T00:56:05.867890"
   },
   {
     "title": "AI Engineer World\u2019s Fair 2026: The Runtime Is Where Agent Trust Is Won",
@@ -845,7 +949,7 @@
     "summary": "We spent the week at AI Engineer World's Fair in San Francisco, on stage and on the floor. Here's what we heard, and where we think it lands for anyone building with agents.",
     "source": "Docker",
     "published": "2026-07-14T13:00:00",
-    "fetched_at": "2026-07-15T14:17:56.019212"
+    "fetched_at": "2026-07-16T00:56:07.181543"
   },
   {
     "title": "Open Source, Open Infrastructure, and the Space Between",
@@ -853,15 +957,15 @@
     "summary": "When good infrastructure works, most people do not think about it. They might even forget. But when it stops working, everyone notices.",
     "source": "2024 Sonatype Blog",
     "published": "2026-07-15T08:00:01",
-    "fetched_at": "2026-07-15T14:17:56.210253"
+    "fetched_at": "2026-07-16T00:56:07.372356"
   },
   {
-    "title": "Request for Comments: CARE and Maven Central",
-    "url": "https://www.sonatype.com/blog/request-for-comments-care-and-maven-central",
-    "summary": "For most of Maven Central's history, publishing has followed a simple model: maintainers publish releases, users consume them, and when something goes wrong, the fix comes through the same channel.",
-    "source": "2024 Sonatype Blog",
-    "published": "2026-07-13T19:57:18",
-    "fetched_at": "2026-07-15T14:17:56.210329"
+    "title": "Grafana Labs named a Leader again in the 2026 Gartner\u00ae Magic Quadrant\u2122 for Observability Platforms",
+    "url": "https://grafana.com/blog/grafana-labs-named-a-leader-again-in-the-2026-gartner-magic-quadrant-for-observability-platforms/",
+    "summary": "We\u2019re delighted to share that Grafana Labs has been named a Leader in the Gartner\u00ae Magic Quadrant\u2122 for Observability Platforms for the third consecutive year.Notably, we\u2019re also positioned furthest in \u201cCompleteness of Vision\u201d for the second year in a row.We\u2019re proud of this recognition and think it reflects what we consistently hear from our users: AI is rapidly changing the observability landscape, and teams need an open and flexible platform that can help them navigate that change. Reducing complexity in the age of AIAccording to Grafana Labs\u2019 2026 Observability Survey, operational complexit",
+    "source": "Grafana Labs blog on Grafana Labs",
+    "published": "2026-07-15T16:49:49",
+    "fetched_at": "2026-07-16T00:56:07.745396"
   },
   {
     "title": "Stop switching tools to find answers: Grafana Assistant now works across 30+ data sources",
@@ -869,15 +973,7 @@
     "summary": "When you're the on-call engineer and something breaks, you can quickly find yourself deep in a series of tools you don't regularly use\u2014switching tabs, copying query results, and manually stitching together a picture of what's happening and why.People are increasingly turning to AI to get around this, but the results can be a mixed bag.For example, many of today's observability, data warehousing, or project management tools come equipped with powerful AI assistants that can help you get answers quicker. But those assistants can only see the data they were built on top of. Alternatively, you cou",
     "source": "Grafana Labs blog on Grafana Labs",
     "published": "2026-07-14T18:47:36",
-    "fetched_at": "2026-07-15T14:17:56.462779"
-  },
-  {
-    "title": "Building an end-to-end reliability testing strategy with Grafana Cloud",
-    "url": "https://grafana.com/blog/building-an-end-to-end-reliability-testing-strategy-with-grafana-cloud/",
-    "summary": "Modern applications can fail in many different ways, from performance regressions and frontend errors to systems that break under heavy load. Because no single testing or monitoring approach can catch every type of failure, effective reliability testing requires multiple layers that validate your application before, during, and after their release. In this post, we'll look at how three solutions in Grafana Cloud\u2014Synthetic Monitoring, Frontend Observability, and k6\u2014work together to form a comprehensive reliability testing strategy. While no single tool tells the whole story, layered together th",
-    "source": "Grafana Labs blog on Grafana Labs",
-    "published": "2026-07-13T15:53:09",
-    "fetched_at": "2026-07-15T14:17:56.463179"
+    "fetched_at": "2026-07-16T00:56:07.745776"
   },
   {
     "title": "Building a Custom Metrics Exporter for Kubernetes",
@@ -885,7 +981,15 @@
     "summary": "Kubernetes ships with built-in awareness of CPU and memory, but most real-world scaling decisions depend on signals that live entirely outside that narrow window: how many messages are waiting in a queue, how long the last batch job took, how many active WebSocket connections a pod is holding. When the built-in metrics are not enough, a metrics exporter bridges that gap. This post walks through writing one from scratch, packaging it as a container, and wiring it into a cluster so that Prometheus \u2014 and ultimately the HorizontalPodAutoscaler \u2014 can consume it. What a metrics exporter actually doe",
     "source": "Kubernetes Blog",
     "published": "2026-07-14T10:00:00",
-    "fetched_at": "2026-07-15T14:17:57.187380"
+    "fetched_at": "2026-07-16T00:56:08.541477"
+  },
+  {
+    "title": "HAMi becomes a CNCF incubating project",
+    "url": "https://www.cncf.io/blog/2026/07/15/hami-becomes-a-cncf-incubating-project/",
+    "summary": "The CNCF Technical Oversight Committee (TOC) has voted to accept HAMi as a CNCF incubating project.&#160; About HAMi Modern AI infrastructure teams run into the same problem over and over: expensive GPUs often sit fragmented and...",
+    "source": "Blog \u2013 Cloud Native Computing Foundation",
+    "published": "2026-07-15T16:00:00",
+    "fetched_at": "2026-07-16T00:56:08.736233"
   },
   {
     "title": "On-prem DBaaS in 2026: Platforms, standards, and gaps",
@@ -893,7 +997,7 @@
     "summary": "For application teams, databases should feel like a solved problem. A team needs PostgreSQL, MariaDB, Redis, or another data service, submits a request, receives credentials, and starts building. In practice, the experience is rarely that simple....",
     "source": "Blog \u2013 Cloud Native Computing Foundation",
     "published": "2026-07-15T11:00:00",
-    "fetched_at": "2026-07-15T14:17:57.368291"
+    "fetched_at": "2026-07-16T00:56:08.736336"
   },
   {
     "title": "KeycloakCon Japan 2026: Navigating cloud native identity and the AI frontier",
@@ -901,7 +1005,7 @@
     "summary": "The countdown is officially on. In just a few weeks, the cloud-native ecosystem meets in Yokohama for KubeCon + CloudNativeCon Japan 2026. Taking place on Tuesday, July 28 from 09:00 \u2013 12:30, KeycloakCon Japan brings together...",
     "source": "Blog \u2013 Cloud Native Computing Foundation",
     "published": "2026-07-14T21:34:55",
-    "fetched_at": "2026-07-15T14:17:57.368373"
+    "fetched_at": "2026-07-16T00:56:08.736430"
   },
   {
     "title": "Is a Pod the right deployment unit for an AI agent?",
@@ -909,7 +1013,7 @@
     "summary": "When we first started building kagent, we didn&#8217;t run every agent in its own Kubernetes Pod, Service, and ServiceAccount. Instead, agents were simply executed inside the kagent runtime. It was the simplest architecture possible: one runtime...",
     "source": "Blog \u2013 Cloud Native Computing Foundation",
     "published": "2026-07-14T11:20:00",
-    "fetched_at": "2026-07-15T14:17:57.368441"
+    "fetched_at": "2026-07-16T00:56:08.736516"
   },
   {
     "title": "ICYMI: June 2026 @AWS Security",
@@ -917,7 +1021,7 @@
     "summary": "Read all about the latest AWS security features, compliance updates, and hands-on resources in our new, monthly digest posts. You\u2019ll find expert blog posts, new service capabilities, code samples, and workshops. AWS Security Blog posts This month\u2019s AWS Security Blog posts covered identity and access management, threat intelligence, network security, AI-powered security tooling, and multi-account [\u2026]",
     "source": "AWS Security Blog",
     "published": "2026-07-15T00:37:58",
-    "fetched_at": "2026-07-15T14:17:58.402806"
+    "fetched_at": "2026-07-16T00:56:09.605380"
   },
   {
     "title": "Security Hub adds AI workload protection and multicloud support for Microsoft Azure",
@@ -925,7 +1029,7 @@
     "summary": "Security Hub is our foundation for full-stack enterprise security across clouds. It centralizes your security operations and turns raw signals into prioritized insights, so your team spends its time managing real risk instead of stitching tools together. Today that foundation grows in two directions our customers asked for most. We are adding purpose-built protection for [\u2026]",
     "source": "AWS Security Blog",
     "published": "2026-07-14T19:16:57",
-    "fetched_at": "2026-07-15T14:17:58.402892"
+    "fetched_at": "2026-07-16T00:56:09.605496"
   },
   {
     "title": "Authenticate legitimate AI agent traffic with AWS WAF Bot Control",
@@ -933,7 +1037,15 @@
     "summary": "As AI agents and automated tools increasingly access web applications, distinguishing legitimate bot traffic from malicious attempts has become a critical security challenge. Traditional approaches such as IP-based filtering and reverse DNS lookups fail in multi-tenant systems (such as Amazon Bedrock AgentCore) where thousands of distinct workloads share the same IP space. Attackers can easily [\u2026]",
     "source": "AWS Security Blog",
     "published": "2026-07-14T15:18:42",
-    "fetched_at": "2026-07-15T14:17:58.402969"
+    "fetched_at": "2026-07-16T00:56:09.605598"
+  },
+  {
+    "title": "How bitdrift scaled to 121 million concurrent gRPC connections on Amazon CloudFront for live telemetry sporting events",
+    "url": "https://aws.amazon.com/blogs/architecture/how-bitdrift-scaled-to-121-million-concurrent-grpc-connections-on-amazon-cloudfront-for-live-telemetry-sporting-events/",
+    "summary": "When 121 million mobile devices establish persistent gRPC connections to your origin infrastructure within seconds of a live broadcast, the routing policy behind your DNS records matters far more than it does at normal traffic levels. The wrong policy can concentrate all your connections onto a single origin endpoint, turning a scaling success into an [\u2026]",
+    "source": "AWS Architecture Blog",
+    "published": "2026-07-15T15:27:47",
+    "fetched_at": "2026-07-16T00:56:09.863126"
   },
   {
     "title": "How Mapfre USA modernized fraud claims with Amazon EMR Serverless",
@@ -941,7 +1053,15 @@
     "summary": "Insurance fraud remains a significant challenge for the insurance industry because fraudulent claims can increase loss costs, reduce trust, and consume investigation capacity that could otherwise be focused on serving customers. Traditional fraud detection approaches typically rely on rules-based controls, manual investigation triggers, historical claim patterns, and structured-data-only analysis. These approaches are useful for known [\u2026]",
     "source": "AWS Architecture Blog",
     "published": "2026-07-14T21:47:35",
-    "fetched_at": "2026-07-15T14:17:58.737715"
+    "fetched_at": "2026-07-16T00:56:09.863242"
+  },
+  {
+    "title": "OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins",
+    "url": "https://www.chainalysis.com/blog/ofac-sanctions-iran-central-bank-crypto-wallets-freezing-131m-in-stablecoins/",
+    "summary": "The U.S. Treasury Department\u2019s Office of Foreign Assets Control (OFAC) on Tuesday updated its Central Bank of Iran designation to&#8230; The post OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins appeared first on Chainalysis.",
+    "source": "Chainalysis",
+    "published": "2026-07-15T22:37:36",
+    "fetched_at": "2026-07-16T00:56:14.064830"
   },
   {
     "title": "\u201cStern,\u201d Likely Most Prolific Ransomware Operator Ever, Sanctioned by EU as Action Targets Billions in Ransomware Damage",
@@ -949,7 +1069,7 @@
     "summary": "Summary The United States, United Kingdom, and European Union announced sanctions targeting nation-state hackers, cybercriminals, and their enablers in one&#8230; The post \u201cStern,\u201d Likely Most Prolific Ransomware Operator Ever, Sanctioned by EU as Action Targets Billions in Ransomware Damage appeared first on Chainalysis.",
     "source": "Chainalysis",
     "published": "2026-07-14T15:24:02",
-    "fetched_at": "2026-07-15T14:18:02.506328"
+    "fetched_at": "2026-07-16T00:56:14.064945"
   },
   {
     "title": "Chainalysis Supports Stable with Automatic Token Support",
@@ -957,23 +1077,23 @@
     "summary": "Chainalysis is excited to announce support for Stable, a Layer 1 blockchain optimized for stablecoin payments and aligned with the&#8230; The post Chainalysis Supports Stable with Automatic Token Support appeared first on Chainalysis.",
     "source": "Chainalysis",
     "published": "2026-07-14T14:00:14",
-    "fetched_at": "2026-07-15T14:18:02.506410"
+    "fetched_at": "2026-07-16T00:56:14.065037"
   },
   {
-    "title": "What will be left for us to work on?",
-    "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-    "summary": "My keynote at ICML 2026",
-    "source": "AI as Normal Technology",
-    "published": "2026-07-13T18:47:06",
-    "fetched_at": "2026-07-15T14:18:07.175031"
+    "title": "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
+    "url": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/",
+    "summary": "General-purpose robots and autonomous machines are moving from research labs to real-world mass-market deployment, creating demand for compact, power-efficient AI supercomputers capable of running foundation models at the edge. To meet that need, NVIDIA today introduced the T3000 and T2000, new modules based on the NVIDIA Thor architecture that enable mass-market robotics and edge AI [&#8230;]",
+    "source": "NVIDIA Blog",
+    "published": "2026-07-15T23:00:54",
+    "fetched_at": "2026-07-16T00:56:18.854098"
   },
   {
     "title": "NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry",
     "url": "https://blogs.nvidia.com/blog/japan-ecosystem-2026/",
-    "summary": "Home to leading manufacturers, robotics pioneers and infrastructure builders, Japan is one of the world\u2019s centers of AI \u2014 building across the full stack with NVIDIA technologies. NVIDIA and its partners in Japan are this week showcasing the AI ecosystem\u2019s latest advancements. Check back here for updates. &#160; NVIDIA and SEGA Celebrate 30 Years of [&#8230;]",
+    "summary": "Home to leading manufacturers, robotics pioneers, infrastructure builders and iconic gaming companies, of course, Japan is one of the world\u2019s centers of AI \u2014 building across the full stack with NVIDIA technologies. This week NVIDIA and its partners in Japan are showcasing the AI ecosystem\u2019s latest advancements. Check back here for updates.",
     "source": "NVIDIA Blog",
     "published": "2026-07-15T10:51:37",
-    "fetched_at": "2026-07-15T14:18:07.384497"
+    "fetched_at": "2026-07-16T00:56:18.854211"
   },
   {
     "title": "Nemotron Labs: How Open Models Give Enterprises and Nations AI They Can Trust, Control and Customize",
@@ -981,7 +1101,7 @@
     "summary": "Enterprises have plenty of powerful models to choose from. The real test is whether the AI an enterprise builds uniquely addresses the needs of the business: improving workflows, tapping into domain knowledge and exceeding standards for accuracy and trust.",
     "source": "NVIDIA Blog",
     "published": "2026-07-14T16:45:13",
-    "fetched_at": "2026-07-15T14:18:07.384577"
+    "fetched_at": "2026-07-16T00:56:18.854303"
   },
   {
     "title": "Why Performance per Watt Is the Ultimate Metric for AI Infrastructure Efficiency",
@@ -989,7 +1109,7 @@
     "summary": "Power is AI infrastructure\u2019s inescapable constraint. How many tokens an AI factory can generate within a fixed power budget determines its revenue and profitability. Because of this, performance per watt \u2014 a metric that can\u2019t be gamed, only earned through real-world results \u2014 is the foundation for AI factories. As agentic AI drives token demand [&#8230;]",
     "source": "NVIDIA Blog",
     "published": "2026-07-14T15:00:20",
-    "fetched_at": "2026-07-15T14:18:07.384655"
+    "fetched_at": "2026-07-16T00:56:18.854397"
   },
   {
     "title": "Scikit-Ollama for Scikit-LLM/Ollama Integration",
@@ -997,7 +1117,7 @@
     "summary": "In this article, you will learn how scikit-ollama bridges the scikit-learn interface with locally running Ollama models to perform zero-shot text classification; no cloud API...",
     "source": "MachineLearningMastery.com",
     "published": "2026-07-15T12:00:34",
-    "fetched_at": "2026-07-15T14:18:07.532073"
+    "fetched_at": "2026-07-16T00:56:19.008869"
   },
   {
     "title": "LLM Evaluation Frameworks Compared: How to Actually Measure What Your Model Does",
@@ -1005,167 +1125,175 @@
     "summary": "In this article, you will learn how to evaluate LLM applications using the three dominant open-source frameworks &mdash; RAGAS, DeepEval, and Promptfoo &mdash; and why...",
     "source": "MachineLearningMastery.com",
     "published": "2026-07-14T12:00:29",
-    "fetched_at": "2026-07-15T14:18:07.532158"
+    "fetched_at": "2026-07-16T00:56:19.008969"
   },
   {
-    "title": "How I Started to See Inside the LLM",
-    "url": "https://pub.towardsai.net/how-i-started-to-see-inside-the-llm-2f83e01b9988?source=rss----98111c9905da---4",
-    "summary": "A noob\u2019s walkthrough to making sense of the five layers of LLM observabilityPhoto by Chris Liverani on UnsplashBefore we start, I\u2019m a noob!My experience with AI has mostly been things like, \u201cCreate an itinerary for a summer trip to Mallorca,\u201d or \u201cWrite me a Python function to calculate this or that,\u201d with a little bit of vibe coding on the side.Well, maybe more than a little.It\u2019s now much easier to ask a simple question and get a complex answer. With AI, work can often be done faster and more\u2026 \u201cefficiently.\u201dBut not always.I\u2019ve lost count of the frustrations. In trying to get things done faster",
+    "title": "I Built a Hybrid RAG App That Talks to My PDF \u2014 and Knows When to Say \u201cI Don\u2019t Know\u201d",
+    "url": "https://pub.towardsai.net/i-built-a-hybrid-rag-app-that-talks-to-my-pdf-and-knows-when-to-say-i-dont-know-5e4044a54921?source=rss----98111c9905da---4",
+    "summary": "Imagine you upload an insurance policy PDF and ask:\u201cWhat is my wind/hail deductible?\u201dA good RAG system should find the exact clause and answer from it.Now ask:\u201cWhat is the capital of France?\u201dA confident RAG system is dangerous here. The document has nothing about France. But a chatty LLM will happily invent an answer unless you stop it.That tension \u2014 find the right passage and refuse when there is none \u2014 is what this article is about.I built a full-stack Talk to your PDF app on my laptop: React UI, FastAPI backend, Ollama (llama3 + nomic-embed-text), ChromaDB, and BM25 reranking. The twist is ",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T14:01:03",
-    "fetched_at": "2026-07-15T14:18:08.992353"
+    "published": "2026-07-16T00:01:02",
+    "fetched_at": "2026-07-16T00:56:20.585974"
   },
   {
-    "title": "How I Actually Cut My LLM Bill: As a Software Engineer\u2019s Approach, Not a Tips List",
-    "url": "https://pub.towardsai.net/how-i-actually-cut-my-llm-bill-as-a-software-engineers-approach-not-a-tips-list-d16b51ada2bf?source=rss----98111c9905da---4",
-    "summary": "There are a hundred &#x201c;10 ways to save on tokens&#x201d; articles out there. This is what I actually built, on a real internal tool, and the one&#x2026;Continue reading on Towards AI \u00bb",
+    "title": "AI Price War Fractures Single-Vendor Stacks. Chinese APIs Capture 46% of Traffic",
+    "url": "https://pub.towardsai.net/ai-price-war-fractures-single-vendor-stacks-chinese-apis-capture-46-of-traffic-74c7009a4ff6?source=rss----98111c9905da---4",
+    "summary": "OpenAI dropped three models at once, xAI priced Grok 4.5 at two dollars per million tokens, and systems architects are actively building&#x2026;Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T13:01:01",
-    "fetched_at": "2026-07-15T14:18:08.992440"
+    "published": "2026-07-15T23:01:02",
+    "fetched_at": "2026-07-16T00:56:20.586088"
   },
   {
-    "title": "I. The Anatomy of a Voice Agent",
-    "url": "https://pub.towardsai.net/i-the-anatomy-of-a-voice-agent-9fa40f1f56d4?source=rss----98111c9905da---4",
-    "summary": "Every component that builds a production ready Voice AgentContinue reading on Towards AI \u00bb",
+    "title": "Evolution of NLP: TF-IDF to Agents",
+    "url": "https://pub.towardsai.net/evolution-of-nlp-tf-idf-to-agents-e08c9da95174?source=rss----98111c9905da---4",
+    "summary": "How search progressed from exact-term matching to systems that decide how to gather evidence.Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T12:31:01",
-    "fetched_at": "2026-07-15T14:18:08.992506"
+    "published": "2026-07-15T22:01:01",
+    "fetched_at": "2026-07-16T00:56:20.586175"
   },
   {
-    "title": "Turn Claude Into a Copy Machine: Building a $6K/Month Ad Copywriting Business \u2014 Solo",
-    "url": "https://pub.towardsai.net/turn-claude-into-a-copy-machine-building-a-6k-month-ad-copywriting-business-solo-78d6720faa43?source=rss----98111c9905da---4",
-    "summary": "The complete playbook for solopreneurs who want to profit from one of the most in-demand skills in digital marketing \u2014 without writing every word from scratch.Every brand running ads is hemorrhaging money on bad copy. Lackluster headlines. Weak calls to action. Body copy that sells features instead of feelings. The businesses that crack this spend more \u2014 because they know their ads convert.Ad copywriting is one of the highest-leverage skills in digital marketing. It\u2019s also one of the most time-consuming. A single well-researched Facebook campaign can take a freelancer 10 hours to write and tes",
+    "title": "Loop Engineering in Claude Code: Let the Agent Run Itself",
+    "url": "https://pub.towardsai.net/loop-engineering-in-claude-code-let-the-agent-run-itself-e3ffe52578d3?source=rss----98111c9905da---4",
+    "summary": "Stop hand-prompting your coding agent. Build the loop that runs it \u2014 and close it on a check Claude can\u2019t fake.Key Takeaways- Loop engineering is designing the system that runs your agent in a cycle (find work, do it, check the result, decide the next move) instead of hand-prompting every turn.- Loops aren\u2019t just for chores. Point one at a single task and it iterates to done on its own, new feature work included.- A self-paced /loop lets Claude decide when it\u2019s done (fine when \u201ctests are green\u201d is trustworthy); /goal makes a separate model confirm your condition every turn (use it when a false",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T12:01:01",
-    "fetched_at": "2026-07-15T14:18:08.992719"
+    "published": "2026-07-15T21:01:02",
+    "fetched_at": "2026-07-16T00:56:20.586840"
   },
   {
-    "title": "Building ArcticSwarm from Scratch: A Production-Grade Multi-Agent Deep Research System",
-    "url": "https://pub.towardsai.net/building-arcticswarm-from-scratch-a-production-grade-multi-agent-deep-research-system-d03c25365b7e?source=rss----98111c9905da---4",
-    "summary": "Implementing Snowflake\u2019s ArcticSwarm architecture with Python, Redis, and free-tier LLMsArcticSwarm architecture: specialized agents coordinated through a Gated Bulletin Board System with three governance modesIntroductionOn June 2, 2026, Snowflake AI Research published an engineering blog post introducing ArcticSwarm \u2014 a multi-agent system that transforms how enterprises conduct hybrid deep research across structured databases and unstructured web sources.ArcticSwarm is a multi-agent deep research framework introduced by Snowflake AI Research that addresses a key enterprise AI challenge: comb",
+    "title": "Migration to Agent-First Architecture for Enhanced Security",
+    "url": "https://pub.towardsai.net/migration-to-agent-first-architecture-for-enhanced-security-160f6655b6b2?source=rss----98111c9905da---4",
+    "summary": "The first time I tried to migrate a legacy order-processing service to an agent-first model, the biggest surprise wasn\u2019t the refactoring effort, it was how many hidden security gaps opened up the moment autonomous agents started calling external APIs. The stakes of securing agent-first migrations become obvious when you realize that every new decision point is a potential attack surface, and the existing RBAC model no longer applies.What kept me moving forward was the realization that security could be baked into the migration rather than bolted on later. By redesigning permission boundaries, ",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T04:28:07",
-    "fetched_at": "2026-07-15T14:18:08.993180"
+    "published": "2026-07-15T20:01:01",
+    "fetched_at": "2026-07-16T00:56:20.587387"
   },
   {
-    "title": "AI is Not a Product Anymore. It\u2019s the Infrastructure Under Everything",
-    "url": "https://pub.towardsai.net/ai-is-not-a-product-anymore-its-the-infrastructure-under-everything-85e6b0175f4d?source=rss----98111c9905da---4",
-    "summary": "I remember when people used to say &#x201c;add AI to it&#x201d; like it was a plugin.Continue reading on Towards AI \u00bb",
+    "title": "I Gave Claude a Memory That Survives Between Conversations \u2014 Here\u2019s the MCP Server That Does It",
+    "url": "https://pub.towardsai.net/i-gave-claude-a-memory-that-survives-between-conversations-heres-the-mcp-server-that-does-it-892094c6c403?source=rss----98111c9905da---4",
+    "summary": "A tested, running MCP server that gives any AI agent persistent long-term memory &#x2014; it remembers facts and preferences, reinforces the ones&#x2026;Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T03:10:40",
-    "fetched_at": "2026-07-15T14:18:08.993252"
+    "published": "2026-07-15T19:01:01",
+    "fetched_at": "2026-07-16T00:56:20.587479"
   },
   {
-    "title": "GPT-5.6 Has Three Names. Luna, Terra, Sol",
-    "url": "https://pub.towardsai.net/gpt-5-6-has-three-names-luna-terra-sol-b328674161c4?source=rss----98111c9905da---4",
-    "summary": "OpenAI just released three models and named them after celestial bodies. That is not branding.Continue reading on Towards AI \u00bb",
+    "title": "The Hidden Cost of Letting AI Agents Write Your Tests",
+    "url": "https://pub.towardsai.net/the-hidden-cost-of-letting-ai-agents-write-your-tests-128a30b1e118?source=rss----98111c9905da---4",
+    "summary": "I asked Claude to write tests for a payment processing module last week. It generated 47 tests in under two minutes. Every single one&#x2026;Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T03:07:58",
-    "fetched_at": "2026-07-15T14:18:08.993312"
+    "published": "2026-07-15T18:01:01",
+    "fetched_at": "2026-07-16T00:56:20.587560"
   },
   {
-    "title": "How to Avoid Claude Code Usage Limits: Planning, Memory, Models, and Tools",
-    "url": "https://pub.towardsai.net/how-to-avoid-claude-code-usage-limits-planning-memory-models-and-tools-8239f48237b0?source=rss----98111c9905da---4",
-    "summary": "You&#x2019;re forty minutes into a debugging session. Claude just found the bug, you&#x2019;re about to ask for the fix, and instead you get a message&#x2026;Continue reading on Towards AI \u00bb",
+    "title": "Seamless Remote-to-Edge AI Benchmarking: Overcoming the 3-Tier Network Bottleneck",
+    "url": "https://pub.towardsai.net/seamless-remote-to-edge-ai-benchmarking-overcoming-the-3-tier-network-bottleneck-aeb766b5f558?source=rss----98111c9905da---4",
+    "summary": "Image by Author via AIHow to bridge your GPU server, developer workstation, and local edge devices into a single-command testing pipeline.Developing deep learning models for the edge is an inherently fragmented experience. Heavy-lifting tasks \u2014 training, pruning, hardware-specific compilation (quantizing an ONNX model, compiling for an NPU) \u2014 need a beefy GPU workstation or a rented cloud instance. Execution and benchmarking, on the other hand, must happen on physical edge targets \u2014 an Android phone, a Qualcomm SoC dev board, an embedded Linux board \u2014 usually sitting on a desk somewhere else e",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T03:07:42",
-    "fetched_at": "2026-07-15T14:18:08.993372"
+    "published": "2026-07-15T17:01:02",
+    "fetched_at": "2026-07-16T00:56:20.588181"
   },
   {
-    "title": "A Law Aimed at AI Girlfriends Just Wiped 8 Million Agents From China's Biggest AI App",
-    "url": "https://pub.towardsai.net/a-law-aimed-at-ai-girlfriends-just-wiped-8-million-agents-from-chinas-biggest-ai-app-16e65be0b57d?source=rss----98111c9905da---4",
-    "summary": "At midnight Beijing time today, ByteDance&#x2019;s Doubao &#x2014; roughly 350 million monthly active users, the second most-used AI app on Earth behind&#x2026;Continue reading on Towards AI \u00bb",
+    "title": "The Semantic Layer is the Ultimate Battlefield in the Era of Agentic AI",
+    "url": "https://pub.towardsai.net/the-semantic-layer-is-the-ultimate-battlefield-in-the-era-of-agentic-ai-526d897cf625?source=rss----98111c9905da---4",
+    "summary": "How the shift from human dashboards to autonomous agents transformed a forgotten BI feature into the most expensive architectural war in&#x2026;Continue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T03:02:48",
-    "fetched_at": "2026-07-15T14:18:08.993432"
+    "published": "2026-07-15T16:01:02",
+    "fetched_at": "2026-07-16T00:56:20.588275"
   },
   {
-    "title": "Best Object Detection Models for Computer Vision [2026 Updated]",
-    "url": "https://pub.towardsai.net/object-detection-models-cf611b54b818?source=rss----98111c9905da---4",
-    "summary": "Object Detection Model You Need to Know (And When to Use Each)Continue reading on Towards AI \u00bb",
+    "title": "Stop Prompting Claude Code, Start Engineering Loops: Master Agentic Automation",
+    "url": "https://pub.towardsai.net/stop-prompting-claude-code-start-engineering-loops-master-agentic-automation-3d1095c8793c?source=rss----98111c9905da---4",
+    "summary": "A prompt is a request. A loop is a systemContinue reading on Towards AI \u00bb",
     "source": "Towards AI - Medium",
-    "published": "2026-07-15T03:02:11",
-    "fetched_at": "2026-07-15T14:18:08.993486"
+    "published": "2026-07-15T15:01:04",
+    "fetched_at": "2026-07-16T00:56:20.588352"
   },
   {
-    "title": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not models",
+    "title": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic",
+    "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+    "summary": "Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors' models.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T23:59:44",
+    "fetched_at": "2026-07-16T00:56:20.673202"
+  },
+  {
+    "title": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+    "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+    "summary": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T19:41:38",
+    "fetched_at": "2026-07-16T00:56:20.673305"
+  },
+  {
+    "title": "SpaceX falls to $135 IPO price ahead of Starship launch",
+    "url": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
+    "summary": "The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T18:06:05",
+    "fetched_at": "2026-07-16T00:56:20.673395"
+  },
+  {
+    "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+    "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+    "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T18:04:06",
+    "fetched_at": "2026-07-16T00:56:20.673477"
+  },
+  {
+    "title": "Hack suggests AI music generator Suno scraped YouTube for training data",
+    "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+    "summary": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T17:00:34",
+    "fetched_at": "2026-07-16T00:56:20.673555"
+  },
+  {
+    "title": "Whatnot acquires Shaped to power real-time live shopping recommendations",
+    "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
+    "summary": "Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot\u2019s personalization and discovery features as it expands into new product categories.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T17:00:00",
+    "fetched_at": "2026-07-16T00:56:20.673652"
+  },
+  {
+    "title": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
+    "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
+    "summary": "Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T16:20:18",
+    "fetched_at": "2026-07-16T00:56:20.673735"
+  },
+  {
+    "title": "Apple Intelligence approved for launch in China with Alibaba\u2019s Qwen AI",
+    "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+    "summary": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T15:29:33",
+    "fetched_at": "2026-07-16T00:56:20.673812"
+  },
+  {
+    "title": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
+    "url": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
+    "summary": "Can a handful of engineers really do the work of an army of consultants?&#160;That\u2019s&#160;the bet behind Ode with Anthropic \u2014&#160;the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by&#160;Anthropic, Blackstone, Hellman &#38; Friedman, Goldman&#160;Sachs&#160;and others.&#160;&#160; On this episode of TechCrunch&#8217;s&#160;Equity&#160;podcast, Rebecca Bellan sits down with Ode\u2019s leaders&#160;Chris Taylor&#160;and&#160;Eddie Siegel,&#160;who founded Fractional AI, [&#8230;]",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-07-15T15:00:00",
+    "fetched_at": "2026-07-16T00:56:20.673903"
+  },
+  {
+    "title": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
     "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
     "summary": "Anthropic-backed Ode launches as AI labs bet that embedding forward-deployed engineers inside enterprises is the key to accelerating enterprise AI adoption.",
     "source": "AI News & Artificial Intelligence | TechCrunch",
     "published": "2026-07-15T13:10:47",
-    "fetched_at": "2026-07-15T14:18:09.032096"
+    "fetched_at": "2026-07-16T00:56:20.673981"
   },
   {
-    "title": "Reelful\u2019s AI turns your camera roll into short-form videos for social media",
-    "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
-    "summary": "The app is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-15T13:00:00",
-    "fetched_at": "2026-07-15T14:18:09.032179"
-  },
-  {
-    "title": "Rime picks up $24M Series A to help enterprises field customer calls",
-    "url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
-    "summary": "Rime is handling over 100 million calls each month across multiple companies.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-15T13:00:00",
-    "fetched_at": "2026-07-15T14:18:09.032248"
-  },
-  {
-    "title": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
-    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-    "summary": "The startup has reached a $120 million annualized revenue run rate and more than 200,000 paying customers.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-15T12:00:00",
-    "fetched_at": "2026-07-15T14:18:09.032313"
-  },
-  {
-    "title": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
-    "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
-    "summary": "The guy behind TCP/IP is working on a standard for identifying AI agents in the wild.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-15T12:00:00",
-    "fetched_at": "2026-07-15T14:18:09.032372"
-  },
-  {
-    "title": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-    "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-    "summary": "The funding discussions point to investor interest in applying AI to make breakthroughs in life sciences.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-15T00:27:04",
-    "fetched_at": "2026-07-15T14:18:09.032432"
-  },
-  {
-    "title": "Lorde says AI glasses are \u2018not sexy\u2019",
-    "url": "https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/",
-    "summary": "\"Increasingly in our world, it gets harder and harder to know what is real,\" Lorde said onstage.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-14T23:10:02",
-    "fetched_at": "2026-07-15T14:18:09.032489"
-  },
-  {
-    "title": "OpenAI\u2019s first hardware device is reportedly a screenless speaker that can move",
-    "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
-    "summary": "The device is weirdly described as involving \"mechanical elements that can move on their own\" and the Bloomberg report includes the detail that the device is designed to \"feel like a companion and become a physical manifestation of OpenAI\u2019s ChatGPT.\"",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-14T22:22:24",
-    "fetched_at": "2026-07-15T14:18:09.032553"
-  },
-  {
-    "title": "OpenAI pushes back on Apple trade secret lawsuit",
-    "url": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
-    "summary": "OpenAI has issued another statement on the lawsuit, this time suggesting it lacks merit.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-14T22:07:42",
-    "fetched_at": "2026-07-15T14:18:09.032609"
-  },
-  {
-    "title": "OpenAI\u2019s new flagship model deletes files on its own, people keep warning",
-    "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
-    "summary": "A number of social media posts claim that GPT-5.6 Sol deleted files and data without warning. OpenAI had basically disclosed the problem in June.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-07-14T21:50:11",
-    "fetched_at": "2026-07-15T14:18:09.032665"
+    "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+    "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+    "summary": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6. OpenAI says that training it against GPT-Red made the model its most robust release yet. GPT-Red automates&#8230;",
+    "source": "MIT Technology Review",
+    "published": "2026-07-15T17:09:37",
+    "fetched_at": "2026-07-16T00:56:20.848515"
   },
   {
     "title": "The Download: a useful quantum machine and a record-breaking subsea tunnel",
@@ -1173,7 +1301,7 @@
     "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. PsiQuantum has a plan to make a massive quantum computer out of light The machine that could change the world will be housed in a room that looks like a data&#8230;",
     "source": "MIT Technology Review",
     "published": "2026-07-15T12:10:00",
-    "fetched_at": "2026-07-15T14:18:09.108946"
+    "fetched_at": "2026-07-16T00:56:20.848622"
   },
   {
     "title": "The Download: Claude\u2019s inner workings, and the future of world models",
@@ -1181,7 +1309,7 @@
     "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What Anthropic\u2019s latest AI discovery does\u2014and doesn\u2019t\u2014show \u2014James O&#8217;Donnell When Anthropic announced last week that it had found a new window into its models\u2019 \u201cinternal thoughts\u201d as they reason through answers,&#8230;",
     "source": "MIT Technology Review",
     "published": "2026-07-14T12:10:00",
-    "fetched_at": "2026-07-15T14:18:09.109052"
+    "fetched_at": "2026-07-16T00:56:20.848741"
   },
   {
     "title": "PsiQuantum has a plan to make a massive quantum computer out of light",
@@ -1189,23 +1317,7 @@
     "summary": "The machine that could change the world will be housed in a room that looks like a data center crossed with an ice cream factory. Inside will be some 100 stainless-steel cabinets, each about six feet tall and connected to a supply of liquid helium that keeps them only a few degrees above absolute zero.&#8230;",
     "source": "MIT Technology Review",
     "published": "2026-07-14T08:00:00",
-    "fetched_at": "2026-07-15T14:18:09.109129"
-  },
-  {
-    "title": "What Anthropic\u2019s latest AI discovery does\u2014and doesn\u2019t\u2014show",
-    "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
-    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic\u2014currently the world\u2019s most valuable AI company, with a nearly $1 trillion valuation\u2014has a reputation for publishing strange and heady research. It\u2019s looking into whether AI models can feel pain, for example,&#8230;",
-    "source": "MIT Technology Review",
-    "published": "2026-07-13T18:00:00",
-    "fetched_at": "2026-07-15T14:18:09.109200"
-  },
-  {
-    "title": "\ud83c\udf99\ufe0f How I AI: GPT-5.6 review, How a solo builder runs 24/7 local AI, and What an agent harness is and how to build one",
-    "url": "https://www.lennysnewsletter.com/p/how-i-ai-gpt-56-review-how-a-solo",
-    "summary": "Your weekly listens from How I AI, part of the Lenny&#8217;s Podcast Network",
-    "source": "Lenny's Newsletter",
-    "published": "2026-07-13T15:02:17",
-    "fetched_at": "2026-07-15T14:18:09.317893"
+    "fetched_at": "2026-07-16T00:56:20.848833"
   },
   {
     "title": "Quality of Evidence - All Things Product Podcast with Teresa Torres & Petra Wille",
@@ -1213,7 +1325,7 @@
     "summary": "Listen to this episode on: Spotify | Apple PodcastsYou&apos;ve got behavioral analytics, support tickets, sales call notes, and a feedback inbox that never empties. With all that data coming in, do product teams actually still need to go out and talk to users?In this episode, Petra Wille",
     "source": "Product Talk",
     "published": "2026-07-14T13:00:09",
-    "fetched_at": "2026-07-15T14:18:10.439050"
+    "fetched_at": "2026-07-16T00:56:22.329665"
   },
   {
     "title": "IBM Misses, IBM\u2019s Mainframe Moat, IBM\u2019s Many AI Problems",
@@ -1221,7 +1333,7 @@
     "summary": "IBM announced preliminary results that spooked the software market generally; this is a story, however, specifically about IBM and its mainframe franchise.",
     "source": "Stratechery by Ben Thompson",
     "published": "2026-07-15T10:00:19",
-    "fetched_at": "2026-07-15T14:18:11.280916"
+    "fetched_at": "2026-07-16T00:56:23.380595"
   },
   {
     "title": "The OpenAI Super App, ChatGPT = Codex, Whither Chat",
@@ -1229,7 +1341,7 @@
     "summary": "OpenAI has refashioned Codex as the new ChatGPT; is the company abandoning the chat category they pioneered?",
     "source": "Stratechery by Ben Thompson",
     "published": "2026-07-14T10:00:00",
-    "fetched_at": "2026-07-15T14:18:11.280992"
+    "fetched_at": "2026-07-16T00:56:23.380713"
   },
   {
     "title": "Doing the right thing when things go wrong",
@@ -1237,7 +1349,15 @@
     "summary": "When customers rely on you, minutes matter in an incident. Here's the process Fin's engineers follow to detect, mitigate, and learn from every one.",
     "source": "The Intercom Blog",
     "published": "2026-07-14T13:41:39",
-    "fetched_at": "2026-07-15T14:18:11.494321"
+    "fetched_at": "2026-07-16T00:56:23.817878"
+  },
+  {
+    "title": "Context engineering with Dex Horthy",
+    "url": "https://newsletter.pragmaticengineer.com/p/context-engineering-with-dex-horthy",
+    "summary": "Dex Horthy explains why context engineering is key to building more effective AI-assisted software without sacrificing code quality.",
+    "source": "The Pragmatic Engineer",
+    "published": "2026-07-15T16:08:59",
+    "fetched_at": "2026-07-16T00:56:25.685283"
   },
   {
     "title": "What is \u201cloop engineering?\u201d",
@@ -1245,7 +1365,7 @@
     "summary": "There&#8217;s talk about loop engineering, but what is it exactly? I looked into it, and found triggers, cron jobs, AI slop & more. Is it a &#8220;here today, gone tomorrow&#8221; trend?",
     "source": "The Pragmatic Engineer",
     "published": "2026-07-14T17:01:57",
-    "fetched_at": "2026-07-15T14:18:13.139299"
+    "fetched_at": "2026-07-16T00:56:25.685380"
   },
   {
     "title": "The man who tried 200 to-do apps has some advice about AI",
@@ -1253,15 +1373,23 @@
     "summary": "The Verge's David Pierce kicks off our new series on staying productive in the AI era \u2014 starting with why you should stop trying to stay ahead",
     "source": "Platformer",
     "published": "2026-07-14T23:53:54",
-    "fetched_at": "2026-07-15T14:18:13.463650"
+    "fetched_at": "2026-07-16T00:56:25.996224"
   },
   {
-    "title": "The loudest warning about AI and jobs yet",
-    "url": "https://www.platformer.news/ai-jobs-warning-brynjolfsson-acemoglu/",
-    "summary": "200 economists and AI leaders say something big is happening. What should we do about it? Plus: Apple sues OpenAI",
-    "source": "Platformer",
-    "published": "2026-07-14T00:00:37",
-    "fetched_at": "2026-07-15T14:18:13.463722"
+    "title": "AI systems are demanding new interaction models. Are designers ready?",
+    "url": "https://uxdesign.cc/ai-systems-are-demanding-new-interaction-models-are-designers-ready-d8a95f5e55a9?source=rss----138adf9c44c---4",
+    "summary": "The first big shift in how we use software in years is underway.For decades, most software interactions have worked the same way. You open applications, close them, drag files into folders, click through menus, move between windows\u2026That\u2019s the desktop metaphor, software designed to feel like a physical workspace. Mobile touch and the web brought their own interaction models, but the desktop set much of the grammar, and it still defines how people move through software even as interfaces evolve around it.Now, AI systems are challenging that grammar.Conversational interaction in software has been",
+    "source": "UX Collective - Medium",
+    "published": "2026-07-15T19:48:50",
+    "fetched_at": "2026-07-16T00:56:27.101626"
+  },
+  {
+    "title": "Designers are sharpening knives for the wrong fight",
+    "url": "https://uxdesign.cc/everyones-sharpening-knives-for-the-wrong-fight-56844adad459?source=rss----138adf9c44c---4",
+    "summary": "AI made building free. So why is the whole conversation still about how to build?We have never made a more beautiful knife, but as a beautiful knife what we needed?A few weeks ago I sat on a call with a company that had spent two and a half years and four design iterations building and re-building a product. About forty minutes in, one of their engineers chimed in and echoed a mantra I\u2019ve said many times and one that plenty of people smarter than me have shouted for decades because its the most important mantra in the world of creating products: just because you can build something doesn\u2019t mea",
+    "source": "UX Collective - Medium",
+    "published": "2026-07-15T19:47:57",
+    "fetched_at": "2026-07-16T00:56:27.102602"
   },
   {
     "title": "Designing with web standards: The playbook for this AI moment",
@@ -1269,7 +1397,7 @@
     "summary": "Standards come up from practitioners, not down from committees. A reasonable facsimile of L. Jeffrey Zeldman up top there. AI assisted.Jeffrey Zeldman helped end the browser wars by making the case for standards. We are starting that journey again and we should follow his example.Every team building with artificial intelligence right now believes it is working on a blank frontier. New interface, new rules, no map. That belief is wrong, and it is expensive.The cost is not hypothetical, and it shows up as rework, as users who never trust the tool, and products that age quickly. It feels a lot li",
     "source": "UX Collective - Medium",
     "published": "2026-07-15T07:33:17",
-    "fetched_at": "2026-07-15T14:18:14.433339"
+    "fetched_at": "2026-07-16T00:56:27.103660"
   },
   {
     "title": "Play and design: in favour of the novel digital experience",
@@ -1277,7 +1405,7 @@
     "summary": "Design used to let us wander; modernity replaced that wandering with efficiency &#x2014; now, every product decides where you&#x2019;ll end up before&#x2026;Continue reading on UX Collective \u00bb",
     "source": "UX Collective - Medium",
     "published": "2026-07-14T11:02:36",
-    "fetched_at": "2026-07-15T14:18:14.433429"
+    "fetched_at": "2026-07-16T00:56:27.103757"
   },
   {
     "title": "What 32 design leaders do when told to move faster",
@@ -1285,23 +1413,7 @@
     "summary": "The Greeks knew the answer to this problem, 2300 years agoContinue reading on UX Collective \u00bb",
     "source": "UX Collective - Medium",
     "published": "2026-07-14T11:00:41",
-    "fetched_at": "2026-07-15T14:18:14.433499"
-  },
-  {
-    "title": "The terminal became my canvas",
-    "url": "https://uxdesign.cc/the-terminal-became-my-canvas-18af0740f650?source=rss----138adf9c44c---4",
-    "summary": "And it&#x2019;s great&#x2026; but horrible at the same timeContinue reading on UX Collective \u00bb",
-    "source": "UX Collective - Medium",
-    "published": "2026-07-13T22:10:10",
-    "fetched_at": "2026-07-15T14:18:14.433561"
-  },
-  {
-    "title": "AX is just the orchestration layer",
-    "url": "https://uxdesign.cc/ax-is-just-the-orchestration-layer-cacb4ed4fe45?source=rss----138adf9c44c---4",
-    "summary": "The work didn&#x2019;t vanish with the screen. It fell one layer down.Continue reading on UX Collective \u00bb",
-    "source": "UX Collective - Medium",
-    "published": "2026-07-13T22:09:55",
-    "fetched_at": "2026-07-15T14:18:14.433622"
+    "fetched_at": "2026-07-16T00:56:27.103839"
   },
   {
     "title": "LabubaRAT malware infiltrates Windows systems while posing as NVIDIA software",
@@ -1309,7 +1421,7 @@
     "summary": "LabubaRAT, a previously undocumented Rust-based remote access tool (RAT) masquerading as NVIDIA software that enables post-compromise operations on Windows systems, has been uncovered by Blackpoint Cyber. According to researchers, LabubaRAT creates &#8220;a reusable foothold for hands-on activity.&#8221; Once deployed, it can profile the host, identify installed security tools, receive operator commands, transfer files, capture screenshots, and proxy network traffic through the affected system. Blackpoint Cyber named the malware LabubaRAT after discovering a &#8220;LabubaPanel&#8221; title and",
     "source": "Help Net Security",
     "published": "2026-07-15T14:43:44",
-    "fetched_at": "2026-07-15T14:45:16.514356"
+    "fetched_at": "2026-07-16T01:23:28.581512"
   },
   {
     "title": "Threat actor impersonated hundreds of brands on GitHub to push infostealer malware",
@@ -1317,7 +1429,7 @@
     "summary": "A financially motivated threat actor is impersonating hundreds of brands on GitHub and pushing a smash-and-grab infostealer masquerading as legitimate downloads of popular software, Arctic Wolf threat researchers have warned. &#8220;The 292 impersonated repositories span security tooling, fintech and personal finance, cryptocurrency wallets and exchanges, developer and productivity tools, secure email providers, macOS utilities, and gaming software, including &#8216;cheat&#8217; tools,&#8221; they said. How the attack works Among these repositories was one impersonating Arctic Wolf, which &#82",
     "source": "Help Net Security",
     "published": "2026-07-15T13:52:39",
-    "fetched_at": "2026-07-15T14:45:16.514449"
+    "fetched_at": "2026-07-16T01:23:28.581653"
   },
   {
     "title": "Socure rolls out Remote Verifier for higher-risk identity checks",
@@ -1325,7 +1437,7 @@
     "summary": "Socure has launched Remote Verifier in RiskOS, a new identity verification tool that helps organizations verify identities requiring additional review while reducing manual effort. Socure\u2019s AI-powered document verification solution instantly verifies more than 99% of identities on the first try, compared to an industry average of 64%. The Remote Verifier is designed for individuals who do not initially pass Socure\u2019s document verification check. With verification accuracy, the company anticipates fewer than 1% of individuals will &#8230; More &#8594; The post Socure rolls out Remote Verifier fo",
     "source": "Help Net Security",
     "published": "2026-07-15T13:51:39",
-    "fetched_at": "2026-07-15T14:45:16.514538"
+    "fetched_at": "2026-07-16T01:23:28.581775"
   },
   {
     "title": "Xint Pulse offers on-demand black-box penetration testing for web applications",
@@ -1333,7 +1445,7 @@
     "summary": "Xint.io has launched Xint Pulse, a black-box autonomous penetration testing tool that provides product security teams with on-demand security assessments of their applications. Unlike the company&#8217;s enterprise platform, which is designed for continuous testing, Xint Pulse is intended for timely, one-off penetration tests. But with Xint Pulse, organizations of all sizes, from startups to large enterprises, can now perform a scan of their applications with the same Xint technology that was named Best Automated Pentesting &#8230; More &#8594; The post Xint Pulse offers on-demand black-box pe",
     "source": "Help Net Security",
     "published": "2026-07-15T13:45:05",
-    "fetched_at": "2026-07-15T14:45:16.514616"
+    "fetched_at": "2026-07-16T01:23:28.581879"
   },
   {
     "title": "F5 Insight for ADSP enhances BIG-IP operations with guided updates and AI audit trails",
@@ -1341,7 +1453,7 @@
     "summary": "F5 has announced new fleet management capabilities for F5 Insight for ADSP that help enterprises reduce risk exposure across F5 BIG-IP environments as frontier AI compresses vulnerability response timelines. The new F5 Insight workflows give security and operations teams fleet-wide visibility, guided update management, enterprise authentication, role-based access controls, and a tamper-evident AI audit trail. This enables customers to move from identifying risk to taking accountable action across large, distributed application delivery and security fleets. &#8230; More &#8594; The post F5 Insi",
     "source": "Help Net Security",
     "published": "2026-07-15T13:33:41",
-    "fetched_at": "2026-07-15T14:45:16.514694"
+    "fetched_at": "2026-07-16T01:23:28.581980"
   },
   {
     "title": "Radware adds cloud intelligence to DefensePro X for web DDoS defense",
@@ -1349,7 +1461,7 @@
     "summary": "Radware has announced a new cloud-augmented protection architecture for DefensePro X, extending the platform with new AI-powered cloud algorithms while keeping traffic inspection and mitigation locally within customer premises. The first such service released is Cloud Web DDoS Protection for DefensePro X designed to improve characterization and real time footprint generation of sophisticated application-layer distributed denial-of-service (DDoS) attacks without requiring organizations to reroute traffic through the cloud. Web DDoS attacks continue to evolve as attackers &#8230; More &#8594; Th",
     "source": "Help Net Security",
     "published": "2026-07-15T12:16:27",
-    "fetched_at": "2026-07-15T14:45:16.514768"
+    "fetched_at": "2026-07-16T01:23:28.582078"
   },
   {
     "title": "LatticeFlow AI connects governance frameworks with continuous AI risk monitoring",
@@ -1357,7 +1469,7 @@
     "summary": "LatticeFlow AI has announced a platform for managing AI risk across agentic systems. Organizations are deploying autonomous AI in critical business processes, while governance approaches based on documentation and point-in-time assessments struggle to keep up with evolving risks. The LatticeFlow AI Platform links AI governance frameworks with technical controls to continuously generate evidence and translate evaluation results into risk insights, helping organizations assess AI systems and support governance decisions. The platform combines AI discovery, evaluation, &#8230; More &#8594; The po",
     "source": "Help Net Security",
     "published": "2026-07-15T12:04:56",
-    "fetched_at": "2026-07-15T14:45:16.514839"
+    "fetched_at": "2026-07-16T01:23:28.582174"
   },
   {
     "title": "Spanish police dismantle \u20ac140 million cybercrime network",
@@ -1365,7 +1477,7 @@
     "summary": "Spanish National Police have dismantled a cybercrime network accused of stealing and laundering about \u20ac140 million through fake investment platforms, CEO fraud, invoice fraud, and man-in-the-middle attacks. Four people were arrested as part of the operation: two in Portugal, one in Spain, and one in Panama. The investigation began after officers identified 19 companies whose financial activity appeared consistent with money laundering rather than legitimate business activity. Officers reviewed bank records, examined company registrations and &#8230; More &#8594; The post Spanish police dismant",
     "source": "Help Net Security",
     "published": "2026-07-15T11:55:13",
-    "fetched_at": "2026-07-15T14:45:16.514915"
+    "fetched_at": "2026-07-16T01:23:28.582279"
   },
   {
     "title": "Nudge Security automates detection of risky OAuth grants and browser extensions",
@@ -1373,7 +1485,7 @@
     "summary": "Nudge Security has announced new agentic capabilities to help security and IT teams find and remediate malicious and high-risk OAuth grants and browser extensions, two of the fastest-growing and hardest to manage attack surfaces in the enterprise. The new agents continuously analyze OAuth grants and browser extensions discovered by Nudge Security, flag what&#8217;s risky, and automate remediation with human-in-the-loop decisions. The new agents join Nudge Security&#8217;s Vendor Risk Analyst agent, which automatically builds vendor security &#8230; More &#8594; The post Nudge Security automate",
     "source": "Help Net Security",
     "published": "2026-07-15T11:51:27",
-    "fetched_at": "2026-07-15T14:45:16.514986"
+    "fetched_at": "2026-07-16T01:23:28.582376"
   },
   {
     "title": "Binary Defense\u2019s NightBeacon CMD helps enterprise SOC teams automate threat investigations",
@@ -1381,6 +1493,6 @@
     "summary": "Binary Defense has announced NightBeacon CMD, a standalone AI-driven SOC workbench that enterprise security teams can deploy in their own environments. Built and hardened inside Binary Defense&#8217;s live 24/7 Security Operations Center (SOC), NightBeacon CMD gives customers the same operating platform Binary Defense&#8217;s own analysts use every day, without requiring a managed service. Rather than simply adding another AI layer to existing security tools, NightBeacon CMD fundamentally changes how a SOC operates. The platform delivers &#8230; More &#8594; The post Binary Defense\u2019s NightBeac",
     "source": "Help Net Security",
     "published": "2026-07-15T11:37:31",
-    "fetched_at": "2026-07-15T14:45:16.515086"
+    "fetched_at": "2026-07-16T01:23:28.582478"
   }
 ]
