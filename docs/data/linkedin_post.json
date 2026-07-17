@@ -1,17 +1,17 @@
 {
-  "content": "One mistake I see repeatedly in FFIEC Final Authentication Guidance is the incorrect implementation of the \"Risk-Based Authentication\" (RBA) framework. Specifically, I've noticed that some organizations are using static risk factors, such as IP address or device type, to determine the level of authentication required, rather than dynamically assessing the user's behavior and transaction history.\n\nWhat happens when this mistake is made?\n\n\u2022 Increased False Positives: RBA is designed to minimize friction for legitimate users, but static risk factors can lead to unnecessary authentication steps, resulting in frustrated customers and increased support costs.\n\u2022 Inadequate Security: Static risk factors may not accurately reflect the level of risk associated with a particular transaction or user, potentially leaving the organization vulnerable to advanced threats.\n\u2022 Compliance Issues: Failure to properly implement RBA can lead to non-compliance with FFIEC guidance, resulting in fines and reputational damage.\n\nTo avoid this mistake, I recommend implementing a dynamic risk assessment framework that takes into account a user's behavior, transaction history, and other contextual factors. This can be achieved through the use of machine learning algorithms and real-time data analysis.\n\nHave others in the GRC community seen similar issues with RBA implementation? How have you addressed these challenges in your own organizations?",
+  "content": "**A Pattern I Keep Noticing**\n\nOne mistake I see repeatedly in organizations trying to protect privacy in the AI era is treating data anonymization as a one-time task.\n\nIn my experience, many companies believe that once they've anonymized a dataset, they've successfully protected sensitive information. However, I've noticed that data anonymization is often seen as a pre-processing step, rather than an ongoing process.\n\n**The Consequences:**\n\n\u2022 **Data re-identification:** Even with pseudonymization, data can be re-identified through various techniques, such as linking it to other publicly available data.\n\u2022 **Lack of auditability:** Without ongoing monitoring and updates, anonymization methods become outdated, leaving organizations vulnerable to new threats.\n\u2022 **Regulatory non-compliance:** Failure to continuously anonymize data can lead to non-compliance with regulations like GDPR and CCPA.\n\n**The Solution:**\n\nTo avoid or fix this mistake, organizations should adopt a continuous data anonymization process. This involves regularly re-anonymizing data and updating methods to stay ahead of emerging threats.\n\n**Have you seen this mistake in other organizations, or do you have strategies for keeping data anonymization up-to-date?**",
   "template_used": "mistake",
   "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this because it updates the FFIEC Guidance on customer authentication and layered security, impacting the financial industry's risk management and compliance.",
+    "topic": "Protecting Privacy in an AI Era",
+    "concept": "A GRC professional should care about this because it highlights the need for effective regulation and accountability in the AI era, which has significant implications for data protection and organizational governance.",
     "domains": [
       "GRC",
-      "Security"
+      "Privacy"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-17T01:54:16.532407",
+  "generated_at": "2026-07-17T15:04:21.081166",
   "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true
