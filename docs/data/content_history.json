@@ -1,14 +1,5 @@
 [
   {
-    "title": "The autonomy dial: a pattern toolkit for designing human control over AI",
-    "linkedin_post": "**The Autonomy Dial: A Lesson from My Product Past**\n\nEarly in my career, I worked on an AI-powered chatbot designed to help customers troubleshoot technical issues. The team and I thought we'd created a perfect solution \u2013 a chatbot that could understand users' problems and provide relevant solutions.\n\nBut, in reality, the chatbot was a recipe for frustration. Users would try to explain their issues, but the chatbot would either dismiss their concerns or offer irrelevant solutions. I've noticed that this kind of problem arises when we forget that humans are complex and messy, and AI is meant to augment, not replace, human judgment.\n\nOne day, a user expressed their frustration with the chatbot to me. I listened attentively and realized that the chatbot's lack of autonomy was the root of the problem. It was too rigid, too focused on following rules. I understood that humans value autonomy \u2013 the ability to make choices and take control of their experiences.\n\nI learned that designing human control over AI requires empathy and a willingness to challenge our assumptions. We need to create tools that empower users, not dictate their experiences. Today, I apply this lesson by designing products that incorporate an \"autonomy dial.\" It's a pattern toolkit that allows users to adjust the level of control they have over AI-driven systems. How have you designed human control into your AI-powered products?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-16T02:41:30.673556"
-  },
-  {
     "title": "NIS2 is raising the bar. Here\u2019s how to turn readiness into resilience.",
     "linkedin_post": "**The Readiness Shift: Turning NIS2 Compliance into Resilience**\n\nAs organizations navigate the increased regulatory requirements of the EU's Network and Information Systems (NIS2) Directive, many are struggling to balance compliance with the growing need for resilience. The problem is that traditional readiness approaches, focused on ticking boxes, aren't enough to safeguard against the ever-evolving cyber threats and disruptions.\n\n**The Resilience Framework: \"CARE\"**\n\nI've developed a simple, 5-step framework to help organizations turn readiness into resilience. Introducing \"CARE,\" an acronym that guides you through the essential steps to achieving NIS2 compliance and beyond:\n\n**C - **Conduct a Cyber Risk Assessment**\nConduct a comprehensive risk assessment to identify, assess, and prioritize your organization's cyber risks. This step should involve both qualitative and quantitative methods to ensure a thorough understanding of your vulnerabilities.\n\n**A - **Assess Your Incident Response Capabilities**\nEvaluating your incident response plan is crucial to ensuring you can respond effectively to a cyber incident. This involves reviewing your communication protocols, containment procedures, and escalation processes.\n\n**R - **Review and Enhance Your Security Measures**\nReview your existing security controls to ensure they meet the NIS2 requirements. This includes implementing any necessary controls, such as multi-factor authentication or encryption.\n\n**E - **Establish a Culture of Cyber Awareness**\nFoster a culture of cyber awareness within your organization by educating employees on the importance of cybersecurity and providing regular training and phishing simulations.\n\nWhenever I'm preparing for a regulatory audit or assessing our organization's resilience, I start with these questions: \"What are our most critical cyber risks?\" \"Are our incident response capabilities up to date?\" \"Have we reviewed and enhanced our security controls recently?\"",
     "domains": [
@@ -1824,5 +1815,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-18T01:57:30.818889"
+  },
+  {
+    "title": "The Real AI Threat Is Blind Trust",
+    "linkedin_post": "The Real AI Threat Is Blind Trust\n\nOne mistake I see repeatedly in AI adoption is the tendency to blindly trust models without critically evaluating their decision-making processes. I've noticed that organizations often rely on AI-driven insights without understanding the underlying algorithms or data inputs.\n\nSpecifically, this blind trust manifests as a lack of transparency and interpretability in AI model explanations. While AI models can provide valuable insights, they often make decisions based on complex, non-linear relationships between variables that are invisible to humans. This opaque nature of AI decision-making can lead to a range of issues:\n\n\u2022 **Lack of accountability**: Organizations may struggle to explain or justify AI-driven decisions to stakeholders, regulators, or even their own employees.\n\u2022 **Poor decision-making**: Blind trust in AI can lead to over-reliance on flawed or biased models, resulting in suboptimal decisions that may have unforeseen consequences.\n\u2022 **Loss of human expertise**: As AI assumes more decision-making responsibilities, critical human skills and expertise may be undervalued or even dismissed.\n\nTo avoid this trap, I recommend investing in model interpretability and explainability techniques, such as SHAP values or LIME. By doing so, we can ensure that AI-driven insights are transparent, trustworthy, and ultimately, more effective in driving business outcomes. Have you noticed similar issues with blind trust in AI decision-making?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-19T01:53:20.485955"
   }
 ]
