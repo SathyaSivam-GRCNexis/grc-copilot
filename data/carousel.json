@@ -2,42 +2,42 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**The Importance of Layered Security in Digital Banking**\nIn today's online environment, customers expect secure and seamless transactions. A strong risk management framework, including layered security, is essential to prevent unauthorized access and maintain customer trust.\n"
+      "content": "**Detection is Prevention**\n**Early Warning Signs of Cyber Threats**\nIn my experience, organizations often overlook the importance of detection as a form of prevention. By rapidly identifying potential threats, you can prevent them from escalating into full-blown incidents.\n"
     },
     {
       "slide_number": 2,
-      "content": "**Understanding the Principle of Layered Security**\n**Separate Control Points**\nThink of layered security like a multi-layered cake \u2013 each layer provides an additional barrier to entry, making it harder for malicious actors to access sensitive information.\n"
+      "content": "**Why Incident Response Plans Fail**\n**Lack of Clear Roles and Responsibilities**\nImagine a fire in a building with a well-defined emergency response plan. Each responder knows their role, and they work together seamlessly to extinguish the flames. Without clear roles and responsibilities, an incident response plan is like a fire without a clear escape route.\n"
     },
     {
       "slide_number": 3,
-      "content": "**Why Authentication Matters**\n**Verifying Identity**\nAuthentication is like verifying a person's ID at a secure building. It ensures that the individual trying to access sensitive information is who they claim to be, reducing the risk of unauthorized access.\n"
+      "content": "**The Importance of Continuous Monitoring**\n**Watching the System Like a Hawk**\nThink of continuous monitoring like a security camera system. It keeps watch 24/7, detecting anomalies and alerting you to potential threats. Without it, you're like a homeowner who leaves their house unattended, vulnerable to break-ins.\n"
     },
     {
       "slide_number": 4,
-      "content": "**The Role of Controls in Risk Management**\n**Detecting and Preventing Threats**\nControls, like firewalls and intrusion detection systems, are like security cameras and alarms in a building. They detect and prevent potential threats, helping to mitigate the risk of a security breach.\n"
+      "content": "**Incident Response as a Business Continuity Strategy**\n**Keeping the Lights On During a Power Outage**\nIn the event of a cyber incident, your organization's ability to respond quickly and effectively can be the difference between business continuity and disaster. A well-planned incident response strategy is like having a backup generator during a power outage \u2013 it keeps the lights on and business operations running smoothly.\n"
     },
     {
       "slide_number": 5,
-      "content": "**The Consequences of Non-Compliance**\n**Financial and Reputation Risks**\nNon-compliance with security regulations can result in significant financial losses and damage to a bank's reputation. It's like not having insurance for a valuable asset \u2013 you're exposing yourself to unnecessary risk.\n"
+      "content": "**The Power of Root Cause Analysis**\n**Identifying the Source of a Leak**\nRoot cause analysis is like finding the source of a leak in a pipe. If you only fix the symptoms, the leak will continue to cause problems. By identifying the underlying cause, you can fix the problem at its source and prevent future incidents.\n"
     },
     {
       "slide_number": 6,
-      "content": "**What This Means For You**\nTo effectively implement layered security, organizations should adopt a risk-based approach, prioritizing controls based on their effectiveness and potential impact. Regularly review and update security policies to ensure they remain relevant and effective.\n"
+      "content": "**Practical Application: Establish a Culture of Incident Response**\n**Training and Drilling for the Unthinkable**\nTo apply this knowledge, I recommend establishing a culture of incident response within your organization. This means training employees on incident response procedures, conducting regular drills, and making incident response a top priority.\n"
     },
     {
       "slide_number": 7,
-      "content": "Stay ahead of emerging security threats and stay secure in a rapidly changing landscape. Follow for more GRC insights and expert advice on implementing strong risk management frameworks and layered security measures.\n"
+      "content": "**Stay Ahead of Emerging Security Threats**\n**Follow for More GRC Insights**\nFollow us for more GRC insights and stay ahead of emerging security threats. By staying informed and prepared, you can protect your organization from the ever-present cyber threat landscape and maintain business continuity.\n"
     }
   ],
-  "raw_content": "**SLIDE 1:**\n**The Importance of Layered Security in Digital Banking**\n\nIn today's online environment, customers expect secure and seamless transactions. A strong risk management framework, including layered security, is essential to prevent unauthorized access and maintain customer trust.\n\n**SLIDE 2:**\n**Understanding the Principle of Layered Security**\n\n**Separate Control Points**\nThink of layered security like a multi-layered cake \u2013 each layer provides an additional barrier to entry, making it harder for malicious actors to access sensitive information.\n\n**SLIDE 3:**\n**Why Authentication Matters**\n\n**Verifying Identity**\nAuthentication is like verifying a person's ID at a secure building. It ensures that the individual trying to access sensitive information is who they claim to be, reducing the risk of unauthorized access.\n\n**SLIDE 4:**\n**The Role of Controls in Risk Management**\n\n**Detecting and Preventing Threats**\nControls, like firewalls and intrusion detection systems, are like security cameras and alarms in a building. They detect and prevent potential threats, helping to mitigate the risk of a security breach.\n\n**SLIDE 5:**\n**The Consequences of Non-Compliance**\n\n**Financial and Reputation Risks**\nNon-compliance with security regulations can result in significant financial losses and damage to a bank's reputation. It's like not having insurance for a valuable asset \u2013 you're exposing yourself to unnecessary risk.\n\n**SLIDE 6:**\n**What This Means For You**\n\nTo effectively implement layered security, organizations should adopt a risk-based approach, prioritizing controls based on their effectiveness and potential impact. Regularly review and update security policies to ensure they remain relevant and effective.\n\n**SLIDE 7:**\nStay ahead of emerging security threats and stay secure in a rapidly changing landscape. Follow for more GRC insights and expert advice on implementing strong risk management frameworks and layered security measures.",
+  "raw_content": "Here are the 7 original educational carousel slides teaching the concept behind NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide.\n\n**SLIDE 1:**\n**Detection is Prevention**\n**Early Warning Signs of Cyber Threats**\n\nIn my experience, organizations often overlook the importance of detection as a form of prevention. By rapidly identifying potential threats, you can prevent them from escalating into full-blown incidents.\n\n**SLIDE 2:**\n**Why Incident Response Plans Fail**\n**Lack of Clear Roles and Responsibilities**\n\nImagine a fire in a building with a well-defined emergency response plan. Each responder knows their role, and they work together seamlessly to extinguish the flames. Without clear roles and responsibilities, an incident response plan is like a fire without a clear escape route.\n\n**SLIDE 3:**\n**The Importance of Continuous Monitoring**\n**Watching the System Like a Hawk**\n\nThink of continuous monitoring like a security camera system. It keeps watch 24/7, detecting anomalies and alerting you to potential threats. Without it, you're like a homeowner who leaves their house unattended, vulnerable to break-ins.\n\n**SLIDE 4:**\n**Incident Response as a Business Continuity Strategy**\n**Keeping the Lights On During a Power Outage**\n\nIn the event of a cyber incident, your organization's ability to respond quickly and effectively can be the difference between business continuity and disaster. A well-planned incident response strategy is like having a backup generator during a power outage \u2013 it keeps the lights on and business operations running smoothly.\n\n**SLIDE 5:**\n**The Power of Root Cause Analysis**\n**Identifying the Source of a Leak**\n\nRoot cause analysis is like finding the source of a leak in a pipe. If you only fix the symptoms, the leak will continue to cause problems. By identifying the underlying cause, you can fix the problem at its source and prevent future incidents.\n\n**SLIDE 6:**\n**Practical Application: Establish a Culture of Incident Response**\n**Training and Drilling for the Unthinkable**\n\nTo apply this knowledge, I recommend establishing a culture of incident response within your organization. This means training employees on incident response procedures, conducting regular drills, and making incident response a top priority.\n\n**SLIDE 7:**\n**Stay Ahead of Emerging Security Threats**\n**Follow for More GRC Insights**\nFollow us for more GRC insights and stay ahead of emerging security threats. By staying informed and prepared, you can protect your organization from the ever-present cyber threat landscape and maintain business continuity.",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
+    "topic": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
     "domains": [
       "GRC",
       "Security"
     ]
   },
-  "generated_at": "2026-07-20T01:51:49.031250",
+  "generated_at": "2026-07-20T15:31:48.734365",
   "type": "carousel",
   "copyright_safe": true
 }

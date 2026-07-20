@@ -1,17 +1,17 @@
 {
-  "content": "The FFIEC Final Authentication Guidance: A Contrarian's Perspective\n\nCommon Belief: \"The FFIEC Final Authentication Guidance is a one-size-fits-all solution for financial institutions to enhance customer authentication.\"\n\nI disagree. In my experience, the FFIEC guidance is often misinterpreted as a checklist for compliance, rather than a framework for strategic risk management.\n\nHere's why:\n\n* The guidance focuses on the \"what\" of authentication \u2013 password complexity, multi-factor authentication, etc. \u2013 but neglects the \"why\" behind these controls.\n* Many financial institutions implement the guidance without considering the unique risks and customer segments they serve.\n* The guidance assumes a static risk environment, but we know that threat vectors and customer behavior evolve rapidly.\n* Over-emphasizing compliance with the guidance can lead to \"check-the-box\" exercises, rather than genuine risk reduction efforts.\n* Ultimately, the guidance should be viewed as a foundation for a more nuanced and adaptive risk management approach.\n\nWhen might the common belief still apply? For institutions with low-risk customer bases and static threat profiles, a straightforward implementation of the guidance might be sufficient. But for most financial institutions, a more thoughtful and context-dependent approach is needed. Is it time to reevaluate the FFIEC guidance as a starting point, rather than a finish line?",
+  "content": "**Rethinking Incident Response: NIST SP 800-61's Overemphasis on Containment**\n\nThe conventional wisdom is that incident response is all about containment - isolating the affected systems and minimizing the attack's impact. Everyone says that containment is the top priority, and that's reflected in NIST SP 800-61, the Computer Security Incident Handling Guide. However, I disagree. Containment is just one piece of the puzzle.\n\nIn my experience, containment can be a double-edged sword. Overly broad containment measures can cripple business operations, undermining the very reason we're responding to the incident in the first place. Moreover:\n\n* Containment often comes at the expense of valuable forensic data, which can be lost forever, hindering our ability to learn from the incident and improve our defenses.\n* Containment can be a false sense of security, making organizations complacent and less likely to implement lasting fixes.\n* Containment might not be feasible in modern, cloud-based environments where systems are highly interconnected.\n* Containment can be overly resource-intensive, diverting precious resources away from more effective response and recovery efforts.\n\nWhen might containment still be the right call? In the case of highly sensitive or high-risk systems, or when the attack is particularly sophisticated and difficult to contain. But let's not assume that containment is always the answer. How do you balance containment with other incident response priorities?",
   "template_used": "contrarian",
   "template_name": "Contrarian Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this because it updates the FFIEC Guidance, reinforcing the risk management framework and emphasizing the importance of customer authentication and layered security in the online environment.",
+    "topic": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
+    "concept": "A GRC professional should care about this because it provides essential guidance on establishing processes to rapidly detect and respond to cyber incidents, which is crucial for maintaining organizational resilience.",
     "domains": [
       "GRC",
       "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-20T01:39:24.647320",
+  "generated_at": "2026-07-20T15:19:24.437851",
   "day_of_week": "Monday",
   "type": "text_post",
   "copyright_safe": true
