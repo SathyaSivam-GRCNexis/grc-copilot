@@ -1,23 +1,5 @@
 [
   {
-    "title": "Perseverance Pays Off for Vermont Privacy Efforts",
-    "linkedin_post": "**The Unyielding Pursuit of Privacy: A Lesson from Vermont**\n\nI used to think that effective data protection was a luxury, a nicety for big corporations with deep pockets. But then I learned about Vermont's relentless efforts to safeguard its citizens' personal information.\n\nBut then I learned that even the smallest states can drive innovation in data protection. Vermont's unyielding pursuit of privacy led to the introduction of the Vermont Data Broker Law, a pioneering piece of legislation that holds data brokers accountable for their business practices.\n\n**LESSON:** Perseverance can be a potent force in driving meaningful change, even in the face of seemingly insurmountable obstacles. By refusing to accept the status quo, Vermont lawmakers demonstrated that even the smallest entities can spark significant reforms.\n\n**FRAMEWORK:** \"The Unyielding Pursuit\" framework \u2013 a mental model that applies to any field where change is needed. Identify the obstacles, build a coalition of supporters, and persistently push for meaningful reforms.\n\n**ADVICE:** For early-career professionals, take note of the power of perseverance. Don't be discouraged by setbacks or rejections \u2013 instead, use them as opportunities to refine your approach. For more seasoned professionals, remember that your experience and expertise can be catalysts for positive change in your industry.\n\n**What career lesson took you years to learn?**",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-06-18T02:58:16.520203"
-  },
-  {
-    "title": "OFAC and Crypto Crime: Every OFAC Specially Designated National with Identified Cryptocurrency Addresses",
-    "linkedin_post": "**A Pattern I Keep Noticing: OFAC Compliance Failures in Crypto Address Tracking**\n\nOne mistake I see repeatedly in the crypto space is the incorrect assumption that all cryptocurrency addresses associated with an OFAC Specially Designated National (SDN) are blocked or frozen. In reality, this is not the case.\n\nThe mistake lies in the fact that OFAC regulations require entities to identify and block SDNs, but they don't necessarily require the blocking of all their associated cryptocurrency addresses. Many businesses mistakenly assume that if an SDN has a cryptocurrency address, that address must be blocked, which can lead to unnecessary disruptions in legitimate transactions.\n\n**Consequences of this mistake:**\n\n\u2022 Over-blocking, which can lead to lost revenue and frustrated customers\n\u2022 Inefficient use of resources, as businesses spend time and money on unnecessary blocking and monitoring\n\u2022 Potential fines and penalties from regulatory bodies for non-compliance\n\n**Solution:**\n\nTo avoid this mistake, businesses should focus on identifying and blocking the SDN itself, rather than their associated cryptocurrency addresses. This requires a nuanced understanding of OFAC regulations and the use of advanced tools to track and monitor SDNs.\n\n**Have you seen this mistake in your own work or experience? How do you ensure proper OFAC compliance in your crypto-related activities?**",
-    "domains": [
-      "Security"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-18T02:59:49.690157"
-  },
-  {
     "title": "Legit Security brings agentic AI to AppSec remediation and risk reduction",
     "linkedin_post": "**The AI-Powered AppSec Revolution: What's at Stake for DevSecOps**\n\nEveryone's talking about the rise of AI in DevSecOps. But the more interesting question is: how will agentic AI specifically impact AppSec remediation and risk reduction?\n\nIn my experience, many organizations still rely on manual threat detection and remediation, which can be time-consuming and error-prone. Legit Security's introduction of agentic AI brings a new layer of sophistication to AppSec, allowing for proactive risk reduction and automated remediation. But what does this really mean for DevSecOps professionals?\n\n**Three key implications:**\n\n1. **Shift from reactive to proactive security**: With agentic AI, organizations can identify and mitigate vulnerabilities before they're exploited, reducing the risk of costly breaches.\n2. **Increased efficiency and accuracy**: AI-powered remediation frees up DevSecOps teams to focus on high-priority tasks, while minimizing the likelihood of human error.\n3. **New challenges for security compliance**: As AI assumes a more active role in AppSec, organizations must adapt their compliance frameworks to account for the changing security landscape.\n\n**So, what should organizations do?** They should start exploring the potential of agentic AI in AppSec remediation and risk reduction, and be prepared to adapt their security strategies to stay ahead of emerging threats.\n\nWill organizations be able to harness the full potential of agentic AI, or will they struggle to keep up with the pace of innovation?",
     "domains": [
@@ -1823,5 +1805,23 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-21T15:31:41.883845"
+  },
+  {
+    "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+    "linkedin_post": "**A Pattern I Keep Noticing: Forgetting to Update Cloud Service Providers**\n\nOne mistake I see repeatedly in cloud infrastructure is failing to update Cloud Service Providers (CSP) such as AWS or Azure, particularly when it comes to their WordPress-specific components. WP2Shell is a prime example of this oversight.\n\n**What's the mistake?**\nLeaving the WP2Shell plugin outdated, which can lead to a Remote Code Execution (RCE) vulnerability.\n\n**What happens if you make this mistake?**\n\u2022 Your WordPress site becomes vulnerable to RCE attacks, allowing hackers to gain full control of your site and potentially your entire cloud infrastructure.\n\u2022 An attacker can use WP2Shell to gain access to sensitive data, including database credentials and backups.\n\u2022 The vulnerability can be exploited by attackers to distribute malware, leading to further damage to your site and reputation.\n\n**How to avoid or fix it?**\nRegularly update your Cloud Service Providers, including WordPress-specific components like WP2Shell. Enable automatic updates or set reminders to ensure you stay on top of security patches.\n\nHave you noticed other instances where outdated plugins or components have put cloud infrastructure at risk?",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-22T01:55:58.986943"
+  },
+  {
+    "title": "N-day is Becoming N-Hour. Patching Faster Won't Save You.",
+    "linkedin_post": "**The Patching Paradox: Why Faster Won't Save You**\n\nEveryone is discussing the growing frequency of N-day vulnerabilities, where exploits are discovered and exploited within hours of a patch being released. The more interesting question is: has the traditional patching approach become a Band-Aid solution for a larger problem?\n\nIn my experience, the focus on rapid patching distracts from the root cause: the time between vulnerability discovery and patch release is still too long. This window of exposure allows threats to spread before fixes are applied. Moreover, patching alone doesn't address the underlying issues of software development and deployment.\n\nHere are three key concerns for DevSecOps professionals:\n\n1. **Inadequate security integration**: Many organizations still separate security into siloed teams, hindering real-time collaboration and hindering the effectiveness of patches.\n2. **Outdated patching strategies**: Traditional patching models rely on periodic updates, which no longer match the speed of modern threats.\n3. **Lack of proactive defense**: Organizations are often reactive, waiting for patches rather than employing proactive defense mechanisms that anticipate and prevent attacks.\n\nOrganizations should focus on building a more resilient security posture by integrating security into DevOps and leveraging proactive defense techniques. What I'd like to know is: how will organizations adapt their security strategies to keep pace with the accelerating pace of threats?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-22T01:59:05.506263"
   }
 ]
