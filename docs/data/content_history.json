@@ -1,42 +1,5 @@
 [
   {
-    "title": "Legit Security brings agentic AI to AppSec remediation and risk reduction",
-    "linkedin_post": "**The AI-Powered AppSec Revolution: What's at Stake for DevSecOps**\n\nEveryone's talking about the rise of AI in DevSecOps. But the more interesting question is: how will agentic AI specifically impact AppSec remediation and risk reduction?\n\nIn my experience, many organizations still rely on manual threat detection and remediation, which can be time-consuming and error-prone. Legit Security's introduction of agentic AI brings a new layer of sophistication to AppSec, allowing for proactive risk reduction and automated remediation. But what does this really mean for DevSecOps professionals?\n\n**Three key implications:**\n\n1. **Shift from reactive to proactive security**: With agentic AI, organizations can identify and mitigate vulnerabilities before they're exploited, reducing the risk of costly breaches.\n2. **Increased efficiency and accuracy**: AI-powered remediation frees up DevSecOps teams to focus on high-priority tasks, while minimizing the likelihood of human error.\n3. **New challenges for security compliance**: As AI assumes a more active role in AppSec, organizations must adapt their compliance frameworks to account for the changing security landscape.\n\n**So, what should organizations do?** They should start exploring the potential of agentic AI in AppSec remediation and risk reduction, and be prepared to adapt their security strategies to stay ahead of emerging threats.\n\nWill organizations be able to harness the full potential of agentic AI, or will they struggle to keep up with the pace of innovation?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-18T03:02:56.493413"
-  },
-  {
-    "title": "Social media\u2019s next evolution: user-controlled algorithms",
-    "linkedin_post": "**The Algorithm Anomaly**\n\nEarly in my career, I was tasked with optimizing social media ads for a beauty brand. We spent thousands of dollars on ad spend, only to see our target audience dwindle to a fraction of our initial reach. I was baffled \u2013 our content was engaging, our targeting was on point, and our messaging was clear. What was going wrong?\n\nAs I dug deeper, I realized that our algorithm was prioritizing engagement metrics over relevance. Our ads were being shown to users who had already interacted with similar content, even if it wasn't the most relevant to their interests. This led to a vicious cycle of diminishing returns.\n\nIt wasn't until I spoke with a colleague who worked on the algorithm team that I understood the full scope of the issue. The algorithm was designed to optimize for short-term engagement, not long-term relevance. This realization sparked a new perspective on the importance of user-controlled algorithms.\n\nToday, I apply this lesson to my work in product development, prioritizing user experience and relevance above all else. I'd love to hear from others \u2013 when have you encountered an algorithmic anomaly, and what did you learn from it?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-18T03:04:29.661174"
-  },
-  {
-    "title": "Seeing the Full Picture: Why Pre- and Post-Designation Exposure Changes Everything in Sanctions Screening",
-    "linkedin_post": "**The Sanctions Screening Blind Spot: Why Pre- and Post-Designation Exposure Matters**\n\nEveryone's talking about the surge in sanctions-related risks in the crypto industry. But the more interesting question is: are we looking at the full picture when it comes to sanctions screening?\n\nIn my experience, the emphasis is often on the \"in-between\" \u2013 the time between a company's knowledge of a sanction designation and its implementation. But what about the periods before and after? Pre-designation exposure (i.e., the time before a sanction is imposed) and post-designation exposure (i.e., the time after a sanction is lifted or becomes obsolete) are equally critical to consider.\n\nFor instance, pre-designation exposure can lead to unwitting transactions with sanctioned parties, while post-designation exposure can result in unnecessary compliance burdens. Ignoring these phases can lead to a fragmented view of sanctions screening, putting organizations at risk.\n\nSo, what should organizations do? They should aim for a comprehensive sanctions screening framework that considers the entire lifecycle \u2013 from pre-designation to post-designation exposure. This means integrating both retroactive and prospective screening, as well as continuous monitoring of sanction designations.\n\nWhat does this mean for the future? As the crypto industry continues to grow, I predict that we'll see more emphasis on end-to-end sanctions screening solutions that account for the complexities of pre- and post-designation exposure.",
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-18T16:57:03.293951"
-  },
-  {
-    "title": "The Scripts on Your Checkout Page Are Now a PCI DSS Problem",
-    "linkedin_post": "**The Scripts on Your Checkout Page Are Now a PCI DSS Problem**\n\nOne mistake I see repeatedly in e-commerce platforms is the improper handling of scripts on the checkout page. Specifically, many sites use third-party scripts (e.g., customer review widgets, social media feeds) that collect sensitive payment information, thereby violating PCI DSS (Payment Card Industry Data Security Standard) requirements.\n\n**Consequences:**\n\n\u2022 **Compliance risks**: Failing to secure payment data puts your business at risk of non-compliance with PCI DSS, potentially leading to fines, penalties, and reputational damage.\n\u2022 **Data breaches**: Insecure scripts can be exploited by attackers, compromising sensitive customer data and putting your customers at risk of identity theft.\n\u2022 **Reputation damage**: A data breach can lead to a loss of customer trust and loyalty, making it challenging to recover.\n\n**Solution:**\n\nTo avoid this mistake, ensure that any third-party scripts used on your checkout page are properly secured and validated by the relevant PCI DSS guidelines. This involves implementing secure protocol (HTTPS) for script loading, validating the script's origin, and regularly updating scripts to the latest versions. \n\n**Have you seen similar mistakes in your e-commerce platform? How do you handle third-party scripts on your checkout page?**",
-    "domains": [
-      "Security"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-18T17:03:15.865806"
-  },
-  {
     "title": "How software development\u2019s speed obsession enabled TeamPCP\u2019s chaos crusade",
     "linkedin_post": "**The Dark Side of Speed: How DevOps Exposed Teams to Chaos**\n\nEveryone's discussing the shocking rise of TeamPCP's attacks, but I think that's a symptom of a deeper issue. The more interesting question is: what role did the DevOps community play in creating an environment ripe for these kinds of attacks?\n\nIn my experience, the DevOps mantra of speed above all else has led to a disturbing trend: security taking a backseat to rapid development. This is precisely the opposite of what we should be doing. We need to acknowledge that speed without security is a recipe for disaster, rather than a badge of honor.\n\nHere's what's really at stake: **Point 1**, the rush to deploy code without adequate testing and validation has created a situation where vulnerabilities are not being caught until it's too late. **Point 2**, the focus on developer productivity has led to a lack of visibility and control over security configurations, leaving organizations exposed to attacks. **Point 3**, the lack of integration between development and security teams has resulted in a disjointed approach to risk management.\n\nSo, what should organizations take away from this? They need to prioritize a balanced approach to DevOps, one that combines speed with security. This means investing in tools and processes that enable secure development practices from the outset, rather than trying to patch vulnerabilities later on.\n\nWill this shift in focus be enough to prevent the next TeamPCP-style attack? Only time will tell, but one thing is certain: if we don't change our approach, we'll continue to be caught off guard by the chaos that ensues. Can organizations truly adopt a culture of security and still meet the demands of rapid development?",
     "domains": [
@@ -1823,5 +1786,43 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-22T01:59:05.506263"
+  },
+  {
+    "title": "The Interpretability Debt Nobody\u2019s Budgeting For",
+    "linkedin_post": "**The Interpretability Debt Nobody\u2019s Budgeting For**\n\nI used to think that implementing controls and policies was the ultimate goal of GRC (Governance, Risk, and Compliance). It was all about ticking boxes and meeting regulatory requirements. But then I learned that interpretability \u2013 the ability to understand and explain the reasoning behind our controls \u2013 is just as crucial.\n\nIn my experience, organizations often focus so heavily on building complex risk management frameworks that they forget to prioritize the human element. They create systems that are difficult to comprehend, even for those who use them. This leads to a hidden debt \u2013 an interpretability debt \u2013 where stakeholders struggle to understand the underlying logic and make informed decisions.\n\n**Lesson:** The career insight here is that GRC shouldn't just be about compliance; it should be about creating a culture of transparency and accountability. By focusing on interpretability, we can build trust and reduce the risk of costly mistakes.\n\n**Framework:** Think of this as a \"Transparency Pyramid\" \u2013 where the base represents the underlying logic, the middle layer represents the controls and policies, and the top layer represents the stakeholders who need to understand it all.\n\n**Advice:** For those early in their GRC career, prioritize building a strong understanding of the underlying logic and be mindful of the interpretability debt. For more experienced professionals, review your existing frameworks and ask: \"Can our stakeholders easily understand the reasoning behind our controls?\" What career lesson took you years to learn?",
+    "domains": [
+      "GRC",
+      "AI",
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-07-22T15:27:40.293479"
+  },
+  {
+    "title": "EU Financial Institutions Leak Data Through Cookie Trackers",
+    "linkedin_post": "**The Cookie Tracker Conundrum: A Framework for EU Financial Institutions**\n\nAs a privacy expert, I've seen numerous high-profile data breaches originating from seemingly innocuous cookie trackers. This framework helps EU financial institutions identify and mitigate the risks associated with these trackers.\n\n**The EU Cookie Tracker Risk Framework**\n\n1. **Cookie Cartography**: Map your organization's third-party cookie usage to identify potential vulnerabilities. Start by analyzing your website's cookie consent notices, tracking scripts, and analytics tools. Be aware that some trackers may be hidden within third-party libraries or frameworks.\n2. **Data Flow Forensics**: Investigate the data flow between your website, the cookie tracker, and the third-party server. This includes understanding how data is transmitted, stored, and processed. Look for indicators of potential data exfiltration, such as unusual network traffic or unauthorized data access.\n3. **Risk Ranking**: Assess the potential impact of a data breach originating from the cookie tracker. Consider factors like the type of data being tracked, the number of affected users, and the potential consequences of a breach. Prioritize high-risk trackers and focus on mitigating those first.\n4. **Tracker Triage**: Evaluate the necessity of each cookie tracker and assess whether it can be replaced with a more secure alternative. Consider using a cookie tracker with a strong security track record, transparent data handling practices, and regular security audits.\n5. **Continuous Monitoring**: Regularly review and update your cookie tracker inventory to ensure compliance with evolving regulations and security best practices. This includes monitoring for new vulnerabilities, tracking updates, and assessing the effectiveness of your mitigation strategies.\n\nWhenever I'm auditing a financial institution's online presence, I start with these questions: What third-party cookies are being used, and are they compliant with EU regulations? Are there any potential data flow vulnerabilities that could lead to a breach? Save this framework for your next online security audit.",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-22T15:35:25.581811"
+  },
+  {
+    "title": "AI speeds software development. Is your secret security keeping up?",
+    "linkedin_post": "**AI Speeds Software Development: Is Your Secret Security Keeping Up?**\n\nEveryone's talking about how AI is accelerating software development. But the more interesting question is: what happens when AI-driven development outpaces traditional security controls?\n\nI've noticed that DevSecOps professionals often focus on implementing security measures that can keep up with the speed of development. However, this approach can lead to a false sense of security. As AI takes over more manual tasks, the attack surface expands, and the need for more sophisticated security measures grows.\n\nHere are three key implications for DevSecOps professionals:\n\n1. **AI-driven development requires more advanced threat modeling**. As AI-generated code becomes more prevalent, traditional threat models may not be enough to identify potential vulnerabilities.\n2. **Increased reliance on AI means more data is being used**. This raises concerns around data security, especially when sensitive information is being used to train AI models.\n3. **The speed of AI-driven development can lead to security fatigue**. As developers and security teams struggle to keep up, security measures may be overlooked or neglected.\n\nSo, what should organizations do? **They should prioritize continuous security assessments and implement AI-powered security tools that can keep pace with development**. This will help ensure that security measures are effective and up-to-date, even as AI speeds up software development.\n\nWhat do you think will be the next major challenge for DevSecOps professionals as AI continues to transform software development?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-22T15:36:59.055315"
+  },
+  {
+    "title": "The case for making your own apps",
+    "linkedin_post": "**The App that Changed Everything**\n\nEarly in my career, I spent countless hours trying to get our product team's vision onto a platform that wasn't made for us. We were a small startup with a big idea, but our limited budget and resources meant we were forced to rely on existing solutions that never quite fit.\n\nI remember the frustration of trying to customize a generic app to meet our unique needs, only to hit roadblock after roadblock. It was like trying to fit a square peg into a round hole, and it was a waste of time and resources. One day, I realized that we were essentially building someone else's dream \u2013 not our own. I had a moment of clarity: we should be building our own apps.\n\nThat realization changed everything. We started a small app development team, and it was a game-changer for our product. We were able to tailor our apps to exactly what our users needed, without being limited by existing platforms. Today, I'm convinced that making your own apps is a key differentiator in product development. What did you learn from trying to adapt to existing solutions, or did you find a way to build your own from the ground up?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-22T15:38:32.470871"
   }
 ]
