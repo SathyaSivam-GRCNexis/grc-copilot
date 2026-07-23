@@ -1,32 +1,5 @@
 [
   {
-    "title": "How software development\u2019s speed obsession enabled TeamPCP\u2019s chaos crusade",
-    "linkedin_post": "**The Dark Side of Speed: How DevOps Exposed Teams to Chaos**\n\nEveryone's discussing the shocking rise of TeamPCP's attacks, but I think that's a symptom of a deeper issue. The more interesting question is: what role did the DevOps community play in creating an environment ripe for these kinds of attacks?\n\nIn my experience, the DevOps mantra of speed above all else has led to a disturbing trend: security taking a backseat to rapid development. This is precisely the opposite of what we should be doing. We need to acknowledge that speed without security is a recipe for disaster, rather than a badge of honor.\n\nHere's what's really at stake: **Point 1**, the rush to deploy code without adequate testing and validation has created a situation where vulnerabilities are not being caught until it's too late. **Point 2**, the focus on developer productivity has led to a lack of visibility and control over security configurations, leaving organizations exposed to attacks. **Point 3**, the lack of integration between development and security teams has resulted in a disjointed approach to risk management.\n\nSo, what should organizations take away from this? They need to prioritize a balanced approach to DevOps, one that combines speed with security. This means investing in tools and processes that enable secure development practices from the outset, rather than trying to patch vulnerabilities later on.\n\nWill this shift in focus be enough to prevent the next TeamPCP-style attack? Only time will tell, but one thing is certain: if we don't change our approach, we'll continue to be caught off guard by the chaos that ensues. Can organizations truly adopt a culture of security and still meet the demands of rapid development?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-18T17:06:22.940480"
-  },
-  {
-    "title": "The rise of the agentic shopper: ASOS\u2019s AI investment",
-    "linkedin_post": "**The Agentic Shopper: A Lesson from ASOS**\n\nI still remember the day I realized the retail industry was changing forever. It was around 2015, and I was working in e-commerce, trying to convince our team to invest in AI-powered product recommendations. We were struggling to keep up with customer demand and were plagued by high returns and low conversion rates. I'd seen it before: customers were getting frustrated with the same old \"recommended for you\" lists that were often just a rehash of what we thought they liked, not what they actually wanted.\n\nThat's when I stumbled upon ASOS's AI investment. They were pioneering the use of machine learning to truly understand their customers' behavior and preferences. It was like a lightbulb went off \u2013 I realized that the future of retail wasn't about pushing products; it was about anticipating and delivering on customer needs. Today, I apply this lesson by working with clients to create personalized experiences that empower customers to take control of their shopping journey. What lessons have you learned about the rise of the agentic shopper?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-18T17:07:56.159409"
-  },
-  {
-    "title": "The NO FAKES Act Could Silence Satire, Commentary, And News",
-    "linkedin_post": "**The NO FAKES Act: A Threat to Free Speech**\n\nOne mistake I see repeatedly is the conflation of deepfakes and satire in discussions around the NO FAKES Act. While the bill aims to combat malicious deepfakes, it could inadvertently silence satire, commentary, and even news outlets.\n\n**The Mistake:**\n\nThe NO FAKES Act often equates satirical content with deepfakes, implying that all forms of manipulated media are equally malicious. However, this oversimplification ignores the crucial distinction between fake news and commentary.\n\n**Consequences:**\n\n\u2022 **Censorship of satire**: If the NO FAKES Act is passed, satirical content could be mistakenly flagged as deepfakes, leading to its removal from social media and online platforms.\n\u2022 **Chilling effect on commentary**: The uncertainty surrounding manipulated media could silence journalists, bloggers, and commentators who rely on satire to convey their message.\n\u2022 **Suppression of news**: Even legitimate news outlets may be affected, as their use of manipulated media for storytelling purposes could be misinterpreted as deepfakes.\n\n**Avoiding the Pitfall:**\n\nTo ensure the NO FAKES Act doesn't stifle free speech, we need to distinguish between malicious deepfakes and satirical commentary. This requires a nuanced approach to regulating manipulated media, one that acknowledges the value of satire in a free society.\n\n**Have you seen this conflation of deepfakes and satire in your industry or social circles?**",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-19T03:18:50.150514"
-  },
-  {
     "title": "AI is turning every company into a software company",
     "linkedin_post": "**The Software Company Paradox: My Personal Journey**\n\nEarly in my career, I worked as a product manager at a traditional manufacturing company. We were struggling to stay competitive, and I was tasked with developing a new product line. But every time I tried to innovate, I hit a roadblock: our processes were rigid, our technology was outdated, and our team was siloed.\n\nI remember the day it clicked: I realized that we weren't just developing a product, we were building a software experience. Every decision we made \u2013 from supply chain management to customer support \u2013 was influenced by the need to deliver a seamless digital experience. It was a turning point for me, and our company.\n\nI learned that in today's world, every company is, in fact, a software company. The line between product and software has blurred, and the skills required to succeed have changed dramatically. I now look at every product I work on as a software experience, and I prioritize the things that matter most: user-centered design, agile development, and continuous iteration.\n\nWhat lessons have you learned on your own journey? How have you adapted to the shift towards software-driven products?",
     "domains": [
@@ -1824,5 +1797,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-22T15:38:32.470871"
+  },
+  {
+    "title": "New EU Court of Justice Ruling on Platform Liability Could Cause Collateral Damage to Freedom of Expression",
+    "linkedin_post": "**The EU's Platform Liability Ruling: A Framework for Navigating Collateral Damage to Freedom of Expression**\n\nAs we grapple with the EU Court of Justice's ruling on platform liability, it's crucial to understand the potential implications on freedom of expression. This framework will help you navigate this complex issue and its potential consequences.\n\n**The \"Expression-Risk Matrix\" Framework**\n\nWhen faced with the EU's platform liability ruling, I use the Expression-Risk Matrix to assess the potential impact on freedom of expression.\n\n**Step 1: Identify the Expression Type**\nClassify the type of expression in question (e.g., political speech, commercial advertising, user-generated content). This will help you understand the level of protection it deserves under the EU's freedom of expression framework.\n\n**Step 2: Assess the Risk of Harm**\nEvaluate the potential harm that the expression could cause, considering factors like defamation, hate speech, or incitement to violence. This will help you determine the likelihood of the EU's ruling being applied.\n\n**Step 3: Consider the Platform's Role**\nExamine the platform's role in hosting the expression, including whether they have taken steps to mitigate harm or facilitated the expression. This will help you understand their potential liability.\n\n**Step 4: Evaluate the EU's Jurisdiction**\nAssess whether the EU's jurisdiction applies to the expression in question, considering factors like the platform's location, the user's location, and the expression's content. This will help you determine the relevance of the EU's ruling.\n\n**Step 5: Weigh the Freedom of Expression Implications**\nBalance the potential restriction on freedom of expression against the need to protect users from harm. This will help you determine the overall impact of the EU's ruling on freedom of expression.\n\n**Whenever I'm faced with a situation involving a platform liability dispute, I start with these questions.**\n\nSave this framework for your next platform liability dispute, and you'll be better equipped to navigate the complex intersection of freedom of expression and platform responsibility.",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-07-23T02:03:14.682545"
+  },
+  {
+    "title": "Microsoft Azure DevOps MCP Flaw Lets Hidden PR Comments Hijack AI Review Agents",
+    "linkedin_post": "**The Azure DevOps MCP Flaw: A Wake-Up Call for DevSecOps**\n\nEveryone's talking about the latest Azure DevOps vulnerability, where hidden PR comments can hijack AI review agents. While this might seem like a niche issue, it raises a more compelling question: Are we truly prioritizing security in our cloud-based development environments?\n\nThe more interesting question is: Are we treating security as an afterthought, rather than an integral part of our development process? The recent flaw in Azure DevOps highlights a critical vulnerability that can compromise both security and compliance in cloud-based development environments.\n\nHere's why this matters: DevSecOps is about integrating security into every stage of the development lifecycle, not just tacking it on at the end. When we neglect to do so, we leave ourselves open to vulnerabilities like the one in Azure DevOps. This flaw isn't just a technical issue \u2013 it's a business risk that can lead to costly compliance failures and damage to our reputation.\n\nSo, what should organizations do? They should take a hard look at their DevSecOps practices and ensure that security is baked into every stage of the development process. By doing so, they can avoid costly mistakes like the Azure DevOps flaw and maintain the trust of their customers.\n\nWill we see more of these vulnerabilities in the future, or will organizations finally prioritize security in their development environments?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-23T02:04:47.907213"
+  },
+  {
+    "title": "Substack\u2019s new tool tells you who\u2019s been writing their newsletters with AI",
+    "linkedin_post": "**The AI Newsletter Epiphany**\n\nI still remember my first stint as a newsletter editor, about 7 years ago. I was tasked with creating a weekly newsletter for our team, but I struggled to craft engaging content that resonated with our audience. I would spend hours researching, writing, and re-writing, only to feel like I was churning out the same old articles.\n\nOne day, I stumbled upon a newsletter that caught my eye \u2013 it was witty, insightful, and felt eerily familiar. I did some digging and discovered that it was likely written with AI assistance. This revelation was a wake-up call for me \u2013 I realized that AI-powered tools were capable of producing high-quality content, but I was still stuck in the old ways.\n\nWhat I learned from this experience was the importance of staying adaptable in the face of technological advancements. I began to experiment with AI tools, not as a replacement for human creativity, but as a complement to my own writing abilities. Today, I'm curious to know \u2013 have any of you had a similar epiphany, or are you still struggling to navigate the intersection of human creativity and AI-driven content?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-23T02:06:20.938604"
   }
 ]
