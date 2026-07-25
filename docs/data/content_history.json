@@ -1,33 +1,5 @@
 [
   {
-    "title": "Weekly Metasploit Update: NTLM Relay Priv Esc, MCP Server Integration, Paperclip AI RCE Chain, and more",
-    "linkedin_post": "Everyone is discussing the latest Metasploit updates, but I'd argue the more interesting question is: what do these updates reveal about the evolving threat landscape and our collective vulnerability to attacks?\n\nIn my experience, Metasploit's popularity stems from its ability to mirror real-world attacks, making it a valuable tool for DevSecOps professionals. However, the latest updates \u2013 including NTLM Relay Priv Esc, MCP Server Integration, and Paperclip AI RCE Chain \u2013 serve as a reminder that our vulnerabilities are just as much about people as they are about technology.\n\nThe NTLM Relay Priv Esc, for instance, highlights the importance of secure authentication protocols, while the MCP Server Integration underscores the need for continuous monitoring of third-party integrations. Meanwhile, the Paperclip AI RCE Chain showcases the risks associated with integrating AI-powered tools into our systems.\n\nWhat's critical for organizations is not just staying up-to-date with the latest Metasploit updates, but also using these examples to inform their risk management strategies. This means prioritizing secure authentication protocols, conducting thorough third-party risk assessments, and ensuring that AI-powered tools are properly integrated and monitored.\n\nAs we move forward, I predict that the increasing reliance on AI and automation will only exacerbate these risks. How will organizations balance the benefits of AI with the need for robust security controls?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-21T15:25:43.038669"
-  },
-  {
-    "title": "I tested the new modular ThinkPad, and it's the repairable future I'm hoping for",
-    "linkedin_post": "**The Repairable Future I've Been Waiting For**\n\nEarly in my career, I was a freelance writer, constantly on the move between coffee shops and co-working spaces. My old ThinkPad, a faithful companion, would often break down, and I'd be left scrambling to afford repair or replacement. Those days were stressful and wasteful.\n\nI struggled with the feeling of disposability that came with modern electronics. It was as if my devices were designed to be discarded, not repaired. But that mindset began to shift when I met a friend who showed me how to fix his broken laptop with a DIY kit. It was like watching a flower bloom - the process of repair was meditative, empowering, and beautiful.\n\nIn my experience, the most innovative solutions often emerge from a deep understanding of our problems. The new modular ThinkPad, with its easily replaceable parts, is a brilliant example of this. It's not just a product; it's a philosophy that says repair is just as valuable as replacement. Today, I'm excited to see more companies embracing this approach, and I'm grateful for the freedom to create and repair my own tools. What lessons have you learned about the importance of repair in our digital lives?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-21T15:27:16.432234"
-  },
-  {
-    "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
-    "linkedin_post": "**Challenging the Status Quo: Credential Attacks**\n\nEveryone says that the key to mitigating large-scale credential attacks is to implement multi-factor authentication (MFA) across the board. I disagree. While MFA is a crucial step, it's not a silver bullet.\n\nHere's why:\n\n\u2022 **Credential phishing remains a threat**: MFA can be bypassed with targeted phishing attacks that compromise user credentials, rendering MFA ineffective.\n\u2022 **Attackers adapt quickly**: As MFA becomes more widespread, attackers will adapt and find new ways to bypass or exploit it.\n\u2022 **Human factor is still the weakest link**: Users will always be vulnerable to social engineering attacks, making MFA less effective than we think.\n\u2022 **Implementing MFA is just the beginning**: It's a necessary but not sufficient step. Organizations must also invest in education, awareness, and continuous monitoring to stay ahead of attackers.\n\nIn my experience, organizations often focus on the technical aspect of MFA, overlooking the human element. While MFA is a crucial control, it's not a foolproof solution. We need to shift our focus towards creating a culture of security awareness and continuous learning to truly mitigate large-scale credential attacks.\n\nCan we discuss the limitations of MFA and explore alternative strategies for staying ahead of attackers?",
-    "domains": [
-      "Security",
-      "Cloud"
-    ],
-    "template_used": "Contrarian Post",
-    "generated_at": "2026-06-22T02:35:11.535557"
-  },
-  {
     "title": "Loop Engineering: The Missing Governance Layer for Reliable AI Agents",
     "linkedin_post": "**Loop Engineering: The Hidden Governance Layer for Reliable AI Agents**\n\nI used to think that AI systems could be trusted solely on their performance metrics. After all, if they were accurate and efficient, what more could you ask for?\n\nBut then I learned about the concept of \"loop engineering\" \u2013 the discipline of designing feedback mechanisms to ensure AI systems behave as intended in real-world scenarios. It was a wake-up call that made me realize the importance of governance in AI development.\n\n**Lesson:** When building AI systems, we often focus on the \"what\" (predicting outcomes) and the \"how\" (algorithms and data). However, loop engineering reminds us to also consider the \"why\" (behavioral goals) and the \"so what\" (real-world consequences). This involves designing feedback loops that monitor and adapt AI behavior to prevent unintended consequences.\n\n**Framework:** The \"LOOP\" framework helps me remember the essential elements of effective governance:\n\nL \u2013 **Learning**: Designing mechanisms for AI to learn from feedback\nO \u2013 **Observation**: Monitoring AI behavior in real-world scenarios\nO \u2013 **Optimization**: Iterating on AI design based on feedback and observations\nP \u2013 **Preservation**: Ensuring AI systems remain transparent and accountable\n\n**Advice:** For early-career engineers, focus on understanding the \"what\" and \"how\" of AI development. As you gain experience, prioritize loop engineering and governance. For seasoned professionals, review your existing AI systems through the lens of loop engineering and identify opportunities to improve reliability and accountability.\n\n**What career lesson took you years to learn?**",
     "domains": [
@@ -1824,5 +1796,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-07-25T02:05:50.768267"
+  },
+  {
+    "title": "Certighost Exploit Lets Low-Privileged Active Directory Users Impersonate a Domain Controller",
+    "linkedin_post": "**One mistake I see repeatedly in cloud security: Misconfiguring Azure Active Directory (AAD) conditional access policies**\n\nI've noticed that many organizations struggle with misconfiguring Azure Active Directory (AAD) conditional access policies, which can lead to catastrophic consequences. Specifically, I've seen teams incorrectly configuring the \"User is a member of\" rule in their AAD conditional access policies.\n\n**What's the mistake?**\nThe mistake is configuring the \"User is a member of\" rule to include a group that contains a low-privileged Active Directory user, who then uses the Certighost exploit to impersonate a domain controller. This exploit allows the user to elevate their privileges and access sensitive resources.\n\n**Consequences:**\n\n\u2022 **Unauthorized access**: The low-privileged user gains access to sensitive resources and data, potentially leading to data breaches or unauthorized changes to critical systems.\n\u2022 **Elevated privileges**: The user is able to elevate their privileges, allowing them to perform actions that could compromise the security and integrity of the entire environment.\n\u2022 **Difficulty in auditing**: The misconfigured conditional access policy makes it difficult to track and audit user activity, making it harder to identify and respond to security incidents.\n\n**How to avoid it?**\nTo avoid this mistake, ensure that your AAD conditional access policies are carefully configured to exclude low-privileged users and only include groups that require elevated access. Regularly review and update your policies to ensure they are aligned with your organization's security requirements.\n\n**Have you seen this mistake in your organization? How did you address it?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-07-25T15:01:47.360018"
+  },
+  {
+    "title": "Researcher Publishes GitLab RCE PoC Letting Authenticated Users Run Commands as Git",
+    "linkedin_post": "**The Dark Side of DevSecOps: Why Timely Updates Matter**\n\nEveryone is discussing the latest security vulnerabilities in DevSecOps tools. But the more interesting question is: what's driving these persistent issues, and how can we prevent them?\n\nIn my experience, the root cause lies in the human side of DevSecOps. Timely software updates and patch management are often overlooked, leading to security breaches like the recent GitLab RCE PoC that allowed authenticated users to run commands as Git. This highlights a critical lesson: security is not just about having the right tools, but also about maintaining them.\n\nHere are three key takeaways for DevSecOps professionals:\n\n1. **Update cycles matter**: Long update cycles can lead to outdated software, making it vulnerable to attacks.\n2. **Patch management is key**: Regularly reviewing and applying security patches can prevent many breaches.\n3. **Human error is a risk**: Ignoring software updates can lead to security issues, even with the best tools in place.\n\nSo, what should organizations do? Prioritize timely software updates and patch management to prevent potential security breaches. It's not a matter of if, but when the next vulnerability will be discovered. What does this mean for the future of DevSecOps: will we see more security-focused updates and patch management strategies emerge?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-25T15:04:54.232822"
+  },
+  {
+    "title": "Academia in the Age of AI: What Is Actually Happening, and What the Next Ten Years Look Like",
+    "linkedin_post": "**The Unpredictable Path to AI Adoption in Academia**\n\nEarly in my career, I was working as a researcher at a university, trying to make sense of how AI would change the way we learn and teach. I recall spending countless hours reading papers, attending conferences, and speaking with experts, all while trying to grasp the nuances of this rapidly evolving field.\n\nAs I delved deeper, I encountered numerous challenges. One of the biggest was understanding why some academics were so resistant to adopting AI-driven tools in their research and teaching practices. It seemed like an obvious solution to streamline tedious tasks and enhance student learning outcomes, but the hesitation was palpable.\n\nIt wasn't until I had a candid conversation with a seasoned professor that something clicked. He shared with me the fear of being replaced by AI, and the anxiety of not being able to keep up with the pace of technological advancements. This conversation made me realize that the adoption of AI in academia wasn't just about the technology itself, but about the people and their perceptions of it.\n\nToday, I apply this lesson by prioritizing empathy and understanding when working with academic institutions on AI projects. I ask myself: What are the underlying concerns and fears that might be holding them back from embracing AI, and how can we address those concerns in a way that benefits everyone involved? \n\nWhat lessons have you learned about the intersection of AI and academia?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-25T15:06:27.555329"
   }
 ]
