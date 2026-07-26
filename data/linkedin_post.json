@@ -1,17 +1,17 @@
 {
-  "content": "**The Hidden Flaw in AI Governance: Why Compliance Isn't Enough**\n\n**HOOK**: Most risk registers fail before anyone calculates risk. I've reviewed countless risk assessments, and it's striking how often they focus solely on compliance checkboxes rather than genuine risk mitigation.\n\n**CONTEXT**: As AI adoption accelerates in Europe, regulatory bodies are scrambling to establish governance frameworks. NIST and ISO guidelines offer valuable structure, but they're often treated as separate from compliance efforts. Yet, this siloed approach can be a recipe for disaster.\n\n**INSIGHT**: Compliance is necessary but not sufficient for effective AI governance. It's like building a house on a fault line \u2013 you can follow all the blueprints, but if the foundation isn't solid, the entire structure will eventually collapse.\n\n**EXAMPLE**: I recall a company that spent millions on NIST-compliant AI development, only to fail a subsequent audit due to a critical security vulnerability. Their compliance checklist had ticked all the right boxes, but the underlying risk had been ignored.\n\n**TAKEAWAY**: To truly govern AI effectively, organizations must integrate regulatory compliance with robust risk management and security protocols. Anything less is a ticking time bomb.\n\n**QUESTION**: Have you seen a similar gap between compliance and risk management in your own organization? What strategies have you employed to bridge this divide?",
+  "content": "**FFIEC Final Authentication Guidance: Why Your Risk Register Matters**\n\nMost risk registers fail before anyone calculates risk. They're often based on outdated assumptions or incomplete data. In my experience, this is particularly true when it comes to cybersecurity risks.\n\nThe FFIEC's updated Final Authentication Guidance highlights the agencies' evolving expectations for customer authentication and security controls in the online environment. This guidance affects financial institutions directly, but its broader implications for risk management are more nuanced.\n\nWhat most people misunderstand is that these guidelines aren't just about technical controls; they're about the business processes that drive risk. In other words, it's not just about implementing multi-factor authentication (MFA) or encryption, but also about ensuring that your risk register accurately captures the residual risk associated with online transactions.\n\nI've observed a pattern where financial institutions focus on ticking the compliance boxes, rather than genuinely assessing the risk. For instance, they might implement MFA, but not consider how it affects their customer experience or operational resilience. The takeaway is that your risk register should be a living, breathing document that informs business decisions, not just a checkbox exercise. How do you ensure your risk register is more than just a compliance exercise?",
   "template_used": "insight",
   "template_name": "Insight Post",
   "inspired_by": {
-    "topic": "AI Governance in Europe: Why Compliance Isn\u2019t Enough",
-    "concept": "A GRC professional should care about this article because it highlights the importance of combining multiple frameworks, including NIST and ISO, with regulatory compliance to ensure effective AI governance.",
+    "topic": "FFIEC Final Authentication Guidance",
+    "concept": "A GRC professional should care about this because it updates the Agencies' expectations regarding customer authentication and security controls in the online environment, which affects financial institutions and has broader implications for risk management.",
     "domains": [
       "GRC",
-      "AI"
+      "Security"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-26T01:59:22.306056",
+  "generated_at": "2026-07-26T14:46:26.915082",
   "day_of_week": "Sunday",
   "type": "text_post",
   "copyright_safe": true
