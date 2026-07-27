@@ -1,25 +1,5 @@
 [
   {
-    "title": "Loop Engineering for AI Agents: Building Verifiable, Self-Correcting Coding Workflows",
-    "linkedin_post": "**A Humbling Lesson in Loop Engineering**\n\nEarly in my career, I worked on a high-stakes AI project where a small error in the code led to a catastrophic failure. The team and I spent countless hours debugging, but the more we looked at the code, the more we realized how easy it was to introduce new bugs. That's when I first encountered the concept of loop engineering \u2013 the practice of designing AI workflows that can detect and correct their own mistakes.\n\nI remember feeling frustrated and defeated, wondering how something so complex could be so fragile. But the experience stayed with me, and I began to study the principles of loop engineering. One key realization: a loop isn't just a series of steps; it's a self-aware system that can adapt and learn from its mistakes.\n\nFast forward to today, I apply this lesson to my own projects. By incorporating loop engineering principles, I can design workflows that are not only more efficient but also more reliable. And it's not just about the code \u2013 it's about empowering the team to learn from failures and iterate faster. \n\nWhat's the most valuable lesson you've learned from a project gone wrong? How do you apply that to your work today?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-22T18:12:20.920828"
-  },
-  {
-    "title": "Stop Your Legacy Infrastructure from Hijacking Your AI Agents",
-    "linkedin_post": "**Stop Your Legacy Infrastructure from Hijacking Your AI Agents: The \"Isolate, Inspect, Integrate\" Framework**\n\nAs we inject AI into our legacy infrastructure, we risk compromising the security and integrity of our systems. I've noticed that this is often due to the lack of proper controls, allowing malicious actors to exploit vulnerabilities in our outdated systems.\n\n**The \"Isolate, Inspect, Integrate\" Framework:**\n\n1. **Isolate Critical Components**: Separate your AI agents from the rest of your legacy infrastructure to prevent potential contamination. Consider implementing network segmentation or containerization to create a secure boundary around your AI components.\n2. **Inspect and Validate Data Flows**: Regularly inspect data flows between your AI agents and the rest of the system to detect and prevent data tampering or exfiltration. This includes monitoring for unauthorized access, data encryption, and data validation.\n3. **Integrate with Secure APIs**: Ensure that any integrations between your AI agents and the rest of the system use secure APIs that authenticate and authorize requests. This includes implementing OAuth, JWT, or other authentication mechanisms to prevent unauthorized access.\n\n**Application:**\n\nWhenever I'm introducing a new AI agent into a legacy system, I start with these questions: What are the potential risks of integration? Have I isolated the critical components? Can I inspect and validate data flows to ensure security?\n\n**Takeaway:** By applying the \"Isolate, Inspect, Integrate\" framework, you can prevent your legacy infrastructure from hijacking your AI agents and ensure the security and integrity of your systems.\n\n**Save this framework for your next AI-infused legacy system integration project.**",
-    "domains": [
-      "Security",
-      "Cloud",
-      "AI"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-06-23T02:14:31.936200"
-  },
-  {
     "title": "Court rules SAVE database illegal, orders it dismantled",
     "linkedin_post": "**A Pattern I Keep Noticing: Overlooking the Data Owner Role in SAVE**\n\nOne mistake I see repeatedly in organizations implementing System of Assurance for Value and Efficiency (SAVE) databases is neglecting to define and assign the data owner for sensitive information. This oversight can lead to a range of issues.\n\n**Consequences:**\n\n\u2022 **Lack of accountability**: Without a designated data owner, it's unclear who is responsible for the accuracy and security of the data, leading to finger-pointing and inaction when errors occur.\n\u2022 **Insufficient data governance**: The absence of a data owner means that data policies and procedures may not be properly implemented, putting the organization at risk of non-compliance or data breaches.\n\u2022 **Ineffective risk mitigation**: Without a clear understanding of data ownership, organizations may struggle to identify and mitigate risks associated with sensitive information.\n\n**Solution:**\n\nTo avoid this mistake, organizations should explicitly define and assign a data owner for each SAVE database, ensuring they have the necessary authority and resources to manage the data. This includes establishing clear data management policies, procedures, and controls to ensure the data is accurate, secure, and compliant.\n\n**Have you seen this mistake in other organizations implementing SAVE databases?**",
     "domains": [
@@ -1823,5 +1803,23 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-07-26T14:55:46.454746"
+  },
+  {
+    "title": "10 Open-Weight Model Deployment Concepts Every MLOps Engineer Must Know",
+    "linkedin_post": "Everyone's discussing the rise of open-weight models in machine learning. But the more interesting question is: what does this trend mean for AI governance and deployment in our organizations?\n\nIn my experience, deploying open-weight models can be a double-edged sword. On one hand, it enables greater model transparency and auditability. On the other hand, it increases the risk of model tampering and bias. \n\nTo mitigate these risks, DevSecOps professionals need to focus on three key concepts:\n\n* Model validation: ensuring that models are accurate and fair, not just in development, but also in production.\n* Model monitoring: regularly checking for signs of model drift, bias, or tampering in real-time.\n* Model versioning: keeping track of different model iterations and their respective performance, to easily roll back to a previous version if needed.\n\nThese concepts are essential for maintaining trust in AI-driven decision-making and preventing reputational damage. Organizations should prioritize model governance and deployment, rather than just pushing models into production.\n\nWhat's the future of AI governance, when models are increasingly open and transparent? Will we see the emergence of new regulations or standards for AI deployment, or will industry leaders take the lead in setting best practices?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-07-27T01:54:04.986590"
+  },
+  {
+    "title": "The seams are where the system lives",
+    "linkedin_post": "**The Seams are Where the System Lives**\n\nEarly in my career, I was tasked with leading a product launch that involved integrating multiple systems. We were excited to bring a new product to market, but the integration process was slow and painful. Our team spent countless hours debugging and tweaking, only to find that the issues were always hidden in the seams \u2013 the interfaces between our product and the other systems.\n\nI remember feeling frustrated and stuck, wondering why we couldn't just \"make it work\" without so much hassle. But one of my colleagues, a seasoned engineer, took me aside and explained that the seams are where the system lives. He showed me how the interfaces between systems are where the complexity and magic happen, and that's where we needed to focus our attention.\n\nThat realization changed everything for me. Instead of trying to force our systems to fit together, we began to design and test the seams intentionally. It was a game-changer, not because it was revolutionary, but because it was a fundamental shift in how we approached product development.\n\nToday, I still believe that the seams are where the system lives. How about you? What lessons have you learned about the importance of the seams in product development?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-07-27T01:55:37.924473"
   }
 ]
