@@ -1,17 +1,18 @@
 {
-  "content": "**A Pattern I Keep Noticing: Overlooking the Chevron Doctrine**\n\nOne mistake I see repeatedly in federal agency compliance is a failure to account for the Chevron doctrine when interpreting regulations. In my experience, this oversight can have significant consequences for compliance officers.\n\n**What's the mistake?**\n\nThe Chevron doctrine, established in the 1984 Supreme Court case Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., provides that if a statute is ambiguous, courts must defer to the agency's interpretation of the law. This doctrine is crucial in federal agency compliance, as it affects the way regulations are applied and enforced.\n\n**Consequences of overlooking Chevron:**\n\n\u2022 **Lack of clarity**: Without considering Chevron, compliance officers may struggle to understand the agency's interpretation of the law, leading to inconsistent application and increased risk of non-compliance.\n\u2022 **Increased litigation risk**: Courts may rule against the agency if they find that the interpretation was not justified, resulting in costly and time-consuming litigation.\n\u2022 **Ineffective compliance programs**: Compliance officers may design programs that fail to account for the agency's interpretation, rendering them ineffective in preventing and detecting non-compliance.\n\n**How to avoid or fix it?**\n\nTo avoid this mistake, compliance officers should familiarize themselves with the Chevron doctrine and its implications on federal agency compliance. This includes considering the agency's interpretation of the law when designing and implementing compliance programs.\n\n**Have you seen this mistake in your work? Have you found ways to effectively apply the Chevron doctrine in your compliance programs?**",
+  "content": "**One mistake I see repeatedly in critical infrastructure security compliance...**\n\nIn my experience, one of the most common errors I see in organizations seeking to comply with Canada's Bill C-8 is misclassifying their incident reporting requirements. Specifically, many companies assume that the 72-hour reporting rule applies only to security incidents, whereas it actually applies to **all** types of critical infrastructure security incidents, including non-security-related events like IT outages or environmental breaches.\n\n**Consequences of this mistake:**\n\n\u2022 Inaccurate reporting: Failing to report all incidents within the 72-hour window can lead to inaccurate reporting and a lack of transparency, which can damage trust with regulatory bodies and the public.\n\u2022 Inadequate risk management: Misclassifying incident types can lead to inadequate risk management and mitigation strategies, putting the organization and its stakeholders at greater risk.\n\u2022 Regulatory non-compliance: Non-compliance with the 72-hour reporting rule can result in significant fines and reputational damage.\n\n**Solution:** To avoid this mistake, organizations should take a comprehensive approach to incident classification, involving both security and non-security incident types. This will ensure accurate reporting, effective risk management, and compliance with regulatory requirements.\n\n**Have you seen this mistake crop up in your own organization? How do you ensure accurate incident reporting under Bill C-8?**",
   "template_used": "mistake",
   "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "SCOTUS slaughtered federal agency independence: What it means for compliance officers",
-    "concept": "A GRC professional should care about this because it highlights the potential impact of SCOTUS rulings on federal agency independence and regulatory compliance.",
+    "topic": "Canada\u2019s Bill C-8 is here: Why the 72-hour reporting rule will redefine critical infrastructure security",
+    "concept": "A GRC professional should care about this because it highlights the importance of timely incident reporting and compliance with new regulations in the critical infrastructure sector.",
     "domains": [
       "GRC",
-      "Compliance"
+      "Security",
+      "Cloud"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-07-31T01:57:10.934128",
+  "generated_at": "2026-07-31T15:45:40.702682",
   "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true
