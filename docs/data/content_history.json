@@ -1,14 +1,5 @@
 [
   {
-    "title": "Weekly Metasploit Update: Modules for Audiobookshelf, LiteLLM, Next.js, Dalfox and more",
-    "linkedin_post": "**\"A Security Lesson from the Dark Ages of DevSecOps\"**\n\nEarly in my career, around 2010, I was tasked with integrating security into a web development project. The codebase was already a mess, and security was an afterthought. My team's solution was to bolt on a few security tools at the end of the development cycle, hoping to catch any obvious issues. It was a reactive approach that left us vulnerable to attacks.\n\n**Chaos Ensued**\n\nI remember the day we got hit by a SQL injection attack. The whole system was compromised, and we had to go into crisis mode. It was a wake-up call for me. I realized that security couldn't be an afterthought; it had to be baked into the development process.\n\n**A Eureka Moment**\n\nThat's when I learned about Metasploit, a powerful tool for simulating attacks on web applications. I used it to test our own code and identify vulnerabilities before they could be exploited. It was a game-changer, but not just because of the tool itself \u2013 because of the mindset shift it forced me to adopt.\n\n**Today's Application**\n\nNow, I'm a firm believer in the importance of security testing in the development cycle. I've seen the devastating consequences of neglecting security, and I've also seen the benefits of proactive testing. But I'm curious \u2013 what lessons did you learn from your own security struggles? How do you ensure security is integrated into your development process?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-06-28T15:12:14.841357"
-  },
-  {
     "title": "DoD: Notice of Proposed Rulemaking on Privacy Training",
     "linkedin_post": "**The Data Protection Matrix: A Framework for Navigating the DoD's Notice of Proposed Rulemaking on Privacy Training**\n\n**Problem:** With the US Department of Defense's (DoD) Notice of Proposed Rulemaking on Privacy Training, organizations must ensure their employees are adequately trained to handle sensitive information. However, the sheer breadth of the regulations can be overwhelming, making it challenging to create effective training programs.\n\n**The Data Protection Matrix**\n\nI've found that the Data Protection Matrix is a valuable tool in navigating these complex regulations. The framework consists of five key steps:\n\n**Step 1: Data Classification**\nIdentify the types of data your organization handles, from Public to Confidential. This classification will determine the level of protection required and inform your training programs.\n\n**Step 2: Access Control**\nDetermine who has access to sensitive data, including employees, contractors, and third-party vendors. Establish clear roles and responsibilities to prevent unauthorized access.\n\n**Step 3: Data Anonymization**\nAnalyze your data collection processes to ensure you're not collecting unnecessary information. Implement data minimization techniques to reduce the risk of data breaches.\n\n**Step 4: Data Storage and Transmission**\nEnsure that sensitive data is stored and transmitted securely, using encryption and secure protocols. Regularly review and update your data storage and transmission practices.\n\n**Step 5: Incident Response**\nDevelop a comprehensive incident response plan in case of a data breach. This includes procedures for containing the breach, notifying affected parties, and conducting a post-incident review.\n\n**Application:** Whenever I'm developing a training program for a new employee, I start with these questions: \"What types of data will they be handling? Who will have access to this data? How will we ensure that sensitive information is stored and transmitted securely?\" By asking these questions, I can create targeted training programs that address the specific needs of our organization.\n\n**Save this framework for your next training program.**",
     "domains": [
@@ -1821,5 +1812,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-01T02:06:02.694540"
+  },
+  {
+    "title": "Jakob\u2019s law: How to apply it as AI collapses surfaces into one chat box",
+    "linkedin_post": "**Lessons from the Early Days of User Experience**\n\nEarly in my career, I worked on a project where we were building a complex online platform for financial services. Our team was tasked with designing a dashboard that would allow users to navigate through multiple pages, each containing unique features and functionality.\n\nI struggled with the challenge of balancing complexity and simplicity. Users would often get lost in the numerous tabs and sections, and our usability tests revealed a high drop-off rate. It was clear that our design was not meeting the needs of our users.\n\nOne day, I stumbled upon Jakob's Law, which states that users only spend a maximum of 2-3 seconds on a website or application before deciding whether to stay or leave. This realization was a turning point for me. I began to think about how we could collapse surfaces, using AI to streamline our design and present users with a single, intuitive interface.\n\nToday, I apply this lesson by prioritizing simplicity and transparency in my work. I use AI-powered tools to analyze user behavior and simplify complex processes, always keeping Jakob's Law in mind. What lessons did you learn about simplifying user experiences, and how do you apply them in your work?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-01T15:07:22.193399"
   }
 ]
