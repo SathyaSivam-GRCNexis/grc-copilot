@@ -1,32 +1,5 @@
 [
   {
-    "title": "What the post-quantum executive order really demands of CISOs",
-    "linkedin_post": "**A Quantum Shift in Cloud Security**\n\nI used to think that cloud security was all about perimeter defense \u2013 keeping the bad guys out with firewalls and access controls. But then I learned that the post-quantum executive order has changed the game.\n\nIn my experience, the order's focus on quantum-resistant cryptography means that CISOs must now prioritize cryptographic agility \u2013 the ability to quickly adapt to new cryptographic standards and algorithms. This is a seismic shift, as traditional cryptographic controls are no longer sufficient to protect against quantum computers.\n\n**Lesson:** The career insight here is that cloud security is no longer just about defense, but also about adaptability. CISOs must now invest in cryptographic agility, which demands a new set of skills and technologies.\n\n**Framework:** To apply this lesson, I recommend using the \"C.A.R.E.\" framework:\n\n1. **C**ryptographic agility: Assess your organization's ability to adapt to new cryptographic standards and algorithms.\n2. **A**uthenticity: Verify the authenticity of cryptographic keys and certificates.\n3. **R**esilience: Build redundancy and failover into your cryptographic infrastructure.\n4. **E**xchange: Establish relationships with vendors and partners who can provide quantum-resistant cryptography.\n\n**Advice:** For junior CISOs, focus on building a strong team with diverse cryptographic expertise. For senior CISOs, invest in cryptographic agility platforms and technologies that can help your organization adapt quickly.\n\n**What career lesson took you years to learn?**",
-    "domains": [
-      "Cloud"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-06-29T17:03:40.078476"
-  },
-  {
-    "title": "Modernizing Global Vulnerability Standards For The Age Of AI",
-    "linkedin_post": "**One mistake I see repeatedly in modernizing global vulnerability standards for AI**\n\nA pattern I keep noticing when organizations attempt to integrate AI into their vulnerability management frameworks is a failure to account for the unique characteristics of AI-driven vulnerabilities. Specifically, many teams focus solely on updating their existing vulnerability scanning tools to detect AI-related threats, without considering the fundamentally different nature of AI-driven risks.\n\n**The mistake: treating AI-driven vulnerabilities as code-based threats**\n\nWhen updating their frameworks, teams often rely on existing code-based vulnerability scanning tools, assuming these will suffice for detecting AI-driven threats. However, AI-driven vulnerabilities are often the result of data poisoning, adversarial attacks, or other non-code-based exploits. This leads to a significant blind spot in their vulnerability management.\n\n**Consequences:**\n\n\u2022 **Insufficient coverage**: AI-driven vulnerabilities are not detected, allowing these threats to go unaddressed.\n\u2022 **False positives**: AI-driven vulnerabilities are misclassified as code-based threats, leading to unnecessary remediation efforts.\n\u2022 **Increased risk**: Unaddressed AI-driven vulnerabilities create an opportunity for adversaries to exploit these weaknesses.\n\n**To avoid this mistake, organizations should develop a separate framework for detecting and addressing AI-driven vulnerabilities, incorporating data-driven approaches and AI-specific threat models.**\n\nHave you seen similar blind spots in your organization's vulnerability management efforts?",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-06-29T17:05:13.404037"
-  },
-  {
-    "title": "Companies keep bolting AI onto their products, and the security bill is coming due",
-    "linkedin_post": "**The AI Security Loophole: Why Rapid Adoption is a Risk Worth Assessing**\n\nEveryone's talking about AI, and how it's being integrated into every product under the sun. But the more interesting question is: are companies adequately addressing the security implications of these AI-powered features?\n\nIn my experience, the answer is often no. As AI is bolted onto products, the complexity of the underlying systems increases exponentially. This creates a perfect storm of potential vulnerabilities, ripe for exploitation by hackers. The security bill is coming due, and GRC professionals need to be prepared to assess these risks in their risk management strategies.\n\nHere are three key areas of concern:\n\n* **Lack of transparency**: With AI-powered features, it's often unclear what data is being used, how it's being processed, and what risks are associated with it.\n* **Insufficient testing**: The rapid pace of AI development means that products are often being released without sufficient testing for security vulnerabilities.\n* **Inadequate training**: As AI becomes more ubiquitous, there's a growing need for professionals to understand how to identify and mitigate AI-related security risks.\n\nSo, what should organizations do? They should prioritize a thorough risk assessment, taking into account the unique security implications of AI-powered features. This will require a fundamental shift in how GRC teams approach risk management.\n\nWhat does this mean for the future of product development? Will we see a backlash against AI-powered features, as security concerns outweigh potential benefits? Or will companies find ways to integrate AI securely, and reap the rewards of innovation?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-06-29T17:08:20.795731"
-  },
-  {
     "title": "Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer",
     "linkedin_post": "**A Harsh Lesson in DevSecOps**\n\nEarly in my career, I was tasked with deploying a Python application to production. I was given a choice: use an existing CI/CD pipeline or write a custom script. I chose the latter, confident in my code's simplicity and my own troubleshooting skills. But my script was hijacked by an info-stealer, exposing our company's sensitive data.\n\nI was devastated. How could I have been so reckless? I spent countless hours reviewing my code, questioning every decision. The realization hit me: security isn't just about code quality; it's about the entire development process. I had ignored the security protocols and best practices that I knew existed.\n\nThe lesson I learned that day was the importance of integrating security into every stage of development. It's not just about writing secure code; it's about having a culture that prioritizes security. Today, I make sure to apply this lesson in every project I work on, by incorporating security checks and tasks into our CI/CD pipelines.\n\nWhat lessons have you learned the hard way in DevSecOps?",
     "domains": [
@@ -1821,5 +1794,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-02T02:02:14.949359"
+  },
+  {
+    "title": "AI demands a new risk operating model. Are risk leaders up to the task?",
+    "linkedin_post": "**A Pattern I Keep Noticing: Misclassifying AI-Driven Risks as \"Opportunity Risks\"**\n\nOne mistake I see repeatedly in AI risk management is treating AI-driven risks as simple \"opportunity risks.\" This is a critical misclassification that can lead to costly consequences.\n\n**What the mistake actually is:**\nRisk leaders are overlooking the inherent uncertainty and complexity of AI-driven risks, failing to recognize the need for a fundamentally different risk operating model.\n\n**Consequences:**\n\u2022 **Inadequate risk assessment**: AI-driven risks are often assessed using traditional risk frameworks, which are ill-equipped to capture the nuances of AI-related uncertainty.\n\u2022 **Ineffective mitigation strategies**: Without a proper understanding of AI-driven risks, mitigation strategies may focus on reducing the likelihood of AI failures, rather than addressing the systemic risks associated with AI adoption.\n\u2022 **Insufficient budget allocation**: AI-driven risks may be underfunded or overlooked in budget allocations, leading to inadequate resources for risk mitigation and management.\n\n**How to avoid or fix it:**\nTo address AI-driven risks effectively, risk leaders must adopt a new risk operating model that acknowledges the inherent uncertainty and complexity of AI. This requires a more nuanced understanding of AI-related risks and the development of tailored risk assessment and mitigation strategies.\n\nHave others seen this pattern in their organizations? How have they addressed it?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-02T14:55:04.636347"
+  },
+  {
+    "title": "Closed Source, Open Source Or Open Weights, Which Is Winning The AI Race?",
+    "linkedin_post": "**The AI Development Dilemma: Closed Source, Open Source, or Open Weights?**\n\nEveryone's talking about the AI development landscape, but the more interesting question is: what does it mean for your organization?\n\nIn my experience, the closed-source vs. open-source debate is a red herring. The real issue is what I call \"Open Weights\" \u2013 the increasing use of open APIs, data, and models that create a new dynamic in AI development. This shift is driven by companies like Meta, Google, and Microsoft, which are making their AI tools and services more accessible, but also more opaque.\n\nProduct professionals should focus on the implications of Open Weights for data governance, security, and compliance. For example:\n\n* Open APIs create new vulnerabilities for data breaches, but also offer opportunities for improved data integration and analytics.\n* Open models can accelerate innovation, but also increase the risk of model drift and bias.\n* Open data can improve transparency, but also create new regulatory challenges.\n\nSo, what should organizations do? They should prioritize understanding the Open Weights landscape and developing strategies to manage the associated risks and opportunities. This includes investing in data governance, model explainability, and API security.\n\nAs we move forward, I predict that Open Weights will become the new norm in AI development, forcing companies to adapt their approaches to stay competitive. But will regulators keep pace, or will we see a new wave of AI-related regulations?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-02T14:58:11.764759"
+  },
+  {
+    "title": "Design.md: the one standard file carries your visual identity, for humans and agents",
+    "linkedin_post": "**The Struggle to Unify Visual Identity**\n\nEarly in my career, I was working on a DevSecOps project where different teams were using a variety of design files to create their application's visual identity. Each team had their own set of guidelines, and it was getting increasingly difficult to maintain consistency across the board. As a result, our application's user interface looked disjointed and unprofessional.\n\nI remember spending hours trying to sync up the design files, only to realize that the changes I made in one file would contradict the guidelines in another. It was like trying to solve a puzzle with missing pieces. I felt like I was fighting a losing battle.\n\nOne day, I discovered the concept of a design.md file \u2013 a single standard file that carries your visual identity across all platforms, for both humans and agents. It was like the missing piece I had been searching for. I realized that this file was not just a tool, but a way to streamline our design process and ensure consistency.\n\nToday, I apply this lesson by advocating for design.md files in all my projects. It's saved us time, reduced friction, and most importantly, improved the overall user experience. Now, I'd love to hear from others: what design challenges have you faced, and how did you overcome them?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-02T14:59:45.189402"
   }
 ]
