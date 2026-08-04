@@ -1,33 +1,5 @@
 [
   {
-    "title": "Vulnerability Prioritization Is Missing the AI-Era Point",
-    "linkedin_post": "**Vulnerability Prioritization: The AI-Era Blind Spot**\n\nEveryone's talking about prioritizing vulnerabilities in software development, but I've noticed that the conversation often overlooks the elephant in the room: the changing nature of threats in the AI era. The more interesting question is: are we prioritizing vulnerabilities based on the right criteria for this new landscape?\n\nIn my experience, the traditional approach to vulnerability prioritization \u2013 focusing on exploitability, impact, and likelihood \u2013 no longer holds up when AI-powered attacks come into play. These attacks can adapt and evolve at breakneck speed, making it difficult to predict and prepare for the next threat. Moreover, the reliance on static vulnerability assessments can leave organizations blind to the dynamic risks posed by AI-driven exploits.\n\nHere's what DevSecOps professionals should focus on: **incorporating AI-driven risk modeling** into their prioritization frameworks. This means moving beyond traditional metrics and incorporating machine learning algorithms that can analyze complex threat scenarios and predict potential attack vectors. By doing so, organizations can better anticipate and mitigate the risks posed by AI-powered threats, rather than just reacting to the latest vulnerability patch.\n\nWhat if AI-powered attacks become the new normal, and traditional vulnerability prioritization frameworks become obsolete?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-02T02:36:45.231505"
-  },
-  {
-    "title": "From Audit Dread to Audit Ready: The Zero Trust Way",
-    "linkedin_post": "**From Audit Dread to Audit Ready: The Zero Trust Way**\n\nEveryone's talking about the changing audit landscape. But the more interesting question is: how can organizations avoid becoming audit dreading liabilities by adopting Zero Trust principles?\n\nIn my experience, companies that struggle with audits often have siloed IT environments and a lack of visibility into user and system access. This makes it difficult to prove compliance with ever-evolving regulations. Zero Trust, on the other hand, assumes that no user or system is trustworthy by default. By implementing Zero Trust, organizations can reduce audit risks by:\n\n1. **Limiting lateral movement**: Zero Trust architecture restricts access to sensitive data and systems, making it harder for threats to spread.\n2. **Providing continuous monitoring**: Zero Trust requires real-time monitoring of user and system activity, helping organizations quickly identify and respond to security incidents.\n3. **Enforcing least privilege access**: Zero Trust ensures that users and systems only have access to the resources they need to perform their tasks, reducing the attack surface.\n\nThe takeaway is clear: organizations should prioritize Zero Trust adoption to become audit ready. By doing so, they'll not only reduce audit risks but also improve their overall security posture. What does this mean for the future of compliance and security? Will Zero Trust become the new standard for audit readiness?",
-    "domains": [
-      "GRC",
-      "Cloud"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-02T15:29:58.624218"
-  },
-  {
-    "title": "Unpatched Argo CD Repo-Server Flaw Could Let Attackers Take Over Kubernetes Clusters",
-    "linkedin_post": "**Kubernetes Security: Beyond the Headlines**\n\nEveryone is discussing the recent discovery of an unpatched flaw in the Argo CD repository-server that could grant attackers control over Kubernetes clusters. While this news might grab attention, the more interesting question is: how many organizations will take this opportunity to reassess their DevSecOps practices?\n\nIn my experience, security vulnerabilities like this one often serve as a wake-up call for companies to reevaluate their risk management strategies. Here's what DevSecOps professionals should focus on:\n\n* **Regular security updates are crucial**: This vulnerability highlights the importance of keeping up with the latest security patches, not just for Argo CD but for all widely used tools in your Kubernetes ecosystem.\n* **Risk assessments should be ongoing**: Companies should conduct regular security audits to identify potential vulnerabilities and prioritize remediation efforts.\n* **DevSecOps practices must be ingrained**: Security should be an integral part of the development process, not an afterthought. This means developers, security teams, and operations teams must collaborate closely to prevent similar issues in the future.\n\nTakeaway: Organizations must prioritize security updates and risk assessments to prevent similar vulnerabilities from compromising their Kubernetes clusters.\n\nWhat will happen if we see a surge in Kubernetes security breaches in the coming months, and how will this impact the DevSecOps industry as a whole?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-02T15:39:14.918883"
-  },
-  {
     "title": "AI in compliance: Are we still driving, or just riding shotgun?",
     "linkedin_post": "**Are we still driving, or just riding shotgun? A common mistake in AI-driven compliance**\n\nOne mistake I see repeatedly in organizations integrating AI into their compliance frameworks is treating AI as a passive tool rather than an active partner. Specifically, I've noticed that many teams are relying too heavily on AI-powered \"risk scoring\" models without actively reviewing or challenging the underlying data and algorithms.\n\n**The Consequences**\n\n\u2022 **Over-reliance on flawed data**: AI models are only as good as the data they're trained on. If the data is biased, incomplete, or inaccurate, the AI model will reflect these flaws, potentially leading to false positives or false negatives.\n\u2022 **Lack of transparency and explainability**: AI models can be complex and opaque, making it difficult to understand why a particular risk was scored a certain way. This lack of transparency can lead to a lack of trust in the model's output.\n\u2022 **Inadequate human oversight**: By relying solely on AI, organizations may not be adequately reviewing and challenging the model's output, potentially missing important compliance issues.\n\n**The Solution**\n\nTo avoid this mistake, I recommend that organizations take a more active role in their AI-driven compliance frameworks. This means regularly reviewing and validating the data and algorithms used in AI-powered risk scoring models, as well as actively challenging and verifying the output of these models.\n\nHave you seen organizations over-relying on AI in their compliance frameworks, without adequate human oversight?",
     "domains": [
@@ -1822,5 +1794,34 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-04T01:56:36.175028"
+  },
+  {
+    "title": "The inference gap: Auditing the AI risk no framework requires you to see",
+    "linkedin_post": "**The Inference Gap: A Mental Model for Auditing AI Risk**\n\nAs we increasingly rely on AI to make decisions, it's essential to acknowledge a critical blind spot: the inference gap. This gap occurs when AI systems produce outputs that seem to make sense, but we're unaware of the assumptions, biases, or incomplete data that led to those outputs.\n\n**The Inference Gap Framework: \"AI Transparency Audit\"**\n\nTo bridge this gap, I recommend the AI Transparency Audit framework, which consists of five steps:\n\n**Step 1: Identify the Inference Path**\nMap the sequence of events and data sources that led to the AI output. This involves understanding the algorithm, data inputs, and any assumptions made along the way.\n\n**Step 2: Evaluate the Data Quality**\nAssess the accuracy, completeness, and relevance of the data used to train the AI model. Ask: Are there any biases or gaps in the data that could impact the output?\n\n**Step 3: Check for Assumptions and Biases**\nExamine the model's architecture and any hidden assumptions or biases that may have been baked in. Consider: Are there any areas where the model may be making incorrect or incomplete inferences?\n\n**Step 4: Review Model Interpretability**\nEvaluate the extent to which the model's decision-making process can be understood and explained. Ask: Can we trust the model's output, or are there too many unknowns?\n\n**Step 5: Consider Alternative Perspectives**\nChallenge the AI output by considering alternative scenarios, data sources, or perspectives. This helps to identify potential blind spots and areas for improvement.\n\n**Whenever I'm evaluating an AI-powered decision, I start with these questions:**\n\n- What assumptions or biases may be embedded in the model?\n- Are there any data quality issues that could impact the output?\n- Can I trust the model's decision-making process, or are there too many unknowns?\n- What alternative perspectives or scenarios should I consider?\n\n**Save this framework for your next AI-powered decision-making scenario and bridge the inference gap.**",
+    "domains": [
+      "GRC",
+      "AI",
+      "Cloud"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-08-04T15:50:14.803425"
+  },
+  {
+    "title": "Rapid7 Analysis: KindaRails2Shell (CVE-2026-66066)",
+    "linkedin_post": "Everyone's talking about the latest Ruby on Rails vulnerability, but the more interesting question is: how can we use this as a catalyst for better DevSecOps practices?\n\nIn my experience, vulnerabilities like CVE-2026-66066 are a symptom of a larger issue \u2013 the lack of integration between security and development teams. While it's essential to patch the vulnerability, it's equally important to address the root cause: inadequate security testing and code reviews.\n\nHere are a few key takeaways:\n1. **Shift left**: Security should be integrated into the development process, not treated as a separate phase. This means involving security professionals in code reviews and testing from the outset.\n2. **Automate, automate, automate**: By leveraging automation tools, organizations can accelerate security testing and reduce the likelihood of vulnerabilities slipping through the cracks.\n3. **Focus on risk management**: Instead of just patching the vulnerability, GRC professionals should focus on identifying and mitigating the associated risks. This involves assessing the vulnerability's business impact and implementing controls to minimize its effects.\n\nSo, what should organizations do? They should treat CVE-2026-66066 as an opportunity to re-examine their DevSecOps practices and implement more effective security measures. Will this be a turning point in the industry's approach to security, or just another patching exercise?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-04T15:59:35.226691"
+  },
+  {
+    "title": "Agentic AI in Action \u2014 Part 26 -Candidate Screening, Reimagined. A Cortex AISQL Pipeline for HR",
+    "linkedin_post": "**Candidate Screening, Reimagined: A Personal Story**\n\nEarly in my career, I spent countless hours reviewing resumes, conducting interviews, and still struggled to find top talent. The process felt hit-or-miss, and I often found myself second-guessing my decisions. X years ago, I was tasked with screening candidates for a critical product launch. The stakes were high, and I knew I had to do better.\n\nI was introduced to an AI-powered pipeline that analyzed resumes, scored candidates based on our company's specific requirements, and even predicted their likelihood of success in the role. At first, I was skeptical, but as I worked with the system, I saw firsthand how it could help me identify top performers and reduce the noise.\n\nThe realization hit me: I was no longer relying solely on intuition to make hiring decisions. The AI was augmenting my abilities, freeing me up to focus on what mattered most \u2013 building relationships with candidates and understanding their motivations. Today, I apply this lesson to every aspect of my work, recognizing that AI can be a powerful tool for augmenting human judgment, not replacing it.\n\nWhat lessons have you learned about AI and human collaboration in your own work?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-04T16:01:08.690110"
   }
 ]
