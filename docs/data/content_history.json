@@ -1,51 +1,5 @@
 [
   {
-    "title": "AI in compliance: Are we still driving, or just riding shotgun?",
-    "linkedin_post": "**Are we still driving, or just riding shotgun? A common mistake in AI-driven compliance**\n\nOne mistake I see repeatedly in organizations integrating AI into their compliance frameworks is treating AI as a passive tool rather than an active partner. Specifically, I've noticed that many teams are relying too heavily on AI-powered \"risk scoring\" models without actively reviewing or challenging the underlying data and algorithms.\n\n**The Consequences**\n\n\u2022 **Over-reliance on flawed data**: AI models are only as good as the data they're trained on. If the data is biased, incomplete, or inaccurate, the AI model will reflect these flaws, potentially leading to false positives or false negatives.\n\u2022 **Lack of transparency and explainability**: AI models can be complex and opaque, making it difficult to understand why a particular risk was scored a certain way. This lack of transparency can lead to a lack of trust in the model's output.\n\u2022 **Inadequate human oversight**: By relying solely on AI, organizations may not be adequately reviewing and challenging the model's output, potentially missing important compliance issues.\n\n**The Solution**\n\nTo avoid this mistake, I recommend that organizations take a more active role in their AI-driven compliance frameworks. This means regularly reviewing and validating the data and algorithms used in AI-powered risk scoring models, as well as actively challenging and verifying the output of these models.\n\nHave you seen organizations over-relying on AI in their compliance frameworks, without adequate human oversight?",
-    "domains": [
-      "GRC",
-      "AI"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-07-03T01:59:26.597742"
-  },
-  {
-    "title": "SharePoint RCE CVE-2026-45659 Added to CISA KEV After Active Exploitation",
-    "linkedin_post": "**When Expertise Becomes a Liability**\n\nI used to think that mastering technical skills in security was the ultimate goal. The more vulnerabilities I could patch, the stronger our defenses would be. But then I learned that even with expertise, the biggest risks often lie in the gaps between systems, not in the vulnerabilities themselves.\n\nLESSON: The Career Insight\nIn my experience, the most effective security professionals are those who understand not just the technical controls but also the organizational and social dynamics that can compromise even the most secure systems. They recognize that security is a people problem as much as a technology problem.\n\nFRAMEWORK: A mental model to apply\nThe \"Three Rings of Control\" model can help security professionals prioritize their efforts: (1) technical controls (e.g., patching, firewalls), (2) process controls (e.g., access management, incident response), and (3) cultural controls (e.g., awareness training, phishing simulations). By understanding the interplay between these three rings, security teams can develop more comprehensive strategies to mitigate risks.\n\nADVICE\nFor new security professionals, focus on building a broad understanding of the technical, process, and cultural controls that contribute to a secure environment. For experienced professionals, consider how your expertise might be creating blind spots in your organization's security posture. \n\nWhat career lesson took you years to learn?",
-    "domains": [
-      "Security"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-03T02:04:04.367715"
-  },
-  {
-    "title": "EFF and Allies: X\u2019s FTC Petition to Waive Privacy Violation Order Should be Rejected",
-    "linkedin_post": "**The \"Red Flag\" Framework: A Cautionary Approach to Evaluating FTC Petitions**\n\nAs an industry observer, I've noticed a concerning trend of companies seeking leniency on privacy violations through regulatory waivers. The FTC's recent petition by EFF and allies to reject X's waiver request highlights the need for a structured approach to evaluating such petitions.\n\n**The \"Red Flag\" Framework:**\n\n1. **Identify the \"Get Out of Jail Free\" Card**: Look for language that suggests the company is seeking a waiver as a means of avoiding accountability for past transgressions. Be wary of claims that the company is taking proactive steps to rectify the issue when, in reality, they're trying to sidestep responsibility.\n2. **Assess the Severity of the Violation**: Evaluate the scope and impact of the privacy violation. Has the company exposed sensitive user data, or has it simply failed to comply with a minor regulatory requirement? A more severe violation warrants a more robust response from the FTC.\n3. **Determine the Company's Commitment to Compliance**: Examine the company's track record of adhering to data protection regulations. Have they demonstrated a history of non-compliance, or are they genuinely committed to reforming their practices? A pattern of non-compliance raises red flags.\n4. **Consider the Broader Industry Implications**: Think about the precedent that rejecting or granting the waiver would set for other companies in the industry. Would it create an uneven playing field, or would it reinforce the importance of data protection?\n5. **Evaluate the FTC's Priorities**: Consider the FTC's stated priorities and whether this petition aligns with their goals. Are they focusing on protecting consumer interests, or are they accommodating special interests?\n\n**Whenever I see a company trying to circumvent regulatory accountability, I start with these questions.**\n\nSave this framework for your next privacy petition review.",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-03T02:07:11.418383"
-  },
-  {
-    "title": "How to measure the customer experience as AI scales",
-    "linkedin_post": "**Measuring the Unmeasurable: A Personal Journey**\n\nEarly in my career, I was tasked with scaling a product that relied heavily on AI-driven recommendations. As the user base grew, so did the complexity of our customer experience. I struggled to understand why certain features resonated with users, while others fell flat.\n\nI recall a particular instance where we launched a new feature that was supposed to simplify the user interface. However, user feedback was lukewarm at best, and our metrics showed a significant drop in engagement. I was stumped. How could we improve the experience when our users weren't telling us what they wanted?\n\nOne evening, I stumbled upon a conversation with a user who shared a poignant insight: \"Your new feature saved me time, but it also made me feel like I was losing control.\" This moment clicked for me \u2013 I realized that our customers weren't just interacting with our product, they were investing their emotions and trust.\n\nToday, I make sure to prioritize empathy in our product development. We use a framework that accounts for both functional metrics (e.g., time saved) and emotional metrics (e.g., sense of control). By doing so, we've been able to create a more holistic understanding of our customer experience.\n\nWhat lessons have you learned about measuring the customer experience as your product has scaled?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-03T02:10:17.926363"
-  },
-  {
-    "title": "GDPR 10 years on: Data compliance now front of mind",
-    "linkedin_post": "**A Career Lesson: Privacy First, Always**\n\nI used to think that data protection was a mere afterthought, something to consider only after the product launch. But then I learned that the General Data Protection Regulation (GDPR) was more than just a compliance hurdle \u2013 it was a fundamental shift in how businesses approach customer relationships.\n\n10 years on, GDPR has made data compliance a front-of-mind concern for organizations. The lesson I've taken away is that **customer trust is the ultimate competitive advantage**. By prioritizing transparency and consent, businesses can build strong relationships that last, rather than relying on fleeting user engagement.\n\nThe framework I use to apply this lesson is the **TRUST framework**:\n\nT \u2013 Transparency: Clearly communicate data collection and usage\nR \u2013 Respect: Obtain explicit consent for data processing\nU \u2013 User-centric: Design products that prioritize user needs\nS \u2013 Security: Implement robust data protection measures\nT \u2013 Trust-building: Foster ongoing communication and accountability\n\nFor early-career professionals, this means **starting with a customer-centric mindset**. Consider how your product or service will impact users' data and design accordingly. For seasoned professionals, it means **embedding GDPR principles into your organization's DNA**. For leaders, it means **making TRUST a business imperative**. What career lesson took you years to learn?",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-03T15:35:17.763823"
-  },
-  {
     "title": "6 security settings every GitHub maintainer should enable this week",
     "linkedin_post": "**The GitHub Security Settings Everyone's Ignoring**\n\nEveryone's talking about the latest GitHub security breaches, but the more interesting question is: are maintainers doing enough to protect their repositories? \n\nIn my experience, many organizations overlook the importance of security settings in their GitHub repositories, which can leave them exposed to risks and non-compliant with regulatory requirements.\n\nSo, what should DevSecOps professionals actually focus on? Here are six critical security settings every GitHub maintainer should enable this week:\n\n1. **Code scanning**: Enable automated code scanning to detect vulnerabilities and prevent malicious code from entering your repository.\n2. **Secrets management**: Store sensitive information like API keys and credentials securely, and avoid hardcoding them in your code.\n3. **Branch protection**: Restrict who can push code to your main branch, and require pull requests to be reviewed and approved before merging.\n\nBy enabling these security settings, organizations can significantly reduce the risk of security breaches and ensure their GitHub repositories are compliant with regulatory requirements. What's the biggest security setting you're neglecting in your GitHub repository?",
     "domains": [
@@ -1823,5 +1777,51 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-04T16:01:08.690110"
+  },
+  {
+    "title": "AI hallucinations and global business deals in PwC report highlight compliance risks",
+    "linkedin_post": "**A GRC Lesson from the Wild West of AI**\n\nI used to think that compliance was a straightforward process, a box-ticking exercise to ensure we're following the rules. But then I learned about AI hallucinations - when AI models generate false or misleading information. It's a problem that's not just limited to AI, but also to global business deals where data is exchanged across borders.\n\nThe PwC report highlighted how these hallucinations can lead to compliance risks, particularly in high-stakes transactions. I've seen it firsthand - a colleague's AI-generated report led to a costly misinterpretation of a contract clause. It was a wake-up call for our team: we can't rely solely on technology to ensure compliance.\n\n**Lesson:** In today's interconnected world, compliance is no longer just about checking boxes. It's about understanding the underlying data flows and potential biases. As professionals, we need to develop a \"Data Skeptic's Mindset\" - questioning assumptions, verifying facts, and being aware of the limitations of AI.\n\n**Advice:** For junior professionals, start by asking questions about the data used in reports and models. For experienced professionals, review your own team's processes to ensure they're not reliant on unverified data. And for leaders, prioritize a culture of data transparency and skepticism.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "GRC",
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-08-05T01:51:12.867260"
+  },
+  {
+    "title": "Developers: Beware of Ad Libraries that Betray Your Users\u2019 Location Privacy",
+    "linkedin_post": "**Beware of Ad Libraries that Betray Your Users\u2019 Location Privacy**\n\nOne pattern I keep noticing in development is the over-reliance on ad libraries that compromise user location privacy. It starts with a simple inclusion of a third-party library to facilitate targeted advertising, but often ends in a data breach or unauthorized tracking.\n\nThe mistake is including ad libraries that request location access without a clear understanding of the data they collect and how it's used. This can lead to a range of consequences, including:\n\n\u2022 **Location tracking**: Ad libraries may collect your users' location data, even when not explicitly requested.\n\u2022 **Data breaches**: Insecurely stored location data can be exploited by malicious actors, putting your users' trust at risk.\n\u2022 **Compliance issues**: Failing to disclose location data collection can lead to non-compliance with regulations like GDPR and CCPA.\n\nTo avoid this mistake, I recommend using ad libraries that prioritize transparency and user consent. When including location-based features, ensure that users are explicitly asked for permission and that the data collected is used solely for the intended purpose. By taking these steps, you can protect your users' location privacy and maintain their trust. Have you noticed similar issues with ad libraries in your projects?",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-05T01:57:23.775567"
+  },
+  {
+    "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+    "linkedin_post": "**Bypassing MFA: A Framework for Identifying Greatness PhaaS Attacks**\n\n**Problem:** Cloud security teams face a growing threat: Greatness PhaaS (Platform-as-a-Service) attacks that bypass Multi-Factor Authentication (MFA) and steal tokens. These attacks require a targeted approach to identify and mitigate.\n\n**MFA Bypass Framework: \"Device Code Deception\"**\n\n**Step 1: Identify Device Code Phishing**\nGreatness PhaaS attacks often start with device code phishing, where attackers send legitimate-looking device code links to victims. These links trick users into entering their MFA codes, which are then used to steal tokens. I've noticed that attackers often use short-lived links to minimize detection.\n\n**Step 2: Analyze User Behavior**\nTo identify potential MFA bypass attempts, analyze user behavior around device code interactions. Look for suspicious activity, such as repeated attempts to enter MFA codes or unusual device code requests. In my experience, users who exhibit unusual behavior are more likely to be targeted.\n\n**Step 3: Examine Device Code Patterns**\nExamine device code patterns to identify potential Greatness PhaaS attacks. Look for patterns such as repeated device code requests from the same user or IP address, or device code requests from unfamiliar devices. These patterns can indicate a targeted attack.\n\n**Step 4: Verify Token Activity**\nVerify token activity to ensure that stolen tokens are being used. Monitor token usage patterns and look for suspicious activity, such as tokens being used from unusual locations or devices. This can indicate that an attacker has successfully bypassed MFA.\n\n**Step 5: Implement Additional Controls**\nImplement additional controls to prevent Greatness PhaaS attacks. This can include implementing CAPTCHA challenges for device code requests, limiting the number of device code requests, or requiring users to enter MFA codes manually.\n\n**Whenever I'm reviewing cloud security logs, I start with these questions:** What device code requests are being made? Are there any unusual patterns or behavior? Are tokens being stolen and used? **Save this framework for your next cloud security review.**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-08-05T01:58:57.197767"
+  },
+  {
+    "title": "The Software Supply Chain Is Under Siege. Devs Are Still the First Line of Defense",
+    "linkedin_post": "**The Software Supply Chain Is Under Siege. Devs Are Still the First Line of Defense**\n\nEveryone's talking about the vulnerabilities in the software supply chain, and rightly so. However, the more interesting question is: are we placing too much emphasis on the external threats, when the real issue lies within our own development processes?\n\nIn my experience, developers are often the first ones to spot issues, but they're also the ones who might inadvertently introduce new risks into the system. DevSecOps professionals should focus on bridging this gap by making security a part of every developer's workflow. Here's why:\n\n\u2022 **Code reviews are not enough**: While code reviews are essential, they're not a silver bullet. Developers need to be trained to think like security experts, anticipating potential vulnerabilities before they even write the code.\n\n\u2022 **Dependency management is key**: The software supply chain is only as strong as its weakest link. DevSecOps teams should prioritize dependency management, ensuring that every library and framework used is thoroughly vetted for security risks.\n\n\u2022 **Security is everyone's responsibility**: DevSecOps is not just about developers; it's about creating a culture where security is everyone's responsibility. This means educating stakeholders, from developers to product managers, about the importance of security in software development.\n\nTakeaway: Organizations should prioritize developer training and empowerment, making security a core part of their development processes.\n\nAs we move forward, I predict that DevSecOps will become an even more critical component of software development, with a greater emphasis on developer education and security-by-design approaches. Will the industry finally recognize the crucial role developers play in mitigating software supply chain risks?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-05T02:00:30.559270"
+  },
+  {
+    "title": "Gemini App Builder Workflow: Turn AI-Generated Apps Into Maintainable Products",
+    "linkedin_post": "**From Frustration to Framework: My Gemini App Builder Workflow Journey**\n\nEarly in my career, I struggled to turn AI-generated apps into maintainable products. I'd spent hours tweaking code, only to have it break the moment I made a change. It was like trying to build a house on shifting sand - every step forward felt like two steps back.\n\nOne day, I realized that the problem wasn't the AI tools themselves, but my own workflow. I was trying to control every aspect of the app's development, rather than designing a system that could adapt to change. It was a classic case of the \"tyranny of the perfect\" - I was so focused on making the app perfect that I forgot to make it maintainable.\n\nThis realization freed me to focus on creating a framework for app development that prioritized modularity and flexibility. Today, I use the Gemini App Builder to generate apps that are more like living, breathing organisms - they can grow and adapt alongside my business needs. What lessons have you learned from your own experiences with AI-generated apps? How have you turned frustration into a framework for success?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-05T02:02:03.753144"
   }
 ]

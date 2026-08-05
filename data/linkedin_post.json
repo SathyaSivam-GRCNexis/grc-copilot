@@ -1,19 +1,18 @@
 {
-  "content": "**The Inference Gap: A Mental Model for Auditing AI Risk**\n\nAs we increasingly rely on AI to make decisions, it's essential to acknowledge a critical blind spot: the inference gap. This gap occurs when AI systems produce outputs that seem to make sense, but we're unaware of the assumptions, biases, or incomplete data that led to those outputs.\n\n**The Inference Gap Framework: \"AI Transparency Audit\"**\n\nTo bridge this gap, I recommend the AI Transparency Audit framework, which consists of five steps:\n\n**Step 1: Identify the Inference Path**\nMap the sequence of events and data sources that led to the AI output. This involves understanding the algorithm, data inputs, and any assumptions made along the way.\n\n**Step 2: Evaluate the Data Quality**\nAssess the accuracy, completeness, and relevance of the data used to train the AI model. Ask: Are there any biases or gaps in the data that could impact the output?\n\n**Step 3: Check for Assumptions and Biases**\nExamine the model's architecture and any hidden assumptions or biases that may have been baked in. Consider: Are there any areas where the model may be making incorrect or incomplete inferences?\n\n**Step 4: Review Model Interpretability**\nEvaluate the extent to which the model's decision-making process can be understood and explained. Ask: Can we trust the model's output, or are there too many unknowns?\n\n**Step 5: Consider Alternative Perspectives**\nChallenge the AI output by considering alternative scenarios, data sources, or perspectives. This helps to identify potential blind spots and areas for improvement.\n\n**Whenever I'm evaluating an AI-powered decision, I start with these questions:**\n\n- What assumptions or biases may be embedded in the model?\n- Are there any data quality issues that could impact the output?\n- Can I trust the model's decision-making process, or are there too many unknowns?\n- What alternative perspectives or scenarios should I consider?\n\n**Save this framework for your next AI-powered decision-making scenario and bridge the inference gap.**",
-  "template_used": "framework",
-  "template_name": "Framework Breakdown Post",
+  "content": "**A GRC Lesson from the Wild West of AI**\n\nI used to think that compliance was a straightforward process, a box-ticking exercise to ensure we're following the rules. But then I learned about AI hallucinations - when AI models generate false or misleading information. It's a problem that's not just limited to AI, but also to global business deals where data is exchanged across borders.\n\nThe PwC report highlighted how these hallucinations can lead to compliance risks, particularly in high-stakes transactions. I've seen it firsthand - a colleague's AI-generated report led to a costly misinterpretation of a contract clause. It was a wake-up call for our team: we can't rely solely on technology to ensure compliance.\n\n**Lesson:** In today's interconnected world, compliance is no longer just about checking boxes. It's about understanding the underlying data flows and potential biases. As professionals, we need to develop a \"Data Skeptic's Mindset\" - questioning assumptions, verifying facts, and being aware of the limitations of AI.\n\n**Advice:** For junior professionals, start by asking questions about the data used in reports and models. For experienced professionals, review your own team's processes to ensure they're not reliant on unverified data. And for leaders, prioritize a culture of data transparency and skepticism.\n\n**What career lesson took you years to learn?**",
+  "template_used": "career",
+  "template_name": "Career Growth Post",
   "inspired_by": {
-    "topic": "The inference gap: Auditing the AI risk no framework requires you to see",
-    "concept": "GRC professionals should care about this because it highlights the lack of regulatory oversight on AI's environmental footprint, making internal audit a critical line of defense.",
+    "topic": "AI hallucinations and global business deals in PwC report highlight compliance risks",
+    "concept": "A GRC professional should care about this because it highlights the need for human oversight of AI-generated content and integrating AI governance with compliance programs.",
     "domains": [
       "GRC",
-      "AI",
-      "Cloud"
+      "AI"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-08-04T15:50:14.803425",
-  "day_of_week": "Tuesday",
+  "generated_at": "2026-08-05T01:51:12.867260",
+  "day_of_week": "Wednesday",
   "type": "text_post",
   "copyright_safe": true
 }
