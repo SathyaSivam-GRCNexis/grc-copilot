@@ -2,10 +2,34 @@
   "slides": [
     {
       "slide_number": 1,
-      "content": "**Integrating AI Governance with Compliance**\nEffective AI governance is crucial to mitigate risks associated with AI-generated content.\n"
+      "content": "**The Dark Side of AI: Human Oversight Matters**\nArtificially generated content can be misleading, but AI governance can mitigate this risk.\n"
+    },
+    {
+      "slide_number": 2,
+      "content": "**The AI Hallucination Paradox**\nAI systems can produce false information, just like a magician might create illusions.\nThis highlights the need for human verification in AI-generated content.\n"
+    },
+    {
+      "slide_number": 3,
+      "content": "**Double-Checking the Facts**\nThink of AI as a research assistant: it can gather data, but you need to fact-check the conclusions.\nHuman oversight prevents AI hallucinations from becoming compliance nightmares.\n"
+    },
+    {
+      "slide_number": 4,
+      "content": "**Integrating AI Governance**\nAI governance ensures that AI systems operate within predetermined boundaries, just like a company's policies dictate employee behavior.\nEffective AI governance also involves setting clear guidelines for AI-generated content.\n"
+    },
+    {
+      "slide_number": 5,
+      "content": "**Balancing AI and Human Judgment**\nConsider AI as a tool, not a replacement for human judgment.\nAI should augment, not replace, human oversight in critical business decisions.\n"
+    },
+    {
+      "slide_number": 6,
+      "content": "**What This Means For You**\nTo mitigate AI-related compliance risks, integrate AI governance into your existing compliance programs.\nRegularly review and update your policies to address emerging AI-related challenges.\n"
+    },
+    {
+      "slide_number": 7,
+      "content": "Stay ahead of emerging security threats and emerging AI-related risks by following this account for more GRC insights.\n"
     }
   ],
-  "raw_content": "**SLIDE 1:**\n**Integrating AI Governance with Compliance**\n\nEffective AI governance is crucial to mitigate risks associated with AI-generated content.",
+  "raw_content": "**SLIDE 1:**\n**The Dark Side of AI: Human Oversight Matters**\nArtificially generated content can be misleading, but AI governance can mitigate this risk.\n\n**SLIDE 2:**\n**The AI Hallucination Paradox**\nAI systems can produce false information, just like a magician might create illusions. \nThis highlights the need for human verification in AI-generated content.\n\n**SLIDE 3:**\n**Double-Checking the Facts**\nThink of AI as a research assistant: it can gather data, but you need to fact-check the conclusions.\nHuman oversight prevents AI hallucinations from becoming compliance nightmares.\n\n**SLIDE 4:**\n**Integrating AI Governance**\nAI governance ensures that AI systems operate within predetermined boundaries, just like a company's policies dictate employee behavior.\nEffective AI governance also involves setting clear guidelines for AI-generated content.\n\n**SLIDE 5:**\n**Balancing AI and Human Judgment**\nConsider AI as a tool, not a replacement for human judgment. \nAI should augment, not replace, human oversight in critical business decisions.\n\n**SLIDE 6:**\n**What This Means For You**\nTo mitigate AI-related compliance risks, integrate AI governance into your existing compliance programs. \nRegularly review and update your policies to address emerging AI-related challenges.\n\n**SLIDE 7:**\nStay ahead of emerging security threats and emerging AI-related risks by following this account for more GRC insights.",
   "inspired_by": {
     "topic": "AI hallucinations and global business deals in PwC report highlight compliance risks",
     "domains": [
@@ -13,7 +37,7 @@
       "AI"
     ]
   },
-  "generated_at": "2026-08-05T15:59:08.879759",
+  "generated_at": "2026-08-06T01:59:39.076740",
   "type": "carousel",
   "copyright_safe": true
 }
