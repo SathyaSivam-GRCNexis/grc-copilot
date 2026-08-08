@@ -1,32 +1,5 @@
 [
   {
-    "title": "Is Your AppSec Program Built to Close the OWASP Top 10 2025 Coverage Gap?",
-    "linkedin_post": "**The OWASP Top 10 2025 Coverage Gap: A Wake-Up Call for AppSec Programs**\n\nEveryone is discussing the OWASP Top 10, but what's often overlooked is the elephant in the room: the coverage gap. It's estimated that traditional AppSec programs fall short in addressing the most critical vulnerabilities.\n\nThe more interesting question is: are your AppSec programs built to bridge this gap? I've noticed that many organizations rely on manual testing and compliance-based approaches, which are no match for the sophisticated attacks we face today.\n\nHere's what DevSecOps professionals should focus on:\n\n* **Shift-left security testing**: Instead of waiting for code to be deployed, integrate security testing into the development process to catch vulnerabilities early on.\n* **Automated security scanning**: Use tools that can scan code and detect potential vulnerabilities before they become a problem.\n* **Continuous security monitoring**: Regularly monitor applications for signs of compromise or suspicious activity.\n\nOrganizations should take a comprehensive approach to security testing, investing in a mix of manual and automated testing, and ensuring that security is integrated into every stage of the development process.\n\nWhat does this mean for the future? Will organizations continue to play catch-up with emerging threats, or will they take a proactive approach to security testing? How will the OWASP Top 10 2025 coverage gap be addressed?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-06T16:51:43.360546"
-  },
-  {
-    "title": "We Doubled Our AI Tooling Budget. Our Release Rate Dropped Anyway",
-    "linkedin_post": "**The AI Tooling Budget Paradox**\n\nEarly in my career, I was thrilled to double our AI tooling budget, convinced that more advanced tech would magically boost our release rate. We invested in top-notch machine learning frameworks, automated testing tools, and AI-powered code review platforms. I remember the excitement around each new tool's launch, thinking that this would be the silver bullet that solves all our problems.\n\nHowever, after a few months, I noticed something unsettling \u2013 our release rate hadn't budged. In fact, it had dropped by a small margin. I was puzzled. Didn't these tools promise to streamline development, reduce errors, and speed up delivery? I dug deeper, and it became clear that our biggest challenges weren't technical, but cultural and process-related.\n\nI realized that our team was struggling with inconsistent code quality, misaligned priorities, and inadequate collaboration. The new tools were just a Band-Aid on a deeper issue. We needed to address our underlying problems, not just throw more tech at them.\n\nToday, I prioritize building a strong foundation of engineering practices, clear goals, and effective communication. It's not about the tools; it's about creating an environment where developers can thrive. So, I ask: what lessons have you learned about the relationship between AI tooling and team performance?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-06T16:53:16.901922"
-  },
-  {
-    "title": "Researchers Claim First Fully Agentic Ransomware: JadePuffer",
-    "linkedin_post": "**From AI's Potential for Good to the Dark Side: A Career Lesson**\n\nI used to think that AI was destined for greatness \u2013 augmenting human capabilities, solving complex problems, and making our lives easier. But then I learned about JadePuffer, the first fully agentic ransomware. This discovery made me realize that AI's potential for good is matched by its potential for harm.\n\n**Lesson:** AI is a double-edged sword. Its capabilities can be used for both creative problem-solving and destructive malicious intent.\n\nTo adapt to this reality, I've developed a mental model called the \"AI Impact Matrix.\" It's a simple framework to assess the potential impact of AI on an organization or individual:\n\n1. **Agentic potential**: How likely is AI to act independently, making decisions that may or may not align with human values?\n2. **Data sensitivity**: How vulnerable are the data and systems being used to AI-powered solutions?\n\n**Advice:**\n\n* For early-career professionals: Understand the basics of AI and its potential impact on your industry.\n* For mid-career professionals: Develop expertise in the AI Impact Matrix, applying it to real-world scenarios.\n* For senior leaders: Ensure AI strategies align with organizational values and prioritize human oversight.\n\n**What career lesson took you years to learn?**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-07T02:06:56.087132"
-  },
-  {
     "title": "MCP Goes Stateless on July 28. Is Your Audit Trail Still Intact?",
     "linkedin_post": "**MCP Goes Stateless: A Hidden Audit Trail Risk**\n\nOne mistake I see repeatedly in cloud deployments is the incorrect configuration of audit trails in MCP (Microsoft Compute Platform) stateless environments. Specifically, some teams disable or misconfigure the MCP-managed audit trail, assuming it's not necessary or that it's too resource-intensive.\n\n**The Consequences:**\n\n\u2022 **Lost visibility**: Without an intact audit trail, you'll struggle to identify security incidents, troubleshoot issues, or meet compliance requirements.\n\u2022 **Increased risk**: Disabling or misconfiguring the audit trail can leave you vulnerable to data breaches, misconfigurations, or unauthorized access.\n\u2022 **Regulatory non-compliance**: Inadequate audit trails can lead to costly fines or penalties, as well as damage to your organization's reputation.\n\n**The Solution:**\n\nTo ensure a reliable audit trail in MCP stateless environments, I recommend:\n\n* Double-checking MCP-managed audit trail configurations to ensure they're enabled and properly configured.\n* Implementing additional, separate audit trails to provide an extra layer of visibility and security.\n* Regularly reviewing audit trail logs to identify potential issues and ensure compliance.\n\nHave you encountered similar issues in your cloud deployments?",
     "domains": [
@@ -1824,5 +1797,32 @@
     ],
     "template_used": "Framework Breakdown Post",
     "generated_at": "2026-08-08T00:59:20.942743"
+  },
+  {
+    "title": "Rapid7 Analysis: Unauthenticated Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)",
+    "linkedin_post": "**From Complacency to Vigilance: A Cloud Security Lesson**\n\nI used to think that cloud infrastructure was inherently secure, thanks to its robust scalability and automatic patching. But then I learned about a recent vulnerability in JetBrains TeamCity (CVE-2026-63077) that exposed unauthenticated remote code execution. This wake-up call made me realize that cloud security is only as strong as its weakest link.\n\n**Lesson:** The career insight is that complacency in cloud security can have severe consequences. I've seen it time and time again: teams get comfortable with their cloud setup and forget to monitor for new risks. It's a recipe for disaster.\n\n**Framework:** Apply the \"Cloud Security Pyramid\" to your work: focus on the base (infrastructure) first, then the middle (configurations), and finally the top (applications). This will help you identify potential vulnerabilities and prioritize your security efforts.\n\n**Advice:**\n\n- **Cloud engineers:** Regularly review security updates and patches for your cloud infrastructure and applications.\n- **Security teams:** Use a risk-based approach to prioritize vulnerabilities and allocate resources accordingly.\n- **Leaders:** Foster a culture of security awareness and encourage teams to speak up about potential risks.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-08-08T14:17:03.141948"
+  },
+  {
+    "title": "Whistleblower accuses Mayo Clinic of compromising patient care, privacy with AI tool misuse",
+    "linkedin_post": "**The Trust Erosion Framework: A Mental Model for Evaluating AI Tool Misuse**\n\nWhen a high-profile medical institution like Mayo Clinic is accused of compromising patient care and privacy, it's a stark reminder of the importance of trust in our digital lives. This framework helps us understand the factors that contribute to trust erosion and how to mitigate them.\n\n**Trust Erosion Framework: 5 Steps to Mitigate AI Tool Misuse**\n\n1. **Define the Purpose**: Clearly articulate the intended purpose of the AI tool, including its benefits and limitations. This step helps to establish a baseline for evaluating its impact on patient care and privacy.\n2. **Assess Data Quality**: Evaluate the accuracy, completeness, and relevance of the data used to train and deploy the AI tool. Poor data quality can lead to biased outcomes and undermine trust.\n3. **Audit Algorithmic Transparency**: Ensure that the AI tool's decision-making processes are transparent, explainable, and free from hidden biases. This step helps to build trust by providing insights into how the tool arrives at its conclusions.\n4. **Monitor for Unintended Consequences**: Regularly review the AI tool's performance and detect any unintended consequences that may arise from its use. This step helps to identify potential issues before they escalate into full-blown crises.\n5. **Establish Governance and Accountability**: Define clear governance structures and accountability mechanisms to ensure that AI tool misuse is addressed promptly and effectively. This step helps to maintain trust by demonstrating a commitment to responsible AI use.\n\n**Whenever I encounter a high-profile data breach or AI tool misuse, I start with these questions:** What was the intended purpose of the AI tool? Was the data used to train it accurate and complete? Are the decision-making processes transparent and explainable? Have there been any unintended consequences? Who is accountable for ensuring responsible AI use?\n\n**Save this framework for your next data breach or AI tool misuse situation, and use it to evaluate the factors that contribute to trust erosion and how to mitigate them.**",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-08-08T14:20:09.943053"
+  },
+  {
+    "title": "AI fluency: The next foundation of US economic competitiveness",
+    "linkedin_post": "**Learning to Speak AI**\n\nEarly in my career, I was working on a product that aimed to democratize access to AI-powered tools for small businesses. However, I quickly realized that our customers were struggling to understand the technical nuances of AI and its applications. I recall one particularly frustrating meeting where a customer was confused about the difference between machine learning and deep learning.\n\nAs I listened to their concerns, I realized that the problem wasn't just about technical jargon \u2013 it was about how we were approaching the market. We were treating AI like a feature, not a fundamental aspect of our product. It wasn't until we shifted our focus to helping customers develop AI fluency that our product started to resonate with them.\n\nThe realization hit me: AI fluency is no longer a nicety, but a necessity for businesses to remain competitive in the US economy. It's not just about deploying AI-powered tools; it's about empowering customers to make informed decisions and create personalized experiences that drive growth.\n\nHow have you approached AI adoption in your organization? What were some early lessons you learned along the way?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-08T14:23:16.916889"
   }
 ]
