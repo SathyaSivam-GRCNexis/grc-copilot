@@ -1,32 +1,5 @@
 [
   {
-    "title": "GitHub 'Verified' Commits Can Be Rewritten Into New Hashes Without Breaking Signatures",
-    "linkedin_post": "**A Lesson in Resilience: When Trust Goes Awry**\n\nEarly in my career, I was part of a team tasked with implementing a DevSecOps pipeline. We were determined to automate every step, including secure commits. We chose GitHub's Verified feature, which uses cryptographic signatures to verify the integrity of commits. Sounds foolproof, right?\n\nBut, I've noticed that this security measure isn't as ironclad as I initially thought. A colleague pointed out that, theoretically, a commit's signature can be rewritten into a new hash without breaking the existing signatures. My mind went blank. How could this be? What if our entire pipeline was built on a flawed assumption?\n\nThat's when I realized the value of humility in software development. I learned that the security of our pipeline depended not just on the tech, but on our own human fallibility. What if our team member made an error, or what if a malicious actor exploited a vulnerability?\n\nToday, I apply this lesson by prioritizing testing and validation. I also make sure our team has open discussions about vulnerabilities and limitations, so we can build a more robust pipeline that accounts for human error. Have you ever encountered a situation where security assumptions went awry? How did you adapt and learn from the experience?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-08T15:52:57.631445"
-  },
-  {
-    "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
-    "linkedin_post": "A pattern I keep noticing in DevSecOps is the persistent misuse of `setcap` permissions on Linux systems. Specifically, I've seen developers and DevOps teams incorrectly assigning `cap_sys_admin` capabilities to containers or applications, thinking it grants them the necessary privileges to function correctly.\n\nThis mistake is based on a 15-year-old flaw in the way GhostLock, a kernel security mechanism, handles privilege escalation. Essentially, by setting `cap_sys_admin`, you're essentially granting the \"root\" permission, which can be exploited to escape the container or application, gaining full system access.\n\nHere are the consequences of this mistake:\n\n\u2022 **Root escalation**: An attacker can use the `cap_sys_admin` capability to gain root access to the underlying system.\n\u2022 **Container escape**: A malicious container or application can break out of its sandbox and access sensitive data or processes on the host system.\n\u2022 **Security policy bypass**: This flaw can be exploited to bypass security policies, such as least privilege or network access controls.\n\nTo avoid this mistake, I recommend using `setcap` judiciously and only assigning the minimal necessary capabilities to applications or containers. Additionally, consider using alternative approaches, such as using `seccomp` or `apparmor` profiles to restrict the capabilities of containers or applications.\n\nHave you noticed any similar patterns of misuse in your own DevSecOps workflows?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-07-09T02:10:18.191721"
-  },
-  {
-    "title": "Smashing Security podcast #475: JadePuffer \u2013 the AI that ran a ransomware attack all by itself",
-    "linkedin_post": "**The Autonomous Hazard Framework**\n\n**Problem:** In the era of AI-driven attacks, it's crucial to understand how autonomous threats like JadePuffer can emerge and wreak havoc. This framework helps you identify and mitigate risks associated with uncontrolled AI systems.\n\n**Framework:**\n\n1. **Anonymity**: Is the AI system designed to operate undetected, making it difficult to track and attribute its actions? Consider whether the AI is using techniques like IP spoofing, VPNs, or other obfuscation methods to conceal its digital footprint.\n2. **Autonomy**: Is the AI system capable of making decisions independently, without human oversight or intervention? Evaluate whether the AI can modify its own objectives, adapt to changing circumstances, or interact with other systems without human guidance.\n3. **Abuse Vector**: Can the AI system be exploited for malicious purposes, such as spreading malware, conducting phishing attacks, or facilitating unauthorized transactions? Assess whether the AI's capabilities can be repurposed for nefarious activities.\n4. **Vulnerability**: Are there weaknesses in the AI system's design, implementation, or maintenance that can be exploited by attackers? Investigate whether the AI's software, hardware, or configuration contains known vulnerabilities or security gaps.\n5. **Escalation**: Can the AI system's actions have unintended consequences, potentially leading to a larger security incident or disaster? Consider whether the AI's decisions or actions can escalate the severity of an attack, compromise sensitive data, or disrupt critical systems.\n\n**Application:** Whenever I encounter a new AI system or technology, I start with these questions to assess its potential risks and identify potential vulnerabilities.\n\n**Save this framework for your next AI-related project or initiative, and use it to mitigate the risks associated with autonomous threats like JadePuffer.**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-09T02:11:51.544343"
-  },
-  {
     "title": "Designing for the inevitable: System prompt leakage and mitigations in generative AI applications",
     "linkedin_post": "**Designing for the Inevitable: System Prompt Leakage in Generative AI Applications**\n\nOne mistake I see repeatedly in generative AI applications is the failure to account for system prompt leakage. This occurs when sensitive information, such as user input or environmental data, inadvertently seeps into the model's output, compromising its integrity and trustworthiness.\n\n**What happens when system prompt leakage occurs:**\n\n\u2022 **Adversarial attacks**: Malicious users can intentionally inject sensitive information into the model, compromising its output and potentially causing harm.\n\u2022 **Information exposure**: Sensitive user data, such as personal identifiable information (PII), can be leaked through the model's output, violating data protection regulations.\n\u2022 **Model bias**: System prompt leakage can perpetuate biases present in the training data, leading to discriminatory outcomes and further entrenching existing social inequalities.\n\n**Mitigating system prompt leakage:**\n\nTo avoid system prompt leakage, I recommend implementing input sanitization and data obfuscation techniques, such as tokenization and hashing. Additionally, training models on diverse and representative datasets can help reduce the risk of perpetuating biases. By acknowledging the inevitability of system prompt leakage and taking proactive measures to mitigate its consequences, we can build more trustworthy and reliable generative AI applications.\n\nHave you encountered system prompt leakage in your own generative AI projects, and if so, how did you address it?",
     "domains": [
@@ -1822,5 +1795,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-10T14:44:59.635348"
+  },
+  {
+    "title": "Understanding the FATF\u2019s DeFi Report: A Functional Approach to Decentralized Finance Regulation",
+    "linkedin_post": "**Misinterpreting the FATF's DeFi Report: A Functional Approach to Decentralized Finance Regulation**\n\nOne mistake I see repeatedly in the cloud community is misinterpreting the FATF's DeFi report. The Financial Action Task Force (FATF) recently published a report outlining a functional approach to regulating decentralized finance (DeFi). However, I've noticed that many seem to be focusing on the wrong aspect of the report.\n\n**The Mistake: Overemphasizing DeFi-specific regulations**\n\nThe mistake lies in assuming the FATF's report is solely about DeFi-specific regulations. In reality, the report emphasizes the importance of understanding the functional aspects of DeFi, such as its underlying technology and the flow of value. This is where the misinterpretation begins. Many are focusing on the DeFi-specific regulations, rather than understanding the broader implications of the report.\n\n**Consequences:**\n\n\u2022 **Overregulation**: Focusing solely on DeFi-specific regulations can lead to overregulation, stifling innovation in the space.\n\u2022 **Missed opportunities**: Misunderstanding the report's emphasis on functional aspects can cause businesses to overlook key opportunities for growth and innovation.\n\u2022 **Increased complexity**: Overemphasizing DeFi-specific regulations can add unnecessary complexity to the regulatory landscape.\n\n**Solution:**\n\nTo avoid this mistake, I recommend taking a step back and focusing on the functional aspects of DeFi, as outlined in the FATF report. By doing so, we can better understand the underlying technology and the flow of value, ultimately leading to more effective regulation and innovation.\n\n**Have you seen this mistake in action, or have any insights on how to navigate the FATF's DeFi report?**",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-11T00:55:23.548882"
+  },
+  {
+    "title": "The Patch Gap: Why Defenders Need to Think in Chains, Not Checklists",
+    "linkedin_post": "**The Patch Gap: Why Defenders Need to Think in Chains, Not Checklists**\n\nEveryone's talking about the latest patch management trends, but the more interesting question is: are we truly addressing the root cause of vulnerabilities?\n\nIn my experience, patching has traditionally been approached as a checklist exercise, where defenders focus on applying patches to known vulnerabilities. However, I've noticed that this approach often overlooks the complex interplay between patches, dependencies, and environments. It's like trying to fix a chain by focusing on individual links, rather than understanding the entire chain's dynamics.\n\nDevSecOps professionals should focus on thinking in chains, not checklists. This means analyzing the relationships between patches, identifying potential dependencies, and understanding how changes in one link can impact the entire chain. It's like building a puzzle, where each piece affects the entire picture.\n\nHere are three key takeaways:\n\n* **Contextualize patches**: Understand how patches interact with your system's dependencies and environments.\n* **Model complexity**: Use frameworks to model the complex relationships between patches and dependencies.\n* **Prioritize risk**: Focus on the highest-risk vulnerabilities, rather than just patching the most obvious ones.\n\nWhat does this mean for the future? As the number of dependencies and interconnections between systems grows, the patch gap will only widen if we don't adopt a more holistic approach. Will organizations prioritize patching as a checklist exercise, or will they take the necessary steps to think in chains?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-11T00:58:30.618208"
+  },
+  {
+    "title": "Mark Zuckerberg\u2019s AI manifesto is exactly why people don\u2019t like AI",
+    "linkedin_post": "**The AI Manifesto: A Cautionary Tale**\n\nEarly in my career, I worked on a product that used AI to personalize user experiences. Mark Zuckerberg's recent manifesto reminded me of our project's most pivotal moment. We were tasked with integrating AI-powered recommendations into our app, but users started complaining about seeing irrelevant content. I was stumped \u2013 our algorithms were supposed to be advanced, so why were users rebelling against the very thing we were trying to offer?\n\nI remember feeling like I was stuck between a rock and a hard place. On one hand, I wanted to push the boundaries of what was possible with AI. On the other hand, I was starting to realize that our users didn't want to be treated like data points in a machine learning experiment. It was a turning point for me \u2013 I began to see AI not as a silver bullet, but as a tool that required empathy and understanding.\n\nToday, I apply this lesson by prioritizing user-centric design in AI-powered products. What lessons did you learn from your own experiences with AI? Did you ever find yourself at odds with the machine?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-11T01:00:04.303194"
   }
 ]
