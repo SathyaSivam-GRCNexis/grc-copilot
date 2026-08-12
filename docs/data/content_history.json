@@ -1,14 +1,5 @@
 [
   {
-    "title": "Why Post-Quantum Migration Might Be Bigger Than It Looks",
-    "linkedin_post": "**The Quantum Leap Framework: A Mental Model for Post-Quantum Migration**\n\n**Problem:** As cloud professionals, we're facing a daunting challenge: post-quantum migration. With the rise of quantum computing, our current cryptographic systems are at risk of being compromised. But is this shift really as daunting as it seems?\n\n**The Quantum Leap Framework:**\n\nStep 1: **Assess Your Quantum Footprint**\nTake stock of your organization's cryptographic dependencies. Which systems rely on vulnerable public-key algorithms like RSA and elliptic curve cryptography? This step is crucial in identifying areas that need immediate attention.\n\nStep 2: **Evaluate Your Migration Options**\nConsider the different post-quantum alternatives, such as lattice-based cryptography (e.g., NTRU) and hash-based signatures (e.g., SPHINCS). Each option has its pros and cons, and a thorough evaluation will help you determine the best fit for your organization.\n\nStep 3: **Prioritize and Phase Your Migration**\nBased on your assessment, prioritize the most critical systems that need to be migrated. Develop a phased approach to migration, starting with the most vulnerable areas first. This will help you avoid a massive, costly overhaul.\n\nStep 4: **Develop a Quantum-Ready Roadmap**\nCreate a long-term plan for post-quantum migration, including timelines, resource allocation, and training for your team. A well-planned roadmap will ensure a smooth transition to a quantum-resistant infrastructure.\n\n**Application:** Whenever I'm faced with a complex migration project, I start with these questions: \"What are the most critical systems that require attention? What are the key trade-offs between different post-quantum alternatives?\"\n\n**Save this framework for your next post-quantum migration project.**",
-    "domains": [
-      "Cloud"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-10T02:09:49.457927"
-  },
-  {
     "title": "Google's New Remote Attestation Scheme is As Bad As Its Old One",
     "linkedin_post": "Everyone's been buzzing about Google's new remote attestation scheme, but is it really an improvement over its previous approach?\n\nThe more interesting question is: are we just trading one set of problems for another? In my experience, the tension between user privacy and corporate interests is a classic example of a security dilemma \u2013 where one entity's gain is another's loss.\n\nLet's break it down: remote attestation is a security mechanism that allows devices to prove their integrity to a server. The problem is, it's typically implemented in a way that prioritizes corporate interests over user privacy. Google's new scheme is no exception, relying on a combination of hardware and software checks that can be exploited by malicious actors.\n\nHere's what Product professionals should focus on: the fact that remote attestation schemes often rely on trusted computing bases, which can be compromised by a single vulnerability. This creates a domino effect, where a small issue can lead to a much larger security breach. Moreover, these schemes can also be used to collect sensitive user data, which raises serious concerns about corporate accountability.\n\nWhat organizations should do is take a step back and reevaluate their approach to security and user privacy. Instead of relying on remote attestation schemes, they should focus on building more secure by design products that prioritize user trust and consent.\n\nWhat will happen when more organizations follow Google's lead and prioritize corporate interests over user privacy? Will we see a surge in user distrust and a corresponding decrease in adoption rates?",
     "domains": [
@@ -1824,5 +1815,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-11T14:51:51.003766"
+  },
+  {
+    "title": "Your Enterprise AI Will Fail in Production, and It Will Not Tell You",
+    "linkedin_post": "**The Hidden Dangers of Enterprise AI**\n\nEveryone is discussing the promise of AI in production, but the more interesting question is: what happens when AI systems fail - and they will fail.\n\nI've noticed that most organizations focus on the AI model itself, but neglect the data layer that feeds it. This oversight can lead to catastrophic consequences, as AI systems can perpetuate biases and inaccuracies from their underlying data. In my experience, the data layer is the weak link in the AI supply chain, and it's often invisible to stakeholders.\n\nHere are three key takeaways:\n\n- **Data quality trumps AI quality**: A poorly curated data set can render even the most advanced AI model ineffective. It's not the AI that's the problem, but the data it's based on.\n- **Bias begets bias**: AI systems learn from their data, and if that data is biased, the AI will perpetuate those biases. This can lead to disastrous consequences in production, from misallocated resources to discriminatory decision-making.\n- **The data layer is the new 'black box'**: Just as traditional IT systems have their 'black boxes', AI systems have their own, and it's often the data layer that's the most opaque and least understood.\n\nSo, what should organizations do to mitigate these risks? They should prioritize data quality and transparency, and recognize that AI is only as good as the data it's based on. The future of AI in production will be defined by those who can navigate this challenge successfully. Can we trust that our AI systems are not perpetuating biases and inaccuracies in production?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-12T01:09:51.479134"
   }
 ]
