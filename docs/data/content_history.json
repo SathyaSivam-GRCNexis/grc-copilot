@@ -1,33 +1,5 @@
 [
   {
-    "title": "Google's New Remote Attestation Scheme is As Bad As Its Old One",
-    "linkedin_post": "Everyone's been buzzing about Google's new remote attestation scheme, but is it really an improvement over its previous approach?\n\nThe more interesting question is: are we just trading one set of problems for another? In my experience, the tension between user privacy and corporate interests is a classic example of a security dilemma \u2013 where one entity's gain is another's loss.\n\nLet's break it down: remote attestation is a security mechanism that allows devices to prove their integrity to a server. The problem is, it's typically implemented in a way that prioritizes corporate interests over user privacy. Google's new scheme is no exception, relying on a combination of hardware and software checks that can be exploited by malicious actors.\n\nHere's what Product professionals should focus on: the fact that remote attestation schemes often rely on trusted computing bases, which can be compromised by a single vulnerability. This creates a domino effect, where a small issue can lead to a much larger security breach. Moreover, these schemes can also be used to collect sensitive user data, which raises serious concerns about corporate accountability.\n\nWhat organizations should do is take a step back and reevaluate their approach to security and user privacy. Instead of relying on remote attestation schemes, they should focus on building more secure by design products that prioritize user trust and consent.\n\nWhat will happen when more organizations follow Google's lead and prioritize corporate interests over user privacy? Will we see a surge in user distrust and a corresponding decrease in adoption rates?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-10T02:11:22.694416"
-  },
-  {
-    "title": "Symlinks Are Still Scary (And Yes, You Can Commit Them to Git)",
-    "linkedin_post": "**Symlinks Are Still Scary - A DevSecOps Story**\n\nEarly in my career, I recall working on a personal project and struggling to manage a complex directory structure. I was using symlinks to create shortcuts to frequently used files, but every time I tried to commit them to Git, my code reviews would get rejected. The reason was simple: Git doesn't play nicely with symlinks. But I knew symlinks were a useful tool, so I searched for a solution.\n\nThat's when I stumbled upon `git ls-files --error-unmatch` - a command that can safely commit symlinks by ignoring their link status. It was a lightbulb moment for me, realizing that with the right tools, even scary concepts like symlinks can be harnessed. I learned that sometimes, understanding the underlying mechanics of a problem is key to finding creative solutions.\n\nToday, I apply this lesson to all sorts of DevSecOps challenges. When a seemingly insurmountable problem arises, I take a step back, revisit the fundamentals, and search for innovative ways to tackle it. I'd love to hear from you - what scary concepts have you tamed in your own DevSecOps journey?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-10T02:12:57.076546"
-  },
-  {
-    "title": "How to Meet a 3-Day Remediation SLA & Comply with CISA BOD 26-04",
-    "linkedin_post": "**Mistaking CISA BOD 26-04's Remediation Requirements for a Checklist**\n\nOne mistake I see repeatedly in CISA BOD 26-04 remediations is equating the regulation's requirements with a simple checklist. I've noticed that teams focus on completing each item on the list, rather than understanding the underlying principles and risk-based approach that BOD 26-04 demands.\n\n**What's the mistake?**\nThe mistake lies in assuming that BOD 26-04's remediation requirements are a static, one-time task. Instead, the regulation emphasizes a continuous, risk-based approach to monitoring and remediating vulnerabilities.\n\n**Consequences:**\n\n\u2022 **Inadequate remediation**: By focusing on completing a checklist, teams often overlook critical vulnerabilities that require more in-depth remediation efforts.\n\u2022 **Lack of ongoing monitoring**: Teams may fail to establish ongoing monitoring and risk assessment processes, leaving them vulnerable to future threats.\n\u2022 **Inefficient resource allocation**: Teams may allocate resources inefficiently, prioritizing low-risk vulnerabilities over high-risk ones.\n\n**How to avoid it?**\nTo meet the 3-day remediation SLA and comply with BOD 26-04, teams should adopt a risk-based approach that prioritizes high-risk vulnerabilities and focuses on continuous monitoring and improvement. This requires ongoing risk assessments, prioritization, and remediation efforts, rather than a one-time checklist exercise.\n\nHave you seen other teams making similar mistakes in their CISA BOD 26-04 remediations?",
-    "domains": [
-      "GRC",
-      "Security"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-07-10T16:01:43.684380"
-  },
-  {
     "title": "The hidden compliance cost of building AI-based AML tools in-house",
     "linkedin_post": "**The Hidden Compliance Cost of Building AI-Based AML Tools In-House**\n\nI used to think that building AI-based AML tools in-house was a cost-effective way to stay ahead of financial crime. But then I learned how compliance costs can quickly spiral out of control.\n\nIn my experience, regulatory requirements and audits can add up to 30-40% to the total development cost of AI-based AML tools. This is because building and maintaining these tools requires a deep understanding of anti-money laundering (AML) regulations, data protection laws, and cybersecurity standards.\n\n**Lesson:** The career insight is that building AI-based AML tools in-house often comes with a hidden compliance cost that can outweigh the benefits of cost savings.\n\n**Framework:** The \"Compliance Cost Quotient\" - a mental model to estimate the additional cost of compliance when building AI-based AML tools in-house. Consider the following factors: regulatory requirements, data protection laws, cybersecurity standards, and audit costs.\n\n**Advice:**\n\n* For junior professionals, focus on building a solid understanding of AML regulations and compliance requirements.\n* For mid-career professionals, assess the compliance costs associated with building AI-based AML tools in-house and consider partnering with specialized vendors.\n* For senior leaders, prioritize compliance and risk management when evaluating in-house development versus vendor partnerships.\n\n**What career lesson took you years to learn?**",
     "domains": [
@@ -1824,5 +1796,32 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-08-12T01:09:51.479134"
+  },
+  {
+    "title": "FTC pares back disparate impact",
+    "linkedin_post": "**The Disparate Impact Dilemma: Navigating FTC Regulations**\n\nAs a privacy professional, I've noticed that many organizations struggle to balance consumer needs with regulatory requirements. The FTC's recent emphasis on disparate impact has left many wondering how to ensure their data practices are fair and equitable.\n\n**The Disparate Impact Navigator**\n\nTo navigate this complex landscape, I recommend using the Disparate Impact Navigator framework. This framework helps you identify potential disparate impact issues and develop targeted solutions.\n\n**Step 1: Identify Potential Harms**\n\nStart by listing potential harms that your data practices could cause. Consider how different groups may be affected by your actions, such as racial or ethnic minorities, low-income households, or individuals with disabilities. Ask yourself: \"What are the potential consequences of our data practices for these groups?\"\n\n**Step 2: Assess Data Collection and Use**\n\nNext, assess how your organization collects and uses data. Consider whether you're collecting more data from certain groups than others, or whether your data use practices disproportionately affect specific populations. Ask yourself: \"Are we collecting and using data in a way that's fair and transparent for all users?\"\n\n**Step 3: Evaluate Data Security and Protection**\n\nEvaluate your organization's data security and protection measures to ensure they're adequate for all users. Consider whether you're taking sufficient steps to protect sensitive information, such as biometric data or financial information. Ask yourself: \"Are our data security measures robust enough to protect users' sensitive information?\"\n\n**Step 4: Develop Targeted Solutions**\n\nDevelop targeted solutions to address potential disparate impact issues. This might involve creating new policies or procedures, or revising existing ones. Consider working with diverse stakeholders to ensure your solutions are effective and equitable. Ask yourself: \"What targeted solutions can we implement to mitigate potential disparate impact issues?\"\n\n**Step 5: Monitor and Review**\n\nFinally, establish a process for monitoring and reviewing your data practices to ensure they're fair and equitable. Consider regular audits and assessments to identify potential issues and make necessary adjustments. Ask yourself: \"How often will we review our data practices to ensure they're compliant with FTC regulations and fair for all users?\"\n\nWhenever I'm developing a new data practice or policy, I start by asking these questions through the Disparate Impact Navigator framework. Save this framework for your next data practice development project, and ensure you're taking a proactive approach to mitigating disparate impact issues.",
+    "domains": [
+      "Privacy"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-08-12T14:57:11.767910"
+  },
+  {
+    "title": "The Download: the next big thing in LLMs and how AI academic research is shifting",
+    "linkedin_post": "The Download: LLMs and the Shift in AI Research\n\nEveryone is discussing the rapid advancements in Large Language Models (LLMs). But the more interesting question is: what does this mean for the future of AI governance?\n\nIn my experience, LLMs are just one symptom of a broader shift in AI research. We're moving away from the narrow, specialized models of the past and towards more general-purpose AI systems. This has significant implications for product professionals.\n\nFirstly, we're seeing a rise in \"explainability\" research, which asks us to question: how do we understand and interpret the complex decisions made by these models? Product teams must adapt their testing and validation processes to account for this shift.\n\nSecondly, the growing importance of multimodal models (combining text, images, and audio) raises questions about the role of human evaluators in assessing AI performance. Are we prepared to retrain our evaluators to handle these new modalities?\n\nLastly, the trend towards more open-source and collaborative AI research challenges traditional notions of IP ownership and control. As product teams, we must navigate these changing terrain to ensure our organizations remain compliant and competitive.\n\nWhat will happen when AI research outpaces traditional regulatory frameworks?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-12T14:57:20.665913"
+  },
+  {
+    "title": "Why software factories are back - and how they work in the age of AI",
+    "linkedin_post": "**My Early Days with Software Factories: A Cautionary Tale and a Comeback**\n\nEarly in my career, I was part of a team that struggled to deliver secure software at scale. We'd spend months developing applications, only to realize that we had little to no visibility into the security posture of our code. It was a recipe for disaster, and we paid the price with costly rework, damaged reputations, and, worst of all, compromised customer data.\n\nThe challenge was clear: we needed a more efficient and effective way to build, deploy, and secure software. But we didn't have the luxury of time or resources to start from scratch. That's when I first encountered the concept of software factories \u2013 a repeatable, scalable approach to software development that combines best practices with automation.\n\nMy realization came when I saw how software factories could be adapted to incorporate DevSecOps principles, bridging the security gap in our development process. I learned that the key was to create a standardized, factory-like environment that could be easily replicated and scaled, allowing us to automate security checks, continuously monitor our code, and catch vulnerabilities early on.\n\nToday, I'm a firm believer in the power of software factories to drive DevSecOps success. I've seen firsthand how they can help teams build more secure, reliable, and efficient software. But I'm curious: what lessons have you learned about software factories and their role in DevSecOps?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-12T14:57:27.808285"
   }
 ]
