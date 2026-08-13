@@ -1,32 +1,5 @@
 [
   {
-    "title": "The hidden compliance cost of building AI-based AML tools in-house",
-    "linkedin_post": "**The Hidden Compliance Cost of Building AI-Based AML Tools In-House**\n\nI used to think that building AI-based AML tools in-house was a cost-effective way to stay ahead of financial crime. But then I learned how compliance costs can quickly spiral out of control.\n\nIn my experience, regulatory requirements and audits can add up to 30-40% to the total development cost of AI-based AML tools. This is because building and maintaining these tools requires a deep understanding of anti-money laundering (AML) regulations, data protection laws, and cybersecurity standards.\n\n**Lesson:** The career insight is that building AI-based AML tools in-house often comes with a hidden compliance cost that can outweigh the benefits of cost savings.\n\n**Framework:** The \"Compliance Cost Quotient\" - a mental model to estimate the additional cost of compliance when building AI-based AML tools in-house. Consider the following factors: regulatory requirements, data protection laws, cybersecurity standards, and audit costs.\n\n**Advice:**\n\n* For junior professionals, focus on building a solid understanding of AML regulations and compliance requirements.\n* For mid-career professionals, assess the compliance costs associated with building AI-based AML tools in-house and consider partnering with specialized vendors.\n* For senior leaders, prioritize compliance and risk management when evaluating in-house development versus vendor partnerships.\n\n**What career lesson took you years to learn?**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-10T16:06:21.452186"
-  },
-  {
-    "title": "Workato expands Agent Studio with Headless API, AI guardrails",
-    "linkedin_post": "Everyone's talking about the explosion of low-code automation in the DevOps space.\n\nThe more interesting question is, are we using these tools to create a fortress of compliance, or a house of cards that will crumble under scrutiny?\n\nWhen tools like Workato expand their capabilities with Headless API and AI guardrails, it's not just about making automation more efficient \u2013 it's about creating a safety net for our DevOps practices. In my experience, the biggest challenge isn't implementing automation itself, but ensuring that it aligns with our security and compliance requirements.\n\nHere are three things DevSecOps professionals should focus on:\n\n * Integrating security and compliance into our automation pipelines, so we can catch potential issues before they become major problems.\n * Using AI guardrails to enforce security policies and prevent human error from creeping into our automated workflows.\n * Ensuring that our automation tools are not only integrated with our security systems, but also that they are designed with security in mind from the ground up.\n\nThe takeaway is clear: organizations need to prioritize integrating security and compliance into their DevOps practices, rather than treating them as afterthoughts. Will we see a shift towards more secure, compliant automation practices, or will we continue to sacrifice security for the sake of speed and efficiency?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-10T16:11:02.191548"
-  },
-  {
-    "title": "CCOs more likely to report to general counsel than any other executive, ITM survey finds",
-    "linkedin_post": "**When a CCO Outranked Me**\n\nX years ago, I was a product manager at a small startup, responsible for launching a new software product. Early in my career, I struggled to balance my technical expertise with the business needs of the company. I was so focused on the product's features and functionality that I neglected to consider the potential risks and liabilities associated with it.\n\nI recall a particularly heated discussion with our CEO, who was pushing me to launch the product ASAP. I was adamant that we needed to slow down and address the concerns raised by our CCO (Chief Compliance Officer), but the CEO wasn't convinced. In hindsight, I realize that I was underestimating the importance of compliance in the product development process.\n\nLooking back, I've come to appreciate the value of having a strong CCO in the leadership team. It's not just about reporting to the general counsel, but about having a holistic understanding of the business that considers both risk and opportunity.\n\nWhat lessons did others learn from their own experiences with CCOs and product development? How do you balance compliance with innovation in your own work?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-10T16:12:35.733166"
-  },
-  {
     "title": "AI Coding: Do Security Risks Outweigh Productivity Gains?",
     "linkedin_post": "**A Hard Lesson in AI Coding: Balancing Security and Productivity**\n\nEarly in my career, I was tasked with building a new web application using AI-powered coding tools. The project's success hinged on meeting a tight deadline and delivering a product that wowed our clients. However, I soon found myself struggling with the trade-offs between security and productivity.\n\nAs I worked tirelessly to meet the deadline, I began to compromise on security protocols, thinking that they would slow me down. But one day, a colleague pointed out a glaring vulnerability in our code, and I realized the gravity of my mistake. I had been so focused on speed that I had neglected the very foundation of our product's security.\n\nThe realization hit me: security is not a speed bump, but a critical component of our product's integrity. I learned that sacrificing security for productivity is short-sighted and can have devastating consequences. Today, I make sure to prioritize security from the outset of every project, understanding that it's a crucial investment in our users' trust and our company's long-term success.\n\nWhat lessons have you learned about balancing security and productivity in your own projects?",
     "domains": [
@@ -1823,5 +1796,32 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-12T14:57:27.808285"
+  },
+  {
+    "title": "July 2026 Cyber Threats Surge: Ransomware Attacks Double Year over Year as GenAI Data Exposure Widens",
+    "linkedin_post": "**From Complacency to Vigilance: A Career Lesson on AI's Dark Side**\n\nI used to think that AI was a force for good, a tool that would augment human capabilities and solve some of our biggest problems. But then I learned about the devastating consequences of AI's misuse, particularly in the realm of cyber threats.\n\nIn July 2026, cyber threats surged, with ransomware attacks doubling year over year. The culprit? GenAI data exposure, which has widened the vulnerability landscape. This wake-up call forced me to reevaluate my assumptions about AI's safety and security.\n\n**Lesson:** As AI becomes increasingly pervasive, its misuse becomes a greater risk. Don't assume that AI is inherently secure or that its benefits outweigh its risks. Instead, adopt a culture of vigilance, prioritizing security and accountability in AI development and deployment.\n\n**Framework:** The \"Vulnerability Matrix\" can help you assess AI's risks and opportunities. Consider the intersection of three factors:\n\n1. **Vulnerability**: How exposed is the AI system to potential threats?\n2. **Impact**: What are the consequences of a successful attack or misuse?\n3. **Mitigation**: What controls and safeguards are in place to prevent or contain a breach?\n\n**Advice:**\n\n* Early-career professionals: Learn to think critically about AI's risks and benefits.\n* Mid-career professionals: Lead by example, advocating for security and accountability in AI projects.\n* Senior leaders: Prioritize AI security and risk management in your organization's strategy.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-08-13T01:04:25.772883"
+  },
+  {
+    "title": "The Agent Baseline: 35 controls, but where should you start?",
+    "linkedin_post": "**The Agent Baseline: A Starting Point, Not a Destination**\n\nEveryone's talking about the 35 controls outlined in the Agent Baseline, but I've noticed that most DevSecOps professionals are missing the point. \n\nThe more interesting question is: how do you apply these controls to the various agent types in your ecosystem, and what are the implications for your security and risk posture?\n\nIn my experience, the key is not just to understand the individual controls, but to recognize that agents play a unique role in your organization's security landscape. For instance, container agents like Docker have different security requirements than server agents like Apache.\n\nDevSecOps professionals should focus on the following:\n\n* Prioritizing controls based on agent type and use case, rather than treating them as a one-size-fits-all solution.\n* Developing a risk-based approach to security, rather than simply checking boxes on the Agent Baseline.\n* Integrating security into the development and deployment process, rather than treating it as an afterthought.\n\nWhat organizations should do is shift their focus from compliance to risk management. By understanding the nuances of agent-based security, they can create a more effective security posture that adapts to their unique environment.\n\nWill we see a shift towards more tailored, risk-based approaches to security in the DevSecOps space?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-13T01:04:50.463100"
+  },
+  {
+    "title": "Stop being skeptical about AI for development with Charity Majors",
+    "linkedin_post": "**From Skeptic to Advocate: My Journey with AI in Development**\n\nI still remember the frustration of early 2015, when I was tasked with integrating AI into our product's development pipeline. I'd heard the hype, but I wasn't convinced. I'd seen AI models fail in the past, and I worried that our team's inexperience would lead to another flop.\n\nAs we began experimenting with AI-powered tools, I was skeptical that they'd actually improve our development process. Our initial attempts were met with more questions than answers: How would we ensure data quality? Could AI truly augment human creativity, or would it replace it? I was convinced that AI was a luxury we couldn't afford.\n\nBut then something shifted. I witnessed a junior developer use AI to detect and fix a critical bug that had stumped our team for weeks. The AI had identified a pattern in the code that we'd missed, and its recommendation had been spot-on. In that moment, I realized that AI wasn't a replacement for human intuition, but rather a complementary tool that could augment our capabilities.\n\n**What lessons did you learn about AI in development? Did you have a similar experience where skepticism turned to advocacy?**",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-13T01:04:57.323316"
   }
 ]
