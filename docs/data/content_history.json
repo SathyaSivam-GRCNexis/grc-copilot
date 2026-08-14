@@ -1,23 +1,5 @@
 [
   {
-    "title": "ISMG Editors: CISA's Quiet Frontier AI Strategy",
-    "linkedin_post": "**CISA's Quiet Frontier AI Strategy: A Framework for Navigating AI Risk**\n\n**Problem:** As organizations increasingly rely on AI systems, they face a growing risk of AI-related security breaches and data breaches. CISA's Quiet Frontier AI Strategy aims to mitigate these risks by providing a comprehensive framework for managing AI-related threats.\n\n**Framework:** \"The AI Risk Navigator\"\n\n**Step 1: Identify AI-Related Dependencies**\nAssess which AI systems and data sources are critical to your organization's operations. Understand how these dependencies impact your overall risk posture and identify potential vulnerabilities.\n\n**Step 2: Map AI-Related Attack Vectors**\nVisualize the potential attack vectors that could compromise your AI systems and data. This includes malicious data injection, model poisoning, and other tactics that adversaries might use to manipulate AI outputs.\n\n**Step 3: Develop AI-Specific Threat Intelligence**\nCreate a tailored threat intelligence program that focuses on AI-related threats. This includes monitoring for emerging AI-related threats, analyzing attacker tactics, techniques, and procedures (TTPs), and identifying potential AI-related vulnerabilities.\n\n**Step 4: Integrate AI-Specific Controls into Your Existing Framework**\nEmbed AI-specific controls into your existing security framework, such as data validation, model monitoring, and anomaly detection. This ensures that your organization is proactively addressing AI-related risks.\n\n**Step 5: Establish an AI Risk Governance Structure**\nEstablish a governance structure that addresses AI-related risks. This includes defining roles and responsibilities, developing AI-related policies and procedures, and establishing metrics for measuring AI risk.\n\n**Application:** Whenever I'm tasked with assessing AI-related risks, I start with these questions: What AI systems and data sources are critical to our operations? What are the potential attack vectors that could compromise our AI systems and data? By asking these questions and applying The AI Risk Navigator framework, I can ensure that our organization is prepared to navigate the complex landscape of AI-related risks.\n\n**Save this framework for your next AI risk assessment.**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-12T14:48:57.673423"
-  },
-  {
-    "title": "Social Media Stole Your Attention. AI Is Stealing Something It Can\u2019t Give Back.",
-    "linkedin_post": "**Social Media Stole Your Attention. AI Is Stealing Something It Can\u2019t Give Back.**\n\nEveryone's talking about how social media has hijacked our attention spans. We've all been there - scrolling mindlessly, comparing lives to curated highlight reels. But what if I told you there's an even more insidious force at play?\n\nThe more interesting question is: what happens when AI starts making decisions on our behalf, without us ever realizing it?\n\nAs product professionals, we should be concerned about the impact of AI on human judgment and decision-making. When AI systems 'learn' from data, they can perpetuate biases and reinforce existing power structures. In my experience, this can lead to a lack of accountability and a false sense of security, making it harder for organizations to identify and mitigate risks.\n\nConsider the analogy of a thermostat - it can regulate temperature with precision, but only as good as its programming. Similarly, AI systems are only as good as the data they're trained on, and the human oversight that's supposed to correct them.\n\nTAKEAWAY: Organizations should prioritize transparency and explainability in AI decision-making processes, ensuring that human judgment and oversight are always part of the loop.\n\nWhat does this mean for the future of governance and risk management? Will we see a rise in AI-induced blind spots, or will we find ways to harness its power while preserving human judgment?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-12T14:50:30.927363"
-  },
-  {
     "title": "Schema Archaeology: How to Use AI to Reverse-Engineer Business Meaning From an Undocumented\u2026",
     "linkedin_post": "**The Uncharted Territory of DevSecOps**\n\nEarly in my career, I found myself navigating a complex project with a legacy system that had no documentation to speak of. The codebase was a mess, and I was tasked with integrating it with a new system. I spent weeks trying to make sense of the code, but it was like trying to decipher a ancient language \u2013 every line of code seemed to be a puzzle piece without a clear picture.\n\nIt was frustrating, to say the least. I felt like I was wading through quicksand, getting nowhere fast. But then, something clicked \u2013 I realized that I wasn't just trying to understand the code, I was trying to understand the business meaning behind it. I started thinking like an archaeologist, digging up clues and piecing together the history of the system. I used AI tools to help me reverse-engineer the code, and suddenly, the puzzle pieces fell into place.\n\nThat experience taught me the importance of **schema archaeology** \u2013 the process of using AI to uncover the business meaning behind undocumented systems. It's not just about understanding the code; it's about understanding the context, the history, and the intent behind it. Today, I apply this lesson to every project I work on, and I'd love to hear from others \u2013 what lessons have you learned from navigating the uncharted territories of DevSecOps?",
     "domains": [
@@ -1823,5 +1805,23 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-08-14T01:04:21.280319"
+  },
+  {
+    "title": "Weak IAM affects up to 98% of cloud environments",
+    "linkedin_post": "**Weak IAM Affects Up to 98% of Cloud Environments: A Hidden Threat**\n\nOne mistake I see repeatedly in cloud environments is the inadequate implementation of Identity and Access Management (IAM) policies. Specifically, I've noticed that many organizations fail to properly scope and restrict API keys, which are used to access cloud resources.\n\n**The Consequences:**\n\n\u2022 **Uncontrolled access**: Without proper scoping, API keys can be used to access sensitive resources, potentially leading to data breaches or unauthorized modifications.\n\u2022 **Unused permissions**: When API keys are not properly restricted, users may be assigned unnecessary permissions, creating security risks and compliance issues.\n\u2022 **Key rotation challenges**: Without a robust key management process, expired or compromised API keys can remain in use, introducing vulnerabilities.\n\n**The Solution:**\n\nImplementing least-privilege IAM principles and restricting API keys to specific, needed resources is essential. Regular key rotation, revocation, and monitoring are also crucial. By doing so, organizations can mitigate the risks associated with weak IAM.\n\nHave you noticed similar IAM issues in your cloud environments? How do you handle API key management and scoping?",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-14T14:45:36.219716"
+  },
+  {
+    "title": "Driving value with an investor mindset",
+    "linkedin_post": "**Driving Value with an Investor Mindset: A Personal Story**\n\nX years ago, I led the product development of a mobile app that aimed to revolutionize the way people manage their finances. Early in my career, I was convinced that throwing more features and resources at the problem would solve it. I thought that if we just built enough, people would use it and love it. But the results were dismal - our user acquisition costs skyrocketed, and engagement plummeted.\n\nOne day, I had a conversation with a venture capitalist who asked me to walk him through our business model. He pointed out that we were spending way too much on development and not generating enough revenue. I realized that I had been thinking about our product as a \"solution\" rather than a \"business.\" It clicked that our product was only valuable if it generated returns for our investors (or in our case, our users).\n\nToday, I approach product development with an investor mindset. I prioritize features that drive revenue and customer growth. It's not about building the perfect product; it's about building a product that creates value for our customers and our business. What lessons have you learned from your own experiences with product development?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-14T14:46:00.326571"
   }
 ]
