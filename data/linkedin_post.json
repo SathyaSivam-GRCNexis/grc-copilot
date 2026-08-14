@@ -1,18 +1,18 @@
 {
-  "content": "The FFIEC's final authentication guidance has sparked a flurry of discussion within the industry. But I've noticed that many are missing the forest for the trees - everyone's debating the specifics of the guidance, but neglecting to ask the more interesting question: how will this impact our risk management frameworks?\n\nIn my experience, the FFIEC's guidance serves as a catalyst for organizations to reevaluate their layered security controls. The guidance emphasizes the importance of multiple forms of authentication, which raises the question: are we relying too heavily on a single, seemingly secure authentication method? For instance, if we're using a combination of passwords and biometrics, are we adequately addressing the risk of phishing attacks?\n\nTwo key takeaways emerge from this guidance. First, organizations must move beyond relying on a single point of authentication, instead implementing multiple layers of security. Second, they must prioritize continuous monitoring and assessment to ensure that these controls remain effective over time.\n\nAs a result, organizations should prioritize a risk-based approach to authentication, one that continually adapts to emerging threats. The future of security will be shaped by our ability to innovate and stay ahead of the curve - will we be able to keep up?",
-  "template_used": "news_analysis",
-  "template_name": "News Analysis Post",
+  "content": "One mistake I see repeatedly in AI governance for compliance and third-party risk management is the conflation of risk assessment with risk mitigation.\n\nI've noticed that many organizations create comprehensive risk registers, identifying potential threats and vulnerabilities associated with their AI systems and third-party vendors. However, they often fail to differentiate between risk assessment and risk mitigation, leading to a lack of actionable strategies to address the identified risks.\n\nConsequences of this conflation include:\n\n\u2022 Inadequate risk mitigation measures, leaving the organization vulnerable to actualized risks\n\u2022 Inefficient use of resources, as remediation efforts are often ineffective or misdirected\n\u2022 Decreased stakeholder trust, as compliance failures and breaches erode confidence in the organization's risk management capabilities\n\nTo avoid this mistake, organizations should separate risk assessment from risk mitigation. Risk assessment should focus on identifying and quantifying potential risks, while risk mitigation should develop targeted strategies to address and minimize those risks. This requires a clear understanding of the organization's risk tolerance and a commitment to implementing effective controls that align with organizational goals.\n\nHave you seen this conflation of risk assessment and risk mitigation in your own organization or industry? How did you address it, and what strategies worked best for you?",
+  "template_used": "mistake",
+  "template_name": "Mistake Post",
   "inspired_by": {
-    "topic": "FFIEC Final Authentication Guidance",
-    "concept": "A GRC professional should care about this as it updates the Agencies' expectations regarding customer authentication, layered security, and other controls, which can impact organizations' risk management and compliance frameworks.",
+    "topic": "AI Governance for Compliance and Third-Party Risk Management",
+    "concept": "A GRC professional should care about this because it highlights the importance of effective AI governance and third-party risk management to avoid regulatory exposure.",
     "domains": [
       "GRC",
-      "Security"
+      "AI"
     ]
   },
   "domain": "GRC",
-  "generated_at": "2026-08-13T14:58:40.960784",
-  "day_of_week": "Thursday",
+  "generated_at": "2026-08-14T01:03:35.754491",
+  "day_of_week": "Friday",
   "type": "text_post",
   "copyright_safe": true
 }
