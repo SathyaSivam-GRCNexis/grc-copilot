@@ -1,14 +1,5 @@
 [
   {
-    "title": "Schema Archaeology: How to Use AI to Reverse-Engineer Business Meaning From an Undocumented\u2026",
-    "linkedin_post": "**The Uncharted Territory of DevSecOps**\n\nEarly in my career, I found myself navigating a complex project with a legacy system that had no documentation to speak of. The codebase was a mess, and I was tasked with integrating it with a new system. I spent weeks trying to make sense of the code, but it was like trying to decipher a ancient language \u2013 every line of code seemed to be a puzzle piece without a clear picture.\n\nIt was frustrating, to say the least. I felt like I was wading through quicksand, getting nowhere fast. But then, something clicked \u2013 I realized that I wasn't just trying to understand the code, I was trying to understand the business meaning behind it. I started thinking like an archaeologist, digging up clues and piecing together the history of the system. I used AI tools to help me reverse-engineer the code, and suddenly, the puzzle pieces fell into place.\n\nThat experience taught me the importance of **schema archaeology** \u2013 the process of using AI to uncover the business meaning behind undocumented systems. It's not just about understanding the code; it's about understanding the context, the history, and the intent behind it. Today, I apply this lesson to every project I work on, and I'd love to hear from others \u2013 what lessons have you learned from navigating the uncharted territories of DevSecOps?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-12T14:52:04.543228"
-  },
-  {
     "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
     "linkedin_post": "**Challenging the Status Quo: Reevaluating NIST SP 800-61 Revision 1**\n\nCommon Belief: \"You need to have an incident response plan in place before a security incident occurs.\"\n\nI Disagree.\n\nWhile having a plan is essential, I've found that many organizations focus too much on the plan itself and not enough on the underlying mindset and culture that enables effective incident response. Here are a few reasons why:\n\n* **Incident response is not just about plans; it's about people and processes**: A plan is only as good as the people who execute it. Without the right skills, training, and teamwork, even the best plan will fall apart.\n* **Incident response is a continuous learning process**: You can't anticipate every possible scenario, and even the best plans will need to adapt to new threats and situations.\n* **Culture and communication are just as important as procedures**: Open communication, transparency, and a culture of accountability are essential for effective incident response.\n* **Focus on preparedness, not just planning**: Instead of just creating a plan, focus on building a culture of preparedness through regular training, exercises, and continuous improvement.\n\nWhen does the common belief still apply? In cases where organizations have a high degree of complexity, regulatory requirements, or limited resources, having a plan in place can be a necessary starting point. But even then, it's essential to focus on building a culture of preparedness and continuous learning.\n\nSo, what do you think? Can having a plan truly prepare you for every security incident, or is there more to it?",
     "domains": [
@@ -1823,5 +1814,14 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-14T14:46:00.326571"
+  },
+  {
+    "title": "We\u2019re gorging on borrowed trust and it\u2019s going to cost us.",
+    "linkedin_post": "**Borrowed Trust: A Lesson in Product Development**\n\nEarly in my career, I was tasked with launching a new e-commerce platform. The idea was to create an online marketplace where users could easily compare prices and find the best deals. We were all excited about the potential, but as we began to develop the product, I started to feel uneasy. We were relying heavily on third-party data feeds to power our comparison engine, and I had no visibility into the data's accuracy or reliability.\n\nI remember the day I questioned our approach. We were about to launch a major marketing campaign, but I couldn't shake off the feeling that we were putting our customers at risk. What if the data was outdated or incorrect? What if it misled our users into making poor purchasing decisions?\n\nIt was a tough conversation to have, but I pushed back on our product roadmap, insisting that we needed to invest in our own data collection and validation processes. It wasn't easy, but we eventually made the change. Today, I'm proud to say that our product has earned the trust of our users, and we continue to prioritize data integrity above all else.\n\nWhat lessons did you learn about borrowed trust in your own product development journeys?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-15T00:41:38.306959"
   }
 ]
