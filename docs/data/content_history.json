@@ -1,24 +1,5 @@
 [
   {
-    "title": "FFIEC Final Authentication Guidance",
-    "linkedin_post": "**Challenging the Status Quo: Rethinking the FFIEC Final Authentication Guidance**\n\nMany believe that the FFIEC Final Authentication Guidance is a one-size-fits-all solution for financial institutions, mandating a rigid set of controls to ensure robust authentication. However, I disagree.\n\nWhile the guidance provides a framework for risk assessment, I believe it's often misinterpreted as a prescriptive checklist. In reality, the guidance acknowledges the importance of a risk-based approach, where institutions must consider their unique environment and threats. This nuance is often lost in the implementation process.\n\nHere are a few reasons why I think this common belief is incomplete:\n\n\u2022 **One-size-fits-all controls can be counterproductive**: Overly rigid adherence to the guidance can lead to an overemphasis on certain controls, potentially creating an environment where other vulnerabilities are overlooked.\n\u2022 **Risk assessment is not a static process**: Threats and risks evolve continuously, and a risk-based approach must be adaptable to changing circumstances.\n\u2022 **Context matters**: Institutions with different business models, customer bases, or operational environments require tailored approaches to authentication.\n\u2022 **Guidance is not a destination, but a starting point**: Effective authentication requires ongoing monitoring, testing, and improvement, not just a one-time compliance check.\n\nWhen does the rigid adherence to the FFIEC guidance still apply? In cases where institutions have a history of significant authentication failures or have been subject to intense regulatory scrutiny.",
-    "domains": [
-      "GRC",
-      "Security"
-    ],
-    "template_used": "Contrarian Post",
-    "generated_at": "2026-07-13T16:01:11.334654"
-  },
-  {
-    "title": "GDPR 10 years on: Differences in regulatory enforcement still problematic",
-    "linkedin_post": "**GDPR 10 Years On: A Lesson in Regulatory Enforcement**\n\nI used to think that the European Union's General Data Protection Regulation (GDPR) would usher in a harmonized approach to data protection across continents. But then I learned that regulatory enforcement remains a patchwork, with varying degrees of rigor and consistency.\n\n**The Lesson:** Regulatory compliance is not a one-size-fits-all proposition. Enforcement agencies still grapple with the complexities of global data flows, and the nuances of local laws can quickly become a minefield for multinational organizations.\n\n**Framework:** I've come to think of regulatory enforcement as a \" patchwork quilt\" \u2013 each piece uniquely shaped by local culture, politics, and history. Companies must navigate this quilt to avoid costly mistakes, investing time and resources in understanding the distinct requirements of each region.\n\n**Advice:** For early-career professionals, start by developing a deep understanding of the core principles of data protection laws. As you progress, focus on building relationships with regional experts and staying up-to-date on local developments. For seasoned professionals, continue to advocate for more harmonized regulations and support the development of global standards.\n\nWhat career lesson took you years to learn?",
-    "domains": [
-      "Privacy"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-13T16:05:49.310208"
-  },
-  {
     "title": "Meta Files Patent for AI That Can Listen All Day and Track How You're Feeling",
     "linkedin_post": "**The Dark Side of Continuous Listening: A Common Pitfall in AI Design**\n\nOne mistake I see repeatedly in AI development is the assumption that continuous listening is always beneficial. When companies like Meta file patents for AI systems that can listen to users all day and track their emotions, it's a reminder of this pitfall.\n\nThe mistake: **Overreliance on passive listening without proper context**. These AI systems often collect data without considering the user's consent, consent fatigue, or the potential for emotional manipulation.\n\n**Consequences:**\n\n\u2022 **Emotional exploitation**: AI systems that track users' emotions without consent can lead to emotional manipulation and exploitation, compromising user trust.\n\u2022 **Data overload**: Continuous listening can result in data overload, making it challenging for AI systems to accurately identify patterns or provide meaningful insights.\n\u2022 **Inadequate safeguards**: Without proper safeguards, AI systems can perpetuate biases and inaccuracies, leading to unfair outcomes.\n\n**Solution:** Prioritize active consent, context-based listening, and transparent AI decision-making. Regularly audit AI systems to ensure they're not perpetuating biases or exploiting users.\n\n**Have you noticed similar pitfalls in AI design or seen companies successfully implement continuous listening without compromising user trust?**",
     "domains": [
@@ -1822,5 +1803,23 @@
     ],
     "template_used": "Personal Story Post",
     "generated_at": "2026-08-15T13:56:10.841758"
+  },
+  {
+    "title": "The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure",
+    "linkedin_post": "The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure\n\nOne mistake I see repeatedly in organizations exploring AI-powered systems is treating them as isolated tools rather than integrated components of a broader architecture. Specifically, I've noticed that many teams neglect to consider the emergent properties that arise when multiple AI systems interact with each other and their environment.\n\nConsequences:\n\n\u2022 **Unintended consequences**: AI systems that are trained in isolation can produce unexpected and often undesirable outcomes when deployed together.\n\u2022 **Increased attack surface**: Integrating multiple AI systems can create new vulnerabilities that attackers can exploit.\n\u2022 **Difficulty in attribution**: When multiple AI systems interact, it becomes challenging to identify the source of errors or malicious activity.\n\nTo avoid or mitigate these risks, I recommend adopting a holistic approach to AI development and deployment. This involves designing systems that are inherently modular, flexible, and transparent, with clear interfaces and well-defined boundaries. By doing so, organizations can better understand the emergent properties of their AI systems and respond more effectively to potential threats.\n\nHave you seen similar issues arise in your own organization's AI deployments? How do you ensure that your AI systems are designed and integrated with consideration for their broader implications?",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-16T00:29:22.410308"
+  },
+  {
+    "title": "The hardest part of agentic AI may be rebuilding the business",
+    "linkedin_post": "The Hype Around Agentic AI: A Reality Check for Product Leaders\n\nEveryone's discussing the potential of agentic AI \u2013 AI that acts independently to achieve business goals. The more interesting question is: what happens when these AI agents fail or need significant revisions? In my experience, rebuilding the business to accommodate the limitations of agentic AI can be more challenging than the initial implementation.\n\nProduct professionals should focus on the long-term implications, not just the short-term benefits. Here are three concerns:\n\n1. **Integration with Existing Systems**: Agentic AI requires a high degree of integration with existing systems, which can be a complex and time-consuming process.\n2. **Data Quality and Availability**: AI agents rely on accurate and consistent data, which can be a challenge to maintain, especially in organizations with fragmented systems.\n3. **Human Oversight and Accountability**: As AI agents make decisions, it's essential to define clear lines of human oversight and accountability to ensure that business goals are aligned with organizational values.\n\nRebuilding the business to accommodate the limitations of agentic AI means reevaluating existing processes and systems to ensure they can adapt to AI-driven decision-making.\n\nWhat's the likelihood that organizations will prioritize rebuilding their business infrastructure to accommodate the limitations of agentic AI, rather than simply trying to patch existing systems?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-16T00:29:38.575635"
   }
 ]
