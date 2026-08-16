@@ -1,41 +1,5 @@
 [
   {
-    "title": "Meta Files Patent for AI That Can Listen All Day and Track How You're Feeling",
-    "linkedin_post": "**The Dark Side of Continuous Listening: A Common Pitfall in AI Design**\n\nOne mistake I see repeatedly in AI development is the assumption that continuous listening is always beneficial. When companies like Meta file patents for AI systems that can listen to users all day and track their emotions, it's a reminder of this pitfall.\n\nThe mistake: **Overreliance on passive listening without proper context**. These AI systems often collect data without considering the user's consent, consent fatigue, or the potential for emotional manipulation.\n\n**Consequences:**\n\n\u2022 **Emotional exploitation**: AI systems that track users' emotions without consent can lead to emotional manipulation and exploitation, compromising user trust.\n\u2022 **Data overload**: Continuous listening can result in data overload, making it challenging for AI systems to accurately identify patterns or provide meaningful insights.\n\u2022 **Inadequate safeguards**: Without proper safeguards, AI systems can perpetuate biases and inaccuracies, leading to unfair outcomes.\n\n**Solution:** Prioritize active consent, context-based listening, and transparent AI decision-making. Regularly audit AI systems to ensure they're not perpetuating biases or exploiting users.\n\n**Have you noticed similar pitfalls in AI design or seen companies successfully implement continuous listening without compromising user trust?**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Mistake Post",
-    "generated_at": "2026-07-13T16:07:22.356371"
-  },
-  {
-    "title": "New compliance guidance available: HITRUST i1 on AWS",
-    "linkedin_post": "**Mitigating Cloud Compliance Risks with the HAWK Framework**\n\n**Problem:** As cloud adoption accelerates, organizations face growing pressure to ensure compliance with stringent regulations. The recently released HITRUST i1 on AWS compliance guidance provides a framework for securing sensitive data in the cloud. However, navigating these complex regulations can be overwhelming. That's where the HAWK framework comes in \u2013 a mental model to help you effectively manage cloud compliance risks.\n\n**Framework:**\n\nThe HAWK framework consists of five key steps:\n\n**Step 1: Hunt for Security Gaps (Identify Vulnerabilities)**\nConduct a thorough risk assessment to identify potential security gaps in your AWS environment. This involves reviewing your infrastructure, applications, and data storage to determine where vulnerabilities may exist.\n\n**Step 2: Assess HITRUST Requirements**\n Familiarize yourself with the HITRUST i1 on AWS compliance guidance and assess which requirements apply to your organization. This will help you prioritize your efforts and focus on the most critical areas.\n\n**Step 3: Watch for AWS Security Best Practices**\n Leverage AWS security best practices to mitigate identified vulnerabilities. This includes implementing features like IAM role-based access control, encryption at rest, and secure data transfer.\n\n**Step 4: Keep Compliance Documentation Up-to-Date**\n Maintain accurate and detailed documentation of your compliance efforts. This will facilitate auditing and ensure you're meeting HITRUST requirements.\n\n**Step 5: Review and Refine Regularly**\nSchedule regular reviews to ensure ongoing compliance with HITRUST i1 on AWS guidelines. This will help you stay on top of changing regulations and identify areas for improvement.\n\n**Application:** Whenever I'm implementing a new cloud-based application, I start with these questions: What security gaps might exist in our AWS environment? Which HITRUST requirements apply to our organization? How can we leverage AWS security best practices to mitigate identified vulnerabilities?\n\n**Save this framework for your next cloud compliance initiative.**",
-    "domains": [
-      "Cloud"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-13T16:08:55.830659"
-  },
-  {
-    "title": "Why SBOMs, signing, and provenance still don\u2019t tell you if software is safe",
-    "linkedin_post": "Everyone is discussing the importance of SBOMs, signing, and provenance in ensuring software supply chain security. The more interesting question is, do these measures actually guarantee software safety?\n\nIn my experience, the answer is no. While SBOMs and signing provide valuable insights into the components and history of a piece of software, they don't capture the complex interactions between these components or their potential vulnerabilities. Provenance, which tracks the origin and evolution of software, also falls short in this regard.\n\nThe reality is that software is a complex system, akin to a intricate web of relationships. Just as knowing the identity of the individuals in a social network is not enough to ensure their interactions are secure, knowing the components and history of software is not enough to guarantee its safety.\n\nDevSecOps professionals should focus on assessing the risk of software components, considering not only their individual vulnerabilities but also how they interact with each other. This requires a more holistic approach, incorporating both static analysis and dynamic testing to uncover potential security flaws.\n\nWhat organizations should do is move beyond relying on SBOMs and signing alone, and instead invest in comprehensive risk assessment and testing frameworks that account for the complexities of software interactions. What will happen if we continue to rely on incomplete measures, and how will this impact our software supply chain security in the long run?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-13T16:10:29.379709"
-  },
-  {
-    "title": "How AI is reshaping value creation in residential real estate",
-    "linkedin_post": "**A Lesson in Value Creation: How AI Reshaped My Approach to Residential Real Estate**\n\nEarly in my career, I was tasked with launching a new residential property development in a rapidly growing market. Our team spent countless hours gathering data on local trends, competitor activity, and buyer behavior. We poured over spreadsheets, analyzing metrics like price per square foot and days on market. But despite our efforts, we struggled to differentiate our product in a crowded market.\n\nThat was until I realized that our focus on raw data was actually limiting our ability to create value for buyers. I started to think about the emotional and experiential aspects of home ownership \u2013 the desire for a sense of community, the importance of natural light, and the need for convenient amenities. This shift in perspective helped me understand that value creation in residential real estate wasn't just about data points, but about crafting a unique experience that resonated with buyers.\n\nToday, I apply this lesson when working with AI-powered tools that analyze market trends and buyer behavior. By combining data insights with a deep understanding of buyer needs, I can create more targeted and effective product offerings that drive real value for our customers. What lessons have you learned from working with AI in residential real estate?",
-    "domains": [
-      "Product"
-    ],
-    "template_used": "Personal Story Post",
-    "generated_at": "2026-07-13T16:12:02.682904"
-  },
-  {
     "title": "AI-generated code has made security debt a governance problem",
     "linkedin_post": "**Mitigating Security Debt: A Governance Framework for the AI-Driven Age**\n\nWhen AI-generated code becomes the norm, security debt evolves from a technical concern to a governance problem. This framework helps you navigate this shift.\n\n**The Governance Matrix**\n\nTo address the governance implications of AI-generated code, I've developed the Governance Matrix. This model consists of five core steps:\n\n**Step 1: Identify Vulnerability Exposure**\nAssess which AI-generated code components pose the greatest security risks. This involves analyzing the code's complexity, dependencies, and potential attack surfaces.\n\n**Step 2: Establish Clear Policies**\nDevelop and communicate explicit policies for AI-generated code governance. This includes defining standards for code review, testing, and remediation.\n\n**Step 3: Implement Code Review and Audits**\nRegularly review and audit AI-generated code to ensure it meets organizational standards. This may involve manual review, automated testing, or a combination of both.\n\n**Step 4: Develop Remediation Plans**\nCreate plans for addressing security vulnerabilities in AI-generated code. This includes prioritizing remediation efforts, allocating resources, and tracking progress.\n\n**Step 5: Monitor and Report Governance Metrics**\nEstablish key performance indicators (KPIs) to measure the effectiveness of your governance framework. This helps identify areas for improvement and ensures accountability.\n\nWhenever I'm faced with a complex security debt issue, I start with these questions: What AI-generated code components need immediate attention? What policies and procedures do we need to establish or update? What are the potential risks and consequences of not addressing these issues?\n\nSave this framework for your next security debt challenge.",
     "domains": [
@@ -1821,5 +1785,42 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-08-16T00:29:38.575635"
+  },
+  {
+    "title": "FFIEC Final Authentication Guidance",
+    "linkedin_post": "**The Blind Spot in FFIEC Guidance: Why Controls Aren't Enough**\n\nMost risk registers fail to account for the human factor in FFIEC-compliant authentication controls. \n\nFinancial institutions are familiar with the FFIEC's final authentication guidance, but often overlook its core requirement: not just implementing controls, but ensuring users understand and adhere to them. \n\nIn my experience, I've seen numerous institutions invest heavily in multi-factor authentication (MFA) systems, only to discover that employees are circumventing them with workarounds. This isn't a technical issue; it's a people problem.\n\nFor instance, I recall a client who implemented a complex MFA system but failed to provide adequate training on its use. As a result, employees were inadvertently bypassing the controls, leaving the institution vulnerable to cyber threats. \n\nThe takeaway here is that compliance is only as strong as its weakest link \u2013 in this case, user behavior. \n\nDo you think your institution is more vulnerable to cyber threats due to user behavior or technical weaknesses?",
+    "domains": [
+      "GRC",
+      "Security"
+    ],
+    "template_used": "Insight Post",
+    "generated_at": "2026-08-16T13:48:44.153320"
+  },
+  {
+    "title": "What the EU AI Act Actually Changes for AI Infrastructure Companies",
+    "linkedin_post": "**What the EU AI Act Actually Changes for AI Infrastructure Companies**\n\nI used to think that AI regulations only applied to AI model developers, not infrastructure companies. But then I learned about the EU AI Act, which has significant implications for those building and deploying AI infrastructure.\n\nThe EU AI Act categorizes AI systems into four risk levels (I, II, III, and IV) based on their potential harm. Infrastructure companies like cloud providers and data centers are now responsible for ensuring that the AI systems they host meet the Act's requirements. This means they must implement controls to detect, report, and mitigate potential harms.\n\n**Lesson:** Infrastructure companies are no longer just passive hosts; they're now active participants in ensuring AI safety and compliance. This shift requires them to adopt a risk-based approach, investing in monitoring, auditing, and incident response capabilities.\n\n**Framework:** I use the \"AI Infrastructure Maturity Model\" to assess companies' preparedness. It consists of four stages: awareness, assessment, implementation, and optimization.\n\n**Advice:** For those just starting their careers, focus on understanding the regulatory landscape and its implications for infrastructure companies. For experienced professionals, consider developing a risk-based approach and investing in the necessary capabilities to meet the EU AI Act's requirements.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-08-16T13:49:05.448496"
+  },
+  {
+    "title": "Enforcement set to ramp up over sanctions compliance, warn lawyers",
+    "linkedin_post": "**Mistake Alert: Misconfiguring Cloud Storage for Sanctions Compliance**\n\nOne mistake I see repeatedly in cloud storage configurations is not properly segmenting data based on country or region, leading to a higher risk of violating sanctions regulations.\n\nThis oversight often results from an over-reliance on default settings and a lack of understanding of the complex sanctions rules that apply to cloud storage. In my experience, many organizations assume their cloud storage provider will automatically enforce sanctions restrictions, when in fact, it's the organization's responsibility to ensure compliance.\n\nHere are the consequences of misconfiguring cloud storage for sanctions compliance:\n\n\u2022 **Exposure to reputational risk**: A single data breach or sanctions violation can damage an organization's reputation and erode customer trust.\n\u2022 **Increased regulatory scrutiny**: Failure to comply with sanctions regulations can lead to costly fines, penalties, and audits.\n\u2022 **Data loss or corruption**: Misconfigured cloud storage can result in data loss or corruption, particularly if data is not properly backed up or redundantly stored.\n\nTo avoid this mistake, organizations should implement a cloud storage configuration that includes:\n\n* Segmentation of data based on country or region\n* Regular audits to ensure compliance\n* Automated alerts for suspicious activity\n\nHave you seen similar mistakes in your organization's cloud storage configurations? How do you ensure sanctions compliance in the cloud?",
+    "domains": [
+      "Cloud"
+    ],
+    "template_used": "Mistake Post",
+    "generated_at": "2026-08-16T13:49:12.190662"
+  },
+  {
+    "title": "You already know how to make it accessible",
+    "linkedin_post": "**Everyone's talking about accessible design, but are we missing the point?**\n\nYou've probably heard the buzz about making websites and apps more accessible. The idea is to cater to users with disabilities, but I've noticed that this conversation often overlooks a crucial aspect: our existing expertise.\n\nThe more interesting question is: What if the principles of accessibility are not just a separate requirement, but an integral part of good product design?\n\nIn my experience, the biggest hurdle to accessibility is not a lack of knowledge, but a mindset shift. We already understand how to create intuitive, user-friendly interfaces. So, why not apply these same principles to accessibility?\n\nHere's what Product professionals should focus on:\n\n* Rethinking the way we design for user journeys, not just individual features.\n* Prioritizing clear, concise language and avoiding unnecessary complexity.\n* Embracing the idea that accessibility is not a separate goal, but a natural consequence of great product design.\n\nBy doing so, organizations can reap significant benefits: improved user experience, enhanced reputation, and ultimately, increased business success. What does this mean for the future of product design? Will we see a shift away from accessibility as a niche requirement and towards a more inclusive, user-centric approach?",
+    "domains": [
+      "Product"
+    ],
+    "template_used": "News Analysis Post",
+    "generated_at": "2026-08-16T13:49:30.537871"
   }
 ]
