@@ -1,41 +1,5 @@
 [
   {
-    "title": "AI-generated code has made security debt a governance problem",
-    "linkedin_post": "**Mitigating Security Debt: A Governance Framework for the AI-Driven Age**\n\nWhen AI-generated code becomes the norm, security debt evolves from a technical concern to a governance problem. This framework helps you navigate this shift.\n\n**The Governance Matrix**\n\nTo address the governance implications of AI-generated code, I've developed the Governance Matrix. This model consists of five core steps:\n\n**Step 1: Identify Vulnerability Exposure**\nAssess which AI-generated code components pose the greatest security risks. This involves analyzing the code's complexity, dependencies, and potential attack surfaces.\n\n**Step 2: Establish Clear Policies**\nDevelop and communicate explicit policies for AI-generated code governance. This includes defining standards for code review, testing, and remediation.\n\n**Step 3: Implement Code Review and Audits**\nRegularly review and audit AI-generated code to ensure it meets organizational standards. This may involve manual review, automated testing, or a combination of both.\n\n**Step 4: Develop Remediation Plans**\nCreate plans for addressing security vulnerabilities in AI-generated code. This includes prioritizing remediation efforts, allocating resources, and tracking progress.\n\n**Step 5: Monitor and Report Governance Metrics**\nEstablish key performance indicators (KPIs) to measure the effectiveness of your governance framework. This helps identify areas for improvement and ensures accountability.\n\nWhenever I'm faced with a complex security debt issue, I start with these questions: What AI-generated code components need immediate attention? What policies and procedures do we need to establish or update? What are the potential risks and consequences of not addressing these issues?\n\nSave this framework for your next security debt challenge.",
-    "domains": [
-      "Security"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-14T01:46:34.213644"
-  },
-  {
-    "title": "\u26a1 Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks, and More",
-    "linkedin_post": "**Weekly Recap: A Wake-Up Call for DevSecOps**\n\nEveryone's buzzing about the latest security threats, from ShareFile to AI-powered coding attacks. But the more interesting question is: how will these incidents reshape our approach to DevSecOps?\n\nIn my experience, the root of the problem lies in our reliance on outdated security tools and our failure to keep pace with the evolving threat landscape. The ShareFile threat, for instance, highlights the risks of unpatched vulnerabilities in software-as-a-service applications. Meanwhile, Citrix Bleed 2 demonstrates how even the most seemingly secure systems can be exploited by determined attackers.\n\nWhat should DevSecOps professionals focus on? Firstly, we need to prioritize vulnerability management and ensure our security tools are up-to-date. Secondly, we must adopt a more proactive approach to threat hunting, leveraging AI-powered analytics to anticipate and prevent attacks. Finally, we need to rethink our security protocols to account for the growing threat of AI-powered coding attacks.\n\nSo, what should organizations do? They should invest in modern security tools and prioritize vulnerability management. By doing so, they'll be better equipped to respond to emerging threats and stay one step ahead of attackers.\n\nWhat does this mean for the future of DevSecOps? Will we see a shift towards more AI-powered security solutions, or will we revert to more manual, risk-based approaches? Can organizations truly keep pace with the evolving threat landscape, or will we be forever playing catch-up?",
-    "domains": [
-      "DevSecOps"
-    ],
-    "template_used": "News Analysis Post",
-    "generated_at": "2026-07-14T01:48:07.325167"
-  },
-  {
-    "title": "Why cloud security is mission-critical for federal civilian and defense agencies",
-    "linkedin_post": "**A Lesson Learned in the Cloud: Prioritizing Security**\n\nI used to think that cloud security was a nice-to-have feature, a checkbox in the migration process. But then I learned about the devastating consequences of cloud breaches on federal civilian and defense agencies. Take the 2020 breach of SolarWinds, a cloud-based IT monitoring platform used by numerous U.S. government agencies, including the Pentagon. The attackers' ability to access sensitive data and disrupt operations highlighted the critical need for robust cloud security.\n\n**LESSON**: Cloud security is mission-critical for federal civilian and defense agencies. The stakes are high, and the consequences of a breach can be catastrophic. This lesson can be applied to other industries and organizations that rely heavily on cloud services. Consider the potential risks of a cloud breach and prioritize security measures accordingly.\n\n**FRAMEWORK**: Assess your organization's cloud security posture by evaluating the following:\n\n1. Data sensitivity and classification\n2. Access controls and identity management\n3. Network and endpoint security\n4. Incident response and disaster recovery\n\n**ADVICE**:\n\n* For career starters: Familiarize yourself with cloud security best practices and frameworks like NIST 800-53.\n* For mid-career professionals: Advocate for cloud security investments and lead by example.\n* For leaders: Allocate sufficient resources to cloud security initiatives and hold teams accountable for compliance.\n\n**QUESTION**: What career lesson took you years to learn?",
-    "domains": [
-      "Cloud"
-    ],
-    "template_used": "Career Growth Post",
-    "generated_at": "2026-07-14T15:17:12.670552"
-  },
-  {
-    "title": "Email Agent Hijacking: The Hidden Threat That Breaks Post-Delivery Security",
-    "linkedin_post": "**The Hidden Threat That Breaks Post-Delivery Security: Email Agent Hijacking**\n\nAs we rely increasingly on AI-driven email services, a silent threat lurks in the shadows, compromising post-delivery security: Email Agent Hijacking. This framework helps you identify and mitigate this risk.\n\n**The Hijacking Framework**\n\n1. **Identify the Agent**: Recognize the email agents at play, such as Microsoft 365's Clutter folder or Google's Spam folder. These agents filter and manage email, but can also be manipulated by attackers.\n2. **Assess Agent Configuration**: Evaluate how these agents are configured and used within your organization. Are they set to automatically purge or quarantine emails? Are employees aware of how to interact with them?\n3. **Monitor Agent Activity**: Set up logging and monitoring to track agent activity, including filtering decisions and potential security incidents. This helps you detect and respond to potential agent hijacking attempts.\n4. **Analyze Agent Impact**: Determine how agent actions are affecting email security, delivery, and employee productivity. Are specific agents or configurations creating more problems than they solve?\n5. **Optimize Agent Settings**: Regularly review and adjust agent settings to ensure they align with your organization's security and productivity goals. This might involve adjusting filtering rules, whitelisting or blacklisting senders, or implementing additional security measures.\n\n**Whenever I review our email security setup, I start with these questions:**\n\n- What email agents are in use, and how are they configured?\n- Are our agents effectively filtering out spam and phishing attempts, or are they creating unnecessary delays or blockages?\n- Are employees aware of how to interact with our email agents, and are they using them correctly?\n\n**Save this framework for your next email security review.**",
-    "domains": [
-      "AI"
-    ],
-    "template_used": "Framework Breakdown Post",
-    "generated_at": "2026-07-14T15:20:19.143016"
-  },
-  {
     "title": "LLM Evaluation Frameworks Compared: How to Actually Measure What Your Model Does",
     "linkedin_post": "Everyone's talking about Large Language Model (LLM) evaluation frameworks, but the more interesting question is: can we truly measure what our models do?\n\nIn my experience, many organizations are eager to adopt LLMs, but they often overlook the importance of evaluating their performance and potential risks. DevSecOps professionals should be concerned about this because AI adoption can lead to increased security vulnerabilities if not properly managed.\n\nHere's why: most evaluation frameworks focus on metrics like accuracy and recall, but they don't actually tell us what our models are doing. It's like trying to gauge a car's safety by just looking at its speedometer \u2013 you need to consider the road conditions, traffic, and driver behavior as well. Similarly, LLM evaluation frameworks should assess not just the model's performance, but also its ability to handle edge cases, identify biases, and maintain data privacy.\n\nTo actually measure what our models do, DevSecOps professionals should focus on evaluating the following:\n\n* Model interpretability: can we understand why the model made a particular decision?\n* Model adaptability: can the model adjust to new or changing data?\n* Model resilience: can the model withstand attacks or data corruption?\n\nIf organizations can develop a more comprehensive evaluation framework, they'll be better equipped to mitigate risks associated with AI adoption and make informed decisions about their LLM applications. What do you think: should we prioritize model interpretability over accuracy in LLM evaluation frameworks?",
     "domains": [
@@ -1822,5 +1786,42 @@
     ],
     "template_used": "News Analysis Post",
     "generated_at": "2026-08-16T13:49:30.537871"
+  },
+  {
+    "title": "NIST SP 800-39: Managing Information Security Risk",
+    "linkedin_post": "**The Hidden Flaw in NIST SP 800-39: A Contrarian View**\n\nCommon Belief: \"NIST SP 800-39 provides a comprehensive framework for managing information security risk by categorizing risks into three tiers: high, medium, and low.\"\n\nI disagree. While the framework is widely adopted, I believe it oversimplifies the complexity of risk management. Here's why:\n\n* The tiered approach implies a linear relationship between risk likelihood and impact, which is often not the case in real-world scenarios. In my experience, risks can have a high likelihood but low impact, or vice versa.\n* The framework fails to account for the nuances of risk context, such as organizational culture, regulatory requirements, and supply chain dependencies.\n* By categorizing risks into neat tiers, organizations may overlook the interconnectedness of risks and the potential for cascading effects.\n* The framework also doesn't provide clear guidance on how to prioritize risks and allocate resources effectively.\n* Furthermore, the tiered approach can lead to a \"check-the-box\" mentality, where organizations focus on meeting the minimum requirements rather than truly managing risk.\n\nWhen might the tiered approach still apply? In highly standardized industries or environments with minimal complexity. However, for most organizations, a more nuanced approach to risk management is needed. How do you think organizations can better balance the need for simplicity with the complexity of real-world risk management?",
+    "domains": [
+      "GRC",
+      "Cloud"
+    ],
+    "template_used": "Contrarian Post",
+    "generated_at": "2026-08-17T00:21:51.678888"
+  },
+  {
+    "title": "NIST SP 800-61 Revision 1: Computer Security Incident Handling Guide",
+    "linkedin_post": "**From Chaos to Control: My Journey with Incident Handling**\n\nI used to think that incident handling was all about reacting to security breaches, but I've since learned that it's about creating a framework for anticipation and preparedness.\n\nBut then I learned about NIST SP 800-61 Revision 1, the Computer Security Incident Handling Guide. This document taught me that effective incident handling is about having a repeatable process in place, one that helps you respond to security events in a controlled and efficient manner.\n\n**LESSON:** Don't wait for the incident to happen; create a culture of anticipation and preparation. Establish a clear incident response plan, identify potential security risks, and conduct regular training exercises to ensure your team is equipped to handle unexpected events.\n\n**FRAMEWORK:** The Cybersecurity Kill Chain - Use this mental model to understand the various stages of a security incident, from reconnaissance to containment and recovery.\n\n**ADVICE:**\n\n* For junior security professionals: Focus on learning the fundamentals of incident handling and participate in training exercises to develop your skills.\n* For mid-level professionals: Take ownership of implementing incident response plans and training programs in your organization.\n* For senior leaders: Encourage a culture of security awareness and invest in incident response training programs.\n\n**What career lesson took you years to learn?**",
+    "domains": [
+      "Security"
+    ],
+    "template_used": "Career Growth Post",
+    "generated_at": "2026-08-17T00:22:06.186341"
+  },
+  {
+    "title": "New AI Playbooks Will Target Healthcare Cyber Risk",
+    "linkedin_post": "**The Healthcare Cyber Risk Playbook: A Framework for Staying Ahead**\n\nAs AI-powered threat actors increasingly target the healthcare sector, organizations must adapt their defenses to stay ahead. This mental model provides a framework for understanding and addressing the evolving healthcare cyber risk landscape.\n\n**The Healthcare Cyber Risk Playbook:**\n\n1. **Map the Attack Vector Landscape**: Identify the most common attack vectors in the healthcare sector, including phishing, ransomware, and insider threats. This will help you allocate resources effectively and prioritize your defenses.\n2. **Assess Your Vulnerabilities**: Conduct a thorough risk assessment to identify vulnerabilities in your systems, networks, and data. This will help you focus on the most critical areas to protect.\n3. **Develop an Anomaly Detection Strategy**: Implement a robust anomaly detection system that can identify unusual patterns and behaviors in your network traffic, user activity, and system logs. This will help you detect potential threats early.\n4. **Establish a Response Framework**: Develop a comprehensive response framework that includes incident response plans, communication protocols, and crisis management procedures. This will help you contain and mitigate the impact of a cyber attack.\n5. **Monitor and Adapt**: Continuously monitor your defenses and adapt your strategy as new threats emerge. Stay informed about the latest threat intelligence and best practices to stay ahead of the attackers.\n\n**Whenever I see a new AI-powered threat emerging, I start with these questions:** What are the most likely attack vectors? What vulnerabilities do we have in our systems and data? How can we improve our anomaly detection and response capabilities?\n\n**Save this framework for your next cybersecurity review.**",
+    "domains": [
+      "AI"
+    ],
+    "template_used": "Framework Breakdown Post",
+    "generated_at": "2026-08-17T00:22:28.406249"
+  },
+  {
+    "title": "I Gave 2 Claude Models 12 Wrong Answers and Told Them to Argue",
+    "linkedin_post": "**The Art of Debate: A DevSecOps Lesson I Wish I'd Learned Sooner**\n\nEarly in my career, I struggled to balance security and development teams in our DevSecOps setup. It seemed like the two were constantly at odds, with security folks pushing for more stringent controls and devs wanting more flexibility. I tried to mediate, but the discussions often devolved into arguments that left everyone frustrated.\n\nTo illustrate the problem, I decided to conduct an experiment. I gave two Claude models 12 wrong answers and asked them to argue their perspectives. To my surprise, they came up with some creative justifications for the incorrect solutions. I realized that, in my attempt to mediate, I had inadvertently created an \"us vs. them\" mentality between the teams.\n\nThe lesson I learned that day was the importance of active listening and empathy in DevSecOps. By genuinely understanding the concerns and motivations of both teams, I could help them find mutually beneficial solutions. Today, I encourage our teams to engage in respectful debates, acknowledging that differing opinions are not weaknesses, but opportunities for growth.\n\nWhat lessons have you learned from navigating the tensions between security and development teams in DevSecOps?",
+    "domains": [
+      "DevSecOps"
+    ],
+    "template_used": "Personal Story Post",
+    "generated_at": "2026-08-17T00:22:37.470788"
   }
 ]
